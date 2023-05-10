@@ -70,10 +70,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>C0AF152E8FE4F512BD209376BEBD44026752C903</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>8CD65043A1015DA210ABDB4066FCEFC518771A15</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>QLNS_3_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>QLNS_4_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -1604,6 +1604,7 @@
     <None Include="QLNS_1_TemporaryKey.pfx" />
     <None Include="QLNS_2_TemporaryKey.pfx" />
     <None Include="QLNS_3_TemporaryKey.pfx" />
+    <None Include="QLNS_4_TemporaryKey.pfx" />
     <None Include="QLNS_TemporaryKey.pfx" />
     <None Include="Resources\cb_giadinh.png" />
     <Content Include="QLNS.ico" />
