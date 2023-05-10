@@ -1,0 +1,466 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class DanhMucForm
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tv_main = New System.Windows.Forms.TreeView()
+        Me.splitt_main = New System.Windows.Forms.Splitter()
+        Me.gb_main = New System.Windows.Forms.GroupBox()
+        Me.edt_maso = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.edt_tengoi = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btn_add = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.btn_edit = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.lbl_header = New System.Windows.Forms.Label()
+        Me.dgv_main = New System.Windows.Forms.DataGridView()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.ckb_tinh_tp = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btn_quayra = New System.Windows.Forms.Button()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.ckb_chonca = New System.Windows.Forms.CheckBox()
+        Me.lbl_titleresult = New System.Windows.Forms.Label()
+        Me.gb_main.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.dgv_main, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label2.Location = New System.Drawing.Point(0, 561)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(789, 4)
+        Me.Label2.TabIndex = 1
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label4.Location = New System.Drawing.Point(785, 24)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(4, 537)
+        Me.Label4.TabIndex = 3
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label3.Location = New System.Drawing.Point(0, 24)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(4, 537)
+        Me.Label3.TabIndex = 2
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'tv_main
+        '
+        Me.tv_main.BackColor = System.Drawing.Color.White
+        Me.tv_main.Dock = System.Windows.Forms.DockStyle.Left
+        Me.tv_main.ForeColor = System.Drawing.Color.Black
+        Me.tv_main.Location = New System.Drawing.Point(4, 24)
+        Me.tv_main.Margin = New System.Windows.Forms.Padding(3, 3, 3, 6)
+        Me.tv_main.Name = "tv_main"
+        Me.tv_main.Size = New System.Drawing.Size(220, 537)
+        Me.tv_main.TabIndex = 4
+        '
+        'splitt_main
+        '
+        Me.splitt_main.BackColor = System.Drawing.SystemColors.Control
+        Me.splitt_main.Location = New System.Drawing.Point(224, 24)
+        Me.splitt_main.Name = "splitt_main"
+        Me.splitt_main.Size = New System.Drawing.Size(3, 537)
+        Me.splitt_main.TabIndex = 5
+        Me.splitt_main.TabStop = False
+        '
+        'gb_main
+        '
+        Me.gb_main.Controls.Add(Me.edt_maso)
+        Me.gb_main.Controls.Add(Me.Label7)
+        Me.gb_main.Controls.Add(Me.edt_tengoi)
+        Me.gb_main.Controls.Add(Me.Panel1)
+        Me.gb_main.Dock = System.Windows.Forms.DockStyle.Top
+        Me.gb_main.Location = New System.Drawing.Point(227, 24)
+        Me.gb_main.Name = "gb_main"
+        Me.gb_main.Size = New System.Drawing.Size(558, 68)
+        Me.gb_main.TabIndex = 6
+        Me.gb_main.TabStop = False
+        Me.gb_main.Text = " Nội dung tìm kiếm "
+        '
+        'edt_maso
+        '
+        Me.edt_maso.BackColor = System.Drawing.Color.White
+        Me.edt_maso.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.edt_maso.ForeColor = System.Drawing.Color.Black
+        Me.edt_maso.Location = New System.Drawing.Point(102, 49)
+        Me.edt_maso.Name = "edt_maso"
+        Me.edt_maso.Size = New System.Drawing.Size(453, 26)
+        Me.edt_maso.TabIndex = 4
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label7.Location = New System.Drawing.Point(102, 48)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(453, 1)
+        Me.Label7.TabIndex = 3
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'edt_tengoi
+        '
+        Me.edt_tengoi.BackColor = System.Drawing.Color.White
+        Me.edt_tengoi.Dock = System.Windows.Forms.DockStyle.Top
+        Me.edt_tengoi.ForeColor = System.Drawing.Color.Black
+        Me.edt_tengoi.Location = New System.Drawing.Point(102, 22)
+        Me.edt_tengoi.Name = "edt_tengoi"
+        Me.edt_tengoi.Size = New System.Drawing.Size(453, 26)
+        Me.edt_tengoi.TabIndex = 1
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(3, 22)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(99, 43)
+        Me.Panel1.TabIndex = 0
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label6.Location = New System.Drawing.Point(0, 23)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(99, 23)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = " * Mã số"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label5.Location = New System.Drawing.Point(0, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(99, 23)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = " * Tên gọi"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel2.Controls.Add(Me.btn_add)
+        Me.Panel2.Controls.Add(Me.Label11)
+        Me.Panel2.Controls.Add(Me.btn_edit)
+        Me.Panel2.Controls.Add(Me.Label13)
+        Me.Panel2.Controls.Add(Me.btn_delete)
+        Me.Panel2.Controls.Add(Me.lbl_header)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(789, 24)
+        Me.Panel2.TabIndex = 0
+        '
+        'btn_add
+        '
+        Me.btn_add.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_add.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_add.Location = New System.Drawing.Point(592, 0)
+        Me.btn_add.Name = "btn_add"
+        Me.btn_add.Size = New System.Drawing.Size(71, 24)
+        Me.btn_add.TabIndex = 1
+        Me.btn_add.Text = "Thêm &mới"
+        Me.btn_add.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label11.Location = New System.Drawing.Point(663, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(2, 24)
+        Me.Label11.TabIndex = 2
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btn_edit
+        '
+        Me.btn_edit.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_edit.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_edit.Location = New System.Drawing.Point(665, 0)
+        Me.btn_edit.Name = "btn_edit"
+        Me.btn_edit.Size = New System.Drawing.Size(61, 24)
+        Me.btn_edit.TabIndex = 3
+        Me.btn_edit.Text = "&Sửa đổi"
+        Me.btn_edit.UseVisualStyleBackColor = True
+        '
+        'Label13
+        '
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label13.Location = New System.Drawing.Point(726, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(2, 24)
+        Me.Label13.TabIndex = 4
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btn_delete
+        '
+        Me.btn_delete.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_delete.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_delete.Location = New System.Drawing.Point(728, 0)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(61, 24)
+        Me.btn_delete.TabIndex = 5
+        Me.btn_delete.Text = "&Xoá"
+        Me.btn_delete.UseVisualStyleBackColor = True
+        '
+        'lbl_header
+        '
+        Me.lbl_header.BackColor = System.Drawing.Color.DarkGray
+        Me.lbl_header.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_header.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_header.ForeColor = System.Drawing.Color.Maroon
+        Me.lbl_header.Location = New System.Drawing.Point(0, 0)
+        Me.lbl_header.Name = "lbl_header"
+        Me.lbl_header.Size = New System.Drawing.Size(227, 24)
+        Me.lbl_header.TabIndex = 0
+        Me.lbl_header.Text = "HỆ THỐNG DANH MỤC CHUNG"
+        Me.lbl_header.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dgv_main
+        '
+        Me.dgv_main.AllowUserToAddRows = False
+        Me.dgv_main.AllowUserToDeleteRows = False
+        Me.dgv_main.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(254, Byte), Integer))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(124, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(254, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.dgv_main.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_main.BackgroundColor = System.Drawing.Color.White
+        Me.dgv_main.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgv_main.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_main.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(237, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(237, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_main.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_main.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_main.Location = New System.Drawing.Point(227, 114)
+        Me.dgv_main.Name = "dgv_main"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(219, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_main.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgv_main.RowHeadersVisible = False
+        Me.dgv_main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White
+        Me.dgv_main.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_main.Size = New System.Drawing.Size(558, 422)
+        Me.dgv_main.TabIndex = 8
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel3.Controls.Add(Me.ckb_tinh_tp)
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Controls.Add(Me.btn_quayra)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel3.Location = New System.Drawing.Point(227, 536)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(558, 25)
+        Me.Panel3.TabIndex = 9
+        '
+        'ckb_tinh_tp
+        '
+        Me.ckb_tinh_tp.Dock = System.Windows.Forms.DockStyle.Left
+        Me.ckb_tinh_tp.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_tinh_tp.ForeColor = System.Drawing.Color.Maroon
+        Me.ckb_tinh_tp.Location = New System.Drawing.Point(241, 0)
+        Me.ckb_tinh_tp.Name = "ckb_tinh_tp"
+        Me.ckb_tinh_tp.Size = New System.Drawing.Size(237, 21)
+        Me.ckb_tinh_tp.TabIndex = 9
+        Me.ckb_tinh_tp.Text = "&Cập nhật địa danh tỉnh - thành phố"
+        Me.ckb_tinh_tp.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.DarkGray
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(241, 21)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = " Các đối tượng có ký tự * hỗ trợ tìm kiếm"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btn_quayra
+        '
+        Me.btn_quayra.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_quayra.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_quayra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_quayra.Location = New System.Drawing.Point(484, 0)
+        Me.btn_quayra.Name = "btn_quayra"
+        Me.btn_quayra.Size = New System.Drawing.Size(70, 21)
+        Me.btn_quayra.TabIndex = 7
+        Me.btn_quayra.Text = "&Quay ra"
+        Me.btn_quayra.UseVisualStyleBackColor = True
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.ckb_chonca)
+        Me.Panel4.Controls.Add(Me.lbl_titleresult)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel4.Location = New System.Drawing.Point(227, 92)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(558, 22)
+        Me.Panel4.TabIndex = 7
+        '
+        'ckb_chonca
+        '
+        Me.ckb_chonca.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ckb_chonca.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_chonca.ForeColor = System.Drawing.Color.Maroon
+        Me.ckb_chonca.Location = New System.Drawing.Point(487, 0)
+        Me.ckb_chonca.Name = "ckb_chonca"
+        Me.ckb_chonca.Size = New System.Drawing.Size(71, 22)
+        Me.ckb_chonca.TabIndex = 1
+        Me.ckb_chonca.Text = "&Chọn cả"
+        Me.ckb_chonca.UseVisualStyleBackColor = True
+        '
+        'lbl_titleresult
+        '
+        Me.lbl_titleresult.BackColor = System.Drawing.SystemColors.Control
+        Me.lbl_titleresult.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_titleresult.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_titleresult.ForeColor = System.Drawing.Color.Maroon
+        Me.lbl_titleresult.Location = New System.Drawing.Point(0, 0)
+        Me.lbl_titleresult.Name = "lbl_titleresult"
+        Me.lbl_titleresult.Size = New System.Drawing.Size(480, 22)
+        Me.lbl_titleresult.TabIndex = 0
+        Me.lbl_titleresult.Text = " KẾT QUẢ TÌM KIẾM"
+        Me.lbl_titleresult.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'DanhMucForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(789, 565)
+        Me.Controls.Add(Me.dgv_main)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.gb_main)
+        Me.Controls.Add(Me.splitt_main)
+        Me.Controls.Add(Me.tv_main)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Panel2)
+        Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.KeyPreview = True
+        Me.Name = "DanhMucForm"
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Quản lý nhân sự"
+        Me.gb_main.ResumeLayout(False)
+        Me.gb_main.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.dgv_main, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents tv_main As System.Windows.Forms.TreeView
+    Friend WithEvents splitt_main As System.Windows.Forms.Splitter
+    Friend WithEvents gb_main As System.Windows.Forms.GroupBox
+    Friend WithEvents edt_maso As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents edt_tengoi As System.Windows.Forms.TextBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Public WithEvents lbl_header As System.Windows.Forms.Label
+    Friend WithEvents dgv_main As System.Windows.Forms.DataGridView
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents btn_quayra As System.Windows.Forms.Button
+    Friend WithEvents btn_add As System.Windows.Forms.Button
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents btn_edit As System.Windows.Forms.Button
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents btn_delete As System.Windows.Forms.Button
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents lbl_titleresult As System.Windows.Forms.Label
+    Friend WithEvents ckb_chonca As System.Windows.Forms.CheckBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ckb_tinh_tp As System.Windows.Forms.CheckBox
+End Class

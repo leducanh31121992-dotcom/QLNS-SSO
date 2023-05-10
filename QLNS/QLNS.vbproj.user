@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\</ReferencePath>
+    <PublishUrlHistory>D:\Publish\QLNS\|ftp://10.63.16.52/QLNS/</PublishUrlHistory>
+    <InstallUrlHistory>http://10.63.16.52/QLNS/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>http://10.63.16.52/QLNS/</UpdateUrlHistory>
+    <BootstrapperUrlHistory>http://10.63.16.52/QLNS/</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+</Project>
