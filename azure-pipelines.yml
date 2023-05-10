@@ -72,6 +72,26 @@ stages:
           platform: 'AnyCPU'
           configuration: '$(buildConfiguration)'
           msbuildArguments: /t:publish /p:PublishDir="$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)"
+
 # Đoạn xử lý file Index để copy ra kèm theo (Tạo ra 1 file Index tương tự)
+      - task: PowerShell@2
+        displayName: ChangeVersionIndex.htm
+        inputs:
+          targetType: inline
+          script: |
+            $PathOfApplication = "$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)\QLNS.application"
+            $PathOfIndex = "$(DesktopPath)\Resources\index.htm"
+            $version = ([xml](Get-Content $PathOfApplication)).assembly.assemblyIdentity.version
+            echo "Version can thay the vao index.htm la: $version"
+            (Get-Content -Path $PathOfIndex) -replace "ThayVersionSauPublish", "$version" | Set-Content -Path $PathOfIndex
+      - task: CopyFiles@2
+        displayName: CopyFileIndex.htmToPublish
+        inputs:
+          sourceFolder: '$(Build.SourcesDirectory)'
+          Contents: |
+            $(Build.SourcesDirectory)\**\Resources\index.htm
+          targetFolder: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
+          OverWrite: true
+          flattenFolders: true
 # -------Kết thúc tạo Index-------
 
