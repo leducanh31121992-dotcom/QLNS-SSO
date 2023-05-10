@@ -95,3 +95,27 @@ stages:
           flattenFolders: true
 # -------Kết thúc tạo Index-------
 
+  - stage: stgDeploy
+    displayName: 'Deployment Stage'
+    jobs:
+    - job: ValidationForDeploy
+      pool: server
+      steps:
+        - task: ManualValidation@0
+          timeoutInMinutes: 30 # task times out in 1 minute
+          inputs:
+            notifyUsers: 'user@gmail.com'
+            instructions: 'Hi, please validate to Build'
+    - job: Deploy
+      dependsOn: ValidationForDeploy
+      steps:
+  
+        - task: WindowsMachineFileCopy@2
+          inputs:
+            SourcePath: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
+            CleanTargetBeforeCopy: true 
+            MachineNames: '10.63.16.52'
+            AdminUserName: 'administrator'
+            AdminPassword: $(16_52_admin_password)
+            TargetPath: 'C:\Apps\QuanLyNhanSuDevOps'
+
