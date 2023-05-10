@@ -13,7 +13,9 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  DesktopPath: '$(Build.SourcesDirectory)\Presentation Layer\Desktop\Microfinance.Offline.Desktop'
   PublishPath: 'D:\publish\QuanLyNhanSu'
+  DesktopProject: 'Presentation Layer/Desktop/Microfinance.Offline.Desktop/Microfinance.Offline.Desktop.csproj'
 
 steps:
 - task: NuGetToolInstaller@1
