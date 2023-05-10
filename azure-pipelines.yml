@@ -117,7 +117,7 @@ stages:
             CleanTargetBeforeCopy: true 
             MachineNames: '10.63.16.52'
             AdminUserName: 'administrator'
-            AdminPassword: 'Vbsp@2019#52'
+            AdminPassword: $(adminpassword)
             TargetPath: 'C:\Apps\QuanLyNhanSuDevOps'
             
 
