@@ -115,7 +115,7 @@ stages:
             SourcePath: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
             CleanTargetBeforeCopy: true 
             MachineNames: '10.63.16.52'
-            AdminUserName: 'administrator'
+            AdminUserName: '.\administrator'
             AdminPassword: $(16_52_admin_password)
             TargetPath: 'C:\Apps\QuanLyNhanSuDevOps'
 
