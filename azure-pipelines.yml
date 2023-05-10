@@ -18,82 +18,82 @@ variables:
   DesktopProject: 'QLNS\QLNS.vbproj'
 
 stages:
-#   - stage: stgBuild
-#     displayName: 'Build Stage'
-#     jobs:
-#     - job: ValidationForBuild
-#       pool: server
-#       steps:
-#         - task: ManualValidation@0
-#           timeoutInMinutes: 30 # task times out in 30 minute
-#           inputs:
-#             notifyUsers: 'user@gmail.com'
-#             instructions: 'Hi, please validate to Build'
-#     - job: CleanAll
-#       workspace:
-#         clean: all
-#     - job: Prerequisite
-#       dependsOn: CleanAll
-#       steps:
-#       - powershell: echo "Working Directory $pwd"
-#       - task: NuGetToolInstaller@1
-#       - task: NuGetCommand@2
-#         inputs:
-#           restoreSolution: '$(solution)'
-#     - job: Build
-#       dependsOn: Prerequisite
-#       steps:
-#       - powershell: echo "Working Directory $pwd"
-#       # - task: VSBuild@1
-#       #   inputs:
-#       #     solution: '$(solution)'
-#       #     platform: '$(buildPlatform)'
-#       #     configuration: '$(buildConfiguration)'
-#       #     msbuildArgs: /t:publish /p:PublishDir="D:\publish\QuanLyNhanSu"
-#       - task: MSBuild@1
-#         displayName: Rebuild
-#         inputs:
-#           solution: $(DesktopProject)
-#           msbuildArchitecture: 'x86'
-#           platform: 'AnyCPU'
-#           configuration: $(buildConfiguration)
-#           clean: true
-#       #Chay script thay hashMessage
-#       # - powershell: ."$(DesktopPath)\Scripts\Hashmessage\hashmessage.ps1"
-#     - job: Publish
-#       dependsOn: Build
-#       steps:
-#       - powershell: echo "Working Directory $pwd"
-#       - task: MSBuild@1
-#         displayName: Publish
-#         inputs:
-#           solution: $(DesktopProject)
-#           msbuildArchitecture: 'x86'
-#           platform: 'AnyCPU'
-#           configuration: '$(buildConfiguration)'
-#           msbuildArguments: /t:publish /p:PublishDir="$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)"
+  - stage: stgBuild
+    displayName: 'Build Stage'
+    jobs:
+    - job: ValidationForBuild
+      pool: server
+      steps:
+        - task: ManualValidation@0
+          timeoutInMinutes: 30 # task times out in 30 minute
+          inputs:
+            notifyUsers: 'user@gmail.com'
+            instructions: 'Hi, please validate to Build'
+    - job: CleanAll
+      workspace:
+        clean: all
+    - job: Prerequisite
+      dependsOn: CleanAll
+      steps:
+      - powershell: echo "Working Directory $pwd"
+      - task: NuGetToolInstaller@1
+      - task: NuGetCommand@2
+        inputs:
+          restoreSolution: '$(solution)'
+    - job: Build
+      dependsOn: Prerequisite
+      steps:
+      - powershell: echo "Working Directory $pwd"
+      # - task: VSBuild@1
+      #   inputs:
+      #     solution: '$(solution)'
+      #     platform: '$(buildPlatform)'
+      #     configuration: '$(buildConfiguration)'
+      #     msbuildArgs: /t:publish /p:PublishDir="D:\publish\QuanLyNhanSu"
+      - task: MSBuild@1
+        displayName: Rebuild
+        inputs:
+          solution: $(DesktopProject)
+          msbuildArchitecture: 'x86'
+          platform: 'AnyCPU'
+          configuration: $(buildConfiguration)
+          clean: true
+      #Chay script thay hashMessage
+      # - powershell: ."$(DesktopPath)\Scripts\Hashmessage\hashmessage.ps1"
+    - job: Publish
+      dependsOn: Build
+      steps:
+      - powershell: echo "Working Directory $pwd"
+      - task: MSBuild@1
+        displayName: Publish
+        inputs:
+          solution: $(DesktopProject)
+          msbuildArchitecture: 'x86'
+          platform: 'AnyCPU'
+          configuration: '$(buildConfiguration)'
+          msbuildArguments: /t:publish /p:PublishDir="$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)"
 
-# # Đoạn xử lý file Index để copy ra kèm theo (Tạo ra 1 file Index tương tự)
-#       - task: PowerShell@2
-#         displayName: ChangeVersionIndex.htm
-#         inputs:
-#           targetType: inline
-#           script: |
-#             $PathOfApplication = "$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)\QLNS.application"
-#             $PathOfIndex = "$(DesktopPath)\Resources\index.htm"
-#             $version = ([xml](Get-Content $PathOfApplication)).assembly.assemblyIdentity.version
-#             echo "Version can thay the vao index.htm la: $version"
-#             (Get-Content -Path $PathOfIndex) -replace "ThayVersionSauPublish", "$version" | Set-Content -Path $PathOfIndex
-#       - task: CopyFiles@2
-#         displayName: CopyFileIndex.htmToPublish
-#         inputs:
-#           sourceFolder: '$(Build.SourcesDirectory)'
-#           Contents: |
-#             $(Build.SourcesDirectory)\**\Resources\index.htm
-#           targetFolder: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
-#           OverWrite: true
-#           flattenFolders: true
-# # -------Kết thúc tạo Index-------
+# Đoạn xử lý file Index để copy ra kèm theo (Tạo ra 1 file Index tương tự)
+      - task: PowerShell@2
+        displayName: ChangeVersionIndex.htm
+        inputs:
+          targetType: inline
+          script: |
+            $PathOfApplication = "$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)\QLNS.application"
+            $PathOfIndex = "$(DesktopPath)\Resources\index.htm"
+            $version = ([xml](Get-Content $PathOfApplication)).assembly.assemblyIdentity.version
+            echo "Version can thay the vao index.htm la: $version"
+            (Get-Content -Path $PathOfIndex) -replace "ThayVersionSauPublish", "$version" | Set-Content -Path $PathOfIndex
+      - task: CopyFiles@2
+        displayName: CopyFileIndex.htmToPublish
+        inputs:
+          sourceFolder: '$(Build.SourcesDirectory)'
+          Contents: |
+            $(Build.SourcesDirectory)\**\Resources\index.htm
+          targetFolder: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
+          OverWrite: true
+          flattenFolders: true
+# -------Kết thúc tạo Index-------
 
   - stage: stgDeploy
     displayName: 'Deployment Stage'
@@ -112,8 +112,7 @@ stages:
   
         - task: WindowsMachineFileCopy@2
           inputs:
-            # SourcePath: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
-            SourcePath: 'D:\publish\QuanLyNhanSu'
+            SourcePath: '$(PublishPath)\QuanLyNhanSu.$(Build.BuildNumber)'
             CleanTargetBeforeCopy: true 
             MachineNames: '10.63.16.52'
             AdminUserName: 'administrator'
