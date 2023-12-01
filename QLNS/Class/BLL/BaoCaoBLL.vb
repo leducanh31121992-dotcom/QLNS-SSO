@@ -84,12 +84,17 @@ Public Class BaoCaoBLL
             _command.Parameters.Add(SoftSqlHelper.CreateParameter("@pThoiDiem", pThoiDiem, ParameterDirection.Input))
             _command.Parameters.Add(SoftSqlHelper.CreateParameter("@pDonViId", pDonViId, ParameterDirection.Input))
             _command.Parameters.Add(SoftSqlHelper.CreateParameter("@pFlagCall", pFlagCall, ParameterDirection.Input))
+
+            '_command.Parameters.Add("@_IdOutPut", SqlDbType.VarChar, 16).Direction = ParameterDirection.Output
+
+
             Using mydap As SqlDataAdapter = New SqlDataAdapter(_command)
                 Dim ds As DataSet = New DataSet
                 mydap.Fill(ds, "DuLieuBC_TMP")
                 If (ds Is Nothing Or ds.Tables.Count = 0 Or ds.Tables(0).Rows.Count = 0) Then
                     Return Nothing
                 End If
+                '_Ret = _command.Parameters("@_IdOutPut").Value.ToString()
                 Return ds.Tables("DuLieuBC_TMP")
             End Using
         Catch ex As Exception

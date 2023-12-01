@@ -48,7 +48,7 @@
             TRUCTHUOC = IIf(DONVI = gMaDonViTW, 1, 0) 'CByte(getSystemVar("TRUCTHUOC"))
 
             Dim _SQLHelper As New DBAccess
-            Dim StrSQL As String = "SELECT * FROM SysVar WHERE ID_DonVi = " & IdDONVI
+            Dim StrSQL As String = "SELECT Top 1 * FROM SysVar WHERE ID_DonVi = " & IdDONVI & " Order By NgayHL Desc,TrangThai Desc"
             Dim dt As DataTable = _SQLHelper.getDataTable(StrSQL)
             If dt.Rows.Count > 0 Then
                 MAX_KY = Math.Min(My_CInt(dt.Rows(0)("MAX_KY"), 1), 2)

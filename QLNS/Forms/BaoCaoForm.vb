@@ -48,6 +48,7 @@ Public Class BaoCaoForm
         cb_baocao.Items.Add("Mẫu số 03/BC-TCCB. Tổng hợp tình hình thực hiện Lao động - Mạng lưới theo vùng (03/BC-TCCB)")          '0001_03
         cb_baocao.Items.Add("Mẫu số 04/BC-TCCB. Tổng hợp tình hình thực hiện Lao động - Mạng lưới (04/BC-TCCB)")                    '0001_04
         cb_baocao.Items.Add("Mẫu số 07/BC-TCCB. Tổng hợp tình hình thực hiện Lao động - Mạng lưới chi tiết đến từng PGD (07/BC-TCCB)")                    '0001_07
+        cb_baocao.Items.Add("Mẫu số 08/BC-TCCB. Tổng hợp tình hình thực hiện Lao động - Mạng lưới chi tiết đến từng PGD (08/BC-TCCB)")                    '0001_08
 
         ARL_BaoCao.Add("")
         ARL_BaoCao.Add("0001")
@@ -60,6 +61,7 @@ Public Class BaoCaoForm
         ARL_BaoCao.Add("0001_03")
         ARL_BaoCao.Add("0001_04")
         ARL_BaoCao.Add("0001_07")
+        ARL_BaoCao.Add("0001_08")
 
 
         'cb_baocao.Items.Add("Tiền lương. Mẫu 01A/TUL - Bảng kê chi lương - Kỳ I (Đối với Lao động Chuyên môn nghiệp vụ)")
@@ -425,6 +427,24 @@ Public Class BaoCaoForm
                 _KiemSoat_2 = "M"
                 _GiamDoc_1 = "R"
                 _GiamDoc_2 = "U"
+                If (_IdDonVi <> 0) And Not (db_report Is Nothing) Then
+                    sBranchName = db_report.Rows(0)("TenChiNhanh_HT").ToString().ToUpper()
+                End If
+            Case "0001_08" ' Mẫu số 07A/BC-TCCB. Tổng hợp tình hình thực hiện Lao động - Mạng lưới chi tiết đến từng Phòng giao dịch (07A/BC-TCCB) - Áp dụng từ 11/2023
+                iRowStart = 10
+                db_report = _BaoCaoBLL.GetDLBaoCao_LaoDongMangLuoi(DateTimeUtil.DateTimeToString(dtpk_ngaybc.Value, "yyyy-MM-dd"), _IdDonVi, 7)
+                sMaHieuBC = "Mẫu số 08/BC-TCCB"
+                sTitleBC01 = "BÁO CÁO  TÌNH HÌNH THỰC HIỆN LAO ĐỘNG - MẠNG LƯỚI CHI TIẾT ĐẾN TỪNG PHÒNG GIAO DỊCH"
+                sTitleBC02 = "THÁNG " + iThangBC.ToString("D2") + " NĂM " + iNamBC.ToString("D4")
+                sFileExcelTemplate = sPathExcelTemplate + "BC_MangLuoiLD_08_TCCB.xlsx"
+                sFileNameEx = "BC_MangLuoiLD_07_TCCB" + "Thang_" + iThangBC.ToString("D2") + iNamBC.ToString("D4") + "_" + _DateReportTMP.ToString("ddMMyyyy") + "_" + sAutoNumber + ".xlsx"
+                sColNameEnd = "R"
+                _LapBieu_1 = "A"
+                _LapBieu_2 = "D"
+                _KiemSoat_1 = "F"
+                _KiemSoat_2 = "K"
+                _GiamDoc_1 = "M"
+                _GiamDoc_2 = "R"
                 If (_IdDonVi <> 0) And Not (db_report Is Nothing) Then
                     sBranchName = db_report.Rows(0)("TenChiNhanh_HT").ToString().ToUpper()
                 End If
