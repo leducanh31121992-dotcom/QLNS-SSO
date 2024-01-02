@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="QLNS.exe" version="1.0.3.65" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="QLNS.exe" version="1.0.3.67" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="QLNS.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -171,7 +171,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FQpiesi5xf+YBqAB2xrDFhBBUhQ=</dsig:DigestValue>
+        <dsig:DigestValue>vEEN5QvuHmoHE3b0l7BNiiD5/I4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -463,13 +463,13 @@
       <dsig:DigestValue>N2UTZkB3qZIf7uDKOaT6LC18r7M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="FileExcels\BC_MangLuoiLD_08_TCCB.xlsx" size="11395">
+  <file name="FileExcels\BC_MangLuoiLD_08_TCCB.xlsx" size="11557">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>WY46sPeuua+xbI8rWA/q+s3S3ak=</dsig:DigestValue>
+      <dsig:DigestValue>S21MJk0pXJxQKe7Myg0J437JPQI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="FileExcels\BC_MangLuoiLD_09_TCCB.xlsx" size="11541">

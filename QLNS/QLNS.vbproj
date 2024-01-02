@@ -35,11 +35,11 @@
     <TargetCulture>en-US</TargetCulture>
     <ProductName>Quản lý nhân sự NHCSXH</ProductName>
     <PublisherName>ITC-VBSP</PublisherName>
-    <MinimumRequiredVersion>1.0.3.65</MinimumRequiredVersion>
+    <MinimumRequiredVersion>1.0.3.66</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>66</ApplicationRevision>
+    <ApplicationRevision>67</ApplicationRevision>
     <ApplicationVersion>1.0.3.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

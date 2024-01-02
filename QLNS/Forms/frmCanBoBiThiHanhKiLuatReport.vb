@@ -80,13 +80,16 @@
             thoidiem = "31/12/" & txtNam.Text
         End If
         rpt_BC08.SetParameterValue("Thoidiem", thoidiem)
+        Dim sLabHCTC As String
+        sLabHCTC = IIf(DONVI = gMaDonViTW, "Giám đốc Ban TCCB", IIf(DONVI = "000196", "Trưởng phòng Tổng hợp", IIf(DONVI = "000197" Or DONVI = "000101", "Trưởng phòng HC-NS", "Trưởng phòng HC-TC")))
+
         If DONVI = gMaDonViTW Then
             rpt_BC08.SetParameterValue("labGD", "TỔNG GIÁM ĐỐC")
-            rpt_BC08.SetParameterValue("labHCTC", "TRƯỞNG PHÒNG TCCB")
+
         Else
             rpt_BC08.SetParameterValue("labGD", "GIÁM ĐỐC")
-            rpt_BC08.SetParameterValue("labHCTC", "TRƯỞNG PHÒNG HC-TC")
         End If
+        rpt_BC08.SetParameterValue("labHCTC", sLabHCTC.ToUpper)
         rpt_BC08.SetParameterValue("LAPBIEU", txtLapBieu.Text)
         rpt_BC08.SetParameterValue("HCTC", txtHCTC.Text)
         rpt_BC08.SetParameterValue("GD", txtGD.Text)

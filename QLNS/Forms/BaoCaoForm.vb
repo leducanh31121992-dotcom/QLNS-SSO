@@ -438,13 +438,13 @@ Public Class BaoCaoForm
                 sTitleBC02 = "THÁNG " + iThangBC.ToString("D2") + " NĂM " + iNamBC.ToString("D4")
                 sFileExcelTemplate = sPathExcelTemplate + "BC_MangLuoiLD_08_TCCB.xlsx"
                 sFileNameEx = "BC_MangLuoiLD_07_TCCB" + "Thang_" + iThangBC.ToString("D2") + iNamBC.ToString("D4") + "_" + _DateReportTMP.ToString("ddMMyyyy") + "_" + sAutoNumber + ".xlsx"
-                sColNameEnd = "R"
+                sColNameEnd = "S"
                 _LapBieu_1 = "A"
                 _LapBieu_2 = "D"
                 _KiemSoat_1 = "F"
-                _KiemSoat_2 = "K"
+                _KiemSoat_2 = "L"
                 _GiamDoc_1 = "M"
-                _GiamDoc_2 = "R"
+                _GiamDoc_2 = "S"
                 If (_IdDonVi <> 0) And Not (db_report Is Nothing) Then
                     sBranchName = db_report.Rows(0)("TenChiNhanh_HT").ToString().ToUpper()
                 End If
