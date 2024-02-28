@@ -9,6 +9,7 @@
     Public Cap_Nd As Integer = 0
     Public DONVI As String = ""
     Public TEN_DV_VT As String = ""
+    Public BrandNameByUserLogin As String = ""
     Public IdDONVI As Integer = 0
     Public TRUCTHUOC As Byte
     Public DIABAN As String = ""
@@ -37,7 +38,7 @@
 
             Dim iRootId As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}'", DONVI), 0)
             Cap_Nd = IIf(iRootId = 0 Or DONVI = "000199", 1, IIf(iRootId = 1, 2, 3))
-
+            BrandNameByUserLogin = SoftSqlHelper.GetString(String.Format("Select Top 1 Ten_Goi From ChiNhanh Where Ma_So = '{0}' Order By Id", DONVI), "")
             CAP = IIf(DONVI = gMaDonViTW, 1, 2)
             'DONVI = getSystemVar("DONVI")
             TEN_DV_VT = dbconn.getString("SELECT ten_vt FROM ChiNhanh WHERE ma_so = '" & DONVI & "'") ' getSystemVar("TEN_VT")

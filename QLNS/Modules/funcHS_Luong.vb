@@ -2365,7 +2365,7 @@ Module funcHS_Luong
     End Function
 
     ''' <summary>
-    ''' Hàm kiểm tra mã cán bộ có hợp lệ không. 
+    ''' Hàm kiểm tra mã cán bộ có hợp lệ không (Gọi đến hàm dbo.checkMaCanBo trong CSDL). Kiểm tra trùng mã với HS_CanBo và HSCB_TS và Kiểm tra xem khoảng mã số đúng không
     ''' </summary>
     ''' <param name="vIdCanBo"></param>
     ''' <param name="vMaCanBo"></param>

@@ -164,14 +164,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QLNS.exe" size="7826944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QLNS.exe" size="7828992">
       <assemblyIdentity name="QLNS" version="1.0.0.54" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vEEN5QvuHmoHE3b0l7BNiiD5/I4=</dsig:DigestValue>
+        <dsig:DigestValue>onw2IGx7EitMiR9SVUb80ZnKeYg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

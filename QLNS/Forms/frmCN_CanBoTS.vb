@@ -978,17 +978,31 @@
             Return False
         End If
 
-        'Băt điều kiện - Trùng mã cán bộ tập sự
+        'Băt điều kiện - Trùng mã cán bộ tập sự => Từ 2024 bổ sung kiểm tra trùng với mã CB cả HS_CanBo
         If (edt_macb.Text.Trim() <> "") Then
             If (_IdCanBo <> "") Then
-                strSQL = String.Format("Select * From HSCB_TS Where MaCB = '{0}' and Id <> '{1}'", Globals.Find_Replace(edt_macb.Text.Trim().ToString()), _IdCanBo)
+                strSQL = String.Format("Select Id IdCanBo,MaCB,HoTen,IdChiNhanh,NgaySinh,CMT_So From HSCB_TS Where MaCB = '{0}' and Id <> '{1}' Union Select IdCanBo,MaCB,HoTen,IdDonVi IdChiNhanh,NgaySinh,CMT_So From HS_CanBo Where MaCB = '{0}' ", Globals.Find_Replace(edt_macb.Text.Trim().ToString()), _IdCanBo)
             Else
-                strSQL = String.Format("Select * From HSCB_TS Where MaCB = '{0}'", Globals.Find_Replace(edt_macb.Text.Trim().ToString()))
+                strSQL = String.Format("Select Id IdCanBo,MaCB,HoTen,IdChiNhanh,NgaySinh,CMT_So From HSCB_TS Where MaCB = '{0}' Union Select IdCanBo,MaCB,HoTen,IdDonVi IdChiNhanh,NgaySinh,CMT_So From HS_CanBo Where MaCB = '{0}' ", Globals.Find_Replace(edt_macb.Text.Trim().ToString()))
             End If
             Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                 If Not (db Is Nothing) Then
                     If (db.Rows.Count > 0) Then
-                        MessageBox.Show(String.Format("Mã cán bộ: '{0}' đã tồn tại. Vui lòng kiểm tra lại!", edt_macb.Text.Trim().ToString()), "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+                        'Lấy dẫy số mã cán bộ theo quy định để cho người dùng cập nhật
+                        Dim sCodeByBranch As String = ""
+                        If DONVI = "000100" Or DONVI = "000101" Or DONVI = "000196" Or DONVI = "000197" Then
+                            strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So = '{0}' Order By Id", DONVI)
+                        Else
+                            strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So Like '{0}%' Order By Id", DONVI.Substring(0, 4))
+                        End If
+                        Dim db_cn As DataTable = Nothing
+                        db_cn = _SqlHelper.SelectDBRows(strSQL)
+                        If Not (db_cn Is Nothing) Then
+                            If db_cn.Rows.Count > 0 Then
+                                sCodeByBranch = db_cn.Rows(0)("MaCB_Begin").ToString().Trim() + " => " + db_cn.Rows(0)("MaCB_End").ToString().Trim()
+                            End If
+                        End If
+                        MessageBox.Show(String.Format("Mã cán bộ: '{0}' đã tồn tại, vui lòng nhập mã cán bộ bằng một số khác trong dẫy số '{1}' theo đơn vị '{2}'. Vui lòng kiểm tra lại!", edt_macb.Text.Trim().ToString(), sCodeByBranch, BrandNameByUserLogin), "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
                         ActiveControl = edt_macb
                         Return False
                     End If

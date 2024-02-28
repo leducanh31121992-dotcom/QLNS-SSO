@@ -1222,7 +1222,21 @@
                         'End Using
                         edt_macb.Text = formatLenString(5, edt_macb.Text.Trim)
                         If checkMaCanBo(arr_Donvi(cb_donvi.SelectedIndex), _IdCanBo, edt_macb.Text) = 0 Then
-                            erpd_main.SetError(edt_macb, "Mã cán bộ đã tồn tại/Hoặc không đúng theo quy định của QĐ số 1205/NHCS-TCCB. Vui lòng kiểm tra lại!")
+                            'Lấy dẫy số mã cán bộ theo quy định để cho người dùng cập nhật
+                            Dim sCodeByBranch As String = ""
+                            If DONVI = "000100" Or DONVI = "000101" Or DONVI = "000196" Or DONVI = "000197" Then
+                                strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So = '{0}' Order By Id", DONVI)
+                            Else
+                                strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So Like '{0}%' Order By Id", DONVI.Substring(0, 4))
+                            End If
+                            Dim db_cn As DataTable = Nothing
+                            db_cn = _SqlHelper.SelectDBRows(strSQL)
+                            If Not (db_cn Is Nothing) Then
+                                If db_cn.Rows.Count > 0 Then
+                                    sCodeByBranch = db_cn.Rows(0)("MaCB_Begin").ToString().Trim() + " => " + db_cn.Rows(0)("MaCB_End").ToString().Trim()
+                                End If
+                            End If
+                            erpd_main.SetError(edt_macb, String.Format("Mã cán bộ '{0}' đã tồn tại, hãy nhập mã cán bộ khác thuộc một số trong dẫy số '{1}' theo đơn vị '{2}'. Vui lòng kiểm tra lại!", edt_macb.Text, sCodeByBranch, BrandNameByUserLogin))
                             ActiveControl = edt_macb
                             Return False
                         End If
@@ -4952,8 +4966,22 @@
             'End Using
             edt_macb.Text = formatLenString(5, edt_macb.Text.Trim)
             If cb_donvi.SelectedIndex >= 0 AndAlso checkMaCanBo(arr_Donvi(cb_donvi.SelectedIndex), _IdCanBo, edt_macb.Text) = 0 Then
-                erpd_main.SetError(edt_macb, "Mã cán bộ không được trùng nhau. Vui lòng kiểm tra lại!")
-                edt_macb.Focus()
+                'Lấy dẫy số mã cán bộ theo quy định để cho người dùng cập nhật
+                Dim sCodeByBranch As String = ""
+                If DONVI = "000100" Or DONVI = "000101" Or DONVI = "000196" Or DONVI = "000197" Then
+                    strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So = '{0}' Order By Id", DONVI)
+                Else
+                    strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So Like '{0}%' Order By Id", DONVI.Substring(0, 4))
+                End If
+                Dim db_cn As DataTable = Nothing
+                db_cn = _SqlHelper.SelectDBRows(strSQL)
+                If Not (db_cn Is Nothing) Then
+                    If db_cn.Rows.Count > 0 Then
+                        sCodeByBranch = db_cn.Rows(0)("MaCB_Begin").ToString().Trim() + " => " + db_cn.Rows(0)("MaCB_End").ToString().Trim()
+                    End If
+                End If
+                erpd_main.SetError(edt_macb, String.Format("Mã cán bộ '{0}' đã tồn tại, hãy nhập mã cán bộ khác thuộc một số trong dẫy số '{1}' theo đơn vị '{2}'. Vui lòng kiểm tra lại!", edt_macb.Text, sCodeByBranch, BrandNameByUserLogin))
+                ActiveControl = edt_macb
             Else
                 erpd_main.SetError(edt_macb, "")
             End If
