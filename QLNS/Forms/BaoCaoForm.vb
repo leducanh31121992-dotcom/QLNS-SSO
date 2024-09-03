@@ -440,11 +440,11 @@ Public Class BaoCaoForm
                 sFileNameEx = "BC_MangLuoiLD_07_TCCB" + "Thang_" + iThangBC.ToString("D2") + iNamBC.ToString("D4") + "_" + _DateReportTMP.ToString("ddMMyyyy") + "_" + sAutoNumber + ".xlsx"
                 sColNameEnd = "S"
                 _LapBieu_1 = "A"
-                _LapBieu_2 = "D"
+                _LapBieu_2 = "E"
                 _KiemSoat_1 = "F"
-                _KiemSoat_2 = "L"
-                _GiamDoc_1 = "M"
-                _GiamDoc_2 = "S"
+                _KiemSoat_2 = "M"
+                _GiamDoc_1 = "N"
+                _GiamDoc_2 = "T"
                 If (_IdDonVi <> 0) And Not (db_report Is Nothing) Then
                     sBranchName = db_report.Rows(0)("TenChiNhanh_HT").ToString().ToUpper()
                 End If

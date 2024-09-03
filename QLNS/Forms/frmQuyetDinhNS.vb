@@ -414,8 +414,9 @@
                     txtSoQD.Text = txtSoQD.Text.Replace("_", "-")
                 End If
             End If
-            If dpkNgayHL.Value.Date > Now.Date Then
-                strReturn = "Ngày hiệu lực phải nhỏ hơn hoặc bằng ngày hiện tại. Hãy nhập lại!"
+
+            If dpkNgayHL.Value.Date > DateTime.Now.AddDays(30).Date Then
+                strReturn = "Ngày hiệu lực của quyết định không được vượt quá 30 ngày so với ngày hiện tại. Vui lòng kiểm tra lại!"
                 dpkNgayHL.Focus()
                 Exit Try
             End If
