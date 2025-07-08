@@ -45,7 +45,8 @@ Public Class clsHT_DanhMuc
     Public Const Sql_Hocvi As String = "Select Id,Ten_Goi From DanhMuc Where id_goc = 20 and Status = 1 Order by Ma_so Asc"
 
     'Danh sanh địa danh - Tỉnh (Thành phố) trong toàn quốc --> Tham chiếu tới bảng địa danh với điều kiện id_goc = 0
-    Public Const Sql_TinhTP As String = "Select Id,Ten_Goi From DiaDanh Where id_goc = 0 and Status = 1 Order by ten_goi Asc"
+    'Public Const Sql_TinhTP As String = "Select Id,Ten_Goi From DiaDanh Where id_goc = 0 and Status = 1 Order by Ten_Goi Asc"
+    Public Const Sql_TinhTP As String = "Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa = '00' And Ma_Thon = '00' And TrangThai = 'A' Order by Ma_Tinh Asc"
 
     'Danh mục chức vụ trong cơ quan --> Tham chiếu tới bảng danh mục với id_goc = 14
     Public Const Sql_Chucvu As String = "Select Id,Ten_Goi From DanhMuc Where id_goc = 14 and Status = 1 Order by ten_goi Asc"

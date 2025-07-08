@@ -83,19 +83,27 @@
 
         lbl_ns_tinh.Text = ""
         lbl_ns_huyen.Text = ""
+        lbl_ns_xa.Text = ""
+        lbl_ns_thon.Text = ""
         lbl_ns_diachi.Text = ""
 
         lbl_nq_tinh.Text = ""
         lbl_nq_huyen.Text = ""
+        lbl_nq_xa.Text = ""
+        lbl_nq_thon.Text = ""
         lbl_nq_diachi.Text = ""
 
         lbl_tt_tinh.Text = ""
         lbl_tt_huyen.Text = ""
+        lbl_tt_xa.Text = ""
+        lbl_tt_thon.Text = ""
         lbl_tt_diachi.Text = ""
         lbl_tt_dienthoai.Text = ""
 
         lbl_ttr_tinh.Text = ""
         lbl_ttr_huyen.Text = ""
+        lbl_ttr_xa.Text = ""
+        lbl_ttr_thon.Text = ""
         lbl_ttr_diachi.Text = ""
         lbl_ttr_dienthoai.Text = ""
 
@@ -204,34 +212,61 @@
                 End If
 
                 If (dr("IdNS_Tinh").ToString() <> "" And dr("IdNS_Tinh").ToString() <> "0") Then
-                    lbl_ns_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc = 0 and Status = 1", CType(dr("IdNS_Tinh").ToString(), Integer)))
+                    lbl_ns_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Id={0} Order By TrangThai", CType(dr("IdNS_Tinh").ToString(), Int32)))
                 End If
                 If (dr("IdNS_Huyen").ToString() <> "" And dr("IdNS_Huyen").ToString() <> "0") Then
-                    lbl_ns_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdNS_Huyen").ToString(), Integer)))
+                    'lbl_ns_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdNS_Huyen").ToString(), Integer)))
+                End If
+                If (dr("IdNS_Xa").ToString() <> "" And dr("IdNS_Xa").ToString() <> "0") Then
+                    lbl_ns_xa.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon='00' And Id = {0} Order By TrangThai", CType(dr("IdNS_Xa").ToString(), Int32)))
+                End If
+                If (dr("IdNS_Thon").ToString() <> "" And dr("IdNS_Thon").ToString() <> "0") Then
+                    lbl_ns_thon.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon<>'00' And Id = {0} Order By TrangThai", CType(dr("IdNS_Thon").ToString(), Int32)))
                 End If
                 lbl_ns_diachi.Text = dr("NS_DiaChi").ToString().Trim()
+
+
                 If (dr("IdNQ_Tinh").ToString() <> "" And dr("IdNQ_Tinh").ToString() <> "0") Then
-                    lbl_nq_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc = 0 and Status = 1", CType(dr("IdNQ_Tinh").ToString(), Integer)))
+                    lbl_nq_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Id={0} Order By TrangThai", CType(dr("IdNQ_Tinh").ToString(), Int32)))
                 End If
                 If (dr("IdNQ_Huyen").ToString() <> "" And dr("IdNQ_Huyen").ToString() <> "0") Then
-                    lbl_nq_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdNQ_Huyen").ToString(), Integer)))
+                    'lbl_nq_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdNQ_Huyen").ToString(), Integer)))
+                End If
+                If (dr("IdNQ_Xa").ToString() <> "" And dr("IdNQ_Xa").ToString() <> "0") Then
+                    lbl_nq_xa.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon='00' And Id = {0} Order By TrangThai", CType(dr("IdNQ_Xa").ToString(), Int32)))
+                End If
+                If (dr("IdNQ_Thon").ToString() <> "" And dr("IdNQ_Thon").ToString() <> "0") Then
+                    lbl_nq_thon.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon<>'00' And Id = {0} Order By TrangThai", CType(dr("IdNQ_Thon").ToString(), Int32)))
                 End If
                 lbl_nq_diachi.Text = dr("NQ_DiaChi").ToString().Trim()
 
+
                 If (dr("IdThT_Tinh").ToString() <> "" And dr("IdThT_Tinh").ToString() <> "0") Then
-                    lbl_tt_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc = 0 and Status = 1", CType(dr("IdThT_Tinh").ToString(), Integer)))
+                    lbl_tt_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Id={0} Order By TrangThai", CType(dr("IdThT_Tinh").ToString(), Int32)))
                 End If
                 If (dr("IdThT_Huyen").ToString() <> "" And dr("IdThT_Huyen").ToString() <> "0") Then
-                    lbl_tt_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdThT_Huyen").ToString(), Integer)))
+                    'lbl_tt_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdThT_Huyen").ToString(), Integer)))
+                End If
+                If (dr("IdThT_Xa").ToString() <> "" And dr("IdThT_Xa").ToString() <> "0") Then
+                    lbl_tt_xa.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon='00' And Id = {0} Order By TrangThai", CType(dr("IdThT_Xa").ToString(), Int32)))
+                End If
+                If (dr("IdThT_Thon").ToString() <> "" And dr("IdThT_Thon").ToString() <> "0") Then
+                    lbl_tt_thon.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon<>'00' And Id = {0} Order By TrangThai", CType(dr("IdThT_Thon").ToString(), Int32)))
                 End If
                 lbl_tt_diachi.Text = dr("ThT_Diachi").ToString().Trim()
                 lbl_tt_dienthoai.Text = dr("ThT_Dienthoai").ToString().Trim()
 
                 If (dr("IdTTr_Tinh").ToString() <> "" And dr("IdTTr_Tinh").ToString() <> "0") Then
-                    lbl_ttr_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc = 0 and Status = 1", CType(dr("IdTTr_Tinh").ToString(), Integer)))
+                    lbl_ttr_tinh.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Id={0} Order By TrangThai", CType(dr("IdTTr_Tinh").ToString(), Int32)))
                 End If
                 If (dr("IdTTr_Huyen").ToString() <> "" And dr("IdTTr_Huyen").ToString() <> "0") Then
-                    lbl_ttr_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdTTr_Huyen").ToString(), Integer)))
+                    'lbl_ttr_huyen.Text = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", CType(dr("IdTTr_Huyen").ToString(), Integer)))
+                End If
+                If (dr("IdTTr_Xa").ToString() <> "" And dr("IdTTr_Xa").ToString() <> "0") Then
+                    lbl_ttr_xa.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon='00' And Id = {0} Order By TrangThai", CType(dr("IdTTr_Xa").ToString(), Int32)))
+                End If
+                If (dr("IdTTr_Thon").ToString() <> "" And dr("IdTTr_Thon").ToString() <> "0") Then
+                    lbl_ttr_thon.Text = _HS_CanBo.GetNameByCode(String.Format("Select Top 1 Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon<>'00' And Id = {0} Order By TrangThai", CType(dr("IdTTr_Thon").ToString(), Int32)))
                 End If
                 lbl_ttr_diachi.Text = dr("TTr_Diachi").ToString().Trim()
                 lbl_ttr_dienthoai.Text = dr("TTr_Dienthoai").ToString().Trim()

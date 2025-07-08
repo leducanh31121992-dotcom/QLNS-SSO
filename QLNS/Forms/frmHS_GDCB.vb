@@ -9,7 +9,7 @@
     'Khai báo mảng lưu danh sách các bản ghi - của dữ liệu fill ra combobox
     Private arrQuanHe As ArrayList = New ArrayList 'Tên gọi vụ tai nạn
     Private arrQueQuan As ArrayList = New ArrayList
-    Private arrHuyen As ArrayList = New ArrayList
+    Private arrXaPhuong As ArrayList = New ArrayList
     Private arrQuocTich As ArrayList = New ArrayList
     Private arrUtBanThan As ArrayList = New ArrayList
     Private arrThVien As ArrayList = New ArrayList
@@ -43,54 +43,7 @@
 #End Region
 
 #Region "---> Functions main: Các hàm chính <---"
-    ''' <summary>
-    ''' Hàm trả về địa chỉ đầy đủ của thành viên trong gia đình cán bộ
-    ''' </summary>
-    ''' <param name="_IdHuyen">Chỉ số xác định Quận - Huyện</param>
-    ''' <param name="_Address">Chuỗi ghi địa chỉ (Chưa đủ về cấp tỉnh và huyện)</param>
-    ''' <returns>Địa chỉ đầy đủ chi tiết</returns>
-    ''' <remarks></remarks>
-    Private Function GetAddress(ByVal _IdHuyen As Integer, ByVal _Address As String) As String
-        Dim _result As String = ""
-        Dim _HuyenName As String = ""
-        Dim _TinhName As String = ""
-        If (_IdHuyen > 0) Then
-            strSQL = String.Format("Select * from DiaDanh Where Status = 1 and id_goc <> 0 and id = {0}", _IdHuyen)
-            Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
-                If Not (db Is Nothing) Then
-                    If (db.Rows.Count > 0) Then
-                        _HuyenName = db.Rows(0)("ten_goi").ToString()
-                        strSQL = String.Format("Select * from DiaDanh Where Status = 1 and id_goc = 0 and id = {0}", CType(db.Rows(0)("id_goc").ToString(), Integer))
-                        Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
-                            If Not (_db Is Nothing) Then
-                                If (_db.Rows.Count > 0) Then
-                                    _TinhName = _db.Rows(0)("ten_goi").ToString()
-                                End If
-                            End If
-                        End Using
-                    End If
-                End If
-            End Using
-        End If
 
-        If (_Address <> "") Then
-            _result = _Address
-        End If
-        If (_HuyenName <> "") Then
-            _result += " - " & _HuyenName
-        End If
-        If (_TinhName <> "") Then
-            _result += " - " & _TinhName
-        End If
-        _result += " - "
-        If (_result.Substring(0, 3) = " - ") Then
-            _result = _result.Substring(3)
-        End If
-        If (_result.EndsWith(" - ")) Then
-            _result = _result.Substring(0, _result.Length - 3)
-        End If
-        Return _result.Trim()
-    End Function
 
     ''' <summary>
     ''' Hàm thực hiện reset các controls - 
@@ -448,9 +401,9 @@
                     ActiveControl = cb_gdcb_quequan
                     Return False
                 End If
-                If (cb_gdcb_huyen.SelectedIndex <= 0 And cb_gdcb_huyen.Items.Count <> 0) Then
+                If (cb_gdcb_xaphuong.SelectedIndex <= 0 And cb_gdcb_xaphuong.Items.Count <> 0) Then
                     MessageBox.Show("Bạn chưa chọn quê quán (quận - huyện) của thành viên trong gia đình cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
-                    ActiveControl = cb_gdcb_huyen
+                    ActiveControl = cb_gdcb_xaphuong
                     Return False
                 End If
 
@@ -764,17 +717,17 @@
                         cb_gdcb_quanhe.SelectedIndex = IIf(dr("IdQuanHe").ToString() <> "", CType(arrQuanHe.IndexOf(dr("IdQuanHe").ToString()), Integer), 0)
                         cb_gdcb_quoctich.SelectedIndex = IIf(dr("IdQuocGia").ToString() <> "", CType(arrQuocTich.IndexOf(dr("IdQuocGia").ToString()), Integer), 0)
 
-                        Dim _IdHuyen As Integer = IIf(dr("IdQueQuan").ToString() <> "", CType(dr("IdQueQuan").ToString(), Integer), 0)
+                        Dim _IdXaPhuong As Integer = IIf(dr("IdQueQuan").ToString() <> "", CType(dr("IdQueQuan").ToString(), Integer), 0)
                         Dim _IdTTP As Integer = 0
-                        If (_IdHuyen <= 0) Then
+                        If (_IdXaPhuong <= 0) Then
                             cb_gdcb_quequan.SelectedIndex = 0
                             cb_gdcb_quequan_SelectedIndexChanged(Nothing, Nothing)
                         Else
-                            strSQL = String.Format("Select * from DiaDanh Where Status = 1 and id_goc <> 0 and id = {0}", _IdHuyen)
+                            strSQL = String.Format("Select A.* From Dm_DiaPhuong A Where A.Ma_Xa='00' And A.Ma_Thon='00' And A.Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By X.TrangThai) Order By A.TrangThai", _IdXaPhuong)
                             Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                                 If Not (db Is Nothing) Then
                                     If (db.Rows.Count > 0) Then
-                                        _IdTTP = CType(db.Rows(0)("id_goc").ToString(), Integer)
+                                        _IdTTP = CType(db.Rows(0)("Id").ToString(), Integer)
                                     End If
                                 End If
                             End Using
@@ -782,7 +735,7 @@
                         cb_gdcb_quequan.SelectedIndex = IIf(_IdTTP > 0, CType(arrQueQuan.IndexOf(_IdTTP.ToString()), Integer), 0)
                         cb_gdcb_quequan_SelectedIndexChanged(Nothing, Nothing)
                         If (dr("IdQueQuan").ToString() <> "") Then
-                            cb_gdcb_huyen.SelectedIndex = CType(arrHuyen.IndexOf(dr("IdQueQuan").ToString()), Integer)
+                            cb_gdcb_xaphuong.SelectedIndex = CType(arrXaPhuong.IndexOf(dr("IdQueQuan").ToString()), Integer)
                         End If
                         edt_gdcb_nghenghiep.Text = dr("NgheNghiep").ToString().Trim()
                         edt_gdcb_dienthoai.Text = dr("DienThoai").ToString().Trim()
@@ -1054,13 +1007,13 @@
     End Sub
 
     Private Sub cb_gdcb_quequan_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_gdcb_quequan.SelectedIndexChanged
-        cb_gdcb_huyen.Items.Clear()
-        arrHuyen.Clear()
+        cb_gdcb_xaphuong.Items.Clear()
+        arrXaPhuong.Clear()
         If (cb_gdcb_quequan.SelectedIndex > 0 And cb_gdcb_quequan.Items.Count <> 0) Then
             Dim _Id_TTP As Integer = CType(arrQueQuan(IIf(cb_gdcb_quequan.SelectedIndex > 0, cb_gdcb_quequan.SelectedIndex, "0")), Integer)
             If _Id_TTP > 0 Then
-                Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh Where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
-                arrHuyen = _Globals.Bind_ComBoBox(cb_gdcb_huyen, strSQL, "---Quận - huyện---")
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _Id_TTP)
+                arrXaPhuong = _Globals.Bind_ComBoBox(cb_gdcb_xaphuong, strSQL, "--- Xã/Phường ---")
             End If
         End If
     End Sub
@@ -1365,17 +1318,17 @@
                             If (dr.Table.Rows.Count > 0) Then
                                 cb_gdcb_quoctich.SelectedIndex = IIf(dr("IdQuocGia").ToString() <> "", CType(arrQuocTich.IndexOf(dr("IdQuocGia").ToString()), Integer), 0)
                                 'Lấy lại thông tin địa chỉ của một thành viên trước đó
-                                Dim _IdHuyen As Integer = IIf(dr("IdQueQuan").ToString() <> "", CType(dr("IdQueQuan").ToString(), Integer), 0)
+                                Dim _IdXaPhuong As Integer = IIf(dr("IdQueQuan").ToString() <> "", CType(dr("IdQueQuan").ToString(), Integer), 0)
                                 Dim _IdTTP As Integer = 0
-                                If (_IdHuyen <= 0) Then
+                                If (_IdXaPhuong <= 0) Then
                                     cb_gdcb_quequan.SelectedIndex = 0
                                     cb_gdcb_quequan_SelectedIndexChanged(sender, Nothing)
                                 Else
-                                    strSQL = String.Format("Select * from DiaDanh Where Status = 1 and id_goc <> 0 and id = {0}", _IdHuyen)
+                                    strSQL = String.Format("Select A.* From Dm_DiaPhuong A Where A.Ma_Xa='00' And A.Ma_Thon='00' And A.Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By X.TrangThai) Order By A.TrangThai", _IdXaPhuong)
                                     Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                                         If Not (db Is Nothing) Then
                                             If (db.Rows.Count > 0) Then
-                                                _IdTTP = CType(db.Rows(0)("id_goc").ToString(), Integer)
+                                                _IdTTP = CType(db.Rows(0)("Id").ToString(), Integer)
                                             End If
                                         End If
                                     End Using
@@ -1383,7 +1336,7 @@
                                 cb_gdcb_quequan.SelectedIndex = IIf(_IdTTP > 0, CType(arrQueQuan.IndexOf(_IdTTP.ToString()), Integer), 0)
                                 cb_gdcb_quequan_SelectedIndexChanged(sender, Nothing)
                                 If (dr("IdQueQuan").ToString() <> "") Then
-                                    cb_gdcb_huyen.SelectedIndex = CType(arrHuyen.IndexOf(dr("IdQueQuan").ToString()), Integer)
+                                    cb_gdcb_xaphuong.SelectedIndex = CType(arrXaPhuong.IndexOf(dr("IdQueQuan").ToString()), Integer)
                                 End If
                                 edt_gdcb_diachi.Text = dr("DiaChi").ToString().Trim()
                             End If
@@ -1396,8 +1349,8 @@
                             cb_gdcb_quoctich.SelectedIndex = IIf(dr("IdQuocTich").ToString() <> "", CType(arrQuocTich.IndexOf(dr("IdQuocTich").ToString()), Integer), 0)
                             cb_gdcb_quequan.SelectedIndex = IIf(dr("IdNS_Tinh").ToString() <> "", CType(arrQueQuan.IndexOf(dr("IdNS_Tinh").ToString()), Integer), 0)
                             cb_gdcb_quequan_SelectedIndexChanged(sender, Nothing)
-                            If (dr("IdNS_Huyen").ToString() <> "") Then
-                                cb_gdcb_huyen.SelectedIndex = CType(arrHuyen.IndexOf(dr("IdNS_Huyen").ToString()), Integer)
+                            If (dr("IdNS_Xa").ToString() <> "") Then
+                                cb_gdcb_xaphuong.SelectedIndex = CType(arrXaPhuong.IndexOf(dr("IdNS_Xa").ToString()), Integer)
                             End If
                             edt_gdcb_diachi.Text = dr("NS_DChi").ToString().Trim()
                         End If
@@ -1501,7 +1454,7 @@
                         obj_gdcb.LyDo_Mat = Globals.Find_Replace(edt_gdcb_lydo.Text.ToString().Trim())
                     End If
                     obj_gdcb.IdUT_BThan = CType(IIf(arrUtBanThan.Count > 0, arrUtBanThan(cb_gdcb_utbanthan.SelectedIndex), "0"), Integer)
-                    obj_gdcb.IdQueQuan = CType(IIf(arrHuyen.Count > 0, arrHuyen(cb_gdcb_huyen.SelectedIndex), "0"), Integer)
+                    obj_gdcb.IdQueQuan = CType(IIf(arrXaPhuong.Count > 0, arrXaPhuong(cb_gdcb_xaphuong.SelectedIndex), "0"), Integer)
                     obj_gdcb.DienThoai = Globals.Find_Replace(edt_gdcb_dienthoai.Text.ToString().Trim())
                     obj_gdcb.DiaChi = Globals.Find_Replace(edt_gdcb_diachi.Text.ToString().Trim())
                     obj_gdcb.IdQuocGia = CType(IIf(arrQuocTich.Count > 0, arrQuocTich(cb_gdcb_quoctich.SelectedIndex), "0"), Integer)
@@ -2201,29 +2154,29 @@
 
     Private Sub cb_gdcb_quanhe_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cb_gdcb_quanhe.SelectedIndexChanged
         If (_RecordId = "" And cb_gdcb_quanhe.SelectedIndex <> 0) Then
-            Dim dc As String = ""
+            Dim sDiaChiTmp As String = ""
             Dim IDTV As String = ""
-            Dim Id_dc_tinh, Id_dc_huyen, Id_QuocTich As Integer
+            Dim iId_Dc_Tinh, iId_Dc_XaPhuong, Id_QuocTich As Integer
             Dim db As DBAccess = New DBAccess
             Dim dt As DataTable
             Select Case arrQuanHe(cb_gdcb_quanhe.SelectedIndex)  'CType(arrQuanHe.IndexOf(dr("IdQuanHe").ToString())
                 Case 463, 458, 460, 459  ' lay theo ca nhan
-                    dt = db.SelectDBRows("SELECT IdThT_Tinh, IdThT_huyen,ThT_DiaChi, IdQuocTich FROM HS_CanBo WHERE IDCanBo='" & _IdCanBo & "'")
+                    dt = db.SelectDBRows("SELECT IdThT_Tinh, IdThT_Xa,ThT_DiaChi, IdQuocTich FROM HS_CanBo WHERE IDCanBo='" & _IdCanBo & "'")
                     If dt.Rows.Count > 0 Then
-                        dc = dt.Rows(0).Item("ThT_DiaChi")
-                        Id_dc_tinh = dt.Rows(0).Item("IdThT_Tinh")
-                        Id_dc_huyen = dt.Rows(0).Item("IdThT_huyen")
+                        sDiaChiTmp = dt.Rows(0).Item("ThT_DiaChi")
+                        iId_Dc_Tinh = dt.Rows(0).Item("IdThT_Tinh")
+                        iId_Dc_XaPhuong = dt.Rows(0).Item("IdThT_Xa")
                         Id_QuocTich = dt.Rows(0).Item("IdQuocTich")
                     End If
                 Case 450, 466, 451, 462, 461  'lay theo dia chi cua bo
-                    IDTV = db.getString(" SELECT IdTVien FROM HS_GDCB WHERE IdCanBo='" & _IdCanBo & "' and IdQuanhe=449")
+                    IDTV = db.getString(" SELECT IdTVien FROM HS_GDCB WHERE IdCanBo='" & _IdCanBo & "' And IdQuanhe = 449")
                     If IDTV <> "" Then
                         dt = db.SelectDBRows("SELECT IdQueQuan, DiaChi, IdQuocGia FROM HS_GDCB WHERE IdTVien='" & IDTV & "'")
                         If dt.Rows.Count > 0 Then
-                            dc = dt.Rows(0).Item("DiaChi")
-                            Id_dc_huyen = dt.Rows(0).Item("IdQueQuan")
+                            sDiaChiTmp = dt.Rows(0).Item("DiaChi")
+                            iId_Dc_XaPhuong = dt.Rows(0).Item("IdQueQuan")
                             Id_QuocTich = dt.Rows(0).Item("IdQuocGia")
-                            Id_dc_tinh = db.getNumber("Select id_goc from DiaDanh Where Status = 1 and id_goc <> 0 and id =" & Id_dc_huyen)
+                            iId_Dc_Tinh = db.getNumber(String.Format("Select Id From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By TrangThai)", iId_Dc_XaPhuong))
                         End If
                     End If
                 Case 448, 455, 454, 453, 467 ' lay theo dia chi ong noi
@@ -2231,10 +2184,10 @@
                     If IDTV <> "" Then
                         dt = db.SelectDBRows("SELECT IdQueQuan, DiaChi, IdQuocGia FROM HS_GDCB WHERE IdTVien='" & IDTV & "'")
                         If dt.Rows.Count > 0 Then
-                            dc = dt.Rows(0).Item("DiaChi")
-                            Id_dc_huyen = dt.Rows(0).Item("IdQueQuan")
+                            sDiaChiTmp = dt.Rows(0).Item("DiaChi")
+                            iId_Dc_XaPhuong = dt.Rows(0).Item("IdQueQuan")
                             Id_QuocTich = dt.Rows(0).Item("IdQuocGia")
-                            Id_dc_tinh = db.getNumber("Select id_goc from DiaDanh Where Status = 1 and id_goc <> 0 and id =" & Id_dc_huyen)
+                            iId_Dc_Tinh = db.getNumber(String.Format("Select Id From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By TrangThai)", iId_Dc_XaPhuong))
                         End If
                     End If
                 Case 695, 457, 452, 456  ' lay theo dia chi ong ngoai
@@ -2242,10 +2195,10 @@
                     If IDTV <> "" Then
                         dt = db.SelectDBRows("SELECT IdQueQuan, DiaChi, IdQuocGia FROM HS_GDCB WHERE IdTVien='" & IDTV & "'")
                         If dt.Rows.Count > 0 Then
-                            dc = dt.Rows(0).Item("DiaChi")
-                            Id_dc_huyen = dt.Rows(0).Item("IdQueQuan")
+                            sDiaChiTmp = dt.Rows(0).Item("DiaChi")
+                            iId_Dc_XaPhuong = dt.Rows(0).Item("IdQueQuan")
                             Id_QuocTich = dt.Rows(0).Item("IdQuocGia")
-                            Id_dc_tinh = db.getNumber("Select id_goc from DiaDanh Where Status = 1 and id_goc <> 0 and id =" & Id_dc_huyen)
+                            iId_Dc_Tinh = db.getNumber(String.Format("Select Id From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By TrangThai)", iId_Dc_XaPhuong))
                         End If
                     End If
                 Case 471, 475, 476, 477  ' lay theo dia chi bo chong
@@ -2253,10 +2206,10 @@
                     If IDTV <> "" Then
                         dt = db.SelectDBRows("SELECT IdQueQuan, DiaChi, IdQuocGia FROM HS_GDCB WHERE IdTVien='" & IDTV & "'")
                         If dt.Rows.Count > 0 Then
-                            dc = dt.Rows(0).Item("DiaChi")
-                            Id_dc_huyen = dt.Rows(0).Item("IdQueQuan")
+                            sDiaChiTmp = dt.Rows(0).Item("DiaChi")
+                            iId_Dc_XaPhuong = dt.Rows(0).Item("IdQueQuan")
                             Id_QuocTich = dt.Rows(0).Item("IdQuocGia")
-                            Id_dc_tinh = db.getNumber("Select id_goc from DiaDanh Where Status = 1 and id_goc <> 0 and id =" & Id_dc_huyen)
+                            iId_Dc_Tinh = db.getNumber(String.Format("Select Id From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By TrangThai)", iId_Dc_XaPhuong))
                         End If
                     End If
                 Case 469, 472, 473, 474  ' lay theo dia chi bo vo
@@ -2264,20 +2217,20 @@
                     If IDTV <> "" Then
                         dt = db.SelectDBRows("SELECT IdQueQuan, DiaChi, IdQuocGia FROM HS_GDCB WHERE IdTVien='" & IDTV & "'")
                         If dt.Rows.Count > 0 Then
-                            dc = dt.Rows(0).Item("DiaChi")
-                            Id_dc_huyen = dt.Rows(0).Item("IdQueQuan")
+                            sDiaChiTmp = dt.Rows(0).Item("DiaChi")
+                            iId_Dc_XaPhuong = dt.Rows(0).Item("IdQueQuan")
                             Id_QuocTich = dt.Rows(0).Item("IdQuocGia")
-                            Id_dc_tinh = db.getNumber("Select id_goc from DiaDanh Where Status = 1 and id_goc <> 0 and id =" & Id_dc_huyen)
+                            iId_Dc_Tinh = db.getNumber(String.Format("Select Id From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Ma_Xa<>'00' And X.Ma_Thon='00' And X.Id={0} Order By TrangThai)", iId_Dc_XaPhuong))
                         End If
                     End If
                 Case Else
                     Id_QuocTich = 0
             End Select
             If Id_QuocTich <> 0 Then
-                edt_gdcb_diachi.Text = dc
+                edt_gdcb_diachi.Text = sDiaChiTmp
                 cb_gdcb_quoctich.SelectedIndex = CType(arrQuocTich.IndexOf(Id_QuocTich.ToString()), Integer)
-                cb_gdcb_quequan.SelectedIndex = CType(arrQueQuan.IndexOf(Id_dc_tinh.ToString()), Integer)
-                cb_gdcb_huyen.SelectedIndex = CType(arrHuyen.IndexOf(Id_dc_huyen.ToString()), Integer)
+                cb_gdcb_quequan.SelectedIndex = CType(arrQueQuan.IndexOf(iId_Dc_Tinh.ToString()), Integer)
+                cb_gdcb_xaphuong.SelectedIndex = CType(arrXaPhuong.IndexOf(iId_Dc_XaPhuong.ToString()), Integer)
             End If
         End If
     End Sub

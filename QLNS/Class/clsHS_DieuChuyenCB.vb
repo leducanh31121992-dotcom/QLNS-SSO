@@ -542,10 +542,10 @@ Public Class QDNhanSu
         End Try
     End Function
 
-    Public Function getAllByCanbo(ByVal vIdCanbo As String) As IList
+    Public Function getAllByCanbo(ByVal vIdCanBo As String) As IList
         Try
             Dim strSql As String
-            strSql = "SELECT * FROM QDNhanSu WHERE idCanbo='" & vIdCanbo.Trim & "' order by NgayHL desc"
+            strSql = "Select * From QDNhanSu Where IdCanBo='" & vIdCanBo.Trim & "' Order by NgayHL Desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Return init(cmd)
@@ -554,20 +554,21 @@ Public Class QDNhanSu
         End Try
     End Function
 
-    Public Function getFinalRecord(ByVal vIdCanbo As String, Optional ByVal vNgayHL As Date = Nothing, Optional ByVal vIsQD_NHCS As Boolean = False, Optional ByVal vIsNotQDCachChuc As Boolean = False, Optional ByVal vIsKiemNhiem As Boolean = False) As QDNhanSu
+    Public Function getFinalRecord(ByVal vIdCanBo As String, Optional ByVal vNgayHL As Date = Nothing, Optional ByVal vIsQD_NHCS As Boolean = False, Optional ByVal vIsNotQDCachChuc As Boolean = False, Optional ByVal vIsKiemNhiem As Boolean = False) As QDNhanSu
         Try
             Dim strSql As String
             Dim strIsQD_NHCS As String = ""
-            Dim strIsKiemNhiem As String = " AND isKiemNhiem=0 "
+            Dim strIsKiemNhiem As String = " And IsKiemNhiem=0 "
             Dim strIsNotQDCachChuc As String = ""
-            If vIsNotQDCachChuc Then strIsNotQDCachChuc = " AND IDLoaiQD not in (SELECT id FROM DanhMuc WHERE ma_so='1510')"
-            If vIsQD_NHCS Then strIsQD_NHCS = " AND isQD_NHCS =1 "
-            If vIsKiemNhiem Then strIsKiemNhiem = " AND isKiemNhiem=1 "
-            Dim sNgayHL As String = vNgayHL.ToString("dd/MMM/yyyy", System.Globalization.CultureInfo.GetCultureInfo("en-US"))
+            If vIsNotQDCachChuc Then strIsNotQDCachChuc = " And IdLoaiQD Not In (Select X.Id From DanhMuc X Where X.Ma_So = '1510')"
+            If vIsQD_NHCS Then strIsQD_NHCS = " And isQD_NHCS = 1 "
+            If vIsKiemNhiem Then strIsKiemNhiem = " And IsKiemNhiem = 1 "
+            'Dim sNgayHL As String = vNgayHL.ToString("dd/MMM/yyyy", System.Globalization.CultureInfo.GetCultureInfo("en-US"))
+            Dim sNgayHL As String = vNgayHL.ToString("yyyy-MM-dd")
             If Not (vNgayHL = Nothing) Then
-                strSql = "SELECT TOP 1 * FROM QDNhanSu WHERE idCanbo='" & vIdCanbo.Trim & "' " & strIsQD_NHCS & strIsNotQDCachChuc & strIsKiemNhiem & " and datediff(day,ngayHL,'" & sNgayHL & "')>0 order by NgayHL desc"
+                strSql = "SELECT TOP 1 * From QDNhanSu Where IdCanBo='" & vIdCanBo.Trim & "' " & strIsQD_NHCS & strIsNotQDCachChuc & strIsKiemNhiem & " And DatedIff(Day,NgayHL,Cast('" & sNgayHL & "' As Date) ) > 0 Order By NgayHL Desc"
             Else
-                strSql = "SELECT TOP 1 * FROM QDNhanSu WHERE idCanbo='" & vIdCanbo.Trim & "' " & strIsQD_NHCS & strIsNotQDCachChuc & strIsKiemNhiem & "  order by NgayHL desc"
+                strSql = "SELECT TOP 1 * From QDNhanSu Where IdCanBo='" & vIdCanBo.Trim & "' " & strIsQD_NHCS & strIsNotQDCachChuc & strIsKiemNhiem & "  Order By NgayHL Desc"
             End If
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
@@ -586,7 +587,7 @@ Public Class QDNhanSu
     Public Function getRecord(ByVal vIdQDNhanSu As String) As QDNhanSu
         Try
             Dim strSql As String
-            strSql = "SELECT * FROM QDNhanSu WHERE IdQDNhanSu='" & vIdQDNhanSu.Trim & "'"
+            strSql = "Select * From QDNhanSu Where IdQDNhanSu = '" & vIdQDNhanSu.Trim & "'"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Dim list As IList
@@ -601,10 +602,11 @@ Public Class QDNhanSu
         End Try
     End Function
 
-    Public Function getID(ByVal vIdCanbo As String, ByVal vTuNgay As Date, ByVal vSoQD As String, ByVal vNgayQD As Date) As String
+    Public Function getID(ByVal vIdCanBo As String, ByVal vTuNgay As Date, ByVal vSoQD As String, ByVal vNgayQD As Date) As String
         Try
             Dim strSql As String
-            strSql = "SELECT IdQDNhanSu FROM QDNhanSu WHERE IdCanbo='" & vIdCanbo & "' and Datediff(day,NgayHL,'" & vTuNgay & "')=0 and So_QD=N'" & vSoQD & "' and NgayKy_QD='" & vNgayQD & "'"
+            Dim sTuNgay As String = vTuNgay.ToString("yyyy-MM-dd")
+            strSql = "SELECT IdQDNhanSu From QDNhanSu Where IdCanBo='" & vIdCanBo & "' And DatedIff(Day,NgayHL,Cast('" & sTuNgay & "' As Date) ) = 0 And So_QD = N'" & vSoQD & "' And NgayKy_QD = '" & vNgayQD & "'"
             Return db.getString(strSql)
         Catch ex As Exception
             Return ""
@@ -1073,10 +1075,10 @@ Public Class QuyHoachCB
         End Try
     End Function
 
-    Public Function getAllByCanbo(ByVal vIdCanbo As String) As IList
+    Public Function getAllByCanbo(ByVal vIdCanBo As String) As IList
         Try
             Dim strSql As String
-            strSql = "SELECT * FROM HS_QHCB WHERE idCanbo='" & vIdCanbo.Trim & "' Order by Nam_QH desc, Dot_QH desc"
+            strSql = "SELECT * FROM HS_QHCB WHERE IdCanBo='" & vIdCanBo.Trim & "' Order by Nam_QH desc, Dot_QH desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Return init(cmd)
@@ -1103,10 +1105,10 @@ Public Class QuyHoachCB
         End Try
     End Function
 
-    Public Function getFinalRecord(ByVal vIdCanbo As String) As QuyHoachCB
+    Public Function getFinalRecord(ByVal vIdCanBo As String) As QuyHoachCB
         Try
             Dim strSql As String
-            strSql = "SELECT TOP 1 * FROM HS_QHCB WHERE idCanbo='" & vIdCanbo.Trim & "' Order by Nam_QH desc, Dot_QH desc"
+            strSql = "SELECT TOP 1 * FROM HS_QHCB WHERE IdCanBo='" & vIdCanBo.Trim & "' Order by Nam_QH desc, Dot_QH desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Dim list As IList
@@ -1146,7 +1148,7 @@ Public Class CBThoiViec
     Private db As DBAccess
 
     Public Sub New()
-       db = New DBAccess
+        db = New DBAccess
     End Sub
 
 #Region "Property"
@@ -1449,10 +1451,10 @@ Public Class CBThoiViec
         End Try
     End Function
 
-    Public Function getAllByCanbo(ByVal vIdCanbo As String) As IList
+    Public Function getAllByCanbo(ByVal vIdCanBo As String) As IList
         Try
             Dim strSql As String
-            strSql = "SELECT * FROM HS_CBThoiViec WHERE idCanbo='" & vIdCanbo.Trim & "' Order by Ngay_HL desc"
+            strSql = "SELECT * FROM HS_CBThoiViec WHERE IdCanBo='" & vIdCanBo.Trim & "' Order by Ngay_HL desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Return init(cmd)
@@ -1479,10 +1481,10 @@ Public Class CBThoiViec
         End Try
     End Function
 
-    Public Function getFinalRecord(ByVal vIdCanbo As String) As CBThoiViec
+    Public Function getFinalRecord(ByVal vIdCanBo As String) As CBThoiViec
         Try
             Dim strSql As String
-            strSql = "SELECT TOP 1 * FROM HS_CBThoiViec WHERE idCanbo='" & vIdCanbo.Trim & "' Order by Ngay_HL desc"
+            strSql = "SELECT TOP 1 * FROM HS_CBThoiViec WHERE IdCanBo='" & vIdCanBo.Trim & "' Order by Ngay_HL desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Dim list As IList
@@ -1729,10 +1731,10 @@ Public Class QDKhac
         End Try
     End Function
 
-    Public Function getAllByCanbo(ByVal vIdCanbo As String) As IList
+    Public Function getAllByCanbo(ByVal vIdCanBo As String) As IList
         Try
             Dim strSql As String
-            strSql = "SELECT * FROM QDKhac WHERE idCanbo='" & vIdCanbo.Trim & "' order by NgayKy_QD desc"
+            strSql = "SELECT * FROM QDKhac WHERE IdCanBo='" & vIdCanBo.Trim & "' order by NgayKy_QD desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Return init(cmd)
@@ -1759,10 +1761,10 @@ Public Class QDKhac
         End Try
     End Function
 
-    Public Function getFinalRecord(ByVal vIdCanbo As String) As QDKhac
+    Public Function getFinalRecord(ByVal vIdCanBo As String) As QDKhac
         Try
             Dim strSql As String
-            strSql = "SELECT TOP 1 * FROM QDKhac WHERE idCanbo='" & vIdCanbo.Trim & "' order by NgayKy_QD desc"
+            strSql = "SELECT TOP 1 * FROM QDKhac WHERE IdCanBo='" & vIdCanBo.Trim & "' order by NgayKy_QD desc"
             Dim cmd As SqlCommand = New SqlCommand(strSql)
             cmd.CommandType = CommandType.Text
             Dim list As IList
@@ -1777,10 +1779,10 @@ Public Class QDKhac
         End Try
     End Function
 
-    Public Function getID(ByVal vIdCanbo As String, ByVal vSo_QD As String, ByVal vNgayKy_QD As Date) As String
+    Public Function getID(ByVal vIdCanBo As String, ByVal vSo_QD As String, ByVal vNgayKy_QD As Date) As String
         Try
             Dim strSql As String
-            strSql = "SELECT IdQDKhac FROM QDKhac WHERE IdCanbo='" & vIdCanbo & "' and So_QD=N'" & vSo_QD & "' and NgayKy_QD='" & vNgayKy_QD & "'"
+            strSql = "SELECT IdQDKhac FROM QDKhac WHERE IdCanBo='" & vIdCanBo & "' And So_QD=N'" & vSo_QD & "' And NgayKy_QD='" & vNgayKy_QD & "'"
             Return db.getString(strSql)
         Catch ex As Exception
             Return ""

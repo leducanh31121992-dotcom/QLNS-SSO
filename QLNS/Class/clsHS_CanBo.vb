@@ -29,19 +29,27 @@ Public Class clsHS_CanBo
         Private _NgaySinh As DateTime = DateTime.Now
         Private _IdNS_Tinh As Integer = 0
         Private _IdNS_Huyen As Integer = 0
+        Private _IdNS_Xa As Integer = 0
+        Private _IdNS_Thon As Integer = 0
         Private _NS_DChi As String = ""
 
         Private _IdNQ_Tinh As Integer = 0
         Private _IdNQ_Huyen As Integer = 0
+        Private _IdNQ_Xa As Integer = 0
+        Private _IdNQ_Thon As Integer = 0
         Private _NQ_DChi As String = ""
 
         Private _IdThT_Tinh As Integer = 0
         Private _IdThT_Huyen As Integer = 0
+        Private _IdThT_Xa As Integer = 0
+        Private _IdThT_Thon As Integer = 0
         Private _ThT_Diachi As String = ""
         Private _ThT_Dienthoai As String = ""
 
         Private _IdTTr_Tinh As Integer = 0
         Private _IdTTr_Huyen As Integer = 0
+        Private _IdTTr_Xa As Integer = 0
+        Private _IdTTr_Thon As Integer = 0
         Private _TTr_Diachi As String = ""
         Private _TTr_Dienthoai As String = ""
 
@@ -200,6 +208,23 @@ Public Class clsHS_CanBo
             End Set
         End Property
 
+        Public Property IdNS_Xa() As Integer
+            Get
+                Return _IdNS_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdNS_Xa = value
+            End Set
+        End Property
+        Public Property IdNS_Thon() As Integer
+            Get
+                Return _IdNS_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdNS_Thon = value
+            End Set
+        End Property
+
         Public Property NS_DChi() As String
             Get
                 Return _NS_DChi
@@ -230,6 +255,24 @@ Public Class clsHS_CanBo
             End Set
         End Property
 
+        Public Property IdNQ_Xa() As Integer
+            Get
+                Return _IdNQ_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdNQ_Xa = value
+            End Set
+        End Property
+
+        Public Property IdNQ_Thon() As Integer
+            Get
+                Return _IdNQ_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdNQ_Thon = value
+            End Set
+        End Property
+
         Public Property NQ_DChi() As String
             Get
                 Return _NQ_DChi
@@ -257,6 +300,24 @@ Public Class clsHS_CanBo
             End Get
             Set(ByVal value As Integer)
                 _IdThT_Huyen = value
+            End Set
+        End Property
+
+        Public Property IdThT_Xa() As Integer
+            Get
+                Return _IdThT_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdThT_Xa = value
+            End Set
+        End Property
+
+        Public Property IdThT_Thon() As Integer
+            Get
+                Return _IdThT_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdThT_Thon = value
             End Set
         End Property
 
@@ -299,6 +360,24 @@ Public Class clsHS_CanBo
             End Get
             Set(ByVal value As Integer)
                 _IdTTr_Huyen = value
+            End Set
+        End Property
+
+        Public Property IdTTr_Xa() As Integer
+            Get
+                Return _IdTTr_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdTTr_Xa = value
+            End Set
+        End Property
+
+        Public Property IdTTr_Thon() As Integer
+            Get
+                Return _IdTTr_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdTTr_Thon = value
             End Set
         End Property
 
@@ -770,18 +849,30 @@ Public Class clsHS_CanBo
         Private _NgaySinh As DateTime = DateTime.Now
         Private _IdNS_Tinh As Integer = 0
         Private _IdNS_Huyen As Integer = 0
+        Private _IdNS_Xa As Integer = 0
+        Private _IdNS_Thon As Integer = 0
         Private _NS_DiaChi As String = ""
+
         Private _IdNQ_Tinh As Integer = 0
         Private _IdNQ_Huyen As Integer = 0
+        Private _IdNQ_Xa As Integer = 0
+        Private _IdNQ_Thon As Integer = 0
         Private _NQ_DiaChi As String = ""
+
         Private _IdThT_Tinh As Integer = 0
         Private _IdThT_Huyen As Integer = 0
+        Private _IdThT_Xa As Integer = 0
+        Private _IdThT_Thon As Integer = 0
         Private _ThT_DiaChi As String = ""
         Private _ThT_DienThoai As String = ""
+
         Private _IdTTr_Tinh As Integer = 0
         Private _IdTTr_Huyen As Integer = 0
+        Private _IdTTr_Xa As Integer = 0
+        Private _IdTTr_Thon As Integer = 0
         Private _TTr_DiaChi As String = ""
         Private _TTr_DienThoai As String = ""
+
         Private _IdQuocTich As Integer = 0
         Private _IdDanToc As Integer = 0
         Private _IdTonGiao As Integer = 0
@@ -947,6 +1038,23 @@ Public Class clsHS_CanBo
             End Set
         End Property
 
+        Public Property IdNS_Xa() As Integer
+            Get
+                Return _IdNS_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdNS_Xa = value
+            End Set
+        End Property
+        Public Property IdNS_Thon() As Integer
+            Get
+                Return _IdNS_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdNS_Thon = value
+            End Set
+        End Property
+
         Public Property NS_DiaChi() As String
             Get
                 Return _NS_DiaChi
@@ -977,6 +1085,24 @@ Public Class clsHS_CanBo
             End Set
         End Property
 
+        Public Property IdNQ_Xa() As Integer
+            Get
+                Return _IdNQ_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdNQ_Xa = value
+            End Set
+        End Property
+
+        Public Property IdNQ_Thon() As Integer
+            Get
+                Return _IdNQ_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdNQ_Thon = value
+            End Set
+        End Property
+
         Public Property NQ_DiaChi() As String
             Get
                 Return _NQ_DiaChi
@@ -1004,6 +1130,24 @@ Public Class clsHS_CanBo
             End Get
             Set(ByVal value As Int32)
                 _IdThT_Huyen = value
+            End Set
+        End Property
+
+        Public Property IdThT_Xa() As Integer
+            Get
+                Return _IdThT_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdThT_Xa = value
+            End Set
+        End Property
+
+        Public Property IdThT_Thon() As Integer
+            Get
+                Return _IdThT_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdThT_Thon = value
             End Set
         End Property
 
@@ -1046,6 +1190,24 @@ Public Class clsHS_CanBo
             End Get
             Set(ByVal value As Int32)
                 _IdTTr_Huyen = value
+            End Set
+        End Property
+
+        Public Property IdTTr_Xa() As Integer
+            Get
+                Return _IdTTr_Xa
+            End Get
+            Set(ByVal value As Integer)
+                _IdTTr_Xa = value
+            End Set
+        End Property
+
+        Public Property IdTTr_Thon() As Integer
+            Get
+                Return _IdTTr_Thon
+            End Get
+            Set(ByVal value As Integer)
+                _IdTTr_Thon = value
             End Set
         End Property
 
@@ -4264,7 +4426,7 @@ Public Class clsHS_CanBo
     ''' <summary>
     ''' Hàm trả lại giá trị - Trực thuộc
     ''' </summary>
-    ''' <param name="ma_so">Mã số của chi nhánh</param>
+    ''' <param name="pPosCode">Mã số của chi nhánh</param>
     ''' <remarks>Bỏ việc lấy thông tin từ AppSetting vì trong StoredProcedure đã lấy fix giá trị</remarks>
     Public Function GetTrucThuoc(ByVal pPosCode As String) As String
         Dim strReturn As String = ""
@@ -4298,13 +4460,13 @@ Public Class clsHS_CanBo
         Dim db As DataTable
         Dim i As Integer
         Dim childNode As TreeNode
-        db = _SqlHelper.SelectDBRows(String.Format("Select * from ChiNhanh Where ma_so='{0}' And Status = 1", DONVI.Trim()))
+        db = _SqlHelper.SelectDBRows(String.Format("Select * from ChiNhanh Where Id_Goc In (0,1) And Ma_So='{0}' And Status = 1", DONVI.Trim()))
         If Not (db Is Nothing) Then
             If db.Rows.Count > 0 Then
                 For i = 0 To db.Rows.Count - 1
-                    childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("ten_goi").ToString())
-                    childNode.Tag = "ROOT_" & db.Rows(i)("id").ToString() & "_" & db.Rows(i)("ma_so").ToString()
-                    Fill_Node(childNode, db.Rows(i)("id").ToString(), db.Rows(i)("ma_so").ToString(), notAll)
+                    childNode = tv_name.Nodes.Add(db.Rows(i)("Id").ToString(), db.Rows(i)("Ten_Goi").ToString())
+                    childNode.Tag = "ROOT_" & db.Rows(i)("Id").ToString() & "_" & db.Rows(i)("Ma_So").ToString()
+                    Fill_Node(childNode, db.Rows(i)("Id").ToString(), db.Rows(i)("Ma_So").ToString(), notAll)
                 Next
             End If
         End If
@@ -4347,13 +4509,13 @@ Public Class clsHS_CanBo
             If Not (db_cn Is Nothing) Then
                 If db_cn.Rows.Count > 0 Then
                     For i = 0 To db_cn.Rows.Count - 1
-                        childNode = parent_Node.Nodes.Add(db_cn.Rows(i)("id").ToString(), db_cn.Rows(i)("ten_goi").ToString())
+                        childNode = parent_Node.Nodes.Add(db_cn.Rows(i)("id").ToString(), db_cn.Rows(i)("Ten_Goi").ToString())
                         childNode.Tag = "DV_" & db_cn.Rows(i)("id").ToString() & "_" & db_cn.Rows(i)("ma_so").ToString()
                     Next
                 End If
             End If
         End If
-        
+
         Return parent_Node
     End Function
 
@@ -4365,7 +4527,7 @@ Public Class clsHS_CanBo
         If Not (db Is Nothing) Then
             If db.Rows.Count > 0 Then
                 For i = 0 To db.Rows.Count - 1
-                    childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("ten_goi").ToString())
+                    childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("Ten_Goi").ToString())
                     childNode.Tag = "ROOT_" & db.Rows(i)("id").ToString() & "_" & db.Rows(i)("ma_so").ToString()
                     Fill_Node_NghiHuu_ChuyenCT(childNode, db.Rows(i)("id").ToString(), db.Rows(i)("ma_so").ToString(), notAll)
                 Next
@@ -4395,7 +4557,7 @@ Public Class clsHS_CanBo
         If Not (db_cn Is Nothing) Then
             If db_cn.Rows.Count > 0 Then
                 For i = 0 To db_cn.Rows.Count - 1
-                    childNode = parent_Node.Nodes.Add(db_cn.Rows(i)("id").ToString(), db_cn.Rows(i)("ten_goi").ToString())
+                    childNode = parent_Node.Nodes.Add(db_cn.Rows(i)("id").ToString(), db_cn.Rows(i)("Ten_Goi").ToString())
                     childNode.Tag = "DV_" & db_cn.Rows(i)("id").ToString() & "_" & db_cn.Rows(i)("ma_so").ToString()
                 Next
             End If
@@ -4430,9 +4592,9 @@ Public Class clsHS_CanBo
                 '                       " And t1.IsKiemNhiem = 0 AND t1.IsQD_NHCS=1 order by IdChucvu_moi "
                 strSQL = getSQL_DSCB(Id_Dv, Id_Pb)
             Else                        ' Fill tất cả các cán bộ
-                strSQL = "Select * From QDNhanSu a, HS_Canbo b Where a.IdCanBo = b.IdCanBo" & _
-                                   " And a.IdDonvi_Moi=" & Id_Dv & " And a.IdPhong_Moi=" & Id_Pb & _
-                                   " And a.Idcanbo Not In (Select IdCanBo From QDNhanSu c Where c.IdCanBo = a.IdCanBo And DatedIff(day, a.NgayHL, c.NgayHL) > 0) " & _
+                strSQL = "Select * From QDNhanSu a, HS_Canbo b Where a.IdCanBo = b.IdCanBo" &
+                                   " And a.IdDonvi_Moi=" & Id_Dv & " And a.IdPhong_Moi=" & Id_Pb &
+                                   " And a.Idcanbo Not In (Select IdCanBo From QDNhanSu c Where c.IdCanBo = a.IdCanBo And DatedIff(day, a.NgayHL, c.NgayHL) > 0) " &
                                    " And a.IsKiemNhiem = 0 AND a.IsQD_NHCS=1 Order by IdChucvu_moi "
             End If
         End If
@@ -4471,7 +4633,7 @@ Public Class clsHS_CanBo
             If Not (db Is Nothing) Then
                 If db.Rows.Count > 0 Then
                     For i = 0 To db.Rows.Count - 1
-                        childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("ten_goi").ToString())
+                        childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("Ten_Goi").ToString())
                         childNode.Tag = "00CN" & db.Rows(i)("id").ToString()
 
                         'Không đọc lại cấp con của Hội sở chính
@@ -4480,7 +4642,7 @@ Public Class clsHS_CanBo
                             If Not (dbCN Is Nothing) Then
                                 If dbCN.Rows.Count > 0 Then
                                     For j = 0 To dbCN.Rows.Count - 1
-                                        Node_ = childNode.Nodes.Add(dbCN.Rows(j)("id").ToString(), dbCN.Rows(j)("ten_goi").ToString())
+                                        Node_ = childNode.Nodes.Add(dbCN.Rows(j)("id").ToString(), dbCN.Rows(j)("Ten_Goi").ToString())
                                         Node_.Tag = "00CN" & dbCN.Rows(j)("id").ToString()
                                     Next
                                 End If
@@ -4494,13 +4656,13 @@ Public Class clsHS_CanBo
             If Not (db Is Nothing) Then
                 If db.Rows.Count > 0 Then
                     For i = 0 To db.Rows.Count - 1
-                        childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("ten_goi").ToString())
+                        childNode = tv_name.Nodes.Add(db.Rows(i)("id").ToString(), db.Rows(i)("Ten_Goi").ToString())
                         childNode.Tag = "00CN" & db.Rows(i)("id").ToString()
                         dbCN = _SqlHelper.SelectDBRows(String.Format("Select * from ChiNhanh Where Status = 1 and id_goc =" & db.Rows(i)("id")))
                         If Not (dbCN Is Nothing) Then
                             If dbCN.Rows.Count > 0 Then
                                 For j = 0 To dbCN.Rows.Count - 1
-                                    Node_ = childNode.Nodes.Add(dbCN.Rows(j)("id").ToString(), dbCN.Rows(j)("ten_goi").ToString())
+                                    Node_ = childNode.Nodes.Add(dbCN.Rows(j)("id").ToString(), dbCN.Rows(j)("Ten_Goi").ToString())
                                     Node_.Tag = "00CN" & dbCN.Rows(j)("id").ToString()
                                 Next
                             End If
@@ -4787,21 +4949,33 @@ Public Class clsHS_CanBo
     ''' <summary>
     ''' Hàm trả về Địa chỉ chi tiết khi biết: Chỉ số tỉnh - Huyện và địa chỉ
     ''' </summary>
-    ''' <param name="TinhId">Chi số xác định tỉnh</param>
-    ''' <param name="HuyenId">Chỉ số xác định Huyện</param>
-    ''' <param name="Address">Địa chỉ</param>
+    ''' <param name="pTinhId">Chi số xác định tỉnh</param>
+    ''' <param name="pXaId">Chỉ số xác định xã</param>
+    ''' <param name="pThonId">Chỉ số xác định thôn</param>
+    ''' <param name="pAddress">Địa chỉ chi tiết</param>
     ''' <returns>Địa chỉ chi tiết</returns>
     ''' <remarks></remarks>
-    Public Function GetAddress(ByVal TinhId As Int32, ByVal HuyenId As Int32, ByVal Address As String) As String
+    Public Function GetAddress(ByVal pTinhId As Int32, ByVal pXaId As Int32, ByVal pThonId As Int32, ByVal pAddress As String) As String
         Dim strResult As String = ""
-        If (Address <> "") Then
-            strResult = Address
-            If (HuyenId > 0) Then
-                strResult += " - " + GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc != 0 and Status = 1", HuyenId)).Trim().Replace("Huyện", "H.").Replace("Quận", "Q.")
-                If (TinhId > 0) Then
-                    strResult += " - " + GetNameByCode(String.Format("Select id, ten_goi from DiaDanh Where id = {0} and id_goc = 0 and Status = 1", TinhId)).Trim()
-                End If
+        If (pAddress <> "") Then
+            strResult = pAddress
+            If (pThonId > 0) Then
+                strResult += " - " + GetNameByCode(String.Format("Select Id, Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa<>'00' And Ma_Thon<>'00' And Id = {0} Order By TrangThai ", pThonId)).Trim()
             End If
+
+            If (pXaId > 0) Then
+                strResult += " - " + GetNameByCode(String.Format("Select Id, Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa<>'00' And Ma_Thon='00' And Id = {0} Order By TrangThai ", pXaId)).Trim()
+            End If
+            If (pTinhId > 0) Then
+                strResult += " - " + GetNameByCode(String.Format("Select Id, Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Id = {0} Order By TrangThai ", pTinhId)).Trim()
+            End If
+
+            'If (HuyenId > 0) Then
+            '    strResult += " - " + GetNameByCode(String.Format("Select id, Ten_Goi from DiaDanh Where Id = {0} And Id_Goc != 0 And Status = 1", HuyenId)).Trim().Replace("Huyện", "H.").Replace("Quận", "Q.")
+            '    If (TinhId > 0) Then
+            '        strResult += " - " + GetNameByCode(String.Format("Select id, Ten_Goi from DiaDanh Where id = {0} and id_goc = 0 and Status = 1", TinhId)).Trim()
+            '    End If
+            'End If
         End If
         'Thực hiện chuẩn hoá lại địa chỉ chi tiết nếu Address truyền vào rỗng
         While strResult.EndsWith("-") 'Bỏ dấu - ở cuối chuỗi nếu có
@@ -5106,14 +5280,14 @@ Public Class clsHS_CanBo
                     If Not (db Is Nothing) Then
                         If (db.Rows.Count > 0) Then
                             _result = db.Rows(0)("NgayVao").ToString().Trim()
-                            strSQL = "SELECT Top 1 a.*,b.ma_so,b.ten_goi FROM HS_Doan a, DanhMuc b WHERE (a.IdDoanVien = '" + db.Rows(0)("IdDoanVien").ToString() + "'"
+                            strSQL = "SELECT Top 1 a.*,b.ma_so,b.Ten_Goi FROM HS_Doan a, DanhMuc b WHERE (a.IdDoanVien = '" + db.Rows(0)("IdDoanVien").ToString() + "'"
                             strSQL += " And a.Tungay <= GetDate() And GetDate() <= a.DenNgay) And "
                             strSQL += " (a.IdCVDoan = b.id And b.id_goc = 10 And b.Status = 1) Order by DenNgay Desc"
                             Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                                 If Not (_db Is Nothing) Then
                                     If (_db.Rows.Count > 0) Then
                                         If (_db.Rows(0)("ma_so").ToString().Trim() <> "1013") Then
-                                            _result += ";" + _db.Rows(0)("ten_goi").ToString().Trim()
+                                            _result += ";" + _db.Rows(0)("Ten_Goi").ToString().Trim()
                                         End If
                                     End If
                                 End If
@@ -5179,13 +5353,13 @@ Public Class clsHS_CanBo
                 End Using
                 _result = _ChieuCao + ";" + _CanNang + ";" + _Ketluan
             Case 4      'Lấy thông tin Học vị
-                strSQL = "Select a.*,b.ten_goi,b.ma_so from CB_HocVi a, DanhMuc b Where IdCanBo = '" + _sIdCanBo + "'"
+                strSQL = "Select a.*,b.Ten_Goi,b.ma_so from CB_HocVi a, DanhMuc b Where IdCanBo = '" + _sIdCanBo + "'"
                 strSQL += " And (b.id = a.IdHocVi And b.id_goc = 20 And b.ma_so <> '2007' And b.Status = 1) Order by b.ma_so Asc"
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If db.Rows.Count > 0 Then
                             For i As Integer = 0 To db.Rows.Count - 1
-                                _result += db.Rows(i)("ten_goi").ToString().Trim() + ", "
+                                _result += db.Rows(i)("Ten_Goi").ToString().Trim() + ", "
                             Next
                         End If
                     End If
@@ -5200,7 +5374,7 @@ Public Class clsHS_CanBo
                     End While
                 End If
             Case 5
-                strSQL = "SELECT a.*,b.ten_goi as ChuyenNganhDT FROM HS_DTVBCC a, DanhMuc b Where a.IdCanBo = '" + _sIdCanBo + "' And"
+                strSQL = "SELECT a.*,b.Ten_Goi as ChuyenNganhDT FROM HS_DTVBCC a, DanhMuc b Where a.IdCanBo = '" + _sIdCanBo + "' And"
                 strSQL += " (a.IdChuyenNganhDT = b.id and b.id_goc = 11 and b.Status = 1) And a.VBCC=1 And a.HoanThanh = 1"
                 strSQL += "  And (a.NgayHH >= GetDate() Or a.NgayHH Is Null) Order by a.NamTN Desc"
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
@@ -5213,13 +5387,13 @@ Public Class clsHS_CanBo
                     End If
                 End Using
             Case 6      'Lấy thông tin học hàm của cán bộ
-                strSQL = "Select a.*,b.ten_goi,b.ma_so from CB_HocHam a, DanhMuc b Where IdCanBo = '" + _sIdCanBo + "'"
+                strSQL = "Select a.*,b.Ten_Goi,b.ma_so from CB_HocHam a, DanhMuc b Where IdCanBo = '" + _sIdCanBo + "'"
                 strSQL += " And (b.id = a.IdHocHam And b.id_goc = 26 And b.ma_so <> '2603' And b.Status = 1) Order by b.ma_so Asc"
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If db.Rows.Count > 0 Then
                             For i As Integer = 0 To db.Rows.Count - 1
-                                _result += db.Rows(i)("ten_goi").ToString().Trim() + ", "
+                                _result += db.Rows(i)("Ten_Goi").ToString().Trim() + ", "
                             Next
                         End If
                     End If
@@ -5235,7 +5409,7 @@ Public Class clsHS_CanBo
                 End If
             Case 7      'Lấy thông tin Trình độ cao nhất về Ngoại ngữ
                 strSQL = "SELECT (Select ma_so from DanhMuc Where id = a.IdTrinhDo And id_goc = 38 And Status = 1) As ma_so,"
-                strSQL += " (Select ten_goi from DanhMuc Where id = a.IdTrinhDo And id_goc = 38 And Status = 1) As TrinhDo, a.*"
+                strSQL += " (Select Ten_Goi from DanhMuc Where id = a.IdTrinhDo And id_goc = 38 And Status = 1) As TrinhDo, a.*"
                 strSQL += " FROM HS_DTVBCC a left join DanhMuc b on a.IdLoaiVBCC = b.id Where a.IdCanBo = '" + _sIdCanBo + "' "
                 strSQL += " And b.id_goc = 33 and b.Status = 1 And b.ma_so = '3302' And a.HoanThanh = 1"
                 strSQL += " Order by Ma_so, a.VBCC, a.NamTN Desc"
@@ -5257,7 +5431,7 @@ Public Class clsHS_CanBo
                 Dim IDMAX As Integer = getChinhDo_Max(_sIdCanBo, "1113")
                 If IDMAX > 0 Then
                     Dim db As DBAccess = New DBAccess
-                    _result = db.getString("Select ten_goi from DanhMuc Where id = " & IDMAX & " And id_goc = 38 And Status = 1")
+                    _result = db.getString("Select Ten_Goi from DanhMuc Where id = " & IDMAX & " And id_goc = 38 And Status = 1")
                 Else
                     _result = ""
                 End If
@@ -5345,13 +5519,13 @@ Public Class clsHS_CanBo
                 End Using
             Case 11
                 'Lấy thông tin học hàm của cán bộ
-                strSQL = "Select a.*,b.ten_goi,b.ma_so from CB_HocHam a, DanhMuc b Where IdCanBo = '" + _sIdCanBo + "'"
+                strSQL = "Select a.*,b.Ten_Goi,b.ma_so from CB_HocHam a, DanhMuc b Where IdCanBo = '" + _sIdCanBo + "'"
                 strSQL += " And (b.id = a.IdHocHam And b.id_goc = 26 And b.ma_so <> '2603' And b.Status = 1) Order by b.ma_so Asc"
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If db.Rows.Count > 0 Then
                             For i As Integer = 0 To db.Rows.Count - 1
-                                _result += db.Rows(i)("ten_goi").ToString().Trim() + ", "
+                                _result += db.Rows(i)("Ten_Goi").ToString().Trim() + ", "
                             Next
                         End If
                     End If
@@ -5413,7 +5587,7 @@ Public Class clsHS_CanBo
                     End If
                 End Using
             Case 14      'Ki luat
-                strSQL = "SELECT (SELECT ten_goi FROM DanhMuc WHERE id=IdHinhThucKL) as HinhThuc, Lydo, year(TuNgay) as Nam"
+                strSQL = "SELECT (SELECT Ten_Goi FROM DanhMuc WHERE id=IdHinhThucKL) as HinhThuc, Lydo, year(TuNgay) as Nam"
                 strSQL += "  FROM HS_KiLuat WHERE idcanbo='" + _sIdCanBo + "'"
                 strSQL += " Order by Nam desc"
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
@@ -5454,7 +5628,7 @@ Public Class clsHS_CanBo
                     _arrPartys(2) = db.Rows(0)("NgayKN").ToString().Trim()
                     _arrPartys(3) = db.Rows(0)("NgayVao").ToString().Trim()
                     'Câu lệnh lấy thông tin về đảng chính (IsKiemNhiem = 0)
-                    strSQL = "SELECT Top 1 a.*,b.ma_so,b.ten_goi FROM HS_Dang a, DanhMuc b WHERE (a.IdDangVien = '" + db.Rows(0)("IdDangVien").ToString() + "'"
+                    strSQL = "SELECT Top 1 a.*,b.ma_so,b.Ten_Goi FROM HS_Dang a, DanhMuc b WHERE (a.IdDangVien = '" + db.Rows(0)("IdDangVien").ToString() + "'"
                     strSQL += " And a.IsKiemNhiem = 0 And a.Tungay <= GetDate() And (GetDate() <= a.DenNgay or a.DenNgay ='01/01/1900')) And "
                     strSQL += " (a.IdCVDang = b.id And b.id_goc = 16 And b.Status = 1) Order by DenNgay Desc"
                     Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
@@ -5463,13 +5637,13 @@ Public Class clsHS_CanBo
                                 _arrPartys(1) = _db.Rows(0)("ChiBo").ToString().Trim()
                                 'Lấy chức vụ chính (Loại bỏ chức vụ đảng viên bình thường và chức vụ khác)
                                 If (_db.Rows(0)("ma_so").ToString().Trim() <> "1621" And _db.Rows(0)("ma_so").ToString().Trim() <> "1622" And _db.Rows(0)("ma_so").ToString().Trim() <> "1623") Then
-                                    _arrPartys(0) = _db.Rows(0)("ten_goi").ToString().Trim()
+                                    _arrPartys(0) = _db.Rows(0)("Ten_Goi").ToString().Trim()
                                 End If
                             End If
                         End If
                     End Using
                     'Lấy chức vụ kiêm và cấp uỷ kiêm
-                    strSQL = "SELECT Top 1 a.*,b.ma_so,b.ten_goi FROM HS_Dang a, DanhMuc b WHERE (a.IdDangVien = '" + db.Rows(0)("IdDangVien").ToString() + "'"
+                    strSQL = "SELECT Top 1 a.*,b.ma_so,b.Ten_Goi FROM HS_Dang a, DanhMuc b WHERE (a.IdDangVien = '" + db.Rows(0)("IdDangVien").ToString() + "'"
                     strSQL += " And a.IsKiemNhiem = 1 And a.Tungay <= GetDate() And (GetDate() <= a.DenNgay or a.DenNgay ='01/01/1900')) And "
                     strSQL += " (a.IdCVDang = b.id And b.id_goc = 16 And b.Status = 1) Order by DenNgay Desc"
                     Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
@@ -5478,7 +5652,7 @@ Public Class clsHS_CanBo
                                 _arrPartys(5) = _db.Rows(0)("ChiBo").ToString().Trim()
                                 'Lấy chức vụ chính (Loại bỏ chức vụ đảng viên bình thường và chức vụ khác)
                                 If (_db.Rows(0)("ma_so").ToString().Trim() <> "1621" And _db.Rows(0)("ma_so").ToString().Trim() <> "1622" And _db.Rows(0)("ma_so").ToString().Trim() <> "1623") Then
-                                    _arrPartys(4) = _db.Rows(0)("ten_goi").ToString().Trim()
+                                    _arrPartys(4) = _db.Rows(0)("Ten_Goi").ToString().Trim()
                                 End If
                             End If
                         End If
@@ -5492,32 +5666,32 @@ Public Class clsHS_CanBo
     ''' <summary>
     ''' Hàm trả về quê quán của thành viên Gia đình cán bộ
     ''' </summary>
-    ''' <param name="IdQueQuan">Id quê quán (Tưởng đương id quận, huyện)</param>
+    ''' <param name="pIdQueQuan">Id quê quán (Tưởng đương Id Xã/Phường)</param>
     ''' <returns>Địa chỉ quê quán (Huyện - Tỉnh)</returns>
     ''' <remarks></remarks>
-    Public Function GetAddress(ByVal IdQueQuan As Integer) As String
+    Public Function GetAddress(ByVal pIdQueQuan As Integer) As String
         Dim _result As String = ""
-        Dim _HuyenName As String = ""
+        Dim _XaName As String = ""
         Dim _TinhName As String = ""
         Dim strSQL As String = ""
-        strSQL = String.Format("Select * From DiaDanh Where Status = 1 and id_goc <> 0 and id = {0}", IdQueQuan)
+        strSQL = String.Format("Select * From Dm_DiaPhuong Where Ma_Xa<>'00' And Ma_Thon='00' And Id = {0} Order By TrangThai", pIdQueQuan)
         Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
             If Not (db Is Nothing) Then
                 If (db.Rows.Count > 0) Then
-                    _HuyenName = db.Rows(0)("ten_goi").ToString().Trim()
-                    strSQL = String.Format("Select * From DiaDanh Where Status = 1 and id_goc = 0 and id = {0}", CType(db.Rows(0)("id_goc").ToString(), Integer))
+                    _XaName = db.Rows(0)("Ten_Thon").ToString().Trim()
+                    strSQL = String.Format("Select Id, Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa='00' And Ma_Thon='00' And Ma_Tinh='{0}' Order By TrangThai", db.Rows(0)("Ma_Tinh").ToString())
                     Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                         If Not (_db Is Nothing) Then
                             If (_db.Rows.Count > 0) Then
-                                _TinhName = _db.Rows(0)("ten_goi").ToString().Trim()
+                                _TinhName = _db.Rows(0)("Ten_Thon").ToString().Trim()
                             End If
                         End If
                     End Using
                 End If
             End If
         End Using
-        If (_HuyenName <> "") Then
-            _result = _HuyenName
+        If (_XaName <> "") Then
+            _result = _XaName
         End If
         If (_TinhName <> "") Then
             _result += " - " & _TinhName
@@ -5581,12 +5755,12 @@ Public Class clsHS_CanBo
                 If dbconn.getNumber("SELECT count(*) FROM Phongban WHERE ma_so in ('01','02','03') and [id]=" & _IdPb) > 0 Then
                     _sDonviTT = "Đơn vị trực thuộc: Ngân hàng Chính sách xã hội Việt Nam"
                 Else
-                    strSQL = String.Format("Select id, ten_goi from ChiNhanh Where Status = 1 and id = {0} And id_goc IN (0,1)", _IdDvParent)
+                    strSQL = String.Format("Select id, Ten_Goi from ChiNhanh Where Status = 1 and id = {0} And id_goc IN (0,1)", _IdDvParent)
                     _sDonviTT = "Đơn vị trực thuộc: " + Replace_Branch(_HS_CanBo.GetNameByCode(strSQL).ToString())
                 End If
 
                 If (_IdDvParent <> _IdDvChild) Then 'Phòng giao dịch
-                    strSQL = String.Format("Select id, ten_goi from ChiNhanh Where Status = 1 and id = {0} And id_goc > 1", _IdDvChild)
+                    strSQL = String.Format("Select id, Ten_Goi from ChiNhanh Where Status = 1 and id = {0} And id_goc > 1", _IdDvChild)
                     _sDonviCS = "Đơn vị cơ sở: " + Replace_Branch(_HS_CanBo.GetNameByCode(strSQL).ToString())
                 ElseIf (_IdDvParent = _IdDvChild) Then 'Phòng ban của tỉnh hoặc Hội sở
                     strSQL = String.Format("Select id, ten_phong From PhongBan Where Status = 1 And id = {0}", _IdPb)
@@ -5696,7 +5870,7 @@ Public Class clsHS_CanBo
                     ''objselection.InlineShapes.AddPicture(picbx.ImageLocation)
                     Try
                         Dim oPic As Word.InlineShape
-                        oPic = objselection.InlineShapes.AddPicture(FileName:=String.Format("{0}{1}", Application.StartupPath, dr("AnhThe").ToString().Trim()), _
+                        oPic = objselection.InlineShapes.AddPicture(FileName:=String.Format("{0}{1}", Application.StartupPath, dr("AnhThe").ToString().Trim()),
                         LinkToFile:=False, SaveWithDocument:=True)
                         oPic.Width = 90
                         oPic.Height = 140
@@ -5740,31 +5914,31 @@ Public Class clsHS_CanBo
                 End If
 
                 'If (_sVal <> "") Then
-                '    _sVal += "; " + HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                '    _sVal += "; " + HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                 'Else
-                '    _sVal = HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                '    _sVal = HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                 'End If
 
                 'If arrPartys(4) <> "" Or Not (arrPartys(4) Is Nothing) Then
 
                 If (_sVal <> "") Then
                     If _IdPb = 3 Then
-                        _sVal += "; " & _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
+                        _sVal += "; " & _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
                     Else
                         If _IdPb = 15 Then
-                            _sVal += "; " & _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from Chinhanh Where id = {0} ", _IdDvChild))
+                            _sVal += "; " & _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & _HS_CanBo.GetNameByCode(String.Format("Select id, Ten_Goi from Chinhanh Where id = {0} ", _IdDvChild))
                         Else
-                            _sVal += "; " & _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                            _sVal += "; " & _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                         End If
                     End If
                 Else
                     If _IdPb = 3 Then
-                        _sVal = _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
+                        _sVal = _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
                     Else
                         If _IdPb = 15 Then
-                            _sVal = _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from Chinhanh Where id = {0} ", _IdDvChild))
+                            _sVal = _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & _HS_CanBo.GetNameByCode(String.Format("Select id, Ten_Goi from Chinhanh Where id = {0} ", _IdDvChild))
                         Else
-                            _sVal = _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                            _sVal = _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                         End If
                     End If
                 End If
@@ -5883,9 +6057,9 @@ Public Class clsHS_CanBo
                 '    End If
                 'End If
                 'If (_sVal <> "") Then
-                '    _sVal += "; " + _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                '    _sVal += "; " + _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                 'Else
-                '    _sVal = _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                '    _sVal = _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                 'End If
                 '_sVal = _sVal.Replace(";;", ";").Replace("; ;", ";").Trim()
                 'While _sVal.EndsWith("-") 'Bỏ dấu gạch ngang (-) ở cuối chuỗi nếu có
@@ -5962,19 +6136,19 @@ Public Class clsHS_CanBo
 
                 objselection.TypeText("5) Nơi sinh: ")
                 objselection.Font.Italic = 1
-                _sVal = _HS_CanBo.GetAddress(CType(IIf(dr("IdNS_Tinh").ToString() <> "", dr("IdNS_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNS_Huyen").ToString() <> "", dr("IdNS_Huyen").ToString(), "0"), Int32), dr("NS_DChi").ToString().Trim())
+                _sVal = _HS_CanBo.GetAddress(CType(IIf(dr("IdNS_Tinh").ToString() <> "", dr("IdNS_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNS_Xa").ToString() <> "", dr("IdNS_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdNS_Thon").ToString() <> "", dr("IdNS_Thon").ToString(), "0"), Int32), dr("NS_DChi").ToString().Trim())
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "...................") & vbCrLf)
                 objselection.Font.Italic = 0
 
                 objselection.TypeText("6) Quê quán: ")
                 objselection.Font.Italic = 1
-                _sVal = _HS_CanBo.GetAddress(CType(IIf(dr("IdNQ_Tinh").ToString() <> "", dr("IdNQ_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNQ_Huyen").ToString() <> "", dr("IdNQ_Huyen").ToString(), "0"), Int32), dr("NQ_DChi").ToString().Trim())
+                _sVal = _HS_CanBo.GetAddress(CType(IIf(dr("IdNQ_Tinh").ToString() <> "", dr("IdNQ_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNQ_Xa").ToString() <> "", dr("IdNQ_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdNQ_Thon").ToString() <> "", dr("IdNQ_Thon").ToString(), "0"), Int32), dr("NQ_DChi").ToString().Trim())
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "...................") & vbCrLf)
                 objselection.Font.Italic = 0
 
                 objselection.TypeText("7) Nơi ở hiện nay: ")
                 objselection.Font.Italic = 1
-                _sVal = _HS_CanBo.GetAddress(CType(IIf(dr("IdTTr_Tinh").ToString() <> "", dr("IdTTr_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdTTr_Huyen").ToString() <> "", dr("IdTTr_Huyen").ToString(), "0"), Int32), dr("TTr_Diachi").ToString().Trim())
+                _sVal = _HS_CanBo.GetAddress(CType(IIf(dr("IdTTr_Tinh").ToString() <> "", dr("IdTTr_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdTTr_Xa").ToString() <> "", dr("IdTTr_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdTTr_Thon").ToString() <> "", dr("IdTTr_Thon").ToString(), "0"), Int32), dr("TTr_Diachi").ToString().Trim())
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "...................") & vbCrLf)
                 objselection.Font.Italic = 0
 
@@ -5986,19 +6160,19 @@ Public Class clsHS_CanBo
 
                 objselection.TypeText("8) Dân tộc: ")
                 objselection.Font.Italic = 1
-                _sVal = IIf(dr("IdDanToc").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 21 and Status = 1", CType(dr("IdDanToc").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdDanToc").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 21 and Status = 1", CType(dr("IdDanToc").ToString(), Int32))), "")
                 objselection.TypeText(_sVal & vbTab & vbTab & vbTab & vbTab)
                 objselection.Font.Italic = 0
 
                 objselection.TypeText("9) Tôn giáo: ")
                 objselection.Font.Italic = 1
-                _sVal = IIf(dr("IdTonGiao").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 24 and Status = 1", CType(dr("IdTonGiao").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdTonGiao").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 24 and Status = 1", CType(dr("IdTonGiao").ToString(), Int32))), "")
                 objselection.TypeText(_sVal & vbCrLf)
                 objselection.Font.Italic = 0
 
                 objselection.TypeText("10) Thành phần gia đình xuất thân: ")
                 objselection.Font.Italic = 1
-                _sVal = IIf(dr("IdThanhPhanGD").ToString() <> "", _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 13 and Status = 1", CType(dr("IdThanhPhanGD").ToString(), Integer))), "")
+                _sVal = IIf(dr("IdThanhPhanGD").ToString() <> "", _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 13 and Status = 1", CType(dr("IdThanhPhanGD").ToString(), Integer))), "")
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "...................") & vbCrLf)
                 objselection.Font.Italic = 0
 
@@ -6071,7 +6245,7 @@ Public Class clsHS_CanBo
                 _sVal = ""
 
                 '16. Ngày nhập ngũ, Ngày xuất ngũ, Quân hàm, chức vụ cao nhất (Năm)
-                strSQL = " SELECT a.IdHSLLVT,a.TuNgay,a.DenNgay,a.IdQuanHam, b.ten_goi As QuanHam,a.ChucVu,a.DonVi FROM HS_LLVT a, DanhMuc b "
+                strSQL = " SELECT a.IdHSLLVT,a.TuNgay,a.DenNgay,a.IdQuanHam, b.Ten_Goi As QuanHam,a.ChucVu,a.DonVi FROM HS_LLVT a, DanhMuc b "
                 strSQL += " Where a.IdCanBo = '" + _RowId + "' And (a.IdQuanHam = b.id and b.Status = 1 and b.id_goc = 2) Order by a.TuNgay ASC"
                 Dim ngay_nhap As String = ""
                 Dim ngay_xuat As String = ""
@@ -6091,7 +6265,7 @@ Public Class clsHS_CanBo
                                     ngay_xuat = CType(_db.Rows(i)("DenNgay").ToString(), DateTime).ToString("dd/MM/yyyy")
                                 End If
                             Next
-                            _sVal = _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DanhMuc Where id = {0} And id_goc = 2 and Status = 1", _IdMin)) + ", " + _ChuvuQN
+                            _sVal = _HS_CanBo.GetNameByCode(String.Format("Select id, Ten_Goi from DanhMuc Where id = {0} And id_goc = 2 and Status = 1", _IdMin)) + ", " + _ChuvuQN
                         End If
                     End If
                 End Using
@@ -6111,7 +6285,7 @@ Public Class clsHS_CanBo
                 objselection.Font.Italic = 0
 
                 '17. Trình độ học vấn: Giáo dục phổ thông (Lớp mấy):
-                _sVal = IIf(dr("IdTrinhDoVH").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 6 and Status = 1", CType(dr("IdTrinhDoVH").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdTrinhDoVH").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 6 and Status = 1", CType(dr("IdTrinhDoVH").ToString(), Int32))), "")
                 objselection.TypeText("17) Trình độ học vấn: ")
                 objselection.Font.Italic = 1
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "..........."))
@@ -6125,7 +6299,7 @@ Public Class clsHS_CanBo
 
                 objselection.TypeText(vbTab & "- Lý luận chính trị: ")
                 objselection.Font.Italic = 1
-                _sVal = IIf(dr("IdTrinhDoCT").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 36 and Status = 1", CType(dr("IdTrinhDoCT").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdTrinhDoCT").ToString() <> "0", _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 36 and Status = 1", CType(dr("IdTrinhDoCT").ToString(), Int32))), "")
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "...........") & vbTab)
                 objselection.Font.Italic = 0
 
@@ -6142,7 +6316,7 @@ Public Class clsHS_CanBo
                 objselection.Font.Italic = 0
 
                 '18. Công việc chính đang làm:
-                _sVal = IIf(_IdChmon > 0, _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 12 and Status = 1", _IdChmon)), "")
+                _sVal = IIf(_IdChmon > 0, _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 12 and Status = 1", _IdChmon)), "")
                 objselection.TypeText("18) Công tác chính đang làm: ")
                 objselection.Font.Italic = 1
                 objselection.TypeText(IIf(_sVal <> "", _sVal, "...........") & vbCrLf)
@@ -6150,7 +6324,7 @@ Public Class clsHS_CanBo
 
                 '19. Ngach luong:
                 Dim vNgachLuong As String = ""
-                _sVal = IIf(_IdChmon > 0, _HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 12 and Status = 1", _IdChmon)), "")
+                _sVal = IIf(_IdChmon > 0, _HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 12 and Status = 1", _IdChmon)), "")
                 objselection.TypeText("19) Ngạch công chức: ")
                 objselection.Font.Italic = 1
                 strSQL = "SELECT (Select Mota from NgachLuong Where IdNgachLuong = b.IdNgachLuong And Status = 1) As NgachLuong,"
@@ -6276,7 +6450,7 @@ Public Class clsHS_CanBo
                     Dim lengths As Integer = arrUTBT.Length - 1
                     If lengths > 0 Then
                         For i As Integer = 0 To lengths
-                            _sVal = IIf(arrUTBT(i).ToString() <> "", _HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DanhMuc Where id = {0} And id_goc = 18 and ma_so in('1801', '1802', '1803', '1804') and Status = 1", CType(arrUTBT(i).ToString(), Integer))), "")
+                            _sVal = IIf(arrUTBT(i).ToString() <> "", _HS_CanBo.GetNameByCode(String.Format("Select id, Ten_Goi from DanhMuc Where id = {0} And id_goc = 18 and ma_so in('1801', '1802', '1803', '1804') and Status = 1", CType(arrUTBT(i).ToString(), Integer))), "")
                             If _sVal <> "" Then
                                 objselection.TypeText(vbTab & _sVal & vbTab)
                             End If
@@ -6305,11 +6479,11 @@ Public Class clsHS_CanBo
                 objselection.TypeText("26) ĐÀO TẠO, BỔI DƯỠNG VỀ CHUYÊN MÔN, NGHIỆP VỤ, LÝ LUẬN CHÍNH TRỊ, NGOẠI NGỮ" + vbCrLf)
                 objselection.Font.Size = 11
                 Dim _rowsTable As Integer = 2
-                strSQL = "SELECT CoSo_DT,(Select ten_goi From DanhMuc Where IdChuyenNganhDT = Id and id_goc = 11 And Status =1) As ChuyenNganh,"
+                strSQL = "SELECT CoSo_DT,(Select Ten_Goi From DanhMuc Where IdChuyenNganhDT = Id and id_goc = 11 And Status =1) As ChuyenNganh,"
                 strSQL += "NganhHoc,(Convert(Varchar, TuNgay, 103) + ' - ' + Convert(Varchar, DenNgay, 103)) As ThoiGian,"
-                strSQL += "(Select ten_goi From DanhMuc Where id = IdHinhThucDT And id_goc = 8 And Status = 1) As HinhThuc,"
+                strSQL += "(Select Ten_Goi From DanhMuc Where id = IdHinhThucDT And id_goc = 8 And Status = 1) As HinhThuc,"
                 strSQL += "(CASE VBCC WHEN 1 THEN 'VB'ELSE 'CC' END) As VBCC,"
-                strSQL += "(Select ten_goi From DanhMuc Where id = IdTrinhDo And id_goc = 38 And Status = 1) As TrinhDo"
+                strSQL += "(Select Ten_Goi From DanhMuc Where id = IdTrinhDo And id_goc = 38 And Status = 1) As TrinhDo"
                 strSQL += " FROM HS_DTVBCC WHERE IdCanBo = '" + _RowId + "' And HoanThanh = 1 Order By DenNgay Asc"
                 Using db_vb As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If (db_vb Is Nothing Or db_vb.Rows.Count = 0) Then
@@ -7406,14 +7580,14 @@ Public Class clsHS_CanBo
                 If dbconn.getNumber("SELECT count(*) FROM Phongban WHERE ma_so in ('01','02','03') and [id]=" & _IdPb) > 0 Then
                     _sDonviTT = "Đơn vị trực thuộc: Ngân hàng Chính sách xã hội Việt Nam"
                 Else
-                    strSQL = String.Format("Select id, ten_goi from ChiNhanh Where Status = 1 and id = {0} And id_goc IN (0,1)", _IdDvParent)
+                    strSQL = String.Format("Select id, Ten_Goi from ChiNhanh Where Status = 1 and id = {0} And id_goc IN (0,1)", _IdDvParent)
                     _sDonviTT = "Đơn vị trực thuộc: " + Replace_Branch(HS_CanBo.GetNameByCode(strSQL).ToString())
                 End If
 
-                strSQL = String.Format("Select id, ten_goi from ChiNhanh Where Status = 1 and id = {0} And id_goc IN (0,1)", _IdDvParent)
+                strSQL = String.Format("Select id, Ten_Goi from ChiNhanh Where Status = 1 and id = {0} And id_goc IN (0,1)", _IdDvParent)
                 _sDonviTT = "Đơn vị trực thuộc: " + Replace_Branch(HS_CanBo.GetNameByCode(strSQL).ToString())
                 If (_IdDvParent <> _IdDvChild) Then 'Phòng giao dịch
-                    strSQL = String.Format("Select id, ten_goi from ChiNhanh Where Status = 1 and id = {0} And id_goc > 1", _IdDvChild)
+                    strSQL = String.Format("Select id, Ten_Goi from ChiNhanh Where Status = 1 and id = {0} And id_goc > 1", _IdDvChild)
                     _sDonviCS = "Đơn vị cơ sở: " + Replace_Branch(HS_CanBo.GetNameByCode(strSQL).ToString())
                 ElseIf (_IdDvParent = _IdDvChild) Then 'Phòng ban của tỉnh hoặc Hội sở
                     strSQL = String.Format("Select id, ten_phong From PhongBan Where Status = 1 And id = {0}", _IdPb)
@@ -7513,22 +7687,22 @@ Public Class clsHS_CanBo
 
                 If (_sVal <> "") Then
                     If _IdPb = 3 Then
-                        _sVal += "; " & HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
+                        _sVal += "; " & HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
                     Else
                         If _IdPb = 15 Then
-                            _sVal += "; " & HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from Chinhanh Where id = {0} ", _IdDvChild))
+                            _sVal += "; " & HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & HS_CanBo.GetNameByCode(String.Format("Select id,Ten_Goi from Chinhanh Where id = {0} ", _IdDvChild))
                         Else
-                            _sVal += "; " & HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                            _sVal += "; " & HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                         End If
                     End If
                 Else
                     If _IdPb = 3 Then
-                        _sVal = HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
+                        _sVal = HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " Ngân hàng Chính sách xã hội"
                     Else
                         If _IdPb = 15 Then
-                            _sVal = HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from Chinhanh Where id = {0} ", _IdDvChild))
+                            _sVal = HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim() & " " & HS_CanBo.GetNameByCode(String.Format("Select id,Ten_Goi from Chinhanh Where id = {0} ", _IdDvChild))
                         Else
-                            _sVal = HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
+                            _sVal = HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 14 and Status = 1", _IdCv)).Trim().Replace("(Ban) Hội sở chính", "").Trim() + " - " + _sDonviCS.Substring(13).Trim()
                         End If
                     End If
                 End If
@@ -7568,21 +7742,21 @@ Public Class clsHS_CanBo
                 '8. Write 8: Ngày tháng năm sinh, nơi sinh của cán bộ
                 _sVal = IIf(CType(dr("NgaySinh").ToString(), DateTime).ToString("dd-MM-yyyy") <> "01-01-1900", CType(dr("NgaySinh").ToString(), DateTime).ToString("dd-MM-yyyy"), "")
                 objselection.TypeText("8. Ngày sinh " & _sVal.Substring(0, 2) & " tháng " & _sVal.Substring(3, 2) & " năm " & _sVal.Substring(6) & vbTab & vbTab & "9. Nơi sinh: ")
-                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdNS_Tinh").ToString() <> "", dr("IdNS_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNS_Huyen").ToString() <> "", dr("IdNS_Huyen").ToString(), "0"), Int32), dr("NS_DChi").ToString().Trim())
+                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdNS_Tinh").ToString() <> "", dr("IdNS_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNS_Xa").ToString() <> "", dr("IdNS_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdNS_Thon").ToString() <> "", dr("IdNS_Thon").ToString(), "0"), Int32), dr("NS_DChi").ToString().Trim())
                 objselection.TypeText(_sVal & vbCrLf)
-                _sVal = IIf(dr("IdQuocTich").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from QuocGia Where id = {0} and Status = 1", CType(dr("IdQuocTich").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdQuocTich").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select id,Ten_Goi from QuocGia Where id = {0} and Status = 1", CType(dr("IdQuocTich").ToString(), Int32))), "")
                 objselection.TypeText("10. Quốc tịch: " & _sVal & vbTab & vbTab)
 
-                _sVal = IIf(dr("IdDanToc").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 21 and Status = 1", CType(dr("IdDanToc").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdDanToc").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 21 and Status = 1", CType(dr("IdDanToc").ToString(), Int32))), "")
                 objselection.TypeText("11. Dân tộc: " & _sVal & vbTab & vbTab)
-                _sVal = IIf(dr("IdTonGiao").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 24 and Status = 1", CType(dr("IdTonGiao").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdTonGiao").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 24 and Status = 1", CType(dr("IdTonGiao").ToString(), Int32))), "")
                 objselection.TypeText("12. Tôn giáo: " & _sVal & vbTab & vbTab & vbCrLf)
-                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdNQ_Tinh").ToString() <> "", dr("IdNQ_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNQ_Huyen").ToString() <> "", dr("IdNQ_Huyen").ToString(), "0"), Int32), dr("NQ_DChi").ToString().Trim())
+                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdNQ_Tinh").ToString() <> "", dr("IdNQ_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdNQ_Xa").ToString() <> "", dr("IdNQ_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdNQ_Thon").ToString() <> "", dr("IdNQ_Thon").ToString(), "0"), Int32), dr("NQ_DChi").ToString().Trim())
                 objselection.TypeText("13. Quê quán: " & _sVal & vbCrLf)
-                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdThT_Tinh").ToString() <> "", dr("IdThT_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdThT_Huyen").ToString() <> "", dr("IdThT_Huyen").ToString(), "0"), Int32), dr("ThT_Diachi").ToString().Trim())
+                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdThT_Tinh").ToString() <> "", dr("IdThT_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdThT_Xa").ToString() <> "", dr("IdThT_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdThT_Thon").ToString() <> "", dr("IdThT_Thon").ToString(), "0"), Int32), dr("ThT_Diachi").ToString().Trim())
                 objselection.TypeText("14. Nơi đăng ký Hộ khẩu thường trú: " & _sVal & vbCrLf)
 
-                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdTTr_Tinh").ToString() <> "", dr("IdTTr_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdTTr_Huyen").ToString() <> "", dr("IdTTr_Huyen").ToString(), "0"), Int32), dr("TTr_Diachi").ToString().Trim())
+                _sVal = HS_CanBo.GetAddress(CType(IIf(dr("IdTTr_Tinh").ToString() <> "", dr("IdTTr_Tinh").ToString(), "0"), Int32), CType(IIf(dr("IdTTr_Xa").ToString() <> "", dr("IdTTr_Xa").ToString(), "0"), Int32), CType(IIf(dr("IdTTr_Thon").ToString() <> "", dr("IdTTr_Thon").ToString(), "0"), Int32), dr("TTr_Diachi").ToString().Trim())
                 objselection.TypeText("15. Nơi ở hiện nay: " & _sVal & vbCrLf)
                 _sVal = IIf(CType(dr("CMT_NgayCap").ToString(), DateTime).ToString("dd-MM-yyyy") <> "01-01-1900", CType(dr("CMT_NgayCap").ToString(), DateTime).ToString("dd-MM-yyyy"), "")
                 objselection.TypeText("16. Giấy CMND số: " & dr("CMT_So").ToString().Trim() & vbTab & "Ngày cấp: " & _sVal & " " & vbTab & " Nơi cấp: " & dr("CMT_NoiCap").ToString().Trim() & vbCrLf)
@@ -7599,7 +7773,7 @@ Public Class clsHS_CanBo
                 Dim arrTemp() As String = GetValue(_RowId, 3).Split(";")
                 objselection.TypeText("19. Tình trạng sức khoẻ: " & arrTemp(2).Trim() & "," & vbTab & " Cao: " & arrTemp(0).Trim() & "," & vbTab & " Cân Nặng: " & arrTemp(1).Trim() & " (kg)," & vbTab & " Nhóm máu: " & dr("NhomMau").ToString().Trim() & vbCrLf)
                 '20. Trình độ học vấn: Giáo dục phổ thông (Lớp mấy):
-                _sVal = IIf(dr("IdTrinhDoVH").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 6 and Status = 1", CType(dr("IdTrinhDoVH").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdTrinhDoVH").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 6 and Status = 1", CType(dr("IdTrinhDoVH").ToString(), Int32))), "")
                 objselection.TypeText("20. Trình độ học vấn: Giáo dục phổ thông (Lớp mấy): " & _sVal & vbCrLf)
                 'Thực hiện lấy thông tin Học vị - Chuyên ngành đào tạo - Trường đào tạo - Năm tốt nghiệp
                 objselection.TypeText("21. Trình độ chuyên môn")
@@ -7622,13 +7796,13 @@ Public Class clsHS_CanBo
 
 
                 'Lấy thông tin Lý luận chính trị - Ngoại ngữ - Tin học
-                _sVal = IIf(dr("IdTrinhDoCT").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 36 and Status = 1", CType(dr("IdTrinhDoCT").ToString(), Int32))), "")
+                _sVal = IIf(dr("IdTrinhDoCT").ToString() <> "0", HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 36 and Status = 1", CType(dr("IdTrinhDoCT").ToString(), Int32))), "")
                 objselection.TypeText("23. Lý luận chính trị: " + _sVal & vbTab & vbTab + "24. Ngoại ngữ: " + GetValue(_RowId, 7) & vbTab & vbTab + "25. Tin học: " + GetValue(_RowId, 8) + vbCrLf)
                 objselection.Font.Size = 10
                 objselection.TypeText("(Cao cấp, Trung cấp, Sơ cấp)" + vbTab + vbTab + "(T.sĩ, ĐH, C.chỉ Anh, Nga, Pháp A/B/C,...)" + vbTab + "   (T.sĩ, ĐH, C.chỉ Anh, Nga, Pháp A/B/C,...)" + vbCrLf)
                 objselection.Font.Size = 12
                 objselection.Font.Italic = 0
-                _sVal = IIf(_IdChmon > 0, HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} and id_goc = 12 and Status = 1", _IdChmon)), "")
+                _sVal = IIf(_IdChmon > 0, HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} and id_goc = 12 and Status = 1", _IdChmon)), "")
                 objselection.TypeText("26. Công việc chính đang làm: " + _sVal + vbCrLf)
                 strSQL = "SELECT (Select Mota from NgachLuong Where IdNgachLuong = b.IdNgachLuong And Status = 1) As NgachLuong,"
                 strSQL += "a.IdLuongCB,b.BacLuong,a.HeSoLuong,Convert(Varchar, Ngay_Huong, 103) as NgayApDung  From HS_LuongCB a, BacLuong b"
@@ -7658,7 +7832,7 @@ Public Class clsHS_CanBo
                 objselection.TypeText("(công nhân, nông dân, cán bộ, công chức, trí thức, quân nhân, dân nghèo thành thị, tiểu thương, tiểu chư, tư sản,...)")
                 objselection.Font.Size = 12
                 objselection.Font.Italic = 0
-                _sVal = IIf(dr("IdThanhPhanGD").ToString() <> "", HS_CanBo.GetNameByCode(String.Format("Select id,ten_goi from DanhMuc Where id = {0} And id_goc = 13 and Status = 1", CType(dr("IdThanhPhanGD").ToString(), Integer))), "")
+                _sVal = IIf(dr("IdThanhPhanGD").ToString() <> "", HS_CanBo.GetNameByCode(String.Format("Select Id,Ten_Goi From DanhMuc Where Id = {0} And id_goc = 13 and Status = 1", CType(dr("IdThanhPhanGD").ToString(), Integer))), "")
                 objselection.TypeText(": " + _sVal & vbCrLf)
 
                 '29. Ưu tiên gia đình
@@ -7704,7 +7878,7 @@ Public Class clsHS_CanBo
                     Dim arrUTBT() As String = _sVal.Split(";")
                     Dim lengths As Integer = arrUTBT.Length - 1
                     For i As Integer = 0 To lengths
-                        _sVal = IIf(arrUTBT(i).ToString() <> "", HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DanhMuc Where id = {0} And id_goc = 18 and Status = 1", CType(arrUTBT(i).ToString(), Integer))), "")
+                        _sVal = IIf(arrUTBT(i).ToString() <> "", HS_CanBo.GetNameByCode(String.Format("Select id, Ten_Goi from DanhMuc Where id = {0} And id_goc = 18 and Status = 1", CType(arrUTBT(i).ToString(), Integer))), "")
                         If (i > 1) Then
                             objselection.TypeText(vbCrLf + vbTab + vbTab + vbTab + vbTab)
                         End If
@@ -7783,13 +7957,13 @@ Public Class clsHS_CanBo
                 objselection.Font.Italic = 0
                 If dr("Ngay_VBSP").ToString() <> "" Then _sVal = IIf(CType(dr("Ngay_VBSP").ToString(), DateTime).ToString("dd/MM/yyyy") <> "01/01/1900", CType(dr("Ngay_VBSP").ToString(), DateTime).ToString("dd/MM/yyyy"), "")
                 objselection.TypeText("34. Ngày vào NHCSXH: " + IIf(_sVal <> "", _sVal + vbTab + vbTab, vbTab + vbTab + vbTab + vbTab) + ", Tuyển dụng hoặc tiếp nhận: ")
-                strSQL = "SELECT b.ten_goi,a.* FROM QDNhanSu a, DanhMuc b WHERE a.IdCanBo = '" + _RowId + "' And a.IsKiemNhiem = 0 And"
+                strSQL = "SELECT b.Ten_Goi,a.* FROM QDNhanSu a, DanhMuc b WHERE a.IdCanBo = '" + _RowId + "' And a.IsKiemNhiem = 0 And"
                 strSQL += String.Format(" (a.IdDonvi_moi IN (Select id From ChiNhanh Where id = {0} or id_goc = {0}))", _IdDvParent)
                 strSQL += " And (a.IdLoaiQD = b.id And b.id_goc = 15 And b.Status = 1 And b.ma_so IN('1508','1509')) ORDER BY NgayKy_QD ASC"
                 Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (_db Is Nothing) Then
                         If (_db.Rows.Count > 0) Then
-                            _sVal = _db.Rows(0)("ten_goi").ToString().Trim()
+                            _sVal = _db.Rows(0)("Ten_Goi").ToString().Trim()
                         End If
                     End If
                 End Using
@@ -7816,7 +7990,7 @@ Public Class clsHS_CanBo
                 objselection.TypeText(": " & _sVal & vbCrLf)
                 _sVal = ""
                 '39. Ngày nhập ngũ, Ngày xuất ngũ, Quân hàm, chức vụ cao nhất (Năm)
-                strSQL = " SELECT a.IdHSLLVT,a.TuNgay,a.DenNgay,a.IdQuanHam, b.ten_goi As QuanHam,a.ChucVu,a.DonVi FROM HS_LLVT a, DanhMuc b "
+                strSQL = " SELECT a.IdHSLLVT,a.TuNgay,a.DenNgay,a.IdQuanHam, b.Ten_Goi As QuanHam,a.ChucVu,a.DonVi FROM HS_LLVT a, DanhMuc b "
                 strSQL += " Where a.IdCanBo = '" + _RowId + "' And (a.IdQuanHam = b.id and b.Status = 1 and b.id_goc = 2) Order by a.TuNgay ASC"
                 Dim ngay_nhap As String = ""
                 Dim ngay_xuat As String = ""
@@ -7836,7 +8010,7 @@ Public Class clsHS_CanBo
                                     ngay_xuat = CType(_db.Rows(i)("DenNgay").ToString(), DateTime).ToString("dd/MM/yyyy")
                                 End If
                             Next
-                            _sVal = HS_CanBo.GetNameByCode(String.Format("Select id, ten_goi from DanhMuc Where id = {0} And id_goc = 2 and Status = 1", _IdMin)) + ", " + _ChuvuQN
+                            _sVal = HS_CanBo.GetNameByCode(String.Format("Select id, Ten_Goi from DanhMuc Where id = {0} And id_goc = 2 and Status = 1", _IdMin)) + ", " + _ChuvuQN
                         End If
                     End If
                 End Using
@@ -7848,11 +8022,11 @@ Public Class clsHS_CanBo
                 objselection.Font.Bold = 0
                 objselection.Font.Size = 11
                 Dim _rowsTable As Integer = 2
-                strSQL = "SELECT CoSo_DT,(Select ten_goi From DanhMuc Where IdChuyenNganhDT = Id and id_goc = 11 And Status =1) As ChuyenNganh,"
+                strSQL = "SELECT CoSo_DT,(Select Ten_Goi From DanhMuc Where IdChuyenNganhDT = Id and id_goc = 11 And Status =1) As ChuyenNganh,"
                 strSQL += "NganhHoc,(Convert(Varchar, TuNgay, 103) + ' - ' + Convert(Varchar, DenNgay, 103)) As ThoiGian,"
-                strSQL += "(Select ten_goi From DanhMuc Where id = IdHinhThucDT And id_goc = 8 And Status = 1) As HinhThuc,"
+                strSQL += "(Select Ten_Goi From DanhMuc Where id = IdHinhThucDT And id_goc = 8 And Status = 1) As HinhThuc,"
                 strSQL += "(CASE VBCC WHEN 1 THEN 'VB'ELSE 'CC' END) As VBCC,"
-                strSQL += "(Select ten_goi From DanhMuc Where id = IdTrinhDo And id_goc = 38 And Status = 1) As TrinhDo"
+                strSQL += "(Select Ten_Goi From DanhMuc Where id = IdTrinhDo And id_goc = 38 And Status = 1) As TrinhDo"
                 strSQL += " FROM HS_DTVBCC WHERE IdCanBo = '" + _RowId + "' And HoanThanh = 1 Order By DenNgay Asc"
                 Using db_vb As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If (db_vb Is Nothing Or db_vb.Rows.Count = 0) Then
@@ -8168,7 +8342,7 @@ Public Class clsHS_CanBo
                 objselection.Font.Italic = 0
                 '47. Tham gia Đoàn công tác nước ngoài (do NHCSXH cử)
                 objselection.TypeText("47. Tham gia Đoàn công tác nước ngoài (do NHCSXH cử)" + vbCrLf)
-                strSQL = "SELECT a.SoQD,Convert(Varchar,a.NgayKy_QD,103) As NgayKy_QD,b.ten_goi as NuocDen,a.MucDich,Convert(Varchar,a.TuNgay,103) As TG_TuNgay,"
+                strSQL = "SELECT a.SoQD,Convert(Varchar,a.NgayKy_QD,103) As NgayKy_QD,b.Ten_Goi as NuocDen,a.MucDich,Convert(Varchar,a.TuNgay,103) As TG_TuNgay,"
                 strSQL += "Convert(Varchar,a.DenNgay,103) As TG_DenNgay,a.NguoiKy_QD FROM HS_XuatNgoai a, QuocGia b "
                 strSQL += " WHERE a.IdCanBo = '" + _RowId + "' And (a.IdNuocDen = b.id and b.Status = 1) Order by a.TuNgay Asc"
                 objselection.Font.Bold = 0
@@ -9045,7 +9219,7 @@ Public Class clsHS_CanBo
                 objselection.Paragraphs.SpaceAfter = 3
                 objselection.Font.Size = 11
                 objselection.Font.Italic = 0
-                strSQL = "SELECT b.ten_goi as QuanHe,a.HoTenNguoiPT,Convert(Varchar,a.TuNgay,103) as Tg_TuNgay,Convert(Varchar,a.DenNgay,103) as Tg_DenNgay,a.GhiChu FROM HS_GTGC a, DanhMuc b Where (a.IdQuanHe = b.id And b.id_goc = 23) And a.IdCanBo = '" + _RowId + "' Order by TuNgay Asc"
+                strSQL = "SELECT b.Ten_Goi as QuanHe,a.HoTenNguoiPT,Convert(Varchar,a.TuNgay,103) as Tg_TuNgay,Convert(Varchar,a.DenNgay,103) as Tg_DenNgay,a.GhiChu FROM HS_GTGC a, DanhMuc b Where (a.IdQuanHe = b.id And b.id_goc = 23) And a.IdCanBo = '" + _RowId + "' Order by TuNgay Asc"
                 Using db_gtgc As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If (db_gtgc Is Nothing Or db_gtgc.Rows.Count = 0) Then
                         _rowsTable = 3
@@ -9117,7 +9291,7 @@ Public Class clsHS_CanBo
                 'objselection.Font.Bold = 0
                 ''Tạo một bảng gồm 5 cột và _rowsTable dòng
                 'strSQL = "SELECT So_QD,Convert(Varchar,NgayKy_QD,103) As NgayKy,"
-                'strSQL += "(Select ten_goi From DanhMuc Where id = IdChucVu_Moi and id_goc = 14) As ChucDanh,"
+                'strSQL += "(Select Ten_Goi From DanhMuc Where id = IdChucVu_Moi and id_goc = 14) As ChucDanh,"
                 'strSQL += "Convert(Varchar,NgayHL,103) As NgayHL,Convert(Varchar,NgayBoNhiem_TT,103) As NgayBoNhiem_TT,"
                 'strSQL += "NguoiKy_QD FROM QDNhanSu WHERE IdLoaiQD IN (Select [id] From DanhMuc Where ma_so IN ('1502','1503','1504')) "
                 'strSQL += " And IsKiemNhiem = 0 And IdCanBo = 'CNTT00000000016' Order By NgayKy_QD Asc"
@@ -9193,7 +9367,7 @@ Public Class clsHS_CanBo
                 objselection.Paragraphs.SpaceAfter = 3
                 objselection.Font.Size = 11
                 objselection.Font.Bold = 0
-                strSQL = "SELECT SoQD, Convert(Varchar,NgayQD,103) as NgayQD,(Select ten_goi From DanhMuc Where id = IdCapKT And id_goc = 4) As ThamQuyenQD,"
+                strSQL = "SELECT SoQD, Convert(Varchar,NgayQD,103) as NgayQD,(Select Ten_Goi From DanhMuc Where id = IdCapKT And id_goc = 4) As ThamQuyenQD,"
                 strSQL += "(Select DanhHieu_HinhThuc From ThiDuaKhenThuong Where idTDKT = IdDanhHieuHinhThuc) As DanhHieu,'' As HinhThuc"
                 strSQL += " FROM HS_khenthuong t1, HS_KhenThuong_CT t2 where t1.IdKhenThuong=t2.IdKhenthuong AND t2.IdCN_TT = '" + _RowId + "'"
                 strSQL += " ORDER BY NgayQD ASC"
@@ -9259,7 +9433,7 @@ Public Class clsHS_CanBo
                 objselection.Paragraphs.SpaceAfter = 3
                 objselection.Font.Size = 11
                 objselection.Font.Bold = 0
-                strSQL = "SELECT SoQD,Convert(Varchar,NgayQD,103) As NgayKyQD,(Select ten_goi From DanhMuc Where id = IdHinhThucKL And id_goc = 5) As HinhThucKL,"
+                strSQL = "SELECT SoQD,Convert(Varchar,NgayQD,103) As NgayKyQD,(Select Ten_Goi From DanhMuc Where id = IdHinhThucKL And id_goc = 5) As HinhThucKL,"
                 strSQL += "Convert(Varchar,TuNgay,103) As Tg_TuNgay,Convert(Varchar,DenNgay,103) As Tg_DenNgay, NguoiQD"
                 strSQL += " FROM HS_KiLuat Where IdCanBo = '" + _RowId + "' Order By TuNgay"
                 Using db_kiluat As DataTable = _SqlHelper.SelectDBRows(strSQL)
@@ -9801,19 +9975,27 @@ Public Class clsHS_CanBo
 
         command.Parameters.Add(New SqlParameter("@_IdNS_Tinh", obj_canbo.IdNS_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNS_Huyen", obj_canbo.IdNS_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Xa", obj_canbo.IdNS_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Thon", obj_canbo.IdNS_Thon))
         command.Parameters.Add(New SqlParameter("@_NS_DChi", obj_canbo.NS_DChi))
 
         command.Parameters.Add(New SqlParameter("@_IdNQ_Tinh", obj_canbo.IdNQ_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNQ_Huyen", obj_canbo.IdNQ_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Xa", obj_canbo.IdNQ_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Thon", obj_canbo.IdNQ_Thon))
         command.Parameters.Add(New SqlParameter("@_NQ_DChi", obj_canbo.NQ_DChi))
 
         command.Parameters.Add(New SqlParameter("@_IdThT_Tinh", obj_canbo.IdThT_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdThT_Huyen", obj_canbo.IdThT_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Xa", obj_canbo.IdThT_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Thon", obj_canbo.IdThT_Thon))
         command.Parameters.Add(New SqlParameter("@_ThT_Diachi", obj_canbo.ThT_Diachi))
         command.Parameters.Add(New SqlParameter("@_ThT_Dienthoai", obj_canbo.ThT_Dienthoai))
 
         command.Parameters.Add(New SqlParameter("@_IdTTr_Tinh", obj_canbo.IdTTr_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdTTr_Huyen", obj_canbo.IdTTr_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Xa", obj_canbo.IdTTr_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Thon", obj_canbo.IdTTr_Thon))
         command.Parameters.Add(New SqlParameter("@_TTr_Diachi", obj_canbo.TTr_Diachi))
         command.Parameters.Add(New SqlParameter("@_TTr_Dienthoai", obj_canbo.TTr_Dienthoai))
 
@@ -9932,19 +10114,27 @@ Public Class clsHS_CanBo
 
         command.Parameters.Add(New SqlParameter("@_IdNS_Tinh", obj_canbo.IdNS_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNS_Huyen", obj_canbo.IdNS_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Xa", obj_canbo.IdNS_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Thon", obj_canbo.IdNS_Thon))
         command.Parameters.Add(New SqlParameter("@_NS_DChi", obj_canbo.NS_DChi))
 
         command.Parameters.Add(New SqlParameter("@_IdNQ_Tinh", obj_canbo.IdNQ_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNQ_Huyen", obj_canbo.IdNQ_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Xa", obj_canbo.IdNQ_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Thon", obj_canbo.IdNQ_Thon))
         command.Parameters.Add(New SqlParameter("@_NQ_DChi", obj_canbo.NQ_DChi))
 
         command.Parameters.Add(New SqlParameter("@_IdThT_Tinh", obj_canbo.IdThT_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdThT_Huyen", obj_canbo.IdThT_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Xa", obj_canbo.IdThT_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Thon", obj_canbo.IdThT_Thon))
         command.Parameters.Add(New SqlParameter("@_ThT_Diachi", obj_canbo.ThT_Diachi))
         command.Parameters.Add(New SqlParameter("@_ThT_Dienthoai", obj_canbo.ThT_Dienthoai))
 
         command.Parameters.Add(New SqlParameter("@_IdTTr_Tinh", obj_canbo.IdTTr_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdTTr_Huyen", obj_canbo.IdTTr_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Xa", obj_canbo.IdTTr_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Thon", obj_canbo.IdTTr_Thon))
         command.Parameters.Add(New SqlParameter("@_TTr_Diachi", obj_canbo.TTr_Diachi))
         command.Parameters.Add(New SqlParameter("@_TTr_Dienthoai", obj_canbo.TTr_Dienthoai))
 
@@ -10012,7 +10202,6 @@ Public Class clsHS_CanBo
         command.Parameters.Add(New SqlParameter("@_DacDiem_BT", obj_canbo.DacDiem_BT))
         command.Parameters.Add(New SqlParameter("@_QuanHe_Nguoi_NN", obj_canbo.QuanHe_Nguoi_NN))
 
-
         command.Parameters.Add(New SqlParameter("@_NH_MaKH", obj_canbo.NH_MaKH))
         command.Parameters.Add(New SqlParameter("@_NH_SoTK", obj_canbo.NH_SoTK))
         command.Parameters.Add(New SqlParameter("@_NH_TenNH", obj_canbo.NH_TenNH))
@@ -10062,19 +10251,27 @@ Public Class clsHS_CanBo
 
         command.Parameters.Add(New SqlParameter("@_IdNS_Tinh", obj_canbo.IdNS_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNS_Huyen", obj_canbo.IdNS_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Xa", obj_canbo.IdNS_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Thon", obj_canbo.IdNS_Thon))
         command.Parameters.Add(New SqlParameter("@_NS_DChi", obj_canbo.NS_DChi))
 
         command.Parameters.Add(New SqlParameter("@_IdNQ_Tinh", obj_canbo.IdNQ_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNQ_Huyen", obj_canbo.IdNQ_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Xa", obj_canbo.IdNQ_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Thon", obj_canbo.IdNQ_Thon))
         command.Parameters.Add(New SqlParameter("@_NQ_DChi", obj_canbo.NQ_DChi))
 
         command.Parameters.Add(New SqlParameter("@_IdThT_Tinh", obj_canbo.IdThT_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdThT_Huyen", obj_canbo.IdThT_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Xa", obj_canbo.IdThT_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Thon", obj_canbo.IdThT_Thon))
         command.Parameters.Add(New SqlParameter("@_ThT_Diachi", obj_canbo.ThT_Diachi))
         command.Parameters.Add(New SqlParameter("@_ThT_Dienthoai", obj_canbo.ThT_Dienthoai))
 
         command.Parameters.Add(New SqlParameter("@_IdTTr_Tinh", obj_canbo.IdTTr_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdTTr_Huyen", obj_canbo.IdTTr_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Xa", obj_canbo.IdTTr_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Thon", obj_canbo.IdTTr_Thon))
         command.Parameters.Add(New SqlParameter("@_TTr_Diachi", obj_canbo.TTr_Diachi))
         command.Parameters.Add(New SqlParameter("@_TTr_Dienthoai", obj_canbo.TTr_Dienthoai))
 
@@ -10243,19 +10440,27 @@ Public Class clsHS_CanBo
 
         command.Parameters.Add(New SqlParameter("@_IdNS_Tinh", obj_hscb_ts.IdNS_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNS_Huyen", obj_hscb_ts.IdNS_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Xa", obj_hscb_ts.IdNS_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Thon", obj_hscb_ts.IdNS_Thon))
         command.Parameters.Add(New SqlParameter("@_NS_DiaChi", obj_hscb_ts.NS_DiaChi))
 
         command.Parameters.Add(New SqlParameter("@_IdNQ_Tinh", obj_hscb_ts.IdNQ_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNQ_Huyen", obj_hscb_ts.IdNQ_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Xa", obj_hscb_ts.IdNQ_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Thon", obj_hscb_ts.IdNQ_Thon))
         command.Parameters.Add(New SqlParameter("@_NQ_DiaChi", obj_hscb_ts.NQ_DiaChi))
 
         command.Parameters.Add(New SqlParameter("@_IdThT_Tinh", obj_hscb_ts.IdThT_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdThT_Huyen", obj_hscb_ts.IdThT_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Xa", obj_hscb_ts.IdThT_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Thon", obj_hscb_ts.IdThT_Thon))
         command.Parameters.Add(New SqlParameter("@_ThT_DiaChi", obj_hscb_ts.ThT_DiaChi))
         command.Parameters.Add(New SqlParameter("@_ThT_DienThoai", obj_hscb_ts.ThT_DienThoai))
 
         command.Parameters.Add(New SqlParameter("@_IdTTr_Tinh", obj_hscb_ts.IdTTr_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdTTr_Huyen", obj_hscb_ts.IdTTr_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Xa", obj_hscb_ts.IdTTr_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Thon", obj_hscb_ts.IdTTr_Thon))
         command.Parameters.Add(New SqlParameter("@_TTr_DiaChi", obj_hscb_ts.TTr_DiaChi))
         command.Parameters.Add(New SqlParameter("@_TTr_DienThoai", obj_hscb_ts.TTr_DienThoai))
 
@@ -10381,20 +10586,30 @@ Public Class clsHS_CanBo
 
         command.Parameters.Add(New SqlParameter("@_IdNS_Tinh", obj_hscb_ts.IdNS_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNS_Huyen", obj_hscb_ts.IdNS_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Xa", obj_hscb_ts.IdNS_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNS_Thon", obj_hscb_ts.IdNS_Thon))
         command.Parameters.Add(New SqlParameter("@_NS_DiaChi", obj_hscb_ts.NS_DiaChi))
 
         command.Parameters.Add(New SqlParameter("@_IdNQ_Tinh", obj_hscb_ts.IdNQ_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdNQ_Huyen", obj_hscb_ts.IdNQ_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Xa", obj_hscb_ts.IdNQ_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdNQ_Thon", obj_hscb_ts.IdNQ_Thon))
         command.Parameters.Add(New SqlParameter("@_NQ_DiaChi", obj_hscb_ts.NQ_DiaChi))
 
         command.Parameters.Add(New SqlParameter("@_IdThT_Tinh", obj_hscb_ts.IdThT_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdThT_Huyen", obj_hscb_ts.IdThT_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Xa", obj_hscb_ts.IdThT_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdThT_Thon", obj_hscb_ts.IdThT_Thon))
         command.Parameters.Add(New SqlParameter("@_ThT_DiaChi", obj_hscb_ts.ThT_DiaChi))
         command.Parameters.Add(New SqlParameter("@_ThT_DienThoai", obj_hscb_ts.ThT_DienThoai))
+
         command.Parameters.Add(New SqlParameter("@_IdTTr_Tinh", obj_hscb_ts.IdTTr_Tinh))
         command.Parameters.Add(New SqlParameter("@_IdTTr_Huyen", obj_hscb_ts.IdTTr_Huyen))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Xa", obj_hscb_ts.IdTTr_Xa))
+        command.Parameters.Add(New SqlParameter("@_IdTTr_Thon", obj_hscb_ts.IdTTr_Thon))
         command.Parameters.Add(New SqlParameter("@_TTr_DiaChi", obj_hscb_ts.TTr_DiaChi))
         command.Parameters.Add(New SqlParameter("@_TTr_DienThoai", obj_hscb_ts.TTr_DienThoai))
+
         command.Parameters.Add(New SqlParameter("@_IdQuocTich", obj_hscb_ts.IdQuocTich))
         command.Parameters.Add(New SqlParameter("@_IdDanToc", obj_hscb_ts.IdDanToc))
         command.Parameters.Add(New SqlParameter("@_IdTonGiao", obj_hscb_ts.IdTonGiao))

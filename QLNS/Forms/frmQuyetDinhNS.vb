@@ -8,7 +8,7 @@
     Private init_L As Boolean = False
     Private init_P As Boolean = False
     Private initTV As Boolean = False
-    Private idCanBo As String = ""
+    Private IdCanBo As String = ""
     Private idQDNhansu As String = ""
     Private idLuong As String = ""
     Private idPhucap As String = ""
@@ -30,6 +30,7 @@
     Private NgayQDCU As Date
 
     Private Sub frmQuyetDinhNS_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        ckb_ChoiceShowPosNew.Enabled = False
         lkl_xemct.Enabled = False
         'Check quyền thành viên
         Dim roles As String = Globals.Roles
@@ -87,7 +88,7 @@
         If (Globals.Roles.IndexOf(";194;") < 0) Then
             bntDelete_PC.Enabled = False
         End If
-        
+
         If IDCB_HS_Canbo = "" Then
             bindTreeview(treeCocau)
             treeCocau.ExpandAll()
@@ -114,8 +115,8 @@
             _node = findNode(treeCocau.Nodes, _NodeFind.Tag)
             If Not _node Is Nothing Then
                 treeCocau.SelectedNode = _node
-                idCanBo = IDCB_HS_Canbo
-                OverInfCB(idCanBo, maCB)
+                IdCanBo = IDCB_HS_Canbo
+                OverInfCB(IdCanBo, maCB)
                 initTabQDNhansu()
             End If
 
@@ -201,8 +202,8 @@
                     Else
                         lkl_xemct.Enabled = True
                     End If
-                    idCanBo = arr(1)
-                    OverInfCB(idCanBo, arr(2))
+                    IdCanBo = arr(1)
+                    OverInfCB(IdCanBo, arr(2))
                     idQDNhansu = ""
                     idLuong = ""
                     idPhucap = ""
@@ -221,9 +222,10 @@
                             initTabQDPhuCap()
                         Case Else
                             initTabQDKhac()
+                            initTabQDKhac()
                     End Select
 
-                    If checkRight_CreateRecord(idCanBo) OrElse (IdDONVI = 1 AndAlso chkTWQuanLy.Checked = True) Then
+                    If checkRight_CreateRecord(IdCanBo) OrElse (IdDONVI = 1 AndAlso chkTWQuanLy.Checked = True) Then
                         bntAdd.Enabled = True
                         bntUpdate_TV.Enabled = True
                         bntUpdate_L.Enabled = True
@@ -255,14 +257,14 @@
     End Sub
 
     Private Sub lkl_xemct_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lkl_xemct.LinkClicked
-        If (idCanBo <> "") Then
+        If (IdCanBo <> "") Then
             Dim obj_detail As frmHS_ChiTiet = New frmHS_ChiTiet()
             'Lấy danh sách mảng các id hiện có trên lưới dl
             Dim arrRows As ArrayList = New ArrayList()
-            arrRows.Add(idCanBo)
+            arrRows.Add(IdCanBo)
             obj_detail.RecordCurrent = 0
             obj_detail.Records = 1
-            obj_detail.IdCanBo = idCanBo
+            obj_detail.IdCanBo = IdCanBo
             obj_detail.arr_RecordId = arrRows
             obj_detail.ShowDialog()
         Else
@@ -272,10 +274,10 @@
 
 #Region "private function"
 
-    Private Sub OverInfCB(ByVal vIdCanbo As String, ByVal vMaCb As String)
+    Private Sub OverInfCB(ByVal vIdCanBo As String, ByVal vMaCb As String)
         Dim dt As DataTable
         dbconn = New DBAccess
-        dt = dbconn.SelectDBRows("SELECT Hoten, Gioitinh, Ngaysinh, CMT_So, CapQuanLy FROM HS_Canbo WHERE idCanbo='" & vIdCanbo & "' and MaCB='" & vMaCb & "'")
+        dt = dbconn.SelectDBRows("SELECT Hoten, Gioitinh, Ngaysinh, CMT_So, CapQuanLy FROM HS_Canbo WHERE IdCanBo='" & vIdCanBo & "' and MaCB='" & vMaCb & "'")
         If dt.Rows.Count > 0 Then
             txtCanbo.Text = dt.Rows(0).Item("Hoten")
             txtMaCB.Text = vMaCb
@@ -303,10 +305,10 @@
             End If
             Select Case tabControlDieuChuyen.SelectedTab.Name
                 Case "tabQDNhanSu"
-                    If arr(2) <> 0 Then refreshNodeNOTCanbo(treeCocau, _node, arr(1), arr(2), False, False, idCanBo)
+                    If arr(2) <> 0 Then refreshNodeNOTCanbo(treeCocau, _node, arr(1), arr(2), False, False, IdCanBo)
                     initTabQDNhansu()
                 Case "tabThoiViec"
-                    'If arr(2) <> 0 Then refreshNodeNOTCanbo(treeCocau, _node, arr(1), arr(2), False, True, idCanBo)
+                    'If arr(2) <> 0 Then refreshNodeNOTCanbo(treeCocau, _node, arr(1), arr(2), False, True, IdCanBo)
                     initTabQDThoiViec()
                 Case "tabQDLuong"
                     initTabQDLuong()
@@ -320,7 +322,7 @@
     End Sub
 
     Private Sub blankOverInfCB()
-        idCanBo = ""
+        IdCanBo = ""
         idQDNhansu = ""
         idLuong = ""
         idPhucap = ""
@@ -350,9 +352,9 @@
             bindCboDonVi()
             bindCboChuyenMon()
         End If
-        getIdBangNgachBac(idCanBo, IdBangLuong, 0, 0, 0)
-        bindGridQDNhansu(idCanBo)
-        fillQDNhansu(idQDNhansu, idCanBo)
+        getIdBangNgachBac(IdCanBo, IdBangLuong, 0, 0, 0)
+        bindGridQDNhansu(IdCanBo)
+        fillQDNhansu(idQDNhansu, IdCanBo)
         gridQDNhanSu.Focus()
     End Sub
 
@@ -381,11 +383,11 @@
         cboChuyenmonMoi.DataSource = listDanhmuc(12, False, True)
     End Sub
 
-    Private Sub bindGridQDNhansu(ByVal vIdCanbo As String)
+    Private Sub bindGridQDNhansu(ByVal vIdCanBo As String)
         Try
-            If vIdCanbo <> "" Then
+            If vIdCanBo <> "" Then
                 gridQDNhanSu.AutoGenerateColumns = False
-                gridQDNhanSu.DataSource = listQDNhansu(vIdCanbo, 1)
+                gridQDNhanSu.DataSource = listQDNhansu(vIdCanBo, 1)
                 Dim i As Integer = 0
                 While i <= gridQDNhanSu.Rows.Count - 1
                     If Trim(gridQDNhanSu.Rows(i).Cells(0).Value) = idQDNhansu Then
@@ -477,7 +479,7 @@
             End If
 
             'If idQDNhansu = "" Then
-            '    If checkQuyetDinh("QDNHANSU", idCanBo, txtSoQD.Text) Then
+            '    If checkQuyetDinh("QDNHANSU", IdCanBo, txtSoQD.Text) Then
             '        txtSoQD.Text = ""
             '        txtSoQD.Focus()
             '        strReturn = "Số quyết định nhân sự của cán bộ đã tồn tại. Hãy nhập lại!"
@@ -491,8 +493,9 @@
     End Function
 
     Private Sub blankQDNhansu()
+
         Dim m_QDNhanSu As QDNhanSu = New QDNhanSu
-        m_QDNhanSu = m_QDNhanSu.getFinalRecord(idCanBo)
+        m_QDNhanSu = m_QDNhanSu.getFinalRecord(IdCanBo)
         cbIsQD_NHCS.Checked = True
         If m_QDNhanSu.IdQDNhanSu <> "" Then
             IdDonViCu = m_QDNhanSu.IdDonvi_Moi
@@ -509,7 +512,7 @@
             txtChucVuCu.Text = ""
             txtChuyenMonCu.Text = ""
         End If
-        grpTTCu.Enabled = False
+        gbThongTinCu.Enabled = False
         idQDNhansu = ""
         idLuong = ""
         idPhucap = ""
@@ -613,9 +616,9 @@
         txtDVraQD.Text = m_QDNhanSu.DVraQD
         cboLoaiQD.SelectedValue = m_QDNhanSu.IdLoaiQD
         If dbconn.getNumber("SELECT id FROM DanhMuc WHERE id=" & m_QDNhanSu.IdLoaiQD & " And ma_so in ('1518','1519')") > 0 Then
-            grpTTCu.Text = "Thông tin hiện tại"
+            gbThongTinCu.Text = "Thông tin hiện tại"
         Else
-            grpTTCu.Text = "Thông tin cũ"
+            gbThongTinCu.Text = "Thông tin cũ"
         End If
         If m_QDNhanSu.IsQD_NHCS Then
             cbIsQD_NHCS.Checked = True
@@ -632,8 +635,8 @@
             pnlQD_IsNHCS.Visible = True
             pnlL_IsNHCS.Visible = True
             pnlPC_IsNHCS.Visible = True
-            grpTTCu.Visible = True
-            grpTTCu.Enabled = False
+            gbThongTinCu.Visible = True
+            gbThongTinCu.Enabled = False
 
             cboCVNguoiQD.SelectedValue = m_QDNhanSu.idCV_Nguoiky_QD
             IdDonViCu = m_QDNhanSu.IdDonvi_Cu
@@ -654,7 +657,7 @@
             txtCVNguoiQD.Visible = True
             labQuyetDinh.Visible = True
             txtLoaiQD.Visible = True
-            grpTTCu.Visible = False
+            gbThongTinCu.Visible = False
             pnlQD_IsNHCS.Visible = False
             pnlQD_IsNotNHCS.Visible = True
             txtNoiDung_QD.Enabled = True
@@ -682,7 +685,7 @@
         NgayQDCU = m_QDNhanSu.NgayKy_QD
 
         ' fill thông tin lương trong quyết định
-        idLuong = m_Luong.getID(idCanBo, NgayHLCU, SoQDCU, NgayQDCU)
+        idLuong = m_Luong.getID(IdCanBo, NgayHLCU, SoQDCU, NgayQDCU)
         If idLuong <> "" Then
             cbLuong.Checked = True
             m_Luong = m_Luong.getRecord(idLuong)
@@ -707,7 +710,7 @@
         End If
 
         ' fill thông tin phụ cấp liên quan trong quyết định
-        idPhucap = m_Phucap.getID(idCanBo, NgayHLCU, SoQDCU, NgayQDCU)
+        idPhucap = m_Phucap.getID(IdCanBo, NgayHLCU, SoQDCU, NgayQDCU)
         If idPhucap <> "" Then
             cbPhucap.Checked = True
             m_Phucap = m_Phucap.getRecord(idPhucap)
@@ -738,11 +741,11 @@
     Public Sub getOldInfQDNhanSu(ByVal vIdQDNhanSu As String, ByVal vIdCanBo As String, ByRef vIdDonViCu As Integer, ByRef vDonViCu As String, ByRef vIdPhongCu As Integer, ByRef vPhongCu As String, ByRef vIdChucVuCu As Integer, ByRef vChucVuCu As String, ByRef vIdChuyenMonCu As Integer, ByRef vChuyenMonCu As String)
         Try
             Dim strSql As String
-            strSql = "SELECT TOP 1 IdDonVi_Moi as IdDonVi_Cu, (SELECT ten_goi FROM chinhanh WHERE Id= IdDonVi_Moi) as DonViCu," & _
-                   " IdPhong_Moi as IdPhong_Cu, (SELECT ten_phong FROM PHONGBAN WHERE Id=IdPhong_Moi) as PhongCu," & _
-                   " IdChucVu_Moi as IdChucVu_Cu, (SELECT ten_goi FROM Danhmuc WHERE id= IdChucVu_Moi) as ChucVuCu," & _
-                   " IdChuyenMon_Moi as IdChuyenMon_Cu, (SELECT ten_goi FROM Danhmuc WHERE id= IdChuyenMon_Moi) as ChuyenMonCu" & _
-                   " FROM QDNhanSu WHERE ngayHL<(select b.ngayHL FROM QDnhansu b where b.IDQDNhanSu='" & vIdQDNhanSu & "' AND b.IsQD_NHCS=1) AND idcanbo='" & vIdCanBo & "' AND IsQD_NHCS=1 order by NgayHL desc"
+            strSql = "SELECT TOP 1 IdDonVi_Moi as IdDonVi_Cu, (SELECT ten_goi FROM chinhanh WHERE Id= IdDonVi_Moi) as DonViCu," &
+                   " IdPhong_Moi as IdPhong_Cu, (SELECT ten_phong FROM PHONGBAN WHERE Id=IdPhong_Moi) as PhongCu," &
+                   " IdChucVu_Moi as IdChucVu_Cu, (SELECT ten_goi FROM Danhmuc WHERE id= IdChucVu_Moi) as ChucVuCu," &
+                   " IdChuyenMon_Moi as IdChuyenMon_Cu, (SELECT ten_goi FROM Danhmuc WHERE id= IdChuyenMon_Moi) as ChuyenMonCu" &
+                   " FROM QDNhanSu WHERE ngayHL<(select b.ngayHL FROM QDnhansu b where b.IDQDNhanSu='" & vIdQDNhanSu & "' AND b.IsQD_NHCS=1) AND IdCanBo='" & vIdCanBo & "' AND IsQD_NHCS=1 order by NgayHL desc"
             Dim dt As DataTable
             Dim db As DBAccess = New DBAccess
             dt = db.SelectDBRows(strSql)
@@ -776,24 +779,23 @@
     Private Function updateQDNhanSu(ByRef vIdQDNhanSu As String) As Boolean
         Try
             Dim m_QDNhanSu As QDNhanSu = New QDNhanSu
-            Dim dateHL As Date
-            Dim dateQD As Date
-
-            dateHL = DateTimeUtil.getDateCurrTime(dpkNgayHL.Text)
-            dateQD = DateTimeUtil.getDate(dpkNgayQD.Text)
+            'Dim dateHL As Date
+            'Dim dateQD As Date
+            'dateHL = DateTimeUtil.getDateCurrTime(dpkNgayHL.Text)
+            'dateQD = DateTimeUtil.getDate(dpkNgayQD.Text)
             m_QDNhanSu.IdQDNhanSu = vIdQDNhanSu
-            m_QDNhanSu.IdCanBo = idCanBo
+            m_QDNhanSu.IdCanBo = IdCanBo
             m_QDNhanSu.So_QD = txtSoQD.Text.Trim
-            m_QDNhanSu.NgayKy_QD = dateQD
+            m_QDNhanSu.NgayKy_QD = dpkNgayQD.Value
             m_QDNhanSu.NguoiKy_QD = standardizeName(txtNguoiQD.Text)
-            m_QDNhanSu.NgayHL = dateHL
+            m_QDNhanSu.NgayHL = dpkNgayHL.Value
             If dpkNgayBN.Checked Then
-                m_QDNhanSu.NgayBoNhiem_TT = DateTimeUtil.getDate(dpkNgayBN.Text)
+                m_QDNhanSu.NgayBoNhiem_TT = dpkNgayBN.Value         ' DateTimeUtil.getDate(dpkNgayBN.Text)
             Else
                 m_QDNhanSu.NgayBoNhiem_TT = DateTime.MinValue
             End If
             If dpkNgayTL.Checked Then
-                m_QDNhanSu.NgayThoiLuong = DateTimeUtil.getDate(dpkNgayTL.Text)
+                m_QDNhanSu.NgayThoiLuong = dpkNgayTL.Value           ' DateTimeUtil.getDate(dpkNgayTL.Text)
             Else
                 m_QDNhanSu.NgayThoiLuong = DateTime.MinValue
             End If
@@ -801,7 +803,7 @@
             m_QDNhanSu.IdLoaiQD = CInt(cboLoaiQD.SelectedValue)
             If cbIsQD_NHCS.Checked Then
                 Dim m_QDNSfinal As QDNhanSu = New QDNhanSu
-                m_QDNSfinal = m_QDNSfinal.getFinalRecord(idCanBo, dpkNgayHL.Value)
+                m_QDNSfinal = m_QDNSfinal.getFinalRecord(IdCanBo, dpkNgayHL.Value)
                 m_QDNhanSu.IsQD_NHCS = 1
                 m_QDNhanSu.IdDonvi_Cu = m_QDNSfinal.IdDonvi_Moi
                 m_QDNhanSu.IdPhong_Cu = m_QDNSfinal.IdPhong_Moi
@@ -826,7 +828,7 @@
                 m_QDNhanSu.IdPhong_Moi = 0
                 m_QDNhanSu.IdChucvu_Moi = 0
                 If dpkDenNgay.Checked Then
-                    m_QDNhanSu.DenNgay = DateTimeUtil.getDate(dpkDenNgay.Text)
+                    m_QDNhanSu.DenNgay = dpkDenNgay.Value ' DateTimeUtil.getDate(dpkDenNgay.Text)
                 Else
                     m_QDNhanSu.DenNgay = DateTime.MinValue
                 End If
@@ -862,7 +864,7 @@
             If m_QDNhanSu.IdQDNhanSu <> "" Then
                 If m_QDNhanSu.IsKiemNhiem = 2 Then
                     'cap nhat lai QD kiem nhiem truoc do
-                    dbconn.executeSQL("UPDATE QDNhanSu SET IsKiemNhiem=2 WHERE IdCanBo='" & idCanBo & "' and IsKiemNhiem=1 and IdDonvi_Moi=" & m_QDNhanSu.IdDonvi_Moi & " and IdPhong_Moi=" & m_QDNhanSu.IdPhong_Moi & " and IdChucVu_Moi=" & m_QDNhanSu.IdChucvu_Moi)
+                    dbconn.executeSQL("UPDATE QDNhanSu SET IsKiemNhiem=2 WHERE IdCanBo='" & IdCanBo & "' and IsKiemNhiem=1 and IdDonvi_Moi=" & m_QDNhanSu.IdDonvi_Moi & " and IdPhong_Moi=" & m_QDNhanSu.IdPhong_Moi & " and IdChucVu_Moi=" & m_QDNhanSu.IdChucvu_Moi)
                 End If
                 Dim m_Luong As LuongCanBo = New LuongCanBo
                 Dim m_PhuCap As Phucap = New Phucap
@@ -870,10 +872,10 @@
                 Dim IDLoaiQDLuong As String = ""
                 Dim db As DBAccess = New DBAccess
                 m_Luong.IdLuongCB = idLuong
-                m_Luong.IdCanBo = idCanBo
+                m_Luong.IdCanBo = IdCanBo
                 If cbLuong.Checked Then
-                    m_Luong.Ngay_Huong = dateHL
-                    m_Luong.NgayLen_DK = dateHL.AddMonths(getTimeNangBac(cboNgach.SelectedValue))
+                    m_Luong.Ngay_Huong = dpkNgayHL.Value
+                    m_Luong.NgayLen_DK = dpkNgayHL.Value.AddMonths(getTimeNangBac(cboNgach.SelectedValue))
                     m_Luong.DVraQD = m_QDNhanSu.DVraQD
                     If cbIsQD_NHCS.Checked Then
                         m_Luong.IsQD_NHCS = 1
@@ -897,7 +899,7 @@
                     End If
                     m_Luong.IdLoaiQD = IDLoaiQDLuong
                     m_Luong.SoQD = m_QDNhanSu.So_QD
-                    m_Luong.NgayQD = dateQD
+                    m_Luong.NgayQD = dpkNgayQD.Value
                     m_Luong.NguoiQD = m_QDNhanSu.NguoiKy_QD
                     If m_QDNhanSu.GhiChu.Length > 100 Then
                         m_Luong.GhiChu = m_QDNhanSu.GhiChu.Substring(0, 99)
@@ -909,7 +911,7 @@
                     Else
                         ' Kiem tra thông tin lương trong QDNS neu trung với thông tin lương hiện đang hưởng của CB thì ko cho nhập sang HS Luong
                         Dim m_LuongFinal As LuongCanBo = New LuongCanBo
-                        m_LuongFinal = m_LuongFinal.getFinalRecord(idCanBo)
+                        m_LuongFinal = m_LuongFinal.getFinalRecord(IdCanBo)
                         If Not (m_LuongFinal.IdBacLuong = m_Luong.IdBacLuong And m_LuongFinal.IdLoaiQD = m_Luong.IdLoaiQD And m_Luong.IsQD_NHCS) Then
                             m_Luong.Add()
                         End If
@@ -920,7 +922,7 @@
                     End If
                 End If
                 m_PhuCap.IdCB_PhuCap = idPhucap
-                m_PhuCap.IdCanBo = idCanBo
+                m_PhuCap.IdCanBo = IdCanBo
                 If cbPhucap.Checked Then
                     If cbIsQD_NHCS.Checked Then
                         m_PhuCap.IsQD_NHCS = 1
@@ -934,10 +936,10 @@
                         m_PhuCap.IsQD_NHCS = 0
                         m_PhuCap.NoiDung = txtNoiDung_PC.Text.Trim
                     End If
-                    m_PhuCap.TuNgay = DateTimeUtil.getDate(dpkNgayHL.Text)  'dateHL
+                    m_PhuCap.TuNgay = dpkNgayHL.Value               ' DateTimeUtil.getDate(dpkNgayHL.Text)  'dateHL
                     m_PhuCap.DenNgay = DateTime.MinValue
                     m_PhuCap.SoQD = m_QDNhanSu.So_QD
-                    m_PhuCap.NgayQD = dateQD
+                    m_PhuCap.NgayQD = dpkNgayQD.Value
                     m_PhuCap.NguoiQD = m_QDNhanSu.NguoiKy_QD
                     m_PhuCap.DVraQD = m_QDNhanSu.DVraQD
                     If m_QDNhanSu.GhiChu.Length > 100 Then
@@ -948,7 +950,8 @@
                     If idPhucap <> "" Then
                         Dim dtPC As DataTable
                         Dim iPC As Integer = 0
-                        dtPC = db.SelectDBRows("SELECT IdCB_PhuCap FROM HS_PhucapCB WHERE IdCanbo='" & idCanBo & "' and Datediff(day,TuNgay,'" & NgayHLCU & "')=0 and Upper(SoQD)=Upper(N'" & SoQDCU & "') and NgayQD='" & NgayQDCU & "' and IdMucPC<>" & m_PhuCap.IdMucPC)
+                        Dim sNgayHLCU As String = NgayHLCU.ToString("yyyy-MM-dd")
+                        dtPC = db.SelectDBRows("SELECT IdCB_PhuCap FROM HS_PhucapCB WHERE IdCanBo='" & IdCanBo & "' And DatedIff(Day,TuNgay,Cast('" & sNgayHLCU & "' As Date))=0 And Upper(SoQD)=Upper(N'" & SoQDCU & "') And NgayQD='" & NgayQDCU & "' And IdMucPC<>" & m_PhuCap.IdMucPC)
                         m_PhuCap.Update()
                         ' Update tiếp với các Phụ cấp khác có cùng số QĐ và ngày
                         If dtPC.Rows.Count > 0 Then
@@ -960,7 +963,7 @@
                     Else
                         Dim dtPC As DataTable
                         m_PhuCap.Add()
-                        dtPC = db.SelectDBRows("SELECT IdCB_PhuCap, DenNgay FROM HS_PhucapCB t1, MucPhuCap t2 WHERE t1.IdMucPC=t2.IdMuc_PhC and idcanbo='" & idCanBo & "' and IsQD_NHCS=1 and IdLoai_PhC=" & CInt(cboLoaiPC.SelectedValue) & " order by TuNgay desc")
+                        dtPC = db.SelectDBRows("SELECT IdCB_PhuCap, DenNgay FROM HS_PhucapCB t1, MucPhuCap t2 WHERE t1.IdMucPC=t2.IdMuc_PhC and IdCanBo='" & IdCanBo & "' and IsQD_NHCS=1 and IdLoai_PhC=" & CInt(cboLoaiPC.SelectedValue) & " order by TuNgay desc")
                         If dtPC.Rows.Count >= 2 Then
                             If dtPC.Rows(1).Item("DenNgay") Is DBNull.Value Then
                                 db.executeSQL("UPDATE HS_PhuCapCB Set DenNgay='" & m_PhuCap.TuNgay.AddDays(-1) & "' WHERE IdCB_PhuCap= '" & dtPC.Rows(1).Item("IdCB_PhuCap") & "'")
@@ -1028,8 +1031,8 @@
             pnlPC_IsNotNHCS.Visible = False
             pnlL_IsNHCS.Visible = True
             pnlPC_IsNHCS.Visible = True
-            grpTTCu.Visible = True
-            grpTTCu.Enabled = False
+            gbThongTinCu.Visible = True
+            gbThongTinCu.Enabled = False
             If idQDNhansu = "" Then txtDVraQD.Text = getDonvi(IdDONVI)
         Else
             cboCVNguoiQD.Visible = False
@@ -1037,7 +1040,7 @@
             labNgayHL.Text = "Từ ngày"
             labQuyetDinh.Visible = True
             txtLoaiQD.Visible = True
-            grpTTCu.Visible = False
+            gbThongTinCu.Visible = False
             pnlQD_IsNHCS.Visible = False
             pnlQD_IsNotNHCS.Visible = True
             labDenNgay.Visible = True
@@ -1120,6 +1123,8 @@
 
     Private Sub gridQDNhanSu_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles gridQDNhanSu.CellClick
         Try
+            ckb_ChoiceShowPosNew.Enabled = False
+            ckb_ChoiceShowPosNew_CheckedChanged(Nothing, Nothing)
             idQDNhansu = gridQDNhanSu.CurrentRow.Cells("IdQDNS").Value.ToString
             fillQDNhansu(idQDNhansu)
         Catch ex As Exception
@@ -1136,6 +1141,7 @@
     End Sub
 
     Private Sub bntNew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bntNew.Click
+        ckb_ChoiceShowPosNew.Enabled = True
         blankQDNhansu()
     End Sub
 
@@ -1149,7 +1155,7 @@
                     Return
                 End If
             End If
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
             Else
                 lab_ErrQDNS = checkTabQDNhanSu()
@@ -1164,7 +1170,7 @@
                 IDP_Cu = IdPhongCu
                 If updateQDNhanSu(idQDNhansu) Then
                     Dim lastQD As QDNhanSu = New QDNhanSu
-                    lastQD = lastQD.getFinalRecord(idCanBo)
+                    lastQD = lastQD.getFinalRecord(IdCanBo)
                     If lastQD.IdDonvi_Moi = IDDV_Moi And lastQD.IdPhong_Moi = IDP_Moi Then
                         Dim childNode As TreeNode
                         Dim _node As TreeNode
@@ -1172,7 +1178,7 @@
 
                         _node = treeCocau.SelectedNode.Parent
                         If Not (IDDV_Cu = 0 And IDP_Cu = 0) Then
-                            refreshNodeNOTCanbo(treeCocau, _node, IDDV_Cu, IDP_Cu, False, False, idCanBo)
+                            refreshNodeNOTCanbo(treeCocau, _node, IDDV_Cu, IDP_Cu, False, False, IdCanBo)
                         End If
                         For Each childNode In treeCocau.Nodes(0).Nodes
                             Dim arr1() As String
@@ -1191,7 +1197,7 @@
                                         arr1_DP = DP_Node.Tag.ToString.Split("_")
                                         arr0_DP = DP_Node.Parent.Tag.ToString.Split("_")
                                         If (arr0_DP(1) = IDDV_Moi And arr1_DP(2) = IDP_Moi) Then
-                                            refreshNodeNOTCanbo(treeCocau, DP_Node, arr0_DP(1), arr1_DP(2), False, False, idCanBo)
+                                            refreshNodeNOTCanbo(treeCocau, DP_Node, arr0_DP(1), arr1_DP(2), False, False, IdCanBo)
                                             isExits = True
                                             Exit For
                                         End If
@@ -1199,7 +1205,7 @@
                                 End If
                             Else
                                 If (arr0(1) = IDDV_Moi And arr1(2) = IDP_Moi) Then
-                                    refreshNodeNOTCanbo(treeCocau, childNode, arr0(1), arr1(2), False, False, idCanBo)
+                                    refreshNodeNOTCanbo(treeCocau, childNode, arr0(1), arr1(2), False, False, IdCanBo)
                                     isExits = True
                                     Exit For
                                 End If
@@ -1208,8 +1214,8 @@
                         Next
                     End If
                     If cbActive.Checked Then
-                        bindGridQDNhansu(idCanBo)
-                        fillQDNhansu(idQDNhansu, idCanBo)
+                        bindGridQDNhansu(IdCanBo)
+                        fillQDNhansu(idQDNhansu, IdCanBo)
                     End If
                     labAlert_QD.Text = "Ghi dữ liệu thành công!"
                 Else
@@ -1222,6 +1228,8 @@
     End Sub
 
     Private Sub bntCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bntCancel.Click
+        ckb_ChoiceShowPosNew.Enabled = False
+        ckb_ChoiceShowPosNew_CheckedChanged(Nothing, Nothing)
         If idQDNhansu = "" Then
             blankQDNhansu()
         Else
@@ -1232,7 +1240,7 @@
     Private Sub bntDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bntDelete.Click
         Try
             labAlert_QD.Text = ""
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -1254,7 +1262,7 @@
                 Dim IDDV_Moi, IDP_Moi As Integer
                 Dim IDQD_Final As String
                 Dim m_QDNhanSuFinal As QDNhanSu = New QDNhanSu
-                m_QDNhanSuFinal = m_QDNhanSuFinal.getFinalRecord(idCanBo, Nothing, True)
+                m_QDNhanSuFinal = m_QDNhanSuFinal.getFinalRecord(IdCanBo, Nothing, True)
                 IDQD_Final = m_QDNhanSuFinal.IdQDNhanSu
                 IDDV_Moi = m_QDNhanSuFinal.IdDonvi_Moi
                 IDP_Moi = m_QDNhanSuFinal.IdPhong_Moi
@@ -1266,7 +1274,7 @@
                     Try
                         'Dim IDDV_Moi, IDP_Moi, IDDV_Cu, IDP_Cu As Integer
                         'Dim m_QDNhanSuFinal As QDNhanSu = New QDNhanSu
-                        'm_QDNhanSuFinal = m_QDNhanSuFinal.getFinalRecord(idCanBo)
+                        'm_QDNhanSuFinal = m_QDNhanSuFinal.getFinalRecord(IdCanBo)
                         'IDDV_Cu = m_QDNhanSuFinal.IdDonvi_Moi
                         'IDP_Cu = m_QDNhanSuFinal.IdPhong_Moi
                         'Dim i As Integer
@@ -1276,7 +1284,7 @@
                         '    m_QDNhanSu.Delete()
                         'Next
                         'm_QDNhanSuFinal = New QDNhanSu
-                        'm_QDNhanSuFinal = m_QDNhanSuFinal.getFinalRecord(idCanBo)
+                        'm_QDNhanSuFinal = m_QDNhanSuFinal.getFinalRecord(IdCanBo)
                         'IDDV_Moi = m_QDNhanSuFinal.IdDonvi_Moi
                         'IDP_Moi = m_QDNhanSuFinal.IdPhong_Moi
 
@@ -1285,14 +1293,14 @@
                         'Dim isExits As Boolean = False
 
                         '_node = treeCocau.SelectedNode.Parent
-                        'refreshNodeNOTCanbo(treeCocau, _node, IDDV_Cu, IDP_Cu, False, False, idCanBo)
+                        'refreshNodeNOTCanbo(treeCocau, _node, IDDV_Cu, IDP_Cu, False, False, IdCanBo)
                         'For Each childNode In treeCocau.Nodes(0).Nodes
                         '    Dim arr1() As String
                         '    Dim arr0() As String
                         '    arr1 = childNode.Tag.ToString.Split("_")
                         '    arr0 = childNode.Parent.Tag.ToString.Split("_")
                         '    If (arr0(1) = IDDV_Moi And arr1(2) = IDP_Moi) Then
-                        '        refreshNodeNOTCanbo(treeCocau, childNode, arr0(1), arr1(2), False, False, idCanBo)
+                        '        refreshNodeNOTCanbo(treeCocau, childNode, arr0(1), arr1(2), False, False, IdCanBo)
                         '        isExits = True
                         '        Exit For
                         '    End If
@@ -1311,29 +1319,29 @@
                             End If
                         Next
                         Dim lastQD As QDNhanSu = New QDNhanSu
-                        lastQD = lastQD.getFinalRecord(idCanBo)
+                        lastQD = lastQD.getFinalRecord(IdCanBo)
                         If Not (lastQD.IdDonvi_Moi = IDDV_Moi And lastQD.IdPhong_Moi = IDP_Moi) Then
                             Dim childNode As TreeNode
                             'Dim _node As TreeNode
                             Dim isExits As Boolean = False
 
                             '_node = treeCocau.SelectedNode.Parent
-                            'refreshNodeNOTCanbo(treeCocau, _node, IDDV_Cu, IDP_Cu, False, False, idCanBo)
+                            'refreshNodeNOTCanbo(treeCocau, _node, IDDV_Cu, IDP_Cu, False, False, IdCanBo)
                             For Each childNode In treeCocau.Nodes(0).Nodes
                                 Dim arr1() As String
                                 Dim arr0() As String
                                 arr1 = childNode.Tag.ToString.Split("_")
                                 arr0 = childNode.Parent.Tag.ToString.Split("_")
                                 If (arr0(1) = IDDV_Moi And arr1(2) = IDP_Moi) Then
-                                    refreshNodeNOTCanbo(treeCocau, childNode, arr0(1), arr1(2), False, False, idCanBo)
+                                    refreshNodeNOTCanbo(treeCocau, childNode, arr0(1), arr1(2), False, False, IdCanBo)
                                     isExits = True
                                     Exit For
                                 End If
                             Next
                         End If
                         If cbActive.Checked Then
-                            bindGridQDNhansu(idCanBo)
-                            fillQDNhansu("", idCanBo)
+                            bindGridQDNhansu(IdCanBo)
+                            fillQDNhansu("", IdCanBo)
                         End If
                         labAlert_QD.Text = "Xoá dữ liệu thành công!"
                     Catch ex As Exception
@@ -1358,10 +1366,10 @@
 
     'Private Sub dpkNgayHL_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles dpkNgayHL.LostFocus
     '    Dim m_QDNhanSu As QDNhanSu = New QDNhanSu
-    '    m_QDNhanSu = m_QDNhanSu.getFinalRecord(idCanBo, dpkNgayHL.Value)
+    '    m_QDNhanSu = m_QDNhanSu.getFinalRecord(IdCanBo, dpkNgayHL.Value)
     '    If m_QDNhanSu.IdQDNhanSu <> "" Then
     '        If idQDNhansu <> "" Then
-    '            getOldInfQDNhanSu(m_QDNhanSu.IdQDNhanSu, idCanBo, IdDonViCu, txtDonViCu.Text, IdPhongCu, txtPhongCu.Text, IdChucVuCu, txtChucVuCu.Text, IdChuyenMonCu, txtChuyenMonCu.Text)
+    '            getOldInfQDNhanSu(m_QDNhanSu.IdQDNhanSu, IdCanBo, IdDonViCu, txtDonViCu.Text, IdPhongCu, txtPhongCu.Text, IdChucVuCu, txtChucVuCu.Text, IdChuyenMonCu, txtChuyenMonCu.Text)
     '        Else
     '            IdDonViCu = m_QDNhanSu.IdDonvi_Moi
     '            txtDonViCu.Text = getDonvi(IdDonViCu)
@@ -1380,11 +1388,11 @@
     '    End If
     'End Sub
 
-    Private Sub txtNguoiQD_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtNguoiQD.LostFocus
+    Private Sub txtNguoiQD_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtNguoiQD.Text = standardizeName(txtNguoiQD.Text)
     End Sub
 
-    Private Sub txtGhichu_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtGhichu.LostFocus
+    Private Sub txtGhichu_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtGhichu.Text = standardizeString(txtGhichu.Text)
     End Sub
 
@@ -1399,8 +1407,8 @@
             bindCboLyDo_TV()
             bindCboChucvuNguoiKyQD_TV()
         End If
-        bindGridTV(idCanBo)
-        fillQDThoiViec(idQDThoiViec, idCanBo)
+        bindGridTV(IdCanBo)
+        fillQDThoiViec(idQDThoiViec, IdCanBo)
         gridThoiViec.Focus()
     End Sub
 
@@ -1416,12 +1424,12 @@
         cboCVNguoiKyQD_TV.DataSource = listChucVuQuyenRaQD()
     End Sub
 
-    Private Sub bindGridTV(ByVal vIdCanbo As String)
+    Private Sub bindGridTV(ByVal vIdCanBo As String)
         Try
-            If vIdCanbo <> "" Then
+            If vIdCanBo <> "" Then
                 gridThoiViec.AutoGenerateColumns = False
                 Dim m_ThoiViec As CBThoiViec = New CBThoiViec
-                gridThoiViec.DataSource = m_ThoiViec.getAllByCanbo(vIdCanbo)
+                gridThoiViec.DataSource = m_ThoiViec.getAllByCanbo(vIdCanBo)
                 Dim i As Integer = 0
                 While i <= gridThoiViec.Rows.Count - 1
                     If Trim(gridThoiViec.Rows(i).Cells(0).Value) = idQDThoiViec Then
@@ -1439,7 +1447,7 @@
     Private Function checkTabQDThoiviec() As String
         Dim strReturn As String = ""
         Try
-            If (idCanBo = "") Then
+            If (IdCanBo = "") Then
                 strReturn = "Bạn chưa chọn cán bộ cần cập nhật cán bộ thôi việc"
                 Exit Try
             End If
@@ -1535,11 +1543,11 @@
             Dim m_QDThoiViec As CBThoiViec = New CBThoiViec
 
             m_QDThoiViec.IdCBThoiViec = vIdQDThoiViec
-            m_QDThoiViec.IdCanBo = idCanBo
+            m_QDThoiViec.IdCanBo = IdCanBo
             m_QDThoiViec.IdLoaiQD = CInt(cboQDThoiViec.SelectedValue)
             m_QDThoiViec.IdLyDo = CInt(cboLyDo_TV.SelectedValue)
-            m_QDThoiViec.NgayKy_QD = DateTimeUtil.getDate(dpkNgayKy_TV.Text)
-            m_QDThoiViec.Ngay_HL = DateTimeUtil.getDate(dpkNgayHL_TV.Text)
+            m_QDThoiViec.NgayKy_QD = dpkNgayKy_TV.Value         ' DateTimeUtil.getDate(dpkNgayKy_TV.Text)
+            m_QDThoiViec.Ngay_HL = dpkNgayHL_TV.Value           'DateTimeUtil.getDate(dpkNgayHL_TV.Text)
             m_QDThoiViec.NguoiKy_QD = standardizeName(txtNguoiKyQD_TV.Text)
             m_QDThoiViec.TroCap_ThoiViec = N2Number(MoneyValue(txtTroCap_TV.Text.ToString))
             m_QDThoiViec.TroCap_Khac = N2Number(MoneyValue(txtTroCapKhac.Text.ToString))
@@ -1634,7 +1642,7 @@
                     Return
                 End If
             End If
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -1644,7 +1652,7 @@
                 Exit Sub
             End If
             If updateQDThoiViec(idQDThoiViec) Then
-                bindGridTV(idCanBo)
+                bindGridTV(IdCanBo)
                 labAlert_TV.Text = "Ghi dữ liệu thành công!"
             Else
                 MessageBox.Show("Ghi dữ liệu không thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
@@ -1664,7 +1672,7 @@
 
     Private Sub bntDelete_TV_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bntDelete_TV.Click
         Try
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -1688,7 +1696,7 @@
                             m_QDThoiViec.Delete()
                         Next
                         blankQDThoiViec()
-                        bindGridTV(idCanBo)
+                        bindGridTV(IdCanBo)
                         labAlert_TV.Text = "Xoá dữ liệu thành công!"
                     Catch ex As Exception
                         MessageBox.Show("Xoá dữ liệu không thành công: " & ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
@@ -1710,11 +1718,11 @@
         gridThoiViec_CellClick(sender, Nothing)
     End Sub
 
-    Private Sub txtNguoiKyQD_TV_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtNguoiKyQD_TV.LostFocus
+    Private Sub txtNguoiKyQD_TV_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtNguoiKyQD_TV.Text = standardizeName(txtNguoiKyQD_TV.Text)
     End Sub
 
-    Private Sub txtGhiChu_TV_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtGhiChu_TV.LostFocus
+    Private Sub txtGhiChu_TV_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtGhiChu_TV.Text = standardizeString(txtGhiChu_TV.Text)
     End Sub
 
@@ -1745,16 +1753,16 @@
             If cboQDNghiDinh.SelectedValue = 0 Then cboQDNghiDinh.SelectedValue = 1
             initQDL = True
         End If
-        bindGridQDLuong(idCanBo)
-        fillQDLuong(idQDLuong, idCanBo)
+        bindGridQDLuong(IdCanBo)
+        fillQDLuong(idQDLuong, IdCanBo)
         cbIsQD_NHCS_L.Focus()
     End Sub
 
-    Private Sub bindGridQDLuong(ByVal vIdCanbo As String)
+    Private Sub bindGridQDLuong(ByVal vIdCanBo As String)
         Try
-            If vIdCanbo <> "" Then
+            If vIdCanBo <> "" Then
                 gridQDLuong.AutoGenerateColumns = False
-                gridQDLuong.DataSource = listQDLuong(vIdCanbo)
+                gridQDLuong.DataSource = listQDLuong(vIdCanBo)
                 Dim i As Integer = 0
                 While i <= gridQDLuong.Rows.Count - 1
                     If Trim(gridQDLuong.Rows(i).Cells(0).Value) = idQDLuong Then
@@ -1783,7 +1791,7 @@
                 Exit Try
             End If
             'If idQDLuong = "" Then
-            '    If checkQuyetDinh("LUONG", idCanBo, txtSoQD_L.Text) Then
+            '    If checkQuyetDinh("LUONG", IdCanBo, txtSoQD_L.Text) Then
             '        txtSoQD_L.Text = ""
             '        txtSoQD_L.Focus()
             '        strReturn = "Số quyết định lương của cán bộ đã tồn tại. Hãy nhập lại!"
@@ -1901,12 +1909,12 @@
         Try
             Dim m_LuongCB As LuongCanBo = New LuongCanBo
             m_LuongCB.IdLuongCB = vIdLuongCB
-            m_LuongCB.IdCanBo = idCanBo
-            m_LuongCB.Ngay_Huong = DateTimeUtil.getDate(dpkNgayHL_L.Text)
-            m_LuongCB.NgayLen_DK = DateTimeUtil.getDate(dpkNgayLenLTT.Text)
+            m_LuongCB.IdCanBo = IdCanBo
+            m_LuongCB.Ngay_Huong = dpkNgayHL_L.Value             ' DateTimeUtil.getDate(dpkNgayHL_L.Text)
+            m_LuongCB.NgayLen_DK = dpkNgayLenLTT.Value           ' DateTimeUtil.getDate(dpkNgayLenLTT.Text)
             m_LuongCB.SoQD = txtSoQD_L.Text
             m_LuongCB.DVraQD = standardizeString(txtDVraQD_L.Text.Trim)
-            m_LuongCB.NgayQD = DateTimeUtil.getDate(dpkNgayKy_L.Text)
+            m_LuongCB.NgayQD = dpkNgayKy_L.Value                 ' DateTimeUtil.getDate(dpkNgayKy_L.Text)
             m_LuongCB.NguoiQD = standardizeName(txtNguoiKyQD_L.Text)
             m_LuongCB.GhiChu = standardizeString(txtGhiChu_L.Text)
             If cbIsQD_NHCS_L.Checked Then
@@ -1962,7 +1970,7 @@
         End If
     End Sub
 
-    Private Sub txtNguoiKyQD_L_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtNguoiKyQD_L.LostFocus
+    Private Sub txtNguoiKyQD_L_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtNguoiKyQD_L.Text = standardizeName(txtNguoiKyQD_L.Text)
     End Sub
 
@@ -1995,7 +2003,7 @@
 
     End Sub
 
-    Private Sub dpkNgayHL_L_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles dpkNgayHL_L.LostFocus
+    Private Sub dpkNgayHL_L_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         dpkNgayLenLTT.Value = dpkNgayHL_L.Value.AddMonths(getTimeNangBac(CInt(cboQDNgach.SelectedValue)))
     End Sub
 
@@ -2033,11 +2041,11 @@
             If (idQDLuong <> "") Then   ' Sửa
                 If (Globals.Roles.IndexOf(";189;") < 0) Then
                     MessageBox.Show("Bạn không có quyền sửa đổi dữ liệu lương chuyên môn nghiệp vụ của cán bộ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
-                    gridQdLuong_CellClick(sender, Nothing)
+                    gridQDLuong_CellClick(sender, Nothing)
                     Return
                 End If
             End If
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -2048,7 +2056,7 @@
             End If
 
             If updateQDLuong(idQDLuong) Then
-                bindGridQDLuong(idCanBo)
+                bindGridQDLuong(IdCanBo)
                 labAlert_L.Text = "Ghi dữ liệu thành công!"
             Else
                 MessageBox.Show("Ghi dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
@@ -2068,7 +2076,7 @@
 
     Private Sub bntDelete_L_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles bntDelete_L.Click
         Try
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -2092,7 +2100,7 @@
                             m_LuongCanBo.Delete()
                         Next
                         blankQDLuong()
-                        bindGridQDLuong(idCanBo)
+                        bindGridQDLuong(IdCanBo)
                         labAlert_L.Text = "Xoá dữ liệu thành công!"
                     Catch ex As Exception
                         MessageBox.Show("Xoá dữ liệu không thành công: " & ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
@@ -2120,16 +2128,16 @@
             cboLoaiQD_PC.DataSource = listDanhmuc(31)
             initQDP = True
         End If
-        bindGridQDPhucap(idCanBo)
-        fillQDPhucap(idQDPhucap, idCanBo)
+        bindGridQDPhucap(IdCanBo)
+        fillQDPhucap(idQDPhucap, IdCanBo)
         cbIsQD_NHCS_PC.Focus()
     End Sub
 
-    Private Sub bindGridQDPhucap(ByVal vIdCanbo As String)
+    Private Sub bindGridQDPhucap(ByVal vIdCanBo As String)
         Try
-            If vIdCanbo <> "" Then
+            If vIdCanBo <> "" Then
                 gridQDPhuCap.AutoGenerateColumns = False
-                gridQDPhuCap.DataSource = listQDPhucap(vIdCanbo)
+                gridQDPhuCap.DataSource = listQDPhucap(vIdCanBo)
                 Dim i As Integer = 0
                 While i <= gridQDPhuCap.Rows.Count - 1
                     If Trim(gridQDPhuCap.Rows(i).Cells(0).Value) = idQDPhucap Then
@@ -2158,7 +2166,7 @@
                 Exit Try
             End If
             'If idQDPhucap = "" Then
-            '    If checkQuyetDinh("PHUCAP", idCanBo, txtSoQD_PC.Text) Then
+            '    If checkQuyetDinh("PHUCAP", IdCanBo, txtSoQD_PC.Text) Then
             '        txtSoQD_PC.Text = ""
             '        txtSoQD_PC.Focus()
             '        strReturn = "Số quyết định phụ cấp của cán bộ đã tồn tại. Hãy nhập lại!"
@@ -2261,16 +2269,16 @@
             Dim db As DBAccess = New DBAccess
 
             m_PhucapCB.IdCB_PhuCap = vIdPhucap
-            m_PhucapCB.IdCanBo = idCanBo
+            m_PhucapCB.IdCanBo = IdCanBo
 
-            m_PhucapCB.TuNgay = DateTimeUtil.getDate(dpkNgayHL_PC.Text)
+            m_PhucapCB.TuNgay = dpkNgayHL_PC.Value               ' DateTimeUtil.getDate(dpkNgayHL_PC.Text)
             If dpkDenNgay_PC.Checked Then
-                m_PhucapCB.DenNgay = DateTimeUtil.getDate(dpkDenNgay_PC.Text)
+                m_PhucapCB.DenNgay = dpkDenNgay_PC.Value         ' DateTimeUtil.getDate(dpkDenNgay_PC.Text)
             Else
                 m_PhucapCB.DenNgay = DateTime.MinValue
             End If
             m_PhucapCB.SoQD = txtSoQD_PC.Text
-            m_PhucapCB.NgayQD = DateTimeUtil.getDate(dpkNgayKy_PC.Text)
+            m_PhucapCB.NgayQD = dpkNgayKy_PC.Value               ' DateTimeUtil.getDate(dpkNgayKy_PC.Text)
             m_PhucapCB.NguoiQD = standardizeName(txtNguoiKyQD_PC.Text)
             m_PhucapCB.DVraQD = standardizeString(txtDVraQD_PC.Text.Trim)
             If cbIsQD_NHCS_PC.Checked Then
@@ -2288,7 +2296,8 @@
             End If
             m_PhucapCB.GhiChu = standardizeString(txtGhichu_PC.Text)
             If idQDPhucap <> "" Then
-                dtPC = db.SelectDBRows("SELECT IdCB_PhuCap FROM HS_PhucapCB WHERE IdCanbo='" & idCanBo & "' and Datediff(day,TuNgay,'" & NgayHLCU & "')=0 and Upper(SoQD)=Upper(N'" & SoQDCU & "') and NgayQD='" & NgayQDCU & "' and IdMucPC<>" & m_PhucapCB.IdMucPC)
+                Dim sNgayHLCU As String = NgayHLCU.ToString("yyyy-MM-dd")
+                dtPC = db.SelectDBRows("SELECT IdCB_PhuCap FROM HS_PhucapCB WHERE IdCanBo='" & IdCanBo & "' And DatedIff(Day,TuNgay,Cast('" & sNgayHLCU & "' As Date)) = 0 and Upper(SoQD)=Upper(N'" & SoQDCU & "') and NgayQD='" & NgayQDCU & "' and IdMucPC<>" & m_PhucapCB.IdMucPC)
                 m_PhucapCB.Update()
                 ' Update tiếp với các Phụ cấp khác có cùng số QĐ và ngày
                 If dtPC.Rows.Count > 0 Then
@@ -2299,7 +2308,7 @@
                 End If
             Else
                 m_PhucapCB.Add()
-                dtPC = db.SelectDBRows("SELECT IdCB_PhuCap, DenNgay FROM HS_PhucapCB t1, MucPhuCap t2 WHERE t1.IdMucPC=t2.IdMuc_PhC and idcanbo='" & idCanBo & "' and IsQD_NHCS=1 and IdLoai_PhC=" & CInt(cboLoaiQD_PC.SelectedValue) & " order by TuNgay desc")
+                dtPC = db.SelectDBRows("SELECT IdCB_PhuCap, DenNgay FROM HS_PhucapCB t1, MucPhuCap t2 WHERE t1.IdMucPC=t2.IdMuc_PhC and IdCanBo='" & IdCanBo & "' and IsQD_NHCS=1 and IdLoai_PhC=" & CInt(cboLoaiQD_PC.SelectedValue) & " order by TuNgay desc")
                 If dtPC.Rows.Count >= 2 Then
                     If dtPC.Rows(1).Item("DenNgay") Is DBNull.Value Then
                         db.executeSQL("UPDATE HS_PhuCapCB Set DenNgay='" & m_PhucapCB.TuNgay.AddDays(-1) & "' WHERE IdCB_PhuCap= '" & dtPC.Rows(1).Item("IdCB_PhuCap") & "'")
@@ -2312,7 +2321,7 @@
         End Try
     End Function
 
-    Private Sub txtNguoiKyQD_PC_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtNguoiKyQD_PC.LostFocus
+    Private Sub txtNguoiKyQD_PC_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtNguoiKyQD_PC.Text = standardizeName(txtNguoiKyQD_PC.Text)
     End Sub
 
@@ -2375,7 +2384,7 @@
                     Return
                 End If
             End If
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -2384,10 +2393,10 @@
                 MessageBox.Show(lab_Err2, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
-            'If checkQuyetDinh("PHUCAP", idCanBo, txtSoQD_PC.Text) Then
+            'If checkQuyetDinh("PHUCAP", IdCanBo, txtSoQD_PC.Text) Then
             '    If MessageBox.Show("Số quyết định phụ cấp của cán bộ đã tồn tại." & vbCr & "Bạn muốn nhập tiếp thông tin cho số quyết định này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3) = Windows.Forms.DialogResult.Yes Then
             '        If updateQDPhucap(idQDPhucap) Then
-            '            bindGridQDPhucap(idCanBo)
+            '            bindGridQDPhucap(IdCanBo)
             '            labAlert_P.Text = "Ghi dữ liệu thành công!"
             '        Else
             '            MessageBox.Show("Ghi dữ liệu không thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
@@ -2395,7 +2404,7 @@
             '    End If
             'Else
             If updateQDPhucap(idQDPhucap) Then
-                bindGridQDPhucap(idCanBo)
+                bindGridQDPhucap(IdCanBo)
                 labAlert_P.Text = "Ghi dữ liệu thành công!"
             Else
                 MessageBox.Show("Ghi dữ liệu không thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
@@ -2416,7 +2425,7 @@
 
     Private Sub bntDelete_PC_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles bntDelete_PC.Click
         Try
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -2440,7 +2449,7 @@
                             m_Phucap.Delete()
                         Next
                         blankQDPhucap()
-                        bindGridQDPhucap(idCanBo)
+                        bindGridQDPhucap(IdCanBo)
                         labAlert_P.Text = "Xoá dữ liệu thành công!"
                     Catch ex As Exception
                         MessageBox.Show("Xoá dữ liệu không thành công: " & ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
@@ -2463,16 +2472,16 @@
 #Region "tab Quyết định Khac"
 
     Private Sub initTabQDKhac()
-        bindGridQDKhac(idCanBo)
-        fillQDKhac(idQDKhac, idCanBo)
+        bindGridQDKhac(IdCanBo)
+        fillQDKhac(idQDKhac, IdCanBo)
         txtSoQD_K.Focus()
     End Sub
 
-    Private Sub bindGridQDKhac(ByVal vIdCanbo As String)
+    Private Sub bindGridQDKhac(ByVal vIdCanBo As String)
         Try
-            If vIdCanbo <> "" Then
+            If vIdCanBo <> "" Then
                 gridQDKhac.AutoGenerateColumns = False
-                gridQDKhac.DataSource = listQDKhac(vIdCanbo)
+                gridQDKhac.DataSource = listQDKhac(vIdCanBo)
                 Dim i As Integer = 0
                 While i <= gridQDKhac.Rows.Count - 1
                     If Trim(gridQDKhac.Rows(i).Cells(0).Value) = idQDKhac Then
@@ -2496,7 +2505,7 @@
                 Exit Try
             End If
             'If idQDKhac = "" Then
-            '    If checkQuyetDinh("QDKHAC", idCanBo, txtSoQD_K.Text) Then
+            '    If checkQuyetDinh("QDKHAC", IdCanBo, txtSoQD_K.Text) Then
             '        txtSoQD_K.Text = ""
             '        txtSoQD_K.Focus()
             '        strReturn = "Số quyết định khác của cán bộ đã tồn tại. Hãy nhập lại!"
@@ -2558,9 +2567,9 @@
         Try
             Dim m_QDKhacCB As QDKhac = New QDKhac
             m_QDKhacCB.IdQDKhac = vIdQDKhacCB
-            m_QDKhacCB.IdCanBo = idCanBo
+            m_QDKhacCB.IdCanBo = IdCanBo
             m_QDKhacCB.So_QD = txtSoQD_K.Text
-            m_QDKhacCB.NgayKy_QD = DateTimeUtil.getDate(dpkNgayKy_K.Text)
+            m_QDKhacCB.NgayKy_QD = dpkNgayKy_K.Value         ' DateTimeUtil.getDate(dpkNgayKy_K.Text)
             m_QDKhacCB.NguoiKy_QD = standardizeName(txtNguoiKyQD_K.Text)
             m_QDKhacCB.CV_Nguoiky_QD = standardizeName(txtCVNguoiKyQD_K.Text)
             m_QDKhacCB.DVraQD = txtDVraQD_K.Text.Trim
@@ -2578,7 +2587,7 @@
     End Function
 #End Region
 
-    Private Sub txtNguoiKyQD_K_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtNguoiKyQD_K.LostFocus
+    Private Sub txtNguoiKyQD_K_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
         txtNguoiKyQD_K.Text = standardizeName(txtNguoiKyQD_K.Text)
     End Sub
 
@@ -2620,7 +2629,7 @@
                     Return
                 End If
             End If
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -2631,7 +2640,7 @@
             End If
 
             If updateQDKhac(idQDKhac) Then
-                bindGridQDKhac(idCanBo)
+                bindGridQDKhac(IdCanBo)
                 labAlert_K.Text = "Ghi dữ liệu thành công!"
             Else
                 MessageBox.Show("Ghi dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
@@ -2651,7 +2660,7 @@
 
     Private Sub bntDelete_K_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles bntDelete_K.Click
         Try
-            If idCanBo = "" Then
+            If IdCanBo = "" Then
                 MessageBox.Show("Chưa chọn Cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
                 Exit Sub
             End If
@@ -2675,7 +2684,7 @@
                             m_QDKhacCB.Delete()
                         Next
                         blankQDKhac()
-                        bindGridQDKhac(idCanBo)
+                        bindGridQDKhac(IdCanBo)
                         labAlert_K.Text = "Xoá dữ liệu thành công!"
                     Catch ex As Exception
                         MessageBox.Show("Xoá dữ liệu không thành công: " & ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3)
@@ -2697,7 +2706,7 @@
         Dim frmEx As frmExportHSCB = New frmExportHSCB
         Dim QDNhanSufinalNHCS As QDNhanSu = New QDNhanSu
         Dim IDCN As Integer
-        QDNhanSufinalNHCS = QDNhanSufinalNHCS.getFinalRecord(idCanBo, Nothing, True)
+        QDNhanSufinalNHCS = QDNhanSufinalNHCS.getFinalRecord(IdCanBo, Nothing, True)
         frmEx.IDCB_Moved = QDNhanSufinalNHCS.IdCanBo
         IDCN = dbconn.getString("SELECT id FROM ChiNhanh WHERE (id=" & QDNhanSufinalNHCS.IdDonvi_Moi & " and id_goc=1) or (id=" & QDNhanSufinalNHCS.IdDonvi_Moi & " and id_goc=0) or (id in (SELECT id_goc FROM Chinhanh WHERE id=" & QDNhanSufinalNHCS.IdDonvi_Moi & ") and id_goc=1)")
         frmEx.IDCN_Moved = IDCN
@@ -2705,8 +2714,11 @@
         frmEx.ShowDialog()
     End Sub
 
-    Private Sub chkTWQuanLy_CheckedChanged(sender As Object, e As EventArgs) Handles chkTWQuanLy.CheckedChanged
-
+    Private Sub ckb_ChoiceShowPosNew_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_ChoiceShowPosNew.CheckedChanged
+        If ckb_ChoiceShowPosNew.Checked Then
+            cboDonviMoi.DataSource = listDonvi_New(False, False, False, False, True, "", " And Ten_Goi Not Like N'%(Cũ)%' ")
+        Else
+            cboDonviMoi.DataSource = listDonvi_New(False, False, False, False, True)
+        End If
     End Sub
-
 End Class

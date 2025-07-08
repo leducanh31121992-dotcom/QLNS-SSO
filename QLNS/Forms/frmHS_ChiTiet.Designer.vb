@@ -453,6 +453,18 @@ Partial Class frmHS_ChiTiet
         Me.Label247 = New System.Windows.Forms.Label()
         Me.Label249 = New System.Windows.Forms.Label()
         Me.Label148 = New System.Windows.Forms.Label()
+        Me.lbl_ns_xa = New System.Windows.Forms.Label()
+        Me.lbl_ns_thon = New System.Windows.Forms.Label()
+        Me.Label116 = New System.Windows.Forms.Label()
+        Me.lbl_nq_xa = New System.Windows.Forms.Label()
+        Me.lbl_nq_thon = New System.Windows.Forms.Label()
+        Me.Label117 = New System.Windows.Forms.Label()
+        Me.lbl_tt_xa = New System.Windows.Forms.Label()
+        Me.lbl_tt_thon = New System.Windows.Forms.Label()
+        Me.Label118 = New System.Windows.Forms.Label()
+        Me.lbl_ttr_xa = New System.Windows.Forms.Label()
+        Me.lbl_ttr_thon = New System.Windows.Forms.Label()
+        Me.Label120 = New System.Windows.Forms.Label()
         Me.gb_main.SuspendLayout()
         Me.pnl_ttc_2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -571,7 +583,7 @@ Partial Class frmHS_ChiTiet
         Me.gb_main.Dock = System.Windows.Forms.DockStyle.Top
         Me.gb_main.Location = New System.Drawing.Point(0, 21)
         Me.gb_main.Name = "gb_main"
-        Me.gb_main.Size = New System.Drawing.Size(787, 190)
+        Me.gb_main.Size = New System.Drawing.Size(1006, 190)
         Me.gb_main.TabIndex = 0
         Me.gb_main.TabStop = False
         Me.gb_main.Text = " Thông tin chung "
@@ -591,9 +603,9 @@ Partial Class frmHS_ChiTiet
         Me.pnl_ttc_2.Controls.Add(Me.lbl_quoctich)
         Me.pnl_ttc_2.Controls.Add(Me.Panel4)
         Me.pnl_ttc_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_ttc_2.Location = New System.Drawing.Point(322, 22)
+        Me.pnl_ttc_2.Location = New System.Drawing.Point(461, 22)
         Me.pnl_ttc_2.Name = "pnl_ttc_2"
-        Me.pnl_ttc_2.Size = New System.Drawing.Size(317, 165)
+        Me.pnl_ttc_2.Size = New System.Drawing.Size(397, 165)
         Me.pnl_ttc_2.TabIndex = 26
         '
         'lbl_noicap_cmt
@@ -601,9 +613,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_noicap_cmt.BackColor = System.Drawing.Color.White
         Me.lbl_noicap_cmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_noicap_cmt.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_noicap_cmt.ForeColor = System.Drawing.Color.Navy
         Me.lbl_noicap_cmt.Location = New System.Drawing.Point(101, 120)
         Me.lbl_noicap_cmt.Name = "lbl_noicap_cmt"
-        Me.lbl_noicap_cmt.Size = New System.Drawing.Size(216, 44)
+        Me.lbl_noicap_cmt.Size = New System.Drawing.Size(296, 44)
         Me.lbl_noicap_cmt.TabIndex = 17
         '
         'Label37
@@ -612,7 +625,7 @@ Partial Class frmHS_ChiTiet
         Me.Label37.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label37.Location = New System.Drawing.Point(101, 118)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(216, 2)
+        Me.Label37.Size = New System.Drawing.Size(296, 2)
         Me.Label37.TabIndex = 16
         Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -621,9 +634,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ngcap_cmt.BackColor = System.Drawing.Color.White
         Me.lbl_ngcap_cmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ngcap_cmt.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_ngcap_cmt.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ngcap_cmt.Location = New System.Drawing.Point(101, 96)
         Me.lbl_ngcap_cmt.Name = "lbl_ngcap_cmt"
-        Me.lbl_ngcap_cmt.Size = New System.Drawing.Size(216, 22)
+        Me.lbl_ngcap_cmt.Size = New System.Drawing.Size(296, 22)
         Me.lbl_ngcap_cmt.TabIndex = 15
         Me.lbl_ngcap_cmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -633,7 +647,7 @@ Partial Class frmHS_ChiTiet
         Me.Label35.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label35.Location = New System.Drawing.Point(101, 94)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(216, 2)
+        Me.Label35.Size = New System.Drawing.Size(296, 2)
         Me.Label35.TabIndex = 14
         Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -642,9 +656,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_socmt.BackColor = System.Drawing.Color.White
         Me.lbl_socmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_socmt.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_socmt.ForeColor = System.Drawing.Color.Navy
         Me.lbl_socmt.Location = New System.Drawing.Point(101, 72)
         Me.lbl_socmt.Name = "lbl_socmt"
-        Me.lbl_socmt.Size = New System.Drawing.Size(216, 22)
+        Me.lbl_socmt.Size = New System.Drawing.Size(296, 22)
         Me.lbl_socmt.TabIndex = 13
         Me.lbl_socmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -654,7 +669,7 @@ Partial Class frmHS_ChiTiet
         Me.Label33.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label33.Location = New System.Drawing.Point(101, 70)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(216, 2)
+        Me.Label33.Size = New System.Drawing.Size(296, 2)
         Me.Label33.TabIndex = 12
         Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -663,9 +678,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tongiao.BackColor = System.Drawing.Color.White
         Me.lbl_tongiao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tongiao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_tongiao.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tongiao.Location = New System.Drawing.Point(101, 48)
         Me.lbl_tongiao.Name = "lbl_tongiao"
-        Me.lbl_tongiao.Size = New System.Drawing.Size(216, 22)
+        Me.lbl_tongiao.Size = New System.Drawing.Size(296, 22)
         Me.lbl_tongiao.TabIndex = 11
         Me.lbl_tongiao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -675,7 +691,7 @@ Partial Class frmHS_ChiTiet
         Me.Label31.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label31.Location = New System.Drawing.Point(101, 46)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(216, 2)
+        Me.Label31.Size = New System.Drawing.Size(296, 2)
         Me.Label31.TabIndex = 10
         Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -684,9 +700,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_dantoc.BackColor = System.Drawing.Color.White
         Me.lbl_dantoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_dantoc.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_dantoc.ForeColor = System.Drawing.Color.Navy
         Me.lbl_dantoc.Location = New System.Drawing.Point(101, 24)
         Me.lbl_dantoc.Name = "lbl_dantoc"
-        Me.lbl_dantoc.Size = New System.Drawing.Size(216, 22)
+        Me.lbl_dantoc.Size = New System.Drawing.Size(296, 22)
         Me.lbl_dantoc.TabIndex = 9
         Me.lbl_dantoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -696,7 +713,7 @@ Partial Class frmHS_ChiTiet
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label18.Location = New System.Drawing.Point(101, 22)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(216, 2)
+        Me.Label18.Size = New System.Drawing.Size(296, 2)
         Me.Label18.TabIndex = 8
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -705,9 +722,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_quoctich.BackColor = System.Drawing.Color.White
         Me.lbl_quoctich.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_quoctich.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_quoctich.ForeColor = System.Drawing.Color.Navy
         Me.lbl_quoctich.Location = New System.Drawing.Point(101, 0)
         Me.lbl_quoctich.Name = "lbl_quoctich"
-        Me.lbl_quoctich.Size = New System.Drawing.Size(216, 22)
+        Me.lbl_quoctich.Size = New System.Drawing.Size(296, 22)
         Me.lbl_quoctich.TabIndex = 7
         Me.lbl_quoctich.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -789,7 +807,7 @@ Partial Class frmHS_ChiTiet
         '
         Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label27.Location = New System.Drawing.Point(639, 22)
+        Me.Label27.Location = New System.Drawing.Point(858, 22)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(8, 165)
         Me.Label27.TabIndex = 28
@@ -800,7 +818,7 @@ Partial Class frmHS_ChiTiet
         Me.pnl_pic.Controls.Add(Me.picbx_main)
         Me.pnl_pic.Controls.Add(Me.Label32)
         Me.pnl_pic.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnl_pic.Location = New System.Drawing.Point(647, 22)
+        Me.pnl_pic.Location = New System.Drawing.Point(866, 22)
         Me.pnl_pic.Name = "pnl_pic"
         Me.pnl_pic.Size = New System.Drawing.Size(137, 165)
         Me.pnl_pic.TabIndex = 27
@@ -828,7 +846,7 @@ Partial Class frmHS_ChiTiet
         '
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label17.Location = New System.Drawing.Point(314, 22)
+        Me.Label17.Location = New System.Drawing.Point(453, 22)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(8, 165)
         Me.Label17.TabIndex = 23
@@ -853,7 +871,7 @@ Partial Class frmHS_ChiTiet
         Me.pnl_ttc_1.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnl_ttc_1.Location = New System.Drawing.Point(3, 22)
         Me.pnl_ttc_1.Name = "pnl_ttc_1"
-        Me.pnl_ttc_1.Size = New System.Drawing.Size(311, 165)
+        Me.pnl_ttc_1.Size = New System.Drawing.Size(450, 165)
         Me.pnl_ttc_1.TabIndex = 22
         '
         'lbl_donvi
@@ -861,9 +879,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_donvi.BackColor = System.Drawing.Color.White
         Me.lbl_donvi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_donvi.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_donvi.ForeColor = System.Drawing.Color.Navy
         Me.lbl_donvi.Location = New System.Drawing.Point(101, 144)
         Me.lbl_donvi.Name = "lbl_donvi"
-        Me.lbl_donvi.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_donvi.Size = New System.Drawing.Size(349, 22)
         Me.lbl_donvi.TabIndex = 17
         Me.lbl_donvi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -872,7 +891,7 @@ Partial Class frmHS_ChiTiet
         Me.Label20.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label20.Location = New System.Drawing.Point(101, 142)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(210, 2)
+        Me.Label20.Size = New System.Drawing.Size(349, 2)
         Me.Label20.TabIndex = 16
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -881,9 +900,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ngaysinh.BackColor = System.Drawing.Color.White
         Me.lbl_ngaysinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ngaysinh.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_ngaysinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ngaysinh.Location = New System.Drawing.Point(101, 120)
         Me.lbl_ngaysinh.Name = "lbl_ngaysinh"
-        Me.lbl_ngaysinh.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_ngaysinh.Size = New System.Drawing.Size(349, 22)
         Me.lbl_ngaysinh.TabIndex = 15
         Me.lbl_ngaysinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -892,7 +912,7 @@ Partial Class frmHS_ChiTiet
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label16.Location = New System.Drawing.Point(101, 118)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(210, 2)
+        Me.Label16.Size = New System.Drawing.Size(349, 2)
         Me.Label16.TabIndex = 14
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -901,9 +921,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_gioitinh.BackColor = System.Drawing.Color.White
         Me.lbl_gioitinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_gioitinh.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_gioitinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_gioitinh.Location = New System.Drawing.Point(101, 96)
         Me.lbl_gioitinh.Name = "lbl_gioitinh"
-        Me.lbl_gioitinh.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_gioitinh.Size = New System.Drawing.Size(349, 22)
         Me.lbl_gioitinh.TabIndex = 13
         Me.lbl_gioitinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -912,7 +933,7 @@ Partial Class frmHS_ChiTiet
         Me.Label14.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label14.Location = New System.Drawing.Point(101, 94)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(210, 2)
+        Me.Label14.Size = New System.Drawing.Size(349, 2)
         Me.Label14.TabIndex = 12
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -921,9 +942,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_bidanh.BackColor = System.Drawing.Color.White
         Me.lbl_bidanh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_bidanh.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_bidanh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_bidanh.Location = New System.Drawing.Point(101, 72)
         Me.lbl_bidanh.Name = "lbl_bidanh"
-        Me.lbl_bidanh.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_bidanh.Size = New System.Drawing.Size(349, 22)
         Me.lbl_bidanh.TabIndex = 11
         Me.lbl_bidanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -932,7 +954,7 @@ Partial Class frmHS_ChiTiet
         Me.Label12.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label12.Location = New System.Drawing.Point(101, 70)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(210, 2)
+        Me.Label12.Size = New System.Drawing.Size(349, 2)
         Me.Label12.TabIndex = 10
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -941,9 +963,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ten_tg.BackColor = System.Drawing.Color.White
         Me.lbl_ten_tg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ten_tg.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_ten_tg.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ten_tg.Location = New System.Drawing.Point(101, 48)
         Me.lbl_ten_tg.Name = "lbl_ten_tg"
-        Me.lbl_ten_tg.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_ten_tg.Size = New System.Drawing.Size(349, 22)
         Me.lbl_ten_tg.TabIndex = 9
         Me.lbl_ten_tg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -952,7 +975,7 @@ Partial Class frmHS_ChiTiet
         Me.Label11.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label11.Location = New System.Drawing.Point(101, 46)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(210, 2)
+        Me.Label11.Size = New System.Drawing.Size(349, 2)
         Me.Label11.TabIndex = 8
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -961,9 +984,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_hoten.BackColor = System.Drawing.Color.White
         Me.lbl_hoten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_hoten.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_hoten.ForeColor = System.Drawing.Color.Navy
         Me.lbl_hoten.Location = New System.Drawing.Point(101, 24)
         Me.lbl_hoten.Name = "lbl_hoten"
-        Me.lbl_hoten.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_hoten.Size = New System.Drawing.Size(349, 22)
         Me.lbl_hoten.TabIndex = 7
         Me.lbl_hoten.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -973,7 +997,7 @@ Partial Class frmHS_ChiTiet
         Me.Label9.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label9.Location = New System.Drawing.Point(101, 22)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(210, 2)
+        Me.Label9.Size = New System.Drawing.Size(349, 2)
         Me.Label9.TabIndex = 6
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -982,9 +1006,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_macb.BackColor = System.Drawing.Color.White
         Me.lbl_macb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_macb.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_macb.ForeColor = System.Drawing.Color.Navy
         Me.lbl_macb.Location = New System.Drawing.Point(101, 0)
         Me.lbl_macb.Name = "lbl_macb"
-        Me.lbl_macb.Size = New System.Drawing.Size(210, 22)
+        Me.lbl_macb.Size = New System.Drawing.Size(349, 22)
         Me.lbl_macb.TabIndex = 2
         Me.lbl_macb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1085,9 +1110,9 @@ Partial Class frmHS_ChiTiet
         Me.Panel1.Controls.Add(Me.lbl_banghi)
         Me.Panel1.Controls.Add(Me.btn_quayra)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 558)
+        Me.Panel1.Location = New System.Drawing.Point(0, 577)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(787, 25)
+        Me.Panel1.Size = New System.Drawing.Size(1006, 26)
         Me.Panel1.TabIndex = 1
         '
         'btn_last
@@ -1098,7 +1123,7 @@ Partial Class frmHS_ChiTiet
         Me.btn_last.Image = Global.QLNS.My.Resources.Resources.icon_last
         Me.btn_last.Location = New System.Drawing.Point(205, 0)
         Me.btn_last.Name = "btn_last"
-        Me.btn_last.Size = New System.Drawing.Size(25, 21)
+        Me.btn_last.Size = New System.Drawing.Size(25, 22)
         Me.btn_last.TabIndex = 5
         Me.btn_last.UseVisualStyleBackColor = False
         '
@@ -1110,7 +1135,7 @@ Partial Class frmHS_ChiTiet
         Me.btn_next.Image = Global.QLNS.My.Resources.Resources.icon_next
         Me.btn_next.Location = New System.Drawing.Point(180, 0)
         Me.btn_next.Name = "btn_next"
-        Me.btn_next.Size = New System.Drawing.Size(25, 21)
+        Me.btn_next.Size = New System.Drawing.Size(25, 22)
         Me.btn_next.TabIndex = 4
         Me.btn_next.UseVisualStyleBackColor = False
         '
@@ -1134,7 +1159,7 @@ Partial Class frmHS_ChiTiet
         Me.btn_previous.Image = Global.QLNS.My.Resources.Resources.icon_previous
         Me.btn_previous.Location = New System.Drawing.Point(94, 0)
         Me.btn_previous.Name = "btn_previous"
-        Me.btn_previous.Size = New System.Drawing.Size(25, 21)
+        Me.btn_previous.Size = New System.Drawing.Size(25, 22)
         Me.btn_previous.TabIndex = 2
         Me.btn_previous.UseVisualStyleBackColor = False
         '
@@ -1146,7 +1171,7 @@ Partial Class frmHS_ChiTiet
         Me.btn_first.Image = Global.QLNS.My.Resources.Resources.icon_first
         Me.btn_first.Location = New System.Drawing.Point(69, 0)
         Me.btn_first.Name = "btn_first"
-        Me.btn_first.Size = New System.Drawing.Size(25, 21)
+        Me.btn_first.Size = New System.Drawing.Size(25, 22)
         Me.btn_first.TabIndex = 1
         Me.btn_first.UseVisualStyleBackColor = False
         '
@@ -1159,7 +1184,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_banghi.ForeColor = System.Drawing.Color.Maroon
         Me.lbl_banghi.Location = New System.Drawing.Point(0, 0)
         Me.lbl_banghi.Name = "lbl_banghi"
-        Me.lbl_banghi.Size = New System.Drawing.Size(69, 21)
+        Me.lbl_banghi.Size = New System.Drawing.Size(69, 22)
         Me.lbl_banghi.TabIndex = 0
         Me.lbl_banghi.Text = "Bản ghi "
         Me.lbl_banghi.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1168,9 +1193,9 @@ Partial Class frmHS_ChiTiet
         '
         Me.btn_quayra.Dock = System.Windows.Forms.DockStyle.Right
         Me.btn_quayra.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_quayra.Location = New System.Drawing.Point(710, 0)
+        Me.btn_quayra.Location = New System.Drawing.Point(929, 0)
         Me.btn_quayra.Name = "btn_quayra"
-        Me.btn_quayra.Size = New System.Drawing.Size(73, 21)
+        Me.btn_quayra.Size = New System.Drawing.Size(73, 22)
         Me.btn_quayra.TabIndex = 6
         Me.btn_quayra.Text = "&Quay ra"
         Me.btn_quayra.UseVisualStyleBackColor = True
@@ -1183,7 +1208,7 @@ Partial Class frmHS_ChiTiet
         Me.Label8.ForeColor = System.Drawing.Color.Maroon
         Me.Label8.Location = New System.Drawing.Point(0, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(787, 21)
+        Me.Label8.Size = New System.Drawing.Size(1006, 21)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "CHI TIẾT THÔNG TIN HỒ SƠ CÁN BỘ"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1196,7 +1221,7 @@ Partial Class frmHS_ChiTiet
         Me.Label10.ForeColor = System.Drawing.Color.Maroon
         Me.Label10.Location = New System.Drawing.Point(0, 211)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(787, 21)
+        Me.Label10.Size = New System.Drawing.Size(1006, 21)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "CHI TIẾT CÁC QUÁ TRÌNH CỦA CÁN BỘ"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1215,7 +1240,7 @@ Partial Class frmHS_ChiTiet
         Me.tctrl_main.Location = New System.Drawing.Point(0, 232)
         Me.tctrl_main.Name = "tctrl_main"
         Me.tctrl_main.SelectedIndex = 0
-        Me.tctrl_main.Size = New System.Drawing.Size(787, 326)
+        Me.tctrl_main.Size = New System.Drawing.Size(1006, 345)
         Me.tctrl_main.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.tctrl_main.TabIndex = 15
         '
@@ -1225,7 +1250,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hs_canbo.Location = New System.Drawing.Point(4, 25)
         Me.tp_hs_canbo.Name = "tp_hs_canbo"
         Me.tp_hs_canbo.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_hs_canbo.Size = New System.Drawing.Size(779, 297)
+        Me.tp_hs_canbo.Size = New System.Drawing.Size(998, 316)
         Me.tp_hs_canbo.TabIndex = 0
         Me.tp_hs_canbo.Text = "Hồ sơ cán bộ"
         Me.tp_hs_canbo.UseVisualStyleBackColor = True
@@ -1241,7 +1266,7 @@ Partial Class frmHS_ChiTiet
         Me.tctrl_hscanbo.Location = New System.Drawing.Point(3, 3)
         Me.tctrl_hscanbo.Name = "tctrl_hscanbo"
         Me.tctrl_hscanbo.SelectedIndex = 0
-        Me.tctrl_hscanbo.Size = New System.Drawing.Size(773, 291)
+        Me.tctrl_hscanbo.Size = New System.Drawing.Size(992, 310)
         Me.tctrl_hscanbo.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.tctrl_hscanbo.TabIndex = 0
         '
@@ -1263,7 +1288,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hs_soyeull.Location = New System.Drawing.Point(4, 24)
         Me.tp_hs_soyeull.Name = "tp_hs_soyeull"
         Me.tp_hs_soyeull.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_hs_soyeull.Size = New System.Drawing.Size(765, 263)
+        Me.tp_hs_soyeull.Size = New System.Drawing.Size(984, 282)
         Me.tp_hs_soyeull.TabIndex = 0
         Me.tp_hs_soyeull.Text = "Sơ yếu lý lịch về cán bộ"
         '
@@ -1278,7 +1303,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel16.Location = New System.Drawing.Point(3, 213)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(759, 22)
+        Me.Panel16.Size = New System.Drawing.Size(978, 22)
         Me.Panel16.TabIndex = 10
         '
         'lbl_email
@@ -1286,9 +1311,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_email.BackColor = System.Drawing.Color.White
         Me.lbl_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_email.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_email.ForeColor = System.Drawing.Color.Navy
         Me.lbl_email.Location = New System.Drawing.Point(334, 0)
         Me.lbl_email.Name = "lbl_email"
-        Me.lbl_email.Size = New System.Drawing.Size(293, 22)
+        Me.lbl_email.Size = New System.Drawing.Size(512, 22)
         Me.lbl_email.TabIndex = 3
         Me.lbl_email.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1307,6 +1333,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_sofax.BackColor = System.Drawing.Color.White
         Me.lbl_sofax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_sofax.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_sofax.ForeColor = System.Drawing.Color.Navy
         Me.lbl_sofax.Location = New System.Drawing.Point(101, 0)
         Me.lbl_sofax.Name = "lbl_sofax"
         Me.lbl_sofax.Size = New System.Drawing.Size(106, 22)
@@ -1328,7 +1355,7 @@ Partial Class frmHS_ChiTiet
         '
         Me.Label83.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label83.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label83.Location = New System.Drawing.Point(627, 0)
+        Me.Label83.Location = New System.Drawing.Point(846, 0)
         Me.Label83.Name = "Label83"
         Me.Label83.Size = New System.Drawing.Size(81, 22)
         Me.Label83.TabIndex = 4
@@ -1340,7 +1367,8 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nhommau.BackColor = System.Drawing.Color.White
         Me.lbl_nhommau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nhommau.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lbl_nhommau.Location = New System.Drawing.Point(708, 0)
+        Me.lbl_nhommau.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_nhommau.Location = New System.Drawing.Point(927, 0)
         Me.lbl_nhommau.Name = "lbl_nhommau"
         Me.lbl_nhommau.Size = New System.Drawing.Size(51, 22)
         Me.lbl_nhommau.TabIndex = 5
@@ -1352,7 +1380,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel15.Location = New System.Drawing.Point(3, 212)
         Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(759, 1)
+        Me.Panel15.Size = New System.Drawing.Size(978, 1)
         Me.Panel15.TabIndex = 37
         '
         'Label72
@@ -1377,7 +1405,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel14.Location = New System.Drawing.Point(3, 190)
         Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(759, 22)
+        Me.Panel14.Size = New System.Drawing.Size(978, 22)
         Me.Panel14.TabIndex = 8
         '
         'lbl_dt_nharieng
@@ -1386,6 +1414,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_dt_nharieng.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_dt_nharieng.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_dt_nharieng.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_dt_nharieng.ForeColor = System.Drawing.Color.Navy
         Me.lbl_dt_nharieng.Location = New System.Drawing.Point(648, 0)
         Me.lbl_dt_nharieng.Name = "lbl_dt_nharieng"
         Me.lbl_dt_nharieng.Size = New System.Drawing.Size(111, 22)
@@ -1409,6 +1438,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_dt_coquan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_dt_coquan.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_dt_coquan.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_dt_coquan.ForeColor = System.Drawing.Color.Navy
         Me.lbl_dt_coquan.Location = New System.Drawing.Point(436, 0)
         Me.lbl_dt_coquan.Name = "lbl_dt_coquan"
         Me.lbl_dt_coquan.Size = New System.Drawing.Size(111, 22)
@@ -1432,6 +1462,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_dt_didong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_dt_didong.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_dt_didong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_dt_didong.ForeColor = System.Drawing.Color.Navy
         Me.lbl_dt_didong.Location = New System.Drawing.Point(206, 0)
         Me.lbl_dt_didong.Name = "lbl_dt_didong"
         Me.lbl_dt_didong.Size = New System.Drawing.Size(129, 22)
@@ -1465,7 +1496,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel13.Location = New System.Drawing.Point(3, 189)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(759, 1)
+        Me.Panel13.Size = New System.Drawing.Size(978, 1)
         Me.Panel13.TabIndex = 35
         '
         'Label71
@@ -1490,7 +1521,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel11.Location = New System.Drawing.Point(3, 144)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(759, 45)
+        Me.Panel11.Size = New System.Drawing.Size(978, 45)
         Me.Panel11.TabIndex = 6
         '
         'lbl_ttr_dienthoai
@@ -1498,6 +1529,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ttr_dienthoai.BackColor = System.Drawing.Color.White
         Me.lbl_ttr_dienthoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ttr_dienthoai.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ttr_dienthoai.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ttr_dienthoai.Location = New System.Drawing.Point(664, 23)
         Me.lbl_ttr_dienthoai.Name = "lbl_ttr_dienthoai"
         Me.lbl_ttr_dienthoai.Size = New System.Drawing.Size(95, 22)
@@ -1521,6 +1553,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ttr_diachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ttr_diachi.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_ttr_diachi.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ttr_diachi.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ttr_diachi.Location = New System.Drawing.Point(206, 23)
         Me.lbl_ttr_diachi.Name = "lbl_ttr_diachi"
         Me.lbl_ttr_diachi.Size = New System.Drawing.Size(381, 22)
@@ -1535,7 +1568,7 @@ Partial Class frmHS_ChiTiet
         Me.Label64.Name = "Label64"
         Me.Label64.Size = New System.Drawing.Size(109, 22)
         Me.Label64.TabIndex = 2
-        Me.Label64.Text = "Địa chỉ "
+        Me.Label64.Text = "Địa chỉ chi tiết "
         Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label65
@@ -1544,12 +1577,15 @@ Partial Class frmHS_ChiTiet
         Me.Label65.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label65.Location = New System.Drawing.Point(97, 22)
         Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(662, 1)
+        Me.Label65.Size = New System.Drawing.Size(881, 1)
         Me.Label65.TabIndex = 7
         Me.Label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel12
         '
+        Me.Panel12.Controls.Add(Me.lbl_ttr_thon)
+        Me.Panel12.Controls.Add(Me.Label120)
+        Me.Panel12.Controls.Add(Me.lbl_ttr_xa)
         Me.Panel12.Controls.Add(Me.lbl_ttr_huyen)
         Me.Panel12.Controls.Add(Me.Label67)
         Me.Panel12.Controls.Add(Me.lbl_ttr_tinh)
@@ -1557,7 +1593,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel12.Location = New System.Drawing.Point(97, 0)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(662, 22)
+        Me.Panel12.Size = New System.Drawing.Size(881, 22)
         Me.Panel12.TabIndex = 1
         '
         'lbl_ttr_huyen
@@ -1566,21 +1602,23 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ttr_huyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ttr_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_ttr_huyen.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_ttr_huyen.Location = New System.Drawing.Point(440, 0)
+        Me.lbl_ttr_huyen.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ttr_huyen.Location = New System.Drawing.Point(380, 0)
         Me.lbl_ttr_huyen.Name = "lbl_ttr_huyen"
-        Me.lbl_ttr_huyen.Size = New System.Drawing.Size(222, 22)
+        Me.lbl_ttr_huyen.Size = New System.Drawing.Size(20, 22)
         Me.lbl_ttr_huyen.TabIndex = 10
         Me.lbl_ttr_huyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_ttr_huyen.Visible = False
         '
         'Label67
         '
         Me.Label67.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label67.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label67.Location = New System.Drawing.Point(339, 0)
+        Me.Label67.Location = New System.Drawing.Point(279, 0)
         Me.Label67.Name = "Label67"
         Me.Label67.Size = New System.Drawing.Size(101, 22)
         Me.Label67.TabIndex = 9
-        Me.Label67.Text = "Quận - Huyện "
+        Me.Label67.Text = "Xã - Phường "
         Me.Label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl_ttr_tinh
@@ -1589,9 +1627,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ttr_tinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ttr_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_ttr_tinh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ttr_tinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ttr_tinh.Location = New System.Drawing.Point(109, 0)
         Me.lbl_ttr_tinh.Name = "lbl_ttr_tinh"
-        Me.lbl_ttr_tinh.Size = New System.Drawing.Size(230, 22)
+        Me.lbl_ttr_tinh.Size = New System.Drawing.Size(170, 22)
         Me.lbl_ttr_tinh.TabIndex = 3
         Me.lbl_ttr_tinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1621,7 +1660,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel10.Location = New System.Drawing.Point(3, 143)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(759, 1)
+        Me.Panel10.Size = New System.Drawing.Size(978, 1)
         Me.Panel10.TabIndex = 33
         '
         'Label49
@@ -1646,7 +1685,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(3, 98)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(759, 45)
+        Me.Panel7.Size = New System.Drawing.Size(978, 45)
         Me.Panel7.TabIndex = 4
         '
         'lbl_tt_dienthoai
@@ -1655,9 +1694,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tt_dienthoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tt_dienthoai.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_tt_dienthoai.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_tt_dienthoai.Location = New System.Drawing.Point(664, 23)
+        Me.lbl_tt_dienthoai.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_tt_dienthoai.Location = New System.Drawing.Point(846, 23)
         Me.lbl_tt_dienthoai.Name = "lbl_tt_dienthoai"
-        Me.lbl_tt_dienthoai.Size = New System.Drawing.Size(95, 22)
+        Me.lbl_tt_dienthoai.Size = New System.Drawing.Size(132, 22)
         Me.lbl_tt_dienthoai.TabIndex = 11
         Me.lbl_tt_dienthoai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -1665,9 +1705,9 @@ Partial Class frmHS_ChiTiet
         '
         Me.Label58.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label58.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label58.Location = New System.Drawing.Point(587, 23)
+        Me.Label58.Location = New System.Drawing.Point(737, 23)
         Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(77, 22)
+        Me.Label58.Size = New System.Drawing.Size(109, 22)
         Me.Label58.TabIndex = 10
         Me.Label58.Text = "Điện thoại "
         Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1678,9 +1718,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tt_diachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tt_diachi.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_tt_diachi.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_tt_diachi.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tt_diachi.Location = New System.Drawing.Point(206, 23)
         Me.lbl_tt_diachi.Name = "lbl_tt_diachi"
-        Me.lbl_tt_diachi.Size = New System.Drawing.Size(381, 22)
+        Me.lbl_tt_diachi.Size = New System.Drawing.Size(531, 22)
         Me.lbl_tt_diachi.TabIndex = 0
         Me.lbl_tt_diachi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1692,7 +1733,7 @@ Partial Class frmHS_ChiTiet
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(109, 22)
         Me.Label51.TabIndex = 2
-        Me.Label51.Text = "Địa chỉ "
+        Me.Label51.Text = "Địa chỉ chi tiết "
         Me.Label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label52
@@ -1701,12 +1742,15 @@ Partial Class frmHS_ChiTiet
         Me.Label52.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label52.Location = New System.Drawing.Point(97, 22)
         Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(662, 1)
+        Me.Label52.Size = New System.Drawing.Size(881, 1)
         Me.Label52.TabIndex = 7
         Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel8
         '
+        Me.Panel8.Controls.Add(Me.lbl_tt_thon)
+        Me.Panel8.Controls.Add(Me.Label118)
+        Me.Panel8.Controls.Add(Me.lbl_tt_xa)
         Me.Panel8.Controls.Add(Me.lbl_tt_huyen)
         Me.Panel8.Controls.Add(Me.Label54)
         Me.Panel8.Controls.Add(Me.lbl_tt_tinh)
@@ -1714,7 +1758,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(97, 0)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(662, 22)
+        Me.Panel8.Size = New System.Drawing.Size(881, 22)
         Me.Panel8.TabIndex = 1
         '
         'lbl_tt_huyen
@@ -1723,21 +1767,23 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tt_huyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tt_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_tt_huyen.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_tt_huyen.Location = New System.Drawing.Point(440, 0)
+        Me.lbl_tt_huyen.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_tt_huyen.Location = New System.Drawing.Point(380, 0)
         Me.lbl_tt_huyen.Name = "lbl_tt_huyen"
-        Me.lbl_tt_huyen.Size = New System.Drawing.Size(222, 22)
+        Me.lbl_tt_huyen.Size = New System.Drawing.Size(20, 22)
         Me.lbl_tt_huyen.TabIndex = 3
         Me.lbl_tt_huyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_tt_huyen.Visible = False
         '
         'Label54
         '
         Me.Label54.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label54.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label54.Location = New System.Drawing.Point(339, 0)
+        Me.Label54.Location = New System.Drawing.Point(279, 0)
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(101, 22)
         Me.Label54.TabIndex = 2
-        Me.Label54.Text = "Quận - Huyện "
+        Me.Label54.Text = "Xã - Phường "
         Me.Label54.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl_tt_tinh
@@ -1746,9 +1792,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tt_tinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tt_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_tt_tinh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_tt_tinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tt_tinh.Location = New System.Drawing.Point(109, 0)
         Me.lbl_tt_tinh.Name = "lbl_tt_tinh"
-        Me.lbl_tt_tinh.Size = New System.Drawing.Size(230, 22)
+        Me.lbl_tt_tinh.Size = New System.Drawing.Size(170, 22)
         Me.lbl_tt_tinh.TabIndex = 1
         Me.lbl_tt_tinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1778,7 +1825,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel9.Location = New System.Drawing.Point(3, 97)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(759, 1)
+        Me.Panel9.Size = New System.Drawing.Size(978, 1)
         Me.Panel9.TabIndex = 31
         '
         'Label40
@@ -1801,7 +1848,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(3, 52)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(759, 45)
+        Me.Panel5.Size = New System.Drawing.Size(978, 45)
         Me.Panel5.TabIndex = 2
         '
         'lbl_nq_diachi
@@ -1810,9 +1857,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nq_diachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nq_diachi.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_nq_diachi.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nq_diachi.ForeColor = System.Drawing.Color.Navy
         Me.lbl_nq_diachi.Location = New System.Drawing.Point(206, 23)
         Me.lbl_nq_diachi.Name = "lbl_nq_diachi"
-        Me.lbl_nq_diachi.Size = New System.Drawing.Size(553, 22)
+        Me.lbl_nq_diachi.Size = New System.Drawing.Size(772, 22)
         Me.lbl_nq_diachi.TabIndex = 3
         Me.lbl_nq_diachi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1824,7 +1872,7 @@ Partial Class frmHS_ChiTiet
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(109, 22)
         Me.Label42.TabIndex = 2
-        Me.Label42.Text = "Địa chỉ "
+        Me.Label42.Text = "Địa chỉ chi tiết "
         Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label43
@@ -1833,12 +1881,15 @@ Partial Class frmHS_ChiTiet
         Me.Label43.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label43.Location = New System.Drawing.Point(97, 22)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(662, 1)
+        Me.Label43.Size = New System.Drawing.Size(881, 1)
         Me.Label43.TabIndex = 7
         Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel6
         '
+        Me.Panel6.Controls.Add(Me.lbl_nq_thon)
+        Me.Panel6.Controls.Add(Me.Label117)
+        Me.Panel6.Controls.Add(Me.lbl_nq_xa)
         Me.Panel6.Controls.Add(Me.lbl_nq_huyen)
         Me.Panel6.Controls.Add(Me.Label45)
         Me.Panel6.Controls.Add(Me.lbl_nq_tinh)
@@ -1846,7 +1897,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(97, 0)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(662, 22)
+        Me.Panel6.Size = New System.Drawing.Size(881, 22)
         Me.Panel6.TabIndex = 1
         '
         'lbl_nq_huyen
@@ -1855,21 +1906,23 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nq_huyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nq_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_nq_huyen.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_nq_huyen.Location = New System.Drawing.Point(440, 0)
+        Me.lbl_nq_huyen.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_nq_huyen.Location = New System.Drawing.Point(380, 0)
         Me.lbl_nq_huyen.Name = "lbl_nq_huyen"
-        Me.lbl_nq_huyen.Size = New System.Drawing.Size(222, 22)
+        Me.lbl_nq_huyen.Size = New System.Drawing.Size(20, 22)
         Me.lbl_nq_huyen.TabIndex = 3
         Me.lbl_nq_huyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_nq_huyen.Visible = False
         '
         'Label45
         '
         Me.Label45.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label45.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.Location = New System.Drawing.Point(339, 0)
+        Me.Label45.Location = New System.Drawing.Point(279, 0)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(101, 22)
         Me.Label45.TabIndex = 2
-        Me.Label45.Text = "Quận - Huyện "
+        Me.Label45.Text = "Xã - Phường "
         Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl_nq_tinh
@@ -1878,9 +1931,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nq_tinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nq_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_nq_tinh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nq_tinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_nq_tinh.Location = New System.Drawing.Point(109, 0)
         Me.lbl_nq_tinh.Name = "lbl_nq_tinh"
-        Me.lbl_nq_tinh.Size = New System.Drawing.Size(230, 22)
+        Me.lbl_nq_tinh.Size = New System.Drawing.Size(170, 22)
         Me.lbl_nq_tinh.TabIndex = 1
         Me.lbl_nq_tinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1910,7 +1964,7 @@ Partial Class frmHS_ChiTiet
         Me.pnl_div.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_div.Location = New System.Drawing.Point(3, 51)
         Me.pnl_div.Name = "pnl_div"
-        Me.pnl_div.Size = New System.Drawing.Size(759, 1)
+        Me.pnl_div.Size = New System.Drawing.Size(978, 1)
         Me.pnl_div.TabIndex = 30
         '
         'Label60
@@ -1933,7 +1987,7 @@ Partial Class frmHS_ChiTiet
         Me.pnl_noisinh.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_noisinh.Location = New System.Drawing.Point(3, 6)
         Me.pnl_noisinh.Name = "pnl_noisinh"
-        Me.pnl_noisinh.Size = New System.Drawing.Size(759, 45)
+        Me.pnl_noisinh.Size = New System.Drawing.Size(978, 45)
         Me.pnl_noisinh.TabIndex = 0
         '
         'lbl_ns_diachi
@@ -1942,9 +1996,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ns_diachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ns_diachi.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_ns_diachi.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ns_diachi.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ns_diachi.Location = New System.Drawing.Point(206, 23)
         Me.lbl_ns_diachi.Name = "lbl_ns_diachi"
-        Me.lbl_ns_diachi.Size = New System.Drawing.Size(553, 22)
+        Me.lbl_ns_diachi.Size = New System.Drawing.Size(772, 22)
         Me.lbl_ns_diachi.TabIndex = 3
         Me.lbl_ns_diachi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1956,7 +2011,7 @@ Partial Class frmHS_ChiTiet
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(109, 22)
         Me.Label38.TabIndex = 2
-        Me.Label38.Text = "Địa chỉ "
+        Me.Label38.Text = "Địa chỉ chi tiết "
         Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label30
@@ -1965,12 +2020,15 @@ Partial Class frmHS_ChiTiet
         Me.Label30.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label30.Location = New System.Drawing.Point(97, 22)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(662, 1)
+        Me.Label30.Size = New System.Drawing.Size(881, 1)
         Me.Label30.TabIndex = 7
         Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.lbl_ns_thon)
+        Me.Panel2.Controls.Add(Me.Label116)
+        Me.Panel2.Controls.Add(Me.lbl_ns_xa)
         Me.Panel2.Controls.Add(Me.lbl_ns_huyen)
         Me.Panel2.Controls.Add(Me.Label34)
         Me.Panel2.Controls.Add(Me.lbl_ns_tinh)
@@ -1978,7 +2036,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(97, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(662, 22)
+        Me.Panel2.Size = New System.Drawing.Size(881, 22)
         Me.Panel2.TabIndex = 1
         '
         'lbl_ns_huyen
@@ -1987,21 +2045,23 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ns_huyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ns_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_ns_huyen.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_ns_huyen.Location = New System.Drawing.Point(440, 0)
+        Me.lbl_ns_huyen.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ns_huyen.Location = New System.Drawing.Point(380, 0)
         Me.lbl_ns_huyen.Name = "lbl_ns_huyen"
-        Me.lbl_ns_huyen.Size = New System.Drawing.Size(222, 22)
+        Me.lbl_ns_huyen.Size = New System.Drawing.Size(20, 22)
         Me.lbl_ns_huyen.TabIndex = 3
         Me.lbl_ns_huyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_ns_huyen.Visible = False
         '
         'Label34
         '
         Me.Label34.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label34.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(339, 0)
+        Me.Label34.Location = New System.Drawing.Point(279, 0)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(101, 22)
         Me.Label34.TabIndex = 2
-        Me.Label34.Text = "Quận - Huyện "
+        Me.Label34.Text = "Xã - Phường "
         Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl_ns_tinh
@@ -2010,9 +2070,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ns_tinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ns_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.lbl_ns_tinh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ns_tinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ns_tinh.Location = New System.Drawing.Point(109, 0)
         Me.lbl_ns_tinh.Name = "lbl_ns_tinh"
-        Me.lbl_ns_tinh.Size = New System.Drawing.Size(230, 22)
+        Me.lbl_ns_tinh.Size = New System.Drawing.Size(170, 22)
         Me.lbl_ns_tinh.TabIndex = 1
         Me.lbl_ns_tinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2041,7 +2102,7 @@ Partial Class frmHS_ChiTiet
         Me.Label100.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label100.Location = New System.Drawing.Point(3, 3)
         Me.Label100.Name = "Label100"
-        Me.Label100.Size = New System.Drawing.Size(759, 3)
+        Me.Label100.Size = New System.Drawing.Size(978, 3)
         Me.Label100.TabIndex = 38
         Me.Label100.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -2064,7 +2125,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hs_banthan_mqh.Location = New System.Drawing.Point(4, 24)
         Me.tp_hs_banthan_mqh.Name = "tp_hs_banthan_mqh"
         Me.tp_hs_banthan_mqh.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_hs_banthan_mqh.Size = New System.Drawing.Size(765, 263)
+        Me.tp_hs_banthan_mqh.Size = New System.Drawing.Size(984, 282)
         Me.tp_hs_banthan_mqh.TabIndex = 1
         Me.tp_hs_banthan_mqh.Text = "Bản thân - Mối quan hệ"
         '
@@ -2073,9 +2134,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ghichu.BackColor = System.Drawing.Color.White
         Me.lbl_ghichu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ghichu.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_ghichu.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ghichu.Location = New System.Drawing.Point(3, 205)
         Me.lbl_ghichu.Name = "lbl_ghichu"
-        Me.lbl_ghichu.Size = New System.Drawing.Size(759, 55)
+        Me.lbl_ghichu.Size = New System.Drawing.Size(978, 74)
         Me.lbl_ghichu.TabIndex = 10
         '
         'Label53
@@ -2083,7 +2145,7 @@ Partial Class frmHS_ChiTiet
         Me.Label53.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label53.Location = New System.Drawing.Point(3, 184)
         Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(759, 21)
+        Me.Label53.Size = New System.Drawing.Size(978, 21)
         Me.Label53.TabIndex = 9
         Me.Label53.Text = "Nghề nghiệp bản thân trước khi tuyển dụng"
         Me.Label53.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -2093,9 +2155,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_quanhe_ncngoai.BackColor = System.Drawing.Color.White
         Me.lbl_quanhe_ncngoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_quanhe_ncngoai.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_quanhe_ncngoai.ForeColor = System.Drawing.Color.Navy
         Me.lbl_quanhe_ncngoai.Location = New System.Drawing.Point(3, 162)
         Me.lbl_quanhe_ncngoai.Name = "lbl_quanhe_ncngoai"
-        Me.lbl_quanhe_ncngoai.Size = New System.Drawing.Size(759, 22)
+        Me.lbl_quanhe_ncngoai.Size = New System.Drawing.Size(978, 22)
         Me.lbl_quanhe_ncngoai.TabIndex = 8
         Me.lbl_quanhe_ncngoai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2105,7 +2168,7 @@ Partial Class frmHS_ChiTiet
         Me.Label95.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label95.Location = New System.Drawing.Point(3, 161)
         Me.Label95.Name = "Label95"
-        Me.Label95.Size = New System.Drawing.Size(759, 1)
+        Me.Label95.Size = New System.Drawing.Size(978, 1)
         Me.Label95.TabIndex = 44
         Me.Label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2114,7 +2177,7 @@ Partial Class frmHS_ChiTiet
         Me.Label92.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label92.Location = New System.Drawing.Point(3, 140)
         Me.Label92.Name = "Label92"
-        Me.Label92.Size = New System.Drawing.Size(759, 21)
+        Me.Label92.Size = New System.Drawing.Size(978, 21)
         Me.Label92.TabIndex = 7
         Me.Label92.Text = " Quan hệ với người nước ngoài"
         Me.Label92.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -2125,7 +2188,7 @@ Partial Class frmHS_ChiTiet
         Me.Label94.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label94.Location = New System.Drawing.Point(3, 139)
         Me.Label94.Name = "Label94"
-        Me.Label94.Size = New System.Drawing.Size(759, 1)
+        Me.Label94.Size = New System.Drawing.Size(978, 1)
         Me.Label94.TabIndex = 41
         Me.Label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2134,9 +2197,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_dacdiem_banthan.BackColor = System.Drawing.Color.White
         Me.lbl_dacdiem_banthan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_dacdiem_banthan.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lbl_dacdiem_banthan.ForeColor = System.Drawing.Color.Navy
         Me.lbl_dacdiem_banthan.Location = New System.Drawing.Point(3, 105)
         Me.lbl_dacdiem_banthan.Name = "lbl_dacdiem_banthan"
-        Me.lbl_dacdiem_banthan.Size = New System.Drawing.Size(759, 34)
+        Me.lbl_dacdiem_banthan.Size = New System.Drawing.Size(978, 34)
         Me.lbl_dacdiem_banthan.TabIndex = 6
         '
         'Label108
@@ -2144,7 +2208,7 @@ Partial Class frmHS_ChiTiet
         Me.Label108.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label108.Location = New System.Drawing.Point(3, 84)
         Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(759, 21)
+        Me.Label108.Size = New System.Drawing.Size(978, 21)
         Me.Label108.TabIndex = 5
         Me.Label108.Text = " Đặc điểm bản thân"
         Me.Label108.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -2155,7 +2219,7 @@ Partial Class frmHS_ChiTiet
         Me.Label87.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label87.Location = New System.Drawing.Point(3, 83)
         Me.Label87.Name = "Label87"
-        Me.Label87.Size = New System.Drawing.Size(759, 1)
+        Me.Label87.Size = New System.Drawing.Size(978, 1)
         Me.Label87.TabIndex = 4
         Me.Label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2166,7 +2230,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel18.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel18.Location = New System.Drawing.Point(3, 28)
         Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(759, 55)
+        Me.Panel18.Size = New System.Drawing.Size(978, 55)
         Me.Panel18.TabIndex = 3
         '
         'clb_ut_banthan
@@ -2175,13 +2239,13 @@ Partial Class frmHS_ChiTiet
         Me.clb_ut_banthan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.clb_ut_banthan.ColumnWidth = 201
         Me.clb_ut_banthan.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.clb_ut_banthan.ForeColor = System.Drawing.Color.Black
+        Me.clb_ut_banthan.ForeColor = System.Drawing.Color.Navy
         Me.clb_ut_banthan.HorizontalExtent = 50
         Me.clb_ut_banthan.HorizontalScrollbar = True
         Me.clb_ut_banthan.Location = New System.Drawing.Point(127, 0)
         Me.clb_ut_banthan.MultiColumn = True
         Me.clb_ut_banthan.Name = "clb_ut_banthan"
-        Me.clb_ut_banthan.Size = New System.Drawing.Size(632, 55)
+        Me.clb_ut_banthan.Size = New System.Drawing.Size(851, 55)
         Me.clb_ut_banthan.TabIndex = 2
         '
         'Label90
@@ -2200,7 +2264,7 @@ Partial Class frmHS_ChiTiet
         Me.Label88.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label88.Location = New System.Drawing.Point(3, 27)
         Me.Label88.Name = "Label88"
-        Me.Label88.Size = New System.Drawing.Size(759, 1)
+        Me.Label88.Size = New System.Drawing.Size(978, 1)
         Me.Label88.TabIndex = 2
         Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2213,7 +2277,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel17.Location = New System.Drawing.Point(3, 5)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(759, 22)
+        Me.Panel17.Size = New System.Drawing.Size(978, 22)
         Me.Panel17.TabIndex = 1
         '
         'lbl_ut_giadinh
@@ -2221,6 +2285,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ut_giadinh.BackColor = System.Drawing.Color.White
         Me.lbl_ut_giadinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ut_giadinh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ut_giadinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ut_giadinh.Location = New System.Drawing.Point(506, 0)
         Me.lbl_ut_giadinh.Name = "lbl_ut_giadinh"
         Me.lbl_ut_giadinh.Size = New System.Drawing.Size(253, 22)
@@ -2242,6 +2307,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tp_giadinh.BackColor = System.Drawing.Color.White
         Me.lbl_tp_giadinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tp_giadinh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_tp_giadinh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tp_giadinh.Location = New System.Drawing.Point(127, 0)
         Me.lbl_tp_giadinh.Name = "lbl_tp_giadinh"
         Me.lbl_tp_giadinh.Size = New System.Drawing.Size(252, 22)
@@ -2263,7 +2329,7 @@ Partial Class frmHS_ChiTiet
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label13.Location = New System.Drawing.Point(3, 3)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(759, 2)
+        Me.Label13.Size = New System.Drawing.Size(978, 2)
         Me.Label13.TabIndex = 0
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2289,7 +2355,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hs_ttkhac.Controls.Add(Me.Label15)
         Me.tp_hs_ttkhac.Location = New System.Drawing.Point(4, 24)
         Me.tp_hs_ttkhac.Name = "tp_hs_ttkhac"
-        Me.tp_hs_ttkhac.Size = New System.Drawing.Size(765, 263)
+        Me.tp_hs_ttkhac.Size = New System.Drawing.Size(984, 282)
         Me.tp_hs_ttkhac.TabIndex = 2
         Me.tp_hs_ttkhac.Text = "Thông tin khác của hồ sơ"
         '
@@ -2300,7 +2366,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel78.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel78.Location = New System.Drawing.Point(0, 233)
         Me.Panel78.Name = "Panel78"
-        Me.Panel78.Size = New System.Drawing.Size(765, 22)
+        Me.Panel78.Size = New System.Drawing.Size(984, 22)
         Me.Panel78.TabIndex = 17
         '
         'lbl_honhan
@@ -2308,9 +2374,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_honhan.BackColor = System.Drawing.Color.White
         Me.lbl_honhan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_honhan.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_honhan.ForeColor = System.Drawing.Color.Navy
         Me.lbl_honhan.Location = New System.Drawing.Point(161, 0)
         Me.lbl_honhan.Name = "lbl_honhan"
-        Me.lbl_honhan.Size = New System.Drawing.Size(604, 22)
+        Me.lbl_honhan.Size = New System.Drawing.Size(823, 22)
         Me.lbl_honhan.TabIndex = 1
         Me.lbl_honhan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2330,7 +2397,7 @@ Partial Class frmHS_ChiTiet
         Me.Label89.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label89.Location = New System.Drawing.Point(0, 232)
         Me.Label89.Name = "Label89"
-        Me.Label89.Size = New System.Drawing.Size(765, 1)
+        Me.Label89.Size = New System.Drawing.Size(984, 1)
         Me.Label89.TabIndex = 16
         Me.Label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2343,7 +2410,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel26.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel26.Location = New System.Drawing.Point(0, 187)
         Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(765, 45)
+        Me.Panel26.Size = New System.Drawing.Size(984, 45)
         Me.Panel26.TabIndex = 15
         '
         'Panel28
@@ -2353,7 +2420,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel28.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel28.Location = New System.Drawing.Point(161, 23)
         Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(604, 22)
+        Me.Panel28.Size = New System.Drawing.Size(823, 22)
         Me.Panel28.TabIndex = 43
         '
         'lbl_bhxh_noilam
@@ -2361,9 +2428,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_bhxh_noilam.BackColor = System.Drawing.Color.White
         Me.lbl_bhxh_noilam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_bhxh_noilam.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_bhxh_noilam.ForeColor = System.Drawing.Color.Navy
         Me.lbl_bhxh_noilam.Location = New System.Drawing.Point(111, 0)
         Me.lbl_bhxh_noilam.Name = "lbl_bhxh_noilam"
-        Me.lbl_bhxh_noilam.Size = New System.Drawing.Size(493, 22)
+        Me.lbl_bhxh_noilam.Size = New System.Drawing.Size(712, 22)
         Me.lbl_bhxh_noilam.TabIndex = 4
         Me.lbl_bhxh_noilam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2384,7 +2452,7 @@ Partial Class frmHS_ChiTiet
         Me.Label115.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label115.Location = New System.Drawing.Point(161, 22)
         Me.Label115.Name = "Label115"
-        Me.Label115.Size = New System.Drawing.Size(604, 1)
+        Me.Label115.Size = New System.Drawing.Size(823, 1)
         Me.Label115.TabIndex = 2
         Me.Label115.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2399,7 +2467,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel27.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel27.Location = New System.Drawing.Point(161, 0)
         Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(604, 22)
+        Me.Panel27.Size = New System.Drawing.Size(823, 22)
         Me.Panel27.TabIndex = 1
         '
         'lbl_bhxh_ngaydong
@@ -2407,6 +2475,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_bhxh_ngaydong.BackColor = System.Drawing.Color.White
         Me.lbl_bhxh_ngaydong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_bhxh_ngaydong.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_bhxh_ngaydong.ForeColor = System.Drawing.Color.Navy
         Me.lbl_bhxh_ngaydong.Location = New System.Drawing.Point(503, 0)
         Me.lbl_bhxh_ngaydong.Name = "lbl_bhxh_ngaydong"
         Me.lbl_bhxh_ngaydong.Size = New System.Drawing.Size(101, 22)
@@ -2429,6 +2498,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_bhxh_ngaylam.BackColor = System.Drawing.Color.White
         Me.lbl_bhxh_ngaylam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_bhxh_ngaylam.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_bhxh_ngaylam.ForeColor = System.Drawing.Color.Navy
         Me.lbl_bhxh_ngaylam.Location = New System.Drawing.Point(279, 0)
         Me.lbl_bhxh_ngaylam.Name = "lbl_bhxh_ngaylam"
         Me.lbl_bhxh_ngaylam.Size = New System.Drawing.Size(101, 22)
@@ -2451,6 +2521,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_bhxh_soso.BackColor = System.Drawing.Color.White
         Me.lbl_bhxh_soso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_bhxh_soso.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_bhxh_soso.ForeColor = System.Drawing.Color.Navy
         Me.lbl_bhxh_soso.Location = New System.Drawing.Point(111, 0)
         Me.lbl_bhxh_soso.Name = "lbl_bhxh_soso"
         Me.lbl_bhxh_soso.Size = New System.Drawing.Size(81, 22)
@@ -2483,7 +2554,7 @@ Partial Class frmHS_ChiTiet
         Me.Label106.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label106.Location = New System.Drawing.Point(0, 186)
         Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(765, 1)
+        Me.Label106.Size = New System.Drawing.Size(984, 1)
         Me.Label106.TabIndex = 14
         Me.Label106.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2499,7 +2570,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel25.Location = New System.Drawing.Point(0, 141)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(765, 45)
+        Me.Panel25.Size = New System.Drawing.Size(984, 45)
         Me.Panel25.TabIndex = 13
         '
         'lbl_nh_tennh
@@ -2507,9 +2578,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nh_tennh.BackColor = System.Drawing.Color.White
         Me.lbl_nh_tennh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nh_tennh.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_nh_tennh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_nh_tennh.Location = New System.Drawing.Point(272, 23)
         Me.lbl_nh_tennh.Name = "lbl_nh_tennh"
-        Me.lbl_nh_tennh.Size = New System.Drawing.Size(309, 22)
+        Me.lbl_nh_tennh.Size = New System.Drawing.Size(528, 22)
         Me.lbl_nh_tennh.TabIndex = 4
         Me.lbl_nh_tennh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2517,7 +2589,7 @@ Partial Class frmHS_ChiTiet
         '
         Me.Label93.Dock = System.Windows.Forms.DockStyle.Right
         Me.Label93.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label93.Location = New System.Drawing.Point(581, 23)
+        Me.Label93.Location = New System.Drawing.Point(800, 23)
         Me.Label93.Name = "Label93"
         Me.Label93.Size = New System.Drawing.Size(83, 22)
         Me.Label93.TabIndex = 5
@@ -2529,7 +2601,8 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ms_thue.BackColor = System.Drawing.Color.White
         Me.lbl_ms_thue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ms_thue.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lbl_ms_thue.Location = New System.Drawing.Point(664, 23)
+        Me.lbl_ms_thue.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ms_thue.Location = New System.Drawing.Point(883, 23)
         Me.lbl_ms_thue.Name = "lbl_ms_thue"
         Me.lbl_ms_thue.Size = New System.Drawing.Size(101, 22)
         Me.lbl_ms_thue.TabIndex = 6
@@ -2552,7 +2625,7 @@ Partial Class frmHS_ChiTiet
         Me.Label68.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label68.Location = New System.Drawing.Point(161, 22)
         Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(604, 1)
+        Me.Label68.Size = New System.Drawing.Size(823, 1)
         Me.Label68.TabIndex = 2
         Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2565,7 +2638,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel29.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel29.Location = New System.Drawing.Point(161, 0)
         Me.Panel29.Name = "Panel29"
-        Me.Panel29.Size = New System.Drawing.Size(604, 22)
+        Me.Panel29.Size = New System.Drawing.Size(823, 22)
         Me.Panel29.TabIndex = 1
         '
         'lbl_nh_sotk
@@ -2573,6 +2646,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nh_sotk.BackColor = System.Drawing.Color.White
         Me.lbl_nh_sotk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nh_sotk.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_nh_sotk.ForeColor = System.Drawing.Color.Navy
         Me.lbl_nh_sotk.Location = New System.Drawing.Point(279, 0)
         Me.lbl_nh_sotk.Name = "lbl_nh_sotk"
         Me.lbl_nh_sotk.Size = New System.Drawing.Size(141, 22)
@@ -2595,6 +2669,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_nh_makh.BackColor = System.Drawing.Color.White
         Me.lbl_nh_makh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nh_makh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_nh_makh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_nh_makh.Location = New System.Drawing.Point(111, 0)
         Me.lbl_nh_makh.Name = "lbl_nh_makh"
         Me.lbl_nh_makh.Size = New System.Drawing.Size(81, 22)
@@ -2627,7 +2702,7 @@ Partial Class frmHS_ChiTiet
         Me.Label97.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label97.Location = New System.Drawing.Point(0, 140)
         Me.Label97.Name = "Label97"
-        Me.Label97.Size = New System.Drawing.Size(765, 1)
+        Me.Label97.Size = New System.Drawing.Size(984, 1)
         Me.Label97.TabIndex = 12
         Me.Label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2638,7 +2713,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel24.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel24.Location = New System.Drawing.Point(0, 118)
         Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(765, 22)
+        Me.Panel24.Size = New System.Drawing.Size(984, 22)
         Me.Panel24.TabIndex = 11
         '
         'lbl_congviec_lamlau
@@ -2646,9 +2721,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_congviec_lamlau.BackColor = System.Drawing.Color.White
         Me.lbl_congviec_lamlau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_congviec_lamlau.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_congviec_lamlau.ForeColor = System.Drawing.Color.Navy
         Me.lbl_congviec_lamlau.Location = New System.Drawing.Point(161, 0)
         Me.lbl_congviec_lamlau.Name = "lbl_congviec_lamlau"
-        Me.lbl_congviec_lamlau.Size = New System.Drawing.Size(604, 22)
+        Me.lbl_congviec_lamlau.Size = New System.Drawing.Size(823, 22)
         Me.lbl_congviec_lamlau.TabIndex = 1
         Me.lbl_congviec_lamlau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2668,7 +2744,7 @@ Partial Class frmHS_ChiTiet
         Me.Label91.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label91.Location = New System.Drawing.Point(0, 117)
         Me.Label91.Name = "Label91"
-        Me.Label91.Size = New System.Drawing.Size(765, 1)
+        Me.Label91.Size = New System.Drawing.Size(984, 1)
         Me.Label91.TabIndex = 10
         Me.Label91.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2679,7 +2755,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel23.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel23.Location = New System.Drawing.Point(0, 95)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(765, 22)
+        Me.Panel23.Size = New System.Drawing.Size(984, 22)
         Me.Panel23.TabIndex = 9
         '
         'lbl_sotruong_ct
@@ -2687,9 +2763,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_sotruong_ct.BackColor = System.Drawing.Color.White
         Me.lbl_sotruong_ct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_sotruong_ct.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_sotruong_ct.ForeColor = System.Drawing.Color.Navy
         Me.lbl_sotruong_ct.Location = New System.Drawing.Point(161, 0)
         Me.lbl_sotruong_ct.Name = "lbl_sotruong_ct"
-        Me.lbl_sotruong_ct.Size = New System.Drawing.Size(604, 22)
+        Me.lbl_sotruong_ct.Size = New System.Drawing.Size(823, 22)
         Me.lbl_sotruong_ct.TabIndex = 1
         Me.lbl_sotruong_ct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2709,7 +2786,7 @@ Partial Class frmHS_ChiTiet
         Me.Label85.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label85.Location = New System.Drawing.Point(0, 94)
         Me.Label85.Name = "Label85"
-        Me.Label85.Size = New System.Drawing.Size(765, 1)
+        Me.Label85.Size = New System.Drawing.Size(984, 1)
         Me.Label85.TabIndex = 8
         Me.Label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2722,7 +2799,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel22.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel22.Location = New System.Drawing.Point(0, 72)
         Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(765, 22)
+        Me.Panel22.Size = New System.Drawing.Size(984, 22)
         Me.Panel22.TabIndex = 7
         '
         'lbl_tochuc_cm
@@ -2730,9 +2807,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tochuc_cm.BackColor = System.Drawing.Color.White
         Me.lbl_tochuc_cm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tochuc_cm.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_tochuc_cm.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tochuc_cm.Location = New System.Drawing.Point(408, 0)
         Me.lbl_tochuc_cm.Name = "lbl_tochuc_cm"
-        Me.lbl_tochuc_cm.Size = New System.Drawing.Size(357, 22)
+        Me.lbl_tochuc_cm.Size = New System.Drawing.Size(576, 22)
         Me.lbl_tochuc_cm.TabIndex = 3
         Me.lbl_tochuc_cm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2751,6 +2829,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ng_cachmang.BackColor = System.Drawing.Color.White
         Me.lbl_ng_cachmang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ng_cachmang.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ng_cachmang.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ng_cachmang.Location = New System.Drawing.Point(161, 0)
         Me.lbl_ng_cachmang.Name = "lbl_ng_cachmang"
         Me.lbl_ng_cachmang.Size = New System.Drawing.Size(121, 22)
@@ -2773,7 +2852,7 @@ Partial Class frmHS_ChiTiet
         Me.Label66.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label66.Location = New System.Drawing.Point(0, 71)
         Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(765, 1)
+        Me.Label66.Size = New System.Drawing.Size(984, 1)
         Me.Label66.TabIndex = 6
         Me.Label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2786,7 +2865,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel21.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel21.Location = New System.Drawing.Point(0, 49)
         Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(765, 22)
+        Me.Panel21.Size = New System.Drawing.Size(984, 22)
         Me.Panel21.TabIndex = 5
         '
         'lbl_ng_vao_cq
@@ -2794,6 +2873,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ng_vao_cq.BackColor = System.Drawing.Color.White
         Me.lbl_ng_vao_cq.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ng_vao_cq.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ng_vao_cq.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ng_vao_cq.Location = New System.Drawing.Point(408, 0)
         Me.lbl_ng_vao_cq.Name = "lbl_ng_vao_cq"
         Me.lbl_ng_vao_cq.Size = New System.Drawing.Size(122, 22)
@@ -2815,6 +2895,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ng_bienche_nh.BackColor = System.Drawing.Color.White
         Me.lbl_ng_bienche_nh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ng_bienche_nh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ng_bienche_nh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ng_bienche_nh.Location = New System.Drawing.Point(161, 0)
         Me.lbl_ng_bienche_nh.Name = "lbl_ng_bienche_nh"
         Me.lbl_ng_bienche_nh.Size = New System.Drawing.Size(121, 22)
@@ -2837,7 +2918,7 @@ Partial Class frmHS_ChiTiet
         Me.Label63.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label63.Location = New System.Drawing.Point(0, 48)
         Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(765, 1)
+        Me.Label63.Size = New System.Drawing.Size(984, 1)
         Me.Label63.TabIndex = 4
         Me.Label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2852,7 +2933,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel20.Location = New System.Drawing.Point(0, 26)
         Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(765, 22)
+        Me.Panel20.Size = New System.Drawing.Size(984, 22)
         Me.Panel20.TabIndex = 3
         '
         'lbl_ng_vaonhcsxh
@@ -2860,9 +2941,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ng_vaonhcsxh.BackColor = System.Drawing.Color.White
         Me.lbl_ng_vaonhcsxh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ng_vaonhcsxh.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_ng_vaonhcsxh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ng_vaonhcsxh.Location = New System.Drawing.Point(643, 0)
         Me.lbl_ng_vaonhcsxh.Name = "lbl_ng_vaonhcsxh"
-        Me.lbl_ng_vaonhcsxh.Size = New System.Drawing.Size(122, 22)
+        Me.lbl_ng_vaonhcsxh.Size = New System.Drawing.Size(341, 22)
         Me.lbl_ng_vaonhcsxh.TabIndex = 5
         Me.lbl_ng_vaonhcsxh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2881,6 +2963,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ng_vaonganh.BackColor = System.Drawing.Color.White
         Me.lbl_ng_vaonganh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ng_vaonganh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ng_vaonganh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ng_vaonganh.Location = New System.Drawing.Point(408, 0)
         Me.lbl_ng_vaonganh.Name = "lbl_ng_vaonganh"
         Me.lbl_ng_vaonganh.Size = New System.Drawing.Size(122, 22)
@@ -2902,6 +2985,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_ng_thamnien.BackColor = System.Drawing.Color.White
         Me.lbl_ng_thamnien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_ng_thamnien.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ng_thamnien.ForeColor = System.Drawing.Color.Navy
         Me.lbl_ng_thamnien.Location = New System.Drawing.Point(161, 0)
         Me.lbl_ng_thamnien.Name = "lbl_ng_thamnien"
         Me.lbl_ng_thamnien.Size = New System.Drawing.Size(121, 22)
@@ -2924,7 +3008,7 @@ Partial Class frmHS_ChiTiet
         Me.Label44.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label44.Location = New System.Drawing.Point(0, 25)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(765, 1)
+        Me.Label44.Size = New System.Drawing.Size(984, 1)
         Me.Label44.TabIndex = 2
         Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2937,7 +3021,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel19.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel19.Location = New System.Drawing.Point(0, 3)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(765, 22)
+        Me.Panel19.Size = New System.Drawing.Size(984, 22)
         Me.Panel19.TabIndex = 1
         '
         'lbl_tdct
@@ -2945,9 +3029,10 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tdct.BackColor = System.Drawing.Color.White
         Me.lbl_tdct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tdct.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_tdct.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tdct.Location = New System.Drawing.Point(529, 0)
         Me.lbl_tdct.Name = "lbl_tdct"
-        Me.lbl_tdct.Size = New System.Drawing.Size(236, 22)
+        Me.lbl_tdct.Size = New System.Drawing.Size(455, 22)
         Me.lbl_tdct.TabIndex = 3
         Me.lbl_tdct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -2966,6 +3051,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_tdvh.BackColor = System.Drawing.Color.White
         Me.lbl_tdvh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_tdvh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_tdvh.ForeColor = System.Drawing.Color.Navy
         Me.lbl_tdvh.Location = New System.Drawing.Point(161, 0)
         Me.lbl_tdvh.Name = "lbl_tdvh"
         Me.lbl_tdvh.Size = New System.Drawing.Size(248, 22)
@@ -2987,7 +3073,7 @@ Partial Class frmHS_ChiTiet
         Me.Label15.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label15.Location = New System.Drawing.Point(0, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(765, 3)
+        Me.Label15.Size = New System.Drawing.Size(984, 3)
         Me.Label15.TabIndex = 0
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3013,7 +3099,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hs_qdnhansu.Controls.Add(Me.Label19)
         Me.tp_hs_qdnhansu.Location = New System.Drawing.Point(4, 24)
         Me.tp_hs_qdnhansu.Name = "tp_hs_qdnhansu"
-        Me.tp_hs_qdnhansu.Size = New System.Drawing.Size(765, 263)
+        Me.tp_hs_qdnhansu.Size = New System.Drawing.Size(984, 282)
         Me.tp_hs_qdnhansu.TabIndex = 3
         Me.tp_hs_qdnhansu.Text = "Quyết định vào đơn vị hiện tại"
         '
@@ -3022,17 +3108,18 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_ghichu.BackColor = System.Drawing.Color.White
         Me.lbl_qd_ghichu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_ghichu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_ghichu.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_ghichu.Location = New System.Drawing.Point(123, 164)
         Me.lbl_qd_ghichu.Name = "lbl_qd_ghichu"
-        Me.lbl_qd_ghichu.Size = New System.Drawing.Size(642, 93)
+        Me.lbl_qd_ghichu.Size = New System.Drawing.Size(642, 112)
         Me.lbl_qd_ghichu.TabIndex = 16
         '
         'Label215
         '
         Me.Label215.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label215.Location = New System.Drawing.Point(123, 257)
+        Me.Label215.Location = New System.Drawing.Point(123, 276)
         Me.Label215.Name = "Label215"
-        Me.Label215.Size = New System.Drawing.Size(642, 6)
+        Me.Label215.Size = New System.Drawing.Size(861, 6)
         Me.Label215.TabIndex = 45
         Me.Label215.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3041,7 +3128,7 @@ Partial Class frmHS_ChiTiet
         Me.Label214.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label214.Location = New System.Drawing.Point(0, 164)
         Me.Label214.Name = "Label214"
-        Me.Label214.Size = New System.Drawing.Size(123, 99)
+        Me.Label214.Size = New System.Drawing.Size(123, 118)
         Me.Label214.TabIndex = 15
         Me.Label214.Text = "  Ghi chú "
         Me.Label214.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -3052,7 +3139,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel43.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel43.Location = New System.Drawing.Point(0, 163)
         Me.Panel43.Name = "Panel43"
-        Me.Panel43.Size = New System.Drawing.Size(765, 1)
+        Me.Panel43.Size = New System.Drawing.Size(984, 1)
         Me.Panel43.TabIndex = 43
         '
         'Label141
@@ -3072,7 +3159,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel42.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel42.Location = New System.Drawing.Point(0, 141)
         Me.Panel42.Name = "Panel42"
-        Me.Panel42.Size = New System.Drawing.Size(765, 22)
+        Me.Panel42.Size = New System.Drawing.Size(984, 22)
         Me.Panel42.TabIndex = 13
         '
         'lbl_qd_chmon_moi
@@ -3080,6 +3167,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_chmon_moi.BackColor = System.Drawing.Color.White
         Me.lbl_qd_chmon_moi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_chmon_moi.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_chmon_moi.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_chmon_moi.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_chmon_moi.Name = "lbl_qd_chmon_moi"
         Me.lbl_qd_chmon_moi.Size = New System.Drawing.Size(642, 22)
@@ -3102,7 +3190,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel41.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel41.Location = New System.Drawing.Point(0, 140)
         Me.Panel41.Name = "Panel41"
-        Me.Panel41.Size = New System.Drawing.Size(765, 1)
+        Me.Panel41.Size = New System.Drawing.Size(984, 1)
         Me.Panel41.TabIndex = 41
         '
         'Label136
@@ -3122,7 +3210,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel40.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel40.Location = New System.Drawing.Point(0, 118)
         Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(765, 22)
+        Me.Panel40.Size = New System.Drawing.Size(984, 22)
         Me.Panel40.TabIndex = 11
         '
         'lbl_qd_chucvu_moi
@@ -3130,6 +3218,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_chucvu_moi.BackColor = System.Drawing.Color.White
         Me.lbl_qd_chucvu_moi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_chucvu_moi.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_chucvu_moi.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_chucvu_moi.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_chucvu_moi.Name = "lbl_qd_chucvu_moi"
         Me.lbl_qd_chucvu_moi.Size = New System.Drawing.Size(642, 22)
@@ -3152,7 +3241,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel39.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel39.Location = New System.Drawing.Point(0, 117)
         Me.Panel39.Name = "Panel39"
-        Me.Panel39.Size = New System.Drawing.Size(765, 1)
+        Me.Panel39.Size = New System.Drawing.Size(984, 1)
         Me.Panel39.TabIndex = 39
         '
         'Label131
@@ -3172,7 +3261,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel38.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel38.Location = New System.Drawing.Point(0, 95)
         Me.Panel38.Name = "Panel38"
-        Me.Panel38.Size = New System.Drawing.Size(765, 22)
+        Me.Panel38.Size = New System.Drawing.Size(984, 22)
         Me.Panel38.TabIndex = 9
         '
         'lbl_qd_phongban_moi
@@ -3180,6 +3269,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_phongban_moi.BackColor = System.Drawing.Color.White
         Me.lbl_qd_phongban_moi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_phongban_moi.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_phongban_moi.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_phongban_moi.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_phongban_moi.Name = "lbl_qd_phongban_moi"
         Me.lbl_qd_phongban_moi.Size = New System.Drawing.Size(642, 22)
@@ -3202,7 +3292,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel37.Location = New System.Drawing.Point(0, 94)
         Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(765, 1)
+        Me.Panel37.Size = New System.Drawing.Size(984, 1)
         Me.Panel37.TabIndex = 37
         '
         'Label126
@@ -3222,7 +3312,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel36.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel36.Location = New System.Drawing.Point(0, 72)
         Me.Panel36.Name = "Panel36"
-        Me.Panel36.Size = New System.Drawing.Size(765, 22)
+        Me.Panel36.Size = New System.Drawing.Size(984, 22)
         Me.Panel36.TabIndex = 7
         '
         'lbl_qd_donvi_moi
@@ -3230,6 +3320,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_donvi_moi.BackColor = System.Drawing.Color.White
         Me.lbl_qd_donvi_moi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_donvi_moi.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_donvi_moi.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_donvi_moi.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_donvi_moi.Name = "lbl_qd_donvi_moi"
         Me.lbl_qd_donvi_moi.Size = New System.Drawing.Size(642, 22)
@@ -3252,7 +3343,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel35.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel35.Location = New System.Drawing.Point(0, 71)
         Me.Panel35.Name = "Panel35"
-        Me.Panel35.Size = New System.Drawing.Size(765, 1)
+        Me.Panel35.Size = New System.Drawing.Size(984, 1)
         Me.Panel35.TabIndex = 35
         '
         'Label112
@@ -3274,7 +3365,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel34.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel34.Location = New System.Drawing.Point(0, 49)
         Me.Panel34.Name = "Panel34"
-        Me.Panel34.Size = New System.Drawing.Size(765, 22)
+        Me.Panel34.Size = New System.Drawing.Size(984, 22)
         Me.Panel34.TabIndex = 5
         '
         'lbl_qd_chucvu
@@ -3282,6 +3373,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_chucvu.BackColor = System.Drawing.Color.White
         Me.lbl_qd_chucvu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_chucvu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_chucvu.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_chucvu.Location = New System.Drawing.Point(472, 0)
         Me.lbl_qd_chucvu.Name = "lbl_qd_chucvu"
         Me.lbl_qd_chucvu.Size = New System.Drawing.Size(293, 22)
@@ -3303,6 +3395,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_nguoiky.BackColor = System.Drawing.Color.White
         Me.lbl_qd_nguoiky.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_nguoiky.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_nguoiky.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_nguoiky.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_nguoiky.Name = "lbl_qd_nguoiky"
         Me.lbl_qd_nguoiky.Size = New System.Drawing.Size(181, 22)
@@ -3325,7 +3418,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel33.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel33.Location = New System.Drawing.Point(0, 48)
         Me.Panel33.Name = "Panel33"
-        Me.Panel33.Size = New System.Drawing.Size(765, 1)
+        Me.Panel33.Size = New System.Drawing.Size(984, 1)
         Me.Panel33.TabIndex = 33
         '
         'Label110
@@ -3347,7 +3440,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel32.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel32.Location = New System.Drawing.Point(0, 26)
         Me.Panel32.Name = "Panel32"
-        Me.Panel32.Size = New System.Drawing.Size(765, 22)
+        Me.Panel32.Size = New System.Drawing.Size(984, 22)
         Me.Panel32.TabIndex = 3
         '
         'lbl_qd_ngayhl
@@ -3355,6 +3448,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_ngayhl.BackColor = System.Drawing.Color.White
         Me.lbl_qd_ngayhl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_ngayhl.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_ngayhl.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_ngayhl.Location = New System.Drawing.Point(472, 0)
         Me.lbl_qd_ngayhl.Name = "lbl_qd_ngayhl"
         Me.lbl_qd_ngayhl.Size = New System.Drawing.Size(111, 22)
@@ -3376,6 +3470,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_ngayky.BackColor = System.Drawing.Color.White
         Me.lbl_qd_ngayky.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_ngayky.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_ngayky.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_ngayky.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_ngayky.Name = "lbl_qd_ngayky"
         Me.lbl_qd_ngayky.Size = New System.Drawing.Size(111, 22)
@@ -3398,7 +3493,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel31.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel31.Location = New System.Drawing.Point(0, 25)
         Me.Panel31.Name = "Panel31"
-        Me.Panel31.Size = New System.Drawing.Size(765, 1)
+        Me.Panel31.Size = New System.Drawing.Size(984, 1)
         Me.Panel31.TabIndex = 31
         '
         'Label79
@@ -3420,7 +3515,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel30.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel30.Location = New System.Drawing.Point(0, 3)
         Me.Panel30.Name = "Panel30"
-        Me.Panel30.Size = New System.Drawing.Size(765, 22)
+        Me.Panel30.Size = New System.Drawing.Size(984, 22)
         Me.Panel30.TabIndex = 1
         '
         'lbl_qd_loaiqd
@@ -3428,6 +3523,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_loaiqd.BackColor = System.Drawing.Color.White
         Me.lbl_qd_loaiqd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_loaiqd.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_loaiqd.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_loaiqd.Location = New System.Drawing.Point(472, 0)
         Me.lbl_qd_loaiqd.Name = "lbl_qd_loaiqd"
         Me.lbl_qd_loaiqd.Size = New System.Drawing.Size(293, 22)
@@ -3449,6 +3545,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_qd_soqd.BackColor = System.Drawing.Color.White
         Me.lbl_qd_soqd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_qd_soqd.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_qd_soqd.ForeColor = System.Drawing.Color.OldLace
         Me.lbl_qd_soqd.Location = New System.Drawing.Point(123, 0)
         Me.lbl_qd_soqd.Name = "lbl_qd_soqd"
         Me.lbl_qd_soqd.Size = New System.Drawing.Size(181, 22)
@@ -3470,7 +3567,7 @@ Partial Class frmHS_ChiTiet
         Me.Label19.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label19.Location = New System.Drawing.Point(0, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(765, 3)
+        Me.Label19.Size = New System.Drawing.Size(984, 3)
         Me.Label19.TabIndex = 0
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3487,7 +3584,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_congtac.Location = New System.Drawing.Point(4, 25)
         Me.tp_congtac.Name = "tp_congtac"
         Me.tp_congtac.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_congtac.Size = New System.Drawing.Size(779, 297)
+        Me.tp_congtac.Size = New System.Drawing.Size(998, 297)
         Me.tp_congtac.TabIndex = 1
         Me.tp_congtac.Text = "Hồ sơ công tác"
         '
@@ -3507,6 +3604,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_congtac.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_congtac.ColumnHeadersHeight = 29
         Me.dgv_congtac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_congtac.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_congtac.Location = New System.Drawing.Point(3, 32)
@@ -3521,11 +3619,12 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_congtac.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_congtac.RowHeadersVisible = False
+        Me.dgv_congtac.RowHeadersWidth = 51
         Me.dgv_congtac.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_congtac.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_congtac.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.dgv_congtac.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_congtac.Size = New System.Drawing.Size(773, 262)
+        Me.dgv_congtac.Size = New System.Drawing.Size(992, 262)
         Me.dgv_congtac.TabIndex = 6
         '
         'Label163
@@ -3536,7 +3635,7 @@ Partial Class frmHS_ChiTiet
         Me.Label163.ForeColor = System.Drawing.Color.Maroon
         Me.Label163.Location = New System.Drawing.Point(3, 11)
         Me.Label163.Name = "Label163"
-        Me.Label163.Size = New System.Drawing.Size(773, 21)
+        Me.Label163.Size = New System.Drawing.Size(992, 21)
         Me.Label163.TabIndex = 5
         Me.Label163.Text = "Danh sách quá trình công tác"
         Me.Label163.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3546,7 +3645,7 @@ Partial Class frmHS_ChiTiet
         Me.Label162.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label162.Location = New System.Drawing.Point(3, 9)
         Me.Label162.Name = "Label162"
-        Me.Label162.Size = New System.Drawing.Size(773, 2)
+        Me.Label162.Size = New System.Drawing.Size(992, 2)
         Me.Label162.TabIndex = 4
         Me.Label162.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3631,7 +3730,7 @@ Partial Class frmHS_ChiTiet
         Me.Label155.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label155.Location = New System.Drawing.Point(3, 7)
         Me.Label155.Name = "Label155"
-        Me.Label155.Size = New System.Drawing.Size(773, 2)
+        Me.Label155.Size = New System.Drawing.Size(992, 2)
         Me.Label155.TabIndex = 2
         Me.Label155.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3716,7 +3815,7 @@ Partial Class frmHS_ChiTiet
         Me.Label143.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label143.Location = New System.Drawing.Point(3, 3)
         Me.Label143.Name = "Label143"
-        Me.Label143.Size = New System.Drawing.Size(773, 4)
+        Me.Label143.Size = New System.Drawing.Size(992, 4)
         Me.Label143.TabIndex = 0
         Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3728,7 +3827,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_xuatngoai.Controls.Add(Me.Label144)
         Me.tp_xuatngoai.Location = New System.Drawing.Point(4, 25)
         Me.tp_xuatngoai.Name = "tp_xuatngoai"
-        Me.tp_xuatngoai.Size = New System.Drawing.Size(779, 297)
+        Me.tp_xuatngoai.Size = New System.Drawing.Size(998, 297)
         Me.tp_xuatngoai.TabIndex = 2
         Me.tp_xuatngoai.Text = "Xuất ngoại"
         '
@@ -3748,6 +3847,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_xuatngoai.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_xuatngoai.ColumnHeadersHeight = 29
         Me.dgv_xuatngoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_xuatngoai.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_xuatngoai.Location = New System.Drawing.Point(0, 123)
@@ -3762,11 +3862,12 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_xuatngoai.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_xuatngoai.RowHeadersVisible = False
+        Me.dgv_xuatngoai.RowHeadersWidth = 51
         Me.dgv_xuatngoai.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_xuatngoai.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_xuatngoai.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.dgv_xuatngoai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_xuatngoai.Size = New System.Drawing.Size(779, 174)
+        Me.dgv_xuatngoai.Size = New System.Drawing.Size(998, 174)
         Me.dgv_xuatngoai.TabIndex = 3
         '
         'Label189
@@ -3777,7 +3878,7 @@ Partial Class frmHS_ChiTiet
         Me.Label189.ForeColor = System.Drawing.Color.Maroon
         Me.Label189.Location = New System.Drawing.Point(0, 102)
         Me.Label189.Name = "Label189"
-        Me.Label189.Size = New System.Drawing.Size(779, 21)
+        Me.Label189.Size = New System.Drawing.Size(998, 21)
         Me.Label189.TabIndex = 2
         Me.Label189.Text = "Danh sách quá trình xuất ngoại"
         Me.Label189.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3793,7 +3894,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel50.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel50.Location = New System.Drawing.Point(0, 4)
         Me.Panel50.Name = "Panel50"
-        Me.Panel50.Size = New System.Drawing.Size(779, 98)
+        Me.Panel50.Size = New System.Drawing.Size(998, 98)
         Me.Panel50.TabIndex = 1
         '
         'lbl_xn_ghichu
@@ -3803,7 +3904,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_xn_ghichu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_xn_ghichu.Location = New System.Drawing.Point(557, 22)
         Me.lbl_xn_ghichu.Name = "lbl_xn_ghichu"
-        Me.lbl_xn_ghichu.Size = New System.Drawing.Size(222, 73)
+        Me.lbl_xn_ghichu.Size = New System.Drawing.Size(441, 73)
         Me.lbl_xn_ghichu.TabIndex = 30
         '
         'Label164
@@ -3811,7 +3912,7 @@ Partial Class frmHS_ChiTiet
         Me.Label164.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label164.Location = New System.Drawing.Point(557, 95)
         Me.Label164.Name = "Label164"
-        Me.Label164.Size = New System.Drawing.Size(222, 3)
+        Me.Label164.Size = New System.Drawing.Size(441, 3)
         Me.Label164.TabIndex = 27
         Me.Label164.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -3820,7 +3921,7 @@ Partial Class frmHS_ChiTiet
         Me.Label165.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label165.Location = New System.Drawing.Point(557, 0)
         Me.Label165.Name = "Label165"
-        Me.Label165.Size = New System.Drawing.Size(222, 22)
+        Me.Label165.Size = New System.Drawing.Size(441, 22)
         Me.Label165.TabIndex = 4
         Me.Label165.Text = " Ghi chú"
         Me.Label165.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -4171,7 +4272,7 @@ Partial Class frmHS_ChiTiet
         Me.Label144.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label144.Location = New System.Drawing.Point(0, 0)
         Me.Label144.Name = "Label144"
-        Me.Label144.Size = New System.Drawing.Size(779, 4)
+        Me.Label144.Size = New System.Drawing.Size(998, 4)
         Me.Label144.TabIndex = 0
         Me.Label144.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -4183,7 +4284,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hochieu.Controls.Add(Me.Label145)
         Me.tp_hochieu.Location = New System.Drawing.Point(4, 25)
         Me.tp_hochieu.Name = "tp_hochieu"
-        Me.tp_hochieu.Size = New System.Drawing.Size(779, 297)
+        Me.tp_hochieu.Size = New System.Drawing.Size(998, 297)
         Me.tp_hochieu.TabIndex = 3
         Me.tp_hochieu.Text = "Hộ chiếu"
         '
@@ -4203,6 +4304,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hochieu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgv_hochieu.ColumnHeadersHeight = 29
         Me.dgv_hochieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hochieu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hochieu.Location = New System.Drawing.Point(0, 100)
@@ -4217,11 +4319,12 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hochieu.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgv_hochieu.RowHeadersVisible = False
+        Me.dgv_hochieu.RowHeadersWidth = 51
         Me.dgv_hochieu.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hochieu.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hochieu.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.dgv_hochieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_hochieu.Size = New System.Drawing.Size(779, 197)
+        Me.dgv_hochieu.Size = New System.Drawing.Size(998, 197)
         Me.dgv_hochieu.TabIndex = 3
         '
         'Label193
@@ -4232,7 +4335,7 @@ Partial Class frmHS_ChiTiet
         Me.Label193.ForeColor = System.Drawing.Color.Maroon
         Me.Label193.Location = New System.Drawing.Point(0, 79)
         Me.Label193.Name = "Label193"
-        Me.Label193.Size = New System.Drawing.Size(779, 21)
+        Me.Label193.Size = New System.Drawing.Size(998, 21)
         Me.Label193.TabIndex = 2
         Me.Label193.Text = "Danh sách thông tin hộ chiếu"
         Me.Label193.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -4248,7 +4351,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel46.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel46.Location = New System.Drawing.Point(0, 4)
         Me.Panel46.Name = "Panel46"
-        Me.Panel46.Size = New System.Drawing.Size(779, 75)
+        Me.Panel46.Size = New System.Drawing.Size(998, 75)
         Me.Panel46.TabIndex = 1
         '
         'lbl_hc_ghichu
@@ -4258,7 +4361,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_hc_ghichu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_hc_ghichu.Location = New System.Drawing.Point(557, 22)
         Me.lbl_hc_ghichu.Name = "lbl_hc_ghichu"
-        Me.lbl_hc_ghichu.Size = New System.Drawing.Size(222, 50)
+        Me.lbl_hc_ghichu.Size = New System.Drawing.Size(441, 50)
         Me.lbl_hc_ghichu.TabIndex = 29
         '
         'Label190
@@ -4266,7 +4369,7 @@ Partial Class frmHS_ChiTiet
         Me.Label190.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label190.Location = New System.Drawing.Point(557, 72)
         Me.Label190.Name = "Label190"
-        Me.Label190.Size = New System.Drawing.Size(222, 3)
+        Me.Label190.Size = New System.Drawing.Size(441, 3)
         Me.Label190.TabIndex = 27
         Me.Label190.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -4275,7 +4378,7 @@ Partial Class frmHS_ChiTiet
         Me.Label191.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label191.Location = New System.Drawing.Point(557, 0)
         Me.Label191.Name = "Label191"
-        Me.Label191.Size = New System.Drawing.Size(222, 22)
+        Me.Label191.Size = New System.Drawing.Size(441, 22)
         Me.Label191.TabIndex = 4
         Me.Label191.Text = " Ghi chú"
         Me.Label191.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -4542,7 +4645,7 @@ Partial Class frmHS_ChiTiet
         Me.Label145.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label145.Location = New System.Drawing.Point(0, 0)
         Me.Label145.Name = "Label145"
-        Me.Label145.Size = New System.Drawing.Size(779, 4)
+        Me.Label145.Size = New System.Drawing.Size(998, 4)
         Me.Label145.TabIndex = 0
         Me.Label145.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -4554,7 +4657,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_llvt.Controls.Add(Me.Label146)
         Me.tp_llvt.Location = New System.Drawing.Point(4, 25)
         Me.tp_llvt.Name = "tp_llvt"
-        Me.tp_llvt.Size = New System.Drawing.Size(779, 297)
+        Me.tp_llvt.Size = New System.Drawing.Size(998, 297)
         Me.tp_llvt.TabIndex = 4
         Me.tp_llvt.Text = "Lực lượng vũ trang"
         '
@@ -4574,6 +4677,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_llvt.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.dgv_llvt.ColumnHeadersHeight = 29
         Me.dgv_llvt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_llvt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_llvt.Location = New System.Drawing.Point(0, 100)
@@ -4588,11 +4692,12 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_llvt.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dgv_llvt.RowHeadersVisible = False
+        Me.dgv_llvt.RowHeadersWidth = 51
         Me.dgv_llvt.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_llvt.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_llvt.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.dgv_llvt.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_llvt.Size = New System.Drawing.Size(779, 197)
+        Me.dgv_llvt.Size = New System.Drawing.Size(998, 197)
         Me.dgv_llvt.TabIndex = 3
         '
         'Label232
@@ -4603,7 +4708,7 @@ Partial Class frmHS_ChiTiet
         Me.Label232.ForeColor = System.Drawing.Color.Maroon
         Me.Label232.Location = New System.Drawing.Point(0, 79)
         Me.Label232.Name = "Label232"
-        Me.Label232.Size = New System.Drawing.Size(779, 21)
+        Me.Label232.Size = New System.Drawing.Size(998, 21)
         Me.Label232.TabIndex = 2
         Me.Label232.Text = "Danh sách thông tin lực lượng vũ trang"
         Me.Label232.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -4619,7 +4724,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel48.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel48.Location = New System.Drawing.Point(0, 4)
         Me.Panel48.Name = "Panel48"
-        Me.Panel48.Size = New System.Drawing.Size(779, 75)
+        Me.Panel48.Size = New System.Drawing.Size(998, 75)
         Me.Panel48.TabIndex = 1
         '
         'lbl_llvt_ghichu
@@ -4629,7 +4734,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_llvt_ghichu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_llvt_ghichu.Location = New System.Drawing.Point(557, 22)
         Me.lbl_llvt_ghichu.Name = "lbl_llvt_ghichu"
-        Me.lbl_llvt_ghichu.Size = New System.Drawing.Size(222, 50)
+        Me.lbl_llvt_ghichu.Size = New System.Drawing.Size(441, 50)
         Me.lbl_llvt_ghichu.TabIndex = 5
         '
         'Label194
@@ -4637,7 +4742,7 @@ Partial Class frmHS_ChiTiet
         Me.Label194.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label194.Location = New System.Drawing.Point(557, 72)
         Me.Label194.Name = "Label194"
-        Me.Label194.Size = New System.Drawing.Size(222, 3)
+        Me.Label194.Size = New System.Drawing.Size(441, 3)
         Me.Label194.TabIndex = 27
         Me.Label194.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -4646,7 +4751,7 @@ Partial Class frmHS_ChiTiet
         Me.Label195.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label195.Location = New System.Drawing.Point(557, 0)
         Me.Label195.Name = "Label195"
-        Me.Label195.Size = New System.Drawing.Size(222, 22)
+        Me.Label195.Size = New System.Drawing.Size(441, 22)
         Me.Label195.TabIndex = 4
         Me.Label195.Text = " Ghi chú"
         Me.Label195.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -4913,7 +5018,7 @@ Partial Class frmHS_ChiTiet
         Me.Label146.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label146.Location = New System.Drawing.Point(0, 0)
         Me.Label146.Name = "Label146"
-        Me.Label146.Size = New System.Drawing.Size(779, 4)
+        Me.Label146.Size = New System.Drawing.Size(998, 4)
         Me.Label146.TabIndex = 0
         Me.Label146.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -4928,7 +5033,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hs_cu.Controls.Add(Me.Label147)
         Me.tp_hs_cu.Location = New System.Drawing.Point(4, 25)
         Me.tp_hs_cu.Name = "tp_hs_cu"
-        Me.tp_hs_cu.Size = New System.Drawing.Size(779, 297)
+        Me.tp_hs_cu.Size = New System.Drawing.Size(998, 297)
         Me.tp_hs_cu.TabIndex = 5
         Me.tp_hs_cu.Text = "Hồ sơ cũ"
         '
@@ -4948,6 +5053,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hosocu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.dgv_hosocu.ColumnHeadersHeight = 29
         Me.dgv_hosocu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hosocu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hosocu.Location = New System.Drawing.Point(0, 75)
@@ -4962,11 +5068,12 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hosocu.RowHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.dgv_hosocu.RowHeadersVisible = False
+        Me.dgv_hosocu.RowHeadersWidth = 51
         Me.dgv_hosocu.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hosocu.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hosocu.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.dgv_hosocu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_hosocu.Size = New System.Drawing.Size(779, 222)
+        Me.dgv_hosocu.Size = New System.Drawing.Size(998, 222)
         Me.dgv_hosocu.TabIndex = 6
         '
         'Label246
@@ -4977,9 +5084,9 @@ Partial Class frmHS_ChiTiet
         Me.Label246.ForeColor = System.Drawing.Color.Maroon
         Me.Label246.Location = New System.Drawing.Point(0, 54)
         Me.Label246.Name = "Label246"
-        Me.Label246.Size = New System.Drawing.Size(779, 21)
+        Me.Label246.Size = New System.Drawing.Size(998, 21)
         Me.Label246.TabIndex = 5
-        Me.Label246.Text = "Danh sách thông tin hồ sơ cũ (Thông tin quá trình học tập - công tác trước đây củ" & _
+        Me.Label246.Text = "Danh sách thông tin hồ sơ cũ (Thông tin quá trình học tập - công tác trước đây củ" &
     "a cán bộ)"
         Me.Label246.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -4988,7 +5095,7 @@ Partial Class frmHS_ChiTiet
         Me.Label245.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label245.Location = New System.Drawing.Point(0, 50)
         Me.Label245.Name = "Label245"
-        Me.Label245.Size = New System.Drawing.Size(779, 4)
+        Me.Label245.Size = New System.Drawing.Size(998, 4)
         Me.Label245.TabIndex = 4
         Me.Label245.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5001,7 +5108,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel76.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel76.Location = New System.Drawing.Point(0, 28)
         Me.Panel76.Name = "Panel76"
-        Me.Panel76.Size = New System.Drawing.Size(779, 22)
+        Me.Panel76.Size = New System.Drawing.Size(998, 22)
         Me.Panel76.TabIndex = 3
         '
         'lbl_hscu_ghichu
@@ -5011,7 +5118,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_hscu_ghichu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_hscu_ghichu.Location = New System.Drawing.Point(449, 0)
         Me.lbl_hscu_ghichu.Name = "lbl_hscu_ghichu"
-        Me.lbl_hscu_ghichu.Size = New System.Drawing.Size(330, 22)
+        Me.lbl_hscu_ghichu.Size = New System.Drawing.Size(549, 22)
         Me.lbl_hscu_ghichu.TabIndex = 3
         Me.lbl_hscu_ghichu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5051,7 +5158,7 @@ Partial Class frmHS_ChiTiet
         Me.Label234.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label234.Location = New System.Drawing.Point(0, 26)
         Me.Label234.Name = "Label234"
-        Me.Label234.Size = New System.Drawing.Size(779, 2)
+        Me.Label234.Size = New System.Drawing.Size(998, 2)
         Me.Label234.TabIndex = 2
         Me.Label234.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5066,7 +5173,7 @@ Partial Class frmHS_ChiTiet
         Me.Panel75.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel75.Location = New System.Drawing.Point(0, 4)
         Me.Panel75.Name = "Panel75"
-        Me.Panel75.Size = New System.Drawing.Size(779, 22)
+        Me.Panel75.Size = New System.Drawing.Size(998, 22)
         Me.Panel75.TabIndex = 1
         '
         'lbl_hscu_nghenghiep
@@ -5076,7 +5183,7 @@ Partial Class frmHS_ChiTiet
         Me.lbl_hscu_nghenghiep.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lbl_hscu_nghenghiep.Location = New System.Drawing.Point(449, 0)
         Me.lbl_hscu_nghenghiep.Name = "lbl_hscu_nghenghiep"
-        Me.lbl_hscu_nghenghiep.Size = New System.Drawing.Size(330, 22)
+        Me.lbl_hscu_nghenghiep.Size = New System.Drawing.Size(549, 22)
         Me.lbl_hscu_nghenghiep.TabIndex = 5
         Me.lbl_hscu_nghenghiep.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5137,7 +5244,7 @@ Partial Class frmHS_ChiTiet
         Me.Label147.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label147.Location = New System.Drawing.Point(0, 0)
         Me.Label147.Name = "Label147"
-        Me.Label147.Size = New System.Drawing.Size(779, 4)
+        Me.Label147.Size = New System.Drawing.Size(998, 4)
         Me.Label147.TabIndex = 0
         Me.Label147.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5149,7 +5256,7 @@ Partial Class frmHS_ChiTiet
         Me.tp_hhhv.Controls.Add(Me.Label148)
         Me.tp_hhhv.Location = New System.Drawing.Point(4, 25)
         Me.tp_hhhv.Name = "tp_hhhv"
-        Me.tp_hhhv.Size = New System.Drawing.Size(779, 297)
+        Me.tp_hhhv.Size = New System.Drawing.Size(998, 297)
         Me.tp_hhhv.TabIndex = 6
         Me.tp_hhhv.Text = "Học hàm - Học vị"
         '
@@ -5180,6 +5287,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hocvi.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.dgv_hocvi.ColumnHeadersHeight = 29
         Me.dgv_hocvi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hocvi.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hocvi.Location = New System.Drawing.Point(0, 24)
@@ -5194,6 +5302,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hocvi.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.dgv_hocvi.RowHeadersVisible = False
+        Me.dgv_hocvi.RowHeadersWidth = 51
         Me.dgv_hocvi.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hocvi.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hocvi.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -5260,6 +5369,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hocham.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        Me.dgv_hocham.ColumnHeadersHeight = 29
         Me.dgv_hocham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hocham.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hocham.Location = New System.Drawing.Point(0, 24)
@@ -5274,6 +5384,7 @@ Partial Class frmHS_ChiTiet
         DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hocham.RowHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgv_hocham.RowHeadersVisible = False
+        Me.dgv_hocham.RowHeadersWidth = 51
         Me.dgv_hocham.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hocham.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hocham.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -5308,15 +5419,162 @@ Partial Class frmHS_ChiTiet
         Me.Label148.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label148.Location = New System.Drawing.Point(0, 0)
         Me.Label148.Name = "Label148"
-        Me.Label148.Size = New System.Drawing.Size(779, 4)
+        Me.Label148.Size = New System.Drawing.Size(998, 4)
         Me.Label148.TabIndex = 26
         Me.Label148.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'lbl_ns_xa
+        '
+        Me.lbl_ns_xa.BackColor = System.Drawing.Color.White
+        Me.lbl_ns_xa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_ns_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ns_xa.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ns_xa.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ns_xa.Location = New System.Drawing.Point(400, 0)
+        Me.lbl_ns_xa.Name = "lbl_ns_xa"
+        Me.lbl_ns_xa.Size = New System.Drawing.Size(240, 22)
+        Me.lbl_ns_xa.TabIndex = 4
+        Me.lbl_ns_xa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbl_ns_thon
+        '
+        Me.lbl_ns_thon.BackColor = System.Drawing.Color.White
+        Me.lbl_ns_thon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_ns_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_ns_thon.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ns_thon.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ns_thon.Location = New System.Drawing.Point(695, 0)
+        Me.lbl_ns_thon.Name = "lbl_ns_thon"
+        Me.lbl_ns_thon.Size = New System.Drawing.Size(186, 22)
+        Me.lbl_ns_thon.TabIndex = 6
+        Me.lbl_ns_thon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label116
+        '
+        Me.Label116.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label116.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label116.Location = New System.Drawing.Point(640, 0)
+        Me.Label116.Name = "Label116"
+        Me.Label116.Size = New System.Drawing.Size(55, 22)
+        Me.Label116.TabIndex = 5
+        Me.Label116.Text = "Thôn "
+        Me.Label116.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_nq_xa
+        '
+        Me.lbl_nq_xa.BackColor = System.Drawing.Color.White
+        Me.lbl_nq_xa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_nq_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_nq_xa.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nq_xa.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_nq_xa.Location = New System.Drawing.Point(400, 0)
+        Me.lbl_nq_xa.Name = "lbl_nq_xa"
+        Me.lbl_nq_xa.Size = New System.Drawing.Size(240, 22)
+        Me.lbl_nq_xa.TabIndex = 4
+        Me.lbl_nq_xa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbl_nq_thon
+        '
+        Me.lbl_nq_thon.BackColor = System.Drawing.Color.White
+        Me.lbl_nq_thon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_nq_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_nq_thon.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nq_thon.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_nq_thon.Location = New System.Drawing.Point(695, 0)
+        Me.lbl_nq_thon.Name = "lbl_nq_thon"
+        Me.lbl_nq_thon.Size = New System.Drawing.Size(186, 22)
+        Me.lbl_nq_thon.TabIndex = 6
+        Me.lbl_nq_thon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label117
+        '
+        Me.Label117.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label117.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label117.Location = New System.Drawing.Point(640, 0)
+        Me.Label117.Name = "Label117"
+        Me.Label117.Size = New System.Drawing.Size(55, 22)
+        Me.Label117.TabIndex = 5
+        Me.Label117.Text = "Thôn "
+        Me.Label117.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_tt_xa
+        '
+        Me.lbl_tt_xa.BackColor = System.Drawing.Color.White
+        Me.lbl_tt_xa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_tt_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_tt_xa.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_tt_xa.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_tt_xa.Location = New System.Drawing.Point(400, 0)
+        Me.lbl_tt_xa.Name = "lbl_tt_xa"
+        Me.lbl_tt_xa.Size = New System.Drawing.Size(240, 22)
+        Me.lbl_tt_xa.TabIndex = 4
+        Me.lbl_tt_xa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbl_tt_thon
+        '
+        Me.lbl_tt_thon.BackColor = System.Drawing.Color.White
+        Me.lbl_tt_thon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_tt_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_tt_thon.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_tt_thon.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_tt_thon.Location = New System.Drawing.Point(695, 0)
+        Me.lbl_tt_thon.Name = "lbl_tt_thon"
+        Me.lbl_tt_thon.Size = New System.Drawing.Size(186, 22)
+        Me.lbl_tt_thon.TabIndex = 6
+        Me.lbl_tt_thon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label118
+        '
+        Me.Label118.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label118.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label118.Location = New System.Drawing.Point(640, 0)
+        Me.Label118.Name = "Label118"
+        Me.Label118.Size = New System.Drawing.Size(55, 22)
+        Me.Label118.TabIndex = 5
+        Me.Label118.Text = "Thôn "
+        Me.Label118.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_ttr_xa
+        '
+        Me.lbl_ttr_xa.BackColor = System.Drawing.Color.White
+        Me.lbl_ttr_xa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_ttr_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbl_ttr_xa.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ttr_xa.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ttr_xa.Location = New System.Drawing.Point(400, 0)
+        Me.lbl_ttr_xa.Name = "lbl_ttr_xa"
+        Me.lbl_ttr_xa.Size = New System.Drawing.Size(240, 22)
+        Me.lbl_ttr_xa.TabIndex = 11
+        Me.lbl_ttr_xa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbl_ttr_thon
+        '
+        Me.lbl_ttr_thon.BackColor = System.Drawing.Color.White
+        Me.lbl_ttr_thon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_ttr_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_ttr_thon.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ttr_thon.ForeColor = System.Drawing.Color.Navy
+        Me.lbl_ttr_thon.Location = New System.Drawing.Point(695, 0)
+        Me.lbl_ttr_thon.Name = "lbl_ttr_thon"
+        Me.lbl_ttr_thon.Size = New System.Drawing.Size(186, 22)
+        Me.lbl_ttr_thon.TabIndex = 13
+        Me.lbl_ttr_thon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label120
+        '
+        Me.Label120.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label120.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label120.Location = New System.Drawing.Point(640, 0)
+        Me.Label120.Name = "Label120"
+        Me.Label120.Size = New System.Drawing.Size(55, 22)
+        Me.Label120.TabIndex = 12
+        Me.Label120.Text = "Thôn "
+        Me.Label120.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'frmHS_ChiTiet
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(787, 583)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.ClientSize = New System.Drawing.Size(1006, 603)
         Me.Controls.Add(Me.tctrl_main)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Panel1)
@@ -5324,6 +5582,7 @@ Partial Class frmHS_ChiTiet
         Me.Controls.Add(Me.Label8)
         Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "frmHS_ChiTiet"
@@ -5859,4 +6118,16 @@ Partial Class frmHS_ChiTiet
     Friend WithEvents lbl_honhan As System.Windows.Forms.Label
     Friend WithEvents Label114 As System.Windows.Forms.Label
     Friend WithEvents Label89 As System.Windows.Forms.Label
+    Friend WithEvents lbl_ns_thon As Label
+    Friend WithEvents Label116 As Label
+    Friend WithEvents lbl_ns_xa As Label
+    Friend WithEvents lbl_nq_xa As Label
+    Friend WithEvents lbl_nq_thon As Label
+    Friend WithEvents Label117 As Label
+    Friend WithEvents lbl_tt_thon As Label
+    Friend WithEvents Label118 As Label
+    Friend WithEvents lbl_tt_xa As Label
+    Friend WithEvents lbl_ttr_xa As Label
+    Friend WithEvents lbl_ttr_thon As Label
+    Friend WithEvents Label120 As Label
 End Class

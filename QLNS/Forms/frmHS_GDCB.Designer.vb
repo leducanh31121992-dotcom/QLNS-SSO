@@ -88,7 +88,7 @@ Partial Class frmHS_GDCB
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.cb_gdcb_huyen = New System.Windows.Forms.ComboBox()
+        Me.cb_gdcb_xaphuong = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.cb_gdcb_quequan = New System.Windows.Forms.ComboBox()
         Me.Label73 = New System.Windows.Forms.Label()
@@ -660,6 +660,7 @@ Partial Class frmHS_GDCB
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_gdcb.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_gdcb.ColumnHeadersHeight = 29
         Me.dgv_gdcb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_gdcb.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_gdcb.Location = New System.Drawing.Point(3, 4)
@@ -673,6 +674,7 @@ Partial Class frmHS_GDCB
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_gdcb.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_gdcb.RowHeadersVisible = False
+        Me.dgv_gdcb.RowHeadersWidth = 51
         Me.dgv_gdcb.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_gdcb.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_gdcb.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -707,7 +709,7 @@ Partial Class frmHS_GDCB
         Me.cb_gdcb_gioitinh.BackColor = System.Drawing.Color.White
         Me.cb_gdcb_gioitinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_gdcb_gioitinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_gioitinh.ForeColor = System.Drawing.Color.Black
+        Me.cb_gdcb_gioitinh.ForeColor = System.Drawing.Color.Navy
         Me.cb_gdcb_gioitinh.FormattingEnabled = True
         Me.cb_gdcb_gioitinh.Items.AddRange(New Object() {"--- None ---", "Nam", "Nữ"})
         Me.cb_gdcb_gioitinh.Location = New System.Drawing.Point(472, 0)
@@ -729,7 +731,7 @@ Partial Class frmHS_GDCB
         '
         Me.edt_gdcb_hoten.BackColor = System.Drawing.Color.White
         Me.edt_gdcb_hoten.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_gdcb_hoten.ForeColor = System.Drawing.Color.Black
+        Me.edt_gdcb_hoten.ForeColor = System.Drawing.Color.Navy
         Me.edt_gdcb_hoten.Location = New System.Drawing.Point(120, 0)
         Me.edt_gdcb_hoten.Name = "edt_gdcb_hoten"
         Me.edt_gdcb_hoten.Size = New System.Drawing.Size(275, 26)
@@ -772,7 +774,7 @@ Partial Class frmHS_GDCB
         Me.cb_gdcb_quanhe.BackColor = System.Drawing.Color.White
         Me.cb_gdcb_quanhe.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_gdcb_quanhe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_quanhe.ForeColor = System.Drawing.Color.Black
+        Me.cb_gdcb_quanhe.ForeColor = System.Drawing.Color.Navy
         Me.cb_gdcb_quanhe.FormattingEnabled = True
         Me.cb_gdcb_quanhe.Location = New System.Drawing.Point(248, 0)
         Me.cb_gdcb_quanhe.Name = "cb_gdcb_quanhe"
@@ -842,7 +844,7 @@ Partial Class frmHS_GDCB
         Me.cb_gdcb_utbanthan.BackColor = System.Drawing.Color.White
         Me.cb_gdcb_utbanthan.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_gdcb_utbanthan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_utbanthan.ForeColor = System.Drawing.Color.Black
+        Me.cb_gdcb_utbanthan.ForeColor = System.Drawing.Color.Navy
         Me.cb_gdcb_utbanthan.FormattingEnabled = True
         Me.cb_gdcb_utbanthan.Location = New System.Drawing.Point(388, 0)
         Me.cb_gdcb_utbanthan.Name = "cb_gdcb_utbanthan"
@@ -864,7 +866,7 @@ Partial Class frmHS_GDCB
         Me.cb_gdcb_quoctich.BackColor = System.Drawing.Color.White
         Me.cb_gdcb_quoctich.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_gdcb_quoctich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_quoctich.ForeColor = System.Drawing.Color.Black
+        Me.cb_gdcb_quoctich.ForeColor = System.Drawing.Color.Navy
         Me.cb_gdcb_quoctich.FormattingEnabled = True
         Me.cb_gdcb_quoctich.Location = New System.Drawing.Point(120, 0)
         Me.cb_gdcb_quoctich.Name = "cb_gdcb_quoctich"
@@ -907,7 +909,7 @@ Partial Class frmHS_GDCB
         '
         Me.edt_gdcb_nghenghiep.BackColor = System.Drawing.Color.White
         Me.edt_gdcb_nghenghiep.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_gdcb_nghenghiep.ForeColor = System.Drawing.Color.Black
+        Me.edt_gdcb_nghenghiep.ForeColor = System.Drawing.Color.Navy
         Me.edt_gdcb_nghenghiep.Location = New System.Drawing.Point(120, 0)
         Me.edt_gdcb_nghenghiep.Name = "edt_gdcb_nghenghiep"
         Me.edt_gdcb_nghenghiep.Size = New System.Drawing.Size(444, 26)
@@ -927,7 +929,7 @@ Partial Class frmHS_GDCB
         '
         Me.edt_gdcb_dienthoai.BackColor = System.Drawing.Color.White
         Me.edt_gdcb_dienthoai.Dock = System.Windows.Forms.DockStyle.Right
-        Me.edt_gdcb_dienthoai.ForeColor = System.Drawing.Color.Black
+        Me.edt_gdcb_dienthoai.ForeColor = System.Drawing.Color.Navy
         Me.edt_gdcb_dienthoai.Location = New System.Drawing.Point(649, 0)
         Me.edt_gdcb_dienthoai.Name = "edt_gdcb_dienthoai"
         Me.edt_gdcb_dienthoai.Size = New System.Drawing.Size(130, 26)
@@ -955,7 +957,7 @@ Partial Class frmHS_GDCB
         '
         'Panel22
         '
-        Me.Panel22.Controls.Add(Me.cb_gdcb_huyen)
+        Me.Panel22.Controls.Add(Me.cb_gdcb_xaphuong)
         Me.Panel22.Controls.Add(Me.Label22)
         Me.Panel22.Controls.Add(Me.cb_gdcb_quequan)
         Me.Panel22.Controls.Add(Me.Label73)
@@ -965,17 +967,17 @@ Partial Class frmHS_GDCB
         Me.Panel22.Size = New System.Drawing.Size(779, 22)
         Me.Panel22.TabIndex = 11
         '
-        'cb_gdcb_huyen
+        'cb_gdcb_xaphuong
         '
-        Me.cb_gdcb_huyen.BackColor = System.Drawing.Color.White
-        Me.cb_gdcb_huyen.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cb_gdcb_huyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_huyen.ForeColor = System.Drawing.Color.Black
-        Me.cb_gdcb_huyen.FormattingEnabled = True
-        Me.cb_gdcb_huyen.Location = New System.Drawing.Point(393, 0)
-        Me.cb_gdcb_huyen.Name = "cb_gdcb_huyen"
-        Me.cb_gdcb_huyen.Size = New System.Drawing.Size(386, 26)
-        Me.cb_gdcb_huyen.TabIndex = 3
+        Me.cb_gdcb_xaphuong.BackColor = System.Drawing.Color.White
+        Me.cb_gdcb_xaphuong.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_gdcb_xaphuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_gdcb_xaphuong.ForeColor = System.Drawing.Color.Navy
+        Me.cb_gdcb_xaphuong.FormattingEnabled = True
+        Me.cb_gdcb_xaphuong.Location = New System.Drawing.Point(393, 0)
+        Me.cb_gdcb_xaphuong.Name = "cb_gdcb_xaphuong"
+        Me.cb_gdcb_xaphuong.Size = New System.Drawing.Size(386, 26)
+        Me.cb_gdcb_xaphuong.TabIndex = 3
         '
         'Label22
         '
@@ -991,7 +993,7 @@ Partial Class frmHS_GDCB
         Me.cb_gdcb_quequan.BackColor = System.Drawing.Color.White
         Me.cb_gdcb_quequan.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_gdcb_quequan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_quequan.ForeColor = System.Drawing.Color.Black
+        Me.cb_gdcb_quequan.ForeColor = System.Drawing.Color.Navy
         Me.cb_gdcb_quequan.FormattingEnabled = True
         Me.cb_gdcb_quequan.Location = New System.Drawing.Point(120, 0)
         Me.cb_gdcb_quequan.Name = "cb_gdcb_quequan"
@@ -1032,7 +1034,7 @@ Partial Class frmHS_GDCB
         '
         Me.edt_gdcb_diachi.BackColor = System.Drawing.Color.White
         Me.edt_gdcb_diachi.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_gdcb_diachi.ForeColor = System.Drawing.Color.Black
+        Me.edt_gdcb_diachi.ForeColor = System.Drawing.Color.Navy
         Me.edt_gdcb_diachi.Location = New System.Drawing.Point(120, 0)
         Me.edt_gdcb_diachi.Name = "edt_gdcb_diachi"
         Me.edt_gdcb_diachi.Size = New System.Drawing.Size(659, 26)
@@ -1076,7 +1078,7 @@ Partial Class frmHS_GDCB
         '
         Me.edt_gdcb_lydo.BackColor = System.Drawing.Color.White
         Me.edt_gdcb_lydo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_gdcb_lydo.ForeColor = System.Drawing.Color.Black
+        Me.edt_gdcb_lydo.ForeColor = System.Drawing.Color.Navy
         Me.edt_gdcb_lydo.Location = New System.Drawing.Point(428, 0)
         Me.edt_gdcb_lydo.Name = "edt_gdcb_lydo"
         Me.edt_gdcb_lydo.Size = New System.Drawing.Size(351, 26)
@@ -1123,7 +1125,7 @@ Partial Class frmHS_GDCB
         Me.cb_gdcb_tinhtrang.BackColor = System.Drawing.Color.White
         Me.cb_gdcb_tinhtrang.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_gdcb_tinhtrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_gdcb_tinhtrang.ForeColor = System.Drawing.Color.Black
+        Me.cb_gdcb_tinhtrang.ForeColor = System.Drawing.Color.Navy
         Me.cb_gdcb_tinhtrang.FormattingEnabled = True
         Me.cb_gdcb_tinhtrang.Items.AddRange(New Object() {"--- None ---", "Còn sống", "Đã mất"})
         Me.cb_gdcb_tinhtrang.Location = New System.Drawing.Point(120, 0)
@@ -1180,6 +1182,7 @@ Partial Class frmHS_GDCB
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_gtgc.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_gtgc.ColumnHeadersHeight = 29
         Me.dgv_gtgc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_gtgc.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_gtgc.Location = New System.Drawing.Point(0, 1)
@@ -1193,6 +1196,7 @@ Partial Class frmHS_GDCB
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_gtgc.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_gtgc.RowHeadersVisible = False
+        Me.dgv_gtgc.RowHeadersWidth = 51
         Me.dgv_gtgc.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_gtgc.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_gtgc.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -1739,6 +1743,7 @@ Partial Class frmHS_GDCB
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grid_TNGD.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.grid_TNGD.ColumnHeadersHeight = 29
         Me.grid_TNGD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.grid_TNGD.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grid_TNGD.Location = New System.Drawing.Point(0, 0)
@@ -1752,6 +1757,7 @@ Partial Class frmHS_GDCB
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grid_TNGD.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.grid_TNGD.RowHeadersVisible = False
+        Me.grid_TNGD.RowHeadersWidth = 51
         Me.grid_TNGD.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.grid_TNGD.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.grid_TNGD.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -2091,8 +2097,7 @@ Partial Class frmHS_GDCB
         '
         'frmHS_GDCB
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1006, 623)
         Me.Controls.Add(Me.tctrl_main)
         Me.Controls.Add(Me.gb_main)
@@ -2236,7 +2241,7 @@ Partial Class frmHS_GDCB
     Friend WithEvents Label73 As System.Windows.Forms.Label
     Friend WithEvents cb_gdcb_quequan As System.Windows.Forms.ComboBox
     Friend WithEvents cb_gdcb_utbanthan As System.Windows.Forms.ComboBox
-    Friend WithEvents cb_gdcb_huyen As System.Windows.Forms.ComboBox
+    Friend WithEvents cb_gdcb_xaphuong As System.Windows.Forms.ComboBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents btn_themdl As System.Windows.Forms.Button
     Friend WithEvents lbl_div_xoa As System.Windows.Forms.Label

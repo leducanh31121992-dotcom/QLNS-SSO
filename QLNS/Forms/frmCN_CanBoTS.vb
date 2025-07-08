@@ -16,18 +16,26 @@
     Private arr_Ns_Tinh As ArrayList = New ArrayList
     'Mảng lưu id danh sách quận huyện - Cho biết thông tin nơi sinh - quận huyện
     Private arr_Ns_Huyen As ArrayList = New ArrayList
+    Private arr_Ns_Xa As ArrayList = New ArrayList
+    Private arr_Ns_Thon As ArrayList = New ArrayList
 
     'Thông tin nguyên quán của cán bộ
     Private arr_Nq_Tinh As ArrayList = New ArrayList
     Private arr_Nq_Huyen As ArrayList = New ArrayList
+    Private arr_Nq_Xa As ArrayList = New ArrayList
+    Private arr_Nq_Thon As ArrayList = New ArrayList
 
     'Thông tin Thường trú của cán bộ
     Private arr_TT_Tinh As ArrayList = New ArrayList
     Private arr_TT_Huyen As ArrayList = New ArrayList
+    Private arr_TT_Xa As ArrayList = New ArrayList
+    Private arr_TT_Thon As ArrayList = New ArrayList
 
     'Thông tin Tạm trú của cán bộ
     Private arr_TTr_Tinh As ArrayList = New ArrayList()
     Private arr_TTr_Huyen As ArrayList = New ArrayList()
+    Private arr_TTr_Xa As ArrayList = New ArrayList()
+    Private arr_TTr_Thon As ArrayList = New ArrayList()
 
     'Mảng lưu id danh mục - Thành phần gia đình --> Truy suất dl đến danh mục với id gốc là 13
     Private arr_Tp_Giadinh As ArrayList = New ArrayList()
@@ -196,19 +204,50 @@
         edt_cmt_noicap.Text = ""
         cb_ns_tinh.SelectedIndex = 0
         cb_ns_tinh_SelectedIndexChanged(Nothing, Nothing)
+        If (cb_ns_xa.Items.Count <> 0) Then
+            cb_ns_xa.SelectedIndex = 0
+        End If
+        cb_ns_xa_SelectedIndexChanged(Nothing, Nothing)
+        If cb_ns_thon.Items.Count <> 0 Then
+            cb_ns_thon.SelectedIndex = 0
+        End If
+        cb_ns_thon_SelectedIndexChanged(Nothing, Nothing)
         edt_ns_diachi.Text = ""
 
         cb_nq_tinh.SelectedIndex = 0
         cb_nq_tinh_SelectedIndexChanged(Nothing, Nothing)
+        If cb_nq_xa.Items.Count <> 0 Then
+            cb_nq_xa.SelectedIndex = 0
+        End If
+        cb_nq_xa_SelectedIndexChanged(Nothing, Nothing)
+        If cb_nq_thon.Items.Count <> 0 Then
+            cb_nq_thon.SelectedIndex = 0
+        End If
+        cb_nq_thon_SelectedIndexChanged(Nothing, Nothing)
         edt_nq_diachi.Text = ""
 
         cb_tt_tinh.SelectedIndex = 0
         cb_tt_tinh_SelectedIndexChanged(Nothing, Nothing)
+        If cb_tt_xa.Items.Count <> 0 Then
+            cb_tt_xa.SelectedIndex = 0
+        End If
+        cb_tt_xa_SelectedIndexChanged(Nothing, Nothing)
+        If cb_tt_thon.Items.Count <> 0 Then
+            cb_tt_thon.SelectedIndex = 0
+        End If
+        cb_tt_thon_SelectedIndexChanged(Nothing, Nothing)
         edt_tt_diachi.Text = ""
         edt_tt_dienthoai.Text = ""
 
         cb_ttr_tinh.SelectedIndex = 0
         cb_ttr_tinh_SelectedIndexChanged(Nothing, Nothing)
+        If cb_ttr_xa.Items.Count <> 0 Then
+            cb_ttr_xa.SelectedIndex = 0
+        End If
+        cb_ttr_xa_SelectedIndexChanged(Nothing, Nothing)
+        If cb_ttr_thon.Items.Count <> 0 Then
+            cb_ttr_thon.SelectedIndex = 0
+        End If
         edt_ttr_diachi.Text = ""
         edt_ttr_dienthoai.Text = ""
 
@@ -393,12 +432,26 @@
                             If (dr("IdNS_Huyen").ToString() <> "") Then
                                 cb_ns_huyen.SelectedIndex = CType(arr_Ns_Huyen.IndexOf(dr("IdNS_Huyen").ToString()), Integer)
                             End If
+                            If (dr("IdNS_Xa").ToString() <> "") Then
+                                cb_ns_xa.SelectedIndex = CType(arr_Ns_Xa.IndexOf(dr("IdNS_Xa").ToString()), Int32)
+                            End If
+                            cb_ns_xa_SelectedIndexChanged(Nothing, Nothing)
+                            If (dr("IdNS_Thon").ToString() <> "") Then
+                                cb_ns_thon.SelectedIndex = CType(arr_Ns_Thon.IndexOf(dr("IdNS_Thon").ToString()), Int32)
+                            End If
                             edt_ns_diachi.Text = dr("NS_DChi").ToString().Trim()
 
                             cb_nq_tinh.SelectedIndex = IIf(dr("IdNQ_Tinh").ToString() <> "", CType(arr_Nq_Tinh.IndexOf(dr("IdNQ_Tinh").ToString()), Integer), 0)
                             cb_nq_tinh_SelectedIndexChanged(Nothing, Nothing)
                             If (dr("IdNQ_Huyen").ToString() <> "") Then
                                 cb_nq_huyen.SelectedIndex = CType(arr_Nq_Huyen.IndexOf(dr("IdNQ_Huyen").ToString()), Integer)
+                            End If
+                            If (dr("IdNQ_Xa").ToString() <> "") Then
+                                cb_nq_xa.SelectedIndex = CType(arr_Nq_Xa.IndexOf(dr("IdNQ_Xa").ToString()), Int32)
+                            End If
+                            cb_nq_xa_SelectedIndexChanged(Nothing, Nothing)
+                            If (dr("IdNQ_Thon").ToString() <> "") Then
+                                cb_nq_thon.SelectedIndex = CType(arr_Nq_Thon.IndexOf(dr("IdNQ_Thon").ToString()), Int32)
                             End If
                             edt_nq_diachi.Text = dr("NQ_DChi").ToString().Trim()
 
@@ -407,6 +460,13 @@
                             If (dr("IdThT_Huyen").ToString() <> "") Then
                                 cb_tt_huyen.SelectedIndex = CType(arr_TT_Huyen.IndexOf(dr("IdThT_Huyen").ToString()), Integer)
                             End If
+                            If (dr("IdThT_Xa").ToString() <> "") Then
+                                cb_tt_xa.SelectedIndex = CType(arr_TT_Xa.IndexOf(dr("IdThT_Xa").ToString()), Int32)
+                            End If
+                            cb_tt_xa_SelectedIndexChanged(Nothing, Nothing)
+                            If (dr("IdThT_Thon").ToString() <> "") Then
+                                cb_tt_thon.SelectedIndex = CType(arr_TT_Thon.IndexOf(dr("IdThT_Thon").ToString()), Int32)
+                            End If
                             edt_tt_diachi.Text = dr("ThT_Diachi").ToString().Trim()
                             edt_tt_dienthoai.Text = dr("ThT_Dienthoai").ToString().Trim()
 
@@ -414,6 +474,13 @@
                             cb_ttr_tinh_SelectedIndexChanged(Nothing, Nothing)
                             If (dr("IdTTr_Huyen").ToString() <> "") Then
                                 cb_ttr_huyen.SelectedIndex = CType(arr_TTr_Huyen.IndexOf(dr("IdTTr_Huyen").ToString()), Integer)
+                            End If
+                            If (dr("IdTTr_Xa").ToString() <> "") Then
+                                cb_ttr_xa.SelectedIndex = CType(arr_TTr_Xa.IndexOf(dr("IdTTr_Xa").ToString()), Int32)
+                            End If
+                            cb_ttr_xa_SelectedIndexChanged(Nothing, Nothing)
+                            If (dr("IdTTr_Thon").ToString() <> "") Then
+                                cb_ttr_thon.SelectedIndex = CType(arr_TTr_Thon.IndexOf(dr("IdTTr_Thon").ToString()), Int32)
                             End If
                             edt_ttr_diachi.Text = dr("TTr_Diachi").ToString().Trim()
                             edt_ttr_dienthoai.Text = dr("TTr_Dienthoai").ToString().Trim()
@@ -693,24 +760,55 @@
                         If (db_rowedit.Rows(0)("IdNS_Huyen").ToString() <> "") Then
                             cb_ns_huyen.SelectedIndex = CType(arr_Ns_Huyen.IndexOf(db_rowedit.Rows(0)("IdNS_Huyen").ToString()), Integer)
                         End If
+                        If (db_rowedit.Rows(0)("IdNS_Xa").ToString() <> "") Then
+                            cb_ns_xa.SelectedIndex = CType(arr_Ns_Xa.IndexOf(db_rowedit.Rows(0)("IdNS_Xa").ToString()), Int32)
+                        End If
+                        cb_ns_xa_SelectedIndexChanged(Nothing, Nothing)
+                        If (db_rowedit.Rows(0)("IdNS_Thon").ToString() <> "") Then
+                            cb_ns_thon.SelectedIndex = CType(arr_Ns_Thon.IndexOf(db_rowedit.Rows(0)("IdNS_Thon").ToString()), Int32)
+                        End If
                         edt_ns_diachi.Text = db_rowedit.Rows(0)("NS_DiaChi").ToString().Trim()
+
                         cb_nq_tinh.SelectedIndex = IIf(db_rowedit.Rows(0)("IdNQ_Tinh").ToString() <> "", CType(arr_Nq_Tinh.IndexOf(db_rowedit.Rows(0)("IdNQ_Tinh").ToString()), Integer), 0)
                         cb_nq_tinh_SelectedIndexChanged(Nothing, Nothing)
                         If (db_rowedit.Rows(0)("IdNQ_Huyen").ToString() <> "") Then
                             cb_nq_huyen.SelectedIndex = CType(arr_Nq_Huyen.IndexOf(db_rowedit.Rows(0)("IdNQ_Huyen").ToString()), Integer)
                         End If
+                        If (db_rowedit.Rows(0)("IdNQ_Xa").ToString() <> "") Then
+                            cb_nq_xa.SelectedIndex = CType(arr_Nq_Xa.IndexOf(db_rowedit.Rows(0)("IdNQ_Xa").ToString()), Int32)
+                        End If
+                        cb_nq_xa_SelectedIndexChanged(Nothing, Nothing)
+                        If (db_rowedit.Rows(0)("IdNQ_Thon").ToString() <> "") Then
+                            cb_nq_thon.SelectedIndex = CType(arr_Nq_Thon.IndexOf(db_rowedit.Rows(0)("IdNQ_Thon").ToString()), Int32)
+                        End If
                         edt_nq_diachi.Text = db_rowedit.Rows(0)("NQ_DiaChi").ToString().Trim()
+
                         cb_tt_tinh.SelectedIndex = IIf(db_rowedit.Rows(0)("IdThT_Tinh").ToString() <> "", CType(arr_TT_Tinh.IndexOf(db_rowedit.Rows(0)("IdThT_Tinh").ToString()), Integer), 0)
                         cb_tt_tinh_SelectedIndexChanged(Nothing, Nothing)
                         If (db_rowedit.Rows(0)("IdThT_Huyen").ToString() <> "") Then
                             cb_tt_huyen.SelectedIndex = CType(arr_TT_Huyen.IndexOf(db_rowedit.Rows(0)("IdThT_Huyen").ToString()), Integer)
                         End If
+                        If (db_rowedit.Rows(0)("IdThT_Xa").ToString() <> "") Then
+                            cb_tt_xa.SelectedIndex = CType(arr_TT_Xa.IndexOf(db_rowedit.Rows(0)("IdThT_Xa").ToString()), Int32)
+                        End If
+                        cb_tt_xa_SelectedIndexChanged(Nothing, Nothing)
+                        If (db_rowedit.Rows(0)("IdThT_Thon").ToString() <> "") Then
+                            cb_tt_thon.SelectedIndex = CType(arr_TT_Thon.IndexOf(db_rowedit.Rows(0)("IdThT_Thon").ToString()), Int32)
+                        End If
                         edt_tt_diachi.Text = db_rowedit.Rows(0)("ThT_Diachi").ToString().Trim()
                         edt_tt_dienthoai.Text = db_rowedit.Rows(0)("ThT_Dienthoai").ToString().Trim()
+
                         cb_ttr_tinh.SelectedIndex = IIf(db_rowedit.Rows(0)("IdTTr_Tinh").ToString() <> "", CType(arr_TTr_Tinh.IndexOf(db_rowedit.Rows(0)("IdTTr_Tinh").ToString()), Integer), 0)
                         cb_ttr_tinh_SelectedIndexChanged(Nothing, Nothing)
                         If (db_rowedit.Rows(0)("IdTTr_Huyen").ToString() <> "") Then
                             cb_ttr_huyen.SelectedIndex = CType(arr_TTr_Huyen.IndexOf(db_rowedit.Rows(0)("IdTTr_Huyen").ToString()), Integer)
+                        End If
+                        If (db_rowedit.Rows(0)("IdTTr_Xa").ToString() <> "") Then
+                            cb_ttr_xa.SelectedIndex = CType(arr_TTr_Xa.IndexOf(db_rowedit.Rows(0)("IdTTr_Xa").ToString()), Int32)
+                        End If
+                        cb_ttr_xa_SelectedIndexChanged(Nothing, Nothing)
+                        If (db_rowedit.Rows(0)("IdTTr_Thon").ToString() <> "") Then
+                            cb_ttr_thon.SelectedIndex = CType(arr_TTr_Thon.IndexOf(db_rowedit.Rows(0)("IdTTr_Thon").ToString()), Int32)
                         End If
                         edt_ttr_diachi.Text = db_rowedit.Rows(0)("TTr_Diachi").ToString().Trim()
                         edt_ttr_dienthoai.Text = db_rowedit.Rows(0)("TTr_Dienthoai").ToString().Trim()
@@ -981,7 +1079,7 @@
         'Băt điều kiện - Trùng mã cán bộ tập sự => Từ 2024 bổ sung kiểm tra trùng với mã CB cả HS_CanBo
         If (edt_macb.Text.Trim() <> "") Then
             If (_IdCanBo <> "") Then
-                strSQL = String.Format("Select Id IdCanBo,MaCB,HoTen,IdChiNhanh,NgaySinh,CMT_So From HSCB_TS Where MaCB = '{0}' and Id <> '{1}' Union Select IdCanBo,MaCB,HoTen,IdDonVi IdChiNhanh,NgaySinh,CMT_So From HS_CanBo Where MaCB = '{0}' ", Globals.Find_Replace(edt_macb.Text.Trim().ToString()), _IdCanBo)
+                strSQL = String.Format("Select Id IdCanBo,MaCB,HoTen,IdChiNhanh,NgaySinh,CMT_So From HSCB_TS Where MaCB = '{0}' And Id <> '{1}' Union Select IdCanBo,MaCB,HoTen,IdDonVi IdChiNhanh,NgaySinh,CMT_So From HS_CanBo Where MaCB = '{0}' ", Globals.Find_Replace(edt_macb.Text.Trim().ToString()), _IdCanBo)
             Else
                 strSQL = String.Format("Select Id IdCanBo,MaCB,HoTen,IdChiNhanh,NgaySinh,CMT_So From HSCB_TS Where MaCB = '{0}' Union Select IdCanBo,MaCB,HoTen,IdDonVi IdChiNhanh,NgaySinh,CMT_So From HS_CanBo Where MaCB = '{0}' ", Globals.Find_Replace(edt_macb.Text.Trim().ToString()))
             End If
@@ -993,7 +1091,7 @@
                         If DONVI = "000100" Or DONVI = "000101" Or DONVI = "000196" Or DONVI = "000197" Then
                             strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So = '{0}' Order By Id", DONVI)
                         Else
-                            strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So Like '{0}%' Order By Id", DONVI.Substring(0, 4))
+                            strSQL = String.Format("Select Top 1 * From ChiNhanh Where Ma_So Like '{0}%' And Id_Goc In (0,1) Order By Status,Id Desc", DONVI.Substring(0, 4))
                         End If
                         Dim db_cn As DataTable = Nothing
                         db_cn = _SqlHelper.SelectDBRows(strSQL)
@@ -1079,57 +1177,78 @@
 
         'Kiểm tra điều kiện thông tin về địa chỉ Nơi sinh
         If (cb_ns_tinh.SelectedIndex <= 0 And cb_ns_tinh.Items.Count <> 0) Then
-            MessageBox.Show("Bạn chưa chọn nơi sinh tỉnh (thành phố) của cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+            MessageBox.Show("Bạn chưa chọn nơi sinh tỉnh (thành phố) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
             ActiveControl = cb_ns_tinh
             Return False
         End If
-        If (cb_ns_huyen.SelectedIndex <= 0 And cb_ns_huyen.Items.Count <> 0) Then
-            MessageBox.Show("Bạn chưa chọn nơi sinh quận (huyện) của cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        If (cb_ns_xa.SelectedIndex <= 0 And cb_ns_xa.Items.Count <> 0) Then
+            MessageBox.Show("Bạn chưa chọn nơi sinh xã (phường) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
-            ActiveControl = cb_ns_huyen
+            ActiveControl = cb_ns_xa
             Return False
         End If
-        If (edt_ns_diachi.Text.Trim() = "") Then
-            MessageBox.Show("Địa chỉ nơi sinh không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        If (cb_ns_thon.SelectedIndex <= 0 And cb_ns_thon.Items.Count <> 0) Then
+            MessageBox.Show("Bạn chưa chọn nơi sinh xã (phường) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
-            ActiveControl = edt_ns_diachi
+            ActiveControl = cb_ns_xa
             Return False
         End If
+        'If (edt_ns_diachi.Text.Trim() = "") Then
+        '    MessageBox.Show("Địa chỉ nơi sinh không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        '    tctrl_main.SelectedIndex = 0
+        '    ActiveControl = edt_ns_diachi
+        '    Return False
+        'End If
+
+
         'Kiểm tra điều kiện thông tin về địa chỉ Nguyên quán
         If (cb_nq_tinh.SelectedIndex <= 0 And cb_nq_tinh.Items.Count <> 0) Then
-            MessageBox.Show("Bạn chưa chọn nguyên quán tỉnh (thành phố) của cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+            MessageBox.Show("Bạn chưa chọn nguyên quán tỉnh (thành phố) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
             ActiveControl = cb_nq_tinh
             Return False
         End If
-        If (cb_nq_huyen.SelectedIndex <= 0 And cb_nq_huyen.Items.Count <> 0) Then
-            MessageBox.Show("Bạn chưa chọn nguyên quán quận (huyện) của cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        If (cb_nq_xa.SelectedIndex <= 0 And cb_nq_xa.Items.Count <> 0) Then
+            MessageBox.Show("Bạn chưa chọn nguyên quán xã (phường) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
-            ActiveControl = cb_nq_huyen
+            ActiveControl = cb_nq_xa
             Return False
         End If
-        If (edt_nq_diachi.Text.Trim() = "") Then
-            MessageBox.Show("Địa chỉ nguyên quán không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        If (cb_nq_thon.SelectedIndex <= 0 And cb_nq_thon.Items.Count <> 0) Then
+            MessageBox.Show("Bạn chưa chọn nguyên quán thôn của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
-            ActiveControl = edt_nq_diachi
+            ActiveControl = cb_nq_thon
             Return False
         End If
+        'If (edt_nq_diachi.Text.Trim() = "") Then
+        '    MessageBox.Show("Địa chỉ nguyên quán không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        '    tctrl_main.SelectedIndex = 0
+        '    ActiveControl = edt_nq_diachi
+        '    Return False
+        'End If
+
         'Kiểm tra điều kiện thông tin về địa chỉ Thường trú
         If (cb_tt_tinh.SelectedIndex <= 0 And cb_tt_tinh.Items.Count <> 0) Then
-            MessageBox.Show("Bạn chưa chọn thường trú tỉnh (thành phố) của cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+            MessageBox.Show("Bạn chưa chọn thường trú tỉnh (thành phố) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
             ActiveControl = cb_tt_tinh
             Return False
         End If
-        If (cb_tt_huyen.SelectedIndex <= 0 And cb_tt_huyen.Items.Count <> 0) Then
-            MessageBox.Show("Bạn chưa chọn thường trú quận (huyện) của cán bộ!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+        If (cb_tt_xa.SelectedIndex <= 0 And cb_tt_xa.Items.Count <> 0) Then
+            MessageBox.Show("Bạn chưa chọn thường trú xã (phường) của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
-            ActiveControl = cb_tt_huyen
+            ActiveControl = cb_tt_xa
+            Return False
+        End If
+        If (cb_tt_thon.SelectedIndex <= 0 And cb_tt_thon.Items.Count <> 0) Then
+            MessageBox.Show("Bạn chưa chọn thường trú thôn của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+            tctrl_main.SelectedIndex = 0
+            ActiveControl = cb_tt_thon
             Return False
         End If
         If (edt_tt_diachi.Text.Trim() = "") Then
-            MessageBox.Show("Địa chỉ thường trú không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+            MessageBox.Show("Địa chỉ thường trú không được để trống. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
             tctrl_main.SelectedIndex = 0
             ActiveControl = edt_tt_diachi
             Return False
@@ -1636,12 +1755,28 @@
                             obj_document.IdNS_Huyen = CType(IIf(arr_Ns_Huyen.Count > 0, arr_Ns_Huyen(cb_ns_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdNS_Huyen = 0
                         End If
+                        If (cb_ns_xa.Items.Count <> 0) Then
+                            obj_document.IdNS_xa = CType(IIf(arr_Ns_Xa.Count > 0, arr_Ns_Xa(cb_ns_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNS_Xa = 0
+                        End If
+                        If (cb_ns_thon.Items.Count <> 0) Then
+                            obj_document.IdNS_Thon = CType(IIf(arr_Ns_Thon.Count > 0, arr_Ns_Thon(cb_ns_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNS_Thon = 0
+                        End If
                         obj_document.NS_DiaChi = Globals.Find_Replace(edt_ns_diachi.Text.Trim.ToString())
 
                         obj_document.IdNQ_Tinh = CType(IIf(arr_Nq_Tinh.Count > 0, arr_Nq_Tinh(cb_nq_tinh.SelectedIndex), "0"), Integer)
                         If cb_nq_huyen.Items.Count <> 0 Then
                             obj_document.IdNQ_Huyen = CType(IIf(arr_Nq_Huyen.Count > 0, arr_Nq_Huyen(cb_nq_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdNQ_Huyen = 0
+                        End If
+                        If cb_nq_xa.Items.Count <> 0 Then
+                            obj_document.IdNQ_Xa = CType(IIf(arr_Nq_Xa.Count > 0, arr_Nq_Xa(cb_nq_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNQ_Xa = 0
+                        End If
+                        If cb_nq_thon.Items.Count <> 0 Then
+                            obj_document.IdNQ_Thon = CType(IIf(arr_Nq_Thon.Count > 0, arr_Nq_Thon(cb_nq_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNQ_Thon = 0
                         End If
                         obj_document.NQ_DiaChi = Globals.Find_Replace(edt_nq_diachi.Text.Trim.ToString())
 
@@ -1650,6 +1785,14 @@
                             obj_document.IdThT_Huyen = CType(IIf(arr_TT_Huyen.Count > 0, arr_TT_Huyen(cb_tt_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdThT_Huyen = 0
                         End If
+                        If (cb_tt_xa.Items.Count <> 0) Then
+                            obj_document.IdThT_Xa = CType(IIf(arr_TT_Xa.Count > 0, arr_TT_Xa(cb_tt_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdThT_Xa = 0
+                        End If
+                        If (cb_tt_thon.Items.Count <> 0) Then
+                            obj_document.IdThT_Thon = CType(IIf(arr_TT_Thon.Count > 0, arr_TT_Thon(cb_tt_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdThT_Thon = 0
+                        End If
                         obj_document.ThT_DiaChi = Globals.Find_Replace(edt_tt_diachi.Text.Trim.ToString())
                         obj_document.ThT_DienThoai = Globals.Find_Replace(edt_tt_dienthoai.Text.Trim.ToString())
 
@@ -1657,6 +1800,14 @@
                         If cb_ttr_huyen.Items.Count <> 0 Then
                             obj_document.IdTTr_Huyen = CType(IIf(arr_TTr_Huyen.Count > 0, arr_TTr_Huyen(cb_ttr_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdTTr_Huyen = 0
+                        End If
+                        If cb_ttr_xa.Items.Count <> 0 Then
+                            obj_document.IdTTr_Xa = CType(IIf(arr_TTr_Xa.Count > 0, arr_TTr_Xa(cb_ttr_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdTTr_Xa = 0
+                        End If
+                        If cb_ttr_thon.Items.Count <> 0 Then
+                            obj_document.IdTTr_Thon = CType(IIf(arr_TTr_Thon.Count > 0, arr_TTr_Thon(cb_ttr_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdTTr_Thon = 0
                         End If
                         obj_document.TTr_DiaChi = Globals.Find_Replace(edt_ttr_diachi.Text.Trim.ToString())
                         obj_document.TTr_DienThoai = Globals.RemoveCharacterNonNumber(Globals.Find_Replace(edt_ttr_dienthoai.Text.Trim.ToString()))
@@ -1825,12 +1976,28 @@
                             obj_document.IdNS_Huyen = CType(IIf(arr_Ns_Huyen.Count > 0, arr_Ns_Huyen(cb_ns_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdNS_Huyen = 0
                         End If
+                        If (cb_ns_xa.Items.Count <> 0) Then
+                            obj_document.IdNS_Xa = CType(IIf(arr_Ns_Xa.Count > 0, arr_Ns_Xa(cb_ns_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNS_Xa = 0
+                        End If
+                        If (cb_ns_thon.Items.Count <> 0) Then
+                            obj_document.IdNS_Thon = CType(IIf(arr_Ns_Thon.Count > 0, arr_Ns_Thon(cb_ns_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNS_Thon = 0
+                        End If
                         obj_document.NS_DiaChi = Globals.Find_Replace(edt_ns_diachi.Text.Trim.ToString())
 
                         obj_document.IdNQ_Tinh = CType(IIf(arr_Nq_Tinh.Count > 0, arr_Nq_Tinh(cb_nq_tinh.SelectedIndex), "0"), Integer)
                         If cb_nq_huyen.Items.Count <> 0 Then
                             obj_document.IdNQ_Huyen = CType(IIf(arr_Nq_Huyen.Count > 0, arr_Nq_Huyen(cb_nq_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdNQ_Huyen = 0
+                        End If
+                        If cb_nq_xa.Items.Count <> 0 Then
+                            obj_document.IdNQ_Xa = CType(IIf(arr_Nq_Xa.Count > 0, arr_Nq_Xa(cb_nq_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNQ_Xa = 0
+                        End If
+                        If cb_nq_thon.Items.Count <> 0 Then
+                            obj_document.IdNQ_Thon = CType(IIf(arr_Nq_Thon.Count > 0, arr_Nq_Thon(cb_nq_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdNQ_Thon = 0
                         End If
                         obj_document.NQ_DiaChi = Globals.Find_Replace(edt_nq_diachi.Text.Trim.ToString())
 
@@ -1839,6 +2006,14 @@
                             obj_document.IdThT_Huyen = CType(IIf(arr_TT_Huyen.Count > 0, arr_TT_Huyen(cb_tt_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdThT_Huyen = 0
                         End If
+                        If (cb_tt_xa.Items.Count <> 0) Then
+                            obj_document.IdThT_Xa = CType(IIf(arr_TT_Xa.Count > 0, arr_TT_Xa(cb_tt_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdThT_Xa = 0
+                        End If
+                        If (cb_tt_thon.Items.Count <> 0) Then
+                            obj_document.IdThT_Thon = CType(IIf(arr_TT_Thon.Count > 0, arr_TT_Thon(cb_tt_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdThT_Thon = 0
+                        End If
                         obj_document.ThT_DiaChi = Globals.Find_Replace(edt_tt_diachi.Text.Trim.ToString())
                         obj_document.ThT_DienThoai = Globals.Find_Replace(edt_tt_dienthoai.Text.Trim.ToString())
 
@@ -1846,6 +2021,14 @@
                         If cb_ttr_huyen.Items.Count <> 0 Then
                             obj_document.IdTTr_Huyen = CType(IIf(arr_TTr_Huyen.Count > 0, arr_TTr_Huyen(cb_ttr_huyen.SelectedIndex), "0"), Integer)
                         Else : obj_document.IdTTr_Huyen = 0
+                        End If
+                        If cb_ttr_xa.Items.Count <> 0 Then
+                            obj_document.IdTTr_Xa = CType(IIf(arr_TTr_Xa.Count > 0, arr_TTr_Xa(cb_ttr_xa.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdTTr_Xa = 0
+                        End If
+                        If cb_ttr_thon.Items.Count <> 0 Then
+                            obj_document.IdTTr_Thon = CType(IIf(arr_TTr_Thon.Count > 0, arr_TTr_Thon(cb_ttr_thon.SelectedIndex), "0"), Int32)
+                        Else : obj_document.IdTTr_Thon = 0
                         End If
                         obj_document.TTr_DiaChi = Globals.Find_Replace(edt_ttr_diachi.Text.Trim.ToString())
                         obj_document.TTr_DienThoai = Globals.Find_Replace(edt_ttr_dienthoai.Text.Trim.ToString())
@@ -2124,13 +2307,27 @@
     End Sub
 
     Private Sub cb_ns_tinh_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_ns_tinh.SelectedIndexChanged
-        cb_ns_huyen.Items.Clear()
-        arr_Ns_Huyen.Clear()
+        'cb_ns_huyen.Items.Clear()
+        'arr_Ns_Huyen.Clear()
+        'If (cb_ns_tinh.SelectedIndex > 0 And cb_ns_tinh.Items.Count <> 0) Then
+        '    Dim _Id_TTP As Integer = CType(arr_Ns_Tinh(IIf(cb_ns_tinh.SelectedIndex > 0, cb_ns_tinh.SelectedIndex, "0")), Integer)
+        '    If _Id_TTP > 0 Then
+        '        Dim strSQL As String = String.Format("Select Id,Ten_Goi From DiaDanh Where id_goc != 0 and id_goc = {0} And Status = 1", _Id_TTP)
+        '        arr_Ns_Huyen = _Globals.Bind_ComBoBox(cb_ns_huyen, strSQL, "---Quận - huyện---")
+        '        If (_FlagEvent = 1 And cb_nq_tinh.Items.Count <> 0) Then
+        '            cb_nq_tinh.SelectedIndex = cb_ns_tinh.SelectedIndex
+        '            cb_nq_tinh_SelectedIndexChanged(sender, e)
+        '        End If
+        '    End If
+        'End If
+
+        cb_ns_xa.Items.Clear()
+        arr_Ns_Xa.Clear()
         If (cb_ns_tinh.SelectedIndex > 0 And cb_ns_tinh.Items.Count <> 0) Then
-            Dim _Id_TTP As Integer = CType(arr_Ns_Tinh(IIf(cb_ns_tinh.SelectedIndex > 0, cb_ns_tinh.SelectedIndex, "0")), Integer)
-            If _Id_TTP > 0 Then
-                Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh Where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
-                arr_Ns_Huyen = _Globals.Bind_ComBoBox(cb_ns_huyen, strSQL, "---Quận - huyện---")
+            Dim _IdTinhTP As Int32 = CType(arr_Ns_Tinh(IIf(cb_ns_tinh.SelectedIndex > 0, cb_ns_tinh.SelectedIndex, "0")), Int32)
+            If _IdTinhTP > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                arr_Ns_Xa = _Globals.Bind_ComBoBox(cb_ns_xa, strSQL, "--- Chọn Xã/Phường ---")
                 If (_FlagEvent = 1 And cb_nq_tinh.Items.Count <> 0) Then
                     cb_nq_tinh.SelectedIndex = cb_ns_tinh.SelectedIndex
                     cb_nq_tinh_SelectedIndexChanged(sender, e)
@@ -2140,34 +2337,104 @@
     End Sub
 
     Private Sub cb_ns_huyen_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_ns_huyen.SelectedIndexChanged
-        If (cb_nq_huyen.Items.Count <> 0) Then
+        If (cb_nq_huyen.Items.Count <> 0 And cb_ns_huyen.Items.Count <> 0) Then
             If (_FlagEvent = 1) Then
                 cb_nq_huyen.SelectedIndex = cb_ns_huyen.SelectedIndex
             End If
         End If
     End Sub
 
+    Private Sub cb_ns_xa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_ns_xa.SelectedIndexChanged
+        cb_ns_thon.Items.Clear()
+        arr_Ns_Thon.Clear()
+        If (cb_ns_xa.SelectedIndex > 0 And cb_ns_xa.Items.Count <> 0) Then
+            Dim _IdXaPhuong As Int32 = CType(arr_Ns_Xa(IIf(cb_ns_xa.SelectedIndex > 0, cb_ns_xa.SelectedIndex, "0")), Int32)
+            If _IdXaPhuong > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon <> '00' And TrangThai = 'A' And Ma_Tinh+Ma_Xa In (Select Top 1 X.Ma_Tinh+X.Ma_Xa From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdXaPhuong)
+                arr_Ns_Thon = _Globals.Bind_ComBoBox(cb_ns_thon, strSQL, "--- Chọn Thôn/Xóm ---")
+                If (_FlagEvent = 1 And cb_nq_xa.Items.Count <> 0) Then
+                    cb_nq_xa.SelectedIndex = cb_ns_xa.SelectedIndex
+                    cb_nq_xa_SelectedIndexChanged(sender, e)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub cb_ns_thon_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_ns_thon.SelectedIndexChanged
+        If (cb_nq_thon.Items.Count <> 0 And cb_ns_thon.Items.Count <> 0) Then
+            If (_FlagEvent = 1 And _IdCanBo = "") Then
+                cb_nq_thon.SelectedIndex = cb_ns_thon.SelectedIndex
+            End If
+        End If
+    End Sub
+
     Private Sub cb_nq_tinh_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_nq_tinh.SelectedIndexChanged
-        cb_nq_huyen.Items.Clear()
-        arr_Nq_Huyen.Clear()
+        'cb_nq_huyen.Items.Clear()
+        'arr_Nq_Huyen.Clear()
+        'If (cb_nq_tinh.SelectedIndex > 0 And cb_nq_tinh.Items.Count <> 0) Then
+        '    Dim _Id_TTP As Integer = CType(arr_Ns_Tinh(IIf(cb_nq_tinh.SelectedIndex > 0, cb_nq_tinh.SelectedIndex, "0")), Integer)
+        '    If _Id_TTP > 0 Then
+        '        Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
+        '        arr_Nq_Huyen = _Globals.Bind_ComBoBox(cb_nq_huyen, strSQL, "---Quận - huyện---")
+        '    End If
+        'End If
+        cb_nq_xa.Items.Clear()
+        arr_Nq_Xa.Clear()
         If (cb_nq_tinh.SelectedIndex > 0 And cb_nq_tinh.Items.Count <> 0) Then
-            Dim _Id_TTP As Integer = CType(arr_Ns_Tinh(IIf(cb_nq_tinh.SelectedIndex > 0, cb_nq_tinh.SelectedIndex, "0")), Integer)
-            If _Id_TTP > 0 Then
-                Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
-                arr_Nq_Huyen = _Globals.Bind_ComBoBox(cb_nq_huyen, strSQL, "---Quận - huyện---")
+            Dim _IdTinhTP As Int32 = CType(arr_Nq_Tinh(IIf(cb_nq_tinh.SelectedIndex > 0, cb_nq_tinh.SelectedIndex, "0")), Int32)
+            If _IdTinhTP > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                arr_Nq_Xa = _Globals.Bind_ComBoBox(cb_nq_xa, strSQL, "--- Chọn Xã/Phường ---")
+            End If
+        End If
+    End Sub
+
+    Private Sub cb_nq_xa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_nq_xa.SelectedIndexChanged
+        cb_nq_thon.Items.Clear()
+        arr_Nq_Thon.Clear()
+        If (cb_nq_xa.SelectedIndex > 0 And cb_nq_xa.Items.Count <> 0) Then
+            Dim _IdXaPhuong As Int32 = CType(arr_Nq_Xa(IIf(cb_nq_xa.SelectedIndex > 0, cb_nq_xa.SelectedIndex, "0")), Int32)
+            If _IdXaPhuong > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon <> '00' And TrangThai = 'A' And Ma_Tinh+Ma_Xa In (Select Top 1 X.Ma_Tinh+X.Ma_Xa From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdXaPhuong)
+                arr_Nq_Thon = _Globals.Bind_ComBoBox(cb_nq_thon, strSQL, "--- Chọn Thôn/Xóm ---")
+                If (_FlagEvent = 1 And cb_nq_xa.Items.Count <> 0 And cb_tt_xa.Items.Count <> 0) Then
+                    cb_tt_xa.SelectedIndex = cb_nq_xa.SelectedIndex
+                    cb_tt_xa_SelectedIndexChanged(sender, e)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub cb_nq_thon_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_nq_thon.SelectedIndexChanged
+        If (cb_nq_thon.Items.Count <> 0 And cb_tt_thon.Items.Count <> 0) Then
+            If (_FlagEvent = 1 And _IdCanBo = "") Then
+                cb_tt_thon.SelectedIndex = cb_nq_thon.SelectedIndex
             End If
         End If
     End Sub
 
     Private Sub cb_tt_tinh_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_tt_tinh.SelectedIndexChanged
-        cb_tt_huyen.Items.Clear()
-        arr_TT_Huyen.Clear()
+        'cb_tt_huyen.Items.Clear()
+        'arr_TT_Huyen.Clear()
+        'If (cb_tt_tinh.SelectedIndex > 0 And cb_tt_tinh.Items.Count <> 0) Then
+        '    Dim _Id_TTP As Integer = CType(arr_TT_Tinh(IIf(cb_tt_tinh.SelectedIndex > 0, cb_tt_tinh.SelectedIndex, "0")), Integer)
+        '    If _Id_TTP > 0 Then
+        '        Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh Where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
+        '        arr_TT_Huyen = _Globals.Bind_ComBoBox(cb_tt_huyen, strSQL, "---Quận - huyện---")
+        '        If (_FlagEvent = 1 And cb_ttr_tinh.Items.Count <> 0) Then
+        '            cb_ttr_tinh.SelectedIndex = cb_tt_tinh.SelectedIndex
+        '            cb_ttr_tinh_SelectedIndexChanged(sender, e)
+        '        End If
+        '    End If
+        'End If
+        cb_tt_xa.Items.Clear()
+        arr_TT_Xa.Clear()
         If (cb_tt_tinh.SelectedIndex > 0 And cb_tt_tinh.Items.Count <> 0) Then
-            Dim _Id_TTP As Integer = CType(arr_TT_Tinh(IIf(cb_tt_tinh.SelectedIndex > 0, cb_tt_tinh.SelectedIndex, "0")), Integer)
-            If _Id_TTP > 0 Then
-                Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh Where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
-                arr_TT_Huyen = _Globals.Bind_ComBoBox(cb_tt_huyen, strSQL, "---Quận - huyện---")
-                If (_FlagEvent = 1 And cb_ttr_tinh.Items.Count <> 0) Then
+            Dim _IdTinhTP As Int32 = CType(arr_TT_Tinh(IIf(cb_tt_tinh.SelectedIndex > 0, cb_tt_tinh.SelectedIndex, "0")), Int32)
+            If _IdTinhTP > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                arr_TT_Xa = _Globals.Bind_ComBoBox(cb_tt_xa, strSQL, "--- Chọn Xã/Phường ---")
+                If (_FlagEvent = 1 And cb_ttr_tinh.Items.Count <> 0 And cb_tt_tinh.Items.Count <> 0) Then
                     cb_ttr_tinh.SelectedIndex = cb_tt_tinh.SelectedIndex
                     cb_ttr_tinh_SelectedIndexChanged(sender, e)
                 End If
@@ -2183,14 +2450,60 @@
         End If
     End Sub
 
+    Private Sub cb_tt_xa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_tt_xa.SelectedIndexChanged
+        cb_tt_thon.Items.Clear()
+        arr_TT_Thon.Clear()
+        If (cb_tt_xa.SelectedIndex > 0 And cb_tt_xa.Items.Count <> 0) Then
+            Dim _IdXaPhuong As Int32 = CType(arr_TT_Xa(IIf(cb_tt_xa.SelectedIndex > 0, cb_tt_xa.SelectedIndex, "0")), Int32)
+            If _IdXaPhuong > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon <> '00' And TrangThai = 'A' And Ma_Tinh+Ma_Xa In (Select Top 1 X.Ma_Tinh+X.Ma_Xa From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdXaPhuong)
+                arr_TT_Thon = _Globals.Bind_ComBoBox(cb_tt_thon, strSQL, "--- Chọn Thôn/Xóm ---")
+                If (_FlagEvent = 1 And cb_tt_xa.Items.Count <> 0 And cb_ttr_xa.Items.Count <> 0) Then
+                    cb_ttr_xa.SelectedIndex = cb_tt_xa.SelectedIndex
+                    cb_ttr_xa_SelectedIndexChanged(sender, e)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub cb_tt_thon_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_tt_thon.SelectedIndexChanged
+        If (cb_tt_thon.Items.Count <> 0 And cb_ttr_thon.Items.Count <> 0) Then
+            If (_FlagEvent = 1) Then
+                cb_ttr_thon.SelectedIndex = cb_tt_thon.SelectedIndex
+            End If
+        End If
+    End Sub
+
     Private Sub cb_ttr_tinh_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_ttr_tinh.SelectedIndexChanged
-        cb_ttr_huyen.Items.Clear()
-        arr_TTr_Huyen.Clear()
+        'cb_ttr_huyen.Items.Clear()
+        'arr_TTr_Huyen.Clear()
+        'If (cb_ttr_tinh.SelectedIndex > 0 And cb_ttr_tinh.Items.Count <> 0) Then
+        '    Dim _Id_TTP As Integer = CType(arr_TT_Tinh(IIf(cb_ttr_tinh.SelectedIndex > 0, cb_ttr_tinh.SelectedIndex, "0")), Integer)
+        '    If _Id_TTP > 0 Then
+        '        Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh Where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
+        '        arr_TTr_Huyen = _Globals.Bind_ComBoBox(cb_ttr_huyen, strSQL, "---Quận - huyện---")
+        '    End If
+        'End If
+        cb_ttr_xa.Items.Clear()
+        arr_TTr_Xa.Clear()
         If (cb_ttr_tinh.SelectedIndex > 0 And cb_ttr_tinh.Items.Count <> 0) Then
-            Dim _Id_TTP As Integer = CType(arr_TT_Tinh(IIf(cb_ttr_tinh.SelectedIndex > 0, cb_ttr_tinh.SelectedIndex, "0")), Integer)
-            If _Id_TTP > 0 Then
-                Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh Where id_goc != 0 and id_goc = {0} and Status = 1", _Id_TTP)
-                arr_TTr_Huyen = _Globals.Bind_ComBoBox(cb_ttr_huyen, strSQL, "---Quận - huyện---")
+            Dim _IdTinhTP As Int32 = CType(arr_TTr_Tinh(IIf(cb_ttr_tinh.SelectedIndex > 0, cb_ttr_tinh.SelectedIndex, "0")), Int32)
+            If _IdTinhTP > 0 Then
+                'Dim strSQL As String = String.Format("Select id,ten_goi From DiaDanh Where id_goc != 0 And id_goc = {0}", _IdTinhTP)
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                arr_TTr_Xa = _Globals.Bind_ComBoBox(cb_ttr_xa, strSQL, "--- Chọn Xã/Phường ---")
+            End If
+        End If
+    End Sub
+
+    Private Sub cb_ttr_xa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_ttr_xa.SelectedIndexChanged
+        cb_ttr_thon.Items.Clear()
+        arr_TTr_Thon.Clear()
+        If (cb_ttr_xa.SelectedIndex > 0 And cb_ttr_xa.Items.Count <> 0) Then
+            Dim _IdXaPhuong As Int32 = CType(arr_TTr_Xa(IIf(cb_ttr_xa.SelectedIndex > 0, cb_ttr_xa.SelectedIndex, "0")), Int32)
+            If _IdXaPhuong > 0 Then
+                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon <> '00' And TrangThai = 'A' And Ma_Tinh+Ma_Xa In (Select Top 1 X.Ma_Tinh+X.Ma_Xa From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdXaPhuong)
+                arr_TTr_Thon = _Globals.Bind_ComBoBox(cb_ttr_thon, strSQL, "--- Chọn Thôn/Xóm ---")
             End If
         End If
     End Sub
@@ -3254,6 +3567,11 @@
         Catch ex As Exception
         End Try
     End Sub
+
+
+
+
+
 #End Region
 
 End Class

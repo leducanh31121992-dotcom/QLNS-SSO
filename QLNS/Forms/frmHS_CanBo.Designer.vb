@@ -243,7 +243,7 @@ Partial Class frmHS_CanBo
         '
         Me.tv_main.BackColor = System.Drawing.Color.White
         Me.tv_main.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tv_main.ForeColor = System.Drawing.Color.Black
+        Me.tv_main.ForeColor = System.Drawing.Color.Navy
         Me.tv_main.Location = New System.Drawing.Point(0, 19)
         Me.tv_main.Name = "tv_main"
         Me.tv_main.ShowNodeToolTips = True
@@ -465,6 +465,7 @@ Partial Class frmHS_CanBo
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_main.ColumnHeadersHeight = 29
         Me.dgv_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_main.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_main.Location = New System.Drawing.Point(246, 64)
@@ -478,6 +479,7 @@ Partial Class frmHS_CanBo
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_main.RowHeadersVisible = False
+        Me.dgv_main.RowHeadersWidth = 51
         Me.dgv_main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -684,25 +686,25 @@ Partial Class frmHS_CanBo
         'mnu_csld_bhyt
         '
         Me.mnu_csld_bhyt.Name = "mnu_csld_bhyt"
-        Me.mnu_csld_bhyt.Size = New System.Drawing.Size(225, 26)
+        Me.mnu_csld_bhyt.Size = New System.Drawing.Size(233, 26)
         Me.mnu_csld_bhyt.Text = "Bảo hiểm y tế"
         '
         'mnu_csld_qlnc
         '
         Me.mnu_csld_qlnc.Name = "mnu_csld_qlnc"
-        Me.mnu_csld_qlnc.Size = New System.Drawing.Size(225, 26)
+        Me.mnu_csld_qlnc.Size = New System.Drawing.Size(233, 26)
         Me.mnu_csld_qlnc.Text = "Quản lý ngày công"
         '
         'mnu_csld_hstainan
         '
         Me.mnu_csld_hstainan.Name = "mnu_csld_hstainan"
-        Me.mnu_csld_hstainan.Size = New System.Drawing.Size(225, 26)
+        Me.mnu_csld_hstainan.Size = New System.Drawing.Size(233, 26)
         Me.mnu_csld_hstainan.Text = "Hồ sơ tai nạn"
         '
         'mnu_csld_khamsk
         '
         Me.mnu_csld_khamsk.Name = "mnu_csld_khamsk"
-        Me.mnu_csld_khamsk.Size = New System.Drawing.Size(225, 26)
+        Me.mnu_csld_khamsk.Size = New System.Drawing.Size(233, 26)
         Me.mnu_csld_khamsk.Text = "Hồ sơ khám sức khoẻ"
         '
         'mnu_exportcv

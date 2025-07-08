@@ -110,6 +110,7 @@ Partial Class TimKiemMoiForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.dgv_main = New System.Windows.Forms.DataGridView()
         Me.toltip_main = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.gbx_input.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -936,19 +937,20 @@ Partial Class TimKiemMoiForm
         Me.pnl_sex.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pnl_sex.Controls.Add(Me.ckb_gioitinh_nu)
         Me.pnl_sex.Controls.Add(Me.ckb_gioitinh_nam)
+        Me.pnl_sex.Controls.Add(Me.Label12)
         Me.pnl_sex.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnl_sex.Location = New System.Drawing.Point(681, 0)
         Me.pnl_sex.Name = "pnl_sex"
-        Me.pnl_sex.Size = New System.Drawing.Size(130, 22)
+        Me.pnl_sex.Size = New System.Drawing.Size(134, 22)
         Me.pnl_sex.TabIndex = 5
         '
         'ckb_gioitinh_nu
         '
         Me.ckb_gioitinh_nu.Dock = System.Windows.Forms.DockStyle.Left
         Me.ckb_gioitinh_nu.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ckb_gioitinh_nu.Location = New System.Drawing.Point(60, 0)
+        Me.ckb_gioitinh_nu.Location = New System.Drawing.Point(65, 0)
         Me.ckb_gioitinh_nu.Name = "ckb_gioitinh_nu"
-        Me.ckb_gioitinh_nu.Size = New System.Drawing.Size(60, 18)
+        Me.ckb_gioitinh_nu.Size = New System.Drawing.Size(50, 18)
         Me.ckb_gioitinh_nu.TabIndex = 1
         Me.ckb_gioitinh_nu.Text = "Nữ"
         Me.ckb_gioitinh_nu.UseVisualStyleBackColor = True
@@ -957,7 +959,7 @@ Partial Class TimKiemMoiForm
         '
         Me.ckb_gioitinh_nam.Dock = System.Windows.Forms.DockStyle.Left
         Me.ckb_gioitinh_nam.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ckb_gioitinh_nam.Location = New System.Drawing.Point(0, 0)
+        Me.ckb_gioitinh_nam.Location = New System.Drawing.Point(5, 0)
         Me.ckb_gioitinh_nam.Name = "ckb_gioitinh_nam"
         Me.ckb_gioitinh_nam.Size = New System.Drawing.Size(60, 18)
         Me.ckb_gioitinh_nam.TabIndex = 0
@@ -1132,6 +1134,7 @@ Partial Class TimKiemMoiForm
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_main.ColumnHeadersHeight = 29
         Me.dgv_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_main.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_main.Location = New System.Drawing.Point(3, 22)
@@ -1145,12 +1148,22 @@ Partial Class TimKiemMoiForm
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_main.RowHeadersVisible = False
+        Me.dgv_main.RowHeadersWidth = 51
         Me.dgv_main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
         Me.dgv_main.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_main.Size = New System.Drawing.Size(1000, 469)
         Me.dgv_main.TabIndex = 0
+        '
+        'Label12
+        '
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label12.Location = New System.Drawing.Point(0, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(5, 18)
+        Me.Label12.TabIndex = 5
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TimKiemMoiForm
         '
@@ -1269,4 +1282,5 @@ Partial Class TimKiemMoiForm
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents dtpk_ngaytinhnghihuu_dennam As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As Label
 End Class

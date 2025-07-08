@@ -325,6 +325,19 @@ Public Class TimKiemMoiForm
             If Not (db_dscanbo Is Nothing) Then
                 db_dscanbo.Reset()
             End If
+            If _DonVi_Id = 0 Then
+                If DONVI = "000100" Or DONVI = "000199" Then
+                    _DonVi_Id = 0
+                Else
+                    If DONVI = "000196" Or DONVI = "000197" Or DONVI = "000101" Then
+                        _DonVi_Id = SoftSqlHelper.GetNumber(String.Format("Select Id From ChiNhanh Where Ma_So Like '{0}%' And Id_Goc In (0,1) Order by Status Desc ", DONVI), 0)
+                    Else
+                        _DonVi_Id = SoftSqlHelper.GetNumber(String.Format("Select Id From ChiNhanh Where Ma_So Like '{0}%' And Id_Goc In (0,1) Order by Status Desc ", DONVI.Substring(0, 4)), 0)
+                    End If
+
+                End If
+            End If
+
             db_dscanbo = _HS_CanBo.GetHS_CanBo_Search(_ThoiDiem, _IdCanBo, _MaCB, _HoTen, _DonVi_Id, _DonVi_Cd, _DonVi_HT, _PhongBan_Id, _PhongBan_Cd, _PhongBan_HT, _ChucVu_Id, _ChucVu_Cd, _ChucVu_HT, _NgaySinh_BD, _NgaySinh_KT, _GioiTinh_Cd, _GioiTinh_HT, _HonNhan_Cd, _SoCMT, _DanToc_Id, _TonGiao_Id, _TWQuanLy, _NghiHuu, _NgayTinhNghiHuu, _NgayTinhNghiHuuDenNam, _SoBHXH, _NgayVaoNHCS_BD, _NgayVaoNHCS_KT, _NgayBoNhiemLai_BD, _NgayBoNhiemLai_KT, _IsALL, _FlagDL)
             dgv_main.DataSource = db_dscanbo
             FixGrid_Columns()

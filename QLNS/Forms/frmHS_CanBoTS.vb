@@ -269,8 +269,12 @@
                 If _nodeCurrent = "00CN1" Then
                     ChiNhanhId = 1
                 Else
-                    If Not (tv_main.SelectedNode.Parent.Parent.Tag Is Nothing) Then
-                        ChiNhanhId = CType(tv_main.SelectedNode.Parent.Parent.Tag.ToString().Substring(4), Integer)
+                    If Not (tv_main.SelectedNode.Parent.Parent Is Nothing) Then
+                        If Not (tv_main.SelectedNode.Parent.Parent.Tag Is Nothing) Then
+                            ChiNhanhId = CType(tv_main.SelectedNode.Parent.Parent.Tag.ToString().Substring(4), Integer)
+                        Else
+                            ChiNhanhId = CType(tv_main.SelectedNode.Parent.Tag.ToString().Substring(4), Integer)
+                        End If
                     Else
                         ChiNhanhId = CType(tv_main.SelectedNode.Parent.Tag.ToString().Substring(4), Integer)
                     End If

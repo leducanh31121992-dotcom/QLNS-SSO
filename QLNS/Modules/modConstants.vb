@@ -2,8 +2,8 @@
     'Môi trường CSDL chính thức
     Public Server As String = "10.63.16.65" 'Configuration.ConfigurationSettings.AppSettings("Server")
     Private DataBase As String = "QLNS_NHCSXH" 'Configuration.ConfigurationSettings.AppSettings("Database")
-    Private User As String = "qlns"  'Configuration.ConfigurationSettings.AppSettings("User")
-    Private Pass As String = "Ns@2018QlQl"  'Configuration.ConfigurationSettings.AppSettings("Password")
+    Private User As String = "qlskdev"  'Configuration.ConfigurationSettings.AppSettings("User")
+    Private Pass As String = "QlSk@2020#123"  'Configuration.ConfigurationSettings.AppSettings("Password")
     Public QLNS_CONNSTR As String = "Data Source=" & Server & ";Initial Catalog=" & DataBase & ";Persist Security Info=True;User ID=" & User & ";Password=" & Pass
 
     ''Môi trường CSDL DEV
@@ -12,9 +12,6 @@
     'Private User As String = "sa"  'Configuration.ConfigurationSettings.AppSettings("User")
     'Private Pass As String = "Sql2017"  'Configuration.ConfigurationSettings.AppSettings("Password")
     'Public QLNS_CONNSTR As String = "Data Source=" & Server & ";Initial Catalog=" & DataBase & ";Persist Security Info=True;User ID=" & User & ";Password=" & Pass
-
-
-
 
     '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     'Public Server1 As String = ".\SQLEXPRESS"

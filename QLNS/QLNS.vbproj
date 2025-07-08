@@ -35,11 +35,11 @@
     <TargetCulture>en-US</TargetCulture>
     <ProductName>Quản lý nhân sự NHCSXH</ProductName>
     <PublisherName>ITC-VBSP</PublisherName>
-    <MinimumRequiredVersion>1.0.3.68</MinimumRequiredVersion>
+    <MinimumRequiredVersion>1.0.3.70</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>69</ApplicationRevision>
+    <ApplicationRevision>71</ApplicationRevision>
     <ApplicationVersion>1.0.3.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -70,10 +70,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>CD65F63B67964240DCE43DCC65B76F773688307F</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>C3A8E11AF63BCF2A8D09B2479F8DEE9626D33889</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>QLNS_5_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>QLNS_6_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -83,6 +83,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
@@ -1612,6 +1615,7 @@
     <None Include="QLNS_3_TemporaryKey.pfx" />
     <None Include="QLNS_4_TemporaryKey.pfx" />
     <None Include="QLNS_5_TemporaryKey.pfx" />
+    <None Include="QLNS_6_TemporaryKey.pfx" />
     <None Include="QLNS_TemporaryKey.pfx" />
     <None Include="Resources\cb_giadinh.png" />
     <Content Include="QLNS.ico" />

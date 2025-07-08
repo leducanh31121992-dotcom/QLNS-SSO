@@ -138,6 +138,9 @@ Partial Class frmCN_HSCanBo
         Me.Label56 = New System.Windows.Forms.Label()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.cb_ttr_thon = New System.Windows.Forms.ComboBox()
+        Me.Label209 = New System.Windows.Forms.Label()
+        Me.cb_ttr_xa = New System.Windows.Forms.ComboBox()
         Me.cb_ttr_huyen = New System.Windows.Forms.ComboBox()
         Me.Label58 = New System.Windows.Forms.Label()
         Me.cb_ttr_tinh = New System.Windows.Forms.ComboBox()
@@ -151,6 +154,9 @@ Partial Class frmCN_HSCanBo
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.cb_tt_thon = New System.Windows.Forms.ComboBox()
+        Me.Label205 = New System.Windows.Forms.Label()
+        Me.cb_tt_xa = New System.Windows.Forms.ComboBox()
         Me.cb_tt_huyen = New System.Windows.Forms.ComboBox()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.cb_tt_tinh = New System.Windows.Forms.ComboBox()
@@ -162,6 +168,9 @@ Partial Class frmCN_HSCanBo
         Me.Label42 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.cb_nq_thon = New System.Windows.Forms.ComboBox()
+        Me.Label171 = New System.Windows.Forms.Label()
+        Me.cb_nq_xa = New System.Windows.Forms.ComboBox()
         Me.cb_nq_huyen = New System.Windows.Forms.ComboBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.cb_nq_tinh = New System.Windows.Forms.ComboBox()
@@ -173,6 +182,9 @@ Partial Class frmCN_HSCanBo
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.cb_ns_thon = New System.Windows.Forms.ComboBox()
+        Me.Label95 = New System.Windows.Forms.Label()
+        Me.cb_ns_xa = New System.Windows.Forms.ComboBox()
         Me.cb_ns_huyen = New System.Windows.Forms.ComboBox()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.cb_ns_tinh = New System.Windows.Forms.ComboBox()
@@ -660,9 +672,9 @@ Partial Class frmCN_HSCanBo
         Me.Panel16.Controls.Add(Me.Panel9)
         Me.Panel16.Controls.Add(Me.Label13)
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel16.Location = New System.Drawing.Point(321, 22)
+        Me.Panel16.Location = New System.Drawing.Point(461, 22)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(527, 162)
+        Me.Panel16.Size = New System.Drawing.Size(387, 162)
         Me.Panel16.TabIndex = 2
         '
         'Panel26
@@ -672,19 +684,19 @@ Partial Class frmCN_HSCanBo
         Me.Panel26.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel26.Location = New System.Drawing.Point(0, 117)
         Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(527, 45)
+        Me.Panel26.Size = New System.Drawing.Size(387, 45)
         Me.Panel26.TabIndex = 18
         '
         'edt_cmt_noicap
         '
         Me.edt_cmt_noicap.BackColor = System.Drawing.Color.White
         Me.edt_cmt_noicap.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_cmt_noicap.ForeColor = System.Drawing.Color.Black
+        Me.edt_cmt_noicap.ForeColor = System.Drawing.Color.Navy
         Me.edt_cmt_noicap.Location = New System.Drawing.Point(91, 0)
         Me.edt_cmt_noicap.Multiline = True
         Me.edt_cmt_noicap.Name = "edt_cmt_noicap"
         Me.edt_cmt_noicap.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.edt_cmt_noicap.Size = New System.Drawing.Size(436, 45)
+        Me.edt_cmt_noicap.Size = New System.Drawing.Size(296, 45)
         Me.edt_cmt_noicap.TabIndex = 12
         '
         'Label40
@@ -701,7 +713,7 @@ Partial Class frmCN_HSCanBo
         Me.Label39.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label39.Location = New System.Drawing.Point(0, 116)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(527, 1)
+        Me.Label39.Size = New System.Drawing.Size(387, 1)
         Me.Label39.TabIndex = 10
         Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -712,7 +724,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel25.Location = New System.Drawing.Point(0, 94)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(527, 22)
+        Me.Panel25.Size = New System.Drawing.Size(387, 22)
         Me.Panel25.TabIndex = 9
         '
         'dtpk_cmt_ngaycap
@@ -723,11 +735,11 @@ Partial Class frmCN_HSCanBo
         Me.dtpk_cmt_ngaycap.CalendarTitleForeColor = System.Drawing.Color.Lavender
         Me.dtpk_cmt_ngaycap.CalendarTrailingForeColor = System.Drawing.Color.Black
         Me.dtpk_cmt_ngaycap.CustomFormat = "dd/MM/yyyy"
-        Me.dtpk_cmt_ngaycap.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dtpk_cmt_ngaycap.Dock = System.Windows.Forms.DockStyle.Left
         Me.dtpk_cmt_ngaycap.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpk_cmt_ngaycap.Location = New System.Drawing.Point(91, 0)
         Me.dtpk_cmt_ngaycap.Name = "dtpk_cmt_ngaycap"
-        Me.dtpk_cmt_ngaycap.Size = New System.Drawing.Size(436, 26)
+        Me.dtpk_cmt_ngaycap.Size = New System.Drawing.Size(189, 26)
         Me.dtpk_cmt_ngaycap.TabIndex = 1
         '
         'Label38
@@ -745,7 +757,7 @@ Partial Class frmCN_HSCanBo
         Me.Label37.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label37.Location = New System.Drawing.Point(0, 93)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(527, 1)
+        Me.Label37.Size = New System.Drawing.Size(387, 1)
         Me.Label37.TabIndex = 8
         Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -756,14 +768,14 @@ Partial Class frmCN_HSCanBo
         Me.Panel24.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel24.Location = New System.Drawing.Point(0, 71)
         Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(527, 22)
+        Me.Panel24.Size = New System.Drawing.Size(387, 22)
         Me.Panel24.TabIndex = 7
         '
         'edt_cmt_so
         '
         Me.edt_cmt_so.BackColor = System.Drawing.Color.White
         Me.edt_cmt_so.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_cmt_so.ForeColor = System.Drawing.Color.Black
+        Me.edt_cmt_so.ForeColor = System.Drawing.Color.Navy
         Me.edt_cmt_so.Location = New System.Drawing.Point(91, 0)
         Me.edt_cmt_so.MaxLength = 12
         Me.edt_cmt_so.Name = "edt_cmt_so"
@@ -777,7 +789,7 @@ Partial Class frmCN_HSCanBo
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(91, 22)
         Me.Label36.TabIndex = 0
-        Me.Label36.Text = "Số chứng minh"
+        Me.Label36.Text = "Số căn cước"
         Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label35
@@ -785,7 +797,7 @@ Partial Class frmCN_HSCanBo
         Me.Label35.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label35.Location = New System.Drawing.Point(0, 70)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(527, 1)
+        Me.Label35.Size = New System.Drawing.Size(387, 1)
         Me.Label35.TabIndex = 6
         Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -796,7 +808,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel20.Location = New System.Drawing.Point(0, 48)
         Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(527, 22)
+        Me.Panel20.Size = New System.Drawing.Size(387, 22)
         Me.Panel20.TabIndex = 5
         '
         'cb_tongiao
@@ -804,11 +816,11 @@ Partial Class frmCN_HSCanBo
         Me.cb_tongiao.BackColor = System.Drawing.Color.White
         Me.cb_tongiao.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_tongiao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_tongiao.ForeColor = System.Drawing.Color.Black
+        Me.cb_tongiao.ForeColor = System.Drawing.Color.Navy
         Me.cb_tongiao.FormattingEnabled = True
         Me.cb_tongiao.Location = New System.Drawing.Point(91, 0)
         Me.cb_tongiao.Name = "cb_tongiao"
-        Me.cb_tongiao.Size = New System.Drawing.Size(436, 26)
+        Me.cb_tongiao.Size = New System.Drawing.Size(296, 26)
         Me.cb_tongiao.TabIndex = 1
         '
         'Label34
@@ -826,7 +838,7 @@ Partial Class frmCN_HSCanBo
         Me.Label26.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label26.Location = New System.Drawing.Point(0, 47)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(527, 1)
+        Me.Label26.Size = New System.Drawing.Size(387, 1)
         Me.Label26.TabIndex = 4
         Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -837,7 +849,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel10.Location = New System.Drawing.Point(0, 25)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(527, 22)
+        Me.Panel10.Size = New System.Drawing.Size(387, 22)
         Me.Panel10.TabIndex = 3
         '
         'cb_dantoc
@@ -845,11 +857,11 @@ Partial Class frmCN_HSCanBo
         Me.cb_dantoc.BackColor = System.Drawing.Color.White
         Me.cb_dantoc.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_dantoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_dantoc.ForeColor = System.Drawing.Color.Black
+        Me.cb_dantoc.ForeColor = System.Drawing.Color.Navy
         Me.cb_dantoc.FormattingEnabled = True
         Me.cb_dantoc.Location = New System.Drawing.Point(91, 0)
         Me.cb_dantoc.Name = "cb_dantoc"
-        Me.cb_dantoc.Size = New System.Drawing.Size(436, 26)
+        Me.cb_dantoc.Size = New System.Drawing.Size(296, 26)
         Me.cb_dantoc.TabIndex = 1
         '
         'Label25
@@ -867,7 +879,7 @@ Partial Class frmCN_HSCanBo
         Me.Label24.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label24.Location = New System.Drawing.Point(0, 24)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(527, 1)
+        Me.Label24.Size = New System.Drawing.Size(387, 1)
         Me.Label24.TabIndex = 2
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -878,7 +890,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel9.Location = New System.Drawing.Point(0, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(527, 22)
+        Me.Panel9.Size = New System.Drawing.Size(387, 22)
         Me.Panel9.TabIndex = 1
         '
         'cb_quoctich
@@ -886,11 +898,11 @@ Partial Class frmCN_HSCanBo
         Me.cb_quoctich.BackColor = System.Drawing.Color.White
         Me.cb_quoctich.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_quoctich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_quoctich.ForeColor = System.Drawing.Color.Black
+        Me.cb_quoctich.ForeColor = System.Drawing.Color.Navy
         Me.cb_quoctich.FormattingEnabled = True
         Me.cb_quoctich.Location = New System.Drawing.Point(91, 0)
         Me.cb_quoctich.Name = "cb_quoctich"
-        Me.cb_quoctich.Size = New System.Drawing.Size(436, 26)
+        Me.cb_quoctich.Size = New System.Drawing.Size(296, 26)
         Me.cb_quoctich.TabIndex = 1
         '
         'Label23
@@ -908,7 +920,7 @@ Partial Class frmCN_HSCanBo
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label13.Location = New System.Drawing.Point(0, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(527, 2)
+        Me.Label13.Size = New System.Drawing.Size(387, 2)
         Me.Label13.TabIndex = 0
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -999,7 +1011,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label17.Location = New System.Drawing.Point(313, 22)
+        Me.Label17.Location = New System.Drawing.Point(453, 22)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(8, 162)
         Me.Label17.TabIndex = 1
@@ -1024,7 +1036,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(3, 22)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(310, 162)
+        Me.Panel1.Size = New System.Drawing.Size(450, 162)
         Me.Panel1.TabIndex = 0
         '
         'Panel8
@@ -1034,7 +1046,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 140)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(310, 22)
+        Me.Panel8.Size = New System.Drawing.Size(450, 22)
         Me.Panel8.TabIndex = 13
         '
         'cb_donvi
@@ -1042,11 +1054,11 @@ Partial Class frmCN_HSCanBo
         Me.cb_donvi.BackColor = System.Drawing.Color.White
         Me.cb_donvi.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_donvi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_donvi.ForeColor = System.Drawing.Color.Black
+        Me.cb_donvi.ForeColor = System.Drawing.Color.Navy
         Me.cb_donvi.FormattingEnabled = True
         Me.cb_donvi.Location = New System.Drawing.Point(101, 0)
         Me.cb_donvi.Name = "cb_donvi"
-        Me.cb_donvi.Size = New System.Drawing.Size(209, 26)
+        Me.cb_donvi.Size = New System.Drawing.Size(349, 26)
         Me.cb_donvi.TabIndex = 1
         '
         'Label22
@@ -1064,7 +1076,7 @@ Partial Class frmCN_HSCanBo
         Me.Label20.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label20.Location = New System.Drawing.Point(0, 139)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(310, 1)
+        Me.Label20.Size = New System.Drawing.Size(450, 1)
         Me.Label20.TabIndex = 12
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1075,7 +1087,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel15.Location = New System.Drawing.Point(0, 117)
         Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(310, 22)
+        Me.Panel15.Size = New System.Drawing.Size(450, 22)
         Me.Panel15.TabIndex = 11
         '
         'dtpk_ngaysinh
@@ -1090,7 +1102,7 @@ Partial Class frmCN_HSCanBo
         Me.dtpk_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpk_ngaysinh.Location = New System.Drawing.Point(101, 0)
         Me.dtpk_ngaysinh.Name = "dtpk_ngaysinh"
-        Me.dtpk_ngaysinh.Size = New System.Drawing.Size(209, 26)
+        Me.dtpk_ngaysinh.Size = New System.Drawing.Size(349, 26)
         Me.dtpk_ngaysinh.TabIndex = 1
         '
         'Label33
@@ -1108,7 +1120,7 @@ Partial Class frmCN_HSCanBo
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label16.Location = New System.Drawing.Point(0, 116)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(310, 1)
+        Me.Label16.Size = New System.Drawing.Size(450, 1)
         Me.Label16.TabIndex = 10
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1119,7 +1131,7 @@ Partial Class frmCN_HSCanBo
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel13.Location = New System.Drawing.Point(0, 94)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(310, 22)
+        Me.Panel13.Size = New System.Drawing.Size(450, 22)
         Me.Panel13.TabIndex = 9
         '
         'pnl_sex
@@ -1131,14 +1143,15 @@ Partial Class frmCN_HSCanBo
         Me.pnl_sex.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_sex.Location = New System.Drawing.Point(101, 0)
         Me.pnl_sex.Name = "pnl_sex"
-        Me.pnl_sex.Size = New System.Drawing.Size(209, 22)
+        Me.pnl_sex.Size = New System.Drawing.Size(349, 22)
         Me.pnl_sex.TabIndex = 1
         '
         'rb_nu
         '
         Me.rb_nu.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.rb_nu.Dock = System.Windows.Forms.DockStyle.Right
-        Me.rb_nu.Location = New System.Drawing.Point(156, 0)
+        Me.rb_nu.ForeColor = System.Drawing.Color.Navy
+        Me.rb_nu.Location = New System.Drawing.Point(296, 0)
         Me.rb_nu.Name = "rb_nu"
         Me.rb_nu.Size = New System.Drawing.Size(49, 18)
         Me.rb_nu.TabIndex = 1
@@ -1149,6 +1162,7 @@ Partial Class frmCN_HSCanBo
         'rb_nam
         '
         Me.rb_nam.Dock = System.Windows.Forms.DockStyle.Left
+        Me.rb_nam.ForeColor = System.Drawing.Color.Navy
         Me.rb_nam.Location = New System.Drawing.Point(0, 0)
         Me.rb_nam.Name = "rb_nam"
         Me.rb_nam.Size = New System.Drawing.Size(60, 18)
@@ -1172,7 +1186,7 @@ Partial Class frmCN_HSCanBo
         Me.Label14.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label14.Location = New System.Drawing.Point(0, 93)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(310, 1)
+        Me.Label14.Size = New System.Drawing.Size(450, 1)
         Me.Label14.TabIndex = 8
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1183,17 +1197,17 @@ Partial Class frmCN_HSCanBo
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel12.Location = New System.Drawing.Point(0, 71)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(310, 22)
+        Me.Panel12.Size = New System.Drawing.Size(450, 22)
         Me.Panel12.TabIndex = 7
         '
         'edt_bidanh
         '
         Me.edt_bidanh.BackColor = System.Drawing.Color.White
         Me.edt_bidanh.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_bidanh.ForeColor = System.Drawing.Color.Black
+        Me.edt_bidanh.ForeColor = System.Drawing.Color.Navy
         Me.edt_bidanh.Location = New System.Drawing.Point(101, 0)
         Me.edt_bidanh.Name = "edt_bidanh"
-        Me.edt_bidanh.Size = New System.Drawing.Size(209, 26)
+        Me.edt_bidanh.Size = New System.Drawing.Size(349, 26)
         Me.edt_bidanh.TabIndex = 1
         '
         'Label11
@@ -1211,7 +1225,7 @@ Partial Class frmCN_HSCanBo
         Me.Label10.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label10.Location = New System.Drawing.Point(0, 70)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(310, 1)
+        Me.Label10.Size = New System.Drawing.Size(450, 1)
         Me.Label10.TabIndex = 6
         Me.Label10.Text = "  Họ tên"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1223,17 +1237,17 @@ Partial Class frmCN_HSCanBo
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 48)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(310, 22)
+        Me.Panel6.Size = New System.Drawing.Size(450, 22)
         Me.Panel6.TabIndex = 5
         '
         'edt_ten_tg
         '
         Me.edt_ten_tg.BackColor = System.Drawing.Color.White
         Me.edt_ten_tg.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_ten_tg.ForeColor = System.Drawing.Color.Black
+        Me.edt_ten_tg.ForeColor = System.Drawing.Color.Navy
         Me.edt_ten_tg.Location = New System.Drawing.Point(101, 0)
         Me.edt_ten_tg.Name = "edt_ten_tg"
-        Me.edt_ten_tg.Size = New System.Drawing.Size(209, 26)
+        Me.edt_ten_tg.Size = New System.Drawing.Size(349, 26)
         Me.edt_ten_tg.TabIndex = 1
         '
         'Label9
@@ -1251,7 +1265,7 @@ Partial Class frmCN_HSCanBo
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label8.Location = New System.Drawing.Point(0, 47)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(310, 1)
+        Me.Label8.Size = New System.Drawing.Size(450, 1)
         Me.Label8.TabIndex = 4
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1262,17 +1276,17 @@ Partial Class frmCN_HSCanBo
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 25)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(310, 22)
+        Me.Panel5.Size = New System.Drawing.Size(450, 22)
         Me.Panel5.TabIndex = 3
         '
         'edt_hoten
         '
         Me.edt_hoten.BackColor = System.Drawing.Color.White
         Me.edt_hoten.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_hoten.ForeColor = System.Drawing.Color.Black
+        Me.edt_hoten.ForeColor = System.Drawing.Color.Navy
         Me.edt_hoten.Location = New System.Drawing.Point(101, 0)
         Me.edt_hoten.Name = "edt_hoten"
-        Me.edt_hoten.Size = New System.Drawing.Size(209, 26)
+        Me.edt_hoten.Size = New System.Drawing.Size(349, 26)
         Me.edt_hoten.TabIndex = 1
         '
         'Label6
@@ -1290,7 +1304,7 @@ Partial Class frmCN_HSCanBo
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label5.Location = New System.Drawing.Point(0, 24)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(310, 1)
+        Me.Label5.Size = New System.Drawing.Size(450, 1)
         Me.Label5.TabIndex = 2
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1301,14 +1315,14 @@ Partial Class frmCN_HSCanBo
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(310, 22)
+        Me.Panel2.Size = New System.Drawing.Size(450, 22)
         Me.Panel2.TabIndex = 1
         '
         'edt_macb
         '
         Me.edt_macb.BackColor = System.Drawing.Color.White
         Me.edt_macb.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_macb.ForeColor = System.Drawing.Color.Black
+        Me.edt_macb.ForeColor = System.Drawing.Color.Navy
         Me.edt_macb.Location = New System.Drawing.Point(101, 0)
         Me.edt_macb.Name = "edt_macb"
         Me.edt_macb.Size = New System.Drawing.Size(181, 26)
@@ -1329,7 +1343,7 @@ Partial Class frmCN_HSCanBo
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label18.Location = New System.Drawing.Point(0, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(310, 2)
+        Me.Label18.Size = New System.Drawing.Size(450, 2)
         Me.Label18.TabIndex = 0
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -1541,7 +1555,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_email.BackColor = System.Drawing.Color.White
         Me.edt_email.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_email.ForeColor = System.Drawing.Color.Black
+        Me.edt_email.ForeColor = System.Drawing.Color.Navy
         Me.edt_email.Location = New System.Drawing.Point(306, 0)
         Me.edt_email.Name = "edt_email"
         Me.edt_email.Size = New System.Drawing.Size(496, 26)
@@ -1561,7 +1575,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_sofax.BackColor = System.Drawing.Color.White
         Me.edt_sofax.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_sofax.ForeColor = System.Drawing.Color.Black
+        Me.edt_sofax.ForeColor = System.Drawing.Color.Navy
         Me.edt_sofax.Location = New System.Drawing.Point(97, 0)
         Me.edt_sofax.MaxLength = 15
         Me.edt_sofax.Name = "edt_sofax"
@@ -1593,7 +1607,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_nhommau.BackColor = System.Drawing.Color.White
         Me.cb_nhommau.Dock = System.Windows.Forms.DockStyle.Right
         Me.cb_nhommau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_nhommau.ForeColor = System.Drawing.Color.Black
+        Me.cb_nhommau.ForeColor = System.Drawing.Color.Navy
         Me.cb_nhommau.FormattingEnabled = True
         Me.cb_nhommau.Items.AddRange(New Object() {"--- None ---", "A", "B", "AB", "O"})
         Me.cb_nhommau.Location = New System.Drawing.Point(879, 0)
@@ -1674,7 +1688,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_dt_didong.BackColor = System.Drawing.Color.White
         Me.edt_dt_didong.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_dt_didong.ForeColor = System.Drawing.Color.Black
+        Me.edt_dt_didong.ForeColor = System.Drawing.Color.Navy
         Me.edt_dt_didong.Location = New System.Drawing.Point(214, 0)
         Me.edt_dt_didong.Name = "edt_dt_didong"
         Me.edt_dt_didong.Size = New System.Drawing.Size(177, 26)
@@ -1730,7 +1744,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_ttr_diachi.BackColor = System.Drawing.Color.White
         Me.edt_ttr_diachi.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_ttr_diachi.ForeColor = System.Drawing.Color.Black
+        Me.edt_ttr_diachi.ForeColor = System.Drawing.Color.Navy
         Me.edt_ttr_diachi.Location = New System.Drawing.Point(214, 23)
         Me.edt_ttr_diachi.Name = "edt_ttr_diachi"
         Me.edt_ttr_diachi.Size = New System.Drawing.Size(588, 26)
@@ -1751,7 +1765,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_ttr_dienthoai.BackColor = System.Drawing.Color.White
         Me.edt_ttr_dienthoai.Dock = System.Windows.Forms.DockStyle.Right
-        Me.edt_ttr_dienthoai.ForeColor = System.Drawing.Color.Black
+        Me.edt_ttr_dienthoai.ForeColor = System.Drawing.Color.Navy
         Me.edt_ttr_dienthoai.Location = New System.Drawing.Point(879, 23)
         Me.edt_ttr_dienthoai.MaxLength = 15
         Me.edt_ttr_dienthoai.Name = "edt_ttr_dienthoai"
@@ -1766,7 +1780,7 @@ Partial Class frmCN_HSCanBo
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(117, 22)
         Me.Label56.TabIndex = 3
-        Me.Label56.Text = "Địa chỉ "
+        Me.Label56.Text = "Địa chỉ chi tiết "
         Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label57
@@ -1780,6 +1794,9 @@ Partial Class frmCN_HSCanBo
         '
         'Panel23
         '
+        Me.Panel23.Controls.Add(Me.cb_ttr_thon)
+        Me.Panel23.Controls.Add(Me.Label209)
+        Me.Panel23.Controls.Add(Me.cb_ttr_xa)
         Me.Panel23.Controls.Add(Me.cb_ttr_huyen)
         Me.Panel23.Controls.Add(Me.Label58)
         Me.Panel23.Controls.Add(Me.cb_ttr_tinh)
@@ -1790,17 +1807,53 @@ Partial Class frmCN_HSCanBo
         Me.Panel23.Size = New System.Drawing.Size(881, 22)
         Me.Panel23.TabIndex = 1
         '
+        'cb_ttr_thon
+        '
+        Me.cb_ttr_thon.BackColor = System.Drawing.Color.White
+        Me.cb_ttr_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_ttr_thon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_ttr_thon.ForeColor = System.Drawing.Color.Navy
+        Me.cb_ttr_thon.FormattingEnabled = True
+        Me.cb_ttr_thon.Location = New System.Drawing.Point(680, 0)
+        Me.cb_ttr_thon.Name = "cb_ttr_thon"
+        Me.cb_ttr_thon.Size = New System.Drawing.Size(201, 26)
+        Me.cb_ttr_thon.TabIndex = 9
+        '
+        'Label209
+        '
+        Me.Label209.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label209.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label209.Location = New System.Drawing.Point(625, 0)
+        Me.Label209.Name = "Label209"
+        Me.Label209.Size = New System.Drawing.Size(55, 22)
+        Me.Label209.TabIndex = 8
+        Me.Label209.Text = "Thôn "
+        Me.Label209.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cb_ttr_xa
+        '
+        Me.cb_ttr_xa.BackColor = System.Drawing.Color.White
+        Me.cb_ttr_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cb_ttr_xa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_ttr_xa.ForeColor = System.Drawing.Color.Navy
+        Me.cb_ttr_xa.FormattingEnabled = True
+        Me.cb_ttr_xa.Location = New System.Drawing.Point(425, 0)
+        Me.cb_ttr_xa.Name = "cb_ttr_xa"
+        Me.cb_ttr_xa.Size = New System.Drawing.Size(200, 26)
+        Me.cb_ttr_xa.TabIndex = 7
+        '
         'cb_ttr_huyen
         '
         Me.cb_ttr_huyen.BackColor = System.Drawing.Color.White
-        Me.cb_ttr_huyen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_ttr_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_ttr_huyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_ttr_huyen.ForeColor = System.Drawing.Color.Black
         Me.cb_ttr_huyen.FormattingEnabled = True
         Me.cb_ttr_huyen.Location = New System.Drawing.Point(395, 0)
         Me.cb_ttr_huyen.Name = "cb_ttr_huyen"
-        Me.cb_ttr_huyen.Size = New System.Drawing.Size(486, 26)
+        Me.cb_ttr_huyen.Size = New System.Drawing.Size(30, 26)
         Me.cb_ttr_huyen.TabIndex = 3
+        Me.cb_ttr_huyen.Visible = False
         '
         'Label58
         '
@@ -1810,7 +1863,7 @@ Partial Class frmCN_HSCanBo
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(101, 22)
         Me.Label58.TabIndex = 2
-        Me.Label58.Text = " Quận - Huyện "
+        Me.Label58.Text = "Xã - Phường "
         Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb_ttr_tinh
@@ -1818,7 +1871,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_ttr_tinh.BackColor = System.Drawing.Color.White
         Me.cb_ttr_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_ttr_tinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_ttr_tinh.ForeColor = System.Drawing.Color.Black
+        Me.cb_ttr_tinh.ForeColor = System.Drawing.Color.Navy
         Me.cb_ttr_tinh.FormattingEnabled = True
         Me.cb_ttr_tinh.Location = New System.Drawing.Point(117, 0)
         Me.cb_ttr_tinh.Name = "cb_ttr_tinh"
@@ -1874,7 +1927,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_tt_diachi.BackColor = System.Drawing.Color.White
         Me.edt_tt_diachi.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_tt_diachi.ForeColor = System.Drawing.Color.Black
+        Me.edt_tt_diachi.ForeColor = System.Drawing.Color.Navy
         Me.edt_tt_diachi.Location = New System.Drawing.Point(214, 23)
         Me.edt_tt_diachi.Name = "edt_tt_diachi"
         Me.edt_tt_diachi.Size = New System.Drawing.Size(588, 26)
@@ -1895,7 +1948,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_tt_dienthoai.BackColor = System.Drawing.Color.White
         Me.edt_tt_dienthoai.Dock = System.Windows.Forms.DockStyle.Right
-        Me.edt_tt_dienthoai.ForeColor = System.Drawing.Color.Black
+        Me.edt_tt_dienthoai.ForeColor = System.Drawing.Color.Navy
         Me.edt_tt_dienthoai.Location = New System.Drawing.Point(879, 23)
         Me.edt_tt_dienthoai.MaxLength = 15
         Me.edt_tt_dienthoai.Name = "edt_tt_dienthoai"
@@ -1910,7 +1963,7 @@ Partial Class frmCN_HSCanBo
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(117, 22)
         Me.Label48.TabIndex = 3
-        Me.Label48.Text = "Địa chỉ "
+        Me.Label48.Text = "Địa chỉ chi tiết "
         Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label49
@@ -1924,6 +1977,9 @@ Partial Class frmCN_HSCanBo
         '
         'Panel21
         '
+        Me.Panel21.Controls.Add(Me.cb_tt_thon)
+        Me.Panel21.Controls.Add(Me.Label205)
+        Me.Panel21.Controls.Add(Me.cb_tt_xa)
         Me.Panel21.Controls.Add(Me.cb_tt_huyen)
         Me.Panel21.Controls.Add(Me.Label50)
         Me.Panel21.Controls.Add(Me.cb_tt_tinh)
@@ -1934,17 +1990,53 @@ Partial Class frmCN_HSCanBo
         Me.Panel21.Size = New System.Drawing.Size(881, 22)
         Me.Panel21.TabIndex = 1
         '
+        'cb_tt_thon
+        '
+        Me.cb_tt_thon.BackColor = System.Drawing.Color.White
+        Me.cb_tt_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_tt_thon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_tt_thon.ForeColor = System.Drawing.Color.Navy
+        Me.cb_tt_thon.FormattingEnabled = True
+        Me.cb_tt_thon.Location = New System.Drawing.Point(680, 0)
+        Me.cb_tt_thon.Name = "cb_tt_thon"
+        Me.cb_tt_thon.Size = New System.Drawing.Size(201, 26)
+        Me.cb_tt_thon.TabIndex = 9
+        '
+        'Label205
+        '
+        Me.Label205.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label205.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label205.Location = New System.Drawing.Point(625, 0)
+        Me.Label205.Name = "Label205"
+        Me.Label205.Size = New System.Drawing.Size(55, 22)
+        Me.Label205.TabIndex = 8
+        Me.Label205.Text = "Thôn "
+        Me.Label205.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cb_tt_xa
+        '
+        Me.cb_tt_xa.BackColor = System.Drawing.Color.White
+        Me.cb_tt_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cb_tt_xa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_tt_xa.ForeColor = System.Drawing.Color.Navy
+        Me.cb_tt_xa.FormattingEnabled = True
+        Me.cb_tt_xa.Location = New System.Drawing.Point(425, 0)
+        Me.cb_tt_xa.Name = "cb_tt_xa"
+        Me.cb_tt_xa.Size = New System.Drawing.Size(200, 26)
+        Me.cb_tt_xa.TabIndex = 7
+        '
         'cb_tt_huyen
         '
         Me.cb_tt_huyen.BackColor = System.Drawing.Color.White
-        Me.cb_tt_huyen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_tt_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_tt_huyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_tt_huyen.ForeColor = System.Drawing.Color.Black
         Me.cb_tt_huyen.FormattingEnabled = True
         Me.cb_tt_huyen.Location = New System.Drawing.Point(395, 0)
         Me.cb_tt_huyen.Name = "cb_tt_huyen"
-        Me.cb_tt_huyen.Size = New System.Drawing.Size(486, 26)
+        Me.cb_tt_huyen.Size = New System.Drawing.Size(30, 26)
         Me.cb_tt_huyen.TabIndex = 3
+        Me.cb_tt_huyen.Visible = False
         '
         'Label50
         '
@@ -1954,7 +2046,7 @@ Partial Class frmCN_HSCanBo
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(101, 22)
         Me.Label50.TabIndex = 2
-        Me.Label50.Text = "Quận - Huyện "
+        Me.Label50.Text = "Xã - Phường "
         Me.Label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb_tt_tinh
@@ -1962,7 +2054,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_tt_tinh.BackColor = System.Drawing.Color.White
         Me.cb_tt_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_tt_tinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_tt_tinh.ForeColor = System.Drawing.Color.Black
+        Me.cb_tt_tinh.ForeColor = System.Drawing.Color.Navy
         Me.cb_tt_tinh.FormattingEnabled = True
         Me.cb_tt_tinh.Location = New System.Drawing.Point(117, 0)
         Me.cb_tt_tinh.Name = "cb_tt_tinh"
@@ -2016,7 +2108,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_nq_diachi.BackColor = System.Drawing.Color.White
         Me.edt_nq_diachi.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_nq_diachi.ForeColor = System.Drawing.Color.Black
+        Me.edt_nq_diachi.ForeColor = System.Drawing.Color.Navy
         Me.edt_nq_diachi.Location = New System.Drawing.Point(214, 23)
         Me.edt_nq_diachi.Name = "edt_nq_diachi"
         Me.edt_nq_diachi.Size = New System.Drawing.Size(764, 26)
@@ -2030,7 +2122,7 @@ Partial Class frmCN_HSCanBo
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(117, 22)
         Me.Label42.TabIndex = 3
-        Me.Label42.Text = "Địa chỉ "
+        Me.Label42.Text = "Địa chỉ chi tiết "
         Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label43
@@ -2044,6 +2136,9 @@ Partial Class frmCN_HSCanBo
         '
         'Panel18
         '
+        Me.Panel18.Controls.Add(Me.cb_nq_thon)
+        Me.Panel18.Controls.Add(Me.Label171)
+        Me.Panel18.Controls.Add(Me.cb_nq_xa)
         Me.Panel18.Controls.Add(Me.cb_nq_huyen)
         Me.Panel18.Controls.Add(Me.Label44)
         Me.Panel18.Controls.Add(Me.cb_nq_tinh)
@@ -2054,17 +2149,53 @@ Partial Class frmCN_HSCanBo
         Me.Panel18.Size = New System.Drawing.Size(881, 22)
         Me.Panel18.TabIndex = 1
         '
+        'cb_nq_thon
+        '
+        Me.cb_nq_thon.BackColor = System.Drawing.Color.White
+        Me.cb_nq_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_nq_thon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_nq_thon.ForeColor = System.Drawing.Color.Navy
+        Me.cb_nq_thon.FormattingEnabled = True
+        Me.cb_nq_thon.Location = New System.Drawing.Point(680, 0)
+        Me.cb_nq_thon.Name = "cb_nq_thon"
+        Me.cb_nq_thon.Size = New System.Drawing.Size(201, 26)
+        Me.cb_nq_thon.TabIndex = 9
+        '
+        'Label171
+        '
+        Me.Label171.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label171.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label171.Location = New System.Drawing.Point(625, 0)
+        Me.Label171.Name = "Label171"
+        Me.Label171.Size = New System.Drawing.Size(55, 22)
+        Me.Label171.TabIndex = 8
+        Me.Label171.Text = "Thôn "
+        Me.Label171.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cb_nq_xa
+        '
+        Me.cb_nq_xa.BackColor = System.Drawing.Color.White
+        Me.cb_nq_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cb_nq_xa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_nq_xa.ForeColor = System.Drawing.Color.Navy
+        Me.cb_nq_xa.FormattingEnabled = True
+        Me.cb_nq_xa.Location = New System.Drawing.Point(425, 0)
+        Me.cb_nq_xa.Name = "cb_nq_xa"
+        Me.cb_nq_xa.Size = New System.Drawing.Size(200, 26)
+        Me.cb_nq_xa.TabIndex = 7
+        '
         'cb_nq_huyen
         '
         Me.cb_nq_huyen.BackColor = System.Drawing.Color.White
-        Me.cb_nq_huyen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_nq_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_nq_huyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_nq_huyen.ForeColor = System.Drawing.Color.Black
         Me.cb_nq_huyen.FormattingEnabled = True
         Me.cb_nq_huyen.Location = New System.Drawing.Point(395, 0)
         Me.cb_nq_huyen.Name = "cb_nq_huyen"
-        Me.cb_nq_huyen.Size = New System.Drawing.Size(486, 26)
+        Me.cb_nq_huyen.Size = New System.Drawing.Size(30, 26)
         Me.cb_nq_huyen.TabIndex = 3
+        Me.cb_nq_huyen.Visible = False
         '
         'Label44
         '
@@ -2074,7 +2205,7 @@ Partial Class frmCN_HSCanBo
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(101, 22)
         Me.Label44.TabIndex = 2
-        Me.Label44.Text = " Quận - Huyện "
+        Me.Label44.Text = "Xã - Phường "
         Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb_nq_tinh
@@ -2082,7 +2213,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_nq_tinh.BackColor = System.Drawing.Color.White
         Me.cb_nq_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_nq_tinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_nq_tinh.ForeColor = System.Drawing.Color.Black
+        Me.cb_nq_tinh.ForeColor = System.Drawing.Color.Navy
         Me.cb_nq_tinh.FormattingEnabled = True
         Me.cb_nq_tinh.Location = New System.Drawing.Point(117, 0)
         Me.cb_nq_tinh.Name = "cb_nq_tinh"
@@ -2136,7 +2267,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_ns_diachi.BackColor = System.Drawing.Color.White
         Me.edt_ns_diachi.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_ns_diachi.ForeColor = System.Drawing.Color.Black
+        Me.edt_ns_diachi.ForeColor = System.Drawing.Color.Navy
         Me.edt_ns_diachi.Location = New System.Drawing.Point(214, 23)
         Me.edt_ns_diachi.Name = "edt_ns_diachi"
         Me.edt_ns_diachi.Size = New System.Drawing.Size(764, 26)
@@ -2150,7 +2281,7 @@ Partial Class frmCN_HSCanBo
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(117, 22)
         Me.Label41.TabIndex = 3
-        Me.Label41.Text = "Địa chỉ "
+        Me.Label41.Text = "Địa chỉ chi tiết "
         Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label30
@@ -2165,6 +2296,9 @@ Partial Class frmCN_HSCanBo
         '
         'Panel14
         '
+        Me.Panel14.Controls.Add(Me.cb_ns_thon)
+        Me.Panel14.Controls.Add(Me.Label95)
+        Me.Panel14.Controls.Add(Me.cb_ns_xa)
         Me.Panel14.Controls.Add(Me.cb_ns_huyen)
         Me.Panel14.Controls.Add(Me.Label32)
         Me.Panel14.Controls.Add(Me.cb_ns_tinh)
@@ -2175,17 +2309,53 @@ Partial Class frmCN_HSCanBo
         Me.Panel14.Size = New System.Drawing.Size(881, 22)
         Me.Panel14.TabIndex = 1
         '
+        'cb_ns_thon
+        '
+        Me.cb_ns_thon.BackColor = System.Drawing.Color.White
+        Me.cb_ns_thon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_ns_thon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_ns_thon.ForeColor = System.Drawing.Color.Navy
+        Me.cb_ns_thon.FormattingEnabled = True
+        Me.cb_ns_thon.Location = New System.Drawing.Point(680, 0)
+        Me.cb_ns_thon.Name = "cb_ns_thon"
+        Me.cb_ns_thon.Size = New System.Drawing.Size(201, 26)
+        Me.cb_ns_thon.TabIndex = 6
+        '
+        'Label95
+        '
+        Me.Label95.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label95.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label95.Location = New System.Drawing.Point(625, 0)
+        Me.Label95.Name = "Label95"
+        Me.Label95.Size = New System.Drawing.Size(55, 22)
+        Me.Label95.TabIndex = 5
+        Me.Label95.Text = "Thôn "
+        Me.Label95.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cb_ns_xa
+        '
+        Me.cb_ns_xa.BackColor = System.Drawing.Color.White
+        Me.cb_ns_xa.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cb_ns_xa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_ns_xa.ForeColor = System.Drawing.Color.Navy
+        Me.cb_ns_xa.FormattingEnabled = True
+        Me.cb_ns_xa.Location = New System.Drawing.Point(425, 0)
+        Me.cb_ns_xa.Name = "cb_ns_xa"
+        Me.cb_ns_xa.Size = New System.Drawing.Size(200, 26)
+        Me.cb_ns_xa.TabIndex = 4
+        '
         'cb_ns_huyen
         '
         Me.cb_ns_huyen.BackColor = System.Drawing.Color.White
-        Me.cb_ns_huyen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cb_ns_huyen.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_ns_huyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_ns_huyen.ForeColor = System.Drawing.Color.Black
         Me.cb_ns_huyen.FormattingEnabled = True
         Me.cb_ns_huyen.Location = New System.Drawing.Point(395, 0)
         Me.cb_ns_huyen.Name = "cb_ns_huyen"
-        Me.cb_ns_huyen.Size = New System.Drawing.Size(486, 26)
+        Me.cb_ns_huyen.Size = New System.Drawing.Size(30, 26)
         Me.cb_ns_huyen.TabIndex = 3
+        Me.cb_ns_huyen.Visible = False
         '
         'Label32
         '
@@ -2195,7 +2365,7 @@ Partial Class frmCN_HSCanBo
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(101, 22)
         Me.Label32.TabIndex = 2
-        Me.Label32.Text = "Quận - Huyện "
+        Me.Label32.Text = "Xã - Phường "
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb_ns_tinh
@@ -2203,7 +2373,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_ns_tinh.BackColor = System.Drawing.Color.White
         Me.cb_ns_tinh.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_ns_tinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_ns_tinh.ForeColor = System.Drawing.Color.Black
+        Me.cb_ns_tinh.ForeColor = System.Drawing.Color.Navy
         Me.cb_ns_tinh.FormattingEnabled = True
         Me.cb_ns_tinh.Location = New System.Drawing.Point(117, 0)
         Me.cb_ns_tinh.Name = "cb_ns_tinh"
@@ -2265,7 +2435,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_ghichu.BackColor = System.Drawing.Color.White
         Me.edt_ghichu.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_ghichu.ForeColor = System.Drawing.Color.Black
+        Me.edt_ghichu.ForeColor = System.Drawing.Color.Navy
         Me.edt_ghichu.Location = New System.Drawing.Point(3, 209)
         Me.edt_ghichu.Multiline = True
         Me.edt_ghichu.Name = "edt_ghichu"
@@ -2280,14 +2450,14 @@ Partial Class frmCN_HSCanBo
         Me.Label104.Name = "Label104"
         Me.Label104.Size = New System.Drawing.Size(978, 22)
         Me.Label104.TabIndex = 6
-        Me.Label104.Text = "Nghề nghiệp bản thân trước khi tuyển dụng"
+        Me.Label104.Text = " Nghề nghiệp bản thân trước khi tuyển dụng"
         Me.Label104.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'edt_quanhe_ng_nn
         '
         Me.edt_quanhe_ng_nn.BackColor = System.Drawing.Color.White
         Me.edt_quanhe_ng_nn.Dock = System.Windows.Forms.DockStyle.Top
-        Me.edt_quanhe_ng_nn.ForeColor = System.Drawing.Color.Black
+        Me.edt_quanhe_ng_nn.ForeColor = System.Drawing.Color.Navy
         Me.edt_quanhe_ng_nn.Location = New System.Drawing.Point(3, 161)
         Me.edt_quanhe_ng_nn.Name = "edt_quanhe_ng_nn"
         Me.edt_quanhe_ng_nn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -2301,14 +2471,14 @@ Partial Class frmCN_HSCanBo
         Me.Label107.Name = "Label107"
         Me.Label107.Size = New System.Drawing.Size(978, 22)
         Me.Label107.TabIndex = 4
-        Me.Label107.Text = "Quan hệ với nước ngoài (thân nhân hoặc tổ chức chính trị - xã hội)"
+        Me.Label107.Text = " Quan hệ với nước ngoài (thân nhân hoặc tổ chức chính trị - xã hội)"
         Me.Label107.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'edt_dacdiem_banthan
         '
         Me.edt_dacdiem_banthan.BackColor = System.Drawing.Color.White
         Me.edt_dacdiem_banthan.Dock = System.Windows.Forms.DockStyle.Top
-        Me.edt_dacdiem_banthan.ForeColor = System.Drawing.Color.Black
+        Me.edt_dacdiem_banthan.ForeColor = System.Drawing.Color.Navy
         Me.edt_dacdiem_banthan.Location = New System.Drawing.Point(3, 105)
         Me.edt_dacdiem_banthan.Multiline = True
         Me.edt_dacdiem_banthan.Name = "edt_dacdiem_banthan"
@@ -2323,7 +2493,7 @@ Partial Class frmCN_HSCanBo
         Me.Label108.Name = "Label108"
         Me.Label108.Size = New System.Drawing.Size(978, 22)
         Me.Label108.TabIndex = 2
-        Me.Label108.Text = "Đặc điểm lịch sử bản thân"
+        Me.Label108.Text = " Đặc điểm lịch sử bản thân"
         Me.Label108.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'Panel11
@@ -2341,7 +2511,7 @@ Partial Class frmCN_HSCanBo
         Me.clb_ut_banthan.BackColor = System.Drawing.Color.White
         Me.clb_ut_banthan.ColumnWidth = 201
         Me.clb_ut_banthan.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.clb_ut_banthan.ForeColor = System.Drawing.Color.Black
+        Me.clb_ut_banthan.ForeColor = System.Drawing.Color.Navy
         Me.clb_ut_banthan.HorizontalExtent = 50
         Me.clb_ut_banthan.HorizontalScrollbar = True
         Me.clb_ut_banthan.Location = New System.Drawing.Point(123, 0)
@@ -2387,7 +2557,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_ut_giadinh.BackColor = System.Drawing.Color.White
         Me.cb_ut_giadinh.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_ut_giadinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_ut_giadinh.ForeColor = System.Drawing.Color.Black
+        Me.cb_ut_giadinh.ForeColor = System.Drawing.Color.Navy
         Me.cb_ut_giadinh.FormattingEnabled = True
         Me.cb_ut_giadinh.Location = New System.Drawing.Point(507, 0)
         Me.cb_ut_giadinh.Name = "cb_ut_giadinh"
@@ -2409,7 +2579,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_tpgd.BackColor = System.Drawing.Color.White
         Me.cb_tpgd.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_tpgd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_tpgd.ForeColor = System.Drawing.Color.Black
+        Me.cb_tpgd.ForeColor = System.Drawing.Color.Navy
         Me.cb_tpgd.FormattingEnabled = True
         Me.cb_tpgd.Location = New System.Drawing.Point(123, 0)
         Me.cb_tpgd.Name = "cb_tpgd"
@@ -2423,8 +2593,8 @@ Partial Class frmCN_HSCanBo
         Me.Label101.Name = "Label101"
         Me.Label101.Size = New System.Drawing.Size(123, 22)
         Me.Label101.TabIndex = 0
-        Me.Label101.Text = "Thành phần gia đình "
-        Me.Label101.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label101.Text = " Thành phần gia đình"
+        Me.Label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label102
         '
@@ -2481,7 +2651,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_tt_honnhan.BackColor = System.Drawing.Color.White
         Me.cb_tt_honnhan.Dock = System.Windows.Forms.DockStyle.Fill
         Me.cb_tt_honnhan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_tt_honnhan.ForeColor = System.Drawing.Color.Black
+        Me.cb_tt_honnhan.ForeColor = System.Drawing.Color.Navy
         Me.cb_tt_honnhan.FormattingEnabled = True
         Me.cb_tt_honnhan.Location = New System.Drawing.Point(161, 0)
         Me.cb_tt_honnhan.Name = "cb_tt_honnhan"
@@ -2532,7 +2702,7 @@ Partial Class frmCN_HSCanBo
         Me.edt_masothue.BackColor = System.Drawing.Color.White
         Me.edt_masothue.Dock = System.Windows.Forms.DockStyle.Left
         Me.edt_masothue.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edt_masothue.ForeColor = System.Drawing.Color.Black
+        Me.edt_masothue.ForeColor = System.Drawing.Color.Navy
         Me.edt_masothue.Location = New System.Drawing.Point(0, 0)
         Me.edt_masothue.Name = "edt_masothue"
         Me.edt_masothue.Size = New System.Drawing.Size(222, 26)
@@ -2586,7 +2756,7 @@ Partial Class frmCN_HSCanBo
         Me.edt_nh_tennh.BackColor = System.Drawing.Color.White
         Me.edt_nh_tennh.Dock = System.Windows.Forms.DockStyle.Fill
         Me.edt_nh_tennh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edt_nh_tennh.ForeColor = System.Drawing.Color.Black
+        Me.edt_nh_tennh.ForeColor = System.Drawing.Color.Navy
         Me.edt_nh_tennh.Location = New System.Drawing.Point(602, 0)
         Me.edt_nh_tennh.Name = "edt_nh_tennh"
         Me.edt_nh_tennh.Size = New System.Drawing.Size(221, 26)
@@ -2608,7 +2778,7 @@ Partial Class frmCN_HSCanBo
         Me.edt_nh_sotk.BackColor = System.Drawing.Color.White
         Me.edt_nh_sotk.Dock = System.Windows.Forms.DockStyle.Left
         Me.edt_nh_sotk.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edt_nh_sotk.ForeColor = System.Drawing.Color.Black
+        Me.edt_nh_sotk.ForeColor = System.Drawing.Color.Navy
         Me.edt_nh_sotk.Location = New System.Drawing.Point(333, 0)
         Me.edt_nh_sotk.Name = "edt_nh_sotk"
         Me.edt_nh_sotk.Size = New System.Drawing.Size(150, 26)
@@ -2630,7 +2800,7 @@ Partial Class frmCN_HSCanBo
         Me.edt_nh_makh.BackColor = System.Drawing.Color.White
         Me.edt_nh_makh.Dock = System.Windows.Forms.DockStyle.Left
         Me.edt_nh_makh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edt_nh_makh.ForeColor = System.Drawing.Color.Black
+        Me.edt_nh_makh.ForeColor = System.Drawing.Color.Navy
         Me.edt_nh_makh.Location = New System.Drawing.Point(121, 0)
         Me.edt_nh_makh.Name = "edt_nh_makh"
         Me.edt_nh_makh.Size = New System.Drawing.Size(101, 26)
@@ -2694,7 +2864,7 @@ Partial Class frmCN_HSCanBo
         Me.edt_bhxh_noilam.BackColor = System.Drawing.Color.White
         Me.edt_bhxh_noilam.Dock = System.Windows.Forms.DockStyle.Fill
         Me.edt_bhxh_noilam.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edt_bhxh_noilam.ForeColor = System.Drawing.Color.Black
+        Me.edt_bhxh_noilam.ForeColor = System.Drawing.Color.Navy
         Me.edt_bhxh_noilam.Location = New System.Drawing.Point(282, 23)
         Me.edt_bhxh_noilam.Name = "edt_bhxh_noilam"
         Me.edt_bhxh_noilam.Size = New System.Drawing.Size(702, 26)
@@ -2794,7 +2964,7 @@ Partial Class frmCN_HSCanBo
         Me.edt_bhxh_so.BackColor = System.Drawing.Color.White
         Me.edt_bhxh_so.Dock = System.Windows.Forms.DockStyle.Left
         Me.edt_bhxh_so.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edt_bhxh_so.ForeColor = System.Drawing.Color.Black
+        Me.edt_bhxh_so.ForeColor = System.Drawing.Color.Navy
         Me.edt_bhxh_so.Location = New System.Drawing.Point(121, 0)
         Me.edt_bhxh_so.Name = "edt_bhxh_so"
         Me.edt_bhxh_so.Size = New System.Drawing.Size(101, 26)
@@ -2844,7 +3014,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_congviec_lamlau.BackColor = System.Drawing.Color.White
         Me.edt_congviec_lamlau.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_congviec_lamlau.ForeColor = System.Drawing.Color.Black
+        Me.edt_congviec_lamlau.ForeColor = System.Drawing.Color.Navy
         Me.edt_congviec_lamlau.Location = New System.Drawing.Point(161, 0)
         Me.edt_congviec_lamlau.Multiline = True
         Me.edt_congviec_lamlau.Name = "edt_congviec_lamlau"
@@ -2885,7 +3055,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_sotruong_ct.BackColor = System.Drawing.Color.White
         Me.edt_sotruong_ct.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_sotruong_ct.ForeColor = System.Drawing.Color.Black
+        Me.edt_sotruong_ct.ForeColor = System.Drawing.Color.Navy
         Me.edt_sotruong_ct.Location = New System.Drawing.Point(161, 0)
         Me.edt_sotruong_ct.Multiline = True
         Me.edt_sotruong_ct.Name = "edt_sotruong_ct"
@@ -2928,7 +3098,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_cm_tochuc.BackColor = System.Drawing.Color.White
         Me.edt_cm_tochuc.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.edt_cm_tochuc.ForeColor = System.Drawing.Color.Black
+        Me.edt_cm_tochuc.ForeColor = System.Drawing.Color.Navy
         Me.edt_cm_tochuc.Location = New System.Drawing.Point(412, 0)
         Me.edt_cm_tochuc.Name = "edt_cm_tochuc"
         Me.edt_cm_tochuc.Size = New System.Drawing.Size(572, 26)
@@ -3145,7 +3315,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_tdct.BackColor = System.Drawing.Color.White
         Me.cb_tdct.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_tdct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_tdct.ForeColor = System.Drawing.Color.Black
+        Me.cb_tdct.ForeColor = System.Drawing.Color.Navy
         Me.cb_tdct.FormattingEnabled = True
         Me.cb_tdct.Location = New System.Drawing.Point(538, 0)
         Me.cb_tdct.Name = "cb_tdct"
@@ -3167,7 +3337,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_tdvh.BackColor = System.Drawing.Color.White
         Me.cb_tdvh.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_tdvh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_tdvh.ForeColor = System.Drawing.Color.Black
+        Me.cb_tdvh.ForeColor = System.Drawing.Color.Navy
         Me.cb_tdvh.FormattingEnabled = True
         Me.cb_tdvh.Location = New System.Drawing.Point(161, 0)
         Me.cb_tdvh.Name = "cb_tdvh"
@@ -3234,7 +3404,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_qd_ghichu.BackColor = System.Drawing.Color.White
         Me.edt_qd_ghichu.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_qd_ghichu.ForeColor = System.Drawing.Color.Black
+        Me.edt_qd_ghichu.ForeColor = System.Drawing.Color.Navy
         Me.edt_qd_ghichu.Location = New System.Drawing.Point(123, 0)
         Me.edt_qd_ghichu.Multiline = True
         Me.edt_qd_ghichu.Name = "edt_qd_ghichu"
@@ -3276,7 +3446,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_qd_cm_moi.BackColor = System.Drawing.Color.White
         Me.cb_qd_cm_moi.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_qd_cm_moi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_qd_cm_moi.ForeColor = System.Drawing.Color.Black
+        Me.cb_qd_cm_moi.ForeColor = System.Drawing.Color.Navy
         Me.cb_qd_cm_moi.FormattingEnabled = True
         Me.cb_qd_cm_moi.Location = New System.Drawing.Point(123, 0)
         Me.cb_qd_cm_moi.Name = "cb_qd_cm_moi"
@@ -3317,7 +3487,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_qd_chucvu_moi.BackColor = System.Drawing.Color.White
         Me.cb_qd_chucvu_moi.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_qd_chucvu_moi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_qd_chucvu_moi.ForeColor = System.Drawing.Color.Black
+        Me.cb_qd_chucvu_moi.ForeColor = System.Drawing.Color.Navy
         Me.cb_qd_chucvu_moi.FormattingEnabled = True
         Me.cb_qd_chucvu_moi.Location = New System.Drawing.Point(123, 0)
         Me.cb_qd_chucvu_moi.Name = "cb_qd_chucvu_moi"
@@ -3358,7 +3528,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_qd_phongban_moi.BackColor = System.Drawing.Color.White
         Me.cb_qd_phongban_moi.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_qd_phongban_moi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_qd_phongban_moi.ForeColor = System.Drawing.Color.Black
+        Me.cb_qd_phongban_moi.ForeColor = System.Drawing.Color.Navy
         Me.cb_qd_phongban_moi.FormattingEnabled = True
         Me.cb_qd_phongban_moi.Location = New System.Drawing.Point(123, 0)
         Me.cb_qd_phongban_moi.Name = "cb_qd_phongban_moi"
@@ -3399,7 +3569,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_qd_donvi_moi.BackColor = System.Drawing.Color.White
         Me.cb_qd_donvi_moi.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_qd_donvi_moi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_qd_donvi_moi.ForeColor = System.Drawing.Color.Black
+        Me.cb_qd_donvi_moi.ForeColor = System.Drawing.Color.Navy
         Me.cb_qd_donvi_moi.FormattingEnabled = True
         Me.cb_qd_donvi_moi.Location = New System.Drawing.Point(123, 0)
         Me.cb_qd_donvi_moi.Name = "cb_qd_donvi_moi"
@@ -3440,7 +3610,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_qd_chucvu.BackColor = System.Drawing.Color.White
         Me.cb_qd_chucvu.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_qd_chucvu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_qd_chucvu.ForeColor = System.Drawing.Color.Black
+        Me.cb_qd_chucvu.ForeColor = System.Drawing.Color.Navy
         Me.cb_qd_chucvu.FormattingEnabled = True
         Me.cb_qd_chucvu.Location = New System.Drawing.Point(123, 0)
         Me.cb_qd_chucvu.Name = "cb_qd_chucvu"
@@ -3454,7 +3624,7 @@ Partial Class frmCN_HSCanBo
         Me.Label204.Name = "Label204"
         Me.Label204.Size = New System.Drawing.Size(123, 22)
         Me.Label204.TabIndex = 2
-        Me.Label204.Text = " Chức vụ người ký "
+        Me.Label204.Text = "Chức vụ người ký "
         Me.Label204.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label78
@@ -3482,7 +3652,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_qd_nguoiky.BackColor = System.Drawing.Color.White
         Me.edt_qd_nguoiky.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_qd_nguoiky.ForeColor = System.Drawing.Color.Black
+        Me.edt_qd_nguoiky.ForeColor = System.Drawing.Color.Navy
         Me.edt_qd_nguoiky.Location = New System.Drawing.Point(395, 0)
         Me.edt_qd_nguoiky.Name = "edt_qd_nguoiky"
         Me.edt_qd_nguoiky.Size = New System.Drawing.Size(366, 26)
@@ -3520,7 +3690,7 @@ Partial Class frmCN_HSCanBo
         Me.Label202.Name = "Label202"
         Me.Label202.Size = New System.Drawing.Size(123, 22)
         Me.Label202.TabIndex = 0
-        Me.Label202.Text = "  Ngày hiệu lực "
+        Me.Label202.Text = "Ngày hiệu lực "
         Me.Label202.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label199
@@ -3556,7 +3726,7 @@ Partial Class frmCN_HSCanBo
         Me.dtpk_qd_ngayky.CustomFormat = "dd/MM/yyyy"
         Me.dtpk_qd_ngayky.Dock = System.Windows.Forms.DockStyle.Left
         Me.dtpk_qd_ngayky.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpk_qd_ngayky.Location = New System.Drawing.Point(669, 0)
+        Me.dtpk_qd_ngayky.Location = New System.Drawing.Point(671, 0)
         Me.dtpk_qd_ngayky.Name = "dtpk_qd_ngayky"
         Me.dtpk_qd_ngayky.Size = New System.Drawing.Size(92, 26)
         Me.dtpk_qd_ngayky.TabIndex = 5
@@ -3566,9 +3736,9 @@ Partial Class frmCN_HSCanBo
         Me.Label197.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label197.Location = New System.Drawing.Point(596, 0)
         Me.Label197.Name = "Label197"
-        Me.Label197.Size = New System.Drawing.Size(73, 22)
+        Me.Label197.Size = New System.Drawing.Size(75, 22)
         Me.Label197.TabIndex = 4
-        Me.Label197.Text = "   Ngày ký  "
+        Me.Label197.Text = "Ngày ký "
         Me.Label197.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb_qd_loaiqd
@@ -3576,7 +3746,7 @@ Partial Class frmCN_HSCanBo
         Me.cb_qd_loaiqd.BackColor = System.Drawing.Color.White
         Me.cb_qd_loaiqd.Dock = System.Windows.Forms.DockStyle.Left
         Me.cb_qd_loaiqd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cb_qd_loaiqd.ForeColor = System.Drawing.Color.Black
+        Me.cb_qd_loaiqd.ForeColor = System.Drawing.Color.Navy
         Me.cb_qd_loaiqd.FormattingEnabled = True
         Me.cb_qd_loaiqd.Location = New System.Drawing.Point(395, 0)
         Me.cb_qd_loaiqd.Name = "cb_qd_loaiqd"
@@ -3597,7 +3767,7 @@ Partial Class frmCN_HSCanBo
         '
         Me.edt_qd_soqd.BackColor = System.Drawing.Color.White
         Me.edt_qd_soqd.Dock = System.Windows.Forms.DockStyle.Left
-        Me.edt_qd_soqd.ForeColor = System.Drawing.Color.Black
+        Me.edt_qd_soqd.ForeColor = System.Drawing.Color.Navy
         Me.edt_qd_soqd.Location = New System.Drawing.Point(123, 0)
         Me.edt_qd_soqd.Name = "edt_qd_soqd"
         Me.edt_qd_soqd.Size = New System.Drawing.Size(121, 26)
@@ -3661,6 +3831,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_xuatngoai.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_xuatngoai.ColumnHeadersHeight = 29
         Me.dgv_xuatngoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_xuatngoai.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_xuatngoai.Location = New System.Drawing.Point(0, 21)
@@ -3674,6 +3845,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_xuatngoai.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_xuatngoai.RowHeadersVisible = False
+        Me.dgv_xuatngoai.RowHeadersWidth = 51
         Me.dgv_xuatngoai.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_xuatngoai.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_xuatngoai.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -4121,6 +4293,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hochieu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgv_hochieu.ColumnHeadersHeight = 29
         Me.dgv_hochieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hochieu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hochieu.Location = New System.Drawing.Point(0, 21)
@@ -4134,6 +4307,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hochieu.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_hochieu.RowHeadersVisible = False
+        Me.dgv_hochieu.RowHeadersWidth = 51
         Me.dgv_hochieu.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hochieu.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hochieu.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -4505,6 +4679,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_llvt.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgv_llvt.ColumnHeadersHeight = 29
         Me.dgv_llvt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_llvt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_llvt.Location = New System.Drawing.Point(0, 21)
@@ -4518,6 +4693,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_llvt.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgv_llvt.RowHeadersVisible = False
+        Me.dgv_llvt.RowHeadersWidth = 51
         Me.dgv_llvt.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_llvt.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_llvt.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -4889,6 +5065,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hosocu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.dgv_hosocu.ColumnHeadersHeight = 29
         Me.dgv_hosocu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hosocu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hosocu.Location = New System.Drawing.Point(0, 21)
@@ -4902,6 +5079,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_hosocu.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dgv_hosocu.RowHeadersVisible = False
+        Me.dgv_hosocu.RowHeadersWidth = 51
         Me.dgv_hosocu.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hosocu.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hosocu.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -5073,7 +5251,7 @@ Partial Class frmCN_HSCanBo
         Me.Label181.Name = "Label181"
         Me.Label181.Size = New System.Drawing.Size(998, 21)
         Me.Label181.TabIndex = 0
-        Me.Label181.Text = "Danh sách thông tin hồ sơ cũ (Lưu lại thông tin quá trình học tập công tác trước " & _
+        Me.Label181.Text = "Danh sách thông tin hồ sơ cũ (Lưu lại thông tin quá trình học tập công tác trước " &
     "đây của cán bộ)"
         Me.Label181.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5382,6 +5560,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_congtac.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.dgv_congtac.ColumnHeadersHeight = 29
         Me.dgv_congtac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_congtac.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_congtac.Location = New System.Drawing.Point(3, 26)
@@ -5395,6 +5574,7 @@ Partial Class frmCN_HSCanBo
         DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_congtac.RowHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.dgv_congtac.RowHeadersVisible = False
+        Me.dgv_congtac.RowHeadersWidth = 51
         Me.dgv_congtac.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_congtac.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_congtac.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -6366,4 +6546,16 @@ Partial Class frmCN_HSCanBo
     Friend WithEvents Panel93 As System.Windows.Forms.Panel
     Friend WithEvents edt_masothue As System.Windows.Forms.TextBox
     Friend WithEvents Label207 As System.Windows.Forms.Label
+    Friend WithEvents cb_ns_xa As ComboBox
+    Friend WithEvents Label95 As Label
+    Friend WithEvents cb_ns_thon As ComboBox
+    Friend WithEvents cb_nq_thon As ComboBox
+    Friend WithEvents Label171 As Label
+    Friend WithEvents cb_nq_xa As ComboBox
+    Friend WithEvents cb_ttr_thon As ComboBox
+    Friend WithEvents Label209 As Label
+    Friend WithEvents cb_ttr_xa As ComboBox
+    Friend WithEvents cb_tt_thon As ComboBox
+    Friend WithEvents Label205 As Label
+    Friend WithEvents cb_tt_xa As ComboBox
 End Class
