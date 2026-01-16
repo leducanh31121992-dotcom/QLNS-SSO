@@ -803,7 +803,7 @@
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If (db.Rows.Count > 0) Then
-                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim())
+                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim(), _DonviId)
                             strSQL = "Select id,ten_phong as ten_goi From PhongBan Where Charindex('" & tructhuocCurrent.ToString & "',truc_thuoc) > 0 and Status = 1 Order by Ma_so"
                             arrQd_Phongban_moi = _Globals.Bind_ComBoBox(cb_qd_phongban_moi, strSQL, "---Phòng ban---")
                         End If

@@ -296,12 +296,18 @@ Public Class TruyVan_DsCanBo
                     _column.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
                     _column.Frozen = True
 
+                Case "TenDV_Child"
+                    _column.HeaderText = "Đơn vị"
+                    _column.Width = 130
+                    _column.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+                    _column.Frozen = True
+
                 Case "HoTen"
                     _column.HeaderText = "Đơn vị/Phòng ban/Họ tên"
                     _column.Width = 180
                     _column.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
                     _column.Frozen = True
-                    
+
                 Case "MaCB"
                     _column.HeaderText = "Mã CB"
                     _column.Width = 60

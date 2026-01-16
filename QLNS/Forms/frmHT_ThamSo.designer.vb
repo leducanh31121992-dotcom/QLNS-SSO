@@ -780,7 +780,7 @@ Partial Class frmHT_ThamSo
         Me.edt_tendiaban.Name = "edt_tendiaban"
         Me.edt_tendiaban.Size = New System.Drawing.Size(210, 26)
         Me.edt_tendiaban.TabIndex = 6
-        Me.tooltip_main.SetToolTip(Me.edt_tendiaban, "Thông tin địa bàn sử dụng cho việc in các báo cáo. Ví dụ nếu là PGD Ba Đình: [Ba " & _
+        Me.tooltip_main.SetToolTip(Me.edt_tendiaban, "Thông tin địa bàn sử dụng cho việc in các báo cáo. Ví dụ nếu là PGD Ba Đình: [Ba " &
         "Đình, Ngày .... tháng..... năm......] thì tại đây nhập chuỗi Ba Đình")
         '
         'Label6
@@ -1007,6 +1007,7 @@ Partial Class frmHT_ThamSo
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_main.ColumnHeadersHeight = 29
         Me.dgv_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_main.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_main.Location = New System.Drawing.Point(0, 0)
@@ -1020,6 +1021,7 @@ Partial Class frmHT_ThamSo
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_main.RowHeadersVisible = False
+        Me.dgv_main.RowHeadersWidth = 51
         Me.dgv_main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black

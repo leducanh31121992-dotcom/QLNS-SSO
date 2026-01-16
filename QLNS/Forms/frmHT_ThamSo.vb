@@ -179,7 +179,7 @@ Public Class frmHT_ThamSo
         End If
 
         Dim _DonViIdTMP As Integer = CType(IIf(ARL_DonVi.Count > 0, ARL_DonVi(cb_donvi.SelectedIndex), "0"), Integer)
-        If dtpk_ngayapdung.Value.Date > DateTimeUtil.StringToDateTime("01/01/2020", "dd/MM/yyyy") Then
+        If dtpk_ngayapdung.Value.Date > DateTimeUtil.StringToDateTime("01/01/2020", "dd/MM/yyyy") And _DonViIdTMP <= 804 Then
             If (_RecordId <> 0) Then
                 strSQL = String.Format("Select Count(*) From SysVar Where TrangThai = 1 And Id_DonVi = {0} And NgayHL <= '2020-01-01' And Id <> {1} ", _DonViIdTMP, _RecordId)
             Else
@@ -192,7 +192,6 @@ Public Class frmHT_ThamSo
                 Return False
             End If
         End If
-       
 
         If (edt_giamdoc.Text.Trim() = "" And cb_giamdoc.Items.Count > 1) Then
             MessageBox.Show("Thông tin tham số Giám đốc không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
@@ -280,7 +279,13 @@ Public Class frmHT_ThamSo
             If (DONVI = "000199" Or DONVI = "000196" Or DONVI = "000197" Or DONVI = "000101") Then
                 strSQL = String.Format("Select Id,dbo.Replace_BranchName(Ten_Goi) Name,Ma_So Code From ChiNhanh Where Status=1 And Ma_So Like N'{0}%' Order By Substring(Ma_So,1,4), Id_Goc,Ma_So", DONVI)
             Else
-                strSQL = String.Format("Select Id,dbo.Replace_BranchName(Ten_Goi) Name,Ma_So Code From ChiNhanh Where Status=1 And Ma_So Like N'{0}%' Order By Substring(Ma_So,1,4), Id_Goc,Ma_So", DONVI.Substring(0, 4))
+                strSQL = String.Format("Select Id,dbo.Replace_BranchName(Ten_Goi) Name,Ma_So Code From ChiNhanh A Where A.Status=1 And Ma_So Like N'{0}%' Order By Substring(Ma_So,1,4), Id_Goc,Ma_So", DONVI.Substring(0, 4))
+
+                strSQL = "Select A.Id,dbo.Replace_BranchName(A.Ten_Goi) Name,A.Ma_So Code From ChiNhanh A Where A.Status = 1 "
+                strSQL = strSQL + " And ( A.Id In (Select Distinct X.Id From ChiNhanh X Where X.Status=1 And X.Ma_So Like N'" + DONVI.Substring(0, 4) + "%' )  "
+                strSQL = strSQL + "    Or A.Id_Goc In (Select Distinct O.Id From ChiNhanh O Where O.Status=1 And O.Ma_So Like N'" + DONVI.Substring(0, 4) + "%' ) "
+                strSQL = strSQL + "     ) "
+                strSQL = strSQL + " Order By Status Desc,Substring(A.Ma_So,1,4), A.Id_Goc, A.Ma_So Asc"
             End If
         ElseIf Cap_Nd = 3 Then
             strSQL = String.Format("Select Id,dbo.Replace_BranchName(Ten_Goi) Name,Ma_So Code From ChiNhanh Where Status=1 And Ma_So Like N'{0}' Order By Substring(Ma_So,1,4), Id_Goc,Ma_So", DONVI)
@@ -467,18 +472,18 @@ Public Class frmHT_ThamSo
 
                 'Giám đốc Ban TCCB/Trưởng phòng HC-TC
                 If _PosCodeSelect = "001114" Or _PosCodeSelect = "002734" Or _PosCodeSelect = "002821" Or _PosCodeSelect = "003799" Or _PosCodeSelect = "005399" Then
-                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1411','1412','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1428'", "'06','18','22','23','31','26','14','20'")
+                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1411','1412','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1451','1428'", "'06','18','22','23','31','26','14','20'")
                 Else
-                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1412','1413','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1428'", "'06','18','22','23','31','26'")
+                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1412','1413','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1451','1428'", "'06','18','22','23','31','26'")
                 End If
                 ARL_HcToChuc = _Globals.Bind_ComBoBox(cb_hctochuc, strSQL, "--- Chọn " + _TieuDeHCTC + "---")
                 cb_hctochuc_SelectedIndexChanged(sender, Nothing)
 
                 'Giám đốc Ban KTTC/Trưởng phòng Kế toán
                 If _PosCodeSelect = "001114" Or _PosCodeSelect = "002734" Or _PosCodeSelect = "002821" Or _PosCodeSelect = "003799" Or _PosCodeSelect = "005399" Then
-                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1411','1412','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1428'", "'09','15','21','29','34','14','20'")
+                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1411','1412','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1451','1428'", "'09','15','21','29','34','14','20'")
                 Else
-                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1412','1413','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1428'", "'09','15','21','29','34'")
+                    strSQL = HeThongBLL.GetQuery_ListCanBos(_DonViId, sNgayAP, "'1412','1413','1406','1430','1432','1414','1450','1439','1444','1426','1415','1443','1451','1428'", "'09','15','21','29','34'")
                 End If
 
                 ARL_KeToan = _Globals.Bind_ComBoBox(cb_ketoan, strSQL, "--- Chọn " + _TieuDeKeToan + "---")

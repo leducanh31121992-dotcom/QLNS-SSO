@@ -612,7 +612,7 @@ Public Class ChiLuongForm
             If (cb_donvi.SelectedIndex > 0 And cb_donvi.Items.Count <> 0) Then
                 Dim _PosCode As String = ARL_PosCode(cb_donvi.SelectedIndex)
                 If _PosCode <> "" Then
-                    Dim sTrucThuoc As String = _HS_CanBo.GetTrucThuoc(_PosCode)
+                    Dim sTrucThuoc As String = _HS_CanBo.GetTrucThuoc(_PosCode, 0)
                     Dim sSQL As String = ""
                     sSQL = String.Format("Select '60'+Ma_So Code,Ten_Phong Name,Id,Status,Truc_Thuoc,Ten_VT From PhongBan Where Status = 1 And Charindex('{0}',Truc_Thuoc) > 0 Order By Ma_So", sTrucThuoc)
                     ARL_PhongBan = _Globals.BindList_ComBoBox_ListBox(cb_phongban, Nothing, sSQL, "--- Phòng ban trực thuộc ---", 1)

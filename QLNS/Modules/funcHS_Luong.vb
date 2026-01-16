@@ -239,8 +239,8 @@ Module funcHS_Luong
         Dim strSql As String = ""
         Dim strStatusActive As String = " And Status = 1 "
         If Not only_P_Actived Then strStatusActive = ""
-        maDonvi = dbconn.getString("SELECT Ma_So From ChiNhanh Where id=" & vIdDonvi)
-        currTRUCTHUOC = GetTrucThuoc(maDonvi)
+        maDonvi = dbconn.getString("SELECT Ma_So From ChiNhanh Where Id=" & vIdDonvi & " Order By Id Desc")
+        currTRUCTHUOC = GetTrucThuoc(maDonvi, vIdDonvi)
         If NoneRow Then
             If DisplayPGD Then
                 'Ap dung cho Truong hop ChiLuong
@@ -645,32 +645,49 @@ Module funcHS_Luong
     ''' <summary>
     ''' Hàm trả lại giá trị - Trực thuộc
     ''' </summary>
-    ''' <param name="Ma_So">Mã số của chi nhánh</param>
+    ''' <param name="pMa_So">Mã số của chi nhánh</param>
     ''' <returns></returns>
     ''' <remarks></remarks>
-    Public Function GetTrucThuoc(ByVal Ma_So As String) As String
+    Public Function GetTrucThuoc(ByVal pMa_So As String, ByVal pDonViId As Int32) As String
         Dim strReturn As String = ""
         Dim _SqlHelper As New DBAccess
-        Select Case Ma_So
-            Case gMaDonViTW
-                strReturn = 1 'Globals.GetAppSetting("HSC").Trim()
-            Case "000196"
-                strReturn = 5 'Globals.GetAppSetting("TTCNTT").Trim()
-            Case "000197"
-                strReturn = 7 'Globals.GetAppSetting("TTDT").Trim()
-            Case "000101"
-                strReturn = 9 'Globals.GetAppSetting("SGD").Trim()
-                'Chữ bổ sung Cơ sở đâò tạo
-            Case "002821", "001114", "002734", "003799", "004532", "005399"
-                strReturn = 6 'Cơ sở đào tạo
-            Case Else
-                Dim iCap As Integer = _SqlHelper.getNumber("SELECT Id_Goc From ChiNhanh Where Ma_So = '" & Ma_So & "'")
-                If iCap = 1 Then
-                    strReturn = 2 'Globals.GetAppSetting("TINH").Trim()
-                Else
-                    strReturn = 4 'Globals.GetAppSetting("HUYEN").Trim()
-                End If
-        End Select
+        'Select Case Ma_So
+        '    Case gMaDonViTW
+        '        strReturn = 1 'Globals.GetAppSetting("HSC").Trim()
+        '    Case "000196"
+        '        strReturn = 5 'Globals.GetAppSetting("TTCNTT").Trim()
+        '    Case "000197"
+        '        strReturn = 7 'Globals.GetAppSetting("TTDT").Trim()
+        '    Case "000101"
+        '        strReturn = 9 'Globals.GetAppSetting("SGD").Trim()
+        '        'Chữ bổ sung Cơ sở đâò tạo
+        '    Case "002821", "001114", "002734", "003799", "004532", "005399"
+        '        strReturn = 6 'Cơ sở đào tạo
+        '    Case Else
+        '        Dim sQuerySelect As String = ""
+        '        sQuerySelect = "Select Top 1 Id_Goc From ChiNhanh Where Ma_So = '" & Ma_So & "'"
+        '        If (pDonViId <> 0) Then
+        '            sQuerySelect = String.Format("{0} And Id = {1}", sQuerySelect, pDonViId)
+        '        End If
+        '        sQuerySelect = String.Format("{0} Order By Id Desc", sQuerySelect)
+
+        '        Dim iCap As Integer = _SqlHelper.getNumber(sQuerySelect)
+        '        If iCap = 1 Then
+        '            strReturn = 2 'Globals.GetAppSetting("TINH").Trim()
+        '        Else
+        '            strReturn = 4 'Globals.GetAppSetting("HUYEN").Trim()
+        '        End If
+        'End Select
+        Dim sQuerySelect As String = ""
+        sQuerySelect = "Select Top 1 IsNull(Dien_Thoai,'') From ChiNhanh Where Ma_So = '" & pMa_So & "'"
+        If (pDonViId <> 0) Then
+            sQuerySelect = String.Format("{0} And Id = {1}", sQuerySelect, pDonViId)
+        End If
+        sQuerySelect = String.Format("{0} Order By Id_Goc Asc,Id Desc", sQuerySelect)
+
+        'Dim iId_Goc As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}'", pPosCode), 0)
+        strReturn = SoftSqlHelper.GetString(sQuerySelect, "")
+
         Return strReturn
     End Function
 
@@ -865,7 +882,7 @@ Module funcHS_Luong
         Dim strSqlCB As String = ""
         Dim dtCB As DataTable
 
-        currTRUCTHUOC = GetTrucThuoc(CodeParentNode)
+        currTRUCTHUOC = GetTrucThuoc(CodeParentNode, IdParentNode)
         dtPB = db.SelectDBRows("SELECT * From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1 Order by Ma_So")
         If dtPB.Rows.Count > 0 Then
             For i = 0 To dtPB.Rows.Count - 1
@@ -990,33 +1007,146 @@ Module funcHS_Luong
         Dim VietTat_DVcurr As String = ""
         Dim currTRUCTHUOC As String = ""
         Dim vID_DonVi_goc As Integer = db.getNumber("SELECT Id_Goc From ChiNhanh Where [id]=" & vIdDonvi)
-        If vID_DonVi_goc = 0 Or vID_DonVi_goc = 1 Then vID_DonVi_goc = vIdDonvi
+        If vID_DonVi_goc = 0 Or vID_DonVi_goc = 1 Then
+            vID_DonVi_goc = vIdDonvi
+        End If
         'VietTat_DVcurr = TEN_DV_VT
         VietTat_DVcurr = db.getString("SELECT ten_vt From ChiNhanh Where id=" & vID_DonVi_goc)
         Dim sTen_VT = db.getString(String.Format("Select Ten_VT From ChiNhanh Where Id={0}", vID_DonVi_goc))
 
         If isNghiHuu_ChuyenCC Then
             'Lấy danh sách cán bộ đã nghỉ huu hoặc chuyển công tác tới đơn vị khác
-            currTRUCTHUOC = GetTrucThuoc(db.getString("SELECT Ma_So From ChiNhanh Where id=" & vID_DonVi_goc))
+            currTRUCTHUOC = GetTrucThuoc(db.getString("SELECT Ma_So From ChiNhanh Where id=" & vID_DonVi_goc), vID_DonVi_goc)
             If DONVI = gMaDonViTW Then
                 If vID_DonVi_goc = IdDONVI Then
                     strSqlCB = " SELECT t1.IdCanBo, MaCB, Hoten, login_Username, ID_Nhom, CapQuanLy, t1.IdDonvi_Moi, t1.IdPhong_Moi, t3.IdNew, t3.DBtmp, t3.Rpt_Ngoainganh " &
                             " From QDNhanSu t1,(SELECT IdCanBo, max(NgayHL) as NgayHL  From QDNhanSu WHERE IsQD_NHCS =1 AND IsKiemNhiem = 0  Group by Idcanbo Having max(NgayHL)<=getdate()) t2, HS_Canbo t3 " &
                             " WHERE(t1.IdCanBo = t2.IdCanBo And t1.NgayHL = t2.NgayHL And t2.IdCanBo = t3.IdCanBo)" &
-                            "    AND ((t1.IdDonvi_Moi=" & vIdDonvi & " AND t1.IdPhong_Moi in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1) AND EXISTS (SELECT t4.IdCanbo From (SELECT IdCanBo, max(Ngay_HL) as Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS =1 AND left(IdCanBo,4)='VBSP' GROUP BY Idcanbo Having max(Ngay_HL)<=getdate()) t4 WHERE t4.idCanbo= t2.idCanbo AND t4.Ngay_HL >t2.NgayHL ))" &
-                            "          OR (t1.idDonvi_CU=" & vIdDonvi & " AND t1.idPhong_CU in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1 ) AND t1.IdDonvi_Moi not in (SELECT id From ChiNhanh Where id=" & vIdDonvi & ") and Active=1)) " &
-                            "    AND IsQD_NHCS =1 AND left(t2.IdCanBo,4)='VBSP'" &
+                            "    AND ((t1.IdDonvi_Moi=" & vIdDonvi & " AND t1.IdPhong_Moi in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status In (0, 1) ) AND EXISTS (SELECT t4.IdCanbo From (SELECT IdCanBo, max(Ngay_HL) as Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS =1 GROUP BY Idcanbo Having max(Ngay_HL)<=getdate()) t4 WHERE t4.idCanbo= t2.idCanbo AND t4.Ngay_HL >t2.NgayHL ))" &
+                            "          OR (t1.idDonvi_CU=" & vIdDonvi & " AND t1.idPhong_CU in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status In (0, 1) ) AND t1.IdDonvi_Moi not in (SELECT id From ChiNhanh Where id=" & vIdDonvi & ") and Active=1)) " &
+                            "    AND IsQD_NHCS =1 " &
                             " Order by IdChucvu_moi, idChuyenMon_Moi, MaCB, Hoten "
                     'Neu chuyen tu chi nhanh ve thi lay ten viet tat cho nay khong phai VBSP thi sao?  Bỏ đoạn này left(IdCanBo,4)='VBSP' AND 
-
+                    'Đoạn này dùng trước 09/2025
+                    'strSqlCB = " SELECT t1.IdCanBo, MaCB, Hoten, login_Username, ID_Nhom, CapQuanLy, t1.IdDonvi_Moi, t1.IdPhong_Moi, t3.IdNew, t3.DBtmp, t3.Rpt_Ngoainganh " &
+                    '       " From QDNhanSu t1,(SELECT IdCanBo, max(NgayHL) as NgayHL  From QDNhanSu WHERE IsQD_NHCS =1 AND IsKiemNhiem = 0  Group by Idcanbo Having max(NgayHL)<=getdate()) t2, HS_Canbo t3 " &
+                    '       " WHERE(t1.IdCanBo = t2.IdCanBo And t1.NgayHL = t2.NgayHL And t2.IdCanBo = t3.IdCanBo)" &
+                    '       "    AND ((t1.IdDonvi_Moi=" & vIdDonvi & " AND t1.IdPhong_Moi in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1) AND EXISTS (SELECT t4.IdCanbo From (SELECT IdCanBo, max(Ngay_HL) as Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS =1 AND left(IdCanBo,4)='VBSP' GROUP BY Idcanbo Having max(Ngay_HL)<=getdate()) t4 WHERE t4.idCanbo= t2.idCanbo AND t4.Ngay_HL >t2.NgayHL ))" &
+                    '       "          OR (t1.idDonvi_CU=" & vIdDonvi & " AND t1.idPhong_CU in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1 ) AND t1.IdDonvi_Moi not in (SELECT id From ChiNhanh Where id=" & vIdDonvi & ") and Active=1)) " &
+                    '       "    AND IsQD_NHCS =1 AND left(t2.IdCanBo,4)='VBSP'" &
+                    '       " Order by IdChucvu_moi, idChuyenMon_Moi, MaCB, Hoten "
                 Else '
-                    strSqlCB = " SELECT t1.IdCanBo, MaCB, Hoten, login_Username, ID_Nhom, CapQuanLy, t1.IdDonvi_Moi, t1.IdPhong_Moi, t3.IdNew, t3.DBtmp, t3.Rpt_Ngoainganh " &
-                            " From QDNhanSu t1,(SELECT IdCanBo, max(NgayHL) as NgayHL  From QDNhanSu WHERE IsQD_NHCS =1 AND IsKiemNhiem = 0 Group by Idcanbo Having max(NgayHL)<=getdate()) t2, HS_Canbo t3 " &
-                            " WHERE(t1.IdCanBo = t2.IdCanBo And t1.NgayHL = t2.NgayHL And t2.IdCanBo = t3.IdCanBo)" &
-                            "    AND ((t1.IdDonvi_Moi=" & vIdDonvi & " AND t1.IdPhong_Moi in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1 ) AND EXISTS (SELECT t4.IdCanbo From (SELECT IdCanBo, max(Ngay_HL) as Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS =1 GROUP BY Idcanbo Having max(Ngay_HL)<=getdate()) t4 WHERE t4.idCanbo= t2.idCanbo AND t4.Ngay_HL >t2.NgayHL ))" &
-                            "          OR (t1.idDonvi_Cu=" & vIdDonvi & " AND t1.idPhong_Cu in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1) AND t1.IdDonvi_Moi not in (SELECT id From ChiNhanh Where id=" & vIdDonvi & " or Id_Goc=" & vIdDonvi & ") and Active=1)) " &
-                            "    AND IsQD_NHCS =1 AND left(t2.IdCanBo,4) in (SELECT ten_vt From ChiNhanh Where id=" & vID_DonVi_goc & "  or Ma_So='000100') " &
-                            " Order by IdChucvu_moi, idChuyenMon_Moi, MaCB, Hoten "
+                    strSqlCB = "Select T1.IdCanBo, MaCB, HoTen, Login_UserName, Id_Nhom, CapQuanLy, T1.IdDonvi_Moi, T1.IdPhong_Moi, T3.IdNew, T3.DBtmp, T3.Rpt_Ngoainganh " &
+                            "       From QDNhanSu T1, (Select IdCanBo, Max(NgayHL) As NgayHL From QDNhanSu  " &
+                            "                                 Where IsQD_NHCS =1 And IsKiemNhiem = 0 Group by IdcanBo Having Max(NgayHL) <= GetDate() ) T2," &
+                            "            HS_CanBo T3 " &
+                            "       Where (T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo) " &
+                            "         And ( (T1.IdDonvi_Moi IN (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") )  " &
+                            "         And T1.IdPhong_Moi In (SELECT X.Id From PhongBan X Where CharIndex('" & currTRUCTHUOC.ToString & "',Truc_Thuoc) > 0 And Status In (0, 1) )     " &
+                            "             And Exists (Select T4.IdCanBo From ( " &
+                            "                    Select IdCanBo, Max(Ngay_HL) as Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS = 1 GROUP BY IdCanBo " &
+                            "                           Having Max(Ngay_HL) <= GetDate()) T4 Where T4.IdCanBo= t2.IdCanBo And T4.Ngay_HL > T2.NgayHL )) " &
+                            "           OR (T1.IdDonvi_Cu In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") )  " &
+                            "               And T1.IdPhong_Cu In (Select X.Id From PhongBan X Where CharIndex('" & currTRUCTHUOC.ToString & "',Truc_Thuoc) > 0 And Status In (0, 1) ) " &
+                            "               And T1.IdDonvi_Moi Not In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") ) And Active = 1))   " &
+                            "       And IsQD_NHCS = 1  " &
+                            " Order by IdChucvu_Moi, IdChuyenMon_Moi, MaCB, HoTen "
+                    If vID_DonVi_goc <> 0 And vID_DonVi_goc <> 1 Then
+                        currTRUCTHUOC = GetTrucThuoc(db.getString("SELECT Ma_So From ChiNhanh Where id=" & vIdDonvi), vIdDonvi)
+                    End If
+
+                    'Ngày 25/09/2025: CHUDV sửa ghéo 2 loại hình và lấy được tên quyết định
+                    strSqlCB = "Select ZZ.* From " &
+                               "       ( " &            '	--Nghỉ hưu/Chấm dứt hợp đồng lao động 
+                               "		Select T5.IdLoaiQD,(Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T5.IdLoaiQD) LoaiQD_HT, " &
+                               "			   (Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T5.IdLoaiQD) GhiChu, " &
+                               "               T1.IdCanBo, MaCB, HoTen, IsNull(Login_UserName,'') Login_UserName, IsNull(Id_Nhom,'') Id_Nhom, IsNull(CapQuanLy,0) CapQuanLy, " &
+                               "               T1.IdDonvi_Moi, T1.IdPhong_Moi, T3.IdNew, T1.IdChucvu_Moi, T1.IdChuyenMon_Moi, T3.GioiTinh,T3.NgaySinh " &
+                               "			   From QDNhanSu T1, " &
+                               "			   (" &
+                               "				Select IdCanBo, Max(NgayHL) As NgayHL From QDNhanSu " &
+                               "                       Where IsQD_NHCS =1 And IsKiemNhiem = 0 Group by IdcanBo Having Max(NgayHL) <= GetDate() " &
+                               "			   ) T2, HS_CanBo T3, " &
+                               "			   (" &
+                               "					Select IdCanBo, Max(Ngay_HL) as Ngay_HL From HS_CBThoiviec " &
+                               "							Where IsQD_NHCS = 1 Group By IdCanBo Having Max(Ngay_HL) <= GetDate()" &
+                               "			   ) T4, HS_CBThoiviec T5 " &
+                               "			   Where (T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo) " &
+                               "				 And (T4.IdCanBo= T2.IdCanBo And T4.Ngay_HL > T2.NgayHL) And T4.IdCanBo=T5.IdCanBo And T4.Ngay_HL=T5.Ngay_HL " &
+                               "				 And ( " &
+                               "						  T1.IdDonvi_Moi In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id = " & vIdDonvi & " Or X.Id_Goc = " & vIdDonvi & ") ) " &
+                               "					  And T1.IdPhong_Moi In (SELECT X.Id From PhongBan X Where CharIndex('" & currTRUCTHUOC.ToString & "',Truc_Thuoc) > 0 And Status In (0, 1) ) " &
+                               "					 ) " &
+                               "				 And T1.IsQD_NHCS = 1" &
+                               "		Union All	" &             '--Chuyển công tác
+                               "		Select T1.IdLoaiQD,(Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T1.IdLoaiQD) LoaiQD_HT, " &
+                               "			   N'Chuyển công tác ' + (Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T1.IdLoaiQD) GhiChu, " &
+                               "			   T1.IdCanBo, MaCB, HoTen, IsNull(Login_UserName,'') Login_UserName, IsNull(Id_Nhom,'') Id_Nhom, IsNull(CapQuanLy,0) CapQuanLy, " &
+                               "			   T1.IdDonvi_Moi, T1.IdPhong_Moi, T3.IdNew, T1.IdChucvu_Moi, T1.IdChuyenMon_Moi, T3.GioiTinh,T3.NgaySinh " &
+                               "			   From QDNhanSu T1, " &
+                               "			   (Select IdCanBo, Max(NgayHL) As NgayHL From QDNhanSu " &
+                               "					   Where IsQD_NHCS =1 And IsKiemNhiem = 0 Group by IdcanBo Having Max(NgayHL) <= GetDate() " &
+                               "			   ) T2, HS_CanBo T3 " &
+                               "			 Where (T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo) " &
+                               "			 And" &
+                               "				(   T1.IdDonvi_Cu In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") )" &
+                               "				And T1.IdPhong_Cu In (Select X.Id From PhongBan X Where CharIndex('" & currTRUCTHUOC.ToString & "',Truc_Thuoc) > 0 And Status In (0, 1) )" &
+                               "				And T1.IdDonvi_Moi Not In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") )		" &
+                               "				) " &
+                               "	   ) As ZZ Order by ZZ.IdChucvu_Moi, ZZ.IdChuyenMon_Moi, ZZ.MaCB, ZZ.HoTen"
+
+                    '  Select Case* From
+                    '  (
+                    'Select Case T5.IdLoaiQD,(Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T5.IdLoaiQD) LoaiQD_HT, 
+                    '    (Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T5.IdLoaiQD) GhiChu, 
+                    '    T1.IdCanBo, MaCB, HoTen, IsNull(Login_UserName,'') Login_UserName, IsNull(Id_Nhom,'') Id_Nhom, IsNull(CapQuanLy,0) CapQuanLy, 
+                    '             T1.IdDonvi_Moi, T1.IdPhong_Moi, T3.IdNew, T1.IdChucvu_Moi, T1.IdChuyenMon_Moi, T3.GioiTinh
+                    '             From QDNhanSu T1,
+                    '    (
+                    '  Select IdCanBo, Max(NgayHL) As NgayHL From QDNhanSu
+                    '      Where IsQD_NHCS = 1 And IsKiemNhiem = 0 Group by IdcanBo Having Max(NgayHL) <= GetDate() 
+                    '    ) T2, HS_CanBo T3,
+                    '    (
+                    '   Select Case IdCanBo, Max(Ngay_HL) As Ngay_HL From HS_CBThoiviec 
+                    '                          Where IsQD_NHCS = 1 Group By IdCanBo Having Max(Ngay_HL) <= GetDate()
+                    '    ) T4, HS_CBThoiviec T5
+                    '    Where(T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo)
+                    '   And (T4.IdCanBo= T2.IdCanBo And T4.Ngay_HL > T2.NgayHL) And T4.IdCanBo=T5.IdCanBo And T4.Ngay_HL=T5.Ngay_HL
+                    '   And (
+                    '      T1.IdDonvi_Moi In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=957 Or X.Id_Goc=957) ) 
+                    '     And T1.IdPhong_Moi In (SELECT X.Id From PhongBan X Where CharIndex('2',Truc_Thuoc) > 0 And Status In (0, 1) ) 
+                    '    )
+                    '   And T1.IsQD_NHCS = 1
+                    'Union ALL - -Chuyển công tác
+                    '      Select Case T1.IdLoaiQD,(Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T1.IdLoaiQD) LoaiQD_HT, 
+                    '             N 'Chuyển công tác ' + (Select Top 1 X.Ten_Goi From DanhMuc X Where X.Id=T1.IdLoaiQD) GhiChu, 
+                    '                  T1.IdCanBo, MaCB, HoTen, IsNull(Login_UserName,'') Login_UserName, IsNull(Id_Nhom,'') Id_Nhom, IsNull(CapQuanLy,0) CapQuanLy,
+                    '                                  T1.IdDonvi_Moi, T1.IdPhong_Moi, T3.IdNew, T1.IdChucvu_Moi, T1.IdChuyenMon_Moi, T3.GioiTinh
+                    '             From QDNhanSu T1,
+                    '  (Select IdCanBo, Max(NgayHL) As NgayHL From QDNhanSu
+                    '    Where IsQD_NHCS = 1 And IsKiemNhiem = 0 Group by IdcanBo Having Max(NgayHL) <= GetDate() 
+                    '  ) T2, HS_CanBo T3
+                    '  Where(T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo)
+                    '  And
+                    '  (   T1.IdDonvi_Cu In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=957 Or X.Id_Goc=957) )
+                    '  And T1.IdPhong_Cu In (Select X.Id From PhongBan X Where CharIndex('2',Truc_Thuoc) > 0 And Status In (0, 1) )
+                    '  And T1.IdDonvi_Moi Not In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=957 Or X.Id_Goc=957) )		
+                    '  ) 
+                    ') As ZZ Order by ZZ.IdChucvu_Moi, ZZ.IdChuyenMon_Moi, ZZ.MaCB, ZZ.HoTen
+
+
+                    '--'Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") 
+                    'Đoạn này dùng trước 09/2025
+                    'strSqlCB = " SELECT t1.IdCanBo, MaCB, Hoten, login_Username, ID_Nhom, CapQuanLy, t1.IdDonvi_Moi, t1.IdPhong_Moi, t3.IdNew, t3.DBtmp, t3.Rpt_Ngoainganh " &
+                    '        " From QDNhanSu t1,(SELECT IdCanBo, max(NgayHL) as NgayHL  From QDNhanSu WHERE IsQD_NHCS =1 AND IsKiemNhiem = 0 Group by Idcanbo Having max(NgayHL)<=getdate()) t2, HS_Canbo t3 " &
+                    '        " WHERE(t1.IdCanBo = t2.IdCanBo And t1.NgayHL = t2.NgayHL And t2.IdCanBo = t3.IdCanBo)" &
+                    '        "    AND ((t1.IdDonvi_Moi=" & vIdDonvi & " AND t1.IdPhong_Moi in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status In (0, 1) ) AND EXISTS (SELECT t4.IdCanbo From (SELECT IdCanBo, max(Ngay_HL) as Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS =1 GROUP BY Idcanbo Having max(Ngay_HL)<=getdate()) t4 WHERE t4.idCanbo= t2.idCanbo AND t4.Ngay_HL >t2.NgayHL ))" &
+                    '        "          OR (t1.idDonvi_Cu=" & vIdDonvi & " AND t1.idPhong_Cu in (SELECT [id] From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status In (0, 1) ) AND t1.IdDonvi_Moi not in (SELECT id From ChiNhanh Where id=" & vIdDonvi & " or Id_Goc=" & vIdDonvi & ") and Active=1)) " &
+                    '        "    AND IsQD_NHCS =1 AND left(t2.IdCanBo,4) in (SELECT ten_vt From ChiNhanh Where id=" & vID_DonVi_goc & "  or Ma_So='000100') " &
+                    '        " Order by IdChucvu_moi, idChuyenMon_Moi, MaCB, Hoten "
+
+
+
                     'Bỏ đoạn này AND (left(IdCanBo,4) in (SELECT ten_vt From ChiNhanh Where id=" & vID_DonVi_goc & ") OR left(IdCanBo,4)='VBSP') 
                 End If
             Else
@@ -1060,7 +1190,7 @@ Module funcHS_Luong
                           "	   Where (T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo)    " &
                           "		AND (" &
                           "				(" &
-                          "					(T1.IdDonvi_Moi In (Select X.Id From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & "))" &
+                          "					(T1.IdDonvi_Moi In ( Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ")  ))" &
                           "				 And EXISTS " &
                           "					(" &
                           "						SELECT T4.IdCanBo From " &
@@ -1071,10 +1201,38 @@ Module funcHS_Luong
                           "					)" &
                           "				)" &
                           "			 OR (" &
-                          "					T1.IdDonVi_Cu In (Select X.Id From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") And T1.IdDonvi_Moi Not In (Select X.Id From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") And Active=1" &
+                          "					 T1.IdDonVi_Cu In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") )  And Active = 1" &
+                          "			     And T1.IdDonvi_Moi Not In (Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") )      " &
                           "				)" &
                           "			)     AND T1.IsQD_NHCS = 1" &
                           "		Order by IdChucVu_Moi, IdChuyenMon_Moi, MaCB, HoTen"
+
+                'Select O.Id From ChiNhanh O Where O.Ma_So In (Select X.Ma_So From ChiNhanh X Where X.Id=870 Or X.Id_Goc=870)
+
+                'Select Case T1.IdCanBo, MaCB, HoTen, Login_Username, Id_Nhom, CapQuanLy, T1.IdDonvi_Moi, T1.IdPhong_Moi, T3.IdNew
+                '       From QDNhanSu T1,
+                '            (
+                '   Select IdCanBo, Max(NgayHL) As NgayHL From QDNhanSu Where IsQD_NHCS = 1 And IsKiemNhiem = 0 And Cast(NgayHL As Date) <= Cast(GetDate() As Date)
+                '    Group By IdCanBo Having Max(NgayHL)<= Cast(GetDate() As Date)
+                '   ) T2, HS_CanBo T3
+                '       Where(T1.IdCanBo = T2.IdCanBo And T1.NgayHL = T2.NgayHL And T2.IdCanBo = T3.IdCanBo)
+                '         And (
+                '         (
+                '   (T1.IdDonvi_Moi In (Select X.Id From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & "))
+                '            And EXISTS
+                '            (
+                '            Select Case T4.IdCanBo From
+                '       (
+                '     Select Case IdCanBo, Max(Ngay_HL) As Ngay_HL From HS_CBThoiviec WHERE IsQD_NHCS = 1 And Cast(Ngay_HL As Date) <= Cast(GetDate() As Date)
+                '                            Group By IdCanBo Having Max(Ngay_HL)<= Cast(GetDate() As Date)
+                '       ) T4 Where T4.IdCanBo= T2.IdCanBo And DateAdd(Second, 10, T4.Ngay_HL) > Cast(T2.NgayHL As Date)
+                '            )
+                '         )
+                '         Or (
+                '         T1.IdDonVi_Cu In (Select X.Id From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") And T1.IdDonvi_Moi Not In (Select X.Id From ChiNhanh X Where X.Id=" & vIdDonvi & " Or X.Id_Goc=" & vIdDonvi & ") And Active=1
+                '         )
+                '         )     And T1.IsQD_NHCS = 1
+                '         Order by IdChucVu_Moi, IdChuyenMon_Moi, MaCB, HoTen
             End If
         Else
             If isLUONG Then
@@ -1545,7 +1703,7 @@ Module funcHS_Luong
         Dim dtCB As DataTable
 
 
-        currTRUCTHUOC = GetTrucThuoc(CodeParentNode)
+        currTRUCTHUOC = GetTrucThuoc(CodeParentNode, 0)
         If Not (isTS_NH_FrmChonDS_CB And currTRUCTHUOC = 4) Then
             dtPB = db.SelectDBRows("SELECT * From PHONGBAN WHERE charindex('" & currTRUCTHUOC.ToString & "',truc_thuoc)>0 And Status = 1 Order by Ma_So")
             If dtPB.Rows.Count > 0 Then

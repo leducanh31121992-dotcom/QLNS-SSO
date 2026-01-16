@@ -683,7 +683,7 @@
         If (_BranchTag <> "") Then
             Dim arrElement() As String = _BranchTag.Split("_")
             If (arrElement.Length > 0) Then
-                If _HS_CanBo.GetTrucThuoc(arrElement(2)) = 4 Then 'Globals.GetAppSetting("HUYEN").Trim() Then
+                If _HS_CanBo.GetTrucThuoc(arrElement(2), CType(arrElement(1).ToString().Trim(), Integer)) = 4 Then 'Globals.GetAppSetting("HUYEN").Trim() Then
                     'Thực hiện lấy id chi nhánh tỉnh từ id pgd
                     BranchId = _ListDocument.GetRootId(CType(arrElement(1).ToString().Trim(), Integer))
                 Else

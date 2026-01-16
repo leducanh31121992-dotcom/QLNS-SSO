@@ -1394,12 +1394,12 @@
                     ActiveControl = cb_ns_xa
                     Return False
                 End If
-                If (cb_ns_thon.SelectedIndex <= 0 And cb_ns_thon.Items.Count <> 0) Then
-                    MessageBox.Show("Bạn chưa chọn nơi sinh thôn của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
-                    tctrl_hs_cb.SelectedIndex = 0
-                    ActiveControl = cb_ns_xa
-                    Return False
-                End If
+                'If (cb_ns_thon.SelectedIndex <= 0 And cb_ns_thon.Items.Count <> 0) Then
+                '    MessageBox.Show("Bạn chưa chọn nơi sinh thôn của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+                '    tctrl_hs_cb.SelectedIndex = 0
+                '    ActiveControl = cb_ns_xa
+                '    Return False
+                'End If
                 'If (edt_ns_diachi.Text.Trim() = "") Then
                 '    MessageBox.Show("Địa chỉ nơi sinh không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
                 '    tctrl_hs_cb.SelectedIndex = 0
@@ -1419,12 +1419,12 @@
                     ActiveControl = cb_nq_xa
                     Return False
                 End If
-                If (cb_nq_thon.SelectedIndex <= 0 And cb_nq_thon.Items.Count <> 0) Then
-                    MessageBox.Show("Bạn chưa chọn nguyên quán thôn của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
-                    tctrl_hs_cb.SelectedIndex = 0
-                    ActiveControl = cb_nq_thon
-                    Return False
-                End If
+                'If (cb_nq_thon.SelectedIndex <= 0 And cb_nq_thon.Items.Count <> 0) Then
+                '    MessageBox.Show("Bạn chưa chọn nguyên quán thôn của cán bộ. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+                '    tctrl_hs_cb.SelectedIndex = 0
+                '    ActiveControl = cb_nq_thon
+                '    Return False
+                'End If
                 'If (edt_nq_diachi.Text.Trim() = "") Then
                 '    MessageBox.Show("Địa chỉ nguyên quán không được để trống. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
                 '    tctrl_hs_cb.SelectedIndex = 0
@@ -1444,18 +1444,18 @@
                     ActiveControl = cb_tt_xa
                     Return False
                 End If
-                If (cb_tt_thon.SelectedIndex <= 0 And cb_tt_thon.Items.Count <> 0) Then
-                    MessageBox.Show("Bạn chưa chọn địa chỉ thôn nơi đăng ký hộ khẩu của cán bộ. Vui lòng kiểm tra lại!!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
-                    tctrl_hs_cb.SelectedIndex = 0
-                    ActiveControl = cb_tt_thon
-                    Return False
-                End If
-                If (edt_tt_diachi.Text.Trim() = "") Then
-                    MessageBox.Show("Địa chỉ chi tiết nơi đăng ký hộ khẩu không được để trống. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
-                    tctrl_hs_cb.SelectedIndex = 0
-                    ActiveControl = edt_tt_diachi
-                    Return False
-                End If
+                'If (cb_tt_thon.SelectedIndex <= 0 And cb_tt_thon.Items.Count <> 0) Then
+                '    MessageBox.Show("Bạn chưa chọn địa chỉ thôn nơi đăng ký hộ khẩu của cán bộ. Vui lòng kiểm tra lại!!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+                '    tctrl_hs_cb.SelectedIndex = 0
+                '    ActiveControl = cb_tt_thon
+                '    Return False
+                'End If
+                'If (edt_tt_diachi.Text.Trim() = "") Then
+                '    MessageBox.Show("Địa chỉ chi tiết nơi đăng ký hộ khẩu không được để trống. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+                '    tctrl_hs_cb.SelectedIndex = 0
+                '    ActiveControl = edt_tt_diachi
+                '    Return False
+                'End If
 
 
                 If (cb_ttr_tinh.SelectedIndex <= 0 And cb_ttr_tinh.Items.Count <> 0) Then
@@ -1476,12 +1476,12 @@
                     ActiveControl = cb_ttr_thon
                     Return False
                 End If
-                If (edt_ttr_diachi.Text.Trim() = "") Then
-                    MessageBox.Show("Địa chỉ chi tiết thường trú/tạm trú của cán bộ không được để trống. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
-                    tctrl_hs_cb.SelectedIndex = 0
-                    ActiveControl = edt_ttr_diachi
-                    Return False
-                End If
+                'If (edt_ttr_diachi.Text.Trim() = "") Then
+                '    MessageBox.Show("Địa chỉ chi tiết thường trú/tạm trú của cán bộ không được để trống. Vui lòng kiểm tra lại!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button3)
+                '    tctrl_hs_cb.SelectedIndex = 0
+                '    ActiveControl = edt_ttr_diachi
+                '    Return False
+                'End If
 
                 If (edt_email.Text.Trim() <> "") Then ' Nếu địa chỉ e-mail của cán bộ mà nhập thì kiểm tra có hợp lệ không
                     If (Not Globals.IsEmail(edt_email.Text.Trim().ToString())) Then
@@ -3620,7 +3620,7 @@
         If (cb_ns_tinh.SelectedIndex > 0 And cb_ns_tinh.Items.Count <> 0) Then
             Dim _IdTinhTP As Int32 = CType(arr_Ns_Tinh(IIf(cb_ns_tinh.SelectedIndex > 0, cb_ns_tinh.SelectedIndex, "0")), Int32)
             If _IdTinhTP > 0 Then
-                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                Dim strSQL As String = String.Format("Select Id,Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N'') As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N'') ,Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
                 arr_Ns_Xa = _Globals.Bind_ComBoBox(cb_ns_xa, strSQL, "--- Chọn Xã/Phường ---")
                 If (FlagEvent = 1 And _IdCanBo = "" And cb_nq_tinh.Items.Count <> 0) Then
                     cb_nq_tinh.SelectedIndex = cb_ns_tinh.SelectedIndex
@@ -3677,7 +3677,7 @@
         If (cb_nq_tinh.SelectedIndex > 0 And cb_nq_tinh.Items.Count <> 0) Then
             Dim _IdTinhTP As Int32 = CType(arr_Nq_Tinh(IIf(cb_nq_tinh.SelectedIndex > 0, cb_nq_tinh.SelectedIndex, "0")), Int32)
             If _IdTinhTP > 0 Then
-                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                Dim strSQL As String = String.Format("Select Id,Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N'') As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N''),Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
                 arr_Nq_Xa = _Globals.Bind_ComBoBox(cb_nq_xa, strSQL, "--- Chọn Xã/Phường ---")
             End If
         End If
@@ -3727,7 +3727,7 @@
             Dim _IdTinhTP As Int32 = CType(arr_TT_Tinh(IIf(cb_tt_tinh.SelectedIndex > 0, cb_tt_tinh.SelectedIndex, "0")), Int32)
             If _IdTinhTP > 0 Then
                 Dim strSQL As String = String.Format("Select id,ten_goi from DiaDanh where id_goc != 0 and id_goc = {0} and Status = 1", _IdTinhTP)
-                strSQL = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                strSQL = String.Format("Select Id,Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N'') As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N''),Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
 
                 arr_TT_Xa = _Globals.Bind_ComBoBox(cb_tt_xa, strSQL, "--- Chọn Xã/Phường ---")
                 If (FlagEvent = 1 And _IdCanBo = "" And cb_ttr_tinh.Items.Count <> 0) Then
@@ -3787,7 +3787,7 @@
             Dim _IdTinhTP As Int32 = CType(arr_TTr_Tinh(IIf(cb_ttr_tinh.SelectedIndex > 0, cb_ttr_tinh.SelectedIndex, "0")), Int32)
             If _IdTinhTP > 0 Then
                 'Dim strSQL As String = String.Format("Select id,ten_goi From DiaDanh Where id_goc != 0 And id_goc = {0}", _IdTinhTP)
-                Dim strSQL As String = String.Format("Select Id,Ten_Thon As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
+                Dim strSQL As String = String.Format("Select Id,Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N'')  As Ten_Goi From Dm_DiaPhuong Where Ma_Xa <> '00' And Ma_Thon = '00' And TrangThai = 'A' And Ma_Tinh In (Select Top 1 X.Ma_Tinh From Dm_DiaPhuong X Where X.Id={0}) Order by Replace(Replace(Ten_Thon,N'xã ',N''),N'phường ',N''),Ma_Tinh,Ma_Xa,Ma_Thon Asc", _IdTinhTP)
                 arr_TTr_Xa = _Globals.Bind_ComBoBox(cb_ttr_xa, strSQL, "--- Chọn Xã/Phường ---")
             End If
         End If
@@ -3817,7 +3817,7 @@
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If (db.Rows.Count > 0) Then
-                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim())
+                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim(), _DonviId)
                             strSQL = "Select id,ten_phong as ten_goi From PhongBan Where Charindex('" & tructhuocCurrent.ToString & "',truc_thuoc) > 0 and Status = 1 Order by Ma_so"
                             arrQd_Phongban_moi = _Globals.Bind_ComBoBox(cb_qd_phongban_moi, strSQL, "---Phòng ban---")
                         End If

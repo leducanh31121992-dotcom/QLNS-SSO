@@ -2004,7 +2004,9 @@
     End Sub
 
     Private Sub dpkNgayHL_L_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs)
-        dpkNgayLenLTT.Value = dpkNgayHL_L.Value.AddMonths(getTimeNangBac(CInt(cboQDNgach.SelectedValue)))
+        If idQDLuong = "" Then
+            dpkNgayLenLTT.Value = dpkNgayHL_L.Value.AddMonths(getTimeNangBac(CInt(cboQDNgach.SelectedValue)))
+        End If
     End Sub
 
     Private Sub gridQDLuong_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles gridQDLuong.CellClick
@@ -2720,5 +2722,9 @@
         Else
             cboDonviMoi.DataSource = listDonvi_New(False, False, False, False, True)
         End If
+    End Sub
+
+    Private Sub dpkNgayHL_L_ValueChanged(sender As Object, e As EventArgs) Handles dpkNgayHL_L.ValueChanged
+        dpkNgayHL_L_LostFocus(sender, Nothing)
     End Sub
 End Class

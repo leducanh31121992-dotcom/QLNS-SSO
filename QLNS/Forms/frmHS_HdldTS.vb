@@ -501,13 +501,18 @@
         If TRUCTHUOC = 1 Then
             strSQL = "Select Id,Ten_Goi From ChiNhanh Where Status = 1 And Id_Goc IN (0,1)"
         Else
-            strSQL = "Select Id,Ten_Goi From ChiNhanh Where Status = 1 And Ma_So='" & DONVI.Trim & "'"
+            'strSQL = "Select Id,Ten_Goi From ChiNhanh Where Status = 1 And Ma_So='" & DONVI.Trim & "'"
+            If DONVI = "000196" Or DONVI = "000197" Or DONVI = "000101" Or DONVI = "000100" Or DONVI = "000199" Then
+                strSQL = "Select id,ten_goi From ChiNhanh Where Status = 1 And ma_so='" & DONVI.Trim & "'"
+            Else
+                strSQL = "Select Id,Ten_Goi From ChiNhanh Where Status = 1 And Id_Goc In (1) And Id In (Select Distinct X.Id_Goc From ChiNhanh X Where X.Ma_So Like '" & DONVI.Substring(0, 4) & "%')"
+            End If
         End If
         'Fill dữ liệu combobox đơn vị công tác
 
         ARL_ChiNhanh.Clear()
         cb_chinhanh.Items.Clear()
-        ARL_ChiNhanh = _Globals.Bind_ComBoBox(cb_chinhanh, strSQL, "---Đơn vị (Chi nhánh)---")
+        ARL_ChiNhanh = _Globals.Bind_ComBoBox(cb_chinhanh, strSQL, "---Hội sở chính/Chi nhánh---")
         '-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
         ResetAll_Controls(True)
         ckb_ChoiceAll.Checked = False
@@ -1452,13 +1457,20 @@
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If (db.Rows.Count > 0) Then
-                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim())
+                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim(), _valId)
                             If db.Rows(0)("ma_so").ToString().Trim() = gMaDonViTW Then
                                 strSQL = String.Format("Select ('PB_'+Ltrim(Str(Id))) As Id,Ten_Phong As Ten_Goi From PhongBan Where Charindex('{0}',Truc_Thuoc) > 0 and Status = 1 Order By Ma_So ", tructhuocCurrent.ToString)
                             Else
-                                strSQL = String.Format("Select ZZ.* From (Select ('PB_'+Ltrim(Str(Id))) As Id,Ten_Phong As Ten_Goi From PhongBan Where Charindex('{0}',Truc_Thuoc) > 0 and Status = 1 Union Select ('DV_'+Ltrim(Str(Id))) As Id, Ten_Goi from ChiNhanh Where id_goc = {1} and Status = 1 ) ZZ Order By (Case When Substring(ZZ.Id,1,2) = 'PB' Then 0 Else 1 End),ZZ. Id", tructhuocCurrent.ToString, _valId)
+                                'strSQL = String.Format("Select ZZ.* From (Select ('PB_'+Ltrim(Str(Id))) As Id,Ten_Phong As Ten_Goi From PhongBan Where Charindex('{0}',Truc_Thuoc) > 0 and Status = 1 Union Select ('DV_'+Ltrim(Str(Id))) As Id, Ten_Goi from ChiNhanh Where id_goc = {1} and Status = 1 ) ZZ Order By (Case When Substring(ZZ.Id,1,2) = 'PB' Then 0 Else 1 End),ZZ. Id", tructhuocCurrent.ToString, _valId)
+                                strSQL = ""
+                                strSQL = strSQL & String.Format("Select Id,Ten_Goi,Ma_So From ")
+                                strSQL = strSQL & String.Format("       ( ")
+                                strSQL = strSQL & String.Format("        Select ('PB_'+Ltrim(Str(Id))) As Id, Ten_Phong As Ten_Goi,1 STT,Ma_So From PhongBan Where Charindex('{0}',Truc_Thuoc) > 0 And Status = 1 ", tructhuocCurrent.ToString())
+                                strSQL = strSQL & String.Format("        Union All ")
+                                strSQL = strSQL & String.Format("        Select ('DV_'+Ltrim(Str(Id))) As Id, Ma_So + N' - ' + Ten_Goi,2 STT,Ma_So From ChiNhanh Where Id_Goc = {0} And Status = 1 ", _valId)
+                                strSQL = strSQL & String.Format("       ) ZZ Order By ZZ.STT,ZZ.Ma_So,ZZ.Ten_Goi")
                             End If
-                            ARL_PhBanDonVi = _Globals.Bind_ComBoBox(cb_phongban_pgd, strSQL, "---Phòng ban/Đơn vị trực thuộc---")
+                            ARL_PhBanDonVi = _Globals.Bind_ComBoBox(cb_phongban_pgd, strSQL, "---Phòng ban/Phòng giao dịch---")
                         End If
                     End If
                 End Using

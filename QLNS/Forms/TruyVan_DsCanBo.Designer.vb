@@ -338,6 +338,7 @@ Partial Class TruyVan_DsCanBo
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgv_main.ColumnHeadersHeight = 29
         Me.dgv_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_main.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_main.Location = New System.Drawing.Point(3, 22)
@@ -351,6 +352,7 @@ Partial Class TruyVan_DsCanBo
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_main.RowHeadersVisible = False
+        Me.dgv_main.RowHeadersWidth = 51
         Me.dgv_main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black

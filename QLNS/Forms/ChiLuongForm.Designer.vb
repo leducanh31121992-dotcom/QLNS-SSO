@@ -136,7 +136,7 @@ Partial Class ChiLuongForm
         Me.cb_bosung_loai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_bosung_loai.ForeColor = System.Drawing.Color.Black
         Me.cb_bosung_loai.FormattingEnabled = True
-        Me.cb_bosung_loai.Items.AddRange(New Object() {"--- Chọn loại phải thu khác muốn cộng thêm vào cột [Các khoản trích nộp khác] ---" & _
+        Me.cb_bosung_loai.Items.AddRange(New Object() {"--- Chọn loại phải thu khác muốn cộng thêm vào cột [Các khoản trích nộp khác] ---" &
                 "", "Số tiền cụ thể", "Số ngày lương thực lĩnh", "Số ngày lương theo lương bảo hiểm"})
         Me.cb_bosung_loai.Location = New System.Drawing.Point(207, 0)
         Me.cb_bosung_loai.Name = "cb_bosung_loai"
@@ -591,7 +591,7 @@ Partial Class ChiLuongForm
         Me.btn_xoabo.TabIndex = 4
         Me.btn_xoabo.Text = "&Tạm xóa"
         Me.btn_xoabo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.tltip_main.SetToolTip(Me.btn_xoabo, "Xóa tạm bản ghi được tích chọn trên lưới dữ liệu (Nếu muốn cập nhật người dùng th" & _
+        Me.tltip_main.SetToolTip(Me.btn_xoabo, "Xóa tạm bản ghi được tích chọn trên lưới dữ liệu (Nếu muốn cập nhật người dùng th" &
         "ực hiện nhấn nút lệnh Lưu lại)")
         Me.btn_xoabo.UseVisualStyleBackColor = False
         '
@@ -758,6 +758,7 @@ Partial Class ChiLuongForm
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_main.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_main.RowHeadersVisible = False
+        Me.dgv_main.RowHeadersWidth = 51
         Me.dgv_main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black

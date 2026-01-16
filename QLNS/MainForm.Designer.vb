@@ -129,80 +129,80 @@ Partial Class MainForm
         '
         Me.mnuSystem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnu_thamso, Me.mnu_quyensudung, Me.mnuNguoiSuDung, Me.mnu_doimkhau, Me.mnuChotDuLieu, Me.ToolStripMenuItem1, Me.mnuStatusBar, Me.mnu_logout, Me.ToolStripMenuItem2, Me.mnu_Exit, Me.AbcToolStripMenuItem, Me.ChuyenCanBoCNVeTWQuanLyToolStripMenuItem})
         Me.mnuSystem.Name = "mnuSystem"
-        Me.mnuSystem.Size = New System.Drawing.Size(80, 22)
+        Me.mnuSystem.Size = New System.Drawing.Size(82, 22)
         Me.mnuSystem.Text = "&Hệ thống"
         '
         'mnu_thamso
         '
         Me.mnu_thamso.Name = "mnu_thamso"
-        Me.mnu_thamso.Size = New System.Drawing.Size(308, 26)
+        Me.mnu_thamso.Size = New System.Drawing.Size(316, 26)
         Me.mnu_thamso.Text = "Tham &số hệ thống"
         '
         'mnu_quyensudung
         '
         Me.mnu_quyensudung.Name = "mnu_quyensudung"
-        Me.mnu_quyensudung.Size = New System.Drawing.Size(308, 26)
+        Me.mnu_quyensudung.Size = New System.Drawing.Size(316, 26)
         Me.mnu_quyensudung.Text = "&Quyền sử dụng"
         '
         'mnuNguoiSuDung
         '
         Me.mnuNguoiSuDung.Name = "mnuNguoiSuDung"
-        Me.mnuNguoiSuDung.Size = New System.Drawing.Size(308, 26)
+        Me.mnuNguoiSuDung.Size = New System.Drawing.Size(316, 26)
         Me.mnuNguoiSuDung.Text = "Người sử dụng"
         '
         'mnu_doimkhau
         '
         Me.mnu_doimkhau.Name = "mnu_doimkhau"
-        Me.mnu_doimkhau.Size = New System.Drawing.Size(308, 26)
+        Me.mnu_doimkhau.Size = New System.Drawing.Size(316, 26)
         Me.mnu_doimkhau.Text = "Đổi mật &khẩu"
         '
         'mnuChotDuLieu
         '
         Me.mnuChotDuLieu.Name = "mnuChotDuLieu"
-        Me.mnuChotDuLieu.Size = New System.Drawing.Size(308, 26)
+        Me.mnuChotDuLieu.Size = New System.Drawing.Size(316, 26)
         Me.mnuChotDuLieu.Text = "Chốt dữ liệu"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(305, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(313, 6)
         '
         'mnuStatusBar
         '
         Me.mnuStatusBar.CheckOnClick = True
         Me.mnuStatusBar.Name = "mnuStatusBar"
-        Me.mnuStatusBar.Size = New System.Drawing.Size(308, 26)
+        Me.mnuStatusBar.Size = New System.Drawing.Size(316, 26)
         Me.mnuStatusBar.Text = "Hiển thị thanh trạng thái"
         '
         'mnu_logout
         '
         Me.mnu_logout.ForeColor = System.Drawing.Color.Black
         Me.mnu_logout.Name = "mnu_logout"
-        Me.mnu_logout.Size = New System.Drawing.Size(308, 26)
+        Me.mnu_logout.Size = New System.Drawing.Size(316, 26)
         Me.mnu_logout.Text = "Đăng &xuất người dùng"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(305, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(313, 6)
         '
         'mnu_Exit
         '
         Me.mnu_Exit.Name = "mnu_Exit"
-        Me.mnu_Exit.Size = New System.Drawing.Size(308, 26)
+        Me.mnu_Exit.Size = New System.Drawing.Size(316, 26)
         Me.mnu_Exit.Text = "&Thoát"
         '
         'AbcToolStripMenuItem
         '
         Me.AbcToolStripMenuItem.Name = "AbcToolStripMenuItem"
-        Me.AbcToolStripMenuItem.Size = New System.Drawing.Size(308, 26)
+        Me.AbcToolStripMenuItem.Size = New System.Drawing.Size(316, 26)
         Me.AbcToolStripMenuItem.Text = "Tong Hop lai SL cho Chi nhanh"
         Me.AbcToolStripMenuItem.Visible = False
         '
         'ChuyenCanBoCNVeTWQuanLyToolStripMenuItem
         '
         Me.ChuyenCanBoCNVeTWQuanLyToolStripMenuItem.Name = "ChuyenCanBoCNVeTWQuanLyToolStripMenuItem"
-        Me.ChuyenCanBoCNVeTWQuanLyToolStripMenuItem.Size = New System.Drawing.Size(308, 26)
+        Me.ChuyenCanBoCNVeTWQuanLyToolStripMenuItem.Size = New System.Drawing.Size(316, 26)
         Me.ChuyenCanBoCNVeTWQuanLyToolStripMenuItem.Text = "Chuyen Can bo CN ve TW quan ly"
         Me.ChuyenCanBoCNVeTWQuanLyToolStripMenuItem.Visible = False
         '
@@ -210,141 +210,141 @@ Partial Class MainForm
         '
         Me.mnu_danhmuc.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnu_dm_chung, Me.mnu_dm_luong, Me.ToolStripSeparator1, Me.mnu_dm_chinhanh, Me.mnu_dm_diadanh})
         Me.mnu_danhmuc.Name = "mnu_danhmuc"
-        Me.mnu_danhmuc.Size = New System.Drawing.Size(87, 22)
+        Me.mnu_danhmuc.Size = New System.Drawing.Size(89, 22)
         Me.mnu_danhmuc.Text = "&Danh mục"
         '
         'mnu_dm_chung
         '
         Me.mnu_dm_chung.Name = "mnu_dm_chung"
-        Me.mnu_dm_chung.Size = New System.Drawing.Size(193, 26)
+        Me.mnu_dm_chung.Size = New System.Drawing.Size(201, 26)
         Me.mnu_dm_chung.Text = "Danh mục chung"
         '
         'mnu_dm_luong
         '
         Me.mnu_dm_luong.Name = "mnu_dm_luong"
-        Me.mnu_dm_luong.Size = New System.Drawing.Size(193, 26)
+        Me.mnu_dm_luong.Size = New System.Drawing.Size(201, 26)
         Me.mnu_dm_luong.Text = "Danh mục lương"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(190, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(198, 6)
         '
         'mnu_dm_chinhanh
         '
         Me.mnu_dm_chinhanh.Name = "mnu_dm_chinhanh"
-        Me.mnu_dm_chinhanh.Size = New System.Drawing.Size(193, 26)
+        Me.mnu_dm_chinhanh.Size = New System.Drawing.Size(201, 26)
         Me.mnu_dm_chinhanh.Text = "Chi nhánh"
         '
         'mnu_dm_diadanh
         '
         Me.mnu_dm_diadanh.Name = "mnu_dm_diadanh"
-        Me.mnu_dm_diadanh.Size = New System.Drawing.Size(193, 26)
+        Me.mnu_dm_diadanh.Size = New System.Drawing.Size(201, 26)
         Me.mnu_dm_diadanh.Text = "Địa danh"
         '
         'mnuHuman
         '
         Me.mnuHuman.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnu_tt_canbo, Me.mnu_ct_dangdt, Me.mnu_DieuChuyenCB, Me.mnu_DGCB, Me.mnu_hd_laodong, Me.mnu_Daotao, Me.ToolStripSeparator2, Me.mnu_KTKL, Me.mnu_KTCaNhanTapThe, Me.ToolStripSeparator3, Me.mnu_cs_laodong, Me.mnu_hs_gdcb, Me.ToolStripSeparator4, Me.mnu_canbo_tapsu, Me.mnu_canbo_nghihuu, Me.ToolStripSeparator7, Me.mnu_LaoDong_MangLuoi, Me.mnu_khld_mangluoi})
         Me.mnuHuman.Name = "mnuHuman"
-        Me.mnuHuman.Size = New System.Drawing.Size(116, 22)
+        Me.mnuHuman.Size = New System.Drawing.Size(118, 22)
         Me.mnuHuman.Text = "Hồ sơ &nhân sự"
         '
         'mnu_tt_canbo
         '
         Me.mnu_tt_canbo.Name = "mnu_tt_canbo"
-        Me.mnu_tt_canbo.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_tt_canbo.Size = New System.Drawing.Size(412, 26)
         Me.mnu_tt_canbo.Text = "Thông tin cán bộ"
         '
         'mnu_ct_dangdt
         '
         Me.mnu_ct_dangdt.Name = "mnu_ct_dangdt"
-        Me.mnu_ct_dangdt.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_ct_dangdt.Size = New System.Drawing.Size(412, 26)
         Me.mnu_ct_dangdt.Text = "Công tác Đảng, Đoàn, Công đoàn"
         '
         'mnu_DieuChuyenCB
         '
         Me.mnu_DieuChuyenCB.Name = "mnu_DieuChuyenCB"
-        Me.mnu_DieuChuyenCB.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_DieuChuyenCB.Size = New System.Drawing.Size(412, 26)
         Me.mnu_DieuChuyenCB.Text = "Quyết định nhân sự"
         '
         'mnu_DGCB
         '
         Me.mnu_DGCB.Name = "mnu_DGCB"
-        Me.mnu_DGCB.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_DGCB.Size = New System.Drawing.Size(412, 26)
         Me.mnu_DGCB.Text = "Đánh giá - Quy hoạch cán bộ"
         '
         'mnu_hd_laodong
         '
         Me.mnu_hd_laodong.Name = "mnu_hd_laodong"
-        Me.mnu_hd_laodong.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_hd_laodong.Size = New System.Drawing.Size(412, 26)
         Me.mnu_hd_laodong.Text = "Hợp đồng lao động"
         '
         'mnu_Daotao
         '
         Me.mnu_Daotao.Name = "mnu_Daotao"
-        Me.mnu_Daotao.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_Daotao.Size = New System.Drawing.Size(412, 26)
         Me.mnu_Daotao.Text = "Đào tạo - Nghiên cứu khoa học"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(401, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(409, 6)
         '
         'mnu_KTKL
         '
         Me.mnu_KTKL.Name = "mnu_KTKL"
-        Me.mnu_KTKL.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_KTKL.Size = New System.Drawing.Size(412, 26)
         Me.mnu_KTKL.Text = "Khen thưởng - Kỷ luật"
         '
         'mnu_KTCaNhanTapThe
         '
         Me.mnu_KTCaNhanTapThe.Name = "mnu_KTCaNhanTapThe"
-        Me.mnu_KTCaNhanTapThe.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_KTCaNhanTapThe.Size = New System.Drawing.Size(412, 26)
         Me.mnu_KTCaNhanTapThe.Text = "Khen thưởng DS cá nhân/tập thể"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(401, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(409, 6)
         '
         'mnu_cs_laodong
         '
         Me.mnu_cs_laodong.Name = "mnu_cs_laodong"
-        Me.mnu_cs_laodong.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_cs_laodong.Size = New System.Drawing.Size(412, 26)
         Me.mnu_cs_laodong.Text = "Chính sách lao động"
         '
         'mnu_hs_gdcb
         '
         Me.mnu_hs_gdcb.Name = "mnu_hs_gdcb"
-        Me.mnu_hs_gdcb.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_hs_gdcb.Size = New System.Drawing.Size(412, 26)
         Me.mnu_hs_gdcb.Text = "Hồ sơ gia đình cán bộ"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(401, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(409, 6)
         '
         'mnu_canbo_tapsu
         '
         Me.mnu_canbo_tapsu.Name = "mnu_canbo_tapsu"
-        Me.mnu_canbo_tapsu.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_canbo_tapsu.Size = New System.Drawing.Size(412, 26)
         Me.mnu_canbo_tapsu.Text = "Hồ sơ lao động bảo vệ, tạp vụ, tập nghề, tư vấn"
         '
         'mnu_canbo_nghihuu
         '
         Me.mnu_canbo_nghihuu.Name = "mnu_canbo_nghihuu"
-        Me.mnu_canbo_nghihuu.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_canbo_nghihuu.Size = New System.Drawing.Size(412, 26)
         Me.mnu_canbo_nghihuu.Text = "Hồ sơ cán bộ nghỉ hưu - chuyển công tác"
         '
         'ToolStripSeparator7
         '
         Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(401, 6)
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(409, 6)
         '
         'mnu_LaoDong_MangLuoi
         '
         Me.mnu_LaoDong_MangLuoi.Name = "mnu_LaoDong_MangLuoi"
-        Me.mnu_LaoDong_MangLuoi.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_LaoDong_MangLuoi.Size = New System.Drawing.Size(412, 26)
         Me.mnu_LaoDong_MangLuoi.Text = "Lao động - Mạng lưới đơn vị"
         Me.mnu_LaoDong_MangLuoi.Visible = False
         '
@@ -352,54 +352,54 @@ Partial Class MainForm
         '
         Me.mnu_khld_mangluoi.ForeColor = System.Drawing.Color.Black
         Me.mnu_khld_mangluoi.Name = "mnu_khld_mangluoi"
-        Me.mnu_khld_mangluoi.Size = New System.Drawing.Size(404, 26)
+        Me.mnu_khld_mangluoi.Size = New System.Drawing.Size(412, 26)
         Me.mnu_khld_mangluoi.Text = "Lao động - Mạng lưới đơn vị - Nhu cầu LĐ"
         '
         'mnuSalary
         '
         Me.mnuSalary.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnu_DanhMucLuong, Me.ToolStripSeparator8, Me.mnu_Luong, Me.mnu_Phucap, Me.mnu_Themgio, Me.ToolStripSeparator5, Me.mnu_ChiLuong, Me.mnu_chiluong_dinhky})
         Me.mnuSalary.Name = "mnuSalary"
-        Me.mnuSalary.Size = New System.Drawing.Size(98, 22)
+        Me.mnuSalary.Size = New System.Drawing.Size(100, 22)
         Me.mnuSalary.Text = "Hồ sơ &lương"
         '
         'mnu_DanhMucLuong
         '
         Me.mnu_DanhMucLuong.Name = "mnu_DanhMucLuong"
-        Me.mnu_DanhMucLuong.Size = New System.Drawing.Size(244, 26)
+        Me.mnu_DanhMucLuong.Size = New System.Drawing.Size(252, 26)
         Me.mnu_DanhMucLuong.Text = "Thanh toán lương Đơn vị"
         '
         'ToolStripSeparator8
         '
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(241, 6)
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(249, 6)
         '
         'mnu_Luong
         '
         Me.mnu_Luong.Name = "mnu_Luong"
-        Me.mnu_Luong.Size = New System.Drawing.Size(244, 26)
+        Me.mnu_Luong.Size = New System.Drawing.Size(252, 26)
         Me.mnu_Luong.Text = "Hệ số CMNV"
         '
         'mnu_Phucap
         '
         Me.mnu_Phucap.Name = "mnu_Phucap"
-        Me.mnu_Phucap.Size = New System.Drawing.Size(244, 26)
+        Me.mnu_Phucap.Size = New System.Drawing.Size(252, 26)
         Me.mnu_Phucap.Text = "Phụ cấp"
         '
         'mnu_Themgio
         '
         Me.mnu_Themgio.Name = "mnu_Themgio"
-        Me.mnu_Themgio.Size = New System.Drawing.Size(244, 26)
+        Me.mnu_Themgio.Size = New System.Drawing.Size(252, 26)
         Me.mnu_Themgio.Text = "Làm thêm giờ"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(241, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(249, 6)
         '
         'mnu_ChiLuong
         '
         Me.mnu_ChiLuong.Name = "mnu_ChiLuong"
-        Me.mnu_ChiLuong.Size = New System.Drawing.Size(244, 26)
+        Me.mnu_ChiLuong.Size = New System.Drawing.Size(252, 26)
         Me.mnu_ChiLuong.Text = "Tiền lương"
         Me.mnu_ChiLuong.Visible = False
         '
@@ -407,214 +407,214 @@ Partial Class MainForm
         '
         Me.mnu_chiluong_dinhky.ForeColor = System.Drawing.Color.Black
         Me.mnu_chiluong_dinhky.Name = "mnu_chiluong_dinhky"
-        Me.mnu_chiluong_dinhky.Size = New System.Drawing.Size(244, 26)
+        Me.mnu_chiluong_dinhky.Size = New System.Drawing.Size(252, 26)
         Me.mnu_chiluong_dinhky.Text = "&Chi lương định kỳ"
         '
         'mnuReport
         '
         Me.mnuReport.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnu_bc1, Me.mnu_bc2, Me.mnu_bc3, Me.mnu_bc4, Me.mnu_Report05, Me.mnu_Report06, Me.mnu_Report07, Me.mnu_Report08, Me.mnu_Report09, Me.mnu_bc_saoke_khac})
         Me.mnuReport.Name = "mnuReport"
-        Me.mnuReport.Size = New System.Drawing.Size(150, 22)
+        Me.mnuReport.Size = New System.Drawing.Size(152, 22)
         Me.mnuReport.Text = "&Báo cáo - Thống kê"
         '
         'mnu_bc1
         '
         Me.mnu_bc1.Name = "mnu_bc1"
-        Me.mnu_bc1.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_bc1.Size = New System.Drawing.Size(551, 26)
         Me.mnu_bc1.Text = "BC01: Tình hình thực hiện lao động - Mạng lưới hoạt động"
         '
         'mnu_bc2
         '
         Me.mnu_bc2.Name = "mnu_bc2"
-        Me.mnu_bc2.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_bc2.Size = New System.Drawing.Size(551, 26)
         Me.mnu_bc2.Text = "BC02: Tình hình thực hiện công tác bổ nhiệm cán bộ lãnh đạo, quản lý"
         '
         'mnu_bc3
         '
         Me.mnu_bc3.Name = "mnu_bc3"
-        Me.mnu_bc3.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_bc3.Size = New System.Drawing.Size(551, 26)
         Me.mnu_bc3.Text = "BC03: Báo cáo thống kê số lượng và chất lượng cán bộ"
         '
         'mnu_bc4
         '
         Me.mnu_bc4.Name = "mnu_bc4"
-        Me.mnu_bc4.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_bc4.Size = New System.Drawing.Size(551, 26)
         Me.mnu_bc4.Text = "BC04: Danh sách tuyển dụng, tiếp nhận cán bộ"
         '
         'mnu_Report05
         '
         Me.mnu_Report05.Name = "mnu_Report05"
-        Me.mnu_Report05.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_Report05.Size = New System.Drawing.Size(551, 26)
         Me.mnu_Report05.Text = "BC05: Lao động - Thu nhập"
         '
         'mnu_Report06
         '
         Me.mnu_Report06.Name = "mnu_Report06"
-        Me.mnu_Report06.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_Report06.Size = New System.Drawing.Size(551, 26)
         Me.mnu_Report06.Text = "BC06: Tai nạn lao động"
         '
         'mnu_Report07
         '
         Me.mnu_Report07.Name = "mnu_Report07"
-        Me.mnu_Report07.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_Report07.Size = New System.Drawing.Size(551, 26)
         Me.mnu_Report07.Text = "BC07: Chính sách người lao động"
         '
         'mnu_Report08
         '
         Me.mnu_Report08.Name = "mnu_Report08"
-        Me.mnu_Report08.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_Report08.Size = New System.Drawing.Size(551, 26)
         Me.mnu_Report08.Text = "BC08: Cán bộ bị thi hành kỷ luật"
         '
         'mnu_Report09
         '
         Me.mnu_Report09.Name = "mnu_Report09"
-        Me.mnu_Report09.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_Report09.Size = New System.Drawing.Size(551, 26)
         Me.mnu_Report09.Text = "BC09: Thống kê trình độ chuyên môn-Chuyên ngành theo chức danh"
         '
         'mnu_bc_saoke_khac
         '
         Me.mnu_bc_saoke_khac.Name = "mnu_bc_saoke_khac"
-        Me.mnu_bc_saoke_khac.Size = New System.Drawing.Size(543, 26)
+        Me.mnu_bc_saoke_khac.Size = New System.Drawing.Size(551, 26)
         Me.mnu_bc_saoke_khac.Text = "Báo cáo, Sao kê khác theo yêu cầu"
         '
         'mnuWarning
         '
         Me.mnuWarning.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnu_DSCanBo, Me.mnu_TBNangBac, Me.mnu_HetHanHopDong, Me.mnu_TKThemGio, Me.mnu_Search_Error, Me.mnu_Search, Me.mnu_tbtc_saokeyc})
         Me.mnuWarning.Name = "mnuWarning"
-        Me.mnuWarning.Size = New System.Drawing.Size(158, 22)
+        Me.mnuWarning.Size = New System.Drawing.Size(160, 22)
         Me.mnuWarning.Text = "&Thông báo - Tra cứu"
         '
         'mnu_DSCanBo
         '
         Me.mnu_DSCanBo.Name = "mnu_DSCanBo"
-        Me.mnu_DSCanBo.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_DSCanBo.Size = New System.Drawing.Size(347, 26)
         Me.mnu_DSCanBo.Text = "Danh sách cán bộ viên chức"
         '
         'mnu_TBNangBac
         '
         Me.mnu_TBNangBac.Name = "mnu_TBNangBac"
-        Me.mnu_TBNangBac.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_TBNangBac.Size = New System.Drawing.Size(347, 26)
         Me.mnu_TBNangBac.Text = "Danh sách lên bậc-ngạch lương"
         '
         'mnu_HetHanHopDong
         '
         Me.mnu_HetHanHopDong.Name = "mnu_HetHanHopDong"
-        Me.mnu_HetHanHopDong.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_HetHanHopDong.Size = New System.Drawing.Size(347, 26)
         Me.mnu_HetHanHopDong.Text = "Danh sách hết hạn hợp đồng"
         '
         'mnu_TKThemGio
         '
         Me.mnu_TKThemGio.Name = "mnu_TKThemGio"
-        Me.mnu_TKThemGio.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_TKThemGio.Size = New System.Drawing.Size(347, 26)
         Me.mnu_TKThemGio.Text = "Thống kê làm thêm giờ"
         '
         'mnu_Search_Error
         '
         Me.mnu_Search_Error.Name = "mnu_Search_Error"
-        Me.mnu_Search_Error.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_Search_Error.Size = New System.Drawing.Size(347, 26)
         Me.mnu_Search_Error.Text = "Cảnh báo nội dung Quyết định nhân sự"
         '
         'mnu_Search
         '
         Me.mnu_Search.Name = "mnu_Search"
-        Me.mnu_Search.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_Search.Size = New System.Drawing.Size(347, 26)
         Me.mnu_Search.Text = "Tra cứu"
         '
         'mnu_tbtc_saokeyc
         '
         Me.mnu_tbtc_saokeyc.Name = "mnu_tbtc_saokeyc"
-        Me.mnu_tbtc_saokeyc.Size = New System.Drawing.Size(339, 26)
+        Me.mnu_tbtc_saokeyc.Size = New System.Drawing.Size(347, 26)
         Me.mnu_tbtc_saokeyc.Text = "Sao ke theo yêu cầu"
         '
         'mnuReport_NN
         '
         Me.mnuReport_NN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNN_BC01, Me.mnuNN_BC02, Me.mnuNN_BC03, Me.mnuNN_BC04, Me.mnuNN_BC05, Me.mnuNN_BC06, Me.mnuNN_BC07, Me.mnuNN_BC08, Me.mnuNN_BC09, Me.ToolStripMenuItem3, Me.mnuNN_ThietLapThongTin})
         Me.mnuReport_NN.Name = "mnuReport_NN"
-        Me.mnuReport_NN.Size = New System.Drawing.Size(159, 22)
+        Me.mnuReport_NN.Size = New System.Drawing.Size(161, 22)
         Me.mnuReport_NN.Text = "Báo cáo Ngoại ngành"
         '
         'mnuNN_BC01
         '
         Me.mnuNN_BC01.Name = "mnuNN_BC01"
-        Me.mnuNN_BC01.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC01.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC01.Text = "BC01: Tình hình thực hiện lao động - Mạng lưới hoạt động"
         '
         'mnuNN_BC02
         '
         Me.mnuNN_BC02.Name = "mnuNN_BC02"
-        Me.mnuNN_BC02.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC02.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC02.Text = "BC02: Tình hình thực hiện công tác bổ nhiệm cán bộ lãnh đạo, quản lý"
         '
         'mnuNN_BC03
         '
         Me.mnuNN_BC03.Name = "mnuNN_BC03"
-        Me.mnuNN_BC03.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC03.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC03.Text = "BC03: Báo cáo thống kê số lượng và chất lượng cán bộ"
         '
         'mnuNN_BC04
         '
         Me.mnuNN_BC04.Name = "mnuNN_BC04"
-        Me.mnuNN_BC04.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC04.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC04.Text = "BC04: Danh sách tuyển dụng, tiếp nhận cán bộ"
         '
         'mnuNN_BC05
         '
         Me.mnuNN_BC05.Name = "mnuNN_BC05"
-        Me.mnuNN_BC05.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC05.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC05.Text = "BC05: Lao động - Thu nhập"
         '
         'mnuNN_BC06
         '
         Me.mnuNN_BC06.Name = "mnuNN_BC06"
-        Me.mnuNN_BC06.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC06.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC06.Text = "BC06: Tai nạn lao động"
         '
         'mnuNN_BC07
         '
         Me.mnuNN_BC07.Name = "mnuNN_BC07"
-        Me.mnuNN_BC07.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC07.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC07.Text = "BC07: Chính sách người lao động"
         '
         'mnuNN_BC08
         '
         Me.mnuNN_BC08.Name = "mnuNN_BC08"
-        Me.mnuNN_BC08.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC08.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC08.Text = "BC08: Cán bộ bị thi hành kỷ luật"
         '
         'mnuNN_BC09
         '
         Me.mnuNN_BC09.Name = "mnuNN_BC09"
-        Me.mnuNN_BC09.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_BC09.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_BC09.Text = "BC09: Thống kê trình độ chuyên môn-Chuyên ngành theo chức danh"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(540, 6)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(548, 6)
         '
         'mnuNN_ThietLapThongTin
         '
         Me.mnuNN_ThietLapThongTin.Name = "mnuNN_ThietLapThongTin"
-        Me.mnuNN_ThietLapThongTin.Size = New System.Drawing.Size(543, 26)
+        Me.mnuNN_ThietLapThongTin.Size = New System.Drawing.Size(551, 26)
         Me.mnuNN_ThietLapThongTin.Text = "Thiết lập thông tin"
         '
         'mnuHelp
         '
         Me.mnuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHuongDanSuDung, Me.mnuThongTinCapNhat})
         Me.mnuHelp.Name = "mnuHelp"
-        Me.mnuHelp.Size = New System.Drawing.Size(74, 22)
+        Me.mnuHelp.Size = New System.Drawing.Size(76, 22)
         Me.mnuHelp.Text = "&Trợ giúp"
         '
         'mnuHuongDanSuDung
         '
         Me.mnuHuongDanSuDung.Name = "mnuHuongDanSuDung"
-        Me.mnuHuongDanSuDung.Size = New System.Drawing.Size(212, 26)
+        Me.mnuHuongDanSuDung.Size = New System.Drawing.Size(220, 26)
         Me.mnuHuongDanSuDung.Text = "Hướng dẫn sử dụng"
         '
         'mnuThongTinCapNhat
         '
         Me.mnuThongTinCapNhat.Name = "mnuThongTinCapNhat"
-        Me.mnuThongTinCapNhat.Size = New System.Drawing.Size(212, 26)
+        Me.mnuThongTinCapNhat.Size = New System.Drawing.Size(220, 26)
         Me.mnuThongTinCapNhat.Text = "Thông tin cập nhật"
         '
         'StatusStrip1
@@ -631,7 +631,7 @@ Partial Class MainForm
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(111, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(111, 16)
         Me.ToolStripStatusLabel1.Text = "Người sử dụng:"
         '
         'lblNguoiSuDung
@@ -639,19 +639,19 @@ Partial Class MainForm
         Me.lblNguoiSuDung.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.lblNguoiSuDung.ForeColor = System.Drawing.Color.Navy
         Me.lblNguoiSuDung.Name = "lblNguoiSuDung"
-        Me.lblNguoiSuDung.Size = New System.Drawing.Size(21, 17)
+        Me.lblNguoiSuDung.Size = New System.Drawing.Size(21, 16)
         Me.lblNguoiSuDung.Text = "..."
         '
         'ToolStripStatusLabel2
         '
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(65, 17)
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(65, 16)
         Me.ToolStripStatusLabel2.Text = "- Đơn vị:"
         '
         'lblDonVi
         '
         Me.lblDonVi.Name = "lblDonVi"
-        Me.lblDonVi.Size = New System.Drawing.Size(18, 17)
+        Me.lblDonVi.Size = New System.Drawing.Size(18, 16)
         Me.lblDonVi.Text = "..."
         '
         'MainForm
@@ -669,7 +669,7 @@ Partial Class MainForm
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = " Quản lý thông tin nhân sự NHCSXH (02.03.2003)"
+        Me.Text = " Quản lý thông tin nhân sự NHCSXH (01.07.2025)"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

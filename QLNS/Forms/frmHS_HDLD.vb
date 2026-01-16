@@ -733,7 +733,7 @@
                 If Not (db Is Nothing) Then
                     If (db.Rows.Count > 0) Then
                         _CodeLoaiHD = db.Rows(0)("ma_so").ToString().Trim()
-                        If (_CodeLoaiHD = "3006") Then
+                        If (_CodeLoaiHD = "3006") Then  '3006	Hợp đồng đào tạo, tập nghề
                             labSoHD.Text = "Số QĐ"
                             labLoaiHD.Text = "Quyết định"
                             cb_hd_httraluong.Enabled = False

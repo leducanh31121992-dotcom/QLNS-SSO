@@ -103,7 +103,7 @@ Public Class TimKiemMoiForm
                 Using db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                     If Not (db Is Nothing) Then
                         If (db.Rows.Count > 0) Then
-                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim())
+                            Dim tructhuocCurrent As String = _HS_CanBo.GetTrucThuoc(db.Rows(0)("ma_so").ToString().Trim(), _DonviId)
                             strSQL = "Select Id,Ten_Phong As Ten_Goi From PhongBan Where Charindex('" & tructhuocCurrent.ToString & "',Truc_Thuoc) > 0 And Status = 1 Order By Ma_so"
                             ARL_PhongBan = _Globals.Bind_ComBoBox(cb_phongban, strSQL, "---Phòng ban---")
                             If (cb_phongban.Items.Count <> 0) Then

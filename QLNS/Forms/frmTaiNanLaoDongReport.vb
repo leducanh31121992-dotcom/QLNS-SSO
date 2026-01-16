@@ -8,7 +8,20 @@
         txtNam.Text = Now.Year
         If DONVI = gMaDonViTW Then
             labGD.Text = "Tổng giám đốc"
-            labHCTC.Text = "Trưởng phòng TCCB"
+            labHCTC.Text = "Giám đốc Ban TCCB"
+        Else
+            If DONVI = "000196" Then
+                labGD.Text = "Giám đốc"
+                labHCTC.Text = "Trưởng phòng Tổng hợp"
+            Else
+                If DONVI = "000197" Or DONVI = "000101" Then
+                    labGD.Text = "Giám đốc"
+                    labHCTC.Text = "Trưởng phòng HC-NS"
+                Else
+                    labGD.Text = "Giám đốc"
+                    labHCTC.Text = "Trưởng phòng HC-TC"
+                End If
+            End If
         End If
         cboDonVi.Focus()
     End Sub
@@ -81,11 +94,21 @@
         End If
         rpt_BC06.SetParameterValue("nam", thoidiem)
         If DONVI = gMaDonViTW Then
-            rpt_BC06.SetParameterValue("labGD", "Tổng giám đốc")
-            rpt_BC06.SetParameterValue("labHCTC", "Trưởng phòng TCCB")
+            rpt_BC06.SetParameterValue("labGD", "Tổng Giám đốc")
+            rpt_BC06.SetParameterValue("labHCTC", "Giám đốc Ban TCCB")
         Else
-            rpt_BC06.SetParameterValue("labGD", "Giám đốc")
-            rpt_BC06.SetParameterValue("labHCTC", "Trưởng phòng HC-TC")
+            If DONVI = "000196" Then
+                rpt_BC06.SetParameterValue("labGD", "Giám đốc")
+                rpt_BC06.SetParameterValue("labHCTC", "Trưởng phòng Tổng hợp")
+            Else
+                If DONVI = "000197" Or DONVI = "000101" Then
+                    rpt_BC06.SetParameterValue("labGD", "Giám đốc")
+                    rpt_BC06.SetParameterValue("labHCTC", "Trưởng phòng HC-NS")
+                Else
+                    rpt_BC06.SetParameterValue("labGD", "Giám đốc")
+                    rpt_BC06.SetParameterValue("labHCTC", "Trưởng phòng HC-TC")
+                End If
+            End If
         End If
         rpt_BC06.SetParameterValue("LAPBIEU", txtLapBieu.Text)
         rpt_BC06.SetParameterValue("HCTC", txtHCTC.Text)

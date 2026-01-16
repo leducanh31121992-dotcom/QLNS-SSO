@@ -36,20 +36,27 @@
         Try
             Dim dbconn As DBAccess = New DBAccess
 
-            Dim iRootId As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}'", DONVI), 0)
+            Dim iRootId As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}' Order by Status Desc, Id_Goc Asc, Id Desc", DONVI), 0)
             Cap_Nd = IIf(iRootId = 0 Or DONVI = "000199", 1, IIf(iRootId = 1, 2, 3))
-            BrandNameByUserLogin = SoftSqlHelper.GetString(String.Format("Select Top 1 Ten_Goi From ChiNhanh Where Ma_So = '{0}' Order By Id", DONVI), "")
+            BrandNameByUserLogin = SoftSqlHelper.GetString(String.Format("Select Top 1 Ten_Goi From ChiNhanh Where Ma_So = '{0}' Order by Status Desc, Id_Goc Asc, Id Desc", DONVI), "")
             CAP = IIf(DONVI = gMaDonViTW, 1, 2)
             'DONVI = getSystemVar("DONVI")
-            TEN_DV_VT = dbconn.getString("SELECT ten_vt FROM ChiNhanh WHERE ma_so = '" & DONVI & "'") ' getSystemVar("TEN_VT")
+            TEN_DV_VT = dbconn.getString("Select Ten_VT From ChiNhanh WHERE Ma_So = '" & DONVI & "' Order by Status Desc, Id_Goc Asc, Id Desc") ' getSystemVar("TEN_VT")
             DIABAN = My_CStr(IIf(DONVI = gMaDonViTW, "Hà Nội", dbconn.getString("SELECT T2.ten_goi FROM ChiNhanh T1 INNER JOIN DiaDanh T2 ON T1.ma_so = T2.ma_so WHERE T1.ma_so = '" & DONVI & "'")), "") 'getSystemVar("DIABAN")
+            If DONVI = gMaDonViTW Then
+                DIABAN = "Hà Nội"
+            Else
+                DIABAN = dbconn.getString("Select B.Ten_Thon As Ten_Goi From ChiNhanh A,Dm_DiaPhuong B Where A.Ma_So=B.Pos_Code And A.Ma_So = '" & DONVI & "' And B.Ma_Xa ='00' And B.Ma_Thon='00' Order By A.Status Desc, Id_Goc Asc, A.Id Desc, B.TrangThai Asc")
+            End If
 
             ALL = 1 'CBool(getSystemVar("ALL"))
-            IdDONVI = dbconn.getNumber("SELECT id FROM ChiNhanh WHERE ma_so='" & DONVI.Trim & "'")
+
+            IdDONVI = dbconn.getNumber("Select Id From ChiNhanh WHERE Ma_So='" & DONVI.Trim & "' Order by Status Desc, Id_Goc Asc, Id Desc")
+            IdDONVI = dbconn.getNumber("SELECT IdDonVi From HS_CanBo Where Login_Username = '" & gUsername & "'")
             TRUCTHUOC = IIf(DONVI = gMaDonViTW, 1, 0) 'CByte(getSystemVar("TRUCTHUOC"))
 
             Dim _SQLHelper As New DBAccess
-            Dim StrSQL As String = "SELECT Top 1 * FROM SysVar WHERE ID_DonVi = " & IdDONVI & " Order By NgayHL Desc,TrangThai Desc"
+            Dim StrSQL As String = "Select Top 1 * From SysVar Where Id_DonVi = " & IdDONVI & " Order By NgayHL Desc,TrangThai Desc"
             Dim dt As DataTable = _SQLHelper.getDataTable(StrSQL)
             If dt.Rows.Count > 0 Then
                 MAX_KY = Math.Min(My_CInt(dt.Rows(0)("MAX_KY"), 1), 2)

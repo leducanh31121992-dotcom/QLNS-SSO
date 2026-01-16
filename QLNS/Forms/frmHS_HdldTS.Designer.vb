@@ -710,9 +710,9 @@ Partial Class frmHS_HdldTS
         Me.cb_chinhanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_chinhanh.ForeColor = System.Drawing.Color.Black
         Me.cb_chinhanh.FormattingEnabled = True
-        Me.cb_chinhanh.Location = New System.Drawing.Point(99, 0)
+        Me.cb_chinhanh.Location = New System.Drawing.Point(105, 0)
         Me.cb_chinhanh.Name = "cb_chinhanh"
-        Me.cb_chinhanh.Size = New System.Drawing.Size(380, 25)
+        Me.cb_chinhanh.Size = New System.Drawing.Size(374, 25)
         Me.cb_chinhanh.TabIndex = 1
         '
         'Label31
@@ -721,9 +721,9 @@ Partial Class frmHS_HdldTS
         Me.Label31.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.Location = New System.Drawing.Point(0, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(99, 21)
+        Me.Label31.Size = New System.Drawing.Size(105, 21)
         Me.Label31.TabIndex = 0
-        Me.Label31.Text = " Đơn vị"
+        Me.Label31.Text = " Chi nhánh/HSC"
         Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label51

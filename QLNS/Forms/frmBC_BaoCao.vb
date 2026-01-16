@@ -251,7 +251,7 @@ Public Class frmBC_BaoCao
                         End If
                     End Using
                     'Lấy dữ liệu phần địa danh
-                    _Diadiem = DIABAN
+                    _Diadiem = IIf(DIABAN Is Nothing, "", DIABAN)
                 End If
                 Dim sSobc_HCTC As String
                 Dim sLabHCTC As String

@@ -240,7 +240,7 @@
         IdGoc_DVCurr = dbconn.getNumber("SELECT Id_goc FROM ChiNhanh WHERE Id=" & vIdDonvi)
         If IdGoc_DVCurr = 0 Or IdGoc_DVCurr = 1 Then IdGoc_DVCurr = vIdDonvi
         MaSo_DVCurr = dbconn.getString("SELECT ma_so FROM ChiNhanh WHERE id=" & IdGoc_DVCurr)
-        k = sSQL.IndexOf("F")
+        k = sSQL.IndexOf("F")       'Vị trí bắt đầu chữ From
         sSQL = "SELECT * " & sSQL.Substring(k - 1)
         db = dbconn.SelectDBRows(sSQL)
         If Not (db Is Nothing) Then
@@ -265,11 +265,12 @@
                             dgv_main.Rows(i).Cells("cln_GhiChu").Value = "Chuyển công tác"
                         End If
                     Else
-                        If dbconn.getNumber("SELECT count(*) FROM ChiNhanh WHERE (Id=" & vIdDonvi & " or id_goc=" & vIdDonvi & " ) and id=" & CInt(db.Rows(i)("IdDonVi_Moi"))) > 0 Then
-                            dgv_main.Rows(i).Cells("cln_GhiChu").Value = dbconn.getString("SELECT (SELECT X.Ten_goi From DanhMuc X Where X.Id=IdLoaiQd) From HS_CBThoiviec WHERE IdCanBo='" & db.Rows(i)("IdCanBo").ToString() & "' And IsQD_NHCS = 1 ")
-                        Else
-                            dgv_main.Rows(i).Cells("cln_GhiChu").Value = "Chuyển công tác"
-                        End If
+                        dgv_main.Rows(i).Cells("cln_GhiChu").Value = IIf(db.Rows(i)("GhiChu").ToString() <> "", db.Rows(i)("GhiChu").ToString(), "")
+                        'If dbconn.getNumber("SELECT count(*) FROM ChiNhanh WHERE (Id=" & vIdDonvi & " or id_goc=" & vIdDonvi & " ) and id=" & CInt(db.Rows(i)("IdDonVi_Moi"))) > 0 Then
+                        '    dgv_main.Rows(i).Cells("cln_GhiChu").Value = dbconn.getString("SELECT (SELECT X.Ten_goi From DanhMuc X Where X.Id=IdLoaiQd) From HS_CBThoiviec WHERE IdCanBo='" & db.Rows(i)("IdCanBo").ToString() & "' And IsQD_NHCS = 1 ")
+                        'Else
+                        '    dgv_main.Rows(i).Cells("cln_GhiChu").Value = "Chuyển công tác"
+                        'End If
                     End If
 
                     dgv_main.Rows(i).Cells("cln_DonVi").Value = dbconn.getString("SELECT ten_goi from ChiNhanh WHERE [id]=" & CInt(db.Rows(i)("IdDonVi_Moi")))

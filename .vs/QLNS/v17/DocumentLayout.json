@@ -3,59 +3,172 @@
   "WorkspaceRootPath": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\forms\\frmhs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\forms\\frmht_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmht_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\forms\\frmht_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmht_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\modules\\modconstants.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\modules\\modconstants.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\common\\dbcommon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\common\\dbcommon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\modules\\funchs_luong.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\modules\\funchs_luong.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QLNS||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\forms\\frmtainanlaodongreport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmtainanlaodongreport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\common\\globals.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\common\\globals.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\forms\\frmtainanlaodongreport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmtainanlaodongreport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmbc_baocao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmbc_baocao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmbc_baocao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmbc_baocao.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmts_chitiet.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmts_chitiet.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\timkiemmoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\timkiemmoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\class\\clshs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\class\\clshs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\timkiemmoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\timkiemmoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\class\\clshs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\class\\clshs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\timkiemmoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\timkiemmoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\truyvan_dscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\truyvan_dscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\truyvan_dscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\truyvan_dscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\saokedlform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\saokedlform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\modules\\modpublic.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\modules\\modpublic.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_canbo_nghihuu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_canbo_nghihuu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\baocaoform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\baocaoform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmcn_hscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmcn_hscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_canbo_nghihuu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_canbo_nghihuu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\mainform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\mainform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\mainform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\mainform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmcn_hscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmcn_hscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmcn_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmcn_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmcn_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmcn_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\khld_mangluoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\khld_mangluoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmht_thamso.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmht_thamso.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\khld_mangluoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\khld_mangluoiform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_hdld.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_hdld.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_hdld.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_hdld.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmquyetdinhns.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\baocaoform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\baocaoform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmht_thamso.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmht_thamso.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\modules\\modvar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\modules\\modvar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\class\\bll\\hethongbll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\class\\bll\\hethongbll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmht_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmht_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_hdldts.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_hdldts.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\common\\dbcommon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\common\\dbcommon.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_gdcb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_gdcb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\class\\clshethong.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\class\\clshethong.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_gdcb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_gdcb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_canbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmts_chitiet.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmts_chitiet.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -74,23 +187,8 @@
       "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_chitiet.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmcn_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmcn_canbots.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmcn_hscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmcn_hscanbo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\forms\\frmhs_gdcb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\forms\\frmhs_gdcb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\qlns\\class\\clshs_dieuchuyencb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|solutionrelative:qlns\\class\\clshs_dieuchuyencb.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB413C76-4CF6-4733-A991-C99A92C14714}|QLNS\\QLNS.vbproj|d:\\vbsp_dev\\azuredepops_project\\vbsp-qlns\\vbsp-qlns\\qlns\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
     }
   ],
   "DocumentGroupContainers": [
@@ -100,135 +198,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmHS_CanBo.vb [Design]",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_CanBo.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo.vb [Design]",
-              "RelativeToolTip": "QLNS\\Forms\\frmHS_CanBo.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-08T10:18:35.41Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmHT_Login.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_Login.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHT_Login.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_Login.vb",
-              "RelativeToolTip": "QLNS\\Forms\\frmHT_Login.vb",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAnwFcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-08T08:55:03.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmHT_Login.vb [Design]",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_Login.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHT_Login.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_Login.vb [Design]",
-              "RelativeToolTip": "QLNS\\Forms\\frmHT_Login.vb [Design]",
+              "Title": "frmTaiNanLaoDongReport.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTaiNanLaoDongReport.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmTaiNanLaoDongReport.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTaiNanLaoDongReport.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmTaiNanLaoDongReport.vb",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwFAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-08T08:55:01.875Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-15T15:08:27.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DbCommon.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Common\\DbCommon.vb",
-              "RelativeDocumentMoniker": "QLNS\\Common\\DbCommon.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Common\\DbCommon.vb",
-              "RelativeToolTip": "QLNS\\Common\\DbCommon.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAoAAAAAAAAAA==",
+              "Title": "frmBC_BaoCao.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmBC_BaoCao.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmBC_BaoCao.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmBC_BaoCao.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmBC_BaoCao.vb",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAgwMQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-08T06:56:23.954Z",
+              "WhenOpened": "2025-08-06T15:19:44.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmHS_ChiTiet.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_ChiTiet.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_ChiTiet.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_ChiTiet.vb",
-              "RelativeToolTip": "QLNS\\Forms\\frmHS_ChiTiet.vb",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAkwIcAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "SaoKeDLForm.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\SaoKeDLForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\SaoKeDLForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\SaoKeDLForm.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\SaoKeDLForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T01:38:23.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmTS_ChiTiet.vb [Design]",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTS_ChiTiet.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmTS_ChiTiet.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTS_ChiTiet.vb [Design]",
-              "RelativeToolTip": "QLNS\\Forms\\frmTS_ChiTiet.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T15:20:44.534Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmQuyetDinhNS.vb [Design]",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmQuyetDinhNS.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb [Design]",
-              "RelativeToolTip": "QLNS\\Forms\\frmQuyetDinhNS.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-03T16:29:01.481Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmQuyetDinhNS.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmQuyetDinhNS.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb",
-              "RelativeToolTip": "QLNS\\Forms\\frmQuyetDinhNS.vb",
-              "ViewState": "AgIAABwJAAAAAAAAAAAYwDYJAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-01T06:48:06.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "modConstants.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modConstants.vb",
-              "RelativeDocumentMoniker": "QLNS\\Modules\\modConstants.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modConstants.vb",
-              "RelativeToolTip": "QLNS\\Modules\\modConstants.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-01T03:49:58.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QLNS",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\QLNS.vbproj",
-              "RelativeDocumentMoniker": "QLNS\\QLNS.vbproj",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\QLNS.vbproj",
-              "RelativeToolTip": "QLNS\\QLNS.vbproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-08T07:02:51.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T15:04:02.764Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "TruyVan_DsCanBo.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TruyVan_DsCanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\TruyVan_DsCanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TruyVan_DsCanBo.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\TruyVan_DsCanBo.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T15:55:52.215Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TruyVan_DsCanBo.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TruyVan_DsCanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\TruyVan_DsCanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TruyVan_DsCanBo.vb",
+              "RelativeToolTip": "QLNS\\Forms\\TruyVan_DsCanBo.vb",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwHsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T15:55:58.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TimKiemMoiForm.vb [Design]",
               "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TimKiemMoiForm.vb",
               "RelativeDocumentMoniker": "QLNS\\Forms\\TimKiemMoiForm.vb",
@@ -240,33 +276,452 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Globals.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Common\\Globals.vb",
-              "RelativeDocumentMoniker": "QLNS\\Common\\Globals.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Common\\Globals.vb",
-              "RelativeToolTip": "QLNS\\Common\\Globals.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "funcHS_Luong.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\funcHS_Luong.vb",
+              "RelativeDocumentMoniker": "QLNS\\Modules\\funcHS_Luong.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\funcHS_Luong.vb",
+              "RelativeToolTip": "QLNS\\Modules\\funcHS_Luong.vb",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAYwLcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-01T03:40:20.301Z",
+              "WhenOpened": "2025-08-27T16:09:34.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "modConstants.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modConstants.vb",
+              "RelativeDocumentMoniker": "QLNS\\Modules\\modConstants.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modConstants.vb",
+              "RelativeToolTip": "QLNS\\Modules\\modConstants.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-01T03:49:58.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmTaiNanLaoDongReport.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTaiNanLaoDongReport.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmTaiNanLaoDongReport.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTaiNanLaoDongReport.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmTaiNanLaoDongReport.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-15T15:08:23.911Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "TimKiemMoiForm.vb",
               "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TimKiemMoiForm.vb",
               "RelativeDocumentMoniker": "QLNS\\Forms\\TimKiemMoiForm.vb",
               "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\TimKiemMoiForm.vb",
               "RelativeToolTip": "QLNS\\Forms\\TimKiemMoiForm.vb",
-              "ViewState": "AgIAADgBAAAAAAAAAAAvwEgBAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAowFQBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T16:07:48.038Z",
+              "WhenOpened": "2025-09-25T02:15:08.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "clsHS_CanBo.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHS_CanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Class\\clsHS_CanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHS_CanBo.vb",
+              "RelativeToolTip": "QLNS\\Class\\clsHS_CanBo.vb",
+              "ViewState": "AgIAAAISAAAAAAAAAAAmwIASAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-13T13:37:30.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmBC_BaoCao.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmBC_BaoCao.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmBC_BaoCao.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmBC_BaoCao.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmBC_BaoCao.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T15:19:41.642Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "modPublic.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modPublic.vb",
+              "RelativeDocumentMoniker": "QLNS\\Modules\\modPublic.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modPublic.vb",
+              "RelativeToolTip": "QLNS\\Modules\\modPublic.vb",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAqwNkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T15:40:22.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaoCaoForm.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\BaoCaoForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\BaoCaoForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\BaoCaoForm.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\BaoCaoForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T15:04:23.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmCN_CanBoTS.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_CanBoTS.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_CanBoTS.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_CanBoTS.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmCN_CanBoTS.vb",
+              "ViewState": "AgIAAMIEAAAAAAAAAAAowNAEAACMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-07T04:12:29.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmCN_CanBoTS.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_CanBoTS.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_CanBoTS.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_CanBoTS.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmCN_CanBoTS.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-15T03:56:35.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmHS_CanBo_NghiHuu.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAuwOcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-09-14T16:45:30.662Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "frmCN_HSCanBo.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_HSCanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmCN_HSCanBo.vb",
+              "ViewState": "AgIAAHIJAAAAAAAAAAAcwJYJAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-01T15:30:25.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmCN_HSCanBo.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_HSCanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmCN_HSCanBo.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-17T06:17:05.955Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frmHS_CanBo_NghiHuu.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_CanBo_NghiHuu.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-09-14T16:45:34.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frmQuyetDinhNS.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmQuyetDinhNS.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmQuyetDinhNS.vb",
+              "ViewState": "AgIAACQHAAAAAAAAAAAqwNcHAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-01T06:48:06.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainForm.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\MainForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\MainForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\MainForm.vb [Design]",
+              "RelativeToolTip": "QLNS\\MainForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-24T03:44:18.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainForm.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\MainForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\MainForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\MainForm.vb",
+              "RelativeToolTip": "QLNS\\MainForm.vb",
+              "ViewState": "AgIAAGsCAAAAAAAAAIA5wIICAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T15:24:36.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmHS_HDLD.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_HDLD.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_HDLD.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_HDLD.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_HDLD.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-10T14:07:18.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frmHS_HDLD.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_HDLD.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_HDLD.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_HDLD.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_HDLD.vb",
+              "ViewState": "AgIAAC8DAAAAAAAAAAAswEEDAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-10T14:07:42.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "KhLd_MangLuoiForm.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\KhLd_MangLuoiForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\KhLd_MangLuoiForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\KhLd_MangLuoiForm.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\KhLd_MangLuoiForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-13T14:10:20.138Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "KhLd_MangLuoiForm.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\KhLd_MangLuoiForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\KhLd_MangLuoiForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\KhLd_MangLuoiForm.vb",
+              "RelativeToolTip": "QLNS\\Forms\\KhLd_MangLuoiForm.vb",
+              "ViewState": "AgIAAH4CAAAAAAAAAAAYwJ0CAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-13T14:10:22.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmHT_ThamSo.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_ThamSo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHT_ThamSo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_ThamSo.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHT_ThamSo.vb",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAswCQBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T02:15:37.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmQuyetDinhNS.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmQuyetDinhNS.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmQuyetDinhNS.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmQuyetDinhNS.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-03T16:29:01.481Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BaoCaoForm.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\BaoCaoForm.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\BaoCaoForm.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\BaoCaoForm.vb",
+              "RelativeToolTip": "QLNS\\Forms\\BaoCaoForm.vb",
+              "ViewState": "AgIAALEBAAAAAAAAAAAIwK8BAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-06T15:04:27.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "frmHT_ThamSo.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_ThamSo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHT_ThamSo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_ThamSo.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmHT_ThamSo.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T15:03:38.09Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frmHS_CanBo.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_CanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_CanBo.vb",
+              "ViewState": "AgIAAL8BAAAAAAAAAAAswN0BAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-17T06:21:54.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HeThongBLL.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\BLL\\HeThongBLL.vb",
+              "RelativeDocumentMoniker": "QLNS\\Class\\BLL\\HeThongBLL.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\BLL\\HeThongBLL.vb",
+              "RelativeToolTip": "QLNS\\Class\\BLL\\HeThongBLL.vb",
+              "ViewState": "AgIAANYAAAAAAAAAAAAAAOIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T02:19:27.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "modVar.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modVar.vb",
+              "RelativeDocumentMoniker": "QLNS\\Modules\\modVar.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Modules\\modVar.vb",
+              "RelativeToolTip": "QLNS\\Modules\\modVar.vb",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-30T15:26:41.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "frmHT_Login.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_Login.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHT_Login.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHT_Login.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHT_Login.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwDgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-08T08:55:03.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "frmTS_ChiTiet.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTS_ChiTiet.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmTS_ChiTiet.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTS_ChiTiet.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmTS_ChiTiet.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-07T15:20:44.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DbCommon.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Common\\DbCommon.vb",
+              "RelativeDocumentMoniker": "QLNS\\Common\\DbCommon.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Common\\DbCommon.vb",
+              "RelativeToolTip": "QLNS\\Common\\DbCommon.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-08T06:56:23.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "frmHS_HdldTS.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_HdldTS.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_HdldTS.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_HdldTS.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_HdldTS.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-16T15:46:17.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "frmHS_ChiTiet.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_ChiTiet.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_ChiTiet.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_ChiTiet.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_ChiTiet.vb",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwIcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-07T01:38:23.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "frmHS_CanBo.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_CanBo.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBo.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_CanBo.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-08T10:18:35.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "clsHeThong.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHeThong.vb",
+              "RelativeDocumentMoniker": "QLNS\\Class\\clsHeThong.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHeThong.vb",
+              "RelativeToolTip": "QLNS\\Class\\clsHeThong.vb",
+              "ViewState": "AgIAAIYDAAAAAAAAAAAjwJsDAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-14T10:17:15.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "frmHS_GDCB.vb",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_GDCB.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_GDCB.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_GDCB.vb",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_GDCB.vb",
+              "ViewState": "AgIAAMwDAAAAAAAAAAAkwPcDAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-07T02:18:39.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "frmHS_GDCB.vb [Design]",
+              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_GDCB.vb",
+              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_GDCB.vb",
+              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_GDCB.vb [Design]",
+              "RelativeToolTip": "QLNS\\Forms\\frmHS_GDCB.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-14T10:16:33.943Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "frmTS_ChiTiet.vb",
               "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmTS_ChiTiet.vb",
               "RelativeDocumentMoniker": "QLNS\\Forms\\frmTS_ChiTiet.vb",
@@ -274,25 +729,11 @@
               "RelativeToolTip": "QLNS\\Forms\\frmTS_ChiTiet.vb",
               "ViewState": "AgIAAEQBAAAAAAAAAAAswFYBAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T15:47:57.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T15:47:57.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "clsHS_CanBo.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHS_CanBo.vb",
-              "RelativeDocumentMoniker": "QLNS\\Class\\clsHS_CanBo.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHS_CanBo.vb",
-              "RelativeToolTip": "QLNS\\Class\\clsHS_CanBo.vb",
-              "ViewState": "AgIAAKUNAAAAAAAAAAAcwF0RAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T15:55:48.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 42,
               "Title": "frmHS_CanBoTS.vb",
               "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_CanBoTS.vb",
               "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_CanBoTS.vb",
@@ -304,32 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "frmCN_CanBoTS.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_CanBoTS.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_CanBoTS.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_CanBoTS.vb",
-              "RelativeToolTip": "QLNS\\Forms\\frmCN_CanBoTS.vb",
-              "ViewState": "AgIAALAHAAAAAAAAAAAjwMEHAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T04:12:29.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmCN_HSCanBo.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_HSCanBo.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb",
-              "RelativeToolTip": "QLNS\\Forms\\frmCN_HSCanBo.vb",
-              "ViewState": "AgIAAKQOAAAAAAAAAAD4v+oOAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-01T15:30:25.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 45,
               "Title": "frmHS_ChiTiet.vb [Design]",
               "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_ChiTiet.vb",
               "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_ChiTiet.vb",
@@ -340,31 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "frmCN_HSCanBo.vb [Design]",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmCN_HSCanBo.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmCN_HSCanBo.vb [Design]",
-              "RelativeToolTip": "QLNS\\Forms\\frmCN_HSCanBo.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-06T14:53:58.887Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "frmHS_GDCB.vb",
-              "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_GDCB.vb",
-              "RelativeDocumentMoniker": "QLNS\\Forms\\frmHS_GDCB.vb",
-              "ToolTip": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Forms\\frmHS_GDCB.vb",
-              "RelativeToolTip": "QLNS\\Forms\\frmHS_GDCB.vb",
-              "ViewState": "AgIAAFEEAAAAAAAAAAAewFkEAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-07-07T02:18:39.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 46,
               "Title": "clsHS_DieuChuyenCB.vb",
               "DocumentMoniker": "D:\\VBSP_DEV\\AZUREDEPOPS_PROJECT\\VBSP-QLNS\\VBSP-QLNS\\QLNS\\Class\\clsHS_DieuChuyenCB.vb",
               "RelativeDocumentMoniker": "QLNS\\Class\\clsHS_DieuChuyenCB.vb",

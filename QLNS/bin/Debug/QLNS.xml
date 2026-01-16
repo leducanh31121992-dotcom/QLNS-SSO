@@ -851,7 +851,7 @@ QLNS
  <param name="dgv_name">Tên lưới dữ liệu</param>
  <remarks></remarks>
 </member>
-<member name="M:QLNS.clsHS_CanBo.GetTrucThuoc(System.String)">
+<member name="M:QLNS.clsHS_CanBo.GetTrucThuoc(System.String,System.Int32)">
  <summary>
  Hàm trả lại giá trị - Trực thuộc
  </summary>
@@ -5442,11 +5442,11 @@ QLNS
  <returns></returns>
  <remarks></remarks>
 </member>
-<member name="M:QLNS.funcHS_Luong.GetTrucThuoc(System.String)">
+<member name="M:QLNS.funcHS_Luong.GetTrucThuoc(System.String,System.Int32)">
  <summary>
  Hàm trả lại giá trị - Trực thuộc
  </summary>
- <param name="Ma_So">Mã số của chi nhánh</param>
+ <param name="pMa_So">Mã số của chi nhánh</param>
  <returns></returns>
  <remarks></remarks>
 </member>

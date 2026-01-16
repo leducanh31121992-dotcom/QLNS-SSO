@@ -183,6 +183,65 @@ Partial Class frmQuyetDinhNS
         Me.bntClose = New System.Windows.Forms.Button()
         Me.tabThoiViec = New System.Windows.Forms.TabPage()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.gridThoiViec = New System.Windows.Forms.DataGridView()
+        Me.IdCBThoiViec = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cln_cbThoiViec = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Ngay_HL = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IdLoaiQD_TV = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IdLyDo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label141 = New System.Windows.Forms.Label()
+        Me.pnlQdThoiViecInput = New System.Windows.Forms.Panel()
+        Me.Panel42 = New System.Windows.Forms.Panel()
+        Me.txtGhiChu_TV = New System.Windows.Forms.TextBox()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label145 = New System.Windows.Forms.Label()
+        Me.Label140 = New System.Windows.Forms.Label()
+        Me.Panel41 = New System.Windows.Forms.Panel()
+        Me.txtTienThuHoi = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtTienBoiThuong = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label142 = New System.Windows.Forms.Label()
+        Me.Label138 = New System.Windows.Forms.Label()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.txtTroCapKhac = New System.Windows.Forms.TextBox()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.txtTroCap_TV = New System.Windows.Forms.TextBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label139 = New System.Windows.Forms.Label()
+        Me.Label136 = New System.Windows.Forms.Label()
+        Me.Panel39 = New System.Windows.Forms.Panel()
+        Me.cboLyDo_TV = New System.Windows.Forms.ComboBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label137 = New System.Windows.Forms.Label()
+        Me.Label134 = New System.Windows.Forms.Label()
+        Me.Panel38 = New System.Windows.Forms.Panel()
+        Me.dpkNgayHL_TV = New System.Windows.Forms.DateTimePicker()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.cboQDThoiViec = New System.Windows.Forms.ComboBox()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.Label135 = New System.Windows.Forms.Label()
+        Me.Label131 = New System.Windows.Forms.Label()
+        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.txtCVNguoiKyQD_TV = New System.Windows.Forms.TextBox()
+        Me.cboCVNguoiKyQD_TV = New System.Windows.Forms.ComboBox()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.txtNguoiKyQD_TV = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label132 = New System.Windows.Forms.Label()
+        Me.Label130 = New System.Windows.Forms.Label()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.txtDVraQD_TV = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label133 = New System.Windows.Forms.Label()
+        Me.Label129 = New System.Windows.Forms.Label()
+        Me.Panel35 = New System.Windows.Forms.Panel()
+        Me.dpkNgayKy_TV = New System.Windows.Forms.DateTimePicker()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.txtSoQD_TV = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.cbIsQD_NHCS_TV = New System.Windows.Forms.CheckBox()
+        Me.Label128 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.labAlert_TV = New System.Windows.Forms.Label()
         Me.bntNew_TV = New System.Windows.Forms.Button()
@@ -190,7 +249,7 @@ Partial Class frmQuyetDinhNS
         Me.bntCancel_TV = New System.Windows.Forms.Button()
         Me.bntDelete_TV = New System.Windows.Forms.Button()
         Me.bntClose_TV = New System.Windows.Forms.Button()
-        Me.gridThoiViec = New System.Windows.Forms.DataGridView()
+        Me.Label127 = New System.Windows.Forms.Label()
         Me.tabQDLuong = New System.Windows.Forms.TabPage()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.gridQDLuong = New System.Windows.Forms.DataGridView()
@@ -200,6 +259,66 @@ Partial Class frmQuyetDinhNS
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label144 = New System.Windows.Forms.Label()
+        Me.Panel43 = New System.Windows.Forms.Panel()
+        Me.Panel51 = New System.Windows.Forms.Panel()
+        Me.txtGhiChu_L = New System.Windows.Forms.TextBox()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label159 = New System.Windows.Forms.Label()
+        Me.Label158 = New System.Windows.Forms.Label()
+        Me.Panel50 = New System.Windows.Forms.Panel()
+        Me.dpkNgayLenLTT = New System.Windows.Forms.DateTimePicker()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.dpkNgayHL_L = New System.Windows.Forms.DateTimePicker()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label161 = New System.Windows.Forms.Label()
+        Me.Label162 = New System.Windows.Forms.Label()
+        Me.pnlQDL_IsNotNHCS = New System.Windows.Forms.Panel()
+        Me.txtNoiDungQD_L = New System.Windows.Forms.TextBox()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Label160 = New System.Windows.Forms.Label()
+        Me.Label154 = New System.Windows.Forms.Label()
+        Me.pnlQDL_IsNHCS = New System.Windows.Forms.Panel()
+        Me.cboQDBang = New System.Windows.Forms.ComboBox()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.cboQDNghiDinh = New System.Windows.Forms.ComboBox()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Label155 = New System.Windows.Forms.Label()
+        Me.Panel49 = New System.Windows.Forms.Panel()
+        Me.txtQDHeso = New System.Windows.Forms.TextBox()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.cboQDBac = New System.Windows.Forms.ComboBox()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.cboQDNgach = New System.Windows.Forms.ComboBox()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.Label157 = New System.Windows.Forms.Label()
+        Me.Label152 = New System.Windows.Forms.Label()
+        Me.Panel47 = New System.Windows.Forms.Panel()
+        Me.txtLoaiQDLuong = New System.Windows.Forms.TextBox()
+        Me.cboLoaiQDLuong = New System.Windows.Forms.ComboBox()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label153 = New System.Windows.Forms.Label()
+        Me.Label150 = New System.Windows.Forms.Label()
+        Me.Panel46 = New System.Windows.Forms.Panel()
+        Me.txtCVNguoiKyQD_L = New System.Windows.Forms.TextBox()
+        Me.cboCVNguoiKyQD_L = New System.Windows.Forms.ComboBox()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.txtNguoiKyQD_L = New System.Windows.Forms.TextBox()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.Label151 = New System.Windows.Forms.Label()
+        Me.Label147 = New System.Windows.Forms.Label()
+        Me.Panel45 = New System.Windows.Forms.Panel()
+        Me.txtDVraQD_L = New System.Windows.Forms.TextBox()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.Label149 = New System.Windows.Forms.Label()
+        Me.Label146 = New System.Windows.Forms.Label()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.dpkNgayKy_L = New System.Windows.Forms.DateTimePicker()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.txtSoQD_L = New System.Windows.Forms.TextBox()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.cbIsQD_NHCS_L = New System.Windows.Forms.CheckBox()
+        Me.Label148 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.labAlert_L = New System.Windows.Forms.Label()
         Me.bntNew_L = New System.Windows.Forms.Button()
@@ -207,6 +326,7 @@ Partial Class frmQuyetDinhNS
         Me.bntCancel_L = New System.Windows.Forms.Button()
         Me.bntDelete_L = New System.Windows.Forms.Button()
         Me.bntClose_L = New System.Windows.Forms.Button()
+        Me.Label143 = New System.Windows.Forms.Label()
         Me.tabQDPhuCap = New System.Windows.Forms.TabPage()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.gridQDPhuCap = New System.Windows.Forms.DataGridView()
@@ -215,6 +335,53 @@ Partial Class frmQuyetDinhNS
         Me.NgayHL_PC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label175 = New System.Windows.Forms.Label()
+        Me.Panel48 = New System.Windows.Forms.Panel()
+        Me.Panel55 = New System.Windows.Forms.Panel()
+        Me.txtGhichu_PC = New System.Windows.Forms.TextBox()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label176 = New System.Windows.Forms.Label()
+        Me.Label174 = New System.Windows.Forms.Label()
+        Me.Panel57 = New System.Windows.Forms.Panel()
+        Me.dpkDenNgay_PC = New System.Windows.Forms.DateTimePicker()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.dpkNgayHL_PC = New System.Windows.Forms.DateTimePicker()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.Label173 = New System.Windows.Forms.Label()
+        Me.Label171 = New System.Windows.Forms.Label()
+        Me.pnlQDPC_IsNotNHCS = New System.Windows.Forms.Panel()
+        Me.txtNoiDungQD_PC = New System.Windows.Forms.TextBox()
+        Me.Label106 = New System.Windows.Forms.Label()
+        Me.Label172 = New System.Windows.Forms.Label()
+        Me.pnlQDPC_IsNHCS = New System.Windows.Forms.Panel()
+        Me.cboMucQD_PC = New System.Windows.Forms.ComboBox()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.cboLoaiQD_PC = New System.Windows.Forms.ComboBox()
+        Me.Label96 = New System.Windows.Forms.Label()
+        Me.Label170 = New System.Windows.Forms.Label()
+        Me.Label169 = New System.Windows.Forms.Label()
+        Me.Label166 = New System.Windows.Forms.Label()
+        Me.Panel54 = New System.Windows.Forms.Panel()
+        Me.txtCVNguoiKyQD_PC = New System.Windows.Forms.TextBox()
+        Me.cboCVNguoiKyQD_PC = New System.Windows.Forms.ComboBox()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.txtNguoiKyQD_PC = New System.Windows.Forms.TextBox()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.Label167 = New System.Windows.Forms.Label()
+        Me.Label164 = New System.Windows.Forms.Label()
+        Me.Panel53 = New System.Windows.Forms.Panel()
+        Me.txtDVraQD_PC = New System.Windows.Forms.TextBox()
+        Me.Label107 = New System.Windows.Forms.Label()
+        Me.Label168 = New System.Windows.Forms.Label()
+        Me.Label163 = New System.Windows.Forms.Label()
+        Me.Panel52 = New System.Windows.Forms.Panel()
+        Me.dpkNgayKy_PC = New System.Windows.Forms.DateTimePicker()
+        Me.Label108 = New System.Windows.Forms.Label()
+        Me.txtSoQD_PC = New System.Windows.Forms.TextBox()
+        Me.Label109 = New System.Windows.Forms.Label()
+        Me.cbIsQD_NHCS_PC = New System.Windows.Forms.CheckBox()
+        Me.Label165 = New System.Windows.Forms.Label()
+        Me.Label156 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.labAlert_P = New System.Windows.Forms.Label()
         Me.bntNew_PC = New System.Windows.Forms.Button()
@@ -230,6 +397,37 @@ Partial Class frmQuyetDinhNS
         Me.NgayHL_K = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label187 = New System.Windows.Forms.Label()
+        Me.Panel56 = New System.Windows.Forms.Panel()
+        Me.Panel62 = New System.Windows.Forms.Panel()
+        Me.txtGhiChu_K = New System.Windows.Forms.TextBox()
+        Me.Label103 = New System.Windows.Forms.Label()
+        Me.Label186 = New System.Windows.Forms.Label()
+        Me.Label184 = New System.Windows.Forms.Label()
+        Me.Panel61 = New System.Windows.Forms.Panel()
+        Me.txtNoiDungQD_K = New System.Windows.Forms.TextBox()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.Label185 = New System.Windows.Forms.Label()
+        Me.Label182 = New System.Windows.Forms.Label()
+        Me.Panel60 = New System.Windows.Forms.Panel()
+        Me.txtCVNguoiKyQD_K = New System.Windows.Forms.TextBox()
+        Me.Label100 = New System.Windows.Forms.Label()
+        Me.txtNguoiKyQD_K = New System.Windows.Forms.TextBox()
+        Me.Label102 = New System.Windows.Forms.Label()
+        Me.Label183 = New System.Windows.Forms.Label()
+        Me.Label180 = New System.Windows.Forms.Label()
+        Me.Panel59 = New System.Windows.Forms.Panel()
+        Me.txtDVraQD_K = New System.Windows.Forms.TextBox()
+        Me.Label104 = New System.Windows.Forms.Label()
+        Me.Label181 = New System.Windows.Forms.Label()
+        Me.Label178 = New System.Windows.Forms.Label()
+        Me.Panel58 = New System.Windows.Forms.Panel()
+        Me.dpkNgayKy_K = New System.Windows.Forms.DateTimePicker()
+        Me.Label97 = New System.Windows.Forms.Label()
+        Me.txtSoQD_K = New System.Windows.Forms.TextBox()
+        Me.Label99 = New System.Windows.Forms.Label()
+        Me.Label179 = New System.Windows.Forms.Label()
+        Me.Label177 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.labAlert_K = New System.Windows.Forms.Label()
         Me.bntNew_K = New System.Windows.Forms.Button()
@@ -308,204 +506,6 @@ Partial Class frmQuyetDinhNS
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.splitt_main = New System.Windows.Forms.Splitter()
-        Me.Label127 = New System.Windows.Forms.Label()
-        Me.IdCBThoiViec = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cln_cbThoiViec = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.Ngay_HL = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdLoaiQD_TV = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdLyDo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pnlQdThoiViecInput = New System.Windows.Forms.Panel()
-        Me.Panel35 = New System.Windows.Forms.Panel()
-        Me.Label128 = New System.Windows.Forms.Label()
-        Me.cbIsQD_NHCS_TV = New System.Windows.Forms.CheckBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtSoQD_TV = New System.Windows.Forms.TextBox()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.dpkNgayKy_TV = New System.Windows.Forms.DateTimePicker()
-        Me.Label129 = New System.Windows.Forms.Label()
-        Me.Label130 = New System.Windows.Forms.Label()
-        Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.Label133 = New System.Windows.Forms.Label()
-        Me.Label131 = New System.Windows.Forms.Label()
-        Me.Panel37 = New System.Windows.Forms.Panel()
-        Me.Label132 = New System.Windows.Forms.Label()
-        Me.Label134 = New System.Windows.Forms.Label()
-        Me.Panel38 = New System.Windows.Forms.Panel()
-        Me.Label135 = New System.Windows.Forms.Label()
-        Me.Label136 = New System.Windows.Forms.Label()
-        Me.Panel39 = New System.Windows.Forms.Panel()
-        Me.Label137 = New System.Windows.Forms.Label()
-        Me.Label138 = New System.Windows.Forms.Label()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.Label139 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.txtDVraQD_TV = New System.Windows.Forms.TextBox()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.txtNguoiKyQD_TV = New System.Windows.Forms.TextBox()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.cboCVNguoiKyQD_TV = New System.Windows.Forms.ComboBox()
-        Me.txtCVNguoiKyQD_TV = New System.Windows.Forms.TextBox()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.cboQDThoiViec = New System.Windows.Forms.ComboBox()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.dpkNgayHL_TV = New System.Windows.Forms.DateTimePicker()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.cboLyDo_TV = New System.Windows.Forms.ComboBox()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label140 = New System.Windows.Forms.Label()
-        Me.Panel41 = New System.Windows.Forms.Panel()
-        Me.Label142 = New System.Windows.Forms.Label()
-        Me.Panel42 = New System.Windows.Forms.Panel()
-        Me.Label145 = New System.Windows.Forms.Label()
-        Me.txtTroCap_TV = New System.Windows.Forms.TextBox()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.txtTroCapKhac = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtTienBoiThuong = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtTienThuHoi = New System.Windows.Forms.TextBox()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.txtGhiChu_TV = New System.Windows.Forms.TextBox()
-        Me.Label141 = New System.Windows.Forms.Label()
-        Me.Label143 = New System.Windows.Forms.Label()
-        Me.Label144 = New System.Windows.Forms.Label()
-        Me.Panel43 = New System.Windows.Forms.Panel()
-        Me.Panel44 = New System.Windows.Forms.Panel()
-        Me.Label148 = New System.Windows.Forms.Label()
-        Me.cbIsQD_NHCS_L = New System.Windows.Forms.CheckBox()
-        Me.Label146 = New System.Windows.Forms.Label()
-        Me.Label147 = New System.Windows.Forms.Label()
-        Me.Panel45 = New System.Windows.Forms.Panel()
-        Me.Label149 = New System.Windows.Forms.Label()
-        Me.Label150 = New System.Windows.Forms.Label()
-        Me.Panel46 = New System.Windows.Forms.Panel()
-        Me.Label151 = New System.Windows.Forms.Label()
-        Me.Label152 = New System.Windows.Forms.Label()
-        Me.Panel47 = New System.Windows.Forms.Panel()
-        Me.Label153 = New System.Windows.Forms.Label()
-        Me.Label154 = New System.Windows.Forms.Label()
-        Me.pnlQDL_IsNHCS = New System.Windows.Forms.Panel()
-        Me.Label155 = New System.Windows.Forms.Label()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.txtSoQD_L = New System.Windows.Forms.TextBox()
-        Me.Label60 = New System.Windows.Forms.Label()
-        Me.dpkNgayKy_L = New System.Windows.Forms.DateTimePicker()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.txtDVraQD_L = New System.Windows.Forms.TextBox()
-        Me.Label57 = New System.Windows.Forms.Label()
-        Me.txtNguoiKyQD_L = New System.Windows.Forms.TextBox()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.cboCVNguoiKyQD_L = New System.Windows.Forms.ComboBox()
-        Me.txtCVNguoiKyQD_L = New System.Windows.Forms.TextBox()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.cboLoaiQDLuong = New System.Windows.Forms.ComboBox()
-        Me.txtLoaiQDLuong = New System.Windows.Forms.TextBox()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.cboQDNghiDinh = New System.Windows.Forms.ComboBox()
-        Me.Label61 = New System.Windows.Forms.Label()
-        Me.cboQDBang = New System.Windows.Forms.ComboBox()
-        Me.Panel50 = New System.Windows.Forms.Panel()
-        Me.Label161 = New System.Windows.Forms.Label()
-        Me.Label158 = New System.Windows.Forms.Label()
-        Me.Panel51 = New System.Windows.Forms.Panel()
-        Me.Label159 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.dpkNgayHL_L = New System.Windows.Forms.DateTimePicker()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.dpkNgayLenLTT = New System.Windows.Forms.DateTimePicker()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.txtGhiChu_L = New System.Windows.Forms.TextBox()
-        Me.Panel49 = New System.Windows.Forms.Panel()
-        Me.txtQDHeso = New System.Windows.Forms.TextBox()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.cboQDBac = New System.Windows.Forms.ComboBox()
-        Me.Label58 = New System.Windows.Forms.Label()
-        Me.cboQDNgach = New System.Windows.Forms.ComboBox()
-        Me.Label59 = New System.Windows.Forms.Label()
-        Me.Label157 = New System.Windows.Forms.Label()
-        Me.pnlQDL_IsNotNHCS = New System.Windows.Forms.Panel()
-        Me.txtNoiDungQD_L = New System.Windows.Forms.TextBox()
-        Me.Label65 = New System.Windows.Forms.Label()
-        Me.Label160 = New System.Windows.Forms.Label()
-        Me.Label162 = New System.Windows.Forms.Label()
-        Me.Label156 = New System.Windows.Forms.Label()
-        Me.Panel48 = New System.Windows.Forms.Panel()
-        Me.Panel52 = New System.Windows.Forms.Panel()
-        Me.Label165 = New System.Windows.Forms.Label()
-        Me.cbIsQD_NHCS_PC = New System.Windows.Forms.CheckBox()
-        Me.Label109 = New System.Windows.Forms.Label()
-        Me.txtSoQD_PC = New System.Windows.Forms.TextBox()
-        Me.Label108 = New System.Windows.Forms.Label()
-        Me.dpkNgayKy_PC = New System.Windows.Forms.DateTimePicker()
-        Me.Label163 = New System.Windows.Forms.Label()
-        Me.Label164 = New System.Windows.Forms.Label()
-        Me.Panel53 = New System.Windows.Forms.Panel()
-        Me.Label168 = New System.Windows.Forms.Label()
-        Me.Label166 = New System.Windows.Forms.Label()
-        Me.Panel54 = New System.Windows.Forms.Panel()
-        Me.Label167 = New System.Windows.Forms.Label()
-        Me.pnlQDPC_IsNHCS = New System.Windows.Forms.Panel()
-        Me.Label170 = New System.Windows.Forms.Label()
-        Me.Label171 = New System.Windows.Forms.Label()
-        Me.pnlQDPC_IsNotNHCS = New System.Windows.Forms.Panel()
-        Me.Label172 = New System.Windows.Forms.Label()
-        Me.Panel57 = New System.Windows.Forms.Panel()
-        Me.Label173 = New System.Windows.Forms.Label()
-        Me.Label107 = New System.Windows.Forms.Label()
-        Me.txtDVraQD_PC = New System.Windows.Forms.TextBox()
-        Me.Label69 = New System.Windows.Forms.Label()
-        Me.txtNguoiKyQD_PC = New System.Windows.Forms.TextBox()
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.cboCVNguoiKyQD_PC = New System.Windows.Forms.ComboBox()
-        Me.txtCVNguoiKyQD_PC = New System.Windows.Forms.TextBox()
-        Me.Label96 = New System.Windows.Forms.Label()
-        Me.cboLoaiQD_PC = New System.Windows.Forms.ComboBox()
-        Me.Label71 = New System.Windows.Forms.Label()
-        Me.cboMucQD_PC = New System.Windows.Forms.ComboBox()
-        Me.Label106 = New System.Windows.Forms.Label()
-        Me.txtNoiDungQD_PC = New System.Windows.Forms.TextBox()
-        Me.Label169 = New System.Windows.Forms.Label()
-        Me.Label70 = New System.Windows.Forms.Label()
-        Me.dpkNgayHL_PC = New System.Windows.Forms.DateTimePicker()
-        Me.Label68 = New System.Windows.Forms.Label()
-        Me.dpkDenNgay_PC = New System.Windows.Forms.DateTimePicker()
-        Me.Label174 = New System.Windows.Forms.Label()
-        Me.Panel55 = New System.Windows.Forms.Panel()
-        Me.Label176 = New System.Windows.Forms.Label()
-        Me.Label66 = New System.Windows.Forms.Label()
-        Me.txtGhichu_PC = New System.Windows.Forms.TextBox()
-        Me.Label175 = New System.Windows.Forms.Label()
-        Me.Label177 = New System.Windows.Forms.Label()
-        Me.Panel56 = New System.Windows.Forms.Panel()
-        Me.Panel58 = New System.Windows.Forms.Panel()
-        Me.Label179 = New System.Windows.Forms.Label()
-        Me.Label178 = New System.Windows.Forms.Label()
-        Me.Label180 = New System.Windows.Forms.Label()
-        Me.Panel59 = New System.Windows.Forms.Panel()
-        Me.Label181 = New System.Windows.Forms.Label()
-        Me.Label182 = New System.Windows.Forms.Label()
-        Me.Panel60 = New System.Windows.Forms.Panel()
-        Me.Label183 = New System.Windows.Forms.Label()
-        Me.Label184 = New System.Windows.Forms.Label()
-        Me.Panel61 = New System.Windows.Forms.Panel()
-        Me.Label185 = New System.Windows.Forms.Label()
-        Me.Panel62 = New System.Windows.Forms.Panel()
-        Me.Label186 = New System.Windows.Forms.Label()
-        Me.Label99 = New System.Windows.Forms.Label()
-        Me.txtSoQD_K = New System.Windows.Forms.TextBox()
-        Me.Label97 = New System.Windows.Forms.Label()
-        Me.dpkNgayKy_K = New System.Windows.Forms.DateTimePicker()
-        Me.Label104 = New System.Windows.Forms.Label()
-        Me.txtDVraQD_K = New System.Windows.Forms.TextBox()
-        Me.Label102 = New System.Windows.Forms.Label()
-        Me.txtNguoiKyQD_K = New System.Windows.Forms.TextBox()
-        Me.Label100 = New System.Windows.Forms.Label()
-        Me.txtCVNguoiKyQD_K = New System.Windows.Forms.TextBox()
-        Me.Label72 = New System.Windows.Forms.Label()
-        Me.txtNoiDungQD_K = New System.Windows.Forms.TextBox()
-        Me.Label103 = New System.Windows.Forms.Label()
-        Me.txtGhiChu_K = New System.Windows.Forms.TextBox()
-        Me.Label187 = New System.Windows.Forms.Label()
         Me.Panel16.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.gb_HumanInfo.SuspendLayout()
@@ -546,56 +546,56 @@ Partial Class frmQuyetDinhNS
         Me.Panel4.SuspendLayout()
         Me.tabThoiViec.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         CType(Me.gridThoiViec, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlQdThoiViecInput.SuspendLayout()
+        Me.Panel42.SuspendLayout()
+        Me.Panel41.SuspendLayout()
+        Me.Panel40.SuspendLayout()
+        Me.Panel39.SuspendLayout()
+        Me.Panel38.SuspendLayout()
+        Me.Panel37.SuspendLayout()
+        Me.Panel36.SuspendLayout()
+        Me.Panel35.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.tabQDLuong.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.gridQDLuong, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel43.SuspendLayout()
+        Me.Panel51.SuspendLayout()
+        Me.Panel50.SuspendLayout()
+        Me.pnlQDL_IsNotNHCS.SuspendLayout()
+        Me.pnlQDL_IsNHCS.SuspendLayout()
+        Me.Panel49.SuspendLayout()
+        Me.Panel47.SuspendLayout()
+        Me.Panel46.SuspendLayout()
+        Me.Panel45.SuspendLayout()
+        Me.Panel44.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.tabQDPhuCap.SuspendLayout()
         Me.Panel8.SuspendLayout()
         CType(Me.gridQDPhuCap, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel48.SuspendLayout()
+        Me.Panel55.SuspendLayout()
+        Me.Panel57.SuspendLayout()
+        Me.pnlQDPC_IsNotNHCS.SuspendLayout()
+        Me.pnlQDPC_IsNHCS.SuspendLayout()
+        Me.Panel54.SuspendLayout()
+        Me.Panel53.SuspendLayout()
+        Me.Panel52.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.tabQDKhac.SuspendLayout()
         Me.Panel10.SuspendLayout()
         CType(Me.gridQDKhac, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel56.SuspendLayout()
+        Me.Panel62.SuspendLayout()
+        Me.Panel61.SuspendLayout()
+        Me.Panel60.SuspendLayout()
+        Me.Panel59.SuspendLayout()
+        Me.Panel58.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlQdThoiViecInput.SuspendLayout()
-        Me.Panel35.SuspendLayout()
-        Me.Panel36.SuspendLayout()
-        Me.Panel37.SuspendLayout()
-        Me.Panel38.SuspendLayout()
-        Me.Panel39.SuspendLayout()
-        Me.Panel40.SuspendLayout()
-        Me.Panel41.SuspendLayout()
-        Me.Panel42.SuspendLayout()
-        Me.Panel43.SuspendLayout()
-        Me.Panel44.SuspendLayout()
-        Me.Panel45.SuspendLayout()
-        Me.Panel46.SuspendLayout()
-        Me.Panel47.SuspendLayout()
-        Me.pnlQDL_IsNHCS.SuspendLayout()
-        Me.Panel50.SuspendLayout()
-        Me.Panel51.SuspendLayout()
-        Me.Panel49.SuspendLayout()
-        Me.pnlQDL_IsNotNHCS.SuspendLayout()
-        Me.Panel48.SuspendLayout()
-        Me.Panel52.SuspendLayout()
-        Me.Panel53.SuspendLayout()
-        Me.Panel54.SuspendLayout()
-        Me.pnlQDPC_IsNHCS.SuspendLayout()
-        Me.pnlQDPC_IsNotNHCS.SuspendLayout()
-        Me.Panel57.SuspendLayout()
-        Me.Panel55.SuspendLayout()
-        Me.Panel56.SuspendLayout()
-        Me.Panel58.SuspendLayout()
-        Me.Panel59.SuspendLayout()
-        Me.Panel60.SuspendLayout()
-        Me.Panel61.SuspendLayout()
-        Me.Panel62.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel16
@@ -2514,6 +2514,702 @@ Partial Class frmQuyetDinhNS
         Me.Panel3.Size = New System.Drawing.Size(765, 560)
         Me.Panel3.TabIndex = 27
         '
+        'gridThoiViec
+        '
+        Me.gridThoiViec.AllowUserToAddRows = False
+        Me.gridThoiViec.AllowUserToDeleteRows = False
+        Me.gridThoiViec.AllowUserToResizeColumns = False
+        Me.gridThoiViec.AllowUserToResizeRows = False
+        Me.gridThoiViec.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.gridThoiViec.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.gridThoiViec.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.gridThoiViec.ColumnHeadersHeight = 34
+        Me.gridThoiViec.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdCBThoiViec, Me.cln_cbThoiViec, Me.Ngay_HL, Me.IdLoaiQD_TV, Me.IdLyDo})
+        Me.gridThoiViec.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gridThoiViec.Location = New System.Drawing.Point(0, 2)
+        Me.gridThoiViec.MultiSelect = False
+        Me.gridThoiViec.Name = "gridThoiViec"
+        Me.gridThoiViec.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.gridThoiViec.RowHeadersVisible = False
+        Me.gridThoiViec.RowHeadersWidth = 51
+        Me.gridThoiViec.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.gridThoiViec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.gridThoiViec.Size = New System.Drawing.Size(765, 334)
+        Me.gridThoiViec.TabIndex = 1
+        Me.gridThoiViec.Tag = ""
+        '
+        'IdCBThoiViec
+        '
+        Me.IdCBThoiViec.DataPropertyName = "IdCBThoiViec"
+        Me.IdCBThoiViec.HeaderText = "ID"
+        Me.IdCBThoiViec.MinimumWidth = 6
+        Me.IdCBThoiViec.Name = "IdCBThoiViec"
+        Me.IdCBThoiViec.ReadOnly = True
+        Me.IdCBThoiViec.Visible = False
+        Me.IdCBThoiViec.Width = 125
+        '
+        'cln_cbThoiViec
+        '
+        Me.cln_cbThoiViec.HeaderText = "Chọn xoá"
+        Me.cln_cbThoiViec.MinimumWidth = 6
+        Me.cln_cbThoiViec.Name = "cln_cbThoiViec"
+        Me.cln_cbThoiViec.Width = 70
+        '
+        'Ngay_HL
+        '
+        Me.Ngay_HL.DataPropertyName = "Ngay_HL"
+        Me.Ngay_HL.HeaderText = "Ngày"
+        Me.Ngay_HL.MinimumWidth = 6
+        Me.Ngay_HL.Name = "Ngay_HL"
+        Me.Ngay_HL.ReadOnly = True
+        Me.Ngay_HL.Width = 90
+        '
+        'IdLoaiQD_TV
+        '
+        Me.IdLoaiQD_TV.DataPropertyName = "IdLoaiQD"
+        Me.IdLoaiQD_TV.HeaderText = "Quyết định"
+        Me.IdLoaiQD_TV.MinimumWidth = 6
+        Me.IdLoaiQD_TV.Name = "IdLoaiQD_TV"
+        Me.IdLoaiQD_TV.ReadOnly = True
+        Me.IdLoaiQD_TV.Width = 200
+        '
+        'IdLyDo
+        '
+        Me.IdLyDo.DataPropertyName = "IdLyDo"
+        Me.IdLyDo.HeaderText = "Lý do thôi việc"
+        Me.IdLyDo.MinimumWidth = 6
+        Me.IdLyDo.Name = "IdLyDo"
+        Me.IdLyDo.ReadOnly = True
+        Me.IdLyDo.Width = 390
+        '
+        'Label141
+        '
+        Me.Label141.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label141.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label141.Location = New System.Drawing.Point(0, 336)
+        Me.Label141.Name = "Label141"
+        Me.Label141.Size = New System.Drawing.Size(765, 5)
+        Me.Label141.TabIndex = 3
+        Me.Label141.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'pnlQdThoiViecInput
+        '
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel42)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label140)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel41)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label138)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel40)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label136)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel39)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label134)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel38)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label131)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel37)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label130)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel36)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Label129)
+        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel35)
+        Me.pnlQdThoiViecInput.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnlQdThoiViecInput.Location = New System.Drawing.Point(0, 341)
+        Me.pnlQdThoiViecInput.Name = "pnlQdThoiViecInput"
+        Me.pnlQdThoiViecInput.Size = New System.Drawing.Size(765, 191)
+        Me.pnlQdThoiViecInput.TabIndex = 2
+        '
+        'Panel42
+        '
+        Me.Panel42.Controls.Add(Me.txtGhiChu_TV)
+        Me.Panel42.Controls.Add(Me.Label43)
+        Me.Panel42.Controls.Add(Me.Label145)
+        Me.Panel42.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel42.Location = New System.Drawing.Point(0, 161)
+        Me.Panel42.Name = "Panel42"
+        Me.Panel42.Size = New System.Drawing.Size(765, 22)
+        Me.Panel42.TabIndex = 15
+        '
+        'txtGhiChu_TV
+        '
+        Me.txtGhiChu_TV.BackColor = System.Drawing.Color.White
+        Me.txtGhiChu_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtGhiChu_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGhiChu_TV.ForeColor = System.Drawing.Color.Navy
+        Me.txtGhiChu_TV.Location = New System.Drawing.Point(97, 0)
+        Me.txtGhiChu_TV.Name = "txtGhiChu_TV"
+        Me.txtGhiChu_TV.Size = New System.Drawing.Size(658, 26)
+        Me.txtGhiChu_TV.TabIndex = 2
+        '
+        'Label43
+        '
+        Me.Label43.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label43.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.ForeColor = System.Drawing.Color.Black
+        Me.Label43.Location = New System.Drawing.Point(5, 0)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(92, 22)
+        Me.Label43.TabIndex = 1
+        Me.Label43.Text = "Ghi chú"
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label145
+        '
+        Me.Label145.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label145.Location = New System.Drawing.Point(0, 0)
+        Me.Label145.Name = "Label145"
+        Me.Label145.Size = New System.Drawing.Size(5, 22)
+        Me.Label145.TabIndex = 0
+        Me.Label145.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label140
+        '
+        Me.Label140.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label140.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label140.Location = New System.Drawing.Point(0, 160)
+        Me.Label140.Name = "Label140"
+        Me.Label140.Size = New System.Drawing.Size(765, 1)
+        Me.Label140.TabIndex = 14
+        Me.Label140.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel41
+        '
+        Me.Panel41.Controls.Add(Me.txtTienThuHoi)
+        Me.Panel41.Controls.Add(Me.Label9)
+        Me.Panel41.Controls.Add(Me.txtTienBoiThuong)
+        Me.Panel41.Controls.Add(Me.Label11)
+        Me.Panel41.Controls.Add(Me.Label142)
+        Me.Panel41.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel41.Location = New System.Drawing.Point(0, 138)
+        Me.Panel41.Name = "Panel41"
+        Me.Panel41.Size = New System.Drawing.Size(765, 22)
+        Me.Panel41.TabIndex = 13
+        '
+        'txtTienThuHoi
+        '
+        Me.txtTienThuHoi.BackColor = System.Drawing.Color.White
+        Me.txtTienThuHoi.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtTienThuHoi.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTienThuHoi.ForeColor = System.Drawing.Color.Navy
+        Me.txtTienThuHoi.Location = New System.Drawing.Point(435, 0)
+        Me.txtTienThuHoi.Name = "txtTienThuHoi"
+        Me.txtTienThuHoi.Size = New System.Drawing.Size(320, 26)
+        Me.txtTienThuHoi.TabIndex = 4
+        Me.txtTienThuHoi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label9
+        '
+        Me.Label9.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label9.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Black
+        Me.Label9.Location = New System.Drawing.Point(303, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(132, 22)
+        Me.Label9.TabIndex = 3
+        Me.Label9.Text = "Số tiền phải thu hồi "
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtTienBoiThuong
+        '
+        Me.txtTienBoiThuong.BackColor = System.Drawing.Color.White
+        Me.txtTienBoiThuong.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtTienBoiThuong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTienBoiThuong.ForeColor = System.Drawing.Color.Navy
+        Me.txtTienBoiThuong.Location = New System.Drawing.Point(146, 0)
+        Me.txtTienBoiThuong.Name = "txtTienBoiThuong"
+        Me.txtTienBoiThuong.Size = New System.Drawing.Size(157, 26)
+        Me.txtTienBoiThuong.TabIndex = 2
+        Me.txtTienBoiThuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label11
+        '
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label11.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(5, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(141, 22)
+        Me.Label11.TabIndex = 1
+        Me.Label11.Text = "Số tiền bồi thường"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label142
+        '
+        Me.Label142.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label142.Location = New System.Drawing.Point(0, 0)
+        Me.Label142.Name = "Label142"
+        Me.Label142.Size = New System.Drawing.Size(5, 22)
+        Me.Label142.TabIndex = 0
+        Me.Label142.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label138
+        '
+        Me.Label138.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label138.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label138.Location = New System.Drawing.Point(0, 137)
+        Me.Label138.Name = "Label138"
+        Me.Label138.Size = New System.Drawing.Size(765, 1)
+        Me.Label138.TabIndex = 12
+        Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel40
+        '
+        Me.Panel40.Controls.Add(Me.txtTroCapKhac)
+        Me.Panel40.Controls.Add(Me.Label39)
+        Me.Panel40.Controls.Add(Me.txtTroCap_TV)
+        Me.Panel40.Controls.Add(Me.Label40)
+        Me.Panel40.Controls.Add(Me.Label139)
+        Me.Panel40.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel40.Location = New System.Drawing.Point(0, 115)
+        Me.Panel40.Name = "Panel40"
+        Me.Panel40.Size = New System.Drawing.Size(765, 22)
+        Me.Panel40.TabIndex = 11
+        '
+        'txtTroCapKhac
+        '
+        Me.txtTroCapKhac.BackColor = System.Drawing.Color.White
+        Me.txtTroCapKhac.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtTroCapKhac.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTroCapKhac.ForeColor = System.Drawing.Color.Navy
+        Me.txtTroCapKhac.Location = New System.Drawing.Point(435, 0)
+        Me.txtTroCapKhac.Name = "txtTroCapKhac"
+        Me.txtTroCapKhac.Size = New System.Drawing.Size(320, 26)
+        Me.txtTroCapKhac.TabIndex = 4
+        Me.txtTroCapKhac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label39
+        '
+        Me.Label39.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label39.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.ForeColor = System.Drawing.Color.Black
+        Me.Label39.Location = New System.Drawing.Point(303, 0)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(132, 22)
+        Me.Label39.TabIndex = 3
+        Me.Label39.Text = "Trợ cấp khác "
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtTroCap_TV
+        '
+        Me.txtTroCap_TV.BackColor = System.Drawing.Color.White
+        Me.txtTroCap_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtTroCap_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTroCap_TV.ForeColor = System.Drawing.Color.Navy
+        Me.txtTroCap_TV.Location = New System.Drawing.Point(110, 0)
+        Me.txtTroCap_TV.Name = "txtTroCap_TV"
+        Me.txtTroCap_TV.Size = New System.Drawing.Size(193, 26)
+        Me.txtTroCap_TV.TabIndex = 2
+        Me.txtTroCap_TV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label40
+        '
+        Me.Label40.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label40.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.ForeColor = System.Drawing.Color.Black
+        Me.Label40.Location = New System.Drawing.Point(5, 0)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(105, 22)
+        Me.Label40.TabIndex = 1
+        Me.Label40.Text = "Trợ cấp thôi việc"
+        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label139
+        '
+        Me.Label139.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label139.Location = New System.Drawing.Point(0, 0)
+        Me.Label139.Name = "Label139"
+        Me.Label139.Size = New System.Drawing.Size(5, 22)
+        Me.Label139.TabIndex = 0
+        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label136
+        '
+        Me.Label136.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label136.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label136.Location = New System.Drawing.Point(0, 114)
+        Me.Label136.Name = "Label136"
+        Me.Label136.Size = New System.Drawing.Size(765, 1)
+        Me.Label136.TabIndex = 10
+        Me.Label136.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel39
+        '
+        Me.Panel39.Controls.Add(Me.cboLyDo_TV)
+        Me.Panel39.Controls.Add(Me.Label41)
+        Me.Panel39.Controls.Add(Me.Label137)
+        Me.Panel39.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel39.Location = New System.Drawing.Point(0, 92)
+        Me.Panel39.Name = "Panel39"
+        Me.Panel39.Size = New System.Drawing.Size(765, 22)
+        Me.Panel39.TabIndex = 9
+        '
+        'cboLyDo_TV
+        '
+        Me.cboLyDo_TV.BackColor = System.Drawing.Color.White
+        Me.cboLyDo_TV.DisplayMember = "Display"
+        Me.cboLyDo_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboLyDo_TV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboLyDo_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboLyDo_TV.ForeColor = System.Drawing.Color.Navy
+        Me.cboLyDo_TV.FormattingEnabled = True
+        Me.cboLyDo_TV.Location = New System.Drawing.Point(110, 0)
+        Me.cboLyDo_TV.Name = "cboLyDo_TV"
+        Me.cboLyDo_TV.Size = New System.Drawing.Size(645, 26)
+        Me.cboLyDo_TV.TabIndex = 2
+        Me.cboLyDo_TV.ValueMember = "Value"
+        '
+        'Label41
+        '
+        Me.Label41.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label41.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.ForeColor = System.Drawing.Color.Black
+        Me.Label41.Location = New System.Drawing.Point(5, 0)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(105, 22)
+        Me.Label41.TabIndex = 1
+        Me.Label41.Text = "Lý do thôi việc"
+        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label137
+        '
+        Me.Label137.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label137.Location = New System.Drawing.Point(0, 0)
+        Me.Label137.Name = "Label137"
+        Me.Label137.Size = New System.Drawing.Size(5, 22)
+        Me.Label137.TabIndex = 0
+        Me.Label137.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label134
+        '
+        Me.Label134.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label134.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label134.Location = New System.Drawing.Point(0, 91)
+        Me.Label134.Name = "Label134"
+        Me.Label134.Size = New System.Drawing.Size(765, 1)
+        Me.Label134.TabIndex = 8
+        Me.Label134.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel38
+        '
+        Me.Panel38.Controls.Add(Me.dpkNgayHL_TV)
+        Me.Panel38.Controls.Add(Me.Label45)
+        Me.Panel38.Controls.Add(Me.cboQDThoiViec)
+        Me.Panel38.Controls.Add(Me.Label47)
+        Me.Panel38.Controls.Add(Me.Label135)
+        Me.Panel38.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel38.Location = New System.Drawing.Point(0, 69)
+        Me.Panel38.Name = "Panel38"
+        Me.Panel38.Size = New System.Drawing.Size(765, 22)
+        Me.Panel38.TabIndex = 7
+        '
+        'dpkNgayHL_TV
+        '
+        Me.dpkNgayHL_TV.CalendarFont = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayHL_TV.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.dpkNgayHL_TV.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayHL_TV.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayHL_TV.CalendarTitleForeColor = System.Drawing.Color.Lavender
+        Me.dpkNgayHL_TV.CalendarTrailingForeColor = System.Drawing.Color.Black
+        Me.dpkNgayHL_TV.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayHL_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayHL_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayHL_TV.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayHL_TV.Location = New System.Drawing.Point(650, 0)
+        Me.dpkNgayHL_TV.Name = "dpkNgayHL_TV"
+        Me.dpkNgayHL_TV.Size = New System.Drawing.Size(105, 26)
+        Me.dpkNgayHL_TV.TabIndex = 4
+        '
+        'Label45
+        '
+        Me.Label45.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label45.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.Black
+        Me.Label45.Location = New System.Drawing.Point(550, 0)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(100, 22)
+        Me.Label45.TabIndex = 3
+        Me.Label45.Text = "Ngày hiệu lực "
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cboQDThoiViec
+        '
+        Me.cboQDThoiViec.BackColor = System.Drawing.Color.White
+        Me.cboQDThoiViec.DisplayMember = "Display"
+        Me.cboQDThoiViec.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboQDThoiViec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboQDThoiViec.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboQDThoiViec.ForeColor = System.Drawing.Color.Navy
+        Me.cboQDThoiViec.FormattingEnabled = True
+        Me.cboQDThoiViec.Location = New System.Drawing.Point(97, 0)
+        Me.cboQDThoiViec.Name = "cboQDThoiViec"
+        Me.cboQDThoiViec.Size = New System.Drawing.Size(453, 26)
+        Me.cboQDThoiViec.TabIndex = 2
+        Me.cboQDThoiViec.ValueMember = "Value"
+        '
+        'Label47
+        '
+        Me.Label47.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label47.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.ForeColor = System.Drawing.Color.Black
+        Me.Label47.Location = New System.Drawing.Point(5, 0)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(92, 22)
+        Me.Label47.TabIndex = 1
+        Me.Label47.Text = "Quyết định"
+        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label135
+        '
+        Me.Label135.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label135.Location = New System.Drawing.Point(0, 0)
+        Me.Label135.Name = "Label135"
+        Me.Label135.Size = New System.Drawing.Size(5, 22)
+        Me.Label135.TabIndex = 0
+        Me.Label135.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label131
+        '
+        Me.Label131.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label131.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label131.Location = New System.Drawing.Point(0, 68)
+        Me.Label131.Name = "Label131"
+        Me.Label131.Size = New System.Drawing.Size(765, 1)
+        Me.Label131.TabIndex = 6
+        Me.Label131.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel37
+        '
+        Me.Panel37.Controls.Add(Me.txtCVNguoiKyQD_TV)
+        Me.Panel37.Controls.Add(Me.cboCVNguoiKyQD_TV)
+        Me.Panel37.Controls.Add(Me.Label44)
+        Me.Panel37.Controls.Add(Me.txtNguoiKyQD_TV)
+        Me.Panel37.Controls.Add(Me.Label42)
+        Me.Panel37.Controls.Add(Me.Label132)
+        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel37.Location = New System.Drawing.Point(0, 46)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(765, 22)
+        Me.Panel37.TabIndex = 5
+        '
+        'txtCVNguoiKyQD_TV
+        '
+        Me.txtCVNguoiKyQD_TV.BackColor = System.Drawing.Color.White
+        Me.txtCVNguoiKyQD_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtCVNguoiKyQD_TV.ForeColor = System.Drawing.Color.Navy
+        Me.txtCVNguoiKyQD_TV.Location = New System.Drawing.Point(755, 0)
+        Me.txtCVNguoiKyQD_TV.Name = "txtCVNguoiKyQD_TV"
+        Me.txtCVNguoiKyQD_TV.Size = New System.Drawing.Size(320, 26)
+        Me.txtCVNguoiKyQD_TV.TabIndex = 5
+        Me.txtCVNguoiKyQD_TV.Visible = False
+        '
+        'cboCVNguoiKyQD_TV
+        '
+        Me.cboCVNguoiKyQD_TV.BackColor = System.Drawing.Color.White
+        Me.cboCVNguoiKyQD_TV.DisplayMember = "Display"
+        Me.cboCVNguoiKyQD_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboCVNguoiKyQD_TV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCVNguoiKyQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboCVNguoiKyQD_TV.ForeColor = System.Drawing.Color.Navy
+        Me.cboCVNguoiKyQD_TV.FormattingEnabled = True
+        Me.cboCVNguoiKyQD_TV.Location = New System.Drawing.Point(435, 0)
+        Me.cboCVNguoiKyQD_TV.Name = "cboCVNguoiKyQD_TV"
+        Me.cboCVNguoiKyQD_TV.Size = New System.Drawing.Size(320, 26)
+        Me.cboCVNguoiKyQD_TV.TabIndex = 4
+        Me.cboCVNguoiKyQD_TV.ValueMember = "Value"
+        '
+        'Label44
+        '
+        Me.Label44.BackColor = System.Drawing.Color.Transparent
+        Me.Label44.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label44.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.Color.Black
+        Me.Label44.Location = New System.Drawing.Point(286, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(149, 22)
+        Me.Label44.TabIndex = 3
+        Me.Label44.Text = "Chức danh người ký "
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtNguoiKyQD_TV
+        '
+        Me.txtNguoiKyQD_TV.BackColor = System.Drawing.Color.White
+        Me.txtNguoiKyQD_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNguoiKyQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNguoiKyQD_TV.ForeColor = System.Drawing.Color.Navy
+        Me.txtNguoiKyQD_TV.Location = New System.Drawing.Point(97, 0)
+        Me.txtNguoiKyQD_TV.Name = "txtNguoiKyQD_TV"
+        Me.txtNguoiKyQD_TV.Size = New System.Drawing.Size(189, 26)
+        Me.txtNguoiKyQD_TV.TabIndex = 2
+        '
+        'Label42
+        '
+        Me.Label42.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label42.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.ForeColor = System.Drawing.Color.Black
+        Me.Label42.Location = New System.Drawing.Point(5, 0)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(92, 22)
+        Me.Label42.TabIndex = 1
+        Me.Label42.Text = "Người ký"
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label132
+        '
+        Me.Label132.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label132.Location = New System.Drawing.Point(0, 0)
+        Me.Label132.Name = "Label132"
+        Me.Label132.Size = New System.Drawing.Size(5, 22)
+        Me.Label132.TabIndex = 0
+        Me.Label132.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label130
+        '
+        Me.Label130.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label130.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label130.Location = New System.Drawing.Point(0, 45)
+        Me.Label130.Name = "Label130"
+        Me.Label130.Size = New System.Drawing.Size(765, 1)
+        Me.Label130.TabIndex = 4
+        Me.Label130.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel36
+        '
+        Me.Panel36.Controls.Add(Me.txtDVraQD_TV)
+        Me.Panel36.Controls.Add(Me.Label29)
+        Me.Panel36.Controls.Add(Me.Label133)
+        Me.Panel36.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel36.Location = New System.Drawing.Point(0, 23)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(765, 22)
+        Me.Panel36.TabIndex = 3
+        '
+        'txtDVraQD_TV
+        '
+        Me.txtDVraQD_TV.BackColor = System.Drawing.Color.White
+        Me.txtDVraQD_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtDVraQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDVraQD_TV.ForeColor = System.Drawing.Color.Navy
+        Me.txtDVraQD_TV.Location = New System.Drawing.Point(146, 0)
+        Me.txtDVraQD_TV.Name = "txtDVraQD_TV"
+        Me.txtDVraQD_TV.Size = New System.Drawing.Size(609, 26)
+        Me.txtDVraQD_TV.TabIndex = 2
+        '
+        'Label29
+        '
+        Me.Label29.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label29.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.Color.Black
+        Me.Label29.Location = New System.Drawing.Point(5, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(141, 22)
+        Me.Label29.TabIndex = 1
+        Me.Label29.Text = "Đơn vị ra quyết định"
+        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label133
+        '
+        Me.Label133.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label133.Location = New System.Drawing.Point(0, 0)
+        Me.Label133.Name = "Label133"
+        Me.Label133.Size = New System.Drawing.Size(5, 22)
+        Me.Label133.TabIndex = 0
+        Me.Label133.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label129
+        '
+        Me.Label129.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label129.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label129.Location = New System.Drawing.Point(0, 22)
+        Me.Label129.Name = "Label129"
+        Me.Label129.Size = New System.Drawing.Size(765, 1)
+        Me.Label129.TabIndex = 2
+        Me.Label129.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel35
+        '
+        Me.Panel35.Controls.Add(Me.dpkNgayKy_TV)
+        Me.Panel35.Controls.Add(Me.Label46)
+        Me.Panel35.Controls.Add(Me.txtSoQD_TV)
+        Me.Panel35.Controls.Add(Me.Label12)
+        Me.Panel35.Controls.Add(Me.cbIsQD_NHCS_TV)
+        Me.Panel35.Controls.Add(Me.Label128)
+        Me.Panel35.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel35.Location = New System.Drawing.Point(0, 0)
+        Me.Panel35.Name = "Panel35"
+        Me.Panel35.Size = New System.Drawing.Size(765, 22)
+        Me.Panel35.TabIndex = 1
+        '
+        'dpkNgayKy_TV
+        '
+        Me.dpkNgayKy_TV.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.dpkNgayKy_TV.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayKy_TV.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayKy_TV.CalendarTitleForeColor = System.Drawing.Color.Lavender
+        Me.dpkNgayKy_TV.CalendarTrailingForeColor = System.Drawing.Color.Black
+        Me.dpkNgayKy_TV.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayKy_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayKy_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayKy_TV.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayKy_TV.Location = New System.Drawing.Point(435, 0)
+        Me.dpkNgayKy_TV.Name = "dpkNgayKy_TV"
+        Me.dpkNgayKy_TV.Size = New System.Drawing.Size(115, 26)
+        Me.dpkNgayKy_TV.TabIndex = 5
+        '
+        'Label46
+        '
+        Me.Label46.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label46.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.ForeColor = System.Drawing.Color.Black
+        Me.Label46.Location = New System.Drawing.Point(355, 0)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(80, 22)
+        Me.Label46.TabIndex = 4
+        Me.Label46.Text = "Ngày ký "
+        Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtSoQD_TV
+        '
+        Me.txtSoQD_TV.BackColor = System.Drawing.Color.White
+        Me.txtSoQD_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtSoQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSoQD_TV.ForeColor = System.Drawing.Color.Navy
+        Me.txtSoQD_TV.Location = New System.Drawing.Point(205, 0)
+        Me.txtSoQD_TV.Name = "txtSoQD_TV"
+        Me.txtSoQD_TV.Size = New System.Drawing.Size(150, 26)
+        Me.txtSoQD_TV.TabIndex = 3
+        '
+        'Label12
+        '
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label12.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(145, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(60, 22)
+        Me.Label12.TabIndex = 2
+        Me.Label12.Text = "Số QĐ "
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cbIsQD_NHCS_TV
+        '
+        Me.cbIsQD_NHCS_TV.AutoSize = True
+        Me.cbIsQD_NHCS_TV.BackColor = System.Drawing.Color.White
+        Me.cbIsQD_NHCS_TV.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cbIsQD_NHCS_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbIsQD_NHCS_TV.ForeColor = System.Drawing.Color.Maroon
+        Me.cbIsQD_NHCS_TV.Location = New System.Drawing.Point(5, 0)
+        Me.cbIsQD_NHCS_TV.Name = "cbIsQD_NHCS_TV"
+        Me.cbIsQD_NHCS_TV.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.cbIsQD_NHCS_TV.Size = New System.Drawing.Size(140, 22)
+        Me.cbIsQD_NHCS_TV.TabIndex = 1
+        Me.cbIsQD_NHCS_TV.Text = "QĐ của NHCSXH"
+        Me.cbIsQD_NHCS_TV.UseVisualStyleBackColor = False
+        '
+        'Label128
+        '
+        Me.Label128.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label128.Location = New System.Drawing.Point(0, 0)
+        Me.Label128.Name = "Label128"
+        Me.Label128.Size = New System.Drawing.Size(5, 22)
+        Me.Label128.TabIndex = 0
+        Me.Label128.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.DarkGray
@@ -2597,29 +3293,15 @@ Partial Class frmQuyetDinhNS
         Me.bntClose_TV.Text = "&Quay ra"
         Me.bntClose_TV.UseVisualStyleBackColor = True
         '
-        'gridThoiViec
+        'Label127
         '
-        Me.gridThoiViec.AllowUserToAddRows = False
-        Me.gridThoiViec.AllowUserToDeleteRows = False
-        Me.gridThoiViec.AllowUserToResizeColumns = False
-        Me.gridThoiViec.AllowUserToResizeRows = False
-        Me.gridThoiViec.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.gridThoiViec.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.gridThoiViec.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        Me.gridThoiViec.ColumnHeadersHeight = 34
-        Me.gridThoiViec.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdCBThoiViec, Me.cln_cbThoiViec, Me.Ngay_HL, Me.IdLoaiQD_TV, Me.IdLyDo})
-        Me.gridThoiViec.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gridThoiViec.Location = New System.Drawing.Point(0, 2)
-        Me.gridThoiViec.MultiSelect = False
-        Me.gridThoiViec.Name = "gridThoiViec"
-        Me.gridThoiViec.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        Me.gridThoiViec.RowHeadersVisible = False
-        Me.gridThoiViec.RowHeadersWidth = 51
-        Me.gridThoiViec.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.gridThoiViec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridThoiViec.Size = New System.Drawing.Size(765, 334)
-        Me.gridThoiViec.TabIndex = 1
-        Me.gridThoiViec.Tag = ""
+        Me.Label127.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label127.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label127.Location = New System.Drawing.Point(0, 0)
+        Me.Label127.Name = "Label127"
+        Me.Label127.Size = New System.Drawing.Size(765, 2)
+        Me.Label127.TabIndex = 0
+        Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'tabQDLuong
         '
@@ -2725,6 +3407,710 @@ Partial Class frmQuyetDinhNS
         Me.DataGridViewTextBoxColumn9.ReadOnly = True
         Me.DataGridViewTextBoxColumn9.Width = 94
         '
+        'Label144
+        '
+        Me.Label144.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label144.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label144.Location = New System.Drawing.Point(0, 294)
+        Me.Label144.Name = "Label144"
+        Me.Label144.Size = New System.Drawing.Size(765, 5)
+        Me.Label144.TabIndex = 2
+        Me.Label144.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel43
+        '
+        Me.Panel43.Controls.Add(Me.Panel51)
+        Me.Panel43.Controls.Add(Me.Label158)
+        Me.Panel43.Controls.Add(Me.Panel50)
+        Me.Panel43.Controls.Add(Me.Label162)
+        Me.Panel43.Controls.Add(Me.pnlQDL_IsNotNHCS)
+        Me.Panel43.Controls.Add(Me.Label154)
+        Me.Panel43.Controls.Add(Me.pnlQDL_IsNHCS)
+        Me.Panel43.Controls.Add(Me.Label152)
+        Me.Panel43.Controls.Add(Me.Panel47)
+        Me.Panel43.Controls.Add(Me.Label150)
+        Me.Panel43.Controls.Add(Me.Panel46)
+        Me.Panel43.Controls.Add(Me.Label147)
+        Me.Panel43.Controls.Add(Me.Panel45)
+        Me.Panel43.Controls.Add(Me.Label146)
+        Me.Panel43.Controls.Add(Me.Panel44)
+        Me.Panel43.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel43.Location = New System.Drawing.Point(0, 299)
+        Me.Panel43.Name = "Panel43"
+        Me.Panel43.Size = New System.Drawing.Size(765, 235)
+        Me.Panel43.TabIndex = 167
+        '
+        'Panel51
+        '
+        Me.Panel51.Controls.Add(Me.txtGhiChu_L)
+        Me.Panel51.Controls.Add(Me.Label52)
+        Me.Panel51.Controls.Add(Me.Label159)
+        Me.Panel51.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel51.Location = New System.Drawing.Point(0, 207)
+        Me.Panel51.Name = "Panel51"
+        Me.Panel51.Size = New System.Drawing.Size(765, 22)
+        Me.Panel51.TabIndex = 16
+        '
+        'txtGhiChu_L
+        '
+        Me.txtGhiChu_L.BackColor = System.Drawing.Color.White
+        Me.txtGhiChu_L.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txtGhiChu_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGhiChu_L.ForeColor = System.Drawing.Color.Navy
+        Me.txtGhiChu_L.Location = New System.Drawing.Point(113, 0)
+        Me.txtGhiChu_L.Name = "txtGhiChu_L"
+        Me.txtGhiChu_L.Size = New System.Drawing.Size(652, 26)
+        Me.txtGhiChu_L.TabIndex = 2
+        '
+        'Label52
+        '
+        Me.Label52.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label52.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(5, 0)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(108, 22)
+        Me.Label52.TabIndex = 1
+        Me.Label52.Text = "Ghi chú"
+        Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label159
+        '
+        Me.Label159.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label159.Location = New System.Drawing.Point(0, 0)
+        Me.Label159.Name = "Label159"
+        Me.Label159.Size = New System.Drawing.Size(5, 22)
+        Me.Label159.TabIndex = 0
+        Me.Label159.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label158
+        '
+        Me.Label158.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label158.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label158.Location = New System.Drawing.Point(0, 206)
+        Me.Label158.Name = "Label158"
+        Me.Label158.Size = New System.Drawing.Size(765, 1)
+        Me.Label158.TabIndex = 15
+        Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel50
+        '
+        Me.Panel50.Controls.Add(Me.dpkNgayLenLTT)
+        Me.Panel50.Controls.Add(Me.Label53)
+        Me.Panel50.Controls.Add(Me.dpkNgayHL_L)
+        Me.Panel50.Controls.Add(Me.Label54)
+        Me.Panel50.Controls.Add(Me.Label161)
+        Me.Panel50.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel50.Location = New System.Drawing.Point(0, 184)
+        Me.Panel50.Name = "Panel50"
+        Me.Panel50.Size = New System.Drawing.Size(765, 22)
+        Me.Panel50.TabIndex = 14
+        '
+        'dpkNgayLenLTT
+        '
+        Me.dpkNgayLenLTT.CalendarFont = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayLenLTT.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.dpkNgayLenLTT.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayLenLTT.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayLenLTT.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
+        Me.dpkNgayLenLTT.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
+        Me.dpkNgayLenLTT.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayLenLTT.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayLenLTT.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayLenLTT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayLenLTT.Location = New System.Drawing.Point(444, 0)
+        Me.dpkNgayLenLTT.Name = "dpkNgayLenLTT"
+        Me.dpkNgayLenLTT.Size = New System.Drawing.Size(133, 26)
+        Me.dpkNgayLenLTT.TabIndex = 3
+        '
+        'Label53
+        '
+        Me.Label53.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label53.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.Location = New System.Drawing.Point(290, 0)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(154, 22)
+        Me.Label53.TabIndex = 2
+        Me.Label53.Text = "Ngày lên dự kiến "
+        Me.Label53.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'dpkNgayHL_L
+        '
+        Me.dpkNgayHL_L.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.dpkNgayHL_L.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayHL_L.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayHL_L.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
+        Me.dpkNgayHL_L.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
+        Me.dpkNgayHL_L.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayHL_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayHL_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayHL_L.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayHL_L.Location = New System.Drawing.Point(113, 0)
+        Me.dpkNgayHL_L.Name = "dpkNgayHL_L"
+        Me.dpkNgayHL_L.Size = New System.Drawing.Size(177, 26)
+        Me.dpkNgayHL_L.TabIndex = 1
+        '
+        'Label54
+        '
+        Me.Label54.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label54.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Location = New System.Drawing.Point(5, 0)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(108, 22)
+        Me.Label54.TabIndex = 0
+        Me.Label54.Text = "Ngày hưởng"
+        Me.Label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label161
+        '
+        Me.Label161.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label161.Location = New System.Drawing.Point(0, 0)
+        Me.Label161.Name = "Label161"
+        Me.Label161.Size = New System.Drawing.Size(5, 22)
+        Me.Label161.TabIndex = 0
+        Me.Label161.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label162
+        '
+        Me.Label162.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label162.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label162.Location = New System.Drawing.Point(0, 183)
+        Me.Label162.Name = "Label162"
+        Me.Label162.Size = New System.Drawing.Size(765, 1)
+        Me.Label162.TabIndex = 18
+        Me.Label162.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'pnlQDL_IsNotNHCS
+        '
+        Me.pnlQDL_IsNotNHCS.Controls.Add(Me.txtNoiDungQD_L)
+        Me.pnlQDL_IsNotNHCS.Controls.Add(Me.Label65)
+        Me.pnlQDL_IsNotNHCS.Controls.Add(Me.Label160)
+        Me.pnlQDL_IsNotNHCS.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlQDL_IsNotNHCS.Enabled = False
+        Me.pnlQDL_IsNotNHCS.Location = New System.Drawing.Point(0, 138)
+        Me.pnlQDL_IsNotNHCS.Name = "pnlQDL_IsNotNHCS"
+        Me.pnlQDL_IsNotNHCS.Size = New System.Drawing.Size(765, 45)
+        Me.pnlQDL_IsNotNHCS.TabIndex = 12
+        '
+        'txtNoiDungQD_L
+        '
+        Me.txtNoiDungQD_L.BackColor = System.Drawing.Color.White
+        Me.txtNoiDungQD_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNoiDungQD_L.ForeColor = System.Drawing.Color.Navy
+        Me.txtNoiDungQD_L.Location = New System.Drawing.Point(113, 0)
+        Me.txtNoiDungQD_L.Multiline = True
+        Me.txtNoiDungQD_L.Name = "txtNoiDungQD_L"
+        Me.txtNoiDungQD_L.Size = New System.Drawing.Size(643, 45)
+        Me.txtNoiDungQD_L.TabIndex = 2
+        '
+        'Label65
+        '
+        Me.Label65.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label65.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.Location = New System.Drawing.Point(5, 0)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(108, 45)
+        Me.Label65.TabIndex = 1
+        Me.Label65.Text = "Nội dung"
+        '
+        'Label160
+        '
+        Me.Label160.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label160.Location = New System.Drawing.Point(0, 0)
+        Me.Label160.Name = "Label160"
+        Me.Label160.Size = New System.Drawing.Size(5, 45)
+        Me.Label160.TabIndex = 0
+        Me.Label160.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label154
+        '
+        Me.Label154.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label154.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label154.Location = New System.Drawing.Point(0, 137)
+        Me.Label154.Name = "Label154"
+        Me.Label154.Size = New System.Drawing.Size(765, 1)
+        Me.Label154.TabIndex = 11
+        Me.Label154.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'pnlQDL_IsNHCS
+        '
+        Me.pnlQDL_IsNHCS.Controls.Add(Me.cboQDBang)
+        Me.pnlQDL_IsNHCS.Controls.Add(Me.Label61)
+        Me.pnlQDL_IsNHCS.Controls.Add(Me.cboQDNghiDinh)
+        Me.pnlQDL_IsNHCS.Controls.Add(Me.Label51)
+        Me.pnlQDL_IsNHCS.Controls.Add(Me.Label155)
+        Me.pnlQDL_IsNHCS.Controls.Add(Me.Panel49)
+        Me.pnlQDL_IsNHCS.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlQDL_IsNHCS.Location = New System.Drawing.Point(0, 92)
+        Me.pnlQDL_IsNHCS.Name = "pnlQDL_IsNHCS"
+        Me.pnlQDL_IsNHCS.Size = New System.Drawing.Size(765, 45)
+        Me.pnlQDL_IsNHCS.TabIndex = 10
+        '
+        'cboQDBang
+        '
+        Me.cboQDBang.BackColor = System.Drawing.Color.White
+        Me.cboQDBang.DisplayMember = "Display"
+        Me.cboQDBang.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cboQDBang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboQDBang.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboQDBang.ForeColor = System.Drawing.Color.Navy
+        Me.cboQDBang.FormattingEnabled = True
+        Me.cboQDBang.Location = New System.Drawing.Point(444, 0)
+        Me.cboQDBang.Name = "cboQDBang"
+        Me.cboQDBang.Size = New System.Drawing.Size(321, 26)
+        Me.cboQDBang.TabIndex = 4
+        Me.cboQDBang.ValueMember = "Value"
+        '
+        'Label61
+        '
+        Me.Label61.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label61.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(353, 0)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(91, 23)
+        Me.Label61.TabIndex = 3
+        Me.Label61.Text = "Bảng lương "
+        Me.Label61.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cboQDNghiDinh
+        '
+        Me.cboQDNghiDinh.BackColor = System.Drawing.Color.White
+        Me.cboQDNghiDinh.DisplayMember = "Display"
+        Me.cboQDNghiDinh.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboQDNghiDinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboQDNghiDinh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboQDNghiDinh.ForeColor = System.Drawing.Color.Navy
+        Me.cboQDNghiDinh.FormattingEnabled = True
+        Me.cboQDNghiDinh.Location = New System.Drawing.Point(113, 0)
+        Me.cboQDNghiDinh.Name = "cboQDNghiDinh"
+        Me.cboQDNghiDinh.Size = New System.Drawing.Size(240, 26)
+        Me.cboQDNghiDinh.TabIndex = 2
+        Me.cboQDNghiDinh.ValueMember = "Value"
+        '
+        'Label51
+        '
+        Me.Label51.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label51.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.Location = New System.Drawing.Point(5, 0)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(108, 23)
+        Me.Label51.TabIndex = 1
+        Me.Label51.Text = "Nghị định"
+        Me.Label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label155
+        '
+        Me.Label155.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label155.Location = New System.Drawing.Point(0, 0)
+        Me.Label155.Name = "Label155"
+        Me.Label155.Size = New System.Drawing.Size(5, 23)
+        Me.Label155.TabIndex = 0
+        Me.Label155.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Panel49
+        '
+        Me.Panel49.Controls.Add(Me.txtQDHeso)
+        Me.Panel49.Controls.Add(Me.Label56)
+        Me.Panel49.Controls.Add(Me.cboQDBac)
+        Me.Panel49.Controls.Add(Me.Label58)
+        Me.Panel49.Controls.Add(Me.cboQDNgach)
+        Me.Panel49.Controls.Add(Me.Label59)
+        Me.Panel49.Controls.Add(Me.Label157)
+        Me.Panel49.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel49.Location = New System.Drawing.Point(0, 23)
+        Me.Panel49.Name = "Panel49"
+        Me.Panel49.Size = New System.Drawing.Size(765, 22)
+        Me.Panel49.TabIndex = 5
+        '
+        'txtQDHeso
+        '
+        Me.txtQDHeso.BackColor = System.Drawing.Color.White
+        Me.txtQDHeso.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtQDHeso.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtQDHeso.ForeColor = System.Drawing.Color.Navy
+        Me.txtQDHeso.Location = New System.Drawing.Point(692, 0)
+        Me.txtQDHeso.Name = "txtQDHeso"
+        Me.txtQDHeso.ReadOnly = True
+        Me.txtQDHeso.Size = New System.Drawing.Size(64, 26)
+        Me.txtQDHeso.TabIndex = 6
+        '
+        'Label56
+        '
+        Me.Label56.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label56.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.Location = New System.Drawing.Point(637, 0)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(55, 22)
+        Me.Label56.TabIndex = 5
+        Me.Label56.Text = "Hệ số "
+        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cboQDBac
+        '
+        Me.cboQDBac.BackColor = System.Drawing.Color.White
+        Me.cboQDBac.DisplayMember = "Display"
+        Me.cboQDBac.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboQDBac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboQDBac.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboQDBac.ForeColor = System.Drawing.Color.Navy
+        Me.cboQDBac.FormattingEnabled = True
+        Me.cboQDBac.Location = New System.Drawing.Point(577, 0)
+        Me.cboQDBac.Name = "cboQDBac"
+        Me.cboQDBac.Size = New System.Drawing.Size(60, 26)
+        Me.cboQDBac.TabIndex = 4
+        Me.cboQDBac.ValueMember = "Value"
+        '
+        'Label58
+        '
+        Me.Label58.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label58.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.Location = New System.Drawing.Point(524, 0)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(53, 22)
+        Me.Label58.TabIndex = 3
+        Me.Label58.Text = "Bậc "
+        Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cboQDNgach
+        '
+        Me.cboQDNgach.BackColor = System.Drawing.Color.White
+        Me.cboQDNgach.DisplayMember = "Display"
+        Me.cboQDNgach.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboQDNgach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboQDNgach.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboQDNgach.ForeColor = System.Drawing.Color.Navy
+        Me.cboQDNgach.FormattingEnabled = True
+        Me.cboQDNgach.Location = New System.Drawing.Point(113, 0)
+        Me.cboQDNgach.Name = "cboQDNgach"
+        Me.cboQDNgach.Size = New System.Drawing.Size(411, 26)
+        Me.cboQDNgach.TabIndex = 2
+        Me.cboQDNgach.ValueMember = "Value"
+        '
+        'Label59
+        '
+        Me.Label59.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label59.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label59.Location = New System.Drawing.Point(5, 0)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(108, 22)
+        Me.Label59.TabIndex = 1
+        Me.Label59.Text = "Ngạch lương"
+        Me.Label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label157
+        '
+        Me.Label157.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label157.Location = New System.Drawing.Point(0, 0)
+        Me.Label157.Name = "Label157"
+        Me.Label157.Size = New System.Drawing.Size(5, 22)
+        Me.Label157.TabIndex = 0
+        Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label152
+        '
+        Me.Label152.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label152.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label152.Location = New System.Drawing.Point(0, 91)
+        Me.Label152.Name = "Label152"
+        Me.Label152.Size = New System.Drawing.Size(765, 1)
+        Me.Label152.TabIndex = 9
+        Me.Label152.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel47
+        '
+        Me.Panel47.Controls.Add(Me.txtLoaiQDLuong)
+        Me.Panel47.Controls.Add(Me.cboLoaiQDLuong)
+        Me.Panel47.Controls.Add(Me.Label64)
+        Me.Panel47.Controls.Add(Me.Label153)
+        Me.Panel47.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel47.Location = New System.Drawing.Point(0, 69)
+        Me.Panel47.Name = "Panel47"
+        Me.Panel47.Size = New System.Drawing.Size(765, 22)
+        Me.Panel47.TabIndex = 8
+        '
+        'txtLoaiQDLuong
+        '
+        Me.txtLoaiQDLuong.BackColor = System.Drawing.Color.White
+        Me.txtLoaiQDLuong.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtLoaiQDLuong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLoaiQDLuong.ForeColor = System.Drawing.Color.Navy
+        Me.txtLoaiQDLuong.Location = New System.Drawing.Point(577, 0)
+        Me.txtLoaiQDLuong.Name = "txtLoaiQDLuong"
+        Me.txtLoaiQDLuong.Size = New System.Drawing.Size(464, 26)
+        Me.txtLoaiQDLuong.TabIndex = 3
+        Me.txtLoaiQDLuong.Visible = False
+        '
+        'cboLoaiQDLuong
+        '
+        Me.cboLoaiQDLuong.BackColor = System.Drawing.Color.White
+        Me.cboLoaiQDLuong.DisplayMember = "Display"
+        Me.cboLoaiQDLuong.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboLoaiQDLuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboLoaiQDLuong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboLoaiQDLuong.ForeColor = System.Drawing.Color.Navy
+        Me.cboLoaiQDLuong.FormattingEnabled = True
+        Me.cboLoaiQDLuong.Location = New System.Drawing.Point(113, 0)
+        Me.cboLoaiQDLuong.Name = "cboLoaiQDLuong"
+        Me.cboLoaiQDLuong.Size = New System.Drawing.Size(464, 26)
+        Me.cboLoaiQDLuong.TabIndex = 2
+        Me.cboLoaiQDLuong.ValueMember = "Value"
+        '
+        'Label64
+        '
+        Me.Label64.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label64.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.Location = New System.Drawing.Point(5, 0)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(108, 22)
+        Me.Label64.TabIndex = 1
+        Me.Label64.Text = "Loại quyết định"
+        Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label153
+        '
+        Me.Label153.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label153.Location = New System.Drawing.Point(0, 0)
+        Me.Label153.Name = "Label153"
+        Me.Label153.Size = New System.Drawing.Size(5, 22)
+        Me.Label153.TabIndex = 0
+        Me.Label153.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label150
+        '
+        Me.Label150.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label150.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label150.Location = New System.Drawing.Point(0, 68)
+        Me.Label150.Name = "Label150"
+        Me.Label150.Size = New System.Drawing.Size(765, 1)
+        Me.Label150.TabIndex = 7
+        Me.Label150.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel46
+        '
+        Me.Panel46.Controls.Add(Me.txtCVNguoiKyQD_L)
+        Me.Panel46.Controls.Add(Me.cboCVNguoiKyQD_L)
+        Me.Panel46.Controls.Add(Me.Label55)
+        Me.Panel46.Controls.Add(Me.txtNguoiKyQD_L)
+        Me.Panel46.Controls.Add(Me.Label57)
+        Me.Panel46.Controls.Add(Me.Label151)
+        Me.Panel46.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel46.Location = New System.Drawing.Point(0, 46)
+        Me.Panel46.Name = "Panel46"
+        Me.Panel46.Size = New System.Drawing.Size(765, 22)
+        Me.Panel46.TabIndex = 6
+        '
+        'txtCVNguoiKyQD_L
+        '
+        Me.txtCVNguoiKyQD_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtCVNguoiKyQD_L.Location = New System.Drawing.Point(756, 0)
+        Me.txtCVNguoiKyQD_L.Name = "txtCVNguoiKyQD_L"
+        Me.txtCVNguoiKyQD_L.Size = New System.Drawing.Size(325, 26)
+        Me.txtCVNguoiKyQD_L.TabIndex = 5
+        Me.txtCVNguoiKyQD_L.Visible = False
+        '
+        'cboCVNguoiKyQD_L
+        '
+        Me.cboCVNguoiKyQD_L.BackColor = System.Drawing.Color.White
+        Me.cboCVNguoiKyQD_L.DisplayMember = "Display"
+        Me.cboCVNguoiKyQD_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboCVNguoiKyQD_L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCVNguoiKyQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboCVNguoiKyQD_L.ForeColor = System.Drawing.Color.Navy
+        Me.cboCVNguoiKyQD_L.FormattingEnabled = True
+        Me.cboCVNguoiKyQD_L.Location = New System.Drawing.Point(444, 0)
+        Me.cboCVNguoiKyQD_L.Name = "cboCVNguoiKyQD_L"
+        Me.cboCVNguoiKyQD_L.Size = New System.Drawing.Size(312, 26)
+        Me.cboCVNguoiKyQD_L.TabIndex = 4
+        Me.cboCVNguoiKyQD_L.ValueMember = "Value"
+        '
+        'Label55
+        '
+        Me.Label55.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label55.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.Location = New System.Drawing.Point(353, 0)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(91, 22)
+        Me.Label55.TabIndex = 3
+        Me.Label55.Text = "Chức danh "
+        Me.Label55.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtNguoiKyQD_L
+        '
+        Me.txtNguoiKyQD_L.BackColor = System.Drawing.Color.White
+        Me.txtNguoiKyQD_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNguoiKyQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNguoiKyQD_L.ForeColor = System.Drawing.Color.Navy
+        Me.txtNguoiKyQD_L.Location = New System.Drawing.Point(113, 0)
+        Me.txtNguoiKyQD_L.Name = "txtNguoiKyQD_L"
+        Me.txtNguoiKyQD_L.Size = New System.Drawing.Size(240, 26)
+        Me.txtNguoiKyQD_L.TabIndex = 2
+        '
+        'Label57
+        '
+        Me.Label57.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label57.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.Location = New System.Drawing.Point(5, 0)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(108, 22)
+        Me.Label57.TabIndex = 1
+        Me.Label57.Text = "Người ký"
+        Me.Label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label151
+        '
+        Me.Label151.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label151.Location = New System.Drawing.Point(0, 0)
+        Me.Label151.Name = "Label151"
+        Me.Label151.Size = New System.Drawing.Size(5, 22)
+        Me.Label151.TabIndex = 0
+        Me.Label151.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label147
+        '
+        Me.Label147.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label147.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label147.Location = New System.Drawing.Point(0, 45)
+        Me.Label147.Name = "Label147"
+        Me.Label147.Size = New System.Drawing.Size(765, 1)
+        Me.Label147.TabIndex = 5
+        Me.Label147.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel45
+        '
+        Me.Panel45.Controls.Add(Me.txtDVraQD_L)
+        Me.Panel45.Controls.Add(Me.Label63)
+        Me.Panel45.Controls.Add(Me.Label149)
+        Me.Panel45.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel45.Location = New System.Drawing.Point(0, 23)
+        Me.Panel45.Name = "Panel45"
+        Me.Panel45.Size = New System.Drawing.Size(765, 22)
+        Me.Panel45.TabIndex = 4
+        '
+        'txtDVraQD_L
+        '
+        Me.txtDVraQD_L.BackColor = System.Drawing.Color.White
+        Me.txtDVraQD_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtDVraQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDVraQD_L.ForeColor = System.Drawing.Color.Navy
+        Me.txtDVraQD_L.Location = New System.Drawing.Point(155, 0)
+        Me.txtDVraQD_L.Name = "txtDVraQD_L"
+        Me.txtDVraQD_L.Size = New System.Drawing.Size(601, 26)
+        Me.txtDVraQD_L.TabIndex = 166
+        '
+        'Label63
+        '
+        Me.Label63.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label63.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Location = New System.Drawing.Point(5, 0)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(150, 22)
+        Me.Label63.TabIndex = 165
+        Me.Label63.Text = "Đơn vi ra quyết định"
+        Me.Label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label149
+        '
+        Me.Label149.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label149.Location = New System.Drawing.Point(0, 0)
+        Me.Label149.Name = "Label149"
+        Me.Label149.Size = New System.Drawing.Size(5, 22)
+        Me.Label149.TabIndex = 0
+        Me.Label149.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label146
+        '
+        Me.Label146.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label146.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label146.Location = New System.Drawing.Point(0, 22)
+        Me.Label146.Name = "Label146"
+        Me.Label146.Size = New System.Drawing.Size(765, 1)
+        Me.Label146.TabIndex = 3
+        Me.Label146.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel44
+        '
+        Me.Panel44.Controls.Add(Me.dpkNgayKy_L)
+        Me.Panel44.Controls.Add(Me.Label60)
+        Me.Panel44.Controls.Add(Me.txtSoQD_L)
+        Me.Panel44.Controls.Add(Me.Label62)
+        Me.Panel44.Controls.Add(Me.cbIsQD_NHCS_L)
+        Me.Panel44.Controls.Add(Me.Label148)
+        Me.Panel44.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel44.Location = New System.Drawing.Point(0, 0)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(765, 22)
+        Me.Panel44.TabIndex = 2
+        '
+        'dpkNgayKy_L
+        '
+        Me.dpkNgayKy_L.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.dpkNgayKy_L.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayKy_L.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayKy_L.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
+        Me.dpkNgayKy_L.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
+        Me.dpkNgayKy_L.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayKy_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayKy_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayKy_L.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayKy_L.Location = New System.Drawing.Point(468, 0)
+        Me.dpkNgayKy_L.Name = "dpkNgayKy_L"
+        Me.dpkNgayKy_L.Size = New System.Drawing.Size(109, 26)
+        Me.dpkNgayKy_L.TabIndex = 113
+        '
+        'Label60
+        '
+        Me.Label60.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label60.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Location = New System.Drawing.Point(388, 0)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(80, 22)
+        Me.Label60.TabIndex = 112
+        Me.Label60.Text = "Ngày ký "
+        Me.Label60.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtSoQD_L
+        '
+        Me.txtSoQD_L.BackColor = System.Drawing.Color.White
+        Me.txtSoQD_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtSoQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSoQD_L.ForeColor = System.Drawing.Color.Navy
+        Me.txtSoQD_L.Location = New System.Drawing.Point(215, 0)
+        Me.txtSoQD_L.Name = "txtSoQD_L"
+        Me.txtSoQD_L.Size = New System.Drawing.Size(173, 26)
+        Me.txtSoQD_L.TabIndex = 109
+        '
+        'Label62
+        '
+        Me.Label62.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label62.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.Location = New System.Drawing.Point(145, 0)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(70, 22)
+        Me.Label62.TabIndex = 108
+        Me.Label62.Text = "Số QĐ"
+        Me.Label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'cbIsQD_NHCS_L
+        '
+        Me.cbIsQD_NHCS_L.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cbIsQD_NHCS_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbIsQD_NHCS_L.ForeColor = System.Drawing.Color.Maroon
+        Me.cbIsQD_NHCS_L.Location = New System.Drawing.Point(5, 0)
+        Me.cbIsQD_NHCS_L.Name = "cbIsQD_NHCS_L"
+        Me.cbIsQD_NHCS_L.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.cbIsQD_NHCS_L.Size = New System.Drawing.Size(140, 22)
+        Me.cbIsQD_NHCS_L.TabIndex = 1
+        Me.cbIsQD_NHCS_L.Text = "QĐ của NHCSXH"
+        Me.cbIsQD_NHCS_L.UseVisualStyleBackColor = True
+        '
+        'Label148
+        '
+        Me.Label148.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label148.Location = New System.Drawing.Point(0, 0)
+        Me.Label148.Name = "Label148"
+        Me.Label148.Size = New System.Drawing.Size(5, 22)
+        Me.Label148.TabIndex = 0
+        Me.Label148.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.DarkGray
@@ -2807,6 +4193,16 @@ Partial Class frmQuyetDinhNS
         Me.bntClose_L.TabIndex = 5
         Me.bntClose_L.Text = "&Quay ra"
         Me.bntClose_L.UseVisualStyleBackColor = True
+        '
+        'Label143
+        '
+        Me.Label143.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label143.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label143.Location = New System.Drawing.Point(0, 0)
+        Me.Label143.Name = "Label143"
+        Me.Label143.Size = New System.Drawing.Size(765, 5)
+        Me.Label143.TabIndex = 0
+        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'tabQDPhuCap
         '
@@ -2900,6 +4296,552 @@ Partial Class frmQuyetDinhNS
         Me.DataGridViewTextBoxColumn14.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         Me.DataGridViewTextBoxColumn14.ReadOnly = True
+        '
+        'Label175
+        '
+        Me.Label175.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label175.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label175.Location = New System.Drawing.Point(0, 362)
+        Me.Label175.Name = "Label175"
+        Me.Label175.Size = New System.Drawing.Size(765, 5)
+        Me.Label175.TabIndex = 176
+        Me.Label175.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel48
+        '
+        Me.Panel48.Controls.Add(Me.Panel55)
+        Me.Panel48.Controls.Add(Me.Label174)
+        Me.Panel48.Controls.Add(Me.Panel57)
+        Me.Panel48.Controls.Add(Me.Label171)
+        Me.Panel48.Controls.Add(Me.pnlQDPC_IsNotNHCS)
+        Me.Panel48.Controls.Add(Me.pnlQDPC_IsNHCS)
+        Me.Panel48.Controls.Add(Me.Label166)
+        Me.Panel48.Controls.Add(Me.Panel54)
+        Me.Panel48.Controls.Add(Me.Label164)
+        Me.Panel48.Controls.Add(Me.Panel53)
+        Me.Panel48.Controls.Add(Me.Label163)
+        Me.Panel48.Controls.Add(Me.Panel52)
+        Me.Panel48.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel48.Location = New System.Drawing.Point(0, 367)
+        Me.Panel48.Name = "Panel48"
+        Me.Panel48.Size = New System.Drawing.Size(765, 165)
+        Me.Panel48.TabIndex = 175
+        '
+        'Panel55
+        '
+        Me.Panel55.Controls.Add(Me.txtGhichu_PC)
+        Me.Panel55.Controls.Add(Me.Label66)
+        Me.Panel55.Controls.Add(Me.Label176)
+        Me.Panel55.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel55.Location = New System.Drawing.Point(0, 138)
+        Me.Panel55.Name = "Panel55"
+        Me.Panel55.Size = New System.Drawing.Size(765, 22)
+        Me.Panel55.TabIndex = 13
+        '
+        'txtGhichu_PC
+        '
+        Me.txtGhichu_PC.BackColor = System.Drawing.Color.White
+        Me.txtGhichu_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtGhichu_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGhichu_PC.ForeColor = System.Drawing.Color.Navy
+        Me.txtGhichu_PC.Location = New System.Drawing.Point(105, 0)
+        Me.txtGhichu_PC.Name = "txtGhichu_PC"
+        Me.txtGhichu_PC.Size = New System.Drawing.Size(652, 26)
+        Me.txtGhichu_PC.TabIndex = 2
+        '
+        'Label66
+        '
+        Me.Label66.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label66.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Location = New System.Drawing.Point(5, 0)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(100, 22)
+        Me.Label66.TabIndex = 1
+        Me.Label66.Text = "Ghi chú"
+        Me.Label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label176
+        '
+        Me.Label176.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label176.Location = New System.Drawing.Point(0, 0)
+        Me.Label176.Name = "Label176"
+        Me.Label176.Size = New System.Drawing.Size(5, 22)
+        Me.Label176.TabIndex = 0
+        Me.Label176.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label174
+        '
+        Me.Label174.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label174.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label174.Location = New System.Drawing.Point(0, 137)
+        Me.Label174.Name = "Label174"
+        Me.Label174.Size = New System.Drawing.Size(765, 1)
+        Me.Label174.TabIndex = 12
+        Me.Label174.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel57
+        '
+        Me.Panel57.Controls.Add(Me.dpkDenNgay_PC)
+        Me.Panel57.Controls.Add(Me.Label68)
+        Me.Panel57.Controls.Add(Me.dpkNgayHL_PC)
+        Me.Panel57.Controls.Add(Me.Label70)
+        Me.Panel57.Controls.Add(Me.Label173)
+        Me.Panel57.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel57.Location = New System.Drawing.Point(0, 115)
+        Me.Panel57.Name = "Panel57"
+        Me.Panel57.Size = New System.Drawing.Size(765, 22)
+        Me.Panel57.TabIndex = 10
+        '
+        'dpkDenNgay_PC
+        '
+        Me.dpkDenNgay_PC.CalendarFont = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkDenNgay_PC.CalendarForeColor = System.Drawing.Color.Navy
+        Me.dpkDenNgay_PC.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkDenNgay_PC.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkDenNgay_PC.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
+        Me.dpkDenNgay_PC.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
+        Me.dpkDenNgay_PC.Checked = False
+        Me.dpkDenNgay_PC.CustomFormat = "dd/MM/yyyy"
+        Me.dpkDenNgay_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkDenNgay_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkDenNgay_PC.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkDenNgay_PC.Location = New System.Drawing.Point(371, 0)
+        Me.dpkDenNgay_PC.Name = "dpkDenNgay_PC"
+        Me.dpkDenNgay_PC.ShowCheckBox = True
+        Me.dpkDenNgay_PC.Size = New System.Drawing.Size(130, 26)
+        Me.dpkDenNgay_PC.TabIndex = 4
+        '
+        'Label68
+        '
+        Me.Label68.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label68.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.Location = New System.Drawing.Point(255, 0)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(116, 22)
+        Me.Label68.TabIndex = 3
+        Me.Label68.Text = "Đến ngày "
+        Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'dpkNgayHL_PC
+        '
+        Me.dpkNgayHL_PC.CalendarForeColor = System.Drawing.Color.Navy
+        Me.dpkNgayHL_PC.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayHL_PC.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayHL_PC.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
+        Me.dpkNgayHL_PC.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
+        Me.dpkNgayHL_PC.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayHL_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayHL_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayHL_PC.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayHL_PC.Location = New System.Drawing.Point(150, 0)
+        Me.dpkNgayHL_PC.Name = "dpkNgayHL_PC"
+        Me.dpkNgayHL_PC.Size = New System.Drawing.Size(105, 26)
+        Me.dpkNgayHL_PC.TabIndex = 2
+        '
+        'Label70
+        '
+        Me.Label70.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label70.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.Location = New System.Drawing.Point(5, 0)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(145, 22)
+        Me.Label70.TabIndex = 1
+        Me.Label70.Text = "Hưởng từ ngày"
+        Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label173
+        '
+        Me.Label173.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label173.Location = New System.Drawing.Point(0, 0)
+        Me.Label173.Name = "Label173"
+        Me.Label173.Size = New System.Drawing.Size(5, 22)
+        Me.Label173.TabIndex = 0
+        Me.Label173.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label171
+        '
+        Me.Label171.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label171.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label171.Location = New System.Drawing.Point(0, 114)
+        Me.Label171.Name = "Label171"
+        Me.Label171.Size = New System.Drawing.Size(765, 1)
+        Me.Label171.TabIndex = 9
+        Me.Label171.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'pnlQDPC_IsNotNHCS
+        '
+        Me.pnlQDPC_IsNotNHCS.Controls.Add(Me.txtNoiDungQD_PC)
+        Me.pnlQDPC_IsNotNHCS.Controls.Add(Me.Label106)
+        Me.pnlQDPC_IsNotNHCS.Controls.Add(Me.Label172)
+        Me.pnlQDPC_IsNotNHCS.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlQDPC_IsNotNHCS.Location = New System.Drawing.Point(0, 92)
+        Me.pnlQDPC_IsNotNHCS.Name = "pnlQDPC_IsNotNHCS"
+        Me.pnlQDPC_IsNotNHCS.Size = New System.Drawing.Size(765, 22)
+        Me.pnlQDPC_IsNotNHCS.TabIndex = 8
+        '
+        'txtNoiDungQD_PC
+        '
+        Me.txtNoiDungQD_PC.BackColor = System.Drawing.SystemColors.Window
+        Me.txtNoiDungQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNoiDungQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNoiDungQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.txtNoiDungQD_PC.Location = New System.Drawing.Point(105, 0)
+        Me.txtNoiDungQD_PC.Name = "txtNoiDungQD_PC"
+        Me.txtNoiDungQD_PC.Size = New System.Drawing.Size(534, 26)
+        Me.txtNoiDungQD_PC.TabIndex = 2
+        '
+        'Label106
+        '
+        Me.Label106.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label106.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.Location = New System.Drawing.Point(5, 0)
+        Me.Label106.Name = "Label106"
+        Me.Label106.Size = New System.Drawing.Size(100, 22)
+        Me.Label106.TabIndex = 1
+        Me.Label106.Text = "Nội dung"
+        Me.Label106.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label172
+        '
+        Me.Label172.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label172.Location = New System.Drawing.Point(0, 0)
+        Me.Label172.Name = "Label172"
+        Me.Label172.Size = New System.Drawing.Size(5, 22)
+        Me.Label172.TabIndex = 0
+        Me.Label172.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'pnlQDPC_IsNHCS
+        '
+        Me.pnlQDPC_IsNHCS.Controls.Add(Me.cboMucQD_PC)
+        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label71)
+        Me.pnlQDPC_IsNHCS.Controls.Add(Me.cboLoaiQD_PC)
+        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label96)
+        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label170)
+        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label169)
+        Me.pnlQDPC_IsNHCS.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlQDPC_IsNHCS.Location = New System.Drawing.Point(0, 69)
+        Me.pnlQDPC_IsNHCS.Name = "pnlQDPC_IsNHCS"
+        Me.pnlQDPC_IsNHCS.Size = New System.Drawing.Size(765, 23)
+        Me.pnlQDPC_IsNHCS.TabIndex = 6
+        '
+        'cboMucQD_PC
+        '
+        Me.cboMucQD_PC.BackColor = System.Drawing.Color.White
+        Me.cboMucQD_PC.DisplayMember = "Display"
+        Me.cboMucQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboMucQD_PC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboMucQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboMucQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.cboMucQD_PC.FormattingEnabled = True
+        Me.cboMucQD_PC.Location = New System.Drawing.Point(689, 0)
+        Me.cboMucQD_PC.Name = "cboMucQD_PC"
+        Me.cboMucQD_PC.Size = New System.Drawing.Size(67, 26)
+        Me.cboMucQD_PC.TabIndex = 4
+        Me.cboMucQD_PC.ValueMember = "Value"
+        '
+        'Label71
+        '
+        Me.Label71.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label71.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label71.Location = New System.Drawing.Point(639, 0)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(50, 22)
+        Me.Label71.TabIndex = 3
+        Me.Label71.Text = "Mức "
+        Me.Label71.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cboLoaiQD_PC
+        '
+        Me.cboLoaiQD_PC.BackColor = System.Drawing.Color.White
+        Me.cboLoaiQD_PC.DisplayMember = "Display"
+        Me.cboLoaiQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboLoaiQD_PC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboLoaiQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboLoaiQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.cboLoaiQD_PC.FormattingEnabled = True
+        Me.cboLoaiQD_PC.Location = New System.Drawing.Point(105, 0)
+        Me.cboLoaiQD_PC.Name = "cboLoaiQD_PC"
+        Me.cboLoaiQD_PC.Size = New System.Drawing.Size(534, 26)
+        Me.cboLoaiQD_PC.TabIndex = 2
+        Me.cboLoaiQD_PC.ValueMember = "Value"
+        '
+        'Label96
+        '
+        Me.Label96.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label96.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label96.Location = New System.Drawing.Point(5, 0)
+        Me.Label96.Name = "Label96"
+        Me.Label96.Size = New System.Drawing.Size(100, 22)
+        Me.Label96.TabIndex = 1
+        Me.Label96.Text = "Loại phụ cấp"
+        Me.Label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label170
+        '
+        Me.Label170.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label170.Location = New System.Drawing.Point(0, 0)
+        Me.Label170.Name = "Label170"
+        Me.Label170.Size = New System.Drawing.Size(5, 22)
+        Me.Label170.TabIndex = 0
+        Me.Label170.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label169
+        '
+        Me.Label169.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label169.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label169.Location = New System.Drawing.Point(0, 22)
+        Me.Label169.Name = "Label169"
+        Me.Label169.Size = New System.Drawing.Size(765, 1)
+        Me.Label169.TabIndex = 8
+        Me.Label169.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label166
+        '
+        Me.Label166.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label166.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label166.Location = New System.Drawing.Point(0, 68)
+        Me.Label166.Name = "Label166"
+        Me.Label166.Size = New System.Drawing.Size(765, 1)
+        Me.Label166.TabIndex = 5
+        Me.Label166.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel54
+        '
+        Me.Panel54.Controls.Add(Me.txtCVNguoiKyQD_PC)
+        Me.Panel54.Controls.Add(Me.cboCVNguoiKyQD_PC)
+        Me.Panel54.Controls.Add(Me.Label67)
+        Me.Panel54.Controls.Add(Me.txtNguoiKyQD_PC)
+        Me.Panel54.Controls.Add(Me.Label69)
+        Me.Panel54.Controls.Add(Me.Label167)
+        Me.Panel54.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel54.Location = New System.Drawing.Point(0, 46)
+        Me.Panel54.Name = "Panel54"
+        Me.Panel54.Size = New System.Drawing.Size(765, 22)
+        Me.Panel54.TabIndex = 4
+        '
+        'txtCVNguoiKyQD_PC
+        '
+        Me.txtCVNguoiKyQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtCVNguoiKyQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCVNguoiKyQD_PC.Location = New System.Drawing.Point(756, 0)
+        Me.txtCVNguoiKyQD_PC.Name = "txtCVNguoiKyQD_PC"
+        Me.txtCVNguoiKyQD_PC.Size = New System.Drawing.Size(300, 26)
+        Me.txtCVNguoiKyQD_PC.TabIndex = 5
+        Me.txtCVNguoiKyQD_PC.Visible = False
+        '
+        'cboCVNguoiKyQD_PC
+        '
+        Me.cboCVNguoiKyQD_PC.BackColor = System.Drawing.Color.White
+        Me.cboCVNguoiKyQD_PC.DisplayMember = "Display"
+        Me.cboCVNguoiKyQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cboCVNguoiKyQD_PC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboCVNguoiKyQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboCVNguoiKyQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.cboCVNguoiKyQD_PC.FormattingEnabled = True
+        Me.cboCVNguoiKyQD_PC.Location = New System.Drawing.Point(456, 0)
+        Me.cboCVNguoiKyQD_PC.Name = "cboCVNguoiKyQD_PC"
+        Me.cboCVNguoiKyQD_PC.Size = New System.Drawing.Size(300, 26)
+        Me.cboCVNguoiKyQD_PC.TabIndex = 4
+        Me.cboCVNguoiKyQD_PC.ValueMember = "Value"
+        '
+        'Label67
+        '
+        Me.Label67.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label67.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.Location = New System.Drawing.Point(371, 0)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(85, 22)
+        Me.Label67.TabIndex = 3
+        Me.Label67.Text = "Chức danh "
+        Me.Label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtNguoiKyQD_PC
+        '
+        Me.txtNguoiKyQD_PC.BackColor = System.Drawing.Color.White
+        Me.txtNguoiKyQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNguoiKyQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNguoiKyQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.txtNguoiKyQD_PC.Location = New System.Drawing.Point(81, 0)
+        Me.txtNguoiKyQD_PC.Name = "txtNguoiKyQD_PC"
+        Me.txtNguoiKyQD_PC.Size = New System.Drawing.Size(290, 26)
+        Me.txtNguoiKyQD_PC.TabIndex = 2
+        '
+        'Label69
+        '
+        Me.Label69.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label69.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.Location = New System.Drawing.Point(5, 0)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(76, 22)
+        Me.Label69.TabIndex = 1
+        Me.Label69.Text = "Người ký"
+        Me.Label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label167
+        '
+        Me.Label167.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label167.Location = New System.Drawing.Point(0, 0)
+        Me.Label167.Name = "Label167"
+        Me.Label167.Size = New System.Drawing.Size(5, 22)
+        Me.Label167.TabIndex = 0
+        Me.Label167.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label164
+        '
+        Me.Label164.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label164.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label164.Location = New System.Drawing.Point(0, 45)
+        Me.Label164.Name = "Label164"
+        Me.Label164.Size = New System.Drawing.Size(765, 1)
+        Me.Label164.TabIndex = 3
+        Me.Label164.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel53
+        '
+        Me.Panel53.Controls.Add(Me.txtDVraQD_PC)
+        Me.Panel53.Controls.Add(Me.Label107)
+        Me.Panel53.Controls.Add(Me.Label168)
+        Me.Panel53.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel53.Location = New System.Drawing.Point(0, 23)
+        Me.Panel53.Name = "Panel53"
+        Me.Panel53.Size = New System.Drawing.Size(765, 22)
+        Me.Panel53.TabIndex = 2
+        '
+        'txtDVraQD_PC
+        '
+        Me.txtDVraQD_PC.BackColor = System.Drawing.Color.White
+        Me.txtDVraQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtDVraQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDVraQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.txtDVraQD_PC.Location = New System.Drawing.Point(150, 0)
+        Me.txtDVraQD_PC.Name = "txtDVraQD_PC"
+        Me.txtDVraQD_PC.Size = New System.Drawing.Size(606, 26)
+        Me.txtDVraQD_PC.TabIndex = 2
+        '
+        'Label107
+        '
+        Me.Label107.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label107.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label107.Location = New System.Drawing.Point(5, 0)
+        Me.Label107.Name = "Label107"
+        Me.Label107.Size = New System.Drawing.Size(145, 22)
+        Me.Label107.TabIndex = 1
+        Me.Label107.Text = "Đơn vị ra quyết định"
+        Me.Label107.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label168
+        '
+        Me.Label168.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label168.Location = New System.Drawing.Point(0, 0)
+        Me.Label168.Name = "Label168"
+        Me.Label168.Size = New System.Drawing.Size(5, 22)
+        Me.Label168.TabIndex = 0
+        Me.Label168.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label163
+        '
+        Me.Label163.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label163.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label163.Location = New System.Drawing.Point(0, 22)
+        Me.Label163.Name = "Label163"
+        Me.Label163.Size = New System.Drawing.Size(765, 1)
+        Me.Label163.TabIndex = 1
+        Me.Label163.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel52
+        '
+        Me.Panel52.Controls.Add(Me.dpkNgayKy_PC)
+        Me.Panel52.Controls.Add(Me.Label108)
+        Me.Panel52.Controls.Add(Me.txtSoQD_PC)
+        Me.Panel52.Controls.Add(Me.Label109)
+        Me.Panel52.Controls.Add(Me.cbIsQD_NHCS_PC)
+        Me.Panel52.Controls.Add(Me.Label165)
+        Me.Panel52.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel52.Location = New System.Drawing.Point(0, 0)
+        Me.Panel52.Name = "Panel52"
+        Me.Panel52.Size = New System.Drawing.Size(765, 22)
+        Me.Panel52.TabIndex = 0
+        '
+        'dpkNgayKy_PC
+        '
+        Me.dpkNgayKy_PC.CalendarForeColor = System.Drawing.Color.Navy
+        Me.dpkNgayKy_PC.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.dpkNgayKy_PC.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
+        Me.dpkNgayKy_PC.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
+        Me.dpkNgayKy_PC.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
+        Me.dpkNgayKy_PC.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayKy_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayKy_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayKy_PC.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayKy_PC.Location = New System.Drawing.Point(473, 0)
+        Me.dpkNgayKy_PC.Name = "dpkNgayKy_PC"
+        Me.dpkNgayKy_PC.Size = New System.Drawing.Size(105, 26)
+        Me.dpkNgayKy_PC.TabIndex = 5
+        '
+        'Label108
+        '
+        Me.Label108.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label108.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label108.Location = New System.Drawing.Point(388, 0)
+        Me.Label108.Name = "Label108"
+        Me.Label108.Size = New System.Drawing.Size(85, 22)
+        Me.Label108.TabIndex = 4
+        Me.Label108.Text = "Ngày ký "
+        Me.Label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtSoQD_PC
+        '
+        Me.txtSoQD_PC.BackColor = System.Drawing.Color.White
+        Me.txtSoQD_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtSoQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSoQD_PC.ForeColor = System.Drawing.Color.Navy
+        Me.txtSoQD_PC.Location = New System.Drawing.Point(215, 0)
+        Me.txtSoQD_PC.Name = "txtSoQD_PC"
+        Me.txtSoQD_PC.Size = New System.Drawing.Size(173, 26)
+        Me.txtSoQD_PC.TabIndex = 3
+        '
+        'Label109
+        '
+        Me.Label109.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label109.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label109.Location = New System.Drawing.Point(145, 0)
+        Me.Label109.Name = "Label109"
+        Me.Label109.Size = New System.Drawing.Size(70, 22)
+        Me.Label109.TabIndex = 2
+        Me.Label109.Text = "Số QĐ "
+        Me.Label109.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cbIsQD_NHCS_PC
+        '
+        Me.cbIsQD_NHCS_PC.BackColor = System.Drawing.Color.White
+        Me.cbIsQD_NHCS_PC.Dock = System.Windows.Forms.DockStyle.Left
+        Me.cbIsQD_NHCS_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbIsQD_NHCS_PC.Location = New System.Drawing.Point(5, 0)
+        Me.cbIsQD_NHCS_PC.Name = "cbIsQD_NHCS_PC"
+        Me.cbIsQD_NHCS_PC.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.cbIsQD_NHCS_PC.Size = New System.Drawing.Size(140, 22)
+        Me.cbIsQD_NHCS_PC.TabIndex = 1
+        Me.cbIsQD_NHCS_PC.Text = "QĐ của NHCSXH"
+        Me.cbIsQD_NHCS_PC.UseVisualStyleBackColor = False
+        '
+        'Label165
+        '
+        Me.Label165.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label165.Location = New System.Drawing.Point(0, 0)
+        Me.Label165.Name = "Label165"
+        Me.Label165.Size = New System.Drawing.Size(5, 22)
+        Me.Label165.TabIndex = 0
+        Me.Label165.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label156
+        '
+        Me.Label156.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label156.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label156.Location = New System.Drawing.Point(0, 0)
+        Me.Label156.Name = "Label156"
+        Me.Label156.Size = New System.Drawing.Size(765, 5)
+        Me.Label156.TabIndex = 0
+        Me.Label156.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel9
         '
@@ -3076,6 +5018,339 @@ Partial Class frmQuyetDinhNS
         Me.DataGridViewTextBoxColumn19.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         Me.DataGridViewTextBoxColumn19.ReadOnly = True
+        '
+        'Label187
+        '
+        Me.Label187.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label187.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label187.Location = New System.Drawing.Point(0, 385)
+        Me.Label187.Name = "Label187"
+        Me.Label187.Size = New System.Drawing.Size(765, 5)
+        Me.Label187.TabIndex = 189
+        Me.Label187.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel56
+        '
+        Me.Panel56.Controls.Add(Me.Panel62)
+        Me.Panel56.Controls.Add(Me.Label184)
+        Me.Panel56.Controls.Add(Me.Panel61)
+        Me.Panel56.Controls.Add(Me.Label182)
+        Me.Panel56.Controls.Add(Me.Panel60)
+        Me.Panel56.Controls.Add(Me.Label180)
+        Me.Panel56.Controls.Add(Me.Panel59)
+        Me.Panel56.Controls.Add(Me.Label178)
+        Me.Panel56.Controls.Add(Me.Panel58)
+        Me.Panel56.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel56.Location = New System.Drawing.Point(0, 390)
+        Me.Panel56.Name = "Panel56"
+        Me.Panel56.Size = New System.Drawing.Size(765, 142)
+        Me.Panel56.TabIndex = 188
+        '
+        'Panel62
+        '
+        Me.Panel62.Controls.Add(Me.txtGhiChu_K)
+        Me.Panel62.Controls.Add(Me.Label103)
+        Me.Panel62.Controls.Add(Me.Label186)
+        Me.Panel62.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel62.Location = New System.Drawing.Point(0, 114)
+        Me.Panel62.Name = "Panel62"
+        Me.Panel62.Size = New System.Drawing.Size(765, 22)
+        Me.Panel62.TabIndex = 11
+        '
+        'txtGhiChu_K
+        '
+        Me.txtGhiChu_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtGhiChu_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGhiChu_K.ForeColor = System.Drawing.Color.Navy
+        Me.txtGhiChu_K.Location = New System.Drawing.Point(81, 0)
+        Me.txtGhiChu_K.Name = "txtGhiChu_K"
+        Me.txtGhiChu_K.Size = New System.Drawing.Size(680, 26)
+        Me.txtGhiChu_K.TabIndex = 2
+        '
+        'Label103
+        '
+        Me.Label103.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label103.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label103.Location = New System.Drawing.Point(5, 0)
+        Me.Label103.Name = "Label103"
+        Me.Label103.Size = New System.Drawing.Size(76, 22)
+        Me.Label103.TabIndex = 1
+        Me.Label103.Text = "Ghi chú"
+        Me.Label103.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label186
+        '
+        Me.Label186.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label186.Location = New System.Drawing.Point(0, 0)
+        Me.Label186.Name = "Label186"
+        Me.Label186.Size = New System.Drawing.Size(5, 22)
+        Me.Label186.TabIndex = 0
+        Me.Label186.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label184
+        '
+        Me.Label184.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label184.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label184.Location = New System.Drawing.Point(0, 113)
+        Me.Label184.Name = "Label184"
+        Me.Label184.Size = New System.Drawing.Size(765, 1)
+        Me.Label184.TabIndex = 10
+        Me.Label184.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel61
+        '
+        Me.Panel61.Controls.Add(Me.txtNoiDungQD_K)
+        Me.Panel61.Controls.Add(Me.Label72)
+        Me.Panel61.Controls.Add(Me.Label185)
+        Me.Panel61.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel61.Location = New System.Drawing.Point(0, 69)
+        Me.Panel61.Name = "Panel61"
+        Me.Panel61.Size = New System.Drawing.Size(765, 44)
+        Me.Panel61.TabIndex = 9
+        '
+        'txtNoiDungQD_K
+        '
+        Me.txtNoiDungQD_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNoiDungQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNoiDungQD_K.ForeColor = System.Drawing.Color.Navy
+        Me.txtNoiDungQD_K.Location = New System.Drawing.Point(81, 0)
+        Me.txtNoiDungQD_K.Multiline = True
+        Me.txtNoiDungQD_K.Name = "txtNoiDungQD_K"
+        Me.txtNoiDungQD_K.Size = New System.Drawing.Size(680, 44)
+        Me.txtNoiDungQD_K.TabIndex = 2
+        '
+        'Label72
+        '
+        Me.Label72.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label72.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.Location = New System.Drawing.Point(5, 0)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(76, 44)
+        Me.Label72.TabIndex = 1
+        Me.Label72.Text = "Nội dung"
+        Me.Label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label185
+        '
+        Me.Label185.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label185.Location = New System.Drawing.Point(0, 0)
+        Me.Label185.Name = "Label185"
+        Me.Label185.Size = New System.Drawing.Size(5, 44)
+        Me.Label185.TabIndex = 0
+        Me.Label185.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label182
+        '
+        Me.Label182.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label182.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label182.Location = New System.Drawing.Point(0, 68)
+        Me.Label182.Name = "Label182"
+        Me.Label182.Size = New System.Drawing.Size(765, 1)
+        Me.Label182.TabIndex = 8
+        Me.Label182.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel60
+        '
+        Me.Panel60.Controls.Add(Me.txtCVNguoiKyQD_K)
+        Me.Panel60.Controls.Add(Me.Label100)
+        Me.Panel60.Controls.Add(Me.txtNguoiKyQD_K)
+        Me.Panel60.Controls.Add(Me.Label102)
+        Me.Panel60.Controls.Add(Me.Label183)
+        Me.Panel60.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel60.Location = New System.Drawing.Point(0, 46)
+        Me.Panel60.Name = "Panel60"
+        Me.Panel60.Size = New System.Drawing.Size(765, 22)
+        Me.Panel60.TabIndex = 7
+        '
+        'txtCVNguoiKyQD_K
+        '
+        Me.txtCVNguoiKyQD_K.BackColor = System.Drawing.SystemColors.Window
+        Me.txtCVNguoiKyQD_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtCVNguoiKyQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCVNguoiKyQD_K.ForeColor = System.Drawing.Color.Navy
+        Me.txtCVNguoiKyQD_K.Location = New System.Drawing.Point(403, 0)
+        Me.txtCVNguoiKyQD_K.Name = "txtCVNguoiKyQD_K"
+        Me.txtCVNguoiKyQD_K.Size = New System.Drawing.Size(357, 26)
+        Me.txtCVNguoiKyQD_K.TabIndex = 4
+        '
+        'Label100
+        '
+        Me.Label100.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label100.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label100.Location = New System.Drawing.Point(310, 0)
+        Me.Label100.Name = "Label100"
+        Me.Label100.Size = New System.Drawing.Size(93, 22)
+        Me.Label100.TabIndex = 3
+        Me.Label100.Text = "Chức danh "
+        Me.Label100.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtNguoiKyQD_K
+        '
+        Me.txtNguoiKyQD_K.BackColor = System.Drawing.SystemColors.Window
+        Me.txtNguoiKyQD_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtNguoiKyQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNguoiKyQD_K.ForeColor = System.Drawing.Color.Navy
+        Me.txtNguoiKyQD_K.Location = New System.Drawing.Point(81, 0)
+        Me.txtNguoiKyQD_K.Name = "txtNguoiKyQD_K"
+        Me.txtNguoiKyQD_K.Size = New System.Drawing.Size(229, 26)
+        Me.txtNguoiKyQD_K.TabIndex = 2
+        '
+        'Label102
+        '
+        Me.Label102.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label102.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label102.Location = New System.Drawing.Point(5, 0)
+        Me.Label102.Name = "Label102"
+        Me.Label102.Size = New System.Drawing.Size(76, 22)
+        Me.Label102.TabIndex = 1
+        Me.Label102.Text = "Người ký"
+        Me.Label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label183
+        '
+        Me.Label183.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label183.Location = New System.Drawing.Point(0, 0)
+        Me.Label183.Name = "Label183"
+        Me.Label183.Size = New System.Drawing.Size(5, 22)
+        Me.Label183.TabIndex = 0
+        Me.Label183.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label180
+        '
+        Me.Label180.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label180.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label180.Location = New System.Drawing.Point(0, 45)
+        Me.Label180.Name = "Label180"
+        Me.Label180.Size = New System.Drawing.Size(765, 1)
+        Me.Label180.TabIndex = 6
+        Me.Label180.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel59
+        '
+        Me.Panel59.Controls.Add(Me.txtDVraQD_K)
+        Me.Panel59.Controls.Add(Me.Label104)
+        Me.Panel59.Controls.Add(Me.Label181)
+        Me.Panel59.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel59.Location = New System.Drawing.Point(0, 23)
+        Me.Panel59.Name = "Panel59"
+        Me.Panel59.Size = New System.Drawing.Size(765, 22)
+        Me.Panel59.TabIndex = 5
+        '
+        'txtDVraQD_K
+        '
+        Me.txtDVraQD_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtDVraQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDVraQD_K.ForeColor = System.Drawing.Color.Navy
+        Me.txtDVraQD_K.Location = New System.Drawing.Point(150, 0)
+        Me.txtDVraQD_K.Name = "txtDVraQD_K"
+        Me.txtDVraQD_K.Size = New System.Drawing.Size(610, 26)
+        Me.txtDVraQD_K.TabIndex = 2
+        '
+        'Label104
+        '
+        Me.Label104.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label104.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label104.Location = New System.Drawing.Point(5, 0)
+        Me.Label104.Name = "Label104"
+        Me.Label104.Size = New System.Drawing.Size(145, 22)
+        Me.Label104.TabIndex = 1
+        Me.Label104.Text = "Đơn vi ra quyết định"
+        Me.Label104.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label181
+        '
+        Me.Label181.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label181.Location = New System.Drawing.Point(0, 0)
+        Me.Label181.Name = "Label181"
+        Me.Label181.Size = New System.Drawing.Size(5, 22)
+        Me.Label181.TabIndex = 0
+        Me.Label181.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label178
+        '
+        Me.Label178.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label178.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label178.Location = New System.Drawing.Point(0, 22)
+        Me.Label178.Name = "Label178"
+        Me.Label178.Size = New System.Drawing.Size(765, 1)
+        Me.Label178.TabIndex = 4
+        Me.Label178.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel58
+        '
+        Me.Panel58.Controls.Add(Me.dpkNgayKy_K)
+        Me.Panel58.Controls.Add(Me.Label97)
+        Me.Panel58.Controls.Add(Me.txtSoQD_K)
+        Me.Panel58.Controls.Add(Me.Label99)
+        Me.Panel58.Controls.Add(Me.Label179)
+        Me.Panel58.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel58.Location = New System.Drawing.Point(0, 0)
+        Me.Panel58.Name = "Panel58"
+        Me.Panel58.Size = New System.Drawing.Size(765, 22)
+        Me.Panel58.TabIndex = 3
+        '
+        'dpkNgayKy_K
+        '
+        Me.dpkNgayKy_K.CustomFormat = "dd/MM/yyyy"
+        Me.dpkNgayKy_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.dpkNgayKy_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dpkNgayKy_K.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dpkNgayKy_K.Location = New System.Drawing.Point(403, 0)
+        Me.dpkNgayKy_K.Name = "dpkNgayKy_K"
+        Me.dpkNgayKy_K.Size = New System.Drawing.Size(105, 26)
+        Me.dpkNgayKy_K.TabIndex = 4
+        '
+        'Label97
+        '
+        Me.Label97.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label97.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label97.Location = New System.Drawing.Point(310, 0)
+        Me.Label97.Name = "Label97"
+        Me.Label97.Size = New System.Drawing.Size(93, 22)
+        Me.Label97.TabIndex = 3
+        Me.Label97.Text = "Ngày "
+        Me.Label97.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtSoQD_K
+        '
+        Me.txtSoQD_K.BackColor = System.Drawing.SystemColors.Window
+        Me.txtSoQD_K.Dock = System.Windows.Forms.DockStyle.Left
+        Me.txtSoQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSoQD_K.ForeColor = System.Drawing.Color.Navy
+        Me.txtSoQD_K.Location = New System.Drawing.Point(81, 0)
+        Me.txtSoQD_K.Name = "txtSoQD_K"
+        Me.txtSoQD_K.Size = New System.Drawing.Size(229, 26)
+        Me.txtSoQD_K.TabIndex = 2
+        '
+        'Label99
+        '
+        Me.Label99.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label99.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label99.Location = New System.Drawing.Point(5, 0)
+        Me.Label99.Name = "Label99"
+        Me.Label99.Size = New System.Drawing.Size(76, 22)
+        Me.Label99.TabIndex = 1
+        Me.Label99.Text = "Số hiệu"
+        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label179
+        '
+        Me.Label179.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label179.Location = New System.Drawing.Point(0, 0)
+        Me.Label179.Name = "Label179"
+        Me.Label179.Size = New System.Drawing.Size(5, 22)
+        Me.Label179.TabIndex = 0
+        Me.Label179.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label177
+        '
+        Me.Label177.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label177.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label177.Location = New System.Drawing.Point(0, 0)
+        Me.Label177.Name = "Label177"
+        Me.Label177.Size = New System.Drawing.Size(765, 5)
+        Me.Label177.TabIndex = 187
+        Me.Label177.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel11
         '
@@ -3925,2281 +6200,6 @@ Partial Class frmQuyetDinhNS
         Me.splitt_main.TabIndex = 111
         Me.splitt_main.TabStop = False
         '
-        'Label127
-        '
-        Me.Label127.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label127.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label127.Location = New System.Drawing.Point(0, 0)
-        Me.Label127.Name = "Label127"
-        Me.Label127.Size = New System.Drawing.Size(765, 2)
-        Me.Label127.TabIndex = 0
-        Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'IdCBThoiViec
-        '
-        Me.IdCBThoiViec.DataPropertyName = "IdCBThoiViec"
-        Me.IdCBThoiViec.HeaderText = "ID"
-        Me.IdCBThoiViec.MinimumWidth = 6
-        Me.IdCBThoiViec.Name = "IdCBThoiViec"
-        Me.IdCBThoiViec.ReadOnly = True
-        Me.IdCBThoiViec.Visible = False
-        Me.IdCBThoiViec.Width = 125
-        '
-        'cln_cbThoiViec
-        '
-        Me.cln_cbThoiViec.HeaderText = "Chọn xoá"
-        Me.cln_cbThoiViec.MinimumWidth = 6
-        Me.cln_cbThoiViec.Name = "cln_cbThoiViec"
-        Me.cln_cbThoiViec.Width = 70
-        '
-        'Ngay_HL
-        '
-        Me.Ngay_HL.DataPropertyName = "Ngay_HL"
-        Me.Ngay_HL.HeaderText = "Ngày"
-        Me.Ngay_HL.MinimumWidth = 6
-        Me.Ngay_HL.Name = "Ngay_HL"
-        Me.Ngay_HL.ReadOnly = True
-        Me.Ngay_HL.Width = 90
-        '
-        'IdLoaiQD_TV
-        '
-        Me.IdLoaiQD_TV.DataPropertyName = "IdLoaiQD"
-        Me.IdLoaiQD_TV.HeaderText = "Quyết định"
-        Me.IdLoaiQD_TV.MinimumWidth = 6
-        Me.IdLoaiQD_TV.Name = "IdLoaiQD_TV"
-        Me.IdLoaiQD_TV.ReadOnly = True
-        Me.IdLoaiQD_TV.Width = 200
-        '
-        'IdLyDo
-        '
-        Me.IdLyDo.DataPropertyName = "IdLyDo"
-        Me.IdLyDo.HeaderText = "Lý do thôi việc"
-        Me.IdLyDo.MinimumWidth = 6
-        Me.IdLyDo.Name = "IdLyDo"
-        Me.IdLyDo.ReadOnly = True
-        Me.IdLyDo.Width = 390
-        '
-        'pnlQdThoiViecInput
-        '
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel42)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label140)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel41)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label138)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel40)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label136)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel39)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label134)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel38)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label131)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel37)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label130)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel36)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Label129)
-        Me.pnlQdThoiViecInput.Controls.Add(Me.Panel35)
-        Me.pnlQdThoiViecInput.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlQdThoiViecInput.Location = New System.Drawing.Point(0, 341)
-        Me.pnlQdThoiViecInput.Name = "pnlQdThoiViecInput"
-        Me.pnlQdThoiViecInput.Size = New System.Drawing.Size(765, 191)
-        Me.pnlQdThoiViecInput.TabIndex = 2
-        '
-        'Panel35
-        '
-        Me.Panel35.Controls.Add(Me.dpkNgayKy_TV)
-        Me.Panel35.Controls.Add(Me.Label46)
-        Me.Panel35.Controls.Add(Me.txtSoQD_TV)
-        Me.Panel35.Controls.Add(Me.Label12)
-        Me.Panel35.Controls.Add(Me.cbIsQD_NHCS_TV)
-        Me.Panel35.Controls.Add(Me.Label128)
-        Me.Panel35.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel35.Location = New System.Drawing.Point(0, 0)
-        Me.Panel35.Name = "Panel35"
-        Me.Panel35.Size = New System.Drawing.Size(765, 22)
-        Me.Panel35.TabIndex = 1
-        '
-        'Label128
-        '
-        Me.Label128.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label128.Location = New System.Drawing.Point(0, 0)
-        Me.Label128.Name = "Label128"
-        Me.Label128.Size = New System.Drawing.Size(5, 22)
-        Me.Label128.TabIndex = 0
-        Me.Label128.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbIsQD_NHCS_TV
-        '
-        Me.cbIsQD_NHCS_TV.AutoSize = True
-        Me.cbIsQD_NHCS_TV.BackColor = System.Drawing.Color.White
-        Me.cbIsQD_NHCS_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cbIsQD_NHCS_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbIsQD_NHCS_TV.ForeColor = System.Drawing.Color.Maroon
-        Me.cbIsQD_NHCS_TV.Location = New System.Drawing.Point(5, 0)
-        Me.cbIsQD_NHCS_TV.Name = "cbIsQD_NHCS_TV"
-        Me.cbIsQD_NHCS_TV.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.cbIsQD_NHCS_TV.Size = New System.Drawing.Size(140, 22)
-        Me.cbIsQD_NHCS_TV.TabIndex = 1
-        Me.cbIsQD_NHCS_TV.Text = "QĐ của NHCSXH"
-        Me.cbIsQD_NHCS_TV.UseVisualStyleBackColor = False
-        '
-        'Label12
-        '
-        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label12.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(145, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(60, 22)
-        Me.Label12.TabIndex = 2
-        Me.Label12.Text = "Số QĐ "
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtSoQD_TV
-        '
-        Me.txtSoQD_TV.BackColor = System.Drawing.Color.White
-        Me.txtSoQD_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtSoQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSoQD_TV.ForeColor = System.Drawing.Color.Navy
-        Me.txtSoQD_TV.Location = New System.Drawing.Point(205, 0)
-        Me.txtSoQD_TV.Name = "txtSoQD_TV"
-        Me.txtSoQD_TV.Size = New System.Drawing.Size(150, 26)
-        Me.txtSoQD_TV.TabIndex = 3
-        '
-        'Label46
-        '
-        Me.Label46.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label46.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.ForeColor = System.Drawing.Color.Black
-        Me.Label46.Location = New System.Drawing.Point(355, 0)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(80, 22)
-        Me.Label46.TabIndex = 4
-        Me.Label46.Text = "Ngày ký "
-        Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkNgayKy_TV
-        '
-        Me.dpkNgayKy_TV.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.dpkNgayKy_TV.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayKy_TV.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayKy_TV.CalendarTitleForeColor = System.Drawing.Color.Lavender
-        Me.dpkNgayKy_TV.CalendarTrailingForeColor = System.Drawing.Color.Black
-        Me.dpkNgayKy_TV.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayKy_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayKy_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayKy_TV.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayKy_TV.Location = New System.Drawing.Point(435, 0)
-        Me.dpkNgayKy_TV.Name = "dpkNgayKy_TV"
-        Me.dpkNgayKy_TV.Size = New System.Drawing.Size(115, 26)
-        Me.dpkNgayKy_TV.TabIndex = 5
-        '
-        'Label129
-        '
-        Me.Label129.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label129.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label129.Location = New System.Drawing.Point(0, 22)
-        Me.Label129.Name = "Label129"
-        Me.Label129.Size = New System.Drawing.Size(765, 1)
-        Me.Label129.TabIndex = 2
-        Me.Label129.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label130
-        '
-        Me.Label130.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label130.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label130.Location = New System.Drawing.Point(0, 45)
-        Me.Label130.Name = "Label130"
-        Me.Label130.Size = New System.Drawing.Size(765, 1)
-        Me.Label130.TabIndex = 4
-        Me.Label130.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel36
-        '
-        Me.Panel36.Controls.Add(Me.txtDVraQD_TV)
-        Me.Panel36.Controls.Add(Me.Label29)
-        Me.Panel36.Controls.Add(Me.Label133)
-        Me.Panel36.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel36.Location = New System.Drawing.Point(0, 23)
-        Me.Panel36.Name = "Panel36"
-        Me.Panel36.Size = New System.Drawing.Size(765, 22)
-        Me.Panel36.TabIndex = 3
-        '
-        'Label133
-        '
-        Me.Label133.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label133.Location = New System.Drawing.Point(0, 0)
-        Me.Label133.Name = "Label133"
-        Me.Label133.Size = New System.Drawing.Size(5, 22)
-        Me.Label133.TabIndex = 0
-        Me.Label133.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label131
-        '
-        Me.Label131.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label131.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label131.Location = New System.Drawing.Point(0, 68)
-        Me.Label131.Name = "Label131"
-        Me.Label131.Size = New System.Drawing.Size(765, 1)
-        Me.Label131.TabIndex = 6
-        Me.Label131.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel37
-        '
-        Me.Panel37.Controls.Add(Me.txtCVNguoiKyQD_TV)
-        Me.Panel37.Controls.Add(Me.cboCVNguoiKyQD_TV)
-        Me.Panel37.Controls.Add(Me.Label44)
-        Me.Panel37.Controls.Add(Me.txtNguoiKyQD_TV)
-        Me.Panel37.Controls.Add(Me.Label42)
-        Me.Panel37.Controls.Add(Me.Label132)
-        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel37.Location = New System.Drawing.Point(0, 46)
-        Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(765, 22)
-        Me.Panel37.TabIndex = 5
-        '
-        'Label132
-        '
-        Me.Label132.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label132.Location = New System.Drawing.Point(0, 0)
-        Me.Label132.Name = "Label132"
-        Me.Label132.Size = New System.Drawing.Size(5, 22)
-        Me.Label132.TabIndex = 0
-        Me.Label132.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label134
-        '
-        Me.Label134.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label134.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label134.Location = New System.Drawing.Point(0, 91)
-        Me.Label134.Name = "Label134"
-        Me.Label134.Size = New System.Drawing.Size(765, 1)
-        Me.Label134.TabIndex = 8
-        Me.Label134.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel38
-        '
-        Me.Panel38.Controls.Add(Me.dpkNgayHL_TV)
-        Me.Panel38.Controls.Add(Me.Label45)
-        Me.Panel38.Controls.Add(Me.cboQDThoiViec)
-        Me.Panel38.Controls.Add(Me.Label47)
-        Me.Panel38.Controls.Add(Me.Label135)
-        Me.Panel38.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel38.Location = New System.Drawing.Point(0, 69)
-        Me.Panel38.Name = "Panel38"
-        Me.Panel38.Size = New System.Drawing.Size(765, 22)
-        Me.Panel38.TabIndex = 7
-        '
-        'Label135
-        '
-        Me.Label135.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label135.Location = New System.Drawing.Point(0, 0)
-        Me.Label135.Name = "Label135"
-        Me.Label135.Size = New System.Drawing.Size(5, 22)
-        Me.Label135.TabIndex = 0
-        Me.Label135.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label136
-        '
-        Me.Label136.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label136.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label136.Location = New System.Drawing.Point(0, 114)
-        Me.Label136.Name = "Label136"
-        Me.Label136.Size = New System.Drawing.Size(765, 1)
-        Me.Label136.TabIndex = 10
-        Me.Label136.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel39
-        '
-        Me.Panel39.Controls.Add(Me.cboLyDo_TV)
-        Me.Panel39.Controls.Add(Me.Label41)
-        Me.Panel39.Controls.Add(Me.Label137)
-        Me.Panel39.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel39.Location = New System.Drawing.Point(0, 92)
-        Me.Panel39.Name = "Panel39"
-        Me.Panel39.Size = New System.Drawing.Size(765, 22)
-        Me.Panel39.TabIndex = 9
-        '
-        'Label137
-        '
-        Me.Label137.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label137.Location = New System.Drawing.Point(0, 0)
-        Me.Label137.Name = "Label137"
-        Me.Label137.Size = New System.Drawing.Size(5, 22)
-        Me.Label137.TabIndex = 0
-        Me.Label137.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label138
-        '
-        Me.Label138.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label138.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label138.Location = New System.Drawing.Point(0, 137)
-        Me.Label138.Name = "Label138"
-        Me.Label138.Size = New System.Drawing.Size(765, 1)
-        Me.Label138.TabIndex = 12
-        Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel40
-        '
-        Me.Panel40.Controls.Add(Me.txtTroCapKhac)
-        Me.Panel40.Controls.Add(Me.Label39)
-        Me.Panel40.Controls.Add(Me.txtTroCap_TV)
-        Me.Panel40.Controls.Add(Me.Label40)
-        Me.Panel40.Controls.Add(Me.Label139)
-        Me.Panel40.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel40.Location = New System.Drawing.Point(0, 115)
-        Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(765, 22)
-        Me.Panel40.TabIndex = 11
-        '
-        'Label139
-        '
-        Me.Label139.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label139.Location = New System.Drawing.Point(0, 0)
-        Me.Label139.Name = "Label139"
-        Me.Label139.Size = New System.Drawing.Size(5, 22)
-        Me.Label139.TabIndex = 0
-        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label29
-        '
-        Me.Label29.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label29.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.ForeColor = System.Drawing.Color.Black
-        Me.Label29.Location = New System.Drawing.Point(5, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(141, 22)
-        Me.Label29.TabIndex = 1
-        Me.Label29.Text = "Đơn vị ra quyết định"
-        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtDVraQD_TV
-        '
-        Me.txtDVraQD_TV.BackColor = System.Drawing.Color.White
-        Me.txtDVraQD_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtDVraQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDVraQD_TV.ForeColor = System.Drawing.Color.Navy
-        Me.txtDVraQD_TV.Location = New System.Drawing.Point(146, 0)
-        Me.txtDVraQD_TV.Name = "txtDVraQD_TV"
-        Me.txtDVraQD_TV.Size = New System.Drawing.Size(609, 26)
-        Me.txtDVraQD_TV.TabIndex = 2
-        '
-        'Label42
-        '
-        Me.Label42.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label42.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.ForeColor = System.Drawing.Color.Black
-        Me.Label42.Location = New System.Drawing.Point(5, 0)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(92, 22)
-        Me.Label42.TabIndex = 1
-        Me.Label42.Text = "Người ký"
-        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtNguoiKyQD_TV
-        '
-        Me.txtNguoiKyQD_TV.BackColor = System.Drawing.Color.White
-        Me.txtNguoiKyQD_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNguoiKyQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNguoiKyQD_TV.ForeColor = System.Drawing.Color.Navy
-        Me.txtNguoiKyQD_TV.Location = New System.Drawing.Point(97, 0)
-        Me.txtNguoiKyQD_TV.Name = "txtNguoiKyQD_TV"
-        Me.txtNguoiKyQD_TV.Size = New System.Drawing.Size(189, 26)
-        Me.txtNguoiKyQD_TV.TabIndex = 2
-        '
-        'Label44
-        '
-        Me.Label44.BackColor = System.Drawing.Color.Transparent
-        Me.Label44.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label44.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.ForeColor = System.Drawing.Color.Black
-        Me.Label44.Location = New System.Drawing.Point(286, 0)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(149, 22)
-        Me.Label44.TabIndex = 3
-        Me.Label44.Text = "Chức danh người ký "
-        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboCVNguoiKyQD_TV
-        '
-        Me.cboCVNguoiKyQD_TV.BackColor = System.Drawing.Color.White
-        Me.cboCVNguoiKyQD_TV.DisplayMember = "Display"
-        Me.cboCVNguoiKyQD_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboCVNguoiKyQD_TV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboCVNguoiKyQD_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboCVNguoiKyQD_TV.ForeColor = System.Drawing.Color.Navy
-        Me.cboCVNguoiKyQD_TV.FormattingEnabled = True
-        Me.cboCVNguoiKyQD_TV.Location = New System.Drawing.Point(435, 0)
-        Me.cboCVNguoiKyQD_TV.Name = "cboCVNguoiKyQD_TV"
-        Me.cboCVNguoiKyQD_TV.Size = New System.Drawing.Size(320, 26)
-        Me.cboCVNguoiKyQD_TV.TabIndex = 4
-        Me.cboCVNguoiKyQD_TV.ValueMember = "Value"
-        '
-        'txtCVNguoiKyQD_TV
-        '
-        Me.txtCVNguoiKyQD_TV.BackColor = System.Drawing.Color.White
-        Me.txtCVNguoiKyQD_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtCVNguoiKyQD_TV.ForeColor = System.Drawing.Color.Navy
-        Me.txtCVNguoiKyQD_TV.Location = New System.Drawing.Point(755, 0)
-        Me.txtCVNguoiKyQD_TV.Name = "txtCVNguoiKyQD_TV"
-        Me.txtCVNguoiKyQD_TV.Size = New System.Drawing.Size(320, 26)
-        Me.txtCVNguoiKyQD_TV.TabIndex = 5
-        Me.txtCVNguoiKyQD_TV.Visible = False
-        '
-        'Label47
-        '
-        Me.Label47.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label47.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.ForeColor = System.Drawing.Color.Black
-        Me.Label47.Location = New System.Drawing.Point(5, 0)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(92, 22)
-        Me.Label47.TabIndex = 1
-        Me.Label47.Text = "Quyết định"
-        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'cboQDThoiViec
-        '
-        Me.cboQDThoiViec.BackColor = System.Drawing.Color.White
-        Me.cboQDThoiViec.DisplayMember = "Display"
-        Me.cboQDThoiViec.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboQDThoiViec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboQDThoiViec.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboQDThoiViec.ForeColor = System.Drawing.Color.Navy
-        Me.cboQDThoiViec.FormattingEnabled = True
-        Me.cboQDThoiViec.Location = New System.Drawing.Point(97, 0)
-        Me.cboQDThoiViec.Name = "cboQDThoiViec"
-        Me.cboQDThoiViec.Size = New System.Drawing.Size(453, 26)
-        Me.cboQDThoiViec.TabIndex = 2
-        Me.cboQDThoiViec.ValueMember = "Value"
-        '
-        'Label45
-        '
-        Me.Label45.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label45.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.ForeColor = System.Drawing.Color.Black
-        Me.Label45.Location = New System.Drawing.Point(550, 0)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(100, 22)
-        Me.Label45.TabIndex = 3
-        Me.Label45.Text = "Ngày hiệu lực "
-        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkNgayHL_TV
-        '
-        Me.dpkNgayHL_TV.CalendarFont = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayHL_TV.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.dpkNgayHL_TV.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayHL_TV.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayHL_TV.CalendarTitleForeColor = System.Drawing.Color.Lavender
-        Me.dpkNgayHL_TV.CalendarTrailingForeColor = System.Drawing.Color.Black
-        Me.dpkNgayHL_TV.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayHL_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayHL_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayHL_TV.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayHL_TV.Location = New System.Drawing.Point(650, 0)
-        Me.dpkNgayHL_TV.Name = "dpkNgayHL_TV"
-        Me.dpkNgayHL_TV.Size = New System.Drawing.Size(105, 26)
-        Me.dpkNgayHL_TV.TabIndex = 4
-        '
-        'Label41
-        '
-        Me.Label41.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label41.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.ForeColor = System.Drawing.Color.Black
-        Me.Label41.Location = New System.Drawing.Point(5, 0)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(105, 22)
-        Me.Label41.TabIndex = 1
-        Me.Label41.Text = "Lý do thôi việc"
-        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'cboLyDo_TV
-        '
-        Me.cboLyDo_TV.BackColor = System.Drawing.Color.White
-        Me.cboLyDo_TV.DisplayMember = "Display"
-        Me.cboLyDo_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboLyDo_TV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLyDo_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboLyDo_TV.ForeColor = System.Drawing.Color.Navy
-        Me.cboLyDo_TV.FormattingEnabled = True
-        Me.cboLyDo_TV.Location = New System.Drawing.Point(110, 0)
-        Me.cboLyDo_TV.Name = "cboLyDo_TV"
-        Me.cboLyDo_TV.Size = New System.Drawing.Size(645, 26)
-        Me.cboLyDo_TV.TabIndex = 2
-        Me.cboLyDo_TV.ValueMember = "Value"
-        '
-        'Label40
-        '
-        Me.Label40.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label40.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.ForeColor = System.Drawing.Color.Black
-        Me.Label40.Location = New System.Drawing.Point(5, 0)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(105, 22)
-        Me.Label40.TabIndex = 1
-        Me.Label40.Text = "Trợ cấp thôi việc"
-        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label140
-        '
-        Me.Label140.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label140.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label140.Location = New System.Drawing.Point(0, 160)
-        Me.Label140.Name = "Label140"
-        Me.Label140.Size = New System.Drawing.Size(765, 1)
-        Me.Label140.TabIndex = 14
-        Me.Label140.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel41
-        '
-        Me.Panel41.Controls.Add(Me.txtTienThuHoi)
-        Me.Panel41.Controls.Add(Me.Label9)
-        Me.Panel41.Controls.Add(Me.txtTienBoiThuong)
-        Me.Panel41.Controls.Add(Me.Label11)
-        Me.Panel41.Controls.Add(Me.Label142)
-        Me.Panel41.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel41.Location = New System.Drawing.Point(0, 138)
-        Me.Panel41.Name = "Panel41"
-        Me.Panel41.Size = New System.Drawing.Size(765, 22)
-        Me.Panel41.TabIndex = 13
-        '
-        'Label142
-        '
-        Me.Label142.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label142.Location = New System.Drawing.Point(0, 0)
-        Me.Label142.Name = "Label142"
-        Me.Label142.Size = New System.Drawing.Size(5, 22)
-        Me.Label142.TabIndex = 0
-        Me.Label142.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Panel42
-        '
-        Me.Panel42.Controls.Add(Me.txtGhiChu_TV)
-        Me.Panel42.Controls.Add(Me.Label43)
-        Me.Panel42.Controls.Add(Me.Label145)
-        Me.Panel42.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel42.Location = New System.Drawing.Point(0, 161)
-        Me.Panel42.Name = "Panel42"
-        Me.Panel42.Size = New System.Drawing.Size(765, 22)
-        Me.Panel42.TabIndex = 15
-        '
-        'Label145
-        '
-        Me.Label145.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label145.Location = New System.Drawing.Point(0, 0)
-        Me.Label145.Name = "Label145"
-        Me.Label145.Size = New System.Drawing.Size(5, 22)
-        Me.Label145.TabIndex = 0
-        Me.Label145.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtTroCap_TV
-        '
-        Me.txtTroCap_TV.BackColor = System.Drawing.Color.White
-        Me.txtTroCap_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtTroCap_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTroCap_TV.ForeColor = System.Drawing.Color.Navy
-        Me.txtTroCap_TV.Location = New System.Drawing.Point(110, 0)
-        Me.txtTroCap_TV.Name = "txtTroCap_TV"
-        Me.txtTroCap_TV.Size = New System.Drawing.Size(193, 26)
-        Me.txtTroCap_TV.TabIndex = 2
-        Me.txtTroCap_TV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label39
-        '
-        Me.Label39.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label39.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.ForeColor = System.Drawing.Color.Black
-        Me.Label39.Location = New System.Drawing.Point(303, 0)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(132, 22)
-        Me.Label39.TabIndex = 3
-        Me.Label39.Text = "Trợ cấp khác "
-        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtTroCapKhac
-        '
-        Me.txtTroCapKhac.BackColor = System.Drawing.Color.White
-        Me.txtTroCapKhac.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtTroCapKhac.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTroCapKhac.ForeColor = System.Drawing.Color.Navy
-        Me.txtTroCapKhac.Location = New System.Drawing.Point(435, 0)
-        Me.txtTroCapKhac.Name = "txtTroCapKhac"
-        Me.txtTroCapKhac.Size = New System.Drawing.Size(320, 26)
-        Me.txtTroCapKhac.TabIndex = 4
-        Me.txtTroCapKhac.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label11
-        '
-        Me.Label11.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label11.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(5, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(141, 22)
-        Me.Label11.TabIndex = 1
-        Me.Label11.Text = "Số tiền bồi thường"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtTienBoiThuong
-        '
-        Me.txtTienBoiThuong.BackColor = System.Drawing.Color.White
-        Me.txtTienBoiThuong.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtTienBoiThuong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTienBoiThuong.ForeColor = System.Drawing.Color.Navy
-        Me.txtTienBoiThuong.Location = New System.Drawing.Point(146, 0)
-        Me.txtTienBoiThuong.Name = "txtTienBoiThuong"
-        Me.txtTienBoiThuong.Size = New System.Drawing.Size(157, 26)
-        Me.txtTienBoiThuong.TabIndex = 2
-        Me.txtTienBoiThuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label9
-        '
-        Me.Label9.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label9.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(303, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(132, 22)
-        Me.Label9.TabIndex = 3
-        Me.Label9.Text = "Số tiền phải thu hồi "
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtTienThuHoi
-        '
-        Me.txtTienThuHoi.BackColor = System.Drawing.Color.White
-        Me.txtTienThuHoi.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtTienThuHoi.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTienThuHoi.ForeColor = System.Drawing.Color.Navy
-        Me.txtTienThuHoi.Location = New System.Drawing.Point(435, 0)
-        Me.txtTienThuHoi.Name = "txtTienThuHoi"
-        Me.txtTienThuHoi.Size = New System.Drawing.Size(320, 26)
-        Me.txtTienThuHoi.TabIndex = 4
-        Me.txtTienThuHoi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label43
-        '
-        Me.Label43.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label43.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.ForeColor = System.Drawing.Color.Black
-        Me.Label43.Location = New System.Drawing.Point(5, 0)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(92, 22)
-        Me.Label43.TabIndex = 1
-        Me.Label43.Text = "Ghi chú"
-        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtGhiChu_TV
-        '
-        Me.txtGhiChu_TV.BackColor = System.Drawing.Color.White
-        Me.txtGhiChu_TV.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtGhiChu_TV.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGhiChu_TV.ForeColor = System.Drawing.Color.Navy
-        Me.txtGhiChu_TV.Location = New System.Drawing.Point(97, 0)
-        Me.txtGhiChu_TV.Name = "txtGhiChu_TV"
-        Me.txtGhiChu_TV.Size = New System.Drawing.Size(658, 26)
-        Me.txtGhiChu_TV.TabIndex = 2
-        '
-        'Label141
-        '
-        Me.Label141.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label141.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label141.Location = New System.Drawing.Point(0, 336)
-        Me.Label141.Name = "Label141"
-        Me.Label141.Size = New System.Drawing.Size(765, 5)
-        Me.Label141.TabIndex = 3
-        Me.Label141.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label143
-        '
-        Me.Label143.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label143.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label143.Location = New System.Drawing.Point(0, 0)
-        Me.Label143.Name = "Label143"
-        Me.Label143.Size = New System.Drawing.Size(765, 5)
-        Me.Label143.TabIndex = 0
-        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label144
-        '
-        Me.Label144.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label144.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label144.Location = New System.Drawing.Point(0, 294)
-        Me.Label144.Name = "Label144"
-        Me.Label144.Size = New System.Drawing.Size(765, 5)
-        Me.Label144.TabIndex = 2
-        Me.Label144.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel43
-        '
-        Me.Panel43.Controls.Add(Me.Panel51)
-        Me.Panel43.Controls.Add(Me.Label158)
-        Me.Panel43.Controls.Add(Me.Panel50)
-        Me.Panel43.Controls.Add(Me.Label162)
-        Me.Panel43.Controls.Add(Me.pnlQDL_IsNotNHCS)
-        Me.Panel43.Controls.Add(Me.Label154)
-        Me.Panel43.Controls.Add(Me.pnlQDL_IsNHCS)
-        Me.Panel43.Controls.Add(Me.Label152)
-        Me.Panel43.Controls.Add(Me.Panel47)
-        Me.Panel43.Controls.Add(Me.Label150)
-        Me.Panel43.Controls.Add(Me.Panel46)
-        Me.Panel43.Controls.Add(Me.Label147)
-        Me.Panel43.Controls.Add(Me.Panel45)
-        Me.Panel43.Controls.Add(Me.Label146)
-        Me.Panel43.Controls.Add(Me.Panel44)
-        Me.Panel43.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel43.Location = New System.Drawing.Point(0, 299)
-        Me.Panel43.Name = "Panel43"
-        Me.Panel43.Size = New System.Drawing.Size(765, 235)
-        Me.Panel43.TabIndex = 167
-        '
-        'Panel44
-        '
-        Me.Panel44.Controls.Add(Me.dpkNgayKy_L)
-        Me.Panel44.Controls.Add(Me.Label60)
-        Me.Panel44.Controls.Add(Me.txtSoQD_L)
-        Me.Panel44.Controls.Add(Me.Label62)
-        Me.Panel44.Controls.Add(Me.cbIsQD_NHCS_L)
-        Me.Panel44.Controls.Add(Me.Label148)
-        Me.Panel44.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel44.Location = New System.Drawing.Point(0, 0)
-        Me.Panel44.Name = "Panel44"
-        Me.Panel44.Size = New System.Drawing.Size(765, 22)
-        Me.Panel44.TabIndex = 2
-        '
-        'Label148
-        '
-        Me.Label148.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label148.Location = New System.Drawing.Point(0, 0)
-        Me.Label148.Name = "Label148"
-        Me.Label148.Size = New System.Drawing.Size(5, 22)
-        Me.Label148.TabIndex = 0
-        Me.Label148.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbIsQD_NHCS_L
-        '
-        Me.cbIsQD_NHCS_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cbIsQD_NHCS_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbIsQD_NHCS_L.ForeColor = System.Drawing.Color.Maroon
-        Me.cbIsQD_NHCS_L.Location = New System.Drawing.Point(5, 0)
-        Me.cbIsQD_NHCS_L.Name = "cbIsQD_NHCS_L"
-        Me.cbIsQD_NHCS_L.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.cbIsQD_NHCS_L.Size = New System.Drawing.Size(140, 22)
-        Me.cbIsQD_NHCS_L.TabIndex = 1
-        Me.cbIsQD_NHCS_L.Text = "QĐ của NHCSXH"
-        Me.cbIsQD_NHCS_L.UseVisualStyleBackColor = True
-        '
-        'Label146
-        '
-        Me.Label146.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label146.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label146.Location = New System.Drawing.Point(0, 22)
-        Me.Label146.Name = "Label146"
-        Me.Label146.Size = New System.Drawing.Size(765, 1)
-        Me.Label146.TabIndex = 3
-        Me.Label146.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label147
-        '
-        Me.Label147.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label147.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label147.Location = New System.Drawing.Point(0, 45)
-        Me.Label147.Name = "Label147"
-        Me.Label147.Size = New System.Drawing.Size(765, 1)
-        Me.Label147.TabIndex = 5
-        Me.Label147.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel45
-        '
-        Me.Panel45.Controls.Add(Me.txtDVraQD_L)
-        Me.Panel45.Controls.Add(Me.Label63)
-        Me.Panel45.Controls.Add(Me.Label149)
-        Me.Panel45.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel45.Location = New System.Drawing.Point(0, 23)
-        Me.Panel45.Name = "Panel45"
-        Me.Panel45.Size = New System.Drawing.Size(765, 22)
-        Me.Panel45.TabIndex = 4
-        '
-        'Label149
-        '
-        Me.Label149.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label149.Location = New System.Drawing.Point(0, 0)
-        Me.Label149.Name = "Label149"
-        Me.Label149.Size = New System.Drawing.Size(5, 22)
-        Me.Label149.TabIndex = 0
-        Me.Label149.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label150
-        '
-        Me.Label150.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label150.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label150.Location = New System.Drawing.Point(0, 68)
-        Me.Label150.Name = "Label150"
-        Me.Label150.Size = New System.Drawing.Size(765, 1)
-        Me.Label150.TabIndex = 7
-        Me.Label150.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel46
-        '
-        Me.Panel46.Controls.Add(Me.txtCVNguoiKyQD_L)
-        Me.Panel46.Controls.Add(Me.cboCVNguoiKyQD_L)
-        Me.Panel46.Controls.Add(Me.Label55)
-        Me.Panel46.Controls.Add(Me.txtNguoiKyQD_L)
-        Me.Panel46.Controls.Add(Me.Label57)
-        Me.Panel46.Controls.Add(Me.Label151)
-        Me.Panel46.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel46.Location = New System.Drawing.Point(0, 46)
-        Me.Panel46.Name = "Panel46"
-        Me.Panel46.Size = New System.Drawing.Size(765, 22)
-        Me.Panel46.TabIndex = 6
-        '
-        'Label151
-        '
-        Me.Label151.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label151.Location = New System.Drawing.Point(0, 0)
-        Me.Label151.Name = "Label151"
-        Me.Label151.Size = New System.Drawing.Size(5, 22)
-        Me.Label151.TabIndex = 0
-        Me.Label151.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label152
-        '
-        Me.Label152.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label152.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label152.Location = New System.Drawing.Point(0, 91)
-        Me.Label152.Name = "Label152"
-        Me.Label152.Size = New System.Drawing.Size(765, 1)
-        Me.Label152.TabIndex = 9
-        Me.Label152.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel47
-        '
-        Me.Panel47.Controls.Add(Me.txtLoaiQDLuong)
-        Me.Panel47.Controls.Add(Me.cboLoaiQDLuong)
-        Me.Panel47.Controls.Add(Me.Label64)
-        Me.Panel47.Controls.Add(Me.Label153)
-        Me.Panel47.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel47.Location = New System.Drawing.Point(0, 69)
-        Me.Panel47.Name = "Panel47"
-        Me.Panel47.Size = New System.Drawing.Size(765, 22)
-        Me.Panel47.TabIndex = 8
-        '
-        'Label153
-        '
-        Me.Label153.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label153.Location = New System.Drawing.Point(0, 0)
-        Me.Label153.Name = "Label153"
-        Me.Label153.Size = New System.Drawing.Size(5, 22)
-        Me.Label153.TabIndex = 0
-        Me.Label153.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label154
-        '
-        Me.Label154.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label154.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label154.Location = New System.Drawing.Point(0, 137)
-        Me.Label154.Name = "Label154"
-        Me.Label154.Size = New System.Drawing.Size(765, 1)
-        Me.Label154.TabIndex = 11
-        Me.Label154.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'pnlQDL_IsNHCS
-        '
-        Me.pnlQDL_IsNHCS.Controls.Add(Me.cboQDBang)
-        Me.pnlQDL_IsNHCS.Controls.Add(Me.Label61)
-        Me.pnlQDL_IsNHCS.Controls.Add(Me.cboQDNghiDinh)
-        Me.pnlQDL_IsNHCS.Controls.Add(Me.Label51)
-        Me.pnlQDL_IsNHCS.Controls.Add(Me.Label155)
-        Me.pnlQDL_IsNHCS.Controls.Add(Me.Panel49)
-        Me.pnlQDL_IsNHCS.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlQDL_IsNHCS.Location = New System.Drawing.Point(0, 92)
-        Me.pnlQDL_IsNHCS.Name = "pnlQDL_IsNHCS"
-        Me.pnlQDL_IsNHCS.Size = New System.Drawing.Size(765, 45)
-        Me.pnlQDL_IsNHCS.TabIndex = 10
-        '
-        'Label155
-        '
-        Me.Label155.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label155.Location = New System.Drawing.Point(0, 0)
-        Me.Label155.Name = "Label155"
-        Me.Label155.Size = New System.Drawing.Size(5, 23)
-        Me.Label155.TabIndex = 0
-        Me.Label155.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label62
-        '
-        Me.Label62.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label62.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label62.Location = New System.Drawing.Point(145, 0)
-        Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(70, 22)
-        Me.Label62.TabIndex = 108
-        Me.Label62.Text = "Số QĐ"
-        Me.Label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtSoQD_L
-        '
-        Me.txtSoQD_L.BackColor = System.Drawing.Color.White
-        Me.txtSoQD_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtSoQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSoQD_L.ForeColor = System.Drawing.Color.Navy
-        Me.txtSoQD_L.Location = New System.Drawing.Point(215, 0)
-        Me.txtSoQD_L.Name = "txtSoQD_L"
-        Me.txtSoQD_L.Size = New System.Drawing.Size(173, 26)
-        Me.txtSoQD_L.TabIndex = 109
-        '
-        'Label60
-        '
-        Me.Label60.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label60.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label60.Location = New System.Drawing.Point(388, 0)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(80, 22)
-        Me.Label60.TabIndex = 112
-        Me.Label60.Text = "Ngày ký "
-        Me.Label60.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkNgayKy_L
-        '
-        Me.dpkNgayKy_L.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.dpkNgayKy_L.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayKy_L.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayKy_L.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
-        Me.dpkNgayKy_L.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.dpkNgayKy_L.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayKy_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayKy_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayKy_L.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayKy_L.Location = New System.Drawing.Point(468, 0)
-        Me.dpkNgayKy_L.Name = "dpkNgayKy_L"
-        Me.dpkNgayKy_L.Size = New System.Drawing.Size(109, 26)
-        Me.dpkNgayKy_L.TabIndex = 113
-        '
-        'Label63
-        '
-        Me.Label63.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label63.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.Location = New System.Drawing.Point(5, 0)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(150, 22)
-        Me.Label63.TabIndex = 165
-        Me.Label63.Text = "Đơn vi ra quyết định"
-        Me.Label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtDVraQD_L
-        '
-        Me.txtDVraQD_L.BackColor = System.Drawing.Color.White
-        Me.txtDVraQD_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtDVraQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDVraQD_L.ForeColor = System.Drawing.Color.Navy
-        Me.txtDVraQD_L.Location = New System.Drawing.Point(155, 0)
-        Me.txtDVraQD_L.Name = "txtDVraQD_L"
-        Me.txtDVraQD_L.Size = New System.Drawing.Size(601, 26)
-        Me.txtDVraQD_L.TabIndex = 166
-        '
-        'Label57
-        '
-        Me.Label57.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label57.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label57.Location = New System.Drawing.Point(5, 0)
-        Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(108, 22)
-        Me.Label57.TabIndex = 1
-        Me.Label57.Text = "Người ký"
-        Me.Label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtNguoiKyQD_L
-        '
-        Me.txtNguoiKyQD_L.BackColor = System.Drawing.Color.White
-        Me.txtNguoiKyQD_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNguoiKyQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNguoiKyQD_L.ForeColor = System.Drawing.Color.Navy
-        Me.txtNguoiKyQD_L.Location = New System.Drawing.Point(113, 0)
-        Me.txtNguoiKyQD_L.Name = "txtNguoiKyQD_L"
-        Me.txtNguoiKyQD_L.Size = New System.Drawing.Size(240, 26)
-        Me.txtNguoiKyQD_L.TabIndex = 2
-        '
-        'Label55
-        '
-        Me.Label55.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label55.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.Location = New System.Drawing.Point(353, 0)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(91, 22)
-        Me.Label55.TabIndex = 3
-        Me.Label55.Text = "Chức danh "
-        Me.Label55.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboCVNguoiKyQD_L
-        '
-        Me.cboCVNguoiKyQD_L.BackColor = System.Drawing.Color.White
-        Me.cboCVNguoiKyQD_L.DisplayMember = "Display"
-        Me.cboCVNguoiKyQD_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboCVNguoiKyQD_L.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboCVNguoiKyQD_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboCVNguoiKyQD_L.ForeColor = System.Drawing.Color.Navy
-        Me.cboCVNguoiKyQD_L.FormattingEnabled = True
-        Me.cboCVNguoiKyQD_L.Location = New System.Drawing.Point(444, 0)
-        Me.cboCVNguoiKyQD_L.Name = "cboCVNguoiKyQD_L"
-        Me.cboCVNguoiKyQD_L.Size = New System.Drawing.Size(312, 26)
-        Me.cboCVNguoiKyQD_L.TabIndex = 4
-        Me.cboCVNguoiKyQD_L.ValueMember = "Value"
-        '
-        'txtCVNguoiKyQD_L
-        '
-        Me.txtCVNguoiKyQD_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtCVNguoiKyQD_L.Location = New System.Drawing.Point(756, 0)
-        Me.txtCVNguoiKyQD_L.Name = "txtCVNguoiKyQD_L"
-        Me.txtCVNguoiKyQD_L.Size = New System.Drawing.Size(325, 26)
-        Me.txtCVNguoiKyQD_L.TabIndex = 5
-        Me.txtCVNguoiKyQD_L.Visible = False
-        '
-        'Label64
-        '
-        Me.Label64.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label64.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label64.Location = New System.Drawing.Point(5, 0)
-        Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(108, 22)
-        Me.Label64.TabIndex = 1
-        Me.Label64.Text = "Loại quyết định"
-        Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'cboLoaiQDLuong
-        '
-        Me.cboLoaiQDLuong.BackColor = System.Drawing.Color.White
-        Me.cboLoaiQDLuong.DisplayMember = "Display"
-        Me.cboLoaiQDLuong.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboLoaiQDLuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLoaiQDLuong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboLoaiQDLuong.ForeColor = System.Drawing.Color.Navy
-        Me.cboLoaiQDLuong.FormattingEnabled = True
-        Me.cboLoaiQDLuong.Location = New System.Drawing.Point(113, 0)
-        Me.cboLoaiQDLuong.Name = "cboLoaiQDLuong"
-        Me.cboLoaiQDLuong.Size = New System.Drawing.Size(464, 26)
-        Me.cboLoaiQDLuong.TabIndex = 2
-        Me.cboLoaiQDLuong.ValueMember = "Value"
-        '
-        'txtLoaiQDLuong
-        '
-        Me.txtLoaiQDLuong.BackColor = System.Drawing.Color.White
-        Me.txtLoaiQDLuong.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtLoaiQDLuong.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLoaiQDLuong.ForeColor = System.Drawing.Color.Navy
-        Me.txtLoaiQDLuong.Location = New System.Drawing.Point(577, 0)
-        Me.txtLoaiQDLuong.Name = "txtLoaiQDLuong"
-        Me.txtLoaiQDLuong.Size = New System.Drawing.Size(464, 26)
-        Me.txtLoaiQDLuong.TabIndex = 3
-        Me.txtLoaiQDLuong.Visible = False
-        '
-        'Label51
-        '
-        Me.Label51.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label51.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.Location = New System.Drawing.Point(5, 0)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(108, 23)
-        Me.Label51.TabIndex = 1
-        Me.Label51.Text = "Nghị định"
-        Me.Label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'cboQDNghiDinh
-        '
-        Me.cboQDNghiDinh.BackColor = System.Drawing.Color.White
-        Me.cboQDNghiDinh.DisplayMember = "Display"
-        Me.cboQDNghiDinh.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboQDNghiDinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboQDNghiDinh.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboQDNghiDinh.ForeColor = System.Drawing.Color.Navy
-        Me.cboQDNghiDinh.FormattingEnabled = True
-        Me.cboQDNghiDinh.Location = New System.Drawing.Point(113, 0)
-        Me.cboQDNghiDinh.Name = "cboQDNghiDinh"
-        Me.cboQDNghiDinh.Size = New System.Drawing.Size(240, 26)
-        Me.cboQDNghiDinh.TabIndex = 2
-        Me.cboQDNghiDinh.ValueMember = "Value"
-        '
-        'Label61
-        '
-        Me.Label61.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label61.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label61.Location = New System.Drawing.Point(353, 0)
-        Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(91, 23)
-        Me.Label61.TabIndex = 3
-        Me.Label61.Text = "Bảng lương "
-        Me.Label61.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboQDBang
-        '
-        Me.cboQDBang.BackColor = System.Drawing.Color.White
-        Me.cboQDBang.DisplayMember = "Display"
-        Me.cboQDBang.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.cboQDBang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboQDBang.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboQDBang.ForeColor = System.Drawing.Color.Navy
-        Me.cboQDBang.FormattingEnabled = True
-        Me.cboQDBang.Location = New System.Drawing.Point(444, 0)
-        Me.cboQDBang.Name = "cboQDBang"
-        Me.cboQDBang.Size = New System.Drawing.Size(321, 26)
-        Me.cboQDBang.TabIndex = 4
-        Me.cboQDBang.ValueMember = "Value"
-        '
-        'Panel50
-        '
-        Me.Panel50.Controls.Add(Me.dpkNgayLenLTT)
-        Me.Panel50.Controls.Add(Me.Label53)
-        Me.Panel50.Controls.Add(Me.dpkNgayHL_L)
-        Me.Panel50.Controls.Add(Me.Label54)
-        Me.Panel50.Controls.Add(Me.Label161)
-        Me.Panel50.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel50.Location = New System.Drawing.Point(0, 184)
-        Me.Panel50.Name = "Panel50"
-        Me.Panel50.Size = New System.Drawing.Size(765, 22)
-        Me.Panel50.TabIndex = 14
-        '
-        'Label161
-        '
-        Me.Label161.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label161.Location = New System.Drawing.Point(0, 0)
-        Me.Label161.Name = "Label161"
-        Me.Label161.Size = New System.Drawing.Size(5, 22)
-        Me.Label161.TabIndex = 0
-        Me.Label161.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label158
-        '
-        Me.Label158.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label158.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label158.Location = New System.Drawing.Point(0, 206)
-        Me.Label158.Name = "Label158"
-        Me.Label158.Size = New System.Drawing.Size(765, 1)
-        Me.Label158.TabIndex = 15
-        Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel51
-        '
-        Me.Panel51.Controls.Add(Me.txtGhiChu_L)
-        Me.Panel51.Controls.Add(Me.Label52)
-        Me.Panel51.Controls.Add(Me.Label159)
-        Me.Panel51.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel51.Location = New System.Drawing.Point(0, 207)
-        Me.Panel51.Name = "Panel51"
-        Me.Panel51.Size = New System.Drawing.Size(765, 22)
-        Me.Panel51.TabIndex = 16
-        '
-        'Label159
-        '
-        Me.Label159.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label159.Location = New System.Drawing.Point(0, 0)
-        Me.Label159.Name = "Label159"
-        Me.Label159.Size = New System.Drawing.Size(5, 22)
-        Me.Label159.TabIndex = 0
-        Me.Label159.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label54
-        '
-        Me.Label54.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label54.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label54.Location = New System.Drawing.Point(5, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(108, 22)
-        Me.Label54.TabIndex = 0
-        Me.Label54.Text = "Ngày hưởng"
-        Me.Label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dpkNgayHL_L
-        '
-        Me.dpkNgayHL_L.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.dpkNgayHL_L.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayHL_L.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayHL_L.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
-        Me.dpkNgayHL_L.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.dpkNgayHL_L.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayHL_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayHL_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayHL_L.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayHL_L.Location = New System.Drawing.Point(113, 0)
-        Me.dpkNgayHL_L.Name = "dpkNgayHL_L"
-        Me.dpkNgayHL_L.Size = New System.Drawing.Size(177, 26)
-        Me.dpkNgayHL_L.TabIndex = 1
-        '
-        'Label53
-        '
-        Me.Label53.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label53.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label53.Location = New System.Drawing.Point(290, 0)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(154, 22)
-        Me.Label53.TabIndex = 2
-        Me.Label53.Text = "Ngày lên dự kiến "
-        Me.Label53.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkNgayLenLTT
-        '
-        Me.dpkNgayLenLTT.CalendarFont = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayLenLTT.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.dpkNgayLenLTT.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayLenLTT.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayLenLTT.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
-        Me.dpkNgayLenLTT.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.dpkNgayLenLTT.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayLenLTT.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayLenLTT.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayLenLTT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayLenLTT.Location = New System.Drawing.Point(444, 0)
-        Me.dpkNgayLenLTT.Name = "dpkNgayLenLTT"
-        Me.dpkNgayLenLTT.Size = New System.Drawing.Size(133, 26)
-        Me.dpkNgayLenLTT.TabIndex = 3
-        '
-        'Label52
-        '
-        Me.Label52.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label52.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(5, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(108, 22)
-        Me.Label52.TabIndex = 1
-        Me.Label52.Text = "Ghi chú"
-        Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtGhiChu_L
-        '
-        Me.txtGhiChu_L.BackColor = System.Drawing.Color.White
-        Me.txtGhiChu_L.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtGhiChu_L.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGhiChu_L.ForeColor = System.Drawing.Color.Navy
-        Me.txtGhiChu_L.Location = New System.Drawing.Point(113, 0)
-        Me.txtGhiChu_L.Name = "txtGhiChu_L"
-        Me.txtGhiChu_L.Size = New System.Drawing.Size(652, 26)
-        Me.txtGhiChu_L.TabIndex = 2
-        '
-        'Panel49
-        '
-        Me.Panel49.Controls.Add(Me.txtQDHeso)
-        Me.Panel49.Controls.Add(Me.Label56)
-        Me.Panel49.Controls.Add(Me.cboQDBac)
-        Me.Panel49.Controls.Add(Me.Label58)
-        Me.Panel49.Controls.Add(Me.cboQDNgach)
-        Me.Panel49.Controls.Add(Me.Label59)
-        Me.Panel49.Controls.Add(Me.Label157)
-        Me.Panel49.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel49.Location = New System.Drawing.Point(0, 23)
-        Me.Panel49.Name = "Panel49"
-        Me.Panel49.Size = New System.Drawing.Size(765, 22)
-        Me.Panel49.TabIndex = 5
-        '
-        'txtQDHeso
-        '
-        Me.txtQDHeso.BackColor = System.Drawing.Color.White
-        Me.txtQDHeso.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtQDHeso.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQDHeso.ForeColor = System.Drawing.Color.Navy
-        Me.txtQDHeso.Location = New System.Drawing.Point(692, 0)
-        Me.txtQDHeso.Name = "txtQDHeso"
-        Me.txtQDHeso.ReadOnly = True
-        Me.txtQDHeso.Size = New System.Drawing.Size(64, 26)
-        Me.txtQDHeso.TabIndex = 6
-        '
-        'Label56
-        '
-        Me.Label56.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label56.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.Location = New System.Drawing.Point(637, 0)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(55, 22)
-        Me.Label56.TabIndex = 5
-        Me.Label56.Text = "Hệ số "
-        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboQDBac
-        '
-        Me.cboQDBac.BackColor = System.Drawing.Color.White
-        Me.cboQDBac.DisplayMember = "Display"
-        Me.cboQDBac.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboQDBac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboQDBac.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboQDBac.ForeColor = System.Drawing.Color.Navy
-        Me.cboQDBac.FormattingEnabled = True
-        Me.cboQDBac.Location = New System.Drawing.Point(577, 0)
-        Me.cboQDBac.Name = "cboQDBac"
-        Me.cboQDBac.Size = New System.Drawing.Size(60, 26)
-        Me.cboQDBac.TabIndex = 4
-        Me.cboQDBac.ValueMember = "Value"
-        '
-        'Label58
-        '
-        Me.Label58.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label58.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label58.Location = New System.Drawing.Point(524, 0)
-        Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(53, 22)
-        Me.Label58.TabIndex = 3
-        Me.Label58.Text = "Bậc "
-        Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboQDNgach
-        '
-        Me.cboQDNgach.BackColor = System.Drawing.Color.White
-        Me.cboQDNgach.DisplayMember = "Display"
-        Me.cboQDNgach.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboQDNgach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboQDNgach.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboQDNgach.ForeColor = System.Drawing.Color.Navy
-        Me.cboQDNgach.FormattingEnabled = True
-        Me.cboQDNgach.Location = New System.Drawing.Point(113, 0)
-        Me.cboQDNgach.Name = "cboQDNgach"
-        Me.cboQDNgach.Size = New System.Drawing.Size(411, 26)
-        Me.cboQDNgach.TabIndex = 2
-        Me.cboQDNgach.ValueMember = "Value"
-        '
-        'Label59
-        '
-        Me.Label59.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label59.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label59.Location = New System.Drawing.Point(5, 0)
-        Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(108, 22)
-        Me.Label59.TabIndex = 1
-        Me.Label59.Text = "Ngạch lương"
-        Me.Label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label157
-        '
-        Me.Label157.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label157.Location = New System.Drawing.Point(0, 0)
-        Me.Label157.Name = "Label157"
-        Me.Label157.Size = New System.Drawing.Size(5, 22)
-        Me.Label157.TabIndex = 0
-        Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'pnlQDL_IsNotNHCS
-        '
-        Me.pnlQDL_IsNotNHCS.Controls.Add(Me.txtNoiDungQD_L)
-        Me.pnlQDL_IsNotNHCS.Controls.Add(Me.Label65)
-        Me.pnlQDL_IsNotNHCS.Controls.Add(Me.Label160)
-        Me.pnlQDL_IsNotNHCS.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlQDL_IsNotNHCS.Enabled = False
-        Me.pnlQDL_IsNotNHCS.Location = New System.Drawing.Point(0, 138)
-        Me.pnlQDL_IsNotNHCS.Name = "pnlQDL_IsNotNHCS"
-        Me.pnlQDL_IsNotNHCS.Size = New System.Drawing.Size(765, 45)
-        Me.pnlQDL_IsNotNHCS.TabIndex = 12
-        '
-        'txtNoiDungQD_L
-        '
-        Me.txtNoiDungQD_L.BackColor = System.Drawing.Color.White
-        Me.txtNoiDungQD_L.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNoiDungQD_L.ForeColor = System.Drawing.Color.Navy
-        Me.txtNoiDungQD_L.Location = New System.Drawing.Point(113, 0)
-        Me.txtNoiDungQD_L.Multiline = True
-        Me.txtNoiDungQD_L.Name = "txtNoiDungQD_L"
-        Me.txtNoiDungQD_L.Size = New System.Drawing.Size(643, 45)
-        Me.txtNoiDungQD_L.TabIndex = 2
-        '
-        'Label65
-        '
-        Me.Label65.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label65.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label65.Location = New System.Drawing.Point(5, 0)
-        Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(108, 45)
-        Me.Label65.TabIndex = 1
-        Me.Label65.Text = "Nội dung"
-        '
-        'Label160
-        '
-        Me.Label160.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label160.Location = New System.Drawing.Point(0, 0)
-        Me.Label160.Name = "Label160"
-        Me.Label160.Size = New System.Drawing.Size(5, 45)
-        Me.Label160.TabIndex = 0
-        Me.Label160.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label162
-        '
-        Me.Label162.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label162.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label162.Location = New System.Drawing.Point(0, 183)
-        Me.Label162.Name = "Label162"
-        Me.Label162.Size = New System.Drawing.Size(765, 1)
-        Me.Label162.TabIndex = 18
-        Me.Label162.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label156
-        '
-        Me.Label156.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label156.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label156.Location = New System.Drawing.Point(0, 0)
-        Me.Label156.Name = "Label156"
-        Me.Label156.Size = New System.Drawing.Size(765, 5)
-        Me.Label156.TabIndex = 0
-        Me.Label156.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel48
-        '
-        Me.Panel48.Controls.Add(Me.Panel55)
-        Me.Panel48.Controls.Add(Me.Label174)
-        Me.Panel48.Controls.Add(Me.Panel57)
-        Me.Panel48.Controls.Add(Me.Label171)
-        Me.Panel48.Controls.Add(Me.pnlQDPC_IsNotNHCS)
-        Me.Panel48.Controls.Add(Me.pnlQDPC_IsNHCS)
-        Me.Panel48.Controls.Add(Me.Label166)
-        Me.Panel48.Controls.Add(Me.Panel54)
-        Me.Panel48.Controls.Add(Me.Label164)
-        Me.Panel48.Controls.Add(Me.Panel53)
-        Me.Panel48.Controls.Add(Me.Label163)
-        Me.Panel48.Controls.Add(Me.Panel52)
-        Me.Panel48.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel48.Location = New System.Drawing.Point(0, 367)
-        Me.Panel48.Name = "Panel48"
-        Me.Panel48.Size = New System.Drawing.Size(765, 165)
-        Me.Panel48.TabIndex = 175
-        '
-        'Panel52
-        '
-        Me.Panel52.Controls.Add(Me.dpkNgayKy_PC)
-        Me.Panel52.Controls.Add(Me.Label108)
-        Me.Panel52.Controls.Add(Me.txtSoQD_PC)
-        Me.Panel52.Controls.Add(Me.Label109)
-        Me.Panel52.Controls.Add(Me.cbIsQD_NHCS_PC)
-        Me.Panel52.Controls.Add(Me.Label165)
-        Me.Panel52.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel52.Location = New System.Drawing.Point(0, 0)
-        Me.Panel52.Name = "Panel52"
-        Me.Panel52.Size = New System.Drawing.Size(765, 22)
-        Me.Panel52.TabIndex = 0
-        '
-        'Label165
-        '
-        Me.Label165.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label165.Location = New System.Drawing.Point(0, 0)
-        Me.Label165.Name = "Label165"
-        Me.Label165.Size = New System.Drawing.Size(5, 22)
-        Me.Label165.TabIndex = 0
-        Me.Label165.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbIsQD_NHCS_PC
-        '
-        Me.cbIsQD_NHCS_PC.BackColor = System.Drawing.Color.White
-        Me.cbIsQD_NHCS_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cbIsQD_NHCS_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbIsQD_NHCS_PC.Location = New System.Drawing.Point(5, 0)
-        Me.cbIsQD_NHCS_PC.Name = "cbIsQD_NHCS_PC"
-        Me.cbIsQD_NHCS_PC.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.cbIsQD_NHCS_PC.Size = New System.Drawing.Size(140, 22)
-        Me.cbIsQD_NHCS_PC.TabIndex = 1
-        Me.cbIsQD_NHCS_PC.Text = "QĐ của NHCSXH"
-        Me.cbIsQD_NHCS_PC.UseVisualStyleBackColor = False
-        '
-        'Label109
-        '
-        Me.Label109.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label109.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label109.Location = New System.Drawing.Point(145, 0)
-        Me.Label109.Name = "Label109"
-        Me.Label109.Size = New System.Drawing.Size(70, 22)
-        Me.Label109.TabIndex = 2
-        Me.Label109.Text = "Số QĐ "
-        Me.Label109.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtSoQD_PC
-        '
-        Me.txtSoQD_PC.BackColor = System.Drawing.Color.White
-        Me.txtSoQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtSoQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSoQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.txtSoQD_PC.Location = New System.Drawing.Point(215, 0)
-        Me.txtSoQD_PC.Name = "txtSoQD_PC"
-        Me.txtSoQD_PC.Size = New System.Drawing.Size(173, 26)
-        Me.txtSoQD_PC.TabIndex = 3
-        '
-        'Label108
-        '
-        Me.Label108.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label108.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label108.Location = New System.Drawing.Point(388, 0)
-        Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(85, 22)
-        Me.Label108.TabIndex = 4
-        Me.Label108.Text = "Ngày ký "
-        Me.Label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkNgayKy_PC
-        '
-        Me.dpkNgayKy_PC.CalendarForeColor = System.Drawing.Color.Navy
-        Me.dpkNgayKy_PC.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayKy_PC.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayKy_PC.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
-        Me.dpkNgayKy_PC.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.dpkNgayKy_PC.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayKy_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayKy_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayKy_PC.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayKy_PC.Location = New System.Drawing.Point(473, 0)
-        Me.dpkNgayKy_PC.Name = "dpkNgayKy_PC"
-        Me.dpkNgayKy_PC.Size = New System.Drawing.Size(105, 26)
-        Me.dpkNgayKy_PC.TabIndex = 5
-        '
-        'Label163
-        '
-        Me.Label163.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label163.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label163.Location = New System.Drawing.Point(0, 22)
-        Me.Label163.Name = "Label163"
-        Me.Label163.Size = New System.Drawing.Size(765, 1)
-        Me.Label163.TabIndex = 1
-        Me.Label163.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label164
-        '
-        Me.Label164.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label164.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label164.Location = New System.Drawing.Point(0, 45)
-        Me.Label164.Name = "Label164"
-        Me.Label164.Size = New System.Drawing.Size(765, 1)
-        Me.Label164.TabIndex = 3
-        Me.Label164.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel53
-        '
-        Me.Panel53.Controls.Add(Me.txtDVraQD_PC)
-        Me.Panel53.Controls.Add(Me.Label107)
-        Me.Panel53.Controls.Add(Me.Label168)
-        Me.Panel53.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel53.Location = New System.Drawing.Point(0, 23)
-        Me.Panel53.Name = "Panel53"
-        Me.Panel53.Size = New System.Drawing.Size(765, 22)
-        Me.Panel53.TabIndex = 2
-        '
-        'Label168
-        '
-        Me.Label168.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label168.Location = New System.Drawing.Point(0, 0)
-        Me.Label168.Name = "Label168"
-        Me.Label168.Size = New System.Drawing.Size(5, 22)
-        Me.Label168.TabIndex = 0
-        Me.Label168.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label166
-        '
-        Me.Label166.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label166.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label166.Location = New System.Drawing.Point(0, 68)
-        Me.Label166.Name = "Label166"
-        Me.Label166.Size = New System.Drawing.Size(765, 1)
-        Me.Label166.TabIndex = 5
-        Me.Label166.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel54
-        '
-        Me.Panel54.Controls.Add(Me.txtCVNguoiKyQD_PC)
-        Me.Panel54.Controls.Add(Me.cboCVNguoiKyQD_PC)
-        Me.Panel54.Controls.Add(Me.Label67)
-        Me.Panel54.Controls.Add(Me.txtNguoiKyQD_PC)
-        Me.Panel54.Controls.Add(Me.Label69)
-        Me.Panel54.Controls.Add(Me.Label167)
-        Me.Panel54.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel54.Location = New System.Drawing.Point(0, 46)
-        Me.Panel54.Name = "Panel54"
-        Me.Panel54.Size = New System.Drawing.Size(765, 22)
-        Me.Panel54.TabIndex = 4
-        '
-        'Label167
-        '
-        Me.Label167.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label167.Location = New System.Drawing.Point(0, 0)
-        Me.Label167.Name = "Label167"
-        Me.Label167.Size = New System.Drawing.Size(5, 22)
-        Me.Label167.TabIndex = 0
-        Me.Label167.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'pnlQDPC_IsNHCS
-        '
-        Me.pnlQDPC_IsNHCS.Controls.Add(Me.cboMucQD_PC)
-        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label71)
-        Me.pnlQDPC_IsNHCS.Controls.Add(Me.cboLoaiQD_PC)
-        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label96)
-        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label170)
-        Me.pnlQDPC_IsNHCS.Controls.Add(Me.Label169)
-        Me.pnlQDPC_IsNHCS.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlQDPC_IsNHCS.Location = New System.Drawing.Point(0, 69)
-        Me.pnlQDPC_IsNHCS.Name = "pnlQDPC_IsNHCS"
-        Me.pnlQDPC_IsNHCS.Size = New System.Drawing.Size(765, 23)
-        Me.pnlQDPC_IsNHCS.TabIndex = 6
-        '
-        'Label170
-        '
-        Me.Label170.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label170.Location = New System.Drawing.Point(0, 0)
-        Me.Label170.Name = "Label170"
-        Me.Label170.Size = New System.Drawing.Size(5, 22)
-        Me.Label170.TabIndex = 0
-        Me.Label170.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label171
-        '
-        Me.Label171.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label171.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label171.Location = New System.Drawing.Point(0, 114)
-        Me.Label171.Name = "Label171"
-        Me.Label171.Size = New System.Drawing.Size(765, 1)
-        Me.Label171.TabIndex = 9
-        Me.Label171.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'pnlQDPC_IsNotNHCS
-        '
-        Me.pnlQDPC_IsNotNHCS.Controls.Add(Me.txtNoiDungQD_PC)
-        Me.pnlQDPC_IsNotNHCS.Controls.Add(Me.Label106)
-        Me.pnlQDPC_IsNotNHCS.Controls.Add(Me.Label172)
-        Me.pnlQDPC_IsNotNHCS.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlQDPC_IsNotNHCS.Location = New System.Drawing.Point(0, 92)
-        Me.pnlQDPC_IsNotNHCS.Name = "pnlQDPC_IsNotNHCS"
-        Me.pnlQDPC_IsNotNHCS.Size = New System.Drawing.Size(765, 22)
-        Me.pnlQDPC_IsNotNHCS.TabIndex = 8
-        '
-        'Label172
-        '
-        Me.Label172.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label172.Location = New System.Drawing.Point(0, 0)
-        Me.Label172.Name = "Label172"
-        Me.Label172.Size = New System.Drawing.Size(5, 22)
-        Me.Label172.TabIndex = 0
-        Me.Label172.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Panel57
-        '
-        Me.Panel57.Controls.Add(Me.dpkDenNgay_PC)
-        Me.Panel57.Controls.Add(Me.Label68)
-        Me.Panel57.Controls.Add(Me.dpkNgayHL_PC)
-        Me.Panel57.Controls.Add(Me.Label70)
-        Me.Panel57.Controls.Add(Me.Label173)
-        Me.Panel57.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel57.Location = New System.Drawing.Point(0, 115)
-        Me.Panel57.Name = "Panel57"
-        Me.Panel57.Size = New System.Drawing.Size(765, 22)
-        Me.Panel57.TabIndex = 10
-        '
-        'Label173
-        '
-        Me.Label173.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label173.Location = New System.Drawing.Point(0, 0)
-        Me.Label173.Name = "Label173"
-        Me.Label173.Size = New System.Drawing.Size(5, 22)
-        Me.Label173.TabIndex = 0
-        Me.Label173.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label107
-        '
-        Me.Label107.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label107.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label107.Location = New System.Drawing.Point(5, 0)
-        Me.Label107.Name = "Label107"
-        Me.Label107.Size = New System.Drawing.Size(145, 22)
-        Me.Label107.TabIndex = 1
-        Me.Label107.Text = "Đơn vị ra quyết định"
-        Me.Label107.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtDVraQD_PC
-        '
-        Me.txtDVraQD_PC.BackColor = System.Drawing.Color.White
-        Me.txtDVraQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtDVraQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDVraQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.txtDVraQD_PC.Location = New System.Drawing.Point(150, 0)
-        Me.txtDVraQD_PC.Name = "txtDVraQD_PC"
-        Me.txtDVraQD_PC.Size = New System.Drawing.Size(606, 26)
-        Me.txtDVraQD_PC.TabIndex = 2
-        '
-        'Label69
-        '
-        Me.Label69.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label69.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label69.Location = New System.Drawing.Point(5, 0)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(76, 22)
-        Me.Label69.TabIndex = 1
-        Me.Label69.Text = "Người ký"
-        Me.Label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtNguoiKyQD_PC
-        '
-        Me.txtNguoiKyQD_PC.BackColor = System.Drawing.Color.White
-        Me.txtNguoiKyQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNguoiKyQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNguoiKyQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.txtNguoiKyQD_PC.Location = New System.Drawing.Point(81, 0)
-        Me.txtNguoiKyQD_PC.Name = "txtNguoiKyQD_PC"
-        Me.txtNguoiKyQD_PC.Size = New System.Drawing.Size(290, 26)
-        Me.txtNguoiKyQD_PC.TabIndex = 2
-        '
-        'Label67
-        '
-        Me.Label67.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label67.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label67.Location = New System.Drawing.Point(371, 0)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(85, 22)
-        Me.Label67.TabIndex = 3
-        Me.Label67.Text = "Chức danh "
-        Me.Label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboCVNguoiKyQD_PC
-        '
-        Me.cboCVNguoiKyQD_PC.BackColor = System.Drawing.Color.White
-        Me.cboCVNguoiKyQD_PC.DisplayMember = "Display"
-        Me.cboCVNguoiKyQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboCVNguoiKyQD_PC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboCVNguoiKyQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboCVNguoiKyQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.cboCVNguoiKyQD_PC.FormattingEnabled = True
-        Me.cboCVNguoiKyQD_PC.Location = New System.Drawing.Point(456, 0)
-        Me.cboCVNguoiKyQD_PC.Name = "cboCVNguoiKyQD_PC"
-        Me.cboCVNguoiKyQD_PC.Size = New System.Drawing.Size(300, 26)
-        Me.cboCVNguoiKyQD_PC.TabIndex = 4
-        Me.cboCVNguoiKyQD_PC.ValueMember = "Value"
-        '
-        'txtCVNguoiKyQD_PC
-        '
-        Me.txtCVNguoiKyQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtCVNguoiKyQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCVNguoiKyQD_PC.Location = New System.Drawing.Point(756, 0)
-        Me.txtCVNguoiKyQD_PC.Name = "txtCVNguoiKyQD_PC"
-        Me.txtCVNguoiKyQD_PC.Size = New System.Drawing.Size(300, 26)
-        Me.txtCVNguoiKyQD_PC.TabIndex = 5
-        Me.txtCVNguoiKyQD_PC.Visible = False
-        '
-        'Label96
-        '
-        Me.Label96.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label96.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label96.Location = New System.Drawing.Point(5, 0)
-        Me.Label96.Name = "Label96"
-        Me.Label96.Size = New System.Drawing.Size(100, 22)
-        Me.Label96.TabIndex = 1
-        Me.Label96.Text = "Loại phụ cấp"
-        Me.Label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'cboLoaiQD_PC
-        '
-        Me.cboLoaiQD_PC.BackColor = System.Drawing.Color.White
-        Me.cboLoaiQD_PC.DisplayMember = "Display"
-        Me.cboLoaiQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboLoaiQD_PC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLoaiQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboLoaiQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.cboLoaiQD_PC.FormattingEnabled = True
-        Me.cboLoaiQD_PC.Location = New System.Drawing.Point(105, 0)
-        Me.cboLoaiQD_PC.Name = "cboLoaiQD_PC"
-        Me.cboLoaiQD_PC.Size = New System.Drawing.Size(534, 26)
-        Me.cboLoaiQD_PC.TabIndex = 2
-        Me.cboLoaiQD_PC.ValueMember = "Value"
-        '
-        'Label71
-        '
-        Me.Label71.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label71.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label71.Location = New System.Drawing.Point(639, 0)
-        Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(50, 22)
-        Me.Label71.TabIndex = 3
-        Me.Label71.Text = "Mức "
-        Me.Label71.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cboMucQD_PC
-        '
-        Me.cboMucQD_PC.BackColor = System.Drawing.Color.White
-        Me.cboMucQD_PC.DisplayMember = "Display"
-        Me.cboMucQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.cboMucQD_PC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboMucQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboMucQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.cboMucQD_PC.FormattingEnabled = True
-        Me.cboMucQD_PC.Location = New System.Drawing.Point(689, 0)
-        Me.cboMucQD_PC.Name = "cboMucQD_PC"
-        Me.cboMucQD_PC.Size = New System.Drawing.Size(67, 26)
-        Me.cboMucQD_PC.TabIndex = 4
-        Me.cboMucQD_PC.ValueMember = "Value"
-        '
-        'Label106
-        '
-        Me.Label106.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label106.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label106.Location = New System.Drawing.Point(5, 0)
-        Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(100, 22)
-        Me.Label106.TabIndex = 1
-        Me.Label106.Text = "Nội dung"
-        Me.Label106.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtNoiDungQD_PC
-        '
-        Me.txtNoiDungQD_PC.BackColor = System.Drawing.SystemColors.Window
-        Me.txtNoiDungQD_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNoiDungQD_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNoiDungQD_PC.ForeColor = System.Drawing.Color.Navy
-        Me.txtNoiDungQD_PC.Location = New System.Drawing.Point(105, 0)
-        Me.txtNoiDungQD_PC.Name = "txtNoiDungQD_PC"
-        Me.txtNoiDungQD_PC.Size = New System.Drawing.Size(534, 26)
-        Me.txtNoiDungQD_PC.TabIndex = 2
-        '
-        'Label169
-        '
-        Me.Label169.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label169.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label169.Location = New System.Drawing.Point(0, 22)
-        Me.Label169.Name = "Label169"
-        Me.Label169.Size = New System.Drawing.Size(765, 1)
-        Me.Label169.TabIndex = 8
-        Me.Label169.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label70
-        '
-        Me.Label70.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label70.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label70.Location = New System.Drawing.Point(5, 0)
-        Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(145, 22)
-        Me.Label70.TabIndex = 1
-        Me.Label70.Text = "Hưởng từ ngày"
-        Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dpkNgayHL_PC
-        '
-        Me.dpkNgayHL_PC.CalendarForeColor = System.Drawing.Color.Navy
-        Me.dpkNgayHL_PC.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkNgayHL_PC.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkNgayHL_PC.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
-        Me.dpkNgayHL_PC.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.dpkNgayHL_PC.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayHL_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayHL_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayHL_PC.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayHL_PC.Location = New System.Drawing.Point(150, 0)
-        Me.dpkNgayHL_PC.Name = "dpkNgayHL_PC"
-        Me.dpkNgayHL_PC.Size = New System.Drawing.Size(105, 26)
-        Me.dpkNgayHL_PC.TabIndex = 2
-        '
-        'Label68
-        '
-        Me.Label68.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label68.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label68.Location = New System.Drawing.Point(255, 0)
-        Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(116, 22)
-        Me.Label68.TabIndex = 3
-        Me.Label68.Text = "Đến ngày "
-        Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkDenNgay_PC
-        '
-        Me.dpkDenNgay_PC.CalendarFont = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkDenNgay_PC.CalendarForeColor = System.Drawing.Color.Navy
-        Me.dpkDenNgay_PC.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.dpkDenNgay_PC.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.dpkDenNgay_PC.CalendarTitleForeColor = System.Drawing.Color.LavenderBlush
-        Me.dpkDenNgay_PC.CalendarTrailingForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.dpkDenNgay_PC.Checked = False
-        Me.dpkDenNgay_PC.CustomFormat = "dd/MM/yyyy"
-        Me.dpkDenNgay_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkDenNgay_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkDenNgay_PC.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkDenNgay_PC.Location = New System.Drawing.Point(371, 0)
-        Me.dpkDenNgay_PC.Name = "dpkDenNgay_PC"
-        Me.dpkDenNgay_PC.ShowCheckBox = True
-        Me.dpkDenNgay_PC.Size = New System.Drawing.Size(130, 26)
-        Me.dpkDenNgay_PC.TabIndex = 4
-        '
-        'Label174
-        '
-        Me.Label174.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label174.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label174.Location = New System.Drawing.Point(0, 137)
-        Me.Label174.Name = "Label174"
-        Me.Label174.Size = New System.Drawing.Size(765, 1)
-        Me.Label174.TabIndex = 12
-        Me.Label174.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel55
-        '
-        Me.Panel55.Controls.Add(Me.txtGhichu_PC)
-        Me.Panel55.Controls.Add(Me.Label66)
-        Me.Panel55.Controls.Add(Me.Label176)
-        Me.Panel55.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel55.Location = New System.Drawing.Point(0, 138)
-        Me.Panel55.Name = "Panel55"
-        Me.Panel55.Size = New System.Drawing.Size(765, 22)
-        Me.Panel55.TabIndex = 13
-        '
-        'Label176
-        '
-        Me.Label176.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label176.Location = New System.Drawing.Point(0, 0)
-        Me.Label176.Name = "Label176"
-        Me.Label176.Size = New System.Drawing.Size(5, 22)
-        Me.Label176.TabIndex = 0
-        Me.Label176.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label66
-        '
-        Me.Label66.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label66.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label66.Location = New System.Drawing.Point(5, 0)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(100, 22)
-        Me.Label66.TabIndex = 1
-        Me.Label66.Text = "Ghi chú"
-        Me.Label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtGhichu_PC
-        '
-        Me.txtGhichu_PC.BackColor = System.Drawing.Color.White
-        Me.txtGhichu_PC.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtGhichu_PC.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGhichu_PC.ForeColor = System.Drawing.Color.Navy
-        Me.txtGhichu_PC.Location = New System.Drawing.Point(105, 0)
-        Me.txtGhichu_PC.Name = "txtGhichu_PC"
-        Me.txtGhichu_PC.Size = New System.Drawing.Size(652, 26)
-        Me.txtGhichu_PC.TabIndex = 2
-        '
-        'Label175
-        '
-        Me.Label175.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label175.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label175.Location = New System.Drawing.Point(0, 362)
-        Me.Label175.Name = "Label175"
-        Me.Label175.Size = New System.Drawing.Size(765, 5)
-        Me.Label175.TabIndex = 176
-        Me.Label175.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label177
-        '
-        Me.Label177.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label177.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label177.Location = New System.Drawing.Point(0, 0)
-        Me.Label177.Name = "Label177"
-        Me.Label177.Size = New System.Drawing.Size(765, 5)
-        Me.Label177.TabIndex = 187
-        Me.Label177.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel56
-        '
-        Me.Panel56.Controls.Add(Me.Panel62)
-        Me.Panel56.Controls.Add(Me.Label184)
-        Me.Panel56.Controls.Add(Me.Panel61)
-        Me.Panel56.Controls.Add(Me.Label182)
-        Me.Panel56.Controls.Add(Me.Panel60)
-        Me.Panel56.Controls.Add(Me.Label180)
-        Me.Panel56.Controls.Add(Me.Panel59)
-        Me.Panel56.Controls.Add(Me.Label178)
-        Me.Panel56.Controls.Add(Me.Panel58)
-        Me.Panel56.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel56.Location = New System.Drawing.Point(0, 390)
-        Me.Panel56.Name = "Panel56"
-        Me.Panel56.Size = New System.Drawing.Size(765, 142)
-        Me.Panel56.TabIndex = 188
-        '
-        'Panel58
-        '
-        Me.Panel58.Controls.Add(Me.dpkNgayKy_K)
-        Me.Panel58.Controls.Add(Me.Label97)
-        Me.Panel58.Controls.Add(Me.txtSoQD_K)
-        Me.Panel58.Controls.Add(Me.Label99)
-        Me.Panel58.Controls.Add(Me.Label179)
-        Me.Panel58.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel58.Location = New System.Drawing.Point(0, 0)
-        Me.Panel58.Name = "Panel58"
-        Me.Panel58.Size = New System.Drawing.Size(765, 22)
-        Me.Panel58.TabIndex = 3
-        '
-        'Label179
-        '
-        Me.Label179.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label179.Location = New System.Drawing.Point(0, 0)
-        Me.Label179.Name = "Label179"
-        Me.Label179.Size = New System.Drawing.Size(5, 22)
-        Me.Label179.TabIndex = 0
-        Me.Label179.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label178
-        '
-        Me.Label178.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label178.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label178.Location = New System.Drawing.Point(0, 22)
-        Me.Label178.Name = "Label178"
-        Me.Label178.Size = New System.Drawing.Size(765, 1)
-        Me.Label178.TabIndex = 4
-        Me.Label178.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label180
-        '
-        Me.Label180.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label180.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label180.Location = New System.Drawing.Point(0, 45)
-        Me.Label180.Name = "Label180"
-        Me.Label180.Size = New System.Drawing.Size(765, 1)
-        Me.Label180.TabIndex = 6
-        Me.Label180.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel59
-        '
-        Me.Panel59.Controls.Add(Me.txtDVraQD_K)
-        Me.Panel59.Controls.Add(Me.Label104)
-        Me.Panel59.Controls.Add(Me.Label181)
-        Me.Panel59.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel59.Location = New System.Drawing.Point(0, 23)
-        Me.Panel59.Name = "Panel59"
-        Me.Panel59.Size = New System.Drawing.Size(765, 22)
-        Me.Panel59.TabIndex = 5
-        '
-        'Label181
-        '
-        Me.Label181.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label181.Location = New System.Drawing.Point(0, 0)
-        Me.Label181.Name = "Label181"
-        Me.Label181.Size = New System.Drawing.Size(5, 22)
-        Me.Label181.TabIndex = 0
-        Me.Label181.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label182
-        '
-        Me.Label182.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label182.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label182.Location = New System.Drawing.Point(0, 68)
-        Me.Label182.Name = "Label182"
-        Me.Label182.Size = New System.Drawing.Size(765, 1)
-        Me.Label182.TabIndex = 8
-        Me.Label182.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel60
-        '
-        Me.Panel60.Controls.Add(Me.txtCVNguoiKyQD_K)
-        Me.Panel60.Controls.Add(Me.Label100)
-        Me.Panel60.Controls.Add(Me.txtNguoiKyQD_K)
-        Me.Panel60.Controls.Add(Me.Label102)
-        Me.Panel60.Controls.Add(Me.Label183)
-        Me.Panel60.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel60.Location = New System.Drawing.Point(0, 46)
-        Me.Panel60.Name = "Panel60"
-        Me.Panel60.Size = New System.Drawing.Size(765, 22)
-        Me.Panel60.TabIndex = 7
-        '
-        'Label183
-        '
-        Me.Label183.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label183.Location = New System.Drawing.Point(0, 0)
-        Me.Label183.Name = "Label183"
-        Me.Label183.Size = New System.Drawing.Size(5, 22)
-        Me.Label183.TabIndex = 0
-        Me.Label183.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label184
-        '
-        Me.Label184.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label184.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label184.Location = New System.Drawing.Point(0, 113)
-        Me.Label184.Name = "Label184"
-        Me.Label184.Size = New System.Drawing.Size(765, 1)
-        Me.Label184.TabIndex = 10
-        Me.Label184.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel61
-        '
-        Me.Panel61.Controls.Add(Me.txtNoiDungQD_K)
-        Me.Panel61.Controls.Add(Me.Label72)
-        Me.Panel61.Controls.Add(Me.Label185)
-        Me.Panel61.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel61.Location = New System.Drawing.Point(0, 69)
-        Me.Panel61.Name = "Panel61"
-        Me.Panel61.Size = New System.Drawing.Size(765, 44)
-        Me.Panel61.TabIndex = 9
-        '
-        'Label185
-        '
-        Me.Label185.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label185.Location = New System.Drawing.Point(0, 0)
-        Me.Label185.Name = "Label185"
-        Me.Label185.Size = New System.Drawing.Size(5, 44)
-        Me.Label185.TabIndex = 0
-        Me.Label185.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Panel62
-        '
-        Me.Panel62.Controls.Add(Me.txtGhiChu_K)
-        Me.Panel62.Controls.Add(Me.Label103)
-        Me.Panel62.Controls.Add(Me.Label186)
-        Me.Panel62.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel62.Location = New System.Drawing.Point(0, 114)
-        Me.Panel62.Name = "Panel62"
-        Me.Panel62.Size = New System.Drawing.Size(765, 22)
-        Me.Panel62.TabIndex = 11
-        '
-        'Label186
-        '
-        Me.Label186.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label186.Location = New System.Drawing.Point(0, 0)
-        Me.Label186.Name = "Label186"
-        Me.Label186.Size = New System.Drawing.Size(5, 22)
-        Me.Label186.TabIndex = 0
-        Me.Label186.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label99
-        '
-        Me.Label99.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label99.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label99.Location = New System.Drawing.Point(5, 0)
-        Me.Label99.Name = "Label99"
-        Me.Label99.Size = New System.Drawing.Size(76, 22)
-        Me.Label99.TabIndex = 1
-        Me.Label99.Text = "Số hiệu"
-        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtSoQD_K
-        '
-        Me.txtSoQD_K.BackColor = System.Drawing.SystemColors.Window
-        Me.txtSoQD_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtSoQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSoQD_K.ForeColor = System.Drawing.Color.Navy
-        Me.txtSoQD_K.Location = New System.Drawing.Point(81, 0)
-        Me.txtSoQD_K.Name = "txtSoQD_K"
-        Me.txtSoQD_K.Size = New System.Drawing.Size(229, 26)
-        Me.txtSoQD_K.TabIndex = 2
-        '
-        'Label97
-        '
-        Me.Label97.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label97.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label97.Location = New System.Drawing.Point(310, 0)
-        Me.Label97.Name = "Label97"
-        Me.Label97.Size = New System.Drawing.Size(93, 22)
-        Me.Label97.TabIndex = 3
-        Me.Label97.Text = "Ngày "
-        Me.Label97.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'dpkNgayKy_K
-        '
-        Me.dpkNgayKy_K.CustomFormat = "dd/MM/yyyy"
-        Me.dpkNgayKy_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.dpkNgayKy_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpkNgayKy_K.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dpkNgayKy_K.Location = New System.Drawing.Point(403, 0)
-        Me.dpkNgayKy_K.Name = "dpkNgayKy_K"
-        Me.dpkNgayKy_K.Size = New System.Drawing.Size(105, 26)
-        Me.dpkNgayKy_K.TabIndex = 4
-        '
-        'Label104
-        '
-        Me.Label104.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label104.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label104.Location = New System.Drawing.Point(5, 0)
-        Me.Label104.Name = "Label104"
-        Me.Label104.Size = New System.Drawing.Size(145, 22)
-        Me.Label104.TabIndex = 1
-        Me.Label104.Text = "Đơn vi ra quyết định"
-        Me.Label104.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtDVraQD_K
-        '
-        Me.txtDVraQD_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtDVraQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDVraQD_K.ForeColor = System.Drawing.Color.Navy
-        Me.txtDVraQD_K.Location = New System.Drawing.Point(150, 0)
-        Me.txtDVraQD_K.Name = "txtDVraQD_K"
-        Me.txtDVraQD_K.Size = New System.Drawing.Size(610, 26)
-        Me.txtDVraQD_K.TabIndex = 2
-        '
-        'Label102
-        '
-        Me.Label102.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label102.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label102.Location = New System.Drawing.Point(5, 0)
-        Me.Label102.Name = "Label102"
-        Me.Label102.Size = New System.Drawing.Size(76, 22)
-        Me.Label102.TabIndex = 1
-        Me.Label102.Text = "Người ký"
-        Me.Label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtNguoiKyQD_K
-        '
-        Me.txtNguoiKyQD_K.BackColor = System.Drawing.SystemColors.Window
-        Me.txtNguoiKyQD_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNguoiKyQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNguoiKyQD_K.ForeColor = System.Drawing.Color.Navy
-        Me.txtNguoiKyQD_K.Location = New System.Drawing.Point(81, 0)
-        Me.txtNguoiKyQD_K.Name = "txtNguoiKyQD_K"
-        Me.txtNguoiKyQD_K.Size = New System.Drawing.Size(229, 26)
-        Me.txtNguoiKyQD_K.TabIndex = 2
-        '
-        'Label100
-        '
-        Me.Label100.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label100.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label100.Location = New System.Drawing.Point(310, 0)
-        Me.Label100.Name = "Label100"
-        Me.Label100.Size = New System.Drawing.Size(93, 22)
-        Me.Label100.TabIndex = 3
-        Me.Label100.Text = "Chức danh "
-        Me.Label100.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'txtCVNguoiKyQD_K
-        '
-        Me.txtCVNguoiKyQD_K.BackColor = System.Drawing.SystemColors.Window
-        Me.txtCVNguoiKyQD_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtCVNguoiKyQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCVNguoiKyQD_K.ForeColor = System.Drawing.Color.Navy
-        Me.txtCVNguoiKyQD_K.Location = New System.Drawing.Point(403, 0)
-        Me.txtCVNguoiKyQD_K.Name = "txtCVNguoiKyQD_K"
-        Me.txtCVNguoiKyQD_K.Size = New System.Drawing.Size(357, 26)
-        Me.txtCVNguoiKyQD_K.TabIndex = 4
-        '
-        'Label72
-        '
-        Me.Label72.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label72.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label72.Location = New System.Drawing.Point(5, 0)
-        Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(76, 44)
-        Me.Label72.TabIndex = 1
-        Me.Label72.Text = "Nội dung"
-        Me.Label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtNoiDungQD_K
-        '
-        Me.txtNoiDungQD_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtNoiDungQD_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNoiDungQD_K.ForeColor = System.Drawing.Color.Navy
-        Me.txtNoiDungQD_K.Location = New System.Drawing.Point(81, 0)
-        Me.txtNoiDungQD_K.Multiline = True
-        Me.txtNoiDungQD_K.Name = "txtNoiDungQD_K"
-        Me.txtNoiDungQD_K.Size = New System.Drawing.Size(680, 44)
-        Me.txtNoiDungQD_K.TabIndex = 2
-        '
-        'Label103
-        '
-        Me.Label103.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label103.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label103.Location = New System.Drawing.Point(5, 0)
-        Me.Label103.Name = "Label103"
-        Me.Label103.Size = New System.Drawing.Size(76, 22)
-        Me.Label103.TabIndex = 1
-        Me.Label103.Text = "Ghi chú"
-        Me.Label103.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtGhiChu_K
-        '
-        Me.txtGhiChu_K.Dock = System.Windows.Forms.DockStyle.Left
-        Me.txtGhiChu_K.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGhiChu_K.ForeColor = System.Drawing.Color.Navy
-        Me.txtGhiChu_K.Location = New System.Drawing.Point(81, 0)
-        Me.txtGhiChu_K.Name = "txtGhiChu_K"
-        Me.txtGhiChu_K.Size = New System.Drawing.Size(680, 26)
-        Me.txtGhiChu_K.TabIndex = 2
-        '
-        'Label187
-        '
-        Me.Label187.BackColor = System.Drawing.Color.Gainsboro
-        Me.Label187.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label187.Location = New System.Drawing.Point(0, 385)
-        Me.Label187.Name = "Label187"
-        Me.Label187.Size = New System.Drawing.Size(765, 5)
-        Me.Label187.TabIndex = 189
-        Me.Label187.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'frmQuyetDinhNS
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -6274,22 +6274,78 @@ Partial Class frmQuyetDinhNS
         Me.Panel4.PerformLayout()
         Me.tabThoiViec.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
+        CType(Me.gridThoiViec, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlQdThoiViecInput.ResumeLayout(False)
+        Me.Panel42.ResumeLayout(False)
+        Me.Panel42.PerformLayout()
+        Me.Panel41.ResumeLayout(False)
+        Me.Panel41.PerformLayout()
+        Me.Panel40.ResumeLayout(False)
+        Me.Panel40.PerformLayout()
+        Me.Panel39.ResumeLayout(False)
+        Me.Panel38.ResumeLayout(False)
+        Me.Panel37.ResumeLayout(False)
+        Me.Panel37.PerformLayout()
+        Me.Panel36.ResumeLayout(False)
+        Me.Panel36.PerformLayout()
+        Me.Panel35.ResumeLayout(False)
+        Me.Panel35.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.gridThoiViec, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabQDLuong.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         CType(Me.gridQDLuong, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel43.ResumeLayout(False)
+        Me.Panel51.ResumeLayout(False)
+        Me.Panel51.PerformLayout()
+        Me.Panel50.ResumeLayout(False)
+        Me.pnlQDL_IsNotNHCS.ResumeLayout(False)
+        Me.pnlQDL_IsNotNHCS.PerformLayout()
+        Me.pnlQDL_IsNHCS.ResumeLayout(False)
+        Me.Panel49.ResumeLayout(False)
+        Me.Panel49.PerformLayout()
+        Me.Panel47.ResumeLayout(False)
+        Me.Panel47.PerformLayout()
+        Me.Panel46.ResumeLayout(False)
+        Me.Panel46.PerformLayout()
+        Me.Panel45.ResumeLayout(False)
+        Me.Panel45.PerformLayout()
+        Me.Panel44.ResumeLayout(False)
+        Me.Panel44.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         Me.tabQDPhuCap.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         CType(Me.gridQDPhuCap, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel48.ResumeLayout(False)
+        Me.Panel55.ResumeLayout(False)
+        Me.Panel55.PerformLayout()
+        Me.Panel57.ResumeLayout(False)
+        Me.pnlQDPC_IsNotNHCS.ResumeLayout(False)
+        Me.pnlQDPC_IsNotNHCS.PerformLayout()
+        Me.pnlQDPC_IsNHCS.ResumeLayout(False)
+        Me.Panel54.ResumeLayout(False)
+        Me.Panel54.PerformLayout()
+        Me.Panel53.ResumeLayout(False)
+        Me.Panel53.PerformLayout()
+        Me.Panel52.ResumeLayout(False)
+        Me.Panel52.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
         Me.tabQDKhac.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
         CType(Me.gridQDKhac, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel56.ResumeLayout(False)
+        Me.Panel62.ResumeLayout(False)
+        Me.Panel62.PerformLayout()
+        Me.Panel61.ResumeLayout(False)
+        Me.Panel61.PerformLayout()
+        Me.Panel60.ResumeLayout(False)
+        Me.Panel60.PerformLayout()
+        Me.Panel59.ResumeLayout(False)
+        Me.Panel59.PerformLayout()
+        Me.Panel58.ResumeLayout(False)
+        Me.Panel58.PerformLayout()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -6297,62 +6353,6 @@ Partial Class frmQuyetDinhNS
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlQdThoiViecInput.ResumeLayout(False)
-        Me.Panel35.ResumeLayout(False)
-        Me.Panel35.PerformLayout()
-        Me.Panel36.ResumeLayout(False)
-        Me.Panel36.PerformLayout()
-        Me.Panel37.ResumeLayout(False)
-        Me.Panel37.PerformLayout()
-        Me.Panel38.ResumeLayout(False)
-        Me.Panel39.ResumeLayout(False)
-        Me.Panel40.ResumeLayout(False)
-        Me.Panel40.PerformLayout()
-        Me.Panel41.ResumeLayout(False)
-        Me.Panel41.PerformLayout()
-        Me.Panel42.ResumeLayout(False)
-        Me.Panel42.PerformLayout()
-        Me.Panel43.ResumeLayout(False)
-        Me.Panel44.ResumeLayout(False)
-        Me.Panel44.PerformLayout()
-        Me.Panel45.ResumeLayout(False)
-        Me.Panel45.PerformLayout()
-        Me.Panel46.ResumeLayout(False)
-        Me.Panel46.PerformLayout()
-        Me.Panel47.ResumeLayout(False)
-        Me.Panel47.PerformLayout()
-        Me.pnlQDL_IsNHCS.ResumeLayout(False)
-        Me.Panel50.ResumeLayout(False)
-        Me.Panel51.ResumeLayout(False)
-        Me.Panel51.PerformLayout()
-        Me.Panel49.ResumeLayout(False)
-        Me.Panel49.PerformLayout()
-        Me.pnlQDL_IsNotNHCS.ResumeLayout(False)
-        Me.pnlQDL_IsNotNHCS.PerformLayout()
-        Me.Panel48.ResumeLayout(False)
-        Me.Panel52.ResumeLayout(False)
-        Me.Panel52.PerformLayout()
-        Me.Panel53.ResumeLayout(False)
-        Me.Panel53.PerformLayout()
-        Me.Panel54.ResumeLayout(False)
-        Me.Panel54.PerformLayout()
-        Me.pnlQDPC_IsNHCS.ResumeLayout(False)
-        Me.pnlQDPC_IsNotNHCS.ResumeLayout(False)
-        Me.pnlQDPC_IsNotNHCS.PerformLayout()
-        Me.Panel57.ResumeLayout(False)
-        Me.Panel55.ResumeLayout(False)
-        Me.Panel55.PerformLayout()
-        Me.Panel56.ResumeLayout(False)
-        Me.Panel58.ResumeLayout(False)
-        Me.Panel58.PerformLayout()
-        Me.Panel59.ResumeLayout(False)
-        Me.Panel59.PerformLayout()
-        Me.Panel60.ResumeLayout(False)
-        Me.Panel60.PerformLayout()
-        Me.Panel61.ResumeLayout(False)
-        Me.Panel61.PerformLayout()
-        Me.Panel62.ResumeLayout(False)
-        Me.Panel62.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

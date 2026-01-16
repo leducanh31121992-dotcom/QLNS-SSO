@@ -4428,25 +4428,54 @@ Public Class clsHS_CanBo
     ''' </summary>
     ''' <param name="pPosCode">Mã số của chi nhánh</param>
     ''' <remarks>Bỏ việc lấy thông tin từ AppSetting vì trong StoredProcedure đã lấy fix giá trị</remarks>
-    Public Function GetTrucThuoc(ByVal pPosCode As String) As String
+    Public Function GetTrucThuoc(ByVal pPosCode As String, ByVal pDonViId As Int32) As String
         Dim strReturn As String = ""
-        Select Case pPosCode
-            Case gMaDonViTW, "000199"
-                strReturn = 1 'Globals.GetAppSetting("HSC").Trim()
-            Case "000196"
-                strReturn = 5 'Globals.GetAppSetting("TTCNTT").Trim()
-            Case "000197"
-                strReturn = 7 'Globals.GetAppSetting("TTDT").Trim()
-            Case "000101"
-                strReturn = 9 'Globals.GetAppSetting("SGD").Trim()
-                'Chữ bổ sung Cơ sở đâò tạo
-            Case "002821", "001114", "002734", "003799", "004532", "005399"
-                strReturn = 6 'Cơ sở đào tạo
-            Case Else
-                Dim iId_Goc As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}'", pPosCode), 0)
-                'Dim iCap As Integer = _SqlHelper.getNumber("Select Id_Goc From ChiNhanh Where Ma_So = '" & pPosCode & "'")
-                strReturn = IIf(iId_Goc = 1, 2, 4)
-        End Select
+        'Select Case pPosCode
+        '    Case gMaDonViTW, "000199"
+        '        strReturn = 1 'Globals.GetAppSetting("HSC").Trim()
+        '    Case "000196"
+        '        strReturn = 5 'Globals.GetAppSetting("TTCNTT").Trim()
+        '    Case "000197"
+        '        strReturn = 7 'Globals.GetAppSetting("TTDT").Trim()
+        '    Case "000101"
+        '        strReturn = 9 'Globals.GetAppSetting("SGD").Trim()
+        '        'Chữ bổ sung Cơ sở đâò tạo
+        '    Case "002821", "001114", "002734", "003799", "004532", "005399"
+        '        strReturn = 6 'Cơ sở đào tạo
+        '    Case Else
+        '        Dim sQuerySelect As String = ""
+        '        sQuerySelect = "Select Top 1 Id_Goc From ChiNhanh Where Ma_So = '" & pPosCode & "'"
+        '        If (pDonViId <> 0) Then
+        '            sQuerySelect = String.Format("{0} And Id = {1}", sQuerySelect, pDonViId)
+        '        End If
+        '        sQuerySelect = String.Format("{0} Order By Id Desc", sQuerySelect)
+
+        '        'Dim iId_Goc As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}'", pPosCode), 0)
+        '        Dim iId_Goc As Integer = SoftSqlHelper.GetNumber(sQuerySelect, 0)
+        '        'Dim iCap As Integer = _SqlHelper.getNumber("Select Id_Goc From ChiNhanh Where Ma_So = '" & pPosCode & "'")
+        '        strReturn = IIf(iId_Goc = 1, 2, 4)
+        'End Select
+
+
+
+        Dim sQuerySelect As String = ""
+        sQuerySelect = "Select Top 1 IsNull(Dien_Thoai,'') From ChiNhanh Where Ma_So = '" & pPosCode & "'"
+        If (pDonViId <> 0) Then
+            sQuerySelect = String.Format("{0} And Id = {1}", sQuerySelect, pDonViId)
+        End If
+        sQuerySelect = String.Format("{0} Order By Id_Goc Asc,Id Desc", sQuerySelect)
+
+        'Dim iId_Goc As Integer = SoftSqlHelper.GetNumber(String.Format("Select Id_Goc From ChiNhanh Where Ma_So = '{0}'", pPosCode), 0)
+        strReturn = SoftSqlHelper.GetString(sQuerySelect, "")
+
+        'Update ChiNhanh SET Dien_Thoai='1' Where Id=1
+        'Update ChiNhanh SET Dien_Thoai='5' Where Id=3
+        'Update ChiNhanh SET Dien_Thoai='7' Where Id=4
+        'Update ChiNhanh SET Dien_Thoai='9' Where Id=5
+        'Update ChiNhanh SET Dien_Thoai='2' Where id_goc IN (1,0) And Id > 5
+        'Update ChiNhanh SET Dien_Thoai='6' Where id_goc Not IN (1,0) And (Ten_Goi Like N'%Đào tạo%')
+        'Update ChiNhanh SET Dien_Thoai='4' Where id_goc Not IN (1,0) And (Ten_Goi Not Like N'%Đào tạo%')
+
         Return strReturn
     End Function
 
@@ -4488,7 +4517,7 @@ Public Class clsHS_CanBo
         Dim childNode As TreeNode
         Dim currTructhuoc As String
         'CHARINDEX(string1,string2[,start]): Hàm trả về vị trí đầu tiên tính từ vị trí start tại đó chuỗi string1 xuất hiện trong chuỗi string2.
-        currTructhuoc = GetTrucThuoc(CodeParentNode)
+        currTructhuoc = GetTrucThuoc(CodeParentNode, IdParentNode)
         db_pb = _SqlHelper.SelectDBRows("Select * from PhongBan Where CharIndex('" + currTructhuoc.ToString + "',truc_thuoc) > 0 and Status = 1 Order by Ma_so")
         If Not (db_pb Is Nothing) Then
             If db_pb.Rows.Count > 0 Then
@@ -5683,7 +5712,7 @@ Public Class clsHS_CanBo
                     Using _db As DataTable = _SqlHelper.SelectDBRows(strSQL)
                         If Not (_db Is Nothing) Then
                             If (_db.Rows.Count > 0) Then
-                                _TinhName = _db.Rows(0)("Ten_Thon").ToString().Trim()
+                                _TinhName = _db.Rows(0)("Ten_Goi").ToString().Trim()
                             End If
                         End If
                     End Using

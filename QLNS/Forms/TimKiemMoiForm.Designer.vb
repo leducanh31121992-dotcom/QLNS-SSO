@@ -94,6 +94,7 @@ Partial Class TimKiemMoiForm
         Me.pnl_sex = New System.Windows.Forms.Panel()
         Me.ckb_gioitinh_nu = New System.Windows.Forms.CheckBox()
         Me.ckb_gioitinh_nam = New System.Windows.Forms.CheckBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.edt_hoten = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -110,7 +111,6 @@ Partial Class TimKiemMoiForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.dgv_main = New System.Windows.Forms.DataGridView()
         Me.toltip_main = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.gbx_input.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -966,6 +966,15 @@ Partial Class TimKiemMoiForm
         Me.ckb_gioitinh_nam.Text = "Nam"
         Me.ckb_gioitinh_nam.UseVisualStyleBackColor = True
         '
+        'Label12
+        '
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label12.Location = New System.Drawing.Point(0, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(5, 18)
+        Me.Label12.TabIndex = 5
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'Label16
         '
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Left
@@ -1155,15 +1164,6 @@ Partial Class TimKiemMoiForm
         Me.dgv_main.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_main.Size = New System.Drawing.Size(1000, 469)
         Me.dgv_main.TabIndex = 0
-        '
-        'Label12
-        '
-        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label12.Location = New System.Drawing.Point(0, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(5, 18)
-        Me.Label12.TabIndex = 5
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TimKiemMoiForm
         '

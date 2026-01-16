@@ -346,6 +346,12 @@ Public Class HeThongBLL
 
     Public Shared Function GetQuery_ListCanBos(ByVal _BranchId As Integer, ByVal _NgayDL As String, ByVal _ChucVu_Cds As String, ByVal _PhongBan_Cds As String)
         Dim sRetQuery As String = ""
+        Dim iDonViIdTemp As Integer = 0
+        Dim sQueryTemp As String = ""
+
+        sQueryTemp = "Select Distinct Top 1 X.Id From ChiNhanh X Where X.Id<>" + _BranchId.ToString() + " And X.Ma_So In (Select Distinct O.Ma_So From ChiNhanh O Where O.Id=" + _BranchId.ToString() + ")"
+        iDonViIdTemp = SoftSqlHelper.GetNumber(sQueryTemp, 0)
+
         sRetQuery = "Select T1.IdCanBo Code,(Case T1.GioiTinh When 0 Then N'Ông' Else N'Bà' End) + N' ' + T1.HoTen + N', '+dbo.GetTenDMuc(T.IdChucVu_Moi,1) + N' (Ngày sinh: '+ Convert(Varchar(10),T1.NgaySinh,103) + N', Mã CB: ' + T1.MaCB + N')' Name, "
         sRetQuery = sRetQuery + " dbo.GetTenDMuc(T.IdPhong_Moi,6) PhongBan_Cd,dbo.GetTenDMuc(T.IdPhong_Moi,3) PhongBan_HT,"
         sRetQuery = sRetQuery + " dbo.GetTenDMuc(T.IdChucVu_Moi,4) ChucVu_Cd,dbo.GetTenDMuc(T.IdChucVu_Moi,1) ChucVu_HT"
@@ -356,7 +362,7 @@ Public Class HeThongBLL
         sRetQuery = sRetQuery + " Where T.IdCanBo = T1.IdCanBo And T.IdCanBo = T2.IdCanBo And T.NgayHL = T2.NgayHL"
         sRetQuery = sRetQuery + " And CN.Id = T.IdDonVi_Moi "
         If _BranchId <> 0 Then
-            sRetQuery = sRetQuery + " And T.IdDonvi_Moi = " + _BranchId.ToString()
+            sRetQuery = sRetQuery + " And (T.IdDonvi_Moi = " + _BranchId.ToString() + " Or T.IdDonvi_Moi = " + iDonViIdTemp.ToString() + ")"
         End If
         If _ChucVu_Cds <> "" Then
             sRetQuery = sRetQuery + " And T.IdPhong_Moi In (Select X.Id From PhongBan X Where X.Status=1 And X.Ma_So In (" + _PhongBan_Cds + "))"
