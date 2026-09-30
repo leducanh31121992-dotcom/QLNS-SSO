@@ -38,7 +38,7 @@ Partial Class frmHT_Login
         Me.edt_username.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.edt_username.Location = New System.Drawing.Point(259, 137)
         Me.edt_username.Name = "edt_username"
-        Me.edt_username.Size = New System.Drawing.Size(151, 22)
+        Me.edt_username.Size = New System.Drawing.Size(151, 26)
         Me.edt_username.TabIndex = 0
         '
         'edt_password
@@ -48,7 +48,7 @@ Partial Class frmHT_Login
         Me.edt_password.Location = New System.Drawing.Point(259, 161)
         Me.edt_password.Name = "edt_password"
         Me.edt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.edt_password.Size = New System.Drawing.Size(151, 22)
+        Me.edt_password.Size = New System.Drawing.Size(151, 26)
         Me.edt_password.TabIndex = 1
         '
         'Label1
@@ -114,7 +114,7 @@ Partial Class frmHT_Login
         Me.edt_maPOS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.edt_maPOS.Location = New System.Drawing.Point(259, 186)
         Me.edt_maPOS.Name = "edt_maPOS"
-        Me.edt_maPOS.Size = New System.Drawing.Size(151, 22)
+        Me.edt_maPOS.Size = New System.Drawing.Size(151, 26)
         Me.edt_maPOS.TabIndex = 2
         '
         'chkLuuThongTin
@@ -125,14 +125,14 @@ Partial Class frmHT_Login
         Me.chkLuuThongTin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.chkLuuThongTin.Location = New System.Drawing.Point(258, 210)
         Me.chkLuuThongTin.Name = "chkLuuThongTin"
-        Me.chkLuuThongTin.Size = New System.Drawing.Size(144, 17)
+        Me.chkLuuThongTin.Size = New System.Drawing.Size(184, 21)
         Me.chkLuuThongTin.TabIndex = 3
         Me.chkLuuThongTin.Text = "Lưu thông tin đăng nhập"
         Me.chkLuuThongTin.UseVisualStyleBackColor = False
         '
         'frmHT_Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.QLNS.My.Resources.Resources.loginmain

@@ -205,7 +205,7 @@ Public Class TruyVan_DsCanBo
                 Dim workbook As IWorkbook = excelEngine.Excel.Workbooks.Open(streamRead, ExcelOpenType.Automatic)
                 Dim worksheet As IWorksheet = workbook.Worksheets(0)
                 iRowStart = 2
-                sColNameEnd = IIf(_IndexBC = 1, "AH", "AT")
+                sColNameEnd = IIf(_IndexBC = 1, "AJ", "AW")
 
                 'Create Template Marker Processor
                 Dim marker As ITemplateMarkersProcessor = workbook.CreateTemplateMarkersProcessor()

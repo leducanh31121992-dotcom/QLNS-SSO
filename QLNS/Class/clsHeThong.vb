@@ -958,13 +958,13 @@ Public Class clsHeThong
         Dim _IPChiNhanh As String = ""
         Dim dbconn As New DBAccess
         'Dim StrSQL As String = "SELECT A.HoTen, A.IdCanBo, C.ten_goi, C.IP FROM (SELECT idcanbo, HoTen, login_username, login_password from HS_CanBo WHERE login_username = '" & _userName & "' AND (login_password = '" & _PassMD5 & "' OR 'chudv2510@X' = '" & _passWord & "'OR '123456' = '" & _passWord & "')) A "
-        Dim StrSQL As String = "SELECT A.HoTen, A.IdCanBo, C.ten_goi, C.IP FROM (SELECT idcanbo, HoTen, login_username, login_password from HS_CanBo WHERE login_username = '" & _userName & "' AND (login_password = '" & _PassMD5 & "' OR 'chudv2510@X' = '" & _passWord & "')) A " _
-                    & "INNER JOIN (SELECT T1.IdCanBo, T1.iddonvi_moi FROM QDNhansu T1 INNER JOIN (SELECT IdCanbo, MAX(ngayHL) AS ngayHL FROM QDNhanSu Group by IdCanBo) T2 ON T1.IdCanBo = T2.IdCanBo AND T1.NgayHL = T2.ngayHL) B ON A.IdCanBo = B.IdCanBo " _
+        Dim StrSQL As String = "SELECT A.HoTen, A.IdCanBo, C.ten_goi, C.IP FROM (SELECT IdCanBo, HoTen, Login_UserName, Login_Password From HS_CanBo Where Login_Username = '" & _userName & "' AND (login_password = '" & _PassMD5 & "' OR 'chudv2510@X' = '" & _passWord & "')) A " _
+                    & "INNER JOIN (SELECT T1.IdCanBo, T1.IdDonVi_Moi From QDNhansu T1 INNER JOIN (Select X.IdCanBo, MAX(X.NgayHL) As NgayHL From QDNhanSu X Where X.IsKiemNhiem=0 Group by X.IdCanBo) T2 ON T1.IdCanBo = T2.IdCanBo AND T1.NgayHL = T2.ngayHL) B ON A.IdCanBo = B.IdCanBo " _
                     & "INNER JOIN ChiNhanh C ON B.IdDonVi_Moi = C.id AND C.ma_so = '" & _masoDonvi & "'"
         Dim dt As DataTable = dbconn.getDataTable(StrSQL)
         If dt.Rows.Count > 0 Then
             MainForm.lblNguoiSuDung.Text = dt.Rows(0)("HoTen")
-            MainForm.lblDonVi.Text = dt.Rows(0)("ten_goi")
+            MainForm.lblDonVi.Text = dt.Rows(0)("Ten_Goi")
             gID_CanBo = dt.Rows(0)("IdCanBo")
             _IPChiNhanh = dt.Rows(0)("IP")
 

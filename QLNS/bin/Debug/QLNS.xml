@@ -5046,24 +5046,6 @@ QLNS
  <returns>True: Hợp lệ. False: Không hợp lệ</returns>
  <remarks></remarks>
 </member>
-<member name="F:QLNS.frmHT_Login._UserName">
- <summary>
- Get-Set Giá trị Tên đăng nhập của thành viên
- </summary>
- <remarks></remarks>
-</member>
-<member name="F:QLNS.frmHT_Login._Permits">
- <summary>
- Get-Set Giá trị tập quyền của thành viên đăng nhập
- </summary>
- <remarks></remarks>
-</member>
-<member name="F:QLNS.frmHT_Login._Admin">
- <summary>
- Get - Set giá trị xác định admin. Nếu là True -> Là admin. False -> Là Member
- </summary>
- <remarks></remarks>
-</member>
 <member name="M:QLNS.frmHT_NguoiDung.IsValid">
  <summary>
  Hàm thực hiện - Kiểm tra dữ liệu hợp lệ trước khi cập nhật

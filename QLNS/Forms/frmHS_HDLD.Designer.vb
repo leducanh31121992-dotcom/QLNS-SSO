@@ -19,8 +19,8 @@ Partial Class frmHS_HDLD
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lbl_div_1 = New System.Windows.Forms.Label()
         Me.lbl_div_0 = New System.Windows.Forms.Label()
         Me.pnl_0 = New System.Windows.Forms.Panel()
@@ -329,7 +329,7 @@ Partial Class frmHS_HDLD
         Me.pnl_ttc_2.Controls.Add(Me.lbl_ngaysinh)
         Me.pnl_ttc_2.Controls.Add(Me.Label44)
         Me.pnl_ttc_2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_ttc_2.Location = New System.Drawing.Point(3, 42)
+        Me.pnl_ttc_2.Location = New System.Drawing.Point(3, 46)
         Me.pnl_ttc_2.Name = "pnl_ttc_2"
         Me.pnl_ttc_2.Size = New System.Drawing.Size(572, 22)
         Me.pnl_ttc_2.TabIndex = 2
@@ -406,7 +406,7 @@ Partial Class frmHS_HDLD
         '
         Me.Label38.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label38.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(3, 40)
+        Me.Label38.Location = New System.Drawing.Point(3, 44)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(572, 2)
         Me.Label38.TabIndex = 1
@@ -421,7 +421,7 @@ Partial Class frmHS_HDLD
         Me.pnl_ttc_1.Controls.Add(Me.lbl_macb)
         Me.pnl_ttc_1.Controls.Add(Me.Label37)
         Me.pnl_ttc_1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_ttc_1.Location = New System.Drawing.Point(3, 18)
+        Me.pnl_ttc_1.Location = New System.Drawing.Point(3, 22)
         Me.pnl_ttc_1.Name = "pnl_ttc_1"
         Me.pnl_ttc_1.Size = New System.Drawing.Size(572, 22)
         Me.pnl_ttc_1.TabIndex = 0
@@ -522,7 +522,7 @@ Partial Class frmHS_HDLD
         Me.txtDVKyHD.ForeColor = System.Drawing.Color.Black
         Me.txtDVKyHD.Location = New System.Drawing.Point(81, 0)
         Me.txtDVKyHD.Name = "txtDVKyHD"
-        Me.txtDVKyHD.Size = New System.Drawing.Size(260, 22)
+        Me.txtDVKyHD.Size = New System.Drawing.Size(260, 26)
         Me.txtDVKyHD.TabIndex = 1
         '
         'Label26
@@ -543,28 +543,29 @@ Partial Class frmHS_HDLD
         Me.dgv_hdld.BackgroundColor = System.Drawing.Color.White
         Me.dgv_hdld.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgv_hdld.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkGray
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_hdld.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkGray
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_hdld.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgv_hdld.ColumnHeadersHeight = 24
         Me.dgv_hdld.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_hdld.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv_hdld.Location = New System.Drawing.Point(209, 92)
         Me.dgv_hdld.Name = "dgv_hdld"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv_hdld.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgv_hdld.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgv_hdld.RowHeadersVisible = False
+        Me.dgv_hdld.RowHeadersWidth = 51
         Me.dgv_hdld.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.dgv_hdld.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.dgv_hdld.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
@@ -589,7 +590,7 @@ Partial Class frmHS_HDLD
         Me.edt_hd_ghichu.ForeColor = System.Drawing.Color.Black
         Me.edt_hd_ghichu.Location = New System.Drawing.Point(81, 0)
         Me.edt_hd_ghichu.Name = "edt_hd_ghichu"
-        Me.edt_hd_ghichu.Size = New System.Drawing.Size(497, 22)
+        Me.edt_hd_ghichu.Size = New System.Drawing.Size(497, 26)
         Me.edt_hd_ghichu.TabIndex = 16
         '
         'Label23
@@ -648,7 +649,7 @@ Partial Class frmHS_HDLD
         Me.edt_hd_tyle.Location = New System.Drawing.Point(429, 0)
         Me.edt_hd_tyle.MaxLength = 5
         Me.edt_hd_tyle.Name = "edt_hd_tyle"
-        Me.edt_hd_tyle.Size = New System.Drawing.Size(50, 22)
+        Me.edt_hd_tyle.Size = New System.Drawing.Size(50, 26)
         Me.edt_hd_tyle.TabIndex = 15
         Me.edt_hd_tyle.Text = "100"
         Me.edt_hd_tyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -671,7 +672,7 @@ Partial Class frmHS_HDLD
         Me.edt_hd_heso.Location = New System.Drawing.Point(266, 0)
         Me.edt_hd_heso.Name = "edt_hd_heso"
         Me.edt_hd_heso.ReadOnly = True
-        Me.edt_hd_heso.Size = New System.Drawing.Size(48, 22)
+        Me.edt_hd_heso.Size = New System.Drawing.Size(48, 26)
         Me.edt_hd_heso.TabIndex = 14
         Me.edt_hd_heso.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -694,7 +695,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_bacluong.FormattingEnabled = True
         Me.cb_hd_bacluong.Location = New System.Drawing.Point(81, 0)
         Me.cb_hd_bacluong.Name = "cb_hd_bacluong"
-        Me.cb_hd_bacluong.Size = New System.Drawing.Size(135, 22)
+        Me.cb_hd_bacluong.Size = New System.Drawing.Size(135, 26)
         Me.cb_hd_bacluong.TabIndex = 13
         '
         'lbl_bacluong
@@ -737,7 +738,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_ngachluong.FormattingEnabled = True
         Me.cb_hd_ngachluong.Location = New System.Drawing.Point(81, 0)
         Me.cb_hd_ngachluong.Name = "cb_hd_ngachluong"
-        Me.cb_hd_ngachluong.Size = New System.Drawing.Size(446, 22)
+        Me.cb_hd_ngachluong.Size = New System.Drawing.Size(446, 26)
         Me.cb_hd_ngachluong.TabIndex = 12
         '
         'lbl_ngl_code
@@ -792,7 +793,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_bangluong.FormattingEnabled = True
         Me.cb_hd_bangluong.Location = New System.Drawing.Point(81, 0)
         Me.cb_hd_bangluong.Name = "cb_hd_bangluong"
-        Me.cb_hd_bangluong.Size = New System.Drawing.Size(446, 22)
+        Me.cb_hd_bangluong.Size = New System.Drawing.Size(446, 26)
         Me.cb_hd_bangluong.TabIndex = 11
         '
         'lbl_bl_code
@@ -848,7 +849,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_nghidinh.FormattingEnabled = True
         Me.cb_hd_nghidinh.Location = New System.Drawing.Point(369, 0)
         Me.cb_hd_nghidinh.Name = "cb_hd_nghidinh"
-        Me.cb_hd_nghidinh.Size = New System.Drawing.Size(209, 22)
+        Me.cb_hd_nghidinh.Size = New System.Drawing.Size(209, 26)
         Me.cb_hd_nghidinh.TabIndex = 10
         '
         'Label12
@@ -870,7 +871,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_httraluong.FormattingEnabled = True
         Me.cb_hd_httraluong.Location = New System.Drawing.Point(81, 0)
         Me.cb_hd_httraluong.Name = "cb_hd_httraluong"
-        Me.cb_hd_httraluong.Size = New System.Drawing.Size(221, 22)
+        Me.cb_hd_httraluong.Size = New System.Drawing.Size(221, 26)
         Me.cb_hd_httraluong.TabIndex = 9
         '
         'Label11
@@ -916,7 +917,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_chucvu.FormattingEnabled = True
         Me.cb_hd_chucvu.Location = New System.Drawing.Point(419, 0)
         Me.cb_hd_chucvu.Name = "cb_hd_chucvu"
-        Me.cb_hd_chucvu.Size = New System.Drawing.Size(159, 22)
+        Me.cb_hd_chucvu.Size = New System.Drawing.Size(159, 26)
         Me.cb_hd_chucvu.TabIndex = 8
         '
         'Label10
@@ -942,7 +943,7 @@ Partial Class frmHS_HDLD
         Me.dtpk_hd_denngay.Location = New System.Drawing.Point(253, 0)
         Me.dtpk_hd_denngay.Name = "dtpk_hd_denngay"
         Me.dtpk_hd_denngay.ShowCheckBox = True
-        Me.dtpk_hd_denngay.Size = New System.Drawing.Size(105, 22)
+        Me.dtpk_hd_denngay.Size = New System.Drawing.Size(105, 26)
         Me.dtpk_hd_denngay.TabIndex = 7
         '
         'Label9
@@ -967,7 +968,7 @@ Partial Class frmHS_HDLD
         Me.dtpk_hd_tungay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpk_hd_tungay.Location = New System.Drawing.Point(81, 0)
         Me.dtpk_hd_tungay.Name = "dtpk_hd_tungay"
-        Me.dtpk_hd_tungay.Size = New System.Drawing.Size(91, 22)
+        Me.dtpk_hd_tungay.Size = New System.Drawing.Size(91, 26)
         Me.dtpk_hd_tungay.TabIndex = 6
         '
         'Label8
@@ -1011,7 +1012,7 @@ Partial Class frmHS_HDLD
         Me.edt_hd_nguoiky.ForeColor = System.Drawing.Color.Black
         Me.edt_hd_nguoiky.Location = New System.Drawing.Point(419, 0)
         Me.edt_hd_nguoiky.Name = "edt_hd_nguoiky"
-        Me.edt_hd_nguoiky.Size = New System.Drawing.Size(159, 22)
+        Me.edt_hd_nguoiky.Size = New System.Drawing.Size(159, 26)
         Me.edt_hd_nguoiky.TabIndex = 5
         '
         'Label15
@@ -1036,7 +1037,7 @@ Partial Class frmHS_HDLD
         Me.dtpk_hd_ngayky.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpk_hd_ngayky.Location = New System.Drawing.Point(253, 0)
         Me.dtpk_hd_ngayky.Name = "dtpk_hd_ngayky"
-        Me.dtpk_hd_ngayky.Size = New System.Drawing.Size(105, 22)
+        Me.dtpk_hd_ngayky.Size = New System.Drawing.Size(105, 26)
         Me.dtpk_hd_ngayky.TabIndex = 4
         '
         'Label17
@@ -1061,7 +1062,7 @@ Partial Class frmHS_HDLD
         Me.dtpk_hd_ngayhl.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpk_hd_ngayhl.Location = New System.Drawing.Point(81, 0)
         Me.dtpk_hd_ngayhl.Name = "dtpk_hd_ngayhl"
-        Me.dtpk_hd_ngayhl.Size = New System.Drawing.Size(91, 22)
+        Me.dtpk_hd_ngayhl.Size = New System.Drawing.Size(91, 26)
         Me.dtpk_hd_ngayhl.TabIndex = 3
         '
         'Label18
@@ -1105,7 +1106,7 @@ Partial Class frmHS_HDLD
         Me.cb_hd_loaihd.FormattingEnabled = True
         Me.cb_hd_loaihd.Location = New System.Drawing.Point(358, 0)
         Me.cb_hd_loaihd.Name = "cb_hd_loaihd"
-        Me.cb_hd_loaihd.Size = New System.Drawing.Size(220, 22)
+        Me.cb_hd_loaihd.Size = New System.Drawing.Size(220, 26)
         Me.cb_hd_loaihd.TabIndex = 2
         '
         'labLoaiHD
@@ -1126,7 +1127,7 @@ Partial Class frmHS_HDLD
         Me.edt_hd_sohd.Location = New System.Drawing.Point(81, 0)
         Me.edt_hd_sohd.MaxLength = 15
         Me.edt_hd_sohd.Name = "edt_hd_sohd"
-        Me.edt_hd_sohd.Size = New System.Drawing.Size(91, 22)
+        Me.edt_hd_sohd.Size = New System.Drawing.Size(91, 26)
         Me.edt_hd_sohd.TabIndex = 1
         '
         'labSoHD
@@ -1158,7 +1159,7 @@ Partial Class frmHS_HDLD
         Me.txtNoiLamViec.ForeColor = System.Drawing.Color.Black
         Me.txtNoiLamViec.Location = New System.Drawing.Point(419, 0)
         Me.txtNoiLamViec.Name = "txtNoiLamViec"
-        Me.txtNoiLamViec.Size = New System.Drawing.Size(159, 22)
+        Me.txtNoiLamViec.Size = New System.Drawing.Size(159, 26)
         Me.txtNoiLamViec.TabIndex = 2
         '
         'Label27
@@ -1191,7 +1192,7 @@ Partial Class frmHS_HDLD
         '
         'frmHS_HDLD
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(789, 565)
         Me.Controls.Add(Me.dgv_hdld)

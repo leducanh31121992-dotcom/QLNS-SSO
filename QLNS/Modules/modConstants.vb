@@ -1,9 +1,9 @@
 ﻿Module modConstants
     'Môi trường CSDL chính thức
-    Public Server As String = "10.63.16.65" 'Configuration.ConfigurationSettings.AppSettings("Server")
+    Public Server As String = "10.63.48.63" 'Configuration.ConfigurationSettings.AppSettings("Server")
     Private DataBase As String = "QLNS_NHCSXH" 'Configuration.ConfigurationSettings.AppSettings("Database")
-    Private User As String = "qlskdev"  'Configuration.ConfigurationSettings.AppSettings("User")
-    Private Pass As String = "QlSk@2020#123"  'Configuration.ConfigurationSettings.AppSettings("Password")
+    Private User As String = "sa"  'Configuration.ConfigurationSettings.AppSettings("User")
+    Private Pass As String = "Sql2017"  'Configuration.ConfigurationSettings.AppSettings("Password")
     Public QLNS_CONNSTR As String = "Data Source=" & Server & ";Initial Catalog=" & DataBase & ";Persist Security Info=True;User ID=" & User & ";Password=" & Pass
 
     ''Môi trường CSDL DEV
@@ -19,15 +19,6 @@
     'Private User1 As String = "chudv"  'Configuration.ConfigurationSettings.AppSettings("User")
     'Private Pass1 As String = "chudv2510"  'Configuration.ConfigurationSettings.AppSettings("Password")
     'Public QLNS_CONNSTR As String = "Data Source=" & Server1 & ";Initial Catalog=" & DataBase1 & ";Persist Security Info=True;User ID=" & User1 & ";Password=" & Pass1
-
-    '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    'Public Server As String = "10.0.9.66\SQL2008,1430" 'Configuration.ConfigurationSettings.AppSettings("Server")
-    'Public Server As String = ".\SQLEXPRESS" 'Configuration.ConfigurationSettings.AppSettings("Server")
-    'Private User As String = "sa"  'Configuration.ConfigurationSettings.AppSettings("User")
-    'Private Pass As String = "chudv2510"  'Configuration.ConfigurationSettings.AppSettings("Password")
-    'net
-    'Public QLNS_CONNSTR As String = "Data Source=" & Server & ";Initial Catalog=" & DataBase & ";Persist Security Info=True;Trusted_Connection=True;User ID=" & User & ";Password=" & Pass
-    'local
 
 
     '----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

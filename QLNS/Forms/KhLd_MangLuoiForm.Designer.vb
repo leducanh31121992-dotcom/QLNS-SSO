@@ -378,6 +378,7 @@ Partial Class KhLd_MangLuoiForm
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_khld.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgv_khld.RowHeadersVisible = False
+        Me.dgv_khld.RowHeadersWidth = 51
         Me.dgv_khld.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(124, Byte), Integer))
@@ -692,6 +693,7 @@ Partial Class KhLd_MangLuoiForm
         DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_mangluoi.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgv_mangluoi.RowHeadersVisible = False
+        Me.dgv_mangluoi.RowHeadersWidth = 51
         Me.dgv_mangluoi.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(124, Byte), Integer))
@@ -818,6 +820,7 @@ Partial Class KhLd_MangLuoiForm
         DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgv_nhucau.RowHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgv_nhucau.RowHeadersVisible = False
+        Me.dgv_nhucau.RowHeadersWidth = 51
         Me.dgv_nhucau.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(124, Byte), Integer))
@@ -1006,7 +1009,7 @@ Partial Class KhLd_MangLuoiForm
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(608, 22)
         Me.Label27.TabIndex = 0
-        Me.Label27.Text = "Cán bộ được thông báo trúng tuyển vào chi nhánh trong tháng đang tham gia lớp đào" & _
+        Me.Label27.Text = "Cán bộ được thông báo trúng tuyển vào chi nhánh trong tháng đang tham gia lớp đào" &
     " tạo "
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '

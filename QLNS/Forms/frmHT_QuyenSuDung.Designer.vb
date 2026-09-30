@@ -278,6 +278,21 @@ Partial Class frmHT_QuyenSuDung
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
+        '
+        ' btn_sso
+        '
+        Me.btn_sso.BackColor = System.Drawing.Color.Transparent
+        Me.btn_sso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_sso.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_sso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        ' Đặt vị trí X=154 (cùng lề trái với các Label), Y=229
+        Me.btn_sso.Location = New System.Drawing.Point(154, 229)
+        Me.btn_sso.Name = "btn_sso"
+        Me.btn_sso.Size = New System.Drawing.Size(100, 20)
+        Me.btn_sso.TabIndex = 6
+        Me.btn_sso.Text = "Đăng nhập SSO"
+        Me.btn_sso.UseVisualStyleBackColor = False
+        Me.Controls.Add(Me.btn_sso)
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btn_accept As System.Windows.Forms.Button
@@ -299,4 +314,5 @@ Partial Class frmHT_QuyenSuDung
     Friend WithEvents chkChangePass As System.Windows.Forms.CheckBox
     Friend WithEvents txtMaPOS As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btn_sso As System.Windows.Forms.Button
 End Class

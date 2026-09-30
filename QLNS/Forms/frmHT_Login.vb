@@ -1,10 +1,14 @@
-﻿Public Class frmHT_Login
+﻿Imports System.Collections.Generic
+Imports System.Net.Http
+Imports System.Threading.Tasks
+Imports System.Web
+Imports System.Configuration
+Imports Microsoft.Web.WebView2.Core
+Imports Newtonsoft.Json.Linq
+
+Public Class frmHT_Login
 
 #Region "--->Khai báo thuộc tính và khởi tạo đối tượng<---"
-    ''' <summary>
-    ''' Get-Set Giá trị Tên đăng nhập của thành viên
-    ''' </summary>
-    ''' <remarks></remarks>
     Private _UserName As String
     Public Property UserName() As String
         Get
@@ -15,10 +19,6 @@
         End Set
     End Property
 
-    ''' <summary>
-    ''' Get-Set Giá trị tập quyền của thành viên đăng nhập
-    ''' </summary>
-    ''' <remarks></remarks>
     Private _Permits As String
     Public Property Permits() As String
         Get
@@ -29,10 +29,6 @@
         End Set
     End Property
 
-    ''' <summary>
-    ''' Get - Set giá trị xác định admin. Nếu là True -> Là admin. False -> Là Member
-    ''' </summary>
-    ''' <remarks></remarks>
     Private _Admin As Boolean
     Public Property Admin() As Boolean
         Get
@@ -48,150 +44,259 @@
     Dim _DBAccess As DBAccess = New DBAccess()
     Public Delegate Sub ProgressChangedEventHandler()
     Public Progress_Changed As ProgressChangedEventHandler
+
+    Private WithEvents webView As Microsoft.Web.WebView2.WinForms.WebView2
+
+    ' Biến cờ chống gọi lặp nhiều lần sự kiện chuyển hướng WebView2
+    Private isProcessingLogin As Boolean = False
 #End Region
 
 #Region "--->Events: Các sự kiện chính<---"
     Private Sub frmHT_Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim _cfg As New clsSettings
-        edt_password.Text = ""
-        If _cfg.ReadValue("LuuThongTin") = "1" Then
-            edt_username.Text = _cfg.ReadValue("Username")
-            edt_maPOS.Text = _cfg.ReadValue("POS")
-            chkLuuThongTin.Checked = True
-        Else
-            edt_username.Text = ""
-            edt_maPOS.Text = ""
-            chkLuuThongTin.Checked = True
-        End If
-        AddHandler edt_username.GotFocus, AddressOf edt_GotFocus
-        AddHandler edt_password.GotFocus, AddressOf edt_GotFocus
-        AddHandler edt_maPOS.GotFocus, AddressOf edt_GotFocus
-        edt_username.Focus()
-    End Sub
+        ' Rào/ẩn các control đăng nhập cũ
+        If edt_username IsNot Nothing Then edt_username.Visible = False
+        If edt_password IsNot Nothing Then edt_password.Visible = False
+        If edt_maPOS IsNot Nothing Then edt_maPOS.Visible = False
+        If btn_login IsNot Nothing Then btn_login.Visible = False
+        If btn_reset IsNot Nothing Then btn_reset.Visible = False
+        If chkLuuThongTin IsNot Nothing Then chkLuuThongTin.Visible = False
 
-    Private Sub btn_reset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_reset.Click
-        edt_password.Text = ""
-        edt_username.Text = ""
-        edt_maPOS.Text = ""
-        ActiveControl = edt_username
-    End Sub
+        ' Mở rộng kích thước form SSO
+        Me.Width = 950
+        Me.Height = 700
+        Me.StartPosition = FormStartPosition.CenterScreen
 
-    Private Sub btn_login_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_login.Click
-        'If Not _DBAccess.CheckConnection() Then
-        '    MessageBox.Show("Thông tin thiết lập kết nối cơ sở dữ liệu không hợp lệ.", "Connection Failed", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
-        '    Dispose()
-        '    Application.Exit()
-        '    Return
-        'End If
-
-        'Kiểm tra thông tin đăng nhập có chính xác không, gán giá trị _UserName, DONVI, HoTen từ trong _Systems.IsLogin
-        Dim IsValid As Byte = _Systems.IsLogin(Globals.Find_Replace(edt_username.Text.Trim), Globals.Find_Replace(edt_password.Text), Globals.Find_Replace(edt_maPOS.Text.Trim))
-        Select Case IsValid
-            Case 0
-                ActiveControl = edt_username
-                edt_username.SelectAll()
-            Case 1
-                ActiveControl = edt_password
-                edt_password.SelectAll()
-            Case 2
-                _UserName = Globals.Find_Replace(edt_username.Text.Trim().ToString())
-                gUsername = _UserName 'Lưu biến Username để sử dụng khi thay đổi pass
-                'zzzzzzzzzzzzzzzzzzzz(
-                DONVI = edt_maPOS.Text.Trim
-                'zzzzzzzzzzzzzzzzzzzz)
-                'Lấy chuỗi quyền của thành viên đăng nhập chương trình
-                Globals.Roles = _Systems.GetRoles(_UserName)
-                Globals.Group = _Systems.GetGroup(_UserName)
-                Globals.QuyenQuanLyCN = _Systems.Get_QuyenQuanLyCN(_UserName)
-                If (Globals.Roles = "") Then
-                    My_MessageBox("Thành viên đăng nhập hiện chưa được phân quyền thao tác chương trình!")
-                    Dispose()
-                    Application.Exit()
-                    'ElseIf Globals.QuyenQuanLyCN.Trim = "" Then
-                    '    My_MessageBox("Thành viên đăng nhập hiện chưa được phân quyền thao tác với đơn vị nào!")
-                    '    Dispose()
-                    '    Application.Exit()
-                End If
-
-                'Lưu thông tin đăng nhập
-                Dim _cfg As New clsSettings
-                If chkLuuThongTin.Checked Then
-                    _cfg.WriteValue("LuuThongTin", "1")
-                    _cfg.WriteValue("Username", edt_username.Text.Trim)
-                    _cfg.WriteValue("POS", edt_maPOS.Text.Trim)
-                Else
-                    _cfg.WriteValue("LuuThongTin", "0")
-                    _cfg.WriteValue("Username", "")
-                    _cfg.WriteValue("POS", "")
-                End If
-                _cfg.Save()
-
-                DialogResult = Windows.Forms.DialogResult.OK
-
-                'Dim dirApp As String = Application.StartupPath
-                'If FileIO.FileSystem.FileExists(dirApp & "\" & "UDApp.exe") Then
-                '    FileIO.FileSystem.DeleteFile(dirApp & "\" & "updateApp.exe")
-                '    FileIO.FileSystem.RenameFile(dirApp & "\" & "UDApp.exe", "updateApp.exe")
-                'End If
-            Case Else
-        End Select
-    End Sub
-#End Region
-
-#Region "--->Events: Các sự kiện trợ giúp người dùng<---"
-    Private Sub frmHT_Login_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
-        Try
-            If (e.Alt = True And e.KeyCode = Keys.D) Then
-                btn_login_Click(sender, Nothing)
-            End If
-        Catch ex As Exception
-            MessageBox.Show("Sử dụng phím tắt: " + ex.Message.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3)
-            Return
-        End Try
-    End Sub
-
-    Private Sub edt_GotFocus(sender As Object, e As System.EventArgs) ' Handles edt_password.GotFocus
-        CType(sender, TextBox).SelectAll()
-    End Sub
-
-    Private Sub edt_username_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles edt_username.KeyDown
-        If (e.KeyCode = Keys.Enter Or e.KeyCode = Keys.Tab Or e.KeyCode = Keys.Down) Then
-            If (edt_username.Text.Trim() <> "") Then
-                edt_password.Focus()
-            Else
-                edt_username.Focus()
-            End If
-        End If
-    End Sub
-
-    Private Sub edt_password_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles edt_password.KeyDown
-        Select Case e.KeyCode
-            Case Keys.Enter, Keys.Tab, Keys.Down
-                edt_maPOS.Focus()
-            Case Keys.Up
-                edt_username.Focus()
-        End Select
-    End Sub
-
-    Private Sub edt_maPOS_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles edt_maPOS.KeyDown
-        Select Case e.KeyCode
-            Case Keys.Enter
-                If (edt_username.Text.Trim() <> "") Then
-                    btn_login_Click(sender, Nothing)
-                Else
-                    edt_password.Focus()
-                End If
-            Case Keys.Tab, Keys.Down
-                btn_login.Focus()
-            Case Keys.Up
-                edt_username.Focus()
-        End Select
+        InitializeWebView()
     End Sub
 
     Private Sub frmHT_Login_FormClosed(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
         If Not (Progress_Changed Is Nothing) Then
             Progress_Changed()
         End If
+    End Sub
+#End Region
+
+#Region "--->Xử lý SSO (WebView2 & Chuỗi API)<---"
+    Private Async Sub InitializeWebView()
+        Try
+            webView = New Microsoft.Web.WebView2.WinForms.WebView2()
+            webView.Dock = DockStyle.Fill
+
+            Me.Controls.Add(webView)
+            webView.BringToFront()
+
+            Await webView.EnsureCoreWebView2Async(Nothing)
+
+            ' Đọc cấu hình từ App.config
+            Dim baseUrl As String = ConfigurationManager.AppSettings("SSO_BaseUrl")
+            Dim clientId As String = ConfigurationManager.AppSettings("SSO_ClientId")
+            Dim redirectUri As String = ConfigurationManager.AppSettings("SSO_RedirectUri")
+            Dim scope As String = ConfigurationManager.AppSettings("SSO_Scope")
+            Dim state As String = ConfigurationManager.AppSettings("SSO_State")
+            Dim nonce As String = ConfigurationManager.AppSettings("SSO_Nonce")
+            Dim codeChallenge As String = ConfigurationManager.AppSettings("SSO_CodeChallenge")
+            Dim codeChallengeMethod As String = ConfigurationManager.AppSettings("SSO_CodeChallengeMethod")
+
+            ' Đăng ký sự kiện NavigationStarting bằng Lambda Expression
+            AddHandler webView.CoreWebView2.NavigationStarting, Sub(sender, e)
+                                                                    Dim currentUrl As String = e.Uri
+
+                                                                    If currentUrl.StartsWith(redirectUri, StringComparison.OrdinalIgnoreCase) Then
+                                                                        If isProcessingLogin Then
+                                                                            Exit Sub
+                                                                        End If
+
+                                                                        isProcessingLogin = True
+                                                                        e.Cancel = True
+
+                                                                        Dim uriObj As New Uri(currentUrl)
+                                                                        Dim query As System.Collections.Specialized.NameValueCollection = HttpUtility.ParseQueryString(uriObj.Query)
+                                                                        Dim authorizationCode As String = query("code")
+
+                                                                        If Not String.IsNullOrEmpty(authorizationCode) Then
+                                                                            System.Diagnostics.Debug.WriteLine("code: " & authorizationCode)
+
+                                                                            ' Chạy tiến trình gọi API ngầm an toàn tránh treo UI Thread
+                                                                            Task.Run(Async Function()
+                                                                                         Await ExecuteSSOFlowAsync(authorizationCode)
+                                                                                     End Function)
+                                                                        Else
+                                                                            isProcessingLogin = False
+                                                                        End If
+                                                                    End If
+                                                                End Sub
+
+            Dim authUrl As String = $"{baseUrl}/api/v1/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={HttpUtility.UrlEncode(redirectUri)}&scope={HttpUtility.UrlEncode(scope)}&state={state}&nonce={nonce}&code_challenge={codeChallenge}&code_challenge_method={codeChallengeMethod}"
+
+            webView.CoreWebView2.Navigate(authUrl)
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Async Function ExecuteSSOFlowAsync(authorizationCode As String) As Task
+        Using client As New HttpClient()
+
+            ' Bước 2: Đổi Code lấy Token
+            Dim accessToken As String = Await Step2_ExchangeToken(client, authorizationCode)
+            'System.Diagnostics.Debug.WriteLine("token: " & accessToken)
+            If String.IsNullOrEmpty(accessToken) Then
+                isProcessingLogin = False
+                Return
+            End If
+
+            ' Bước 3: Lấy thông tin UserInfo
+            Dim username As String = Await Step3_GetUserInfo(client, accessToken)
+            If Not String.IsNullOrEmpty(username) Then
+                _UserName = username
+                gUsername = username
+            End If
+
+            ' Bước 4: Lấy Permissions và Menu, đồng thời map vào Globals
+            Await Step4_GetPermissionsAndMenu(client, accessToken)
+
+            ' Kiểm tra phân quyền hợp lệ trước khi vào chương trình
+            If String.IsNullOrEmpty(Globals.Roles) Then
+                If Not Me.IsDisposed Then
+                    Me.Invoke(Sub()
+                                  MessageBox.Show("Thành viên đăng nhập hiện chưa được phân quyền thao tác chương trình!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                                  Me.Close()
+                              End Sub)
+                End If
+                Return
+            End If
+
+            ' Đóng form và trả về DialogResult.OK an toàn tuyệt đối chống ObjectDisposedException
+            If Not Me.IsDisposed Then
+                Me.Invoke(Sub()
+                              If Not Me.IsDisposed Then
+                                  Me.DialogResult = Windows.Forms.DialogResult.OK
+                                  Me.Close()
+                              End If
+                          End Sub)
+            End If
+        End Using
+    End Function
+
+    ' --- BƯỚC 2: Đổi Code lấy Access Token ---
+    Private Async Function Step2_ExchangeToken(client As HttpClient, authorizationCode As String) As Task(Of String)
+        Dim baseUrl As String = ConfigurationManager.AppSettings("SSO_BaseUrl")
+        Dim tokenEndpoint As String = $"{baseUrl}/api/v1/oauth2/token"
+
+        Dim postData As New Dictionary(Of String, String) From {
+            {"grant_type", "authorization_code"},
+            {"code", authorizationCode},
+            {"redirect_uri", ConfigurationManager.AppSettings("SSO_RedirectUri")},
+            {"client_id", ConfigurationManager.AppSettings("SSO_ClientId")},
+            {"client_secret", ConfigurationManager.AppSettings("SSO_ClientSecret")},
+            {"code_verifier", ConfigurationManager.AppSettings("SSO_CodeVerifier")}
+        }
+
+        Try
+            Dim content As New FormUrlEncodedContent(postData)
+            Dim response As HttpResponseMessage = Await client.PostAsync(tokenEndpoint, content)
+
+            Dim jsonResponse = Await response.Content.ReadAsStringAsync()
+
+            If Not response.IsSuccessStatusCode Then
+                Return Nothing
+            End If
+
+            Dim tokenObj As JObject = JObject.Parse(jsonResponse)
+            Return tokenObj("access_token")?.ToString()
+
+        Catch ex As Exception
+            Return Nothing
+        End Try
+    End Function
+
+    ' --- BƯỚC 3: Lấy thông tin UserInfo ---
+    Private Async Function Step3_GetUserInfo(client As HttpClient, accessToken As String) As Task(Of String)
+        Dim baseUrl As String = ConfigurationManager.AppSettings("SSO_BaseUrl")
+        Dim userInfoEndpoint As String = $"{baseUrl}/api/v1/oauth2/userinfo"
+
+        Try
+            client.DefaultRequestHeaders.Authorization = New System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken)
+            Dim response As HttpResponseMessage = Await client.GetAsync(userInfoEndpoint)
+
+            Dim jsonResponse = Await response.Content.ReadAsStringAsync()
+            'System.Diagnostics.Debug.WriteLine("user info: " & jsonResponse)
+
+            If Not response.IsSuccessStatusCode Then
+                Return Nothing
+            End If
+
+            Dim userObj As JObject = JObject.Parse(jsonResponse)
+            Return userObj("preferred_username")?.ToString()
+
+        Catch ex As Exception
+            Return Nothing
+        End Try
+    End Function
+
+    ' --- BƯỚC 4: Lấy danh sách Quyền, Menu và Map vào biến Global cũ ---
+    Private Async Function Step4_GetPermissionsAndMenu(client As HttpClient, accessToken As String) As Task
+        Dim baseUrl As String = ConfigurationManager.AppSettings("SSO_BaseUrl")
+        Dim clientId As String = ConfigurationManager.AppSettings("SSO_ClientId")
+        Dim permissionsEndpoint As String = $"{baseUrl}/api/v1/admin/user/permissions?client-id={clientId}"
+
+        Try
+            client.DefaultRequestHeaders.Authorization = New System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken)
+            Dim response As HttpResponseMessage = Await client.GetAsync(permissionsEndpoint)
+
+            Dim jsonResponse = Await response.Content.ReadAsStringAsync()
+            'System.Diagnostics.Debug.WriteLine("menu info: " & jsonResponse)
+
+            If Not response.IsSuccessStatusCode Then
+                ' Fallback về hàm cũ nếu lỗi gọi API
+                Globals.Roles = _Systems.GetRoles(_UserName)
+                Globals.Group = _Systems.GetGroup(_UserName)
+                Globals.QuyenQuanLyCN = _Systems.Get_QuyenQuanLyCN(_UserName)
+                Return
+            End If
+
+            ' Parse JSON phản hồi từ API theo đúng chuẩn cú pháp VB.NET
+            Dim permObj As JObject = JObject.Parse(jsonResponse)
+            Dim rolesArr As JArray = TryCast(permObj("roles"), JArray)
+            Dim roleList As New List(Of String)()
+
+            If rolesArr IsNot Nothing Then
+                For Each r As JObject In rolesArr
+                    Dim resourcesObj As JObject = TryCast(r("resources"), JObject)
+                    If resourcesObj IsNot Nothing Then
+                        For Each resProp As JProperty In resourcesObj.Properties()
+                            roleList.Add(resProp.Name) ' Thêm resource ID
+                            Dim actionsArr As JArray = TryCast(resProp.Value("actions"), JArray)
+                            If actionsArr IsNot Nothing Then
+                                For Each act As JToken In actionsArr
+                                    roleList.Add(act.ToString()) ' Thêm action ID
+                                Next
+                            End If
+                        Next
+                    End If
+                Next
+            End If
+
+            If roleList.Count > 0 Then
+                Globals.Roles = ";" & String.Join(";", roleList) & ";"
+            Else
+                Globals.Roles = _Systems.GetRoles(_UserName)
+            End If
+
+            ' Lấy thêm Group và Quyền quản lý chi nhánh từ cơ sở dữ liệu hệ thống
+            Globals.Group = _Systems.GetGroup(_UserName)
+            Globals.QuyenQuanLyCN = _Systems.Get_QuyenQuanLyCN(_UserName)
+
+        Catch ex As Exception
+            ' Xử lý fallback an toàn
+            Globals.Roles = _Systems.GetRoles(_UserName)
+            Globals.Group = _Systems.GetGroup(_UserName)
+            Globals.QuyenQuanLyCN = _Systems.Get_QuyenQuanLyCN(_UserName)
+        End Try
+    End Function
+
+    Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
+
     End Sub
 #End Region
 
