@@ -768,6 +768,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="My Project\UrlProtocol.vb" />
     <Compile Include="Reports\BC01.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

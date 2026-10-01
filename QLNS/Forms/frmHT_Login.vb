@@ -1,8 +1,9 @@
 ﻿Imports System.Collections.Generic
+Imports System.Configuration
+Imports System.Net
 Imports System.Net.Http
 Imports System.Threading.Tasks
 Imports System.Web
-Imports System.Configuration
 Imports Microsoft.Web.WebView2.Core
 Imports Newtonsoft.Json.Linq
 
@@ -54,17 +55,13 @@ Public Class frmHT_Login
 #Region "--->Events: Các sự kiện chính<---"
     Private Sub frmHT_Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Rào/ẩn các control đăng nhập cũ
-        If edt_username IsNot Nothing Then edt_username.Visible = False
-        If edt_password IsNot Nothing Then edt_password.Visible = False
-        If edt_maPOS IsNot Nothing Then edt_maPOS.Visible = False
-        If btn_login IsNot Nothing Then btn_login.Visible = False
-        If btn_reset IsNot Nothing Then btn_reset.Visible = False
-        If chkLuuThongTin IsNot Nothing Then chkLuuThongTin.Visible = False
+        'If edt_username IsNot Nothing Then edt_username.Visible = False
+        'If edt_password IsNot Nothing Then edt_password.Visible = False
+        'If edt_maPOS IsNot Nothing Then edt_maPOS.Visible = False
+        'If btn_login IsNot Nothing Then btn_login.Visible = False
+        'If btn_reset IsNot Nothing Then btn_reset.Visible = False
+        'If chkLuuThongTin IsNot Nothing Then chkLuuThongTin.Visible = False
 
-        ' Mở rộng kích thước form SSO
-        Me.Width = 950
-        Me.Height = 700
-        Me.StartPosition = FormStartPosition.CenterScreen
 
         InitializeWebView()
     End Sub
@@ -79,14 +76,6 @@ Public Class frmHT_Login
 #Region "--->Xử lý SSO (WebView2 & Chuỗi API)<---"
     Private Async Sub InitializeWebView()
         Try
-            webView = New Microsoft.Web.WebView2.WinForms.WebView2()
-            webView.Dock = DockStyle.Fill
-
-            Me.Controls.Add(webView)
-            webView.BringToFront()
-
-            Await webView.EnsureCoreWebView2Async(Nothing)
-
             ' Đọc cấu hình từ App.config
             Dim baseUrl As String = ConfigurationManager.AppSettings("SSO_BaseUrl")
             Dim clientId As String = ConfigurationManager.AppSettings("SSO_ClientId")
@@ -97,40 +86,103 @@ Public Class frmHT_Login
             Dim codeChallenge As String = ConfigurationManager.AppSettings("SSO_CodeChallenge")
             Dim codeChallengeMethod As String = ConfigurationManager.AppSettings("SSO_CodeChallengeMethod")
 
-            ' Đăng ký sự kiện NavigationStarting bằng Lambda Expression
-            AddHandler webView.CoreWebView2.NavigationStarting, Sub(sender, e)
-                                                                    Dim currentUrl As String = e.Uri
+            ' 1. Khởi động HttpListener để lắng nghe RedirectUri chạy cục bộ (Ví dụ: http://localhost:8080/callback/)
+            Dim listener As New HttpListener()
+            listener.Prefixes.Add(redirectUri)
+            listener.Start()
 
-                                                                    If currentUrl.StartsWith(redirectUri, StringComparison.OrdinalIgnoreCase) Then
-                                                                        If isProcessingLogin Then
-                                                                            Exit Sub
-                                                                        End If
-
-                                                                        isProcessingLogin = True
-                                                                        e.Cancel = True
-
-                                                                        Dim uriObj As New Uri(currentUrl)
-                                                                        Dim query As System.Collections.Specialized.NameValueCollection = HttpUtility.ParseQueryString(uriObj.Query)
-                                                                        Dim authorizationCode As String = query("code")
-
-                                                                        If Not String.IsNullOrEmpty(authorizationCode) Then
-                                                                            System.Diagnostics.Debug.WriteLine("code: " & authorizationCode)
-
-                                                                            ' Chạy tiến trình gọi API ngầm an toàn tránh treo UI Thread
-                                                                            Task.Run(Async Function()
-                                                                                         Await ExecuteSSOFlowAsync(authorizationCode)
-                                                                                     End Function)
-                                                                        Else
-                                                                            isProcessingLogin = False
-                                                                        End If
-                                                                    End If
-                                                                End Sub
-
+            ' 2. Mở trình duyệt mặc định của hệ thống với URL đăng nhập SSO
             Dim authUrl As String = $"{baseUrl}/api/v1/oauth2/authorize?response_type=code&client_id={clientId}&redirect_uri={HttpUtility.UrlEncode(redirectUri)}&scope={HttpUtility.UrlEncode(scope)}&state={state}&nonce={nonce}&code_challenge={codeChallenge}&code_challenge_method={codeChallengeMethod}"
 
-            webView.CoreWebView2.Navigate(authUrl)
+            Process.Start(New ProcessStartInfo(authUrl) With {.UseShellExecute = True})
+
+            ' 3. Lắng nghe phản hồi từ trình duyệt gửi về qua Local Server một cách bất đồng bộ
+            Task.Run(Async Function()
+                         Try
+                             While listener.IsListening
+                                 Dim context As HttpListenerContext = Await listener.GetContextAsync()
+                                 Dim requestUrl = context.Request.Url
+
+                                 ' Trả về một trang thông báo nhỏ cho người dùng đóng tab trình duyệt
+                                 Dim htmlContent As String =
+    "<!DOCTYPE html>" &
+    "<html>" &
+    "<head>" &
+    "    <meta charset='utf-8'>" &
+    "    <title>Xác thực thành công</title>" &
+    "    <style>" &
+    "        body {" &
+    "            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" &
+    "            background-color: #f4f6f9;" &
+    "            display: flex;" &
+    "            justify-content: center;" &
+    "            align-items: center;" &
+    "            height: 100vh;" &
+    "            margin: 0;" &
+    "        }" &
+    "        .card {" &
+    "            background: #ffffff;" &
+    "            padding: 40px;" &
+    "            border-radius: 12px;" &
+    "            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);" &
+    "            text-align: center;" &
+    "            max-width: 400px;" &
+    "            width: 100%;" &
+    "        }" &
+    "        .icon {" &
+    "            font-size: 50px;" &
+    "            color: #28a745;" &
+    "            margin-bottom: 20px;" &
+    "        }" &
+    "        h2 {" &
+    "            color: #0366cc;" &
+    "            margin-bottom: 10px;" &
+    "            font-size: 22px;" &
+    "        }" &
+    "        p {" &
+    "            color: #555555;" &
+    "            font-size: 15px;" &
+    "            line-height: 1.5;" &
+    "            margin-top: 0;" &
+    "        }" &
+    "    </style>" &
+    "</head>" &
+    "<body>" &
+    "    <div class='card'>" &
+    "        <div class='icon'>&#10004;</div>" &
+    "        <h2>Đăng nhập thành công!</h2>" &
+    "        <p>Hệ thống đã xác thực tài khoản của bạn.<br>Bạn có thể đóng cửa sổ trình duyệt này và quay trở lại ứng dụng.</p>" &
+    "    </div>" &
+    "</body>" &
+    "</html>"
+
+                                 Dim responseBytes = System.Text.Encoding.UTF8.GetBytes(htmlContent)
+                                 context.Response.ContentLength64 = responseBytes.Length
+                                 Await context.Response.OutputStream.WriteAsync(responseBytes, 0, responseBytes.Length)
+                                 context.Response.OutputStream.Close()
+
+                                 ' Lấy authorization code từ Query string
+                                 Dim query As System.Collections.Specialized.NameValueCollection = HttpUtility.ParseQueryString(requestUrl.Query)
+                                 Dim authorizationCode As String = query("code")
+
+                                 If Not String.IsNullOrEmpty(authorizationCode) Then
+                                     System.Diagnostics.Debug.WriteLine("code: " & authorizationCode)
+
+                                     ' Gọi API đổi token ngầm
+                                     Await ExecuteSSOFlowAsync(authorizationCode)
+                                 End If
+
+                                 ' Dừng listener sau khi đã nhận được code
+                                 listener.Stop()
+                                 Exit While
+                             End While
+                         Catch ex As Exception
+                             System.Diagnostics.Debug.WriteLine(ex.Message)
+                         End Try
+                     End Function)
 
         Catch ex As Exception
+            MessageBox.Show("Không thể mở trình duyệt đăng nhập: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
@@ -139,9 +191,7 @@ Public Class frmHT_Login
 
             ' Bước 2: Đổi Code lấy Token
             Dim accessToken As String = Await Step2_ExchangeToken(client, authorizationCode)
-            'System.Diagnostics.Debug.WriteLine("token: " & accessToken)
             If String.IsNullOrEmpty(accessToken) Then
-                isProcessingLogin = False
                 Return
             End If
 
@@ -155,7 +205,7 @@ Public Class frmHT_Login
             ' Bước 4: Lấy Permissions và Menu, đồng thời map vào Globals
             Await Step4_GetPermissionsAndMenu(client, accessToken)
 
-            ' Kiểm tra phân quyền hợp lệ trước khi vào chương trình
+            ' Kiểm tra phân quyền hợp lệ trước vào chương trình
             If String.IsNullOrEmpty(Globals.Roles) Then
                 If Not Me.IsDisposed Then
                     Me.Invoke(Sub()
@@ -166,7 +216,7 @@ Public Class frmHT_Login
                 Return
             End If
 
-            ' Đóng form và trả về DialogResult.OK an toàn tuyệt đối chống ObjectDisposedException
+            ' Đóng form và trả về DialogResult.OK an toàn tuyệt đối
             If Not Me.IsDisposed Then
                 Me.Invoke(Sub()
                               If Not Me.IsDisposed Then
@@ -177,7 +227,8 @@ Public Class frmHT_Login
             End If
         End Using
     End Function
-
+#End Region
+#Region "--->Các bước xử lý API SSO<---"
     ' --- BƯỚC 2: Đổi Code lấy Access Token ---
     Private Async Function Step2_ExchangeToken(client As HttpClient, authorizationCode As String) As Task(Of String)
         Dim baseUrl As String = ConfigurationManager.AppSettings("SSO_BaseUrl")
@@ -295,9 +346,6 @@ Public Class frmHT_Login
         End Try
     End Function
 
-    Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
-
-    End Sub
 #End Region
 
 End Class
