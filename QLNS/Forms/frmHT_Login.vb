@@ -97,89 +97,89 @@ Public Class frmHT_Login
             Process.Start(New ProcessStartInfo(authUrl) With {.UseShellExecute = True})
 
             ' 3. Lắng nghe phản hồi từ trình duyệt gửi về qua Local Server một cách bất đồng bộ
-            Task.Run(Async Function()
-                         Try
-                             While listener.IsListening
-                                 Dim context As HttpListenerContext = Await listener.GetContextAsync()
-                                 Dim requestUrl = context.Request.Url
+            Dim unused = Task.Run(Async Function()
+                                      Try
+                                          While listener.IsListening
+                                              Dim context As HttpListenerContext = Await listener.GetContextAsync()
+                                              Dim requestUrl = context.Request.Url
 
-                                 ' Trả về một trang thông báo nhỏ cho người dùng đóng tab trình duyệt
-                                 Dim htmlContent As String =
-    "<!DOCTYPE html>" &
-    "<html>" &
-    "<head>" &
-    "    <meta charset='utf-8'>" &
-    "    <title>Xác thực thành công</title>" &
-    "    <style>" &
-    "        body {" &
-    "            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" &
-    "            background-color: #f4f6f9;" &
-    "            display: flex;" &
-    "            justify-content: center;" &
-    "            align-items: center;" &
-    "            height: 100vh;" &
-    "            margin: 0;" &
-    "        }" &
-    "        .card {" &
-    "            background: #ffffff;" &
-    "            padding: 40px;" &
-    "            border-radius: 12px;" &
-    "            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);" &
-    "            text-align: center;" &
-    "            max-width: 400px;" &
-    "            width: 100%;" &
-    "        }" &
-    "        .icon {" &
-    "            font-size: 50px;" &
-    "            color: #28a745;" &
-    "            margin-bottom: 20px;" &
-    "        }" &
-    "        h2 {" &
-    "            color: #0366cc;" &
-    "            margin-bottom: 10px;" &
-    "            font-size: 22px;" &
-    "        }" &
-    "        p {" &
-    "            color: #555555;" &
-    "            font-size: 15px;" &
-    "            line-height: 1.5;" &
-    "            margin-top: 0;" &
-    "        }" &
-    "    </style>" &
-    "</head>" &
-    "<body>" &
-    "    <div class='card'>" &
-    "        <div class='icon'>&#10004;</div>" &
-    "        <h2>Đăng nhập thành công!</h2>" &
-    "        <p>Hệ thống đã xác thực tài khoản của bạn.<br>Bạn có thể đóng cửa sổ trình duyệt này và quay trở lại ứng dụng.</p>" &
-    "    </div>" &
-    "</body>" &
-    "</html>"
+                                              ' Trả về một trang thông báo nhỏ cho người dùng đóng tab trình duyệt
+                                              Dim htmlContent As String =
+                 "<!DOCTYPE html>" &
+                 "<html>" &
+                 "<head>" &
+                 "    <meta charset='utf-8'>" &
+                 "    <title>Xác thực thành công</title>" &
+                 "    <style>" &
+                 "        body {" &
+                 "            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" &
+                 "            background-color: #f4f6f9;" &
+                 "            display: flex;" &
+                 "            justify-content: center;" &
+                 "            align-items: center;" &
+                 "            height: 100vh;" &
+                 "            margin: 0;" &
+                 "        }" &
+                 "        .card {" &
+                 "            background: #ffffff;" &
+                 "            padding: 40px;" &
+                 "            border-radius: 12px;" &
+                 "            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);" &
+                 "            text-align: center;" &
+                 "            max-width: 400px;" &
+                 "            width: 100%;" &
+                 "        }" &
+                 "        .icon {" &
+                 "            font-size: 50px;" &
+                 "            color: #28a745;" &
+                 "            margin-bottom: 20px;" &
+                 "        }" &
+                 "        h2 {" &
+                 "            color: #0366cc;" &
+                 "            margin-bottom: 10px;" &
+                 "            font-size: 22px;" &
+                 "        }" &
+                 "        p {" &
+                 "            color: #555555;" &
+                 "            font-size: 15px;" &
+                 "            line-height: 1.5;" &
+                 "            margin-top: 0;" &
+                 "        }" &
+                 "    </style>" &
+                 "</head>" &
+                 "<body>" &
+                 "    <div class='card'>" &
+                 "        <div class='icon'>&#10004;</div>" &
+                 "        <h2>Đăng nhập thành công!</h2>" &
+                 "        <p>Hệ thống đã xác thực tài khoản của bạn.<br>Bạn có thể đóng cửa sổ trình duyệt này và quay trở lại ứng dụng.</p>" &
+                 "    </div>" &
+                 "</body>" &
+                 "</html>"
 
-                                 Dim responseBytes = System.Text.Encoding.UTF8.GetBytes(htmlContent)
-                                 context.Response.ContentLength64 = responseBytes.Length
-                                 Await context.Response.OutputStream.WriteAsync(responseBytes, 0, responseBytes.Length)
-                                 context.Response.OutputStream.Close()
+                                              Dim responseBytes = System.Text.Encoding.UTF8.GetBytes(htmlContent)
+                                              context.Response.ContentLength64 = responseBytes.Length
+                                              Await context.Response.OutputStream.WriteAsync(responseBytes, 0, responseBytes.Length)
+                                              context.Response.OutputStream.Close()
 
-                                 ' Lấy authorization code từ Query string
-                                 Dim query As System.Collections.Specialized.NameValueCollection = HttpUtility.ParseQueryString(requestUrl.Query)
-                                 Dim authorizationCode As String = query("code")
+                                              ' Lấy authorization code từ Query string
+                                              Dim query As System.Collections.Specialized.NameValueCollection = HttpUtility.ParseQueryString(requestUrl.Query)
+                                              Dim authorizationCode As String = query("code")
 
-                                 If Not String.IsNullOrEmpty(authorizationCode) Then
-                                     System.Diagnostics.Debug.WriteLine("code: " & authorizationCode)
+                                              If Not String.IsNullOrEmpty(authorizationCode) Then
+                                                  System.Diagnostics.Debug.WriteLine("code: " & authorizationCode)
 
-                                     ' Gọi API đổi token ngầm
-                                     Await ExecuteSSOFlowAsync(authorizationCode)
-                                 End If
+                                                  ' Gọi API đổi token ngầm
+                                                  Await ExecuteSSOFlowAsync(authorizationCode)
+                                              End If
 
-                                 ' Dừng listener sau khi đã nhận được code
-                                 listener.Stop()
-                                 Exit While
-                             End While
-                         Catch ex As Exception
-                             System.Diagnostics.Debug.WriteLine(ex.Message)
-                         End Try
-                     End Function)
+                                              ' Dừng listener sau khi đã nhận được code
+                                              listener.Stop()
+                                              Exit While
+                                          End While
+                                      Catch ex As Exception
+                                          System.Diagnostics.Debug.WriteLine(ex.Message)
+                                      End Try
+                                  End Function)
 
         Catch ex As Exception
             MessageBox.Show("Không thể mở trình duyệt đăng nhập: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
